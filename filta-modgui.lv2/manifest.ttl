@@ -9,7 +9,7 @@
     modgui:iconTemplate <modgui/icon-filta.html>;
     modgui:templateData <modgui/data-filta.json>;
     modgui:stylesheet <modgui/filta.css>;
-#     modgui:javascript <modgui/filta.js>;
+    #modgui:javascript <modgui/filta.js>;
     modgui:screenshot <modgui/screenshot-filta.png>;
     modgui:thumbnail <modgui/thumb-filta.png>;
   ] .
