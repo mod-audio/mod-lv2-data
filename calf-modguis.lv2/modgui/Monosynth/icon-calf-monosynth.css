@@ -1,0 +1,628 @@
+.calf {
+    background: url(/resources/background_dark.png{{{ns}}}) repeat;
+    position: relative;
+    color: #FFF;
+}
+
+/* bar top */
+
+.calf .bar-top {
+    background: url(/resources/background_black.png{{{ns}}}) repeat;
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.calf .bar-top .title-calf {
+    color: #FFF;
+    display: block;
+    left: 35px;
+    position: absolute;
+    top: 13px;
+}
+.calf .bar-top .off-or-on-calf {
+    background-image: url(/resources/toggle2_silver.png{{ns}});
+    background-size: 46px 62px;
+    cursor: pointer;
+    height: 31px;
+    z-index: 100;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 46px;
+}
+.calf .bar-top .on {
+    background-position: top center;
+}
+.calf .bar-top .off {
+    background-position: bottom center;
+}
+.calf .bar-top .off-or-on-calf span {
+    color: #FFF;
+    left: -50px;
+    position: absolute;
+    top: 9px;
+}
+
+/* Global calf div */
+
+.calf .global-calf {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+/*bars left*/
+.calf .groups-bar-left {
+    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-left .top {
+    background: url(/resources/side_nw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+.calf .groups-bar-left .bottom {
+    background: url(/resources/side_sw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+
+/* bars right */
+.calf .groups-bar-right {
+    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .top {
+    background: url(/resources/side_ne.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .bottom {
+    background: url(/resources/side_se.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+.calf .groups-bar-right .logo {
+    background: url(/resources/side_e_logo.png{{{ns}}});
+    height: 90px;
+    left: 0;
+    position: absolute;
+    bottom: 36px;
+    width: 56px;
+}
+
+/* cols */
+
+.calf .border-solid-and-radius {
+    border: solid 1px #FFF;
+    border-radius: 7px;
+}
+.calf .title-of-cols {
+    background: #384454;
+    color: #FFF;
+    font-size: 13px;
+    margin-left: 6px;
+    padding: 0 5px;
+    margin-top: -11px;
+    position: absolute;
+}
+
+/* knob */
+
+.calf-monosynth .knob {
+    cursor: pointer !important;
+    margin: auto !important;
+    position: relative !important
+}
+.calf .knob1 {
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-1 {
+    background: url(/resources/knob1-1.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-2 {
+    background: url(/resources/knob1-2.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-3 {
+    background: url(/resources/knob1-3.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-4 {
+    background: url(/resources/knob1-4.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob2 {
+    height: 40px;
+    width: 40px;
+}
+.calf .knob2-1 {
+    background: url(/resources/knob2-1.png{{{ns}}});
+}
+.calf .knob2-2 {
+    background: url(/resources/knob2-2.png{{{ns}}});
+}
+.calf .knob2-3 {
+    background: url(/resources/knob2-3.png{{{ns}}});
+}
+.calf .knob2-4 {
+    background: url(/resources/knob2-4.png{{{ns}}});
+}
+.calf .knob3 {
+    background: url(/resources/knob3.png{{{ns}}});
+    height: 60px;
+    width: 60px;
+}
+.calf .knob3-1 {
+    background: url(/resources/knob3-1.png{{{ns}}});
+}
+
+.calf .knob4 {
+    height: 80px;
+    width: 80px;
+}
+.calf .knob4-1 {
+    background: url(/resources/knob4-1.png{{{ns}}});
+}
+.calf .knob4-2 {
+    background: url(/resources/knob4-2.png{{{ns}}});
+}
+.calf .knob4-3 {
+    background: url(/resources/knob4-3.png{{{ns}}});
+}
+.calf .knob4-4 {
+    background: url(/resources/knob4-4.png{{{ns}}});
+}
+.calf .knob5 {
+    height: 100px;
+    width: 100px;
+}
+.calf .knob5-1 {
+    background: url(/resources/knob5-1.png{{{ns}}});
+}
+.calf .knob5-2 {
+    background: url(/resources/knob5-2.png{{{ns}}});
+}
+.calf .knob5-3 {
+    background: url(/resources/knob5-3.png{{{ns}}});
+}
+.calf .knob5-4 {
+    background: url(/resources/knob5-4.png{{{ns}}});
+}
+
+/* titles of things */
+
+.calf-monosynth .title-fild{
+    color: #FFF;
+    font-size: 10px;
+    position: relative !important
+}
+.toggle1-silver {
+    background: url(/resources/toggle1_silver.png{{{ns}}});
+    height: 20px;
+    position: absolute;
+    width: 30px;
+}
+
+.toggle2_silver-silver {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+.calf .knob1 .title-knob1-top, .calf .knob2 .title-knob2-top, .calf .knob3 .title-knob3-top, .calf .knob4 .title-knob4-top,
+.calf .knob5 .title-knob5-top, .calf .knob1 .title-knob1-bottom, .calf .knob2 .title-knob2-bottom, .calf .knob3 .title-knob3-bottom, .calf .knob4 .title-knob4-bottom,
+.calf .knob5 .title-knob5-bottom {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+}
+
+/* Lines */
+.calf .line-cols-all {
+    background: none repeat scroll 0 0 #222222;
+    box-shadow: 1px 1px #5F5F5F;
+    height: 2px;
+    position: absolute;
+}
+
+/* Slider */
+
+.calf .slider2-horiz {
+    background: url(/resources/slider2-horiz.png{{{ns}}});
+    height: 36px;
+    position: absolute;
+    width: 46px;
+}
+/* Screw */
+
+.calf .screw_min {
+    background: url(/resources/screw1.png{{{ns}}});
+    background-size: 15px;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    top: -7px;
+
+}
+/* titles of things */
+.calf-monosynth .title-fild-bottom {
+    font-size: 12px;
+    position: relative;
+}
+
+/* button of bypass */
+
+.calf .button-bypass {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+/* Calf monosynth */
+.calf-monosynth {
+	height: 530px;
+	width: 957px;
+}
+
+/* Config Input, Frequency Response and Output*/
+
+.calf-monosynth .global {
+    height: 460px;
+    left: 73px;
+    z-index: 30;
+    position: absolute;
+    top: 13px;
+    width: 184px;
+}
+.calf-monosynth .global .input-group#master {
+    position: absolute;
+    width: 67px;
+    top: 60px;
+    text-align: center;
+    left: 40px;
+}
+.calf-monosynth .global .input-group#bottom {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 63px;
+}
+.calf-monosynth .knob-rules {
+    bottom: 25px;
+    right: 43px;
+}
+.calf-monosynth .bottom-knob5 {
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.calf-monosynth .frequency-response {
+    height: 191px;
+    left: 268px;
+    position: absolute;
+    top: 13px;
+    width: 415px;
+}
+.calf-monosynth .frequency-response {
+    height: 191px;
+    left: 268px;
+    position: absolute;
+    top: 13px;
+    width: 415px;
+}
+.calf-monosynth .frequency-response .freque-response-graph {
+    background: url(/resources/img/disable-freq.png{{{ns}}});
+    height: 176px;
+    left: 13px;
+    position: absolute;
+    top: 10px;
+    width: 387px;
+}
+.calf-monosynth .mod-enumerated {
+    background: url(/resources/room-size-two.png{{{ns}}});
+    height: 31px;
+    background-size: 160px 31px;
+    z-index: 100000 !important;
+    width: 160px;
+    cursor: pointer;
+}
+.calf-monosynth .mod-enumerated-list {
+    background-color: rgba(0,0,0,.8) !important;
+    display: none;
+    height: 120px;
+    width: 140px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: 10px;
+    z-index: 100;
+    color: white !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+}
+.calf-monosynth  .mod-enumerated-list div:hover{
+    background: white;
+    color: black;
+    }
+.calf-monosynth  .mod-enumerated-selected:before {
+    content: '\25BE \a0';
+}
+.calf-monosynth  .mod-enumerated-selected {
+    background: transparent;
+    border: none;
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    position: relative;
+    left: 4px;
+    margin: 0 0 0 5px;
+    top: 7px;
+    width: 145px; 
+}
+.calf-monosynth .mod-enumerated:hover, .calf-monosynth .mod-enumerated:active {
+    background: url(/resources/room-size-hover-two.png{{{ns}}}) no-repeat;
+    width: 160px;
+    background-size: 160px 31px;
+
+}
+.calf-monosynth .tab_select {
+    position: absolute;
+    left: 20em;
+    top: 1em;
+    z-index: 40
+}
+.calf-monosynth label{
+font-size: 12px;
+display: block;
+width: 9em;
+top: -2.5em;
+position: absolute;
+text-align: center;
+background-color: rgba(0,0,0,0.5);
+height: 2em;
+border-top-left-radius: 0.5em;
+border-top-right-radius: 0.5em;
+background-image: url(resources/led_inactive.png{{{ns}}});
+background-repeat: no-repeat;
+background-position: 8em 2px;
+padding-top: 0.5em;
+}
+#label2 {
+    left: 10em;
+}
+  .tab_content{
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  [id^="tab"]:checked + label { 
+    background-image: url(resources/led_active.png{{{ns}}});
+  }
+  [id^="tab"]:checked ~ .tab_content{
+    display: block;
+  }
+.calf-monosynth .tabs {
+    position: absolute;
+    left: 270px;
+    top: 40px;
+    width: 600px;
+    margin-bottom: 15px;
+    z-index: 30;
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 10px;
+    height: 86%;
+}
+.calf-monosynth .tabs .title-of-cols {
+    background: #384454;
+    color: #aeaeae;
+    font-size: 10px;
+    margin-left: 6px;
+    padding: 0px 3px;
+    line-height: 10px;
+    margin-top: -6px;
+    position: absolute;
+}
+.calf-monosynth .tabs .osc{
+    width: 343px;
+    height: 124px;
+    margin-bottom: 10px;
+    float: left;
+}
+.calf-monosynth .tabs .osc .knob-group{
+    margin: 20px 0 0 12px;
+    }
+.calf-monosynth .tabs .filter .knob-group{
+    margin-top: 20px;
+    }
+.calf-monosynth .tabs .osc_common {
+    width: 245px;
+    height: 260px;
+    position: absolute;
+    right: 10px;
+}
+.calf-monosynth .tabs .filter {
+    width: 100%;
+    clear: both;
+    height: 142px;
+    }
+.calf-monosynth #modulation .left {
+    float: left;
+    width: 188px;
+    min-height: 82px;
+    margin-bottom: 10px
+}
+.calf-monosynth #modulation .left .mod-enumerated {
+    background-size: 110px 25px;
+    height: 25px;
+    width: 110px;
+    float: right;
+    margin: 5px 15px 0 0;
+}
+.calf-monosynth #modulation .left .mod-enumerated .mod-enumerated-selected {
+    top: 2px;
+    width: 98px;
+}
+.calf-monosynth #modulation .right {
+    float: right;
+    width: 400px;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.calf-monosynth .knob-group {
+    margin: 0 10px;
+    float: left;
+    text-align: center
+}
+.calf-monosynth .output {
+    height: 191px;
+    position: absolute;
+    right: 73px;
+    top: 13px;
+    width: 184px;
+}
+.calf-monosynth .output .r, .calf-monosynth .output .l {
+    right: 7px;
+}
+.calf-monosynth .output > .disable .title-fild {
+    left: -12px;
+}
+.calf-monosynth .output .l {
+    top: 10px;
+}
+.calf-monosynth .output .r {
+    top: 32px;
+}
+.calf-monosynth .disable {
+    background: url(/resources/img/media_des.png{{{ns}}});
+    height: 18px;
+    position: absolute;
+    width: 153px;
+}
+
+.calf-monosynth .slider-vert .title-cols {
+    font-size: 11px;
+    position: absolute;
+    top: -23px;
+    margin-left: -20px;
+    width: 56px;
+}
+.calf-monosynth .slider-line {
+    background: none repeat scroll 0 0 #222222;
+    box-shadow: 1px 1px #5F5F5F;
+    width: 2px;
+    height: 8em;
+    position: absolute;
+    margin: -8.5em 2.1em;
+    z-index: -2;
+}
+.calf-monosynth .slider-vert {
+    background: url(/resources/sliders-vert-disable.png{{ns}});
+    height: 122px;
+    left: 0;
+    cursor: pointer;
+    z-index: 100;
+    left: -18px;
+    width: 40px;
+    margin: auto;
+}
+.calf-monosynth .slider {
+    float: left;
+    width: 4.6em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Titles knobs2 parametric and outhrs */
+
+.calf-monosynth .knob2 .title-knob2-top {
+    left: -10px;
+    text-align: center;
+    top: -17px;
+    width: 60px;
+}
+.calf-monosynth .knob2 .title-knob2-bottom {
+    left: -8px;
+    text-align: center;
+    bottom: -20px;
+    width: 62px;
+}
+
+/* Active */
+
+.calf-monosynth .active {
+    background: url(/resources/toggle1_silver.png{{{ns}}}) 0 20px;
+    margin: 163px 37px;
+    height: 20px;
+    right: 0px;
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap
+}
+.calf-monosynth .off{
+    background-position: 0 0 !important;
+}
+
+.calf-monosynth .active .title-active {
+    top: 17px;
+}
+
+.calf .knob, .calf .active, .calf .off-or-on-calf {
+    z-index: 99999;
+}
+
+/* Input/Output */
+ .calf-pedal-input {
+    left:-46px !important;
+ }
+.calf-pedal-output {
+    right:-44px !important;
+}

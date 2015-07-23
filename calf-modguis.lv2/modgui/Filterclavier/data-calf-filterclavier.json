@@ -1,0 +1,27 @@
+{
+    "author": "Calf", 
+    "color": "yellow", 
+    "controls": [
+        {
+            "name": "Transpose", 
+            "symbol": "transpose"
+        }, 
+        {
+            "name": "Detune", 
+            "symbol": "detune"
+        }, 
+        {
+            "name": "Mode", 
+            "symbol": "mode"
+        },
+        {
+            "name": "Max. Resonance", 
+            "symbol": "maxres"
+        }, 
+        {
+            "name": "Portamento time", 
+            "symbol": "inertia"
+        }
+    ], 
+    "label": "Filterclavier"
+}

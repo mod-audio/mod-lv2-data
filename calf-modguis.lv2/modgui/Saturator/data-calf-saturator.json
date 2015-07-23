@@ -1,0 +1,11 @@
+{
+    "author": "Calf", 
+    "color": "darkblue", 
+    "controls": [
+        {
+            "name": "Bypass", 
+            "symbol": "bypass"
+        }
+    ], 
+    "label": "Saturator"
+}

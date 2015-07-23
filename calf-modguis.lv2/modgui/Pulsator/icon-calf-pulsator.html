@@ -1,0 +1,66 @@
+<div class="mod-pedal calf calf-pulsator">
+    <header class="bar-top">
+        <span class="title-calf">Calf Filter</span>
+        <div class="off-or-on-calf" mod-role="bypass">
+            <span>On/Off</span>
+        </div>
+    </header>
+		<div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+	<div class="global-calf">
+		<div class="groups-bar-left">
+		    <div class="top"></div>
+		    <div class="bottom"></div>
+		</div>
+
+		<div class="knob knob2 knob2-1 resonance" mod-role="input-control-port" mod-port-symbol="res">
+			<span class="title-knob2-top">Resonance</span>
+			<span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="res"></span>
+		</div>
+
+		<div class="knob knob5 knob5-1 frequency" mod-role="input-control-port" mod-port-symbol="freq">
+    		<span class="title-knob5-top">Frequency</span>
+    		<span class="title-knob5-bottom" mod-role="input-control-value" mod-port-symbol="freq"></span>
+		</div>
+		
+		<div class="knob knob2 knob2-1 inertia" mod-role="input-control-port" mod-port-symbol="inertia">
+			<span class="title-knob2-top">Inertia</span>
+			<span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="inertia"></span>
+		</div>
+
+		<div class="freq-response border-solid-and-radius">
+			<span class="title-of-cols">Freq. response</span>
+		</div>
+
+		<div class="groups-bar-right">
+		    <div class="top"></div>
+		    <div class="bottom"></div>
+		    <div class="logo"></div>
+		</div>
+
+    </div>
+    <div class="mod-pedal-input calf-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output calf-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+</div>

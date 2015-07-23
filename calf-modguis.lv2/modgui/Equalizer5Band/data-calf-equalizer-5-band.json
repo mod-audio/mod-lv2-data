@@ -1,0 +1,11 @@
+{
+    "author": "Calf", 
+    "color": "brown", 
+    "controls": [
+        {
+            "name": "Bypass", 
+            "symbol": "bypass"
+        }
+    ], 
+    "label": "Equalizer 5 Band"
+}

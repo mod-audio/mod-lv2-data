@@ -1,0 +1,421 @@
+<div class="calf calf-monosynth">
+
+    <header class="bar-top">
+        <span class="title-calf">Calf Monosynth</span>
+        <div class="off-or-on-calf" mod-role="bypass">
+            <span>On/Off</span>
+        </div>
+    </header>
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="global-calf">
+        <div class="groups-bar-left">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="global border-solid-and-radius">
+            <span class="title-of-cols">Global</span>
+            <div class="input-group" id="master">
+                <div class="knob-group" style="margin: 0">
+                    <span class="title-fild title-knob5-top">Volume</span><br />
+                    <div class="knob knob5 knob5-1" mod-role="input-control-port" mod-port-symbol="master">
+                    </div>
+                    <div class="title-fild bottom-knob5"mod-role="input-control-value" mod-port-symbol="master"></div>
+                </div>
+            </div>
+            <div class="input-group" id="bottom">
+                <div class="knob-group" style="margin-left: 1.5em">
+                    <span class="title-fild title-knob2-top">PBend Range</span><br />
+                    <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="pbend_range"></div>
+                    <div class="title-fild bottom-knob2"mod-role="input-control-value" mod-port-symbol="pbend_range"></div>
+                </div>
+                <div class="knob-group">
+                    <span class="title-fild title-knob2-top">Portamento</span><br />
+                    <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="portamento"></div>
+                    <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="portamento"></div>
+                </div>
+                <div style="margin: 7em 0.8em; text-align: center;">
+                    <span class="title-fild">Legato Mode</span>
+                    <div class="mod-enumerated legato" mod-role="input-control-port" mod-port-symbol="legato" mod-widget="custom-select" style="text-align: left">
+                    <div mod-role="input-control-value" mod-port-symbol="legato" class="mod-enumerated-selected" contenteditable="False"></div>
+                      <div class="mod-enumerated-list" contenteditable="False" mod-widget-property="hidden" style="display: none">
+                          <div mod-role="enumeration-option" mod-port-value="0">Retrig</div> 
+                          <div mod-role="enumeration-option" mod-port-value="1">Legato</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+        <section>
+            <input type="radio" name="tabs" id="tab1" checked /> 
+            <label for="tab1">Audio Path</label>
+            
+            <div class="tab_content" id="content1">
+                <div class="osc border-solid-and-radius">
+                    <span class="title-of-cols">Oscillator 1</span>
+
+                    <div class="mod-enumerated" style="float: left; margin: 15px 0 0 10px" mod-role="input-control-port" mod-port-symbol="o1_wave" mod-widget="custom-select">
+                    <div mod-role="input-control-value" mod-port-symbol="o1_wave" class="mod-enumerated-selected" contenteditable="false"></div>
+                        <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none">
+                          <div mod-role="enumeration-option" mod-port-value="0">Sawtooth</div> 
+                          <div mod-role="enumeration-option" mod-port-value="1">Square</div>
+                          <div mod-role="enumeration-option" mod-port-value="2">Pulse</div>
+                          <div mod-role="enumeration-option" mod-port-value="3">Sine</div>
+                          <div mod-role="enumeration-option" mod-port-value="4">Triangle</div>
+                          <div mod-role="enumeration-option" mod-port-value="5">Varistep</div>
+                          <div mod-role="enumeration-option" mod-port-value="6">Skewed Saw</div>
+                          <div mod-role="enumeration-option" mod-port-value="7">Skewed Square</div>
+                          <div mod-role="enumeration-option" mod-port-value="8">Smooth Brass</div>
+                          <div mod-role="enumeration-option" mod-port-value="9">Bass</div>
+                          <div mod-role="enumeration-option" mod-port-value="10">Multiwave</div>
+                          <div mod-role="enumeration-option" mod-port-value="11">Dark FM</div>
+                          <div mod-role="enumeration-option" mod-port-value="12">Bell FM</div>
+                          <div mod-role="enumeration-option" mod-port-value="13">Dark Pad</div>
+                          <div mod-role="enumeration-option" mod-port-value="14">DCO Saw</div>
+                          <div mod-role="enumeration-option" mod-port-value="15">DCO Maze</div>
+                        </div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob2-top">Pulse width</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o1_pw"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o1_pw"></div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob2-top">Window</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o1_window"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o1_window"></div>
+                    </div>                
+                    <div class="knob-group">
+                    <span class="title-fild title-knob2-top">Stretch</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o1_stretch"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o1_stretch"></div>
+                    </div>                
+
+                </div>
+                <div class="osc border-solid-and-radius">
+                    <span class="title-of-cols">Oscillator 2</span>
+                    <div class="mod-enumerated" style="float: left; margin: 15px 0 0 10px" mod-role="input-control-port" mod-port-symbol="o2_wave" mod-widget="custom-select">
+                    <div mod-role="input-control-value" mod-port-symbol="o2_wave" class="mod-enumerated-selected" contenteditable="false"></div>
+                        <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none">
+                          <div mod-role="enumeration-option" mod-port-value="0">Sawtooth</div> 
+                          <div mod-role="enumeration-option" mod-port-value="1">Square</div>
+                          <div mod-role="enumeration-option" mod-port-value="2">Pulse</div>
+                          <div mod-role="enumeration-option" mod-port-value="3">Sine</div>
+                          <div mod-role="enumeration-option" mod-port-value="4">Triangle</div>
+                          <div mod-role="enumeration-option" mod-port-value="5">Varistep</div>
+                          <div mod-role="enumeration-option" mod-port-value="6">Skewed Saw</div>
+                          <div mod-role="enumeration-option" mod-port-value="7">Skewed Square</div>
+                          <div mod-role="enumeration-option" mod-port-value="8">Smooth Brass</div>
+                          <div mod-role="enumeration-option" mod-port-value="9">Bass</div>
+                          <div mod-role="enumeration-option" mod-port-value="10">Multiwave</div>
+                          <div mod-role="enumeration-option" mod-port-value="11">Dark FM</div>
+                          <div mod-role="enumeration-option" mod-port-value="12">Bell FM</div>
+                          <div mod-role="enumeration-option" mod-port-value="13">Dark Pad</div>
+                          <div mod-role="enumeration-option" mod-port-value="14">DCO Saw</div>
+                          <div mod-role="enumeration-option" mod-port-value="15">DCO Maze</div>
+                        </div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob2-top">Pulse width</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o2_pw"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o2_pw"></div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob2-top">Transpose</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o2_xpose"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o2_xpose"></div>
+                    </div>                
+                </div>
+                <div class="osc_common border-solid-and-radius">
+                    <span class="title-of-cols">Oscillator - Common</span>
+                    <div class="knob-group" style="margin-left: 5.5em; margin-top: 1em;">
+                        <span class="title-fild title-knob3-top">Osc 1 &lt; &gt; Osc 2 Mix</span><br />
+                        <div class="knob knob3 knob3-1" mod-role="input-control-port" mod-port-symbol="o12_mix"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o12_mix"></div>
+                    </div>
+                    <div class="knob-group" style="margin-left: 3em; margin-right: 3.5em;">
+                        <span class="title-fild title-knob4-top">Separation</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="filter_sep"></div>
+                        <div class="title-fild bottom-knob3" mod-role="input-control-value" mod-port-symbol="filter_sep"></div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob4-top">Key Follow</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="key_follow"></div>
+                        <div class="title-fild bottom-knob3" mod-role="input-control-value" mod-port-symbol="key_follow"></div>
+                    </div>
+                    <div class="knob-group" style="margin: 0 0 0 3em">
+                    <span class="title-fild">Phase mode</span>
+                    <div class="mod-enumerated" mod-role="input-control-port" mod-port-symbol="phase_mode" mod-widget="custom-select" style="text-align: left">
+                    <div mod-role="input-control-value" mod-port-symbol="phase_mode" class="mod-enumerated-selected" contenteditable="false"></div>
+                        <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none">
+                          <div mod-role="enumeration-option" mod-port-value="0">0&deg; : 0&deg;</div> 
+                          <div mod-role="enumeration-option" mod-port-value="1">0&deg; : 180&deg;</div>
+                          <div mod-role="enumeration-option" mod-port-value="2">0&deg; : 90&deg;</div>
+                          <div mod-role="enumeration-option" mod-port-value="3">90&deg; : 90&deg;</div>
+                          <div mod-role="enumeration-option" mod-port-value="4">90&deg; : 270&deg;</div>
+                          <div mod-role="enumeration-option" mod-port-value="5">Random</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="filter border-solid-and-radius">
+                    <span class="title-of-cols">Filter</span>
+                    <div class="mod-enumerated" style="float: left; margin: 15px 0 0 10px" mod-role="input-control-port" mod-port-symbol="filter" mod-widget="custom-select">
+                    <div mod-role="input-control-value" mod-port-symbol="filter" class="mod-enumerated-selected" contenteditable="false"></div>
+                        <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none">
+                          <div mod-role="enumeration-option" mod-port-value="0">12dB/oct Lowpass</div> 
+                          <div mod-role="enumeration-option" mod-port-value="1">24dB/oct Lowpass</div>
+                          <div mod-role="enumeration-option" mod-port-value="2">2x12dB/oct Lowpass</div>
+                          <div mod-role="enumeration-option" mod-port-value="3">Lowpass+Notch</div>
+                          <div mod-role="enumeration-option" mod-port-value="4">12dB/oct Highpass</div>
+                          <div mod-role="enumeration-option" mod-port-value="5">Lowpass+Notch</div>
+                          <div mod-role="enumeration-option" mod-port-value="6">6dB/oct Bandpass</div>
+                          <div mod-role="enumeration-option" mod-port-value="7">2x6dB/oct Bandpass</div>
+                        </div>
+                    </div>
+                    <div class="knob-group" style="margin-left: 2.5em;">
+                        <span class="title-fild title-knob2-top">Pulse width</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o2_pw"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o2_pw"></div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob2-top">Transpose</span><br />
+                        <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="o2_xpose"></div>
+                        <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="o2_xpose"></div>
+                    </div>  
+                    <div class="knob-group" style="margin-left: 4em; margin-right: 3em;">
+                        <span class="title-fild title-knob4-top">Separation</span><br />
+                        <div class="knob knob3 knob3-1" mod-role="input-control-port" mod-port-symbol="filter_sep"></div>
+                        <div class="title-fild bottom-knob3" mod-role="input-control-value" mod-port-symbol="filter_sep"></div>
+                    </div>
+                    <div class="knob-group">
+                        <span class="title-fild title-knob4-top">Key Follow</span><br />
+                        <div class="knob knob3 knob3-1" mod-role="input-control-port" mod-port-symbol="key_follow"></div>
+                        <div class="title-fild bottom-knob3" mod-role="input-control-value" mod-port-symbol="key_follow"></div>
+                    </div>  
+                </div>
+            </div>
+            </section>
+            <section id="modulation">
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2" id="label2">Modulation</label>
+                <div class="tab_content" id="content2">
+                    <div class="left border-solid-and-radius">
+                        <span class="title-of-cols">Note Velocity</span>
+                        <div class="knob-group" style="margin: 5px 2em 0 1.5em;width: 4.1em;">
+                            <span class="title-fild title-knob2-top">To cutoff</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="vel2filter"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="vel2filter"></div>
+                        </div> 
+                        <div class="knob-group" style="margin-top: 5px">
+                            <span class="title-fild title-knob2-top">To amp</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="vel2amp"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="vel2amp"></div>
+                        </div> 
+                    </div>
+                    <div class="right border-solid-and-radius">
+                        <span class="title-of-cols">Envelope 1</span>
+                        <div class="slider" style="margin-left: 0.5em">
+                            <span class="title-fild">Attack</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr_a">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr_a"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Decay</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr_d">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr_d"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Sustain</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr_s">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr_s"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Fade</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr_f">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr_f"></span>
+                        </div>
+
+                        <div class="slider">
+                            <span class="title-fild">Release</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr_r">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr_r"></span>
+                        </div>
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To cutoff</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="adsr2_cutoff"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_cutoff" style="width: 4em; white-space: nowrap;"></div>
+                        </div>
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To res</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="adsr2_res"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_res"></div>
+                        </div>
+                        <div class="active" mod-role="input-control-port" mod-port-symbol="adsr2_amp" mod-widget="switch">
+                            <span class="title-fild title-active" >To amp</span>
+                        </div>
+                    </div>
+                    <div class="left border-solid-and-radius">
+                        <span class="title-of-cols">LFO 1</span>
+                        <span class="title-fild" style="float: left;margin: 10px 0 0 31px;">Mode:</span>
+                        <div class="mod-enumerated legato" mod-role="input-control-port" mod-port-symbol="lfo1_trig" mod-widget="custom-select" style="text-align: left">
+                            <div mod-role="input-control-value" mod-port-symbol="lfo1_trig" class="mod-enumerated-selected" contenteditable="False"></div>
+                            <div class="mod-enumerated-list" contenteditable="False" mod-widget-property="hidden" style="display: none">
+                            <div mod-role="enumeration-option" mod-port-value="0">Retrig</div> 
+                            <div mod-role="enumeration-option" mod-port-value="1">Free</div>
+                            </div>
+                        </div>
+
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">Rate</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo_rate"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo_rate"></div>
+                        </div> 
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">Delay</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo_delay"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo_delay"></div>
+                        </div> 
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">ModWheel</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="mwhl2lfo"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="mwhl2lfo"></div>
+                        </div> 
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To cutoff</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo2filter"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo2filter" style="width: 4em; overflow: hidden; white-space: nowrap;"></div>
+                        </div> 
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To pitch</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo2pitch"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo2pitch"></div>
+                        </div> 
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To oscPW</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo2pw"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo2pw"></div>
+                        </div> 
+
+                    </div>
+                    <div class="right border-solid-and-radius">
+                        <span class="title-of-cols">Envelope 2</span>
+                        <div class="slider" style="margin-left: 0.5em">
+                            <span class="title-fild">Attack</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr2_a">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_a"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Decay</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr2_d">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_d"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Sustain</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr2_s">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_s"></span>
+                        </div>
+                        <div class="slider">
+                            <span class="title-fild">Fade</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr2_f">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_f"></span>
+                        </div>
+
+                        <div class="slider">
+                            <span class="title-fild">Release</span>
+                            <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="adsr2_r">
+                            </div>
+                            <div class="slider-line"></div>                        
+                            <span class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="adsr2_r"></span>
+                        </div>
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To cutoff</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="env2cutoff"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="env2cutoff" style="width: 4em; white-space: nowrap;"></div>
+                        </div>
+                        <div class="knob-group" style="">
+                            <span class="title-fild title-knob2-top">To res</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="env2res"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="env2res"></div>
+                        </div>
+                        <div class="active" mod-role="input-control-port" mod-port-symbol="adsr2_amp" mod-widget="switch">
+                            <span class="title-fild title-active" >To amp</span>
+                        </div>
+                    </div>
+
+                    <div class="left border-solid-and-radius">
+                        <span class="title-of-cols">LFO 2</span>
+                        <span class="title-fild" style="float: left;margin: 10px 0 0 31px;">Mode:</span>
+                        <div class="mod-enumerated legato" mod-role="input-control-port" mod-port-symbol="lfo2_trig" mod-widget="custom-select" style="text-align: left">
+                            <div mod-role="input-control-value" mod-port-symbol="lfo2_trig" class="mod-enumerated-selected" contenteditable="False"></div>
+                            <div class="mod-enumerated-list" contenteditable="False" mod-widget-property="hidden" style="display: none">
+                            <div mod-role="enumeration-option" mod-port-value="0">Retrig</div> 
+                            <div mod-role="enumeration-option" mod-port-value="1">Free</div>
+                            </div>
+                        </div>
+                        <div class="knob-group" style="margin: 0 2em 0 1.5em;width: 4.1em;">
+                            <span class="title-fild title-knob2-top">Rate</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo2_rate"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo2_rate"></div>
+                        </div> 
+                        <div class="knob-group">
+                            <span class="title-fild title-knob2-top">Delay</span><br />
+                            <div class="knob knob2 knob2-1" mod-role="input-control-port" mod-port-symbol="lfo2_delay"></div>
+                            <div class="title-fild bottom-knob2" mod-role="input-control-value" mod-port-symbol="lfo2_delay"></div>
+                        </div> 
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <div class="groups-bar-right">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+    <div class="mod-pedal-input calf-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="event_in">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output calf-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+
+
+</div>
