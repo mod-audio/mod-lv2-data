@@ -1,126 +1,123 @@
-@prefix mod: <http://portalmod.com/ns/modgui#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
 
 <http://calf.sourceforge.net/plugins/BassEnhancer>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/BassEnhancer/icon-calf-bassenhancer.css>;
-        mod:iconTemplate <modgui/BassEnhancer/icon-calf-bassenhancer.html>;
-        mod:templateData <modgui/BassEnhancer/data-calf-bassenhancer.json>;
-        mod:screenshot <modgui/BassEnhancer/screenshot-calf-bassenhancer.png>;
-        mod:thumbnail <modgui/BassEnhancer/thumb-calf-bassenhancer.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/BassEnhancer/icon-calf-bassenhancer.css>;
+        modgui:iconTemplate <modgui/BassEnhancer/icon-calf-bassenhancer.html>;
+        modgui:templateData <modgui/BassEnhancer/data-calf-bassenhancer.json>;
+        modgui:screenshot <modgui/BassEnhancer/screenshot-calf-bassenhancer.png>;
+        modgui:thumbnail <modgui/BassEnhancer/thumb-calf-bassenhancer.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Compressor>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Compressor/icon-calf-compressor.css>;
-        mod:iconTemplate <modgui/Compressor/icon-calf-compressor.html>;
-        mod:templateData <modgui/Compressor/data-calf-compressor.json>;
-        mod:screenshot <modgui/Compressor/screenshot-calf-compressor.png>;
-        mod:thumbnail <modgui/Compressor/thumb-calf-compressor.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Compressor/icon-calf-compressor.css>;
+        modgui:iconTemplate <modgui/Compressor/icon-calf-compressor.html>;
+        modgui:templateData <modgui/Compressor/data-calf-compressor.json>;
+        modgui:screenshot <modgui/Compressor/screenshot-calf-compressor.png>;
+        modgui:thumbnail <modgui/Compressor/thumb-calf-compressor.png>;
     ] .
 
-# <http://calf.sourceforge.net/plugins/Equalizer5Band>
+<http://calf.sourceforge.net/plugins/Equalizer5Band>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
+        modgui:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
+        modgui:templateData <modgui/Equalizer5Band/data-calf-equalizer-5-band.json>;
+        modgui:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
+        modgui:thumbnail <modgui/Equalizer5Band/thumb-calf-equalizer-5-band.png>;
+    ] .
 <http://calf.sourceforge.net/plugins/eq5>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
-        mod:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
-        mod:templateData <modgui/Equalizer5Band/data-calf-equalizer-5-band.json>;
-        mod:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
-        mod:thumbnail <modgui/Equalizer5Band/thumb-calf-equalizer-5-band.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
+        modgui:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
+        modgui:templateData <modgui/Equalizer5Band/data-calf-equalizer-5-band.json>;
+        modgui:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
+        modgui:thumbnail <modgui/Equalizer5Band/thumb-calf-equalizer-5-band.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Exciter>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
-        mod:iconTemplate <modgui/Exciter/icon-calf-exciter.html>;
-        mod:templateData <modgui/Exciter/data-calf-exciter.json>;
-        mod:screenshot <modgui/Exciter/screenshot-calf-exciter.png>;
-        mod:thumbnail <modgui/Exciter/thumb-calf-exciter.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
+        modgui:iconTemplate <modgui/Exciter/icon-calf-exciter.html>;
+        modgui:templateData <modgui/Exciter/data-calf-exciter.json>;
+        modgui:screenshot <modgui/Exciter/screenshot-calf-exciter.png>;
+        modgui:thumbnail <modgui/Exciter/thumb-calf-exciter.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Filter>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Filter/icon-calf-filter.css>;
-        mod:iconTemplate <modgui/Filter/icon-calf-filter.html>;
-        mod:templateData <modgui/Filter/data-calf-filter.json>;
-        mod:screenshot <modgui/Filter/screenshot-calf-filter.png>;
-        mod:thumbnail <modgui/Filter/thumb-calf-filter.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Filter/icon-calf-filter.css>;
+        modgui:iconTemplate <modgui/Filter/icon-calf-filter.html>;
+        modgui:templateData <modgui/Filter/data-calf-filter.json>;
+        modgui:screenshot <modgui/Filter/screenshot-calf-filter.png>;
+        modgui:thumbnail <modgui/Filter/thumb-calf-filter.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Filterclavier>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img>;
-        mod:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
-        mod:iconTemplate <modgui/Filterclavier/icon-calf-filterclavier.html>;
-        mod:templateData <modgui/Filterclavier/data-calf-filterclavier.json>;
-        mod:screenshot <modgui/Filterclavier/screenshot-calf-filterclavier.png>;
-        mod:thumbnail <modgui/Filterclavier/thumb-calf-filterclavier.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img>;
+        modgui:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
+        modgui:iconTemplate <modgui/Filterclavier/icon-calf-filterclavier.html>;
+        modgui:templateData <modgui/Filterclavier/data-calf-filterclavier.json>;
+        modgui:screenshot <modgui/Filterclavier/screenshot-calf-filterclavier.png>;
+        modgui:thumbnail <modgui/Filterclavier/thumb-calf-filterclavier.png>;
     ] .
 
 # <http://calf.sourceforge.net/plugins/Flanger>
 # TODO
 
 <http://calf.sourceforge.net/plugins/Monosynth>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img>;
-        mod:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
-        mod:iconTemplate <modgui/Monosynth/icon-calf-monosynth.html>;
-        mod:templateData <modgui/Monosynth/data-calf-monosynth.json>;
-        mod:screenshot <modgui/Monosynth/screenshot-calf-monosynth.png>;
-        mod:thumbnail <modgui/Monosynth/thumb-calf-monosynth.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img>;
+        modgui:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
+        modgui:iconTemplate <modgui/Monosynth/icon-calf-monosynth.html>;
+        modgui:templateData <modgui/Monosynth/data-calf-monosynth.json>;
+        modgui:screenshot <modgui/Monosynth/screenshot-calf-monosynth.png>;
+        modgui:thumbnail <modgui/Monosynth/thumb-calf-monosynth.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Phaser>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
-        mod:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
-        mod:templateData <modgui/Phaser/data-calf-phaser.json>;
-        mod:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
-        mod:thumbnail <modgui/Phaser/thumb-calf-phaser.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
+        modgui:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
+        modgui:templateData <modgui/Phaser/data-calf-phaser.json>;
+        modgui:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
+        modgui:thumbnail <modgui/Phaser/thumb-calf-phaser.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/Pulsator>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
-        mod:iconTemplate <modgui/Pulsator/icon-calf-pulsator.html>;
-        mod:templateData <modgui/Pulsator/data-calf-pulsator.json>;
-        mod:screenshot <modgui/Pulsator/screenshot-calf-pulsator.png>;
-        mod:thumbnail <modgui/Pulsator/thumb-calf-pulsator.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
+        modgui:iconTemplate <modgui/Pulsator/icon-calf-pulsator.html>;
+        modgui:templateData <modgui/Pulsator/data-calf-pulsator.json>;
+        modgui:screenshot <modgui/Pulsator/screenshot-calf-pulsator.png>;
+        modgui:thumbnail <modgui/Pulsator/thumb-calf-pulsator.png>;
     ].
 
 <http://calf.sourceforge.net/plugins/Saturator>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
-        mod:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
-        mod:templateData <modgui/Saturator/data-calf-saturator.json>;
-        mod:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
-        mod:thumbnail <modgui/Saturator/thumb-calf-saturator.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
+        modgui:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
+        modgui:templateData <modgui/Saturator/data-calf-saturator.json>;
+        modgui:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
+        modgui:thumbnail <modgui/Saturator/thumb-calf-saturator.png>;
     ] .
 
 <http://calf.sourceforge.net/plugins/VintageDelay>
-    mod:gui [
-        a mod:Gui;
-        mod:resourcesDirectory <modgui/img/>;
-        mod:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
-        mod:iconTemplate <modgui/VintageDelay/icon-calf-vintage-delay.html>;
-        mod:templateData <modgui/VintageDelay/data-calf-vintage-delay.json>;
-        mod:screenshot <modgui/VintageDelay/screenshot-calf-vintage-delay.png>;
-        mod:thumbnail <modgui/VintageDelay/thumb-calf-vintage-delay.png>;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img/>;
+        modgui:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
+        modgui:iconTemplate <modgui/VintageDelay/icon-calf-vintage-delay.html>;
+        modgui:templateData <modgui/VintageDelay/data-calf-vintage-delay.json>;
+        modgui:screenshot <modgui/VintageDelay/screenshot-calf-vintage-delay.png>;
+        modgui:thumbnail <modgui/VintageDelay/thumb-calf-vintage-delay.png>;
     ] .

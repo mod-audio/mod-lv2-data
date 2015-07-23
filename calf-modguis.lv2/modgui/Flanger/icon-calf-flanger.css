@@ -24,7 +24,7 @@
     top: 13px;
 }
 .calf .bar-top .off-or-on-calf {
-    background-image: url(/resources/toggle2_silver.png{{ns}});
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
     background-size: 46px 62px;
     cursor: pointer;
     height: 31px;
@@ -367,7 +367,7 @@ margin: auto;
 }
 
 .calf-flanger .slider-horiz {
-    background: url(/resources/sliders-vert-disable2.png{{ns}});
+    background: url(/resources/sliders-vert-disable2.png{{{ns}}});
     background-size: auto 114px;
     height: 114px;
     margin: auto;
@@ -382,7 +382,7 @@ line-height: 16px;
 font-style: italic
 }
 .calf-flanger .display {
-    background: url(/resources/combo-sm.png{{ns}});
+    background: url(/resources/combo-sm.png{{{ns}}});
     top: 181px;
     background-size: 50px auto;
     height: 28px;
