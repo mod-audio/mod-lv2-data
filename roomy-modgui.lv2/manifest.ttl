@@ -1,0 +1,11 @@
+@prefix mod: <http://portalmod.com/ns/modgui#>.
+
+<http://www.openavproductions.com/artyfx#roomy>
+  mod:gui [
+    a mod:Gui;
+    mod:resourcesDirectory <modgui>;
+    mod:iconTemplate <modgui/icon-roomy.html>;
+    mod:templateData <modgui/data-roomy.json>;
+    mod:screenshot <modgui/screenshot-roomy.png>;
+    mod:thumbnail <modgui/thumb-roomy.png>;
+  ] .
