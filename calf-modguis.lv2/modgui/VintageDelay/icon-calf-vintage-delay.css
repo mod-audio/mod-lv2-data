@@ -1,6 +1,6 @@
 /* Calf */
 .calf {
-    background: url(/resources/background_dark.png{{ns}}) repeat;
+    background: url(/resources/background_dark.png{{{ns}}}) repeat;
     position: relative;
     color: #FFF;
 }
@@ -8,7 +8,7 @@
 /* bar top */
 
 .calf .bar-top {
-    background: url(/resources/background_black.png{{ns}}) repeat;
+    background: url(/resources/background_black.png{{{ns}}}) repeat;
     height: 46px;
     left: 0;
     position: relative;
@@ -60,7 +60,7 @@
 
 /*bars left*/
 .calf .groups-bar-left {
-    background: url(/resources/side_w.png{{ns}}) repeat-y;
+    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -87,7 +87,7 @@
 
 /* bars right */
 .calf .groups-bar-right {
-    background: url(/resources/side_e.png{{ns}}) repeat-y;
+    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
     bottom: 0;
     right: 0;
     position: absolute;
