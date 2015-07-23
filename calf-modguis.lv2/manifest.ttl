@@ -69,8 +69,15 @@
         modgui:thumbnail <modgui/Filterclavier/thumb-calf-filterclavier.png>;
     ] .
 
-# <http://calf.sourceforge.net/plugins/Flanger>
-# TODO
+<http://calf.sourceforge.net/plugins/Flanger>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/img>;
+        modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
+        modgui:iconTemplate <modgui/Flanger/icon-calf-flanger.html>;
+        modgui:templateData <modgui/Flanger/data-calf-flanger.json>;
+        modgui:screenshot <modgui/Flanger/screenshot-calf-flanger.png>;
+        modgui:thumbnail <modgui/Flanger/thumb-calf-flanger.png>;
+    ] .
 
 <http://calf.sourceforge.net/plugins/Monosynth>
     modgui:gui [
