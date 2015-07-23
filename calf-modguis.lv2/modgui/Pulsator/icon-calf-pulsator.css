@@ -23,7 +23,7 @@
     top: 13px;
 }
 .calf .bar-top .off-or-on-calf {
-    background-image: url(/resources/toggle2_silver.png{{ns}});
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
     background-size: 46px 62px;
     cursor: pointer;
     height: 31px;

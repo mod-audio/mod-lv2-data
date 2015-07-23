@@ -23,7 +23,7 @@
     top: 13px;
 }
 .calf .bar-top .off-or-on-calf {
-    background-image: url(/resources/toggle2_silver.png{{ns}});
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
     background-size: 46px 62px;
     cursor: pointer;
     height: 31px;
@@ -563,7 +563,7 @@ padding-top: 0.5em;
     z-index: -2;
 }
 .calf-monosynth .slider-vert {
-    background: url(/resources/sliders-vert-disable.png{{ns}});
+    background: url(/resources/sliders-vert-disable.png{{{ns}}});
     height: 122px;
     left: 0;
     cursor: pointer;

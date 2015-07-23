@@ -24,7 +24,7 @@
     top: 13px;
 }
 .calf .bar-top .off-or-on-calf {
-    background-image: url(/resources/toggle2_silver.png{{ns}});
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
     background-size: 46px 62px;
     cursor: pointer;
     height: 31px;
@@ -69,7 +69,7 @@
 }
 
 .calf .groups-bar-left .top {
-    background: url(/resources/side_nw.png{{ns}});
+    background: url(/resources/side_nw.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -77,7 +77,7 @@
     width: 56px;
 }
 .calf .groups-bar-left .bottom {
-    background: url(/resources/side_sw.png{{ns}});
+    background: url(/resources/side_sw.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -96,7 +96,7 @@
 }
 
 .calf .groups-bar-right .top {
-    background: url(/resources/side_ne.png{{ns}});
+    background: url(/resources/side_ne.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -105,7 +105,7 @@
 }
 
 .calf .groups-bar-right .bottom {
-    background: url(/resources/side_se.png{{ns}});
+    background: url(/resources/side_se.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -113,7 +113,7 @@
     width: 56px;
 }
 .calf .groups-bar-right .logo {
-    background: url(/resources/side_e_logo.png{{ns}});
+    background: url(/resources/side_e_logo.png{{{ns}}});
     height: 90px;
     left: 0;
     position: absolute;
@@ -144,27 +144,27 @@
     cursor: pointer;
 }
 .calf .knob1 {
-    background: url(/resources/knob1.png{{ns}});
+    background: url(/resources/knob1.png{{{ns}}});
     height: 20px;
     width: 20px;
 }
 .calf .knob2 {
-    background: url(/resources/knob2-2.png{{ns}});
+    background: url(/resources/knob2-2.png{{{ns}}});
     height: 40px;
     width: 40px;
 }
 .calf .knob3 {
-    background: url(/resources/knob3.png{{ns}});
+    background: url(/resources/knob3.png{{{ns}}});
     height: 60px;
     width: 60px;
 }
 .calf .knob4 {
-    background: url(/resources/knob4.png{{ns}});
+    background: url(/resources/knob4.png{{{ns}}});
     height: 80px;
     width: 80px;
 }
 .calf .knob5 {
-    background: url(/resources/knob5.png{{ns}});
+    background: url(/resources/knob5.png{{{ns}}});
     height: 100px;
     width: 100px;
 }
@@ -177,14 +177,14 @@
     position: absolute;
 }
 .toggle1-silver {
-    background: url(/resources/toggle1_silver.png{{ns}});
+    background: url(/resources/toggle1_silver.png{{{ns}}});
     height: 20px;
     position: absolute;
     width: 30px;
 }
 
 .toggle2_silver-silver {
-    background: url(/resources/toggle2_silver.png{{ns}});
+    background: url(/resources/toggle2_silver.png{{{ns}}});
     height: 40px;
     position: absolute;
     width: 60px;
@@ -210,7 +210,7 @@
 /* Slider */
 
 .calf .slider2-vert {
-    background: url(/resources/slider2-vert.png{{ns}});
+    background: url(/resources/slider2-vert.png{{{ns}}});
     height: 36px;
     position: absolute;
     width: 46px;
@@ -219,7 +219,7 @@
 /* Screw */
 
 .calf .screw_min {
-    background: url(/resources/screw1.png{{ns}});
+    background: url(/resources/screw1.png{{{ns}}});
     background-size: 15px;
     height: 15px;
     position: absolute;
@@ -234,7 +234,7 @@
 /* button of bypess */
 
 .calf .button-bypess {
-    background: url(/resources/toggle2_silver.png{{ns}});
+    background: url(/resources/toggle2_silver.png{{{ns}}});
     height: 40px;
     position: absolute;
     width: 60px;
@@ -266,7 +266,7 @@
     width: 100%;
 }
 .calf-vintagedelay .delay-time .knob-time .value-knob-time {
-    background: url(/resources/entry.png{{ns}});
+    background: url(/resources/entry.png{{{ns}}});
     bottom: -45px;
     height: 24px;
     left: 0;
@@ -290,7 +290,7 @@
     width: 56px;
 }
 .calf-vintagedelay .delay-time .slider-vert {
-    background: url(/resources/sliders-vert-disable.png{{ns}});
+    background: url(/resources/sliders-vert-disable.png{{{ns}}});
     height: 122px;
     left: 0;
     position: absolute;
@@ -300,7 +300,7 @@
     width: 40px;
 }
 .calf-vintagedelay .delay-time .display-delay {
-    background: url(/resources/combo-sm.png{{ns}});
+    background: url(/resources/combo-sm.png{{{ns}}});
     bottom: -30px;
     height: 24px;
     left: -19px;
@@ -359,7 +359,7 @@
 .calf-vintagedelay .mixing .enum{
     position: absolute;
     z-index: 10000 !important;
-    background: url(/resources/entry.png{{ns}});
+    background: url(/resources/entry.png{{{ns}}});
     bottom: 38px;
     width: 80px;
     padding: 2px 0;
