@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#Valve>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-valve.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-valve.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-valve.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-valve.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "rkr Valve" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "lava" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BYPASS" ;
+            lv2:name "Bypass" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Wet/Dry" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
