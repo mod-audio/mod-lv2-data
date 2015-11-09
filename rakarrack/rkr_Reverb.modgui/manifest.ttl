@@ -1,34 +1,34 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<http://rakarrack.sourceforge.net/effects.html#Valve>
+<http://rakarrack.sourceforge.net/effects.html#reve>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-rkr-valve.html> ;
-        modgui:stylesheet <modgui/stylesheet-rkr-valve.css> ;
-        modgui:screenshot <modgui/screenshot-rkr-valve.png> ;
-        modgui:thumbnail <modgui/thumbnail-rkr-valve.png> ;
+        modgui:iconTemplate <modgui/icon-rkr-reverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-reverb.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-reverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-reverb.png> ;
         modgui:brand "Rakarrack" ;
-        modgui:label "rkr Valve" ;
+        modgui:label "rkr Reverb" ;
         modgui:model "lata" ;
         modgui:panel "8-knobs" ;
-        modgui:color "atomic" ;
+        modgui:color "cyan" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "LEVEL" ;
-            lv2:name "Level" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "WETDRY" ;
             lv2:name "Mix" ;
         ] , [
+            lv2:index 1 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
             lv2:index 2 ;
-            lv2:symbol "DIST" ;
-            lv2:name "Distortion" ;
+            lv2:symbol "RS" ;
+            lv2:name "Room Size" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "DRIVE" ;
-            lv2:name "Drive" ;
+            lv2:symbol "TIME" ;
+            lv2:name "Decay" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "LPF" ;
@@ -39,11 +39,11 @@
             lv2:name "Highpass Filter" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "PREFILTER" ;
-            lv2:name "Prefilter" ;
+            lv2:symbol "TYPE" ;
+            lv2:name "F-verb/rand" ;
         ] , [
             lv2:index 7 ;
-            lv2:symbol "LRCr" ;
-            lv2:name "Crossover" ;
+            lv2:symbol "IDEL" ;
+            lv2:name "Pre-delay" ;
         ] ;
     ] .
