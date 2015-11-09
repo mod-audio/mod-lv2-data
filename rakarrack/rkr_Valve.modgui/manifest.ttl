@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-rkr-valve.png> ;
         modgui:thumbnail <modgui/thumbnail-rkr-valve.png> ;
         modgui:brand "Rakarrack" ;
-        modgui:label "rkr Valve" ;
+        modgui:label "Valve" ;
         modgui:model "lata" ;
         modgui:panel "8-knobs" ;
         modgui:color "atomic" ;

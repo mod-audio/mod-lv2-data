@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-rkr-opticaltrem.png> ;
         modgui:thumbnail <modgui/thumbnail-rkr-opticaltrem.png> ;
         modgui:brand "Rakarrack" ;
-        modgui:label "rkr OpticalTrem" ;
+        modgui:label "OpticalTrem" ;
         modgui:model "lata" ;
         modgui:panel "7-knobs" ;
         modgui:color "racing" ;
@@ -23,23 +23,23 @@
             lv2:name "Rate" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "TYPE" ;
-            lv2:name "LFO Type" ;
-        ] , [
-            lv2:index 3 ;
-            lv2:symbol "STDF" ;
-            lv2:name "LFO L/R Delay" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "PAN" ;
-            lv2:name "Panning" ;
-        ] , [
-            lv2:index 5 ;
             lv2:symbol "INV" ;
             lv2:name "Invert" ;
         ] , [
+            lv2:index 3 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "STDF" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
             lv2:index 6 ;
             lv2:symbol "RND" ;
-            lv2:name "Randomness" ;
+            lv2:name "Random" ;
         ] ;
     ] .
