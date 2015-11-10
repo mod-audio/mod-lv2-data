@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-rkr-dual-flange.png> ;
         modgui:thumbnail <modgui/thumbnail-rkr-dual-flange.png> ;
         modgui:brand "Rakarrack" ;
-        modgui:label "rkr Dual Flange" ;
+        modgui:label "Dual Flange" ;
         modgui:model "lata" ;
         modgui:panel "8-knobs" ;
         modgui:color "orange" ;
