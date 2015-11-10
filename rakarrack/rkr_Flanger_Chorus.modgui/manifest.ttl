@@ -43,7 +43,7 @@
             lv2:name "Delay" ;
         ] , [
             lv2:index 7 ;
-            lv2:symbol "PAN" ;
-            lv2:name "Panning" ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
         ] ;
     ] .
