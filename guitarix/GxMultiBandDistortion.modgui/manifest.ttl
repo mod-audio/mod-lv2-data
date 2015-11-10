@@ -41,19 +41,19 @@
         ] , [
             lv2:index 6 ;
             lv2:symbol "OFFSET2" ;
-            lv2:name "OFST 2" ;
+            lv2:name "OFFST 2" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "OFFSET3" ;
-            lv2:name "OFST 3" ;
+            lv2:name "OFFST 3" ;
         ] , [
             lv2:index 8 ;
             lv2:symbol "OFFSET4" ;
-            lv2:name "OFST 4" ;
+            lv2:name "OFFST 4" ;
         ] , [
             lv2:index 9 ;
             lv2:symbol "OFFSET5" ;
-            lv2:name "OFST 5" ;
+            lv2:name "OFFST 5" ;
         ] , [
             lv2:index 10 ;
             lv2:symbol "CROSSOVER_B1_B2" ;
