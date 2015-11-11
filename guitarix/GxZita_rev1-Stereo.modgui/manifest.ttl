@@ -1,0 +1,62 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_zita_rev1_stereo#_zita_rev1_stereo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxzitarev1-stereo.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxzitarev1-stereo.css> ;
+        modgui:screenshot <modgui/screenshot-gxzitarev1-stereo.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxzitarev1-stereo.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxZita_rev1-Ster" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "tribal2" ;
+        modgui:knob "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "level" ;
+            lv2:name "LVL" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "EQ2_FREQ" ;
+            lv2:name "EQ2_FREQ" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "EQ1_LEVEL" ;
+            lv2:name "EQ1_LEVEL" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "EQ1_FREQ" ;
+            lv2:name "EQ1_FREQ" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "IN_DELAY" ;
+            lv2:name "IN_DELAY" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LOW_RT60" ;
+            lv2:name "LOW_RT60" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "LF_X" ;
+            lv2:name "LF_X" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HF_DAMPING" ;
+            lv2:name "HF_DAMPING" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "MID_RT60" ;
+            lv2:name "MID_RT60" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "DRY_WET_MIX" ;
+            lv2:name "DRY_WET_MIX" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "EQ2_LEVEL" ;
+            lv2:name "EQ2_LEVEL" ;
+        ] ;
+    ] .

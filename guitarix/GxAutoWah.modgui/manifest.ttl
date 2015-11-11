@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gxautowah#autowah>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxautowah.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxautowah.css> ;
+        modgui:screenshot <modgui/screenshot-gxautowah.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxautowah.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxAutoWah" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "zinc" ;
+    ] .

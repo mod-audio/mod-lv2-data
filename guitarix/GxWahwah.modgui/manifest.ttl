@@ -1,0 +1,36 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_colwah_#_colwah_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxwahwah.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxwahwah.css> ;
+        modgui:screenshot <modgui/screenshot-gxwahwah.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxwahwah.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxWahwah" ;
+        modgui:model "head-model-001" ;
+        modgui:panel "0700" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "MODEL" ;
+            lv2:name "MODEL" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FREQ" ;
+            lv2:name "FREQ" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "WAH" ;
+            lv2:name "WAH" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "MODE" ;
+            lv2:name "MODE" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "WET_DRY" ;
+            lv2:name "WET_DRY" ;
+        ] ;
+    ] .
