@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#StompBox>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-stompbox.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-stompbox.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-stompbox.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-stompbox.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "StompBox" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "MODE" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "LO" ;
+            lv2:name "Low" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "HI" ;
+            lv2:name "High" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .

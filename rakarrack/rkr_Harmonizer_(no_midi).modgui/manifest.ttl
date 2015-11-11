@@ -1,0 +1,45 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#har_no_mid>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-harmonizer-no-midi.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-harmonizer-no-midi.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-harmonizer-no-midi.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-harmonizer-no-midi.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Harmonizer" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INT" ;
+            lv2:name "Interval" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Pan" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "FREQ" ;
+            lv2:name "Filter Freq" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "FQ" ;
+            lv2:name "Filter Q" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "FGAIN" ;
+            lv2:name "Filter Gain" ;
+        ] ;
+    ] .

@@ -1,0 +1,58 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#eqp>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-parametric-eq.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-parametric-eq.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-parametric-eq.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-parametric-eq.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Parametric EQ" ;
+        modgui:model "boxy" ;
+        modgui:panel "10-sliders" ;
+        modgui:color "petrol" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LFREQ" ;
+            lv2:name "Low" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "LGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "LQ" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "MFREQ" ;
+            lv2:name "Mid" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "MGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "MQ" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HFREQ" ;
+            lv2:name "High" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "HGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "HQ" ;
+            lv2:name "Q" ;
+        ] ;
+    ] .
