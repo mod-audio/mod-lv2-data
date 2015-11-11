@@ -44,6 +44,6 @@
         ] , [
             lv2:index 7 ;
             lv2:symbol "ARP" ;
-            lv2:name "Arp-mix" ;
+            lv2:name "Arp mix" ;
         ] ;
     ] .
