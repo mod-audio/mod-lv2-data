@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#Sequence>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-sequence.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-sequence.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-sequence.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-sequence.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "rkr Sequence" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "skull" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BYPASS" ;
+            lv2:name "hurts" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "S0" ;
+            lv2:name "your" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "S2" ;
+            lv2:name "ears" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "S3" ;
+            lv2:name "Step 3" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "S4" ;
+            lv2:name "Step 4" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "S5" ;
+            lv2:name "Step 5" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "S6" ;
+            lv2:name "Step 6" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "S7" ;
+            lv2:name "Step 7" ;
+        ] ;
+    ] .

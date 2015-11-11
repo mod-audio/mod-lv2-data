@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#Infinity>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-infinity.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-infinity.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-infinity.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-infinity.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Infinity" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "skull" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BYPASS" ;
+            lv2:name "noise" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "not" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "B1" ;
+            lv2:name "usable" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "B2" ;
+            lv2:name "?" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "B3" ;
+            lv2:name "Band 3 Gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "B4" ;
+            lv2:name "Band 4 Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "B5" ;
+            lv2:name "Band 5 Gain" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "B6" ;
+            lv2:name "Band 6 Gain" ;
+        ] ;
+    ] .

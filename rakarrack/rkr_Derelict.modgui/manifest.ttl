@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#dere>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-derelict.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-derelict.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-derelict.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-derelict.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Derelict" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "skull" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BYPASS" ;
+            lv2:name "not" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "good" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "LRCr" ;
+            lv2:name "Left/Right Crossover" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "DRIVE" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "Type" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "NEG" ;
+            lv2:name "Negate (Polarity Switch)" ;
+        ] ;
+    ] .

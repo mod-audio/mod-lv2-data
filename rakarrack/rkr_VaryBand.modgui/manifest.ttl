@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://rakarrack.sourceforge.net/effects.html#VaryBand>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-varyband.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-varyband.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-varyband.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-varyband.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "VaryBand" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "racing" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TEMPO1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TYPE1" ;
+            lv2:name "LFO Type 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "MHCR" ;
+            lv2:name "Mid2/High Crossover" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TEMPO2" ;
+            lv2:name "Rate 2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "TYPE2" ;
+            lv2:name "LFO Type 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "LMCR" ;
+            lv2:name "Low/Mid1 Crossover" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "MMCR" ;
+            lv2:name "Mid1/Mid2 Crossover" ;
+        ] ;
+    ] .
