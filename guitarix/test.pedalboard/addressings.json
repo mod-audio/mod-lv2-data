@@ -1,0 +1,1 @@
+{"/hmi/knob1": [], "/hmi/footswitch1": [], "/hmi/footswitch2": [{"steps": 33, "label": "Calf Envelope Fi", "instance": "/graph/EnvelopeFilter", "port": ":bypass", "minimum": 0.0, "maximum": 1.0}], "/hmi/knob2": [{"steps": 1, "label": "Mode", "instance": "/graph/EnvelopeFilter", "port": "mode", "minimum": 0.0, "maximum": 11.0}]}

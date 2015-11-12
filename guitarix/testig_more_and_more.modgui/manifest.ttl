@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<file:///home/pjotr/.lv2/testing_stuff.pedalboard/testig_more_and_more.ttl>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-testig-more-and-more.html> ;
+        modgui:stylesheet <modgui/stylesheet-testig-more-and-more.css> ;
+        modgui:screenshot <modgui/screenshot-testig-more-and-more.png> ;
+        modgui:thumbnail <modgui/thumbnail-testig-more-and-more.png> ;
+        modgui:brand "Watch out" ;
+        modgui:label "testing" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "warning" ;
+    ] .

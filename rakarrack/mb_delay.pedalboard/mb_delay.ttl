@@ -1,0 +1,248 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix ingen: <http://drobilla.net/ns/ingen#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix pedal: <http://moddevices.com/ns/modpedal#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:b1
+    ingen:tail <_mbdelay_/out> ;
+    ingen:head <playback_1> .
+
+_:b2
+    ingen:tail <_mbdelay_/out> ;
+    ingen:head <playback_2> .
+
+<_mbdelay_>
+    ingen:canvasX 2563.3 ;
+    ingen:canvasY 679.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 3 ;
+    lv2:minorVersion 3 ;
+    lv2:port <_mbdelay_/in> ,
+             <_mbdelay_/out> ,
+             <_mbdelay_/DELAY1> ,
+             <_mbdelay_/DELAY2> ,
+             <_mbdelay_/DELAY3> ,
+             <_mbdelay_/DELAY4> ,
+             <_mbdelay_/DELAY5> ,
+             <_mbdelay_/FEEDBACK1> ,
+             <_mbdelay_/FEEDBACK2> ,
+             <_mbdelay_/FEEDBACK3> ,
+             <_mbdelay_/FEEDBACK4> ,
+             <_mbdelay_/FEEDBACK5> ,
+             <_mbdelay_/GAIN1> ,
+             <_mbdelay_/GAIN2> ,
+             <_mbdelay_/GAIN3> ,
+             <_mbdelay_/GAIN4> ,
+             <_mbdelay_/GAIN5> ,
+             <_mbdelay_/CROSSOVER_B1_B2> ,
+             <_mbdelay_/CROSSOVER_B2_B3> ,
+             <_mbdelay_/CROSSOVER_B3_B4> ,
+             <_mbdelay_/CROSSOVER_B4_B5> ,
+             <_mbdelay_/V1> ,
+             <_mbdelay_/V2> ,
+             <_mbdelay_/V3> ,
+             <_mbdelay_/V4> ,
+             <_mbdelay_/V5> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_mbdelay_#_mbdelay_> ;
+    a ingen:Block .
+
+<_mbdelay_/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<_mbdelay_/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<_mbdelay_/GAIN4>
+    ingen:value -3.250000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/CROSSOVER_B2_B3>
+    ingen:value 210.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/FEEDBACK1>
+    ingen:value 67.515625 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/FEEDBACK2>
+    ingen:value 73.703125 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/FEEDBACK3>
+    ingen:value 73.703125 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/FEEDBACK4>
+    ingen:value 73.703125 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/FEEDBACK5>
+    ingen:value 79.890625 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/GAIN1>
+    ingen:value 2.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/GAIN2>
+    ingen:value -2.593750 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/DELAY4>
+    ingen:value 182.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/DELAY5>
+    ingen:value 182.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/GAIN3>
+    ingen:value -7.843750 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/CROSSOVER_B1_B2>
+    ingen:value 80.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/CROSSOVER_B4_B5>
+    ingen:value 956.562500 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/DELAY1>
+    ingen:value 24.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/DELAY2>
+    ingen:value 24.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/DELAY3>
+    ingen:value 96.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/GAIN5>
+    ingen:value -2.593750 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/CROSSOVER_B3_B4>
+    ingen:value 644.375000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_mbdelay_/V1>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<_mbdelay_/V2>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<_mbdelay_/V3>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<_mbdelay_/V4>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<_mbdelay_/V5>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<control_in>
+    atom:bufferType atom:Sequence ;
+    lv2:index 0 ;
+    lv2:name "Control" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_in" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<control_out>
+    atom:bufferType atom:Sequence ;
+    lv2:index 1 ;
+    lv2:name "Control" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "control_out" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<capture_1>
+    lv2:index 2 ;
+    lv2:name "capture_1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_1" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<capture_2>
+    lv2:index 3 ;
+    lv2:name "capture_2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "capture_2" ;
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<playback_1>
+    lv2:index 4 ;
+    lv2:name "playback_1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_1" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<playback_2>
+    lv2:index 5 ;
+    lv2:name "playback_2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "playback_2" ;
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<>
+    doap:name "mb delay" ;
+    pedal:width 3840 ;
+    pedal:height 1794 ;
+    pedal:addressings <addressings.json> ;
+    pedal:screenshot <screenshot.png> ;
+    pedal:thumbnail <thumbnail.png> ;
+    ingen:polyphony 1 ;
+    ingen:arc _:b1 ,
+              _:b2 ;
+    ingen:block <_mbdelay_> ;
+    lv2:port <control_in> ,
+             <control_out> ,
+             <capture_1> ,
+             <capture_2> ,
+             <playback_1> ,
+             <playback_2> ;
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
+    a lv2:Plugin ,
+        ingen:Graph ,
+        pedal:Pedalboard .
