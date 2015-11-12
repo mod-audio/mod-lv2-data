@@ -12,38 +12,38 @@
         modgui:label "Ring" ;
         modgui:model "lata" ;
         modgui:panel "8-knobs" ;
-        modgui:color "skull" ;
+        modgui:color "gray" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "BYPASS" ;
-            lv2:name "not" ;
-        ] , [
-            lv2:index 1 ;
-            lv2:symbol "WETDRY" ;
-            lv2:name "working" ;
-        ] , [
-            lv2:index 2 ;
-            lv2:symbol "PAN" ;
-            lv2:name "with" ;
-        ] , [
-            lv2:index 3 ;
-            lv2:symbol "LRCr" ;
-            lv2:name "frequencies" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "LEVEL" ;
-            lv2:name "?" ;
-        ] , [
-            lv2:index 5 ;
             lv2:symbol "DEPTH" ;
             lv2:name "Depth" ;
         ] , [
-            lv2:index 6 ;
+            lv2:index 1 ;
             lv2:symbol "FREQ" ;
             lv2:name "Frequency" ;
         ] , [
+            lv2:index 2 ;
+            lv2:symbol "AFREQ" ;
+            lv2:name "Auto-Freq" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "SIN" ;
+            lv2:name "Sine" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "TRI" ;
+            lv2:name "Triangle" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "SAW" ;
+            lv2:name "Sawtooth" ;
+        ] , [
             lv2:index 7 ;
-            lv2:symbol "STEREO" ;
-            lv2:name "Stereo" ;
+            lv2:symbol "SQUARE" ;
+            lv2:name "Square" ;
         ] ;
     ] .

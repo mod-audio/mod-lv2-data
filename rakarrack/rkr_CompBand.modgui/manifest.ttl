@@ -16,34 +16,34 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "M1R" ;
-            lv2:name "Mid1-Ratio" ;
+            lv2:name "Mid1 Ratio" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "M2R" ;
-            lv2:name "Mid2-Ratio" ;
+            lv2:name "Mid2 Ratio" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "HR" ;
-            lv2:name "Hi-Ratio" ;
+            lv2:name "Hi Ratio" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "WETDRY" ;
-            lv2:name "mix" ;
+            lv2:name "Mix" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "M1T" ;
-            lv2:name "Mid1-Thresh" ;
+            lv2:name "Mid1 Thresh" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "M2T" ;
-            lv2:name "Mid2-Thresh" ;
+            lv2:name "Mid2 Thresh" ;
         ] , [
             lv2:index 6 ;
             lv2:symbol "HT" ;
-            lv2:name "Hi-Thresh" ;
+            lv2:name "Hi Thresh" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "GAIN" ;
-            lv2:name "makeup Gain" ;
+            lv2:name "Makeup Gain" ;
         ] ;
     ] .

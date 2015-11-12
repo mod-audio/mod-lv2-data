@@ -10,40 +10,57 @@
         modgui:thumbnail <modgui/thumbnail-rkr-infinity.png> ;
         modgui:brand "Rakarrack" ;
         modgui:label "Infinity" ;
-        modgui:model "lata" ;
-        modgui:panel "8-knobs" ;
-        modgui:color "skull" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "BYPASS" ;
-            lv2:name "noise" ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "WETDRY" ;
-            lv2:name "not" ;
+            lv2:symbol "AUTOPAN" ;
+            lv2:name "Pan" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "B1" ;
-            lv2:name "usable" ;
+            lv2:symbol "RES" ;
+            lv2:name "Res" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "B2" ;
-            lv2:name "?" ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "B3" ;
-            lv2:name "Band 3 Gain" ;
+            lv2:symbol "B1" ;
+            lv2:name "Bnd1 Gain" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "B4" ;
-            lv2:name "Band 4 Gain" ;
+            lv2:symbol "B2" ;
+            lv2:name "Bnd2 Gain" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "B5" ;
-            lv2:name "Band 5 Gain" ;
+            lv2:symbol "B3" ;
+            lv2:name "Bnd3 Gain" ;
         ] , [
             lv2:index 7 ;
+            lv2:symbol "B4" ;
+            lv2:name "Bnd4 Gain" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "B5" ;
+            lv2:name "Bnd5 Gain" ;
+        ] , [
+            lv2:index 9 ;
             lv2:symbol "B6" ;
-            lv2:name "Band 6 Gain" ;
+            lv2:name "Bnd6 Gain" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "B7" ;
+            lv2:name "Bad7 Gain" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "B8" ;
+            lv2:name "Bnd8 Gain" ;
         ] ;
     ] .

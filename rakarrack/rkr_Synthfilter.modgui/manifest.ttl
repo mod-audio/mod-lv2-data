@@ -36,11 +36,11 @@
         ] , [
             lv2:index 5 ;
             lv2:symbol "LSTAGES" ;
-            lv2:name "Lo-Stages" ;
+            lv2:name "Lo Stages" ;
         ] , [
             lv2:index 6 ;
             lv2:symbol "HSTAGES" ;
-            lv2:name "Hi-Stages" ;
+            lv2:name "Hi Stages" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "WIDTH" ;

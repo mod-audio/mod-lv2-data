@@ -24,7 +24,7 @@
         ] , [
             lv2:index 2 ;
             lv2:symbol "MHCR" ;
-            lv2:name "Mid 2 / High Crossover" ;
+            lv2:name "Mid2/High Crossover" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "WETDRY" ;
@@ -40,10 +40,10 @@
         ] , [
             lv2:index 6 ;
             lv2:symbol "LMCR" ;
-            lv2:name "Low / Mid 1 Crossover" ;
+            lv2:name "Low/Mid1 Crossover" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "MMCR" ;
-            lv2:name "Mid 1 / Mid 2 Crossover" ;
+            lv2:name "Mid1/Mid2 Crossover" ;
         ] ;
     ] .
