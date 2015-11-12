@@ -109,7 +109,7 @@
     left:10px;
     position:absolute;
     right:10px;
-    top:430px;
+    top:440px;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-light,
@@ -131,8 +131,8 @@
     background-position:bottom center;
     background-repeat:no-repeat;
     background-size:auto 132px;
-    top: 90px;
-    left: 140px;
+    top: 470px;
+    left: 0px;
     right: 100px;
     cursor:pointer;
     height:66px;
