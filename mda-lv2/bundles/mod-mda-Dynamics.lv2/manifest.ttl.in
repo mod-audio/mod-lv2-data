@@ -1,0 +1,9 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mda:  <http://moddevices.com/plugins/mda/> .
+@prefix mdap: <http://moddevices.com/plugins/mda/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+mda:Dynamics
+    a lv2:Plugin ;
+    rdfs:seeAlso <Dynamics.ttl> ;
+    lv2:binary <Dynamics@LIB_EXT@> .
