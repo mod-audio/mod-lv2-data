@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://invadarecords.com/plugins/lv2/testtone>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-invada-test-tones.html> ;
+        modgui:stylesheet <modgui/stylesheet-invada-test-tones.css> ;
+        modgui:screenshot <modgui/screenshot-invada-test-tones.png> ;
+        modgui:thumbnail <modgui/thumbnail-invada-test-tones.png> ;
+        modgui:brand "Invada" ;
+        modgui:label "Test Tones" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "pink" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "frequency" ;
+            lv2:name "Frequency" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "trim" ;
+            lv2:name "Level" ;
+        ] ;
+    ] .

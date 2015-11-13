@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://invadarecords.com/plugins/lv2/tube/mono>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-invada-tube-distortion-mono.html> ;
+        modgui:stylesheet <modgui/stylesheet-invada-tube-distortion-mono.css> ;
+        modgui:screenshot <modgui/screenshot-invada-tube-distortion-mono.png> ;
+        modgui:thumbnail <modgui/thumbnail-invada-tube-distortion-mono.png> ;
+        modgui:brand "Invada" ;
+        modgui:label "Tube Distortion" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "white" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "drive" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "dcoffset" ;
+            lv2:name "DC Offset" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "phase" ;
+            lv2:name "Phase" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] ;
+    ] .
