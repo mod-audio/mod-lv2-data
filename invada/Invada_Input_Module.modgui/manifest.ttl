@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://invadarecords.com/plugins/lv2/input>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-invada-input-module.html> ;
+        modgui:stylesheet <modgui/stylesheet-invada-input-module.css> ;
+        modgui:screenshot <modgui/screenshot-invada-input-module.png> ;
+        modgui:thumbnail <modgui/thumbnail-invada-input-module.png> ;
+        modgui:brand "Invada" ;
+        modgui:label "Input Module" ;
+        modgui:model "japanese" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "racing" ;
+        modgui:knob "white" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "phaseL" ;
+            lv2:name "Phase (L)" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "phaseR" ;
+            lv2:name "Phase (R)" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "width" ;
+            lv2:name "Width" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "gain" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "pan" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
