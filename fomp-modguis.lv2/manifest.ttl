@@ -1,3 +1,800 @@
-@prefix fomp:   <http://drobilla.net/plugins/fomp/> .
-@prefix mod:    <http://moddevices.com/ns/mod#> .
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/parametricl
+
+<http://drobilla.net/plugins/fomp/parametric1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-4-band-parametric-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-4-band-parametric-filter.css> ;
+        modgui:screenshot <modgui/screenshot-4-band-parametric-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-4-band-parametric-filter.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "4-Band Parametric Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq_1" ;
+            lv2:name "Frq1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "bw_1" ;
+            lv2:name "Bnd1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "gain_1" ;
+            lv2:name "Gain1" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "freq_2" ;
+            lv2:name "Frq2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "bw_2" ;
+            lv2:name "Bnd2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "gain_2" ;
+            lv2:name "Gain2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "freq_3" ;
+            lv2:name "Frq3" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "bw_3" ;
+            lv2:name "Bnd3" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "gain_3" ;
+            lv2:name "Gain3" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "freq_4" ;
+            lv2:name "Frq4" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "bw_4" ;
+            lv2:name "Bnd4" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "gain_4" ;
+            lv2:name "Gain4" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/parametric1
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/autowah
+
+<http://drobilla.net/plugins/fomp/autowah>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-auto-wah.html> ;
+        modgui:stylesheet <modgui/stylesheet-auto-wah.css> ;
+        modgui:screenshot <modgui/screenshot-auto-wah.png> ;
+        modgui:thumbnail <modgui/thumbnail-auto-wah.png> ;
+        modgui:brand "fomp" ;
+        modgui:label "Auto-Wah" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "range" ;
+            lv2:name "Range" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "drive" ;
+            lv2:name "Drive" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/autowah
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/cs_chorus1
+
+<http://drobilla.net/plugins/fomp/cs_chorus1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cs-chorus-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-cs-chorus-1.css> ;
+        modgui:screenshot <modgui/screenshot-cs-chorus-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-cs-chorus-1.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "CS Chorus 1" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mod_amp_1" ;
+            lv2:name "Depth 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mod_freq_1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mod_amp_2" ;
+            lv2:name "Depth 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "mod_freq_2" ;
+            lv2:name "Rate 2" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/cs_chorus1
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/cs_chorus2
+
+<http://drobilla.net/plugins/fomp/cs_chorus2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cs-chorus-2.html> ;
+        modgui:stylesheet <modgui/stylesheet-cs-chorus-2.css> ;
+        modgui:screenshot <modgui/screenshot-cs-chorus-2.png> ;
+        modgui:thumbnail <modgui/thumbnail-cs-chorus-2.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "CS Chorus 2" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mod_amp_1" ;
+            lv2:name "Depth 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mod_freq_1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mod_amp_2" ;
+            lv2:name "Depth 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "mod_freq_2" ;
+            lv2:name "Rate 2" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/cs_chorus2
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/cs_phaser1
+
+<http://drobilla.net/plugins/fomp/cs_phaser1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cs-phaser-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-cs-phaser-1.css> ;
+        modgui:screenshot <modgui/screenshot-cs-phaser-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-cs-phaser-1.png> ;
+        modgui:brand "fomp" ;
+        modgui:label "CS Phaser 1" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "purple" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "fb_gain" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "sections" ;
+            lv2:name "Sections" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "lin_fm_gain" ;
+            lv2:name "Lin FM" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/cs_phaser1
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/cs_phaser1_lfo
+
+<http://drobilla.net/plugins/fomp/cs_phaser1_lfo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cs-phaser-1-with-lfo.html> ;
+        modgui:stylesheet <modgui/stylesheet-cs-phaser-1-with-lfo.css> ;
+        modgui:screenshot <modgui/screenshot-cs-phaser-1-with-lfo.png> ;
+        modgui:thumbnail <modgui/thumbnail-cs-phaser-1-with-lfo.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "CS Phaser 1 LFO" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "purple" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "fb_gain" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "sections" ;
+            lv2:name "Sections" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "lfo_freq" ;
+            lv2:name "LFO freq" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "lfo_waveform" ;
+            lv2:name "LFO wave" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "mod_gain" ;
+            lv2:name "Mod" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/cs_phaser1_lfo
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/mvchpf1
+
+<http://drobilla.net/plugins/fomp/mvchpf1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-moog-high-pass-filter-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-moog-high-pass-filter-1.css> ;
+        modgui:screenshot <modgui/screenshot-moog-high-pass-filter-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-moog-high-pass-filter-1.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Moog Highpass" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Frequency" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "exp_gm_gain" ;
+            lv2:name "Exp FM gain" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output gain" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/mvchpf1
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/mvclpf1
+
+<http://drobilla.net/plugins/fomp/mvclpf1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-moog-low-pass-filter-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-moog-low-pass-filter-1.css> ;
+        modgui:screenshot <modgui/screenshot-moog-low-pass-filter-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-moog-low-pass-filter-1.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Moog Lowpass 1" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "res" ;
+            lv2:name "Reson" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "res_gain" ;
+            lv2:name "Res Gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/mvclpf1
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/mvclpf2
+
+<http://drobilla.net/plugins/fomp/mvclpf2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-moog-low-pass-filter-2.html> ;
+        modgui:stylesheet <modgui/stylesheet-moog-low-pass-filter-2.css> ;
+        modgui:screenshot <modgui/screenshot-moog-low-pass-filter-2.png> ;
+        modgui:thumbnail <modgui/thumbnail-moog-low-pass-filter-2.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Moog Lowpass 2" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "res" ;
+            lv2:name "Reson" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "res_gain" ;
+            lv2:name "Res gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/mvclpf2
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/mvclpf3
+
+<http://drobilla.net/plugins/fomp/mvclpf3>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-moog-low-pass-filter-3.html> ;
+        modgui:stylesheet <modgui/stylesheet-moog-low-pass-filter-3.css> ;
+        modgui:screenshot <modgui/screenshot-moog-low-pass-filter-3.png> ;
+        modgui:thumbnail <modgui/thumbnail-moog-low-pass-filter-3.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Moog Lowpass 3" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "res" ;
+            lv2:name "Reson" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "res_gain" ;
+            lv2:name "Res gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/mvclpf3
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/mvclpf4
+
+<http://drobilla.net/plugins/fomp/mvclpf4>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-moog-low-pass-filter-4.html> ;
+        modgui:stylesheet <modgui/stylesheet-moog-low-pass-filter-4.css> ;
+        modgui:screenshot <modgui/screenshot-moog-low-pass-filter-4.png> ;
+        modgui:thumbnail <modgui/thumbnail-moog-low-pass-filter-4.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Moog Lowpass 4" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "res" ;
+            lv2:name "Reson" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "poles" ;
+            lv2:name "Poles" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "res_gain" ;
+            lv2:name "Res gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/mvclpf4
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/pulse_vco
+
+<http://drobilla.net/plugins/fomp/pulse_vco>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-pulse-vco.html> ;
+        modgui:stylesheet <modgui/stylesheet-pulse-vco.css> ;
+        modgui:screenshot <modgui/screenshot-pulse-vco.png> ;
+        modgui:thumbnail <modgui/thumbnail-pulse-vco.png> ;
+        modgui:brand "fomp" ;
+        modgui:label "Pulse VCO" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "green" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "octave" ;
+            lv2:name "Octave" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tune" ;
+            lv2:name "Tune" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "lp_filter" ;
+            lv2:name "Lowpass" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "lin_fm_gain" ;
+            lv2:name "Lin FM" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/pulse_vco
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/rec_vco
+
+<http://drobilla.net/plugins/fomp/rec_vco>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rec-vco.html> ;
+        modgui:stylesheet <modgui/stylesheet-rec-vco.css> ;
+        modgui:screenshot <modgui/screenshot-rec-vco.png> ;
+        modgui:thumbnail <modgui/thumbnail-rec-vco.png> ;
+        modgui:brand "fomp" ;
+        modgui:label "Rec VCO" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "green" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "octave" ;
+            lv2:name "Octave" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tune" ;
+            lv2:name "Tune" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "waveform" ;
+            lv2:name "Wave" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "lp_filrer" ;
+            lv2:name "Lowpass" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "lin_fm_gain" ;
+            lv2:name "Lin FM" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "form_mod" ;
+            lv2:name "Mod" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/rec_vco
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/reverb_amb
+
+<http://drobilla.net/plugins/fomp/reverb_amb>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-reverb-amb.html> ;
+        modgui:stylesheet <modgui/stylesheet-reverb-amb.css> ;
+        modgui:screenshot <modgui/screenshot-reverb-amb.png> ;
+        modgui:thumbnail <modgui/thumbnail-reverb-amb.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Reverb Ambisonics" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "blue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rt_low" ;
+            lv2:name "Dec. low" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "rt_mid" ;
+            lv2:name "Dec. mid" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "xyz_gain" ;
+            lv2:name "XYZ level" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "fw_freq" ;
+            lv2:name "Freq 1" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "f2_freq" ;
+            lv2:name "Freq 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "xover" ;
+            lv2:name "Xover" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/reverb_amb
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/reverb
+
+<http://drobilla.net/plugins/fomp/reverb>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-reverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-reverb.css> ;
+        modgui:screenshot <modgui/screenshot-reverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-reverb.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Reverb" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "blue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rt_low" ;
+            lv2:name "Dec. low" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "rt_mid" ;
+            lv2:name "Dec. mid" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "f1_freq" ;
+            lv2:name "Freq 1" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "f2_freq" ;
+            lv2:name "Freq 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "xover" ;
+            lv2:name "Xover" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/reverb
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/saw_vco
+
+<http://drobilla.net/plugins/fomp/saw_vco>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-saw-vco.html> ;
+        modgui:stylesheet <modgui/stylesheet-saw-vco.css> ;
+        modgui:screenshot <modgui/screenshot-saw-vco.png> ;
+        modgui:thumbnail <modgui/thumbnail-saw-vco.png> ;
+        modgui:brand "fomp" ;
+        modgui:label "Saw VCO" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "green" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "octave" ;
+            lv2:name "Octave" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tune" ;
+            lv2:name "Tune" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "lp_filter" ;
+            lv2:name "Lowpass" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "lin_fm_gain" ;
+            lv2:name "Lin FM" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/saw_vco
+###############################################################################
+
+###############################################################################
+## START http://drobilla.net/plugins/fomp/triple_chorus
+
+<http://drobilla.net/plugins/fomp/triple_chorus>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-triple-chorus.html> ;
+        modgui:stylesheet <modgui/stylesheet-triple-chorus.css> ;
+        modgui:screenshot <modgui/screenshot-triple-chorus.png> ;
+        modgui:thumbnail <modgui/thumbnail-triple-chorus.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Triple Chorus" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mod_amp_1" ;
+            lv2:name "Depth 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mod_freq_1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mod_amp_2" ;
+            lv2:name "Depth 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "mod_freq_2" ;
+            lv2:name "Rate 2" ;
+        ] ;
+    ] .
+    
+## END http://drobilla.net/plugins/fomp/triple_chorus
+###############################################################################
