@@ -1,1 +1,0 @@
-{"/hmi/knob1": [], "/hmi/footswitch1": [{"steps": 1, "label": "Channel", "instance": "/graph/SwitchBox2", "port": "Switch", "minimum": 0.0, "maximum": 1.0}], "/hmi/footswitch2": [], "/hmi/knob2": []}
