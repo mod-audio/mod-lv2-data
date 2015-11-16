@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/blop/sequencer_64>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-64-step-sequencer.html> ;
+        modgui:stylesheet <modgui/stylesheet-64-step-sequencer.css> ;
+        modgui:screenshot <modgui/screenshot-64-step-sequencer.png> ;
+        modgui:thumbnail <modgui/thumbnail-64-step-sequencer.png> ;
+        modgui:brand "BLOP" ;
+        modgui:label "64 Stepsequencer" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "wood1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "steps" ;
+            lv2:name "Loop Steps" ;
+        ] ;
+    ] .

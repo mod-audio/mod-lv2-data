@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/blop/difference>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-difference.html> ;
+        modgui:stylesheet <modgui/stylesheet-difference.css> ;
+        modgui:screenshot <modgui/screenshot-difference.png> ;
+        modgui:thumbnail <modgui/thumbnail-difference.png> ;
+        modgui:brand "BLOP" ;
+        modgui:label "Difference" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "wood1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "minuend" ;
+            lv2:name "Minuend" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "subtrahend" ;
+            lv2:name "Subtrahend" ;
+        ] ;
+    ] .

@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/blop/branch>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-branch.html> ;
+        modgui:stylesheet <modgui/stylesheet-branch.css> ;
+        modgui:screenshot <modgui/screenshot-branch.png> ;
+        modgui:thumbnail <modgui/thumbnail-branch.png> ;
+        modgui:brand "BLOP" ;
+        modgui:label "Branch" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "wood1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "in" ;
+            lv2:name "Input" ;
+        ] ;
+    ] .
