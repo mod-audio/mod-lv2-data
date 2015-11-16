@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxshimmizita.png> ;
         modgui:thumbnail <modgui/thumbnail-gxshimmizita.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxshimmizita" ;
+        modgui:label "Shimmizita" ;
         modgui:model "boxy" ;
         modgui:panel "12-sliders" ;
         modgui:color "wood4" ;

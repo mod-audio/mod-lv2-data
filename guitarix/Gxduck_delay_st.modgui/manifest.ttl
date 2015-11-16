@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxduckdelayst.png> ;
         modgui:thumbnail <modgui/thumbnail-gxduckdelayst.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxduck_delay_st" ;
+        modgui:label "Duck Delay Stereo" ;
         modgui:model "japanese" ;
         modgui:panel "8-knobs" ;
         modgui:color "cyan" ;
@@ -45,6 +45,6 @@
         ] , [
             lv2:index 7 ;
             lv2:symbol "COLORATION" ;
-            lv2:name "COLORATIo" ;
+            lv2:name "COLOR" ;
         ] ;
     ] .

@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxhogsfoot.png> ;
         modgui:thumbnail <modgui/thumbnail-gxhogsfoot.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxHogsFoot" ;
+        modgui:label "HogsFoot" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "wood2" ;

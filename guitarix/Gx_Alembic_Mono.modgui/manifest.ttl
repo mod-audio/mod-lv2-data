@@ -12,7 +12,7 @@
         modgui:label "Alembic Mono" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
-        modgui:color "warning" ;
+        modgui:color "racing" ;
         modgui:knob "copper" ;
         modgui:port [
             lv2:index 0 ;
@@ -21,7 +21,7 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "middle" ;
-            lv2:name "Middle" ;
+            lv2:name "Mid" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "treble" ;
@@ -33,6 +33,6 @@
         ] , [
             lv2:index 4 ;
             lv2:symbol "volume" ;
-            lv2:name "Volume" ;
+            lv2:name "Level" ;
         ] ;
     ] .

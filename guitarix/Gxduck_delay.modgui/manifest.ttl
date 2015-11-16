@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxduckdelay.png> ;
         modgui:thumbnail <modgui/thumbnail-gxduckdelay.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxduck_delay" ;
+        modgui:label "Duck Delay" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
         modgui:color "dots" ;

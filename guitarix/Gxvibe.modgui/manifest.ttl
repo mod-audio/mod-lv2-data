@@ -9,41 +9,34 @@
         modgui:screenshot <modgui/screenshot-gxvibe.png> ;
         modgui:thumbnail <modgui/thumbnail-gxvibe.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxvibe" ;
-        modgui:model "lata" ;
-        modgui:panel "8-knobs" ;
-        modgui:color "star" ;
+        modgui:label "Vibe" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "green" ;
+        modgui:knob "purple" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "TEMPO" ;
-            lv2:name "Rate" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "DEPTH" ;
             lv2:name "DEPTH" ;
         ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
             lv2:index 2 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 3 ;
             lv2:symbol "WIDTH" ;
             lv2:name "WIDTH" ;
         ] , [
-            lv2:index 3 ;
-            lv2:symbol "FB" ;
-            lv2:name "FeedBack" ;
-        ] , [
             lv2:index 4 ;
-            lv2:symbol "PAN" ;
-            lv2:name "PAN" ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "DF" ;
-            lv2:name "DF" ;
-        ] , [
-            lv2:index 6 ;
             lv2:symbol "CROSS" ;
-            lv2:name "CROSS" ;
-        ] , [
-            lv2:index 7 ;
-            lv2:symbol "WETDRY" ;
-            lv2:name "MIX" ;
+            lv2:name "Xover" ;
         ] ;
     ] .

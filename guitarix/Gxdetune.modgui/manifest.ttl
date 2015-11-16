@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxdetune.png> ;
         modgui:thumbnail <modgui/thumbnail-gxdetune.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxdetune" ;
+        modgui:label "Detune" ;
         modgui:model "boxy" ;
         modgui:panel "7-knobs" ;
         modgui:color "lava" ;
@@ -24,19 +24,23 @@
             lv2:name "OCTAVE" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "LOW" ;
-            lv2:name "LOW" ;
+            lv2:symbol "DRY" ;
+            lv2:name "DRY" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "TREBLE" ;
-            lv2:name "High" ;
-        ] , [
-            lv2:index 4 ;
             lv2:symbol "WET" ;
             lv2:name "WET" ;
         ] , [
+            lv2:index 4 ;
+            lv2:symbol "LOW" ;
+            lv2:name "LOW" ;
+        ] , [
             lv2:index 5 ;
-            lv2:symbol "DRY" ;
-            lv2:name "DRY" ;
+            lv2:symbol "MIDDLETREBLE" ;
+            lv2:name "MID" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "TREBLE" ;
+            lv2:name "TREBLE" ;
         ] ;
     ] .

@@ -9,11 +9,11 @@
         modgui:screenshot <modgui/screenshot-gxcolorsound-tonebender.png> ;
         modgui:thumbnail <modgui/thumbnail-gxcolorsound-tonebender.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxColorSound" ;
+        modgui:label "ColorSound Tonebender" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
         modgui:color "flowerpower" ;
-        modgui:knob "bronze" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "ATTACK" ;
@@ -25,6 +25,6 @@
         ] , [
             lv2:index 2 ;
             lv2:symbol "WET_DRY" ;
-            lv2:name "WET_DRY" ;
+            lv2:name "Mix" ;
         ] ;
     ] .

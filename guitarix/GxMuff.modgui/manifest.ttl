@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxmuff.png> ;
         modgui:thumbnail <modgui/thumbnail-gxmuff.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxMuff" ;
+        modgui:label "Muff" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "black" ;

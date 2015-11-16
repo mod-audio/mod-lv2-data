@@ -9,38 +9,36 @@
         modgui:screenshot <modgui/screenshot-gxredeye-big-chump.png> ;
         modgui:thumbnail <modgui/thumbnail-gxredeye-big-chump.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxBigchump" ;
-        modgui:model "boxy" ;
-        modgui:panel "7-knobs" ;
-        modgui:color "racing" ;
-        modgui:knob "blue" ;
+        modgui:label "Big Chump" ;
+        modgui:model "combo-model-001" ;
+        modgui:panel "0778" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "Speed" ;
-            lv2:name "Rate" ;
+            lv2:symbol "Volume" ;
+            lv2:name "Level" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "Intensity" ;
-            lv2:name "Depth" ;
-        ] , [
-            lv2:index 2 ;
-            lv2:symbol "Feedback" ;
-            lv2:name "Feedback" ;
-        ] , [
-            lv2:index 3 ;
-            lv2:symbol "Sinewave" ;
-            lv2:name "Sine" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "Gain" ;
-            lv2:name "Drive" ;
-        ] , [
-            lv2:index 5 ;
             lv2:symbol "Tone" ;
             lv2:name "Tone" ;
         ] , [
+            lv2:index 2 ;
+            lv2:symbol "Gain" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "Intensity" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "Speed" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "Feedback" ;
+            lv2:name "Feedback" ;
+        ] , [
             lv2:index 6 ;
-            lv2:symbol "Volume" ;
-            lv2:name "Level" ;
+            lv2:symbol "Sinewave" ;
+            lv2:name "Sinewave" ;
         ] ;
     ] .

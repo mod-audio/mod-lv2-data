@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxhfbrightener.png> ;
         modgui:thumbnail <modgui/thumbnail-gxhfbrightener.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxHF_Brightener" ;
+        modgui:label "HF Brightener" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "white" ;
