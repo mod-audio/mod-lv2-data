@@ -12,16 +12,16 @@
         modgui:label "Tube Tremelo" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
-        modgui:color "dots" ;
-        modgui:knob "purple" ;
+        modgui:color "racing" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "speed" ;
-            lv2:name "Speed" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "depth" ;
             lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "speed" ;
+            lv2:name "Speed" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "gain" ;
@@ -29,6 +29,6 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "sinewave" ;
-            lv2:name "Sine" ;
+            lv2:name "Wave" ;
         ] ;
     ] .

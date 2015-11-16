@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxjcm800pre.png> ;
         modgui:thumbnail <modgui/thumbnail-gxjcm800pre.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxjcm800pre" ;
+        modgui:label "JCM800 pre" ;
         modgui:model "combo-model-001" ;
         modgui:panel "0778" ;
         modgui:port [

@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxscreamingbird.png> ;
         modgui:thumbnail <modgui/thumbnail-gxscreamingbird.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxScreamingBird" ;
+        modgui:label "ScreamingBird" ;
         modgui:model "boxy" ;
         modgui:panel "1-knob" ;
         modgui:color "dots" ;

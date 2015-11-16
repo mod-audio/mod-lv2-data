@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxsustainer.png> ;
         modgui:thumbnail <modgui/thumbnail-gxsustainer.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxSustainer" ;
+        modgui:label "Sustainer" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "slime" ;
@@ -21,6 +21,6 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "VOLUME" ;
-            lv2:name "VOLUME" ;
+            lv2:name "Level" ;
         ] ;
     ] .

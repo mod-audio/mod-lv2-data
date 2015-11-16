@@ -9,22 +9,22 @@
         modgui:screenshot <modgui/screenshot-gxhornet.png> ;
         modgui:thumbnail <modgui/thumbnail-gxhornet.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxHornet" ;
+        modgui:label "Hornet" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
         modgui:color "lava" ;
         modgui:knob "petrol" ;
         modgui:port [
             lv2:index 0 ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "VOLUME" ;
+        ] , [
+            lv2:index 1 ;
             lv2:symbol "SUSTAIN" ;
             lv2:name "SUSTAIN" ;
         ] , [
-            lv2:index 1 ;
+            lv2:index 2 ;
             lv2:symbol "FUZZ" ;
             lv2:name "FUZZ" ;
-        ] , [
-            lv2:index 2 ;
-            lv2:symbol "VOLUME" ;
-            lv2:name "VOLUME" ;
         ] ;
     ] .

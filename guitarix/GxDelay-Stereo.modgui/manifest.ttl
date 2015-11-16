@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxdelay-stereo.png> ;
         modgui:thumbnail <modgui/thumbnail-gxdelay-stereo.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxDelay-Stereo" ;
+        modgui:label "Delay Stereo" ;
         modgui:model "boxy" ;
         modgui:panel "7-knobs" ;
         modgui:color "tribal2" ;
@@ -20,27 +20,27 @@
             lv2:name "L Time" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "level_l" ;
-            lv2:name "L Level" ;
-        ] , [
-            lv2:index 2 ;
             lv2:symbol "timt_r" ;
             lv2:name "R Time" ;
         ] , [
-            lv2:index 3 ;
-            lv2:symbol "level_r" ;
-            lv2:name "R Level" ;
+            lv2:index 2 ;
+            lv2:symbol "link" ;
+            lv2:name "Xover" ;
         ] , [
-            lv2:index 4 ;
+            lv2:index 3 ;
             lv2:symbol "mode" ;
             lv2:name "Mode" ;
         ] , [
+            lv2:index 4 ;
+            lv2:symbol "timt_l" ;
+            lv2:name "L Time" ;
+        ] , [
             lv2:index 5 ;
-            lv2:symbol "lfo" ;
-            lv2:name "LFO" ;
+            lv2:symbol "level_r" ;
+            lv2:name "R Level" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "link" ;
-            lv2:name "Link (L+R)" ;
+            lv2:symbol "lfo" ;
+            lv2:name "LFO" ;
         ] ;
     ] .

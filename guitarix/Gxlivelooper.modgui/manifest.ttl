@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxlivelooper.png> ;
         modgui:thumbnail <modgui/thumbnail-gxlivelooper.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gxlivelooper" ;
+        modgui:label "Livelooper" ;
         modgui:model "boxy-small" ;
         modgui:panel "1-footswitch" ;
         modgui:color "wood2" ;

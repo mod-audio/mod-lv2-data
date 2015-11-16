@@ -12,19 +12,19 @@
         modgui:label "Tube Screamer" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
-        modgui:color "lava" ;
+        modgui:color "green" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "fslider2_" ;
-            lv2:name "Drive" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "fslider0_" ;
             lv2:name "Level" ;
         ] , [
-            lv2:index 2 ;
+            lv2:index 1 ;
             lv2:symbol "fslider1_" ;
             lv2:name "Tone" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "fslider2_" ;
+            lv2:name "Drive" ;
         ] ;
     ] .

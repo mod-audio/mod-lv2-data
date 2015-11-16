@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxfuzzfacejh2.png> ;
         modgui:thumbnail <modgui/thumbnail-gxfuzzfacejh2.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxFuzzFaceJH2" ;
+        modgui:label "FuzzFace JH2" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "warning" ;

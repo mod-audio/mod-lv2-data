@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxamplifier-stereo-x.png> ;
         modgui:thumbnail <modgui/thumbnail-gxamplifier-stereo-x.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gx-S-Amplifier" ;
+        modgui:label "Amp X Stereo" ;
         modgui:model "rack" ;
         modgui:panel "model-001" ;
         modgui:port [

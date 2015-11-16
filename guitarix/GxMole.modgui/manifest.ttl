@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxmole.png> ;
         modgui:thumbnail <modgui/thumbnail-gxmole.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxMole" ;
+        modgui:label "Mole" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "orange" ;
