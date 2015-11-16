@@ -1,0 +1,46 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/fomp/reverb>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-reverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-reverb.css> ;
+        modgui:screenshot <modgui/screenshot-reverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-reverb.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "Reverb" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "blue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rt_low" ;
+            lv2:name "Dec. low" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "rt_mid" ;
+            lv2:name "Dec. mid" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "out_mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "f1_freq" ;
+            lv2:name "Freq 1" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "f2_freq" ;
+            lv2:name "Freq 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "xover" ;
+            lv2:name "Xover" ;
+        ] ;
+    ] .
