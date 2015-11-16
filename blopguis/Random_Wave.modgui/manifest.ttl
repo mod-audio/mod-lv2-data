@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/blop/random>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-random-wave.html> ;
+        modgui:stylesheet <modgui/stylesheet-random-wave.css> ;
+        modgui:screenshot <modgui/screenshot-random-wave.png> ;
+        modgui:thumbnail <modgui/thumbnail-random-wave.png> ;
+        modgui:brand "BLOP" ;
+        modgui:label "Random Wave" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "wood1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Frequency" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "smooth" ;
+            lv2:name "Smoothness" ;
+        ] ;
+    ] .

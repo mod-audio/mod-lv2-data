@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/blop/quantiser_50>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-quantiser-50-steps.html> ;
+        modgui:stylesheet <modgui/stylesheet-quantiser-50-steps.css> ;
+        modgui:screenshot <modgui/screenshot-quantiser-50-steps.png> ;
+        modgui:thumbnail <modgui/thumbnail-quantiser-50-steps.png> ;
+        modgui:brand "BLOP" ;
+        modgui:label "Quantiser 50" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "wood1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "min" ;
+            lv2:name "Minimum" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "max" ;
+            lv2:name "Maximum" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "range" ;
+            lv2:name "Match Range" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "steps" ;
+            lv2:name "Steps" ;
+        ] ;
+    ] .
