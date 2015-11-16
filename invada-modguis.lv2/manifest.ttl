@@ -1,0 +1,3 @@
+@prefix fomp:   <http://drobilla.net/plugins/fomp/> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
