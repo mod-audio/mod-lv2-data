@@ -1,13 +1,10 @@
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
-@prefix mod:    <http://moddevices.com/ns/mod#> .
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 
 ###############################################################################
 ## START http://drobilla.net/plugins/blop/sawtooth
 
 <http://drobilla.net/plugins/blop/sawtooth>
-	mod:brand "BLOP" ;
-	mod:label "Sawtooth" ;
 	modgui:gui [
 		modgui:resourcesDirectory <modgui> ;
 		modgui:iconTemplate <modgui/icon-sawtooth.html> ;
@@ -23,8 +20,6 @@
 ## START http://drobilla.net/plugins/blop/square
 
 <http://drobilla.net/plugins/blop/square>
-	mod:brand "BLOP" ;
-	mod:label "Square" ;
 	modgui:gui [
 		modgui:resourcesDirectory <modgui> ;
 		modgui:iconTemplate <modgui/icon-square.html> ;
@@ -40,8 +35,6 @@
 ## START http://drobilla.net/plugins/blop/triangle
 
 <http://drobilla.net/plugins/blop/triangle>
-	mod:brand "BLOP" ;
-	mod:label "Triangle" ;
 	modgui:gui [
 		modgui:resourcesDirectory <modgui> ;
 		modgui:iconTemplate <modgui/icon-triangle.html> ;

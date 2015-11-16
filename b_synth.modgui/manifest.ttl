@@ -8,7 +8,7 @@
         modgui:stylesheet <modgui/stylesheet-setbfree-dsp-tonewheel-organ.css> ;
         modgui:screenshot <modgui/screenshot-setbfree-dsp-tonewheel-organ.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-dsp-tonewheel-organ.png> ;
-        modgui:brand "X42" ;
+        modgui:brand "x42" ;
         modgui:label "setBfree" ;
         modgui:model "boxy-small" ;
         modgui:panel "1-footswitch" ;
