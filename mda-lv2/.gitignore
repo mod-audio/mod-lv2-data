@@ -1,9 +1,0 @@
-build/
-.waf*
-*.o
-*.so
-*.pyc
-.lock*
-
-manifest.ttl
-debian
