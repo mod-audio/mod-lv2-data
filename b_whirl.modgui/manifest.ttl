@@ -1,0 +1,82 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+###############################################################################
+## START http://gareus.org/oss/lv2/b_whirl#simple
+
+<http://gareus.org/oss/lv2/b_whirl#simple>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-setbfree-whirl-speaker.html> ;
+        modgui:stylesheet <modgui/stylesheet-setbfree-whirl-speaker.css> ;
+        modgui:screenshot <modgui/screenshot-setbfree-whirl-speaker.png> ;
+        modgui:thumbnail <modgui/thumbnail-setbfree-whirl-speaker.png> ;
+        modgui:brand "X42" ;
+        modgui:label "setBfree Whirl" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "wood3" ;
+        modgui:knob "copper" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rt_speed" ;
+            lv2:name "Motors Ac/Dc" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "hornlvl" ;
+            lv2:name "Horn Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "drumlvl" ;
+            lv2:name "Drum Level" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "drumwidth" ;
+            lv2:name "Stereo Width" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/b_whirl#simple
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/b_whirl#extended
+
+<http://gareus.org/oss/lv2/b_whirl#extended>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-setbfree-whirl-speaker-extended-version.html> ;
+        modgui:stylesheet <modgui/stylesheet-setbfree-whirl-speaker-extended-version.css> ;
+        modgui:screenshot <modgui/screenshot-setbfree-whirl-speaker-extended-version.png> ;
+        modgui:thumbnail <modgui/thumbnail-setbfree-whirl-speaker-extended-version.png> ;
+        modgui:brand "Robin" ;
+        modgui:label "setBfree" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "wood3" ;
+        modgui:knob "copper" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rt_speed" ;
+            lv2:name "Motors Ac/Dc" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "hornlvl" ;
+            lv2:name "Horn Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "drumlvl" ;
+            lv2:name "Drum Level" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "micdist" ;
+            lv2:name "MicDist" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "hornwidth" ;
+            lv2:name "Width" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/b_whirl#extended
+###############################################################################
