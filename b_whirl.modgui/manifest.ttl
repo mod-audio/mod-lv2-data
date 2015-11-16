@@ -11,8 +11,8 @@
         modgui:stylesheet <modgui/stylesheet-setbfree-whirl-speaker.css> ;
         modgui:screenshot <modgui/screenshot-setbfree-whirl-speaker.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-whirl-speaker.png> ;
-        modgui:brand "X42" ;
-        modgui:label "setBfree Whirl" ;
+        modgui:brand "x42" ;
+        modgui:label "setBfree Whirl Speaker" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-4-knobs" ;
         modgui:color "wood3" ;
@@ -49,8 +49,8 @@
         modgui:stylesheet <modgui/stylesheet-setbfree-whirl-speaker-extended-version.css> ;
         modgui:screenshot <modgui/screenshot-setbfree-whirl-speaker-extended-version.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-whirl-speaker-extended-version.png> ;
-        modgui:brand "Robin" ;
-        modgui:label "setBfree" ;
+        modgui:brand "x42" ;
+        modgui:label "setBfree Whirl Speaker XT" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-4-knobs" ;
         modgui:color "wood3" ;

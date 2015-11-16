@@ -8,7 +8,7 @@
         modgui:stylesheet <modgui/stylesheet-setbfree-organ-reverb.css> ;
         modgui:screenshot <modgui/screenshot-setbfree-organ-reverb.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-organ-reverb.png> ;
-        modgui:brand "X42" ;
+        modgui:brand "x42" ;
         modgui:label "setBfree Reverb" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
