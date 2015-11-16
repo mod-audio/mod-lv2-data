@@ -1,0 +1,82 @@
+.blop.triangle {
+	width: 200px;
+	height: 297px;
+	border-radius: 0;
+}
+.blop.triangle .mod-knob {
+	height: 110px;
+	float: left;
+	cursor: pointer;
+	margin-left: 10px;
+	overflow: visible !important
+}
+.blop.triangle .mod-control-group {
+	position: absolute;
+	margin: 0;
+	top:72px;
+	height: 140px;
+	width: 100%;
+}
+.blop.triangle #freq .mod-knob-image {
+	background-image: url(/resources/vintage-big2.png{{{ns}}});
+	background-size: auto 105px;
+	width: 105px;
+	height: 105px;
+}
+.blop.triangle #slope .mod-knob-image{
+	background-image: url(/resources/knob.png{{{ns}}});
+	background-size: auto 50px;
+	margin-top: 53px;
+	width: 50px;
+	height: 50px;
+}
+.blop.triangle .mod-knob-value  {
+	color: #57D8FF !important;
+	background: #222;
+	font-family: monospace;
+	text-align: right;
+	margin: 5px auto;
+	padding-right: 2px;
+	border: 1px inset #555;
+	display: block;
+	height: 20px;
+	width: 90px;
+	overflow: hidden;
+}
+.blop.triangle {
+	background: url(/resources/triangle.png{{{ns}}}) no-repeat;
+}
+.blop.triangle .mod-footswitch {
+	background-image:url(/resources/switch-key.png{{{ns}}});
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: auto 154px;
+	cursor: pointer;
+	height: 77px;
+	width: 43px;
+	top: 50px;
+	left: 130px !important;
+	position: absolute;
+	z-index: 100
+}
+.blop.triangle .mod-footswitch.on {
+	background-position:top center;
+}
+.blop.triangle .mod-footswitch.off {
+	background-position:bottom center;
+}
+.blop.triangle .mod-light {
+	height: 32px;
+	width: 32px;
+	top: 45px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	position: absolute;
+}
+.blop.triangle .mod-light.off { 
+	background-image:url(/resources/red-light-off.png{{{ns}}}); 
+}
+.blop.triangle .mod-light.on  { 
+	background-image:url(/resources/red-light-on.png{{{ns}}}); 
+}

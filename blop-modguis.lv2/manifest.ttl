@@ -1,0 +1,36 @@
+@prefix blop:   <http://drobilla.net/plugins/blop/> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+blop:sawtooth
+	mod:brand "BLOP" ;
+	mod:label "Sawtooth" ;
+	modgui:gui [
+		modgui:resourcesDirectory <modgui> ;
+		modgui:iconTemplate <modgui/icon-sawtooth.html> ;
+		modgui:stylesheet <modgui/sawtooth.css> ;
+		modgui:screenshot <modgui/screenshot-sawtooth.png> ;
+		modgui:thumbnail <modgui/thumb-sawtooth.png> ;
+	] .
+
+blop:square
+	mod:brand "BLOP" ;
+	mod:label "Square" ;
+	modgui:gui [
+		modgui:resourcesDirectory <modgui> ;
+		modgui:iconTemplate <modgui/icon-square.html> ;
+		modgui:stylesheet <modgui/square.css> ;
+		modgui:screenshot <modgui/screenshot-square.png> ;
+		modgui:thumbnail <modgui/thumb-square.png> ;
+	] .
+
+blop:triangle
+	mod:brand "BLOP" ;
+	mod:label "Triangle" ;
+	modgui:gui [
+		modgui:resourcesDirectory <modgui> ;
+		modgui:iconTemplate <modgui/icon-triangle.html> ;
+		modgui:stylesheet <modgui/triangle.css> ;
+		modgui:screenshot <modgui/screenshot-triangle.png> ;
+		modgui:thumbnail <modgui/thumb-triangle.png> ;
+	] .
