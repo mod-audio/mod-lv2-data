@@ -43,7 +43,7 @@
             lv2:name "Pre-delay" ;
         ] , [
             lv2:index 7 ;
-            lv2:symbol "PAN" ;
-            lv2:name "Panning" ;
+            lv2:symbol "TYPE" ;
+            lv2:name "Type" ;
         ] ;
     ] .
