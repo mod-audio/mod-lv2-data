@@ -1,0 +1,2183 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#awha
+
+<http://rakarrack.sourceforge.net/effects.html#awha>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-alienwah.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-alienwah.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-alienwah.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-alienwah.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "AlienWah" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "yellow" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "STDL" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "DELAY" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+## END http://rakarrack.sourceforge.net/effects.html#awha
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#aphas
+
+<http://rakarrack.sourceforge.net/effects.html#aphas>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-analog-phaser.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-analog-phaser.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-analog-phaser.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-analog-phaser.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Analog Phaser" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "WIDTH" ;
+            lv2:name "Width" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "STAGES" ;
+            lv2:name "Stages" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+## END http://rakarrack.sourceforge.net/effects.html#aphas
+###############################################################################
+
+###############################################################################
+## START <http://rakarrack.sourceforge.net/effects.html#Arpie>
+
+<http://rakarrack.sourceforge.net/effects.html#Arpie>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-arpie.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-arpie.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-arpie.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-arpie.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Arpie" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "red" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FEEDBACK" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "SUBD" ;
+            lv2:name "Subdivision" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "PATTERN" ;
+            lv2:name "Pattern" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HARM" ;
+            lv2:name "Harmonics" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "ARP" ;
+            lv2:name "Arp mix" ;
+        ] ;
+    ] .
+
+## END <http://rakarrack.sourceforge.net/effects.html#Arpie>
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#cabe
+
+<http://rakarrack.sourceforge.net/effects.html#cabe>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-cabinet.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-cabinet.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-cabinet.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-cabinet.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Cabinet" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "wood2" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "PRESET" ;
+            lv2:name "Preset" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#cabe
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#CoilCrafter
+
+<http://rakarrack.sourceforge.net/effects.html#CoilCrafter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-coil-crafter.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-coil-crafter.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-coil-crafter.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-coil-crafter.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Coil Crafter" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "camouflage" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TONE" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "F2" ;
+            lv2:name "Dest Freq" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "Q2" ;
+            lv2:name "Dest Reson" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "MODE" ;
+            lv2:name "Neck Pickup" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "F1" ;
+            lv2:name "Orig Freq" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "Q1" ;
+            lv2:name "Orig Reson" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#CoilCrafter
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#CompBand
+
+<http://rakarrack.sourceforge.net/effects.html#CompBand>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-compband.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-compband.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-compband.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-compband.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "CompBand" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "M1R" ;
+            lv2:name "Mid1 Ratio" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "M2R" ;
+            lv2:name "Mid2 Ratio" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "HR" ;
+            lv2:name "Hi Ratio" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "M1T" ;
+            lv2:name "Mid1 Thresh" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "M2T" ;
+            lv2:name "Mid2 Thresh" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HT" ;
+            lv2:name "Hi Thresh" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Makeup Gain" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#CompBand
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#comp
+
+<http://rakarrack.sourceforge.net/effects.html#comp>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-compressor.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-compressor.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-compressor.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-compressor.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Compressor" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "RATIO" ;
+            lv2:name "RATIO" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "THRESHOLD" ;
+            lv2:name "Threshold" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "KNEE" ;
+            lv2:name "Knee" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "OUTPUT" ;
+            lv2:name "Makeup Gain" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "ATTACK" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "RELEASE" ;
+            lv2:name "Release" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "PEAK" ;
+            lv2:name "Peak" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "STEREO" ;
+            lv2:name "Stereo" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#comp
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#dere
+
+<http://rakarrack.sourceforge.net/effects.html#dere>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-derelict.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-derelict.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-derelict.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-derelict.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Derelict" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "DRIVE" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "Type" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HPF" ;
+            lv2:name "Highpass Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "OCT" ;
+            lv2:name "Suboctave" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "COLOR" ;
+            lv2:name "Color" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#dere
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#DistBand
+
+<http://rakarrack.sourceforge.net/effects.html#DistBand>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-distband.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-distband.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-distband.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-distband.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "DistBand" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LMCR" ;
+            lv2:name "Low/Mid Crossover" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "MHCR" ;
+            lv2:name "Mid/High Crossover" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LVOL" ;
+            lv2:name "Low Gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "MVOL" ;
+            lv2:name "Mid Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HVOL" ;
+            lv2:name "High Gain" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "DRIVE" ;
+            lv2:name "Drive" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#DistBand
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#dist
+
+<http://rakarrack.sourceforge.net/effects.html#dist>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-distorsion.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-distorsion.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-distorsion.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-distorsion.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Distortion" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "DRIVE" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "Type" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HPF" ;
+            lv2:name "Highpass Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "OCT" ;
+            lv2:name "Suboctave" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "LRCr" ;
+            lv2:name "Crossover" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#dist
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Dual_Flange
+
+<http://rakarrack.sourceforge.net/effects.html#Dual_Flange>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-dual-flange.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-dual-flange.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-dual-flange.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-dual-flange.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Dual Flange" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "THZ" ;
+            lv2:name "ThruZero" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Dual_Flange
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#eco
+
+<http://rakarrack.sourceforge.net/effects.html#eco>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-echo.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-echo.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-echo.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-echo.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Echo" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "red" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DELAY" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FEEDBACK" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LR_DELAY" ;
+            lv2:name "Offset" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LRCr" ;
+            lv2:name "Crossover" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "REV" ;
+            lv2:name "Reverse" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#eco
+###############################################################################
+
+
+###############################################################################
+## START <http://rakarrack.sourceforge.net/effects.html#Echotron
+
+<http://rakarrack.sourceforge.net/effects.html#Echotron>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-echotron.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-echotron.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-echotron.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-echotron.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Echotron" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "red" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Dampening" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LFOTYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "WIDTH" ;
+            lv2:name "LFO Width" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Filter Depth" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "LENGTH" ;
+            lv2:name "Taps" ;
+        ] ;
+    ] .
+
+## END<http://rakarrack.sourceforge.net/effects.html#Echotron
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Echoverse
+
+<http://rakarrack.sourceforge.net/effects.html#Echoverse>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-echoverse.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-echoverse.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-echoverse.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-echoverse.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Echoverse" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "red" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DELAY" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FEEDBACK" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "SUBD" ;
+            lv2:name "Subdivision" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "REV" ;
+            lv2:name "Reverse" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "LR_DELAY" ;
+            lv2:name "Offset" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "ES" ;
+            lv2:name "Stereo" ;
+        ] ;
+    ] .
+
+## ENDhttp://rakarrack.sourceforge.net/effects.html#Echoverse
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#eql
+
+<http://rakarrack.sourceforge.net/effects.html#eql>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-eq.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-eq.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-eq.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-eq.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "EQ" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "petrol" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Q" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "HZ31" ;
+            lv2:name "31Hz" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "HZ63" ;
+            lv2:name "63Hz" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "HZ125" ;
+            lv2:name "125Hz" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HZ250" ;
+            lv2:name "250Hz" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HZ500" ;
+            lv2:name "500Hz" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "KHZ1" ;
+            lv2:name "1kHz" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "KHZ2" ;
+            lv2:name "2kHz" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "KHZ4" ;
+            lv2:name "4kHz" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "KHZ8" ;
+            lv2:name "8kHz" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "KHZ16" ;
+            lv2:name "16kHz" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#eql
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Exciter
+
+<http://rakarrack.sourceforge.net/effects.html#Exciter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-exciter.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-exciter.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-exciter.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-exciter.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Exciter" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "HAR1" ;
+            lv2:name "1st Harmonic" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "HAR2" ;
+            lv2:name "2nd Harmonic" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "HAR3" ;
+            lv2:name "3rd Harmonic" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "HAR4" ;
+            lv2:name "4th Harmonic" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "HAR5" ;
+            lv2:name "5th Harmonic" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HAR6" ;
+            lv2:name "6th Harmonic" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HAR7" ;
+            lv2:name "7th Harmonic" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HAR8" ;
+            lv2:name "8th Harmonic" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Exciter
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Expander
+
+<http://rakarrack.sourceforge.net/effects.html#Expander>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-expander.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-expander.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-expander.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-expander.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Expander" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "THRESHOLD" ;
+            lv2:name "Threshold" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "HPF" ;
+            lv2:name "Highpass Filter" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "OUTPUT" ;
+            lv2:name "Makeup gain" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "ATTACK" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "RELEASE" ;
+            lv2:name "Release" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "SHAPE" ;
+            lv2:name "Shape" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Expander
+###############################################################################
+
+###############################################################################
+## STARThttp://rakarrack.sourceforge.net/effects.html#chor
+<http://rakarrack.sourceforge.net/effects.html#chor>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-flangerchorus.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-flangerchorus.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-flangerchorus.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-flangerchorus.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Flanger/Chorus" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "WIDTH" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "DELAY" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#chor
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#har_no_mid
+
+<http://rakarrack.sourceforge.net/effects.html#har_no_mid>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-harmonizer-no-midi.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-harmonizer-no-midi.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-harmonizer-no-midi.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-harmonizer-no-midi.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Harmonizer" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INT" ;
+            lv2:name "Interval" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Pan" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "FREQ" ;
+            lv2:name "Filter Freq" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "FQ" ;
+            lv2:name "Filter Q" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "FGAIN" ;
+            lv2:name "Filter Gain" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#har_no_mid
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Infinity
+
+<http://rakarrack.sourceforge.net/effects.html#Infinity>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-infinity.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-infinity.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-infinity.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-infinity.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Infinity" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "AUTOPAN" ;
+            lv2:name "Pan" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "RES" ;
+            lv2:name "Res" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "B1" ;
+            lv2:name "Bnd1 Gain" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "B2" ;
+            lv2:name "Bnd2 Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "B3" ;
+            lv2:name "Bnd3 Gain" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "B4" ;
+            lv2:name "Bnd4 Gain" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "B5" ;
+            lv2:name "Bnd5 Gain" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "B6" ;
+            lv2:name "Bnd6 Gain" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "B7" ;
+            lv2:name "Bad7 Gain" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "B8" ;
+            lv2:name "Bnd8 Gain" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Infinity
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#delm
+
+<http://rakarrack.sourceforge.net/effects.html#delm>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-musical-delay.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-musical-delay.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-musical-delay.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-musical-delay.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Musical Delay" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "red" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEL1" ;
+            lv2:name "Subdiv 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FB1" ;
+            lv2:name "Feedb 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "DEL2" ;
+            lv2:name "Subdiv 2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "FB2" ;
+            lv2:name "Feedb 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "OFFS" ;
+            lv2:name "Offset" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Time" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#delm
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#MuTroMojo
+
+<http://rakarrack.sourceforge.net/effects.html#MuTroMojo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-mutromojo.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-mutromojo.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-mutromojo.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-mutromojo.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "MuTroMojo" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "star" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "Q" ;
+            lv2:name "Resonance" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LP" ;
+            lv2:name "Lowpass Level" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "BP" ;
+            lv2:name "Bandpass Level" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HP" ;
+            lv2:name "Highpass Level" ;
+        ] ;
+    ] .
+
+## ENDhttp://rakarrack.sourceforge.net/effects.html#MuTroMojo
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Otrem
+
+<http://rakarrack.sourceforge.net/effects.html#Otrem>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-opticaltrem.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-opticaltrem.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-opticaltrem.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-opticaltrem.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "OpticalTrem" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "racing" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "STDF" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "INV" ;
+            lv2:name "Invert" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Otrem
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#pan
+
+<http://rakarrack.sourceforge.net/effects.html#pan>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-pan.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-pan.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-pan.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-pan.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Pan" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "racing" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "AUTO" ;
+            lv2:name "Autopan" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "STDL" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "EXTRA_AMOUNT" ;
+            lv2:name "Amount" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "EXTRA_ON" ;
+            lv2:name "Enable" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#pan
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#eqp
+
+<http://rakarrack.sourceforge.net/effects.html#eqp>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-parametric-eq.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-parametric-eq.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-parametric-eq.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-parametric-eq.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Parametric EQ" ;
+        modgui:model "boxy" ;
+        modgui:panel "10-sliders" ;
+        modgui:color "petrol" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LFREQ" ;
+            lv2:name "Low" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "LGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "LQ" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "MFREQ" ;
+            lv2:name "Mid" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "MGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "MQ" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HFREQ" ;
+            lv2:name "High" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "HGAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "HQ" ;
+            lv2:name "Q" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#eqp
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#reve
+
+<http://rakarrack.sourceforge.net/effects.html#reve>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-reverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-reverb.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-reverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-reverb.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Reverb" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cyan" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TIME" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "RS" ;
+            lv2:name "Room Size" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HPF" ;
+            lv2:name "Highpass Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "IDEL" ;
+            lv2:name "Pre-delay" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#reve
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Reverbtron
+
+<http://rakarrack.sourceforge.net/effects.html#Reverbtron>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-reverbtron.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-reverbtron.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-reverbtron.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-reverbtron.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "rkr Reverbtron" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cyan" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LENGTH" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "DIFFUSE" ;
+            lv2:name "Diffusion" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DAMP" ;
+            lv2:name "Dampening" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "STRETCH" ;
+            lv2:name "Stretch" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "FADE" ;
+            lv2:name "Fade" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "DELAY" ;
+            lv2:name "Pre-Delay" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Reverbtron
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Ring
+
+<http://rakarrack.sourceforge.net/effects.html#Ring>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-ring.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-ring.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-ring.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-ring.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Ring" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "gray" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FREQ" ;
+            lv2:name "Frequency" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "AFREQ" ;
+            lv2:name "Auto-Freq" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "SIN" ;
+            lv2:name "Sine" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "TRI" ;
+            lv2:name "Triangle" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "SAW" ;
+            lv2:name "Sawtooth" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "SQUARE" ;
+            lv2:name "Square" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Ring
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Sequence
+
+<http://rakarrack.sourceforge.net/effects.html#Sequence>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-sequence.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-sequence.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-sequence.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-sequence.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "rkr Sequence" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "warning" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "Q" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "RANGE" ;
+            lv2:name "Rnge" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "S0" ;
+            lv2:name "Stp1" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "S2" ;
+            lv2:name "Stp2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "S3" ;
+            lv2:name "Stp3" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "S4" ;
+            lv2:name "Stp4" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "S5" ;
+            lv2:name "Stp5" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "S6" ;
+            lv2:name "Stp6" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "S7" ;
+            lv2:name "Stp7" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "S8" ;
+            lv2:name "Stp8" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Sequence
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#ShelfBoost
+
+<http://rakarrack.sourceforge.net/effects.html#ShelfBoost>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-shelf-boost.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-shelf-boost.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-shelf-boost.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-shelf-boost.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Shelf Boost" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TONE" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "PRES" ;
+            lv2:name "Presence" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "STEREO" ;
+            lv2:name "Stereo" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#ShelfBoost
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Shifter
+
+<http://rakarrack.sourceforge.net/effects.html#Shifter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-shifter.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-shifter.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-shifter.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-shifter.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Shifter" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INT" ;
+            lv2:name "Interval" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "MODE" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "ATACK" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "DECAY" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "THRESH" ;
+            lv2:name "Threshold" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "DN" ;
+            lv2:name "Shift" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Shifter
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Shuffle
+
+<http://rakarrack.sourceforge.net/effects.html#Shuffle>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-shuffle.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-shuffle.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-shuffle.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-shuffle.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Shuffle" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "pink" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LFREQ" ;
+            lv2:name "Freq 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "M1FREQ" ;
+            lv2:name "Freq 2" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "M2FREQ" ;
+            lv2:name "Freq 3" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "HFREQ" ;
+            lv2:name "Freq 4" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LGAIN" ;
+            lv2:name "Gain 1" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "M1GAIN" ;
+            lv2:name "Gain 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "M2GAIN" ;
+            lv2:name "Gain 3" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "HGAIN" ;
+            lv2:name "Gain 4" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Shuffle
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid
+
+<http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-stereoharmonizer-no-midi.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-stereoharmonizer-no-midi.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-stereoharmonizer-no-midi.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-stereoharmonizer-no-midi.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "StereoHarmonizer" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INTL" ;
+            lv2:name "Left Interval" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Wet/Dry" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "GAINL" ;
+            lv2:name "Left Gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "INTR" ;
+            lv2:name "Right Interval" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "GAINR" ;
+            lv2:name "Right Gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "INTR" ;
+            lv2:name "Right Interval" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "CHR" ;
+            lv2:name "Right Chroma" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#StompBox
+
+<http://rakarrack.sourceforge.net/effects.html#StompBox>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-stompbox.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-stompbox.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-stompbox.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-stompbox.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "StompBox" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "MODE" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "LO" ;
+            lv2:name "Low" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "HI" ;
+            lv2:name "High" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
+
+## END hhttp://rakarrack.sourceforge.net/effects.html#StompBox
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz
+
+<http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-stompboxfuzz.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-stompboxfuzz.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-stompboxfuzz.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-stompboxfuzz.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "StompBox:Fuzz" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "flowerpower" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "HI" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "MID" ;
+            lv2:name "Mid" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LO" ;
+            lv2:name "Bias" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Sustainer
+
+<http://rakarrack.sourceforge.net/effects.html#Sustainer>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-sustainer.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-sustainer.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-sustainer.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-sustainer.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Sustainer" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "gray" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "SUS" ;
+            lv2:name "Sustain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "GAIN" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Sustainer
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Synthfilter
+
+<http://rakarrack.sourceforge.net/effects.html#Synthfilter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-synthfilter.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-synthfilter.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-synthfilter.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-synthfilter.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Synthfilter" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "LSTAGES" ;
+            lv2:name "Lo Stages" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "HSTAGES" ;
+            lv2:name "Hi Stages" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "WIDTH" ;
+            lv2:name "Width" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Synthfilter
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Valve
+
+<http://rakarrack.sourceforge.net/effects.html#Valve>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-valve.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-valve.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-valve.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-valve.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Valve" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "atomic" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "DIST" ;
+            lv2:name "Distortion" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "DRIVE" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LPF" ;
+            lv2:name "Lowpass Filter" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "HPF" ;
+            lv2:name "Highpass Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "PREFILTER" ;
+            lv2:name "Prefilter" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "LRCr" ;
+            lv2:name "Crossover" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Valve
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#VaryBand
+
+<http://rakarrack.sourceforge.net/effects.html#VaryBand>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-varyband.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-varyband.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-varyband.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-varyband.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "VaryBand" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "racing" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TEMPO1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TYPE1" ;
+            lv2:name "LFO Type 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "MHCR" ;
+            lv2:name "Mid2/High Crossover" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TEMPO2" ;
+            lv2:name "Rate 2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "TYPE2" ;
+            lv2:name "LFO Type 2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "LMCR" ;
+            lv2:name "Low/Mid1 Crossover" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "MMCR" ;
+            lv2:name "Mid1/Mid2 Crossover" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#VaryBand
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Vibe
+
+<http://rakarrack.sourceforge.net/effects.html#Vibe>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-vibe.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-vibe.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-vibe.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-vibe.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Vibe" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "FB" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "STDL" ;
+            lv2:name "LFO L/R Delay" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "WIDTH" ;
+            lv2:name "Width" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Vibe
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#Vocoder
+
+<http://rakarrack.sourceforge.net/effects.html#Vocoder>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-vocoder.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-vocoder.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-vocoder.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-vocoder.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "Vocoder" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "RING" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Q" ;
+            lv2:name "Q" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "MUF" ;
+            lv2:name "Smear" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "INGAIN" ;
+            lv2:name "Input gain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "PAN" ;
+            lv2:name "Panning" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#Vocoder
+###############################################################################
+
+###############################################################################
+## START http://rakarrack.sourceforge.net/effects.html#wha
+
+<http://rakarrack.sourceforge.net/effects.html#wha>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rkr-wahwah.html> ;
+        modgui:stylesheet <modgui/stylesheet-rkr-wahwah.css> ;
+        modgui:screenshot <modgui/screenshot-rkr-wahwah.png> ;
+        modgui:thumbnail <modgui/thumbnail-rkr-wahwah.png> ;
+        modgui:brand "Rakarrack" ;
+        modgui:label "WahWah" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "yellow" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DEPTH" ;
+            lv2:name "Depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TEMPO" ;
+            lv2:name "Rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "SENSE" ;
+            lv2:name "Sensitivity" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:symbol "TYPE" ;
+            lv2:name "LFO Type" ;
+            lv2:index 4 ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "MODE" ;
+            lv2:name "Filter Type" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "INV" ;
+            lv2:name "Invert" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "RND" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+
+## END http://rakarrack.sourceforge.net/effects.html#wha
+###############################################################################
