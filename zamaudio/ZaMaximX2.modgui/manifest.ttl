@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZaMaximX2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamaximx2.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamaximx2.css> ;
+        modgui:screenshot <modgui/screenshot-zamaximx2.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamaximx2.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZaMaximX2" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "cream" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "thresh" ;
+            lv2:name "Thresh" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "ceil" ;
+            lv2:name "Ceiling" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "rel" ;
+            lv2:name "Release" ;
+        ] ;
+    ] .

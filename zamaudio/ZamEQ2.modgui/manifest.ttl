@@ -1,0 +1,66 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamEQ2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zameq2.html> ;
+        modgui:stylesheet <modgui/stylesheet-zameq2.css> ;
+        modgui:screenshot <modgui/screenshot-zameq2.png> ;
+        modgui:thumbnail <modgui/thumbnail-zameq2.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamEQ2" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "boost1" ;
+            lv2:name "Lvl1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "bw1" ;
+            lv2:name "Bnd1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "f1" ;
+            lv2:name "Frq1" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "boost2" ;
+            lv2:name "Lvl2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "bw2" ;
+            lv2:name "Bnd2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "f2" ;
+            lv2:name "Frq2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "boostl" ;
+            lv2:name "Low" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "fl" ;
+            lv2:name "Lfrq" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "boosth" ;
+            lv2:name "High" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "fh" ;
+            lv2:name "Hfrq" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "master" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "peaks" ;
+            lv2:name "Peaks ON" ;
+        ] ;
+    ] .

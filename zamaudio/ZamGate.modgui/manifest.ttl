@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamGate>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamgate.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamgate.css> ;
+        modgui:screenshot <modgui/screenshot-zamgate.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamgate.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamGate" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "wood4" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "thr" ;
+            lv2:name "Thresh" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "att" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "rel" ;
+            lv2:name "Release" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mak" ;
+            lv2:name "Makeup" ;
+        ] ;
+    ] .

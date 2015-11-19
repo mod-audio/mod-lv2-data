@@ -1,0 +1,66 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamGEQ31>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamgeq31.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamgeq31.css> ;
+        modgui:screenshot <modgui/screenshot-zamgeq31.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamgeq31.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamGEQ31" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "master" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "band1" ;
+            lv2:name "32Hz" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "band2" ;
+            lv2:name "40Hz" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "band3" ;
+            lv2:name "50Hz" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "band4" ;
+            lv2:name "63Hz" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "band5" ;
+            lv2:name "79Hz" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "band6" ;
+            lv2:name "100Hz" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "band7" ;
+            lv2:name "126Hz" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "band8" ;
+            lv2:name "158Hz" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "band9" ;
+            lv2:name "200Hz" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "band10" ;
+            lv2:name "251Hz" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "band11" ;
+            lv2:name "316Hz" ;
+        ] ;
+    ] .

@@ -1,0 +1,42 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamTube>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamtube.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamtube.css> ;
+        modgui:screenshot <modgui/screenshot-zamtube.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamtube.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamTube" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tonestack" ;
+            lv2:name "Model" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "tubedrive" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "bass" ;
+            lv2:name "Bass" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "mids" ;
+            lv2:name "Mid" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "treb" ;
+            lv2:name "Treble" ;
+        ] ;
+    ] .

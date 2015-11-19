@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamHeadX2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamheadx2.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamheadx2.css> ;
+        modgui:screenshot <modgui/screenshot-zamheadx2.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamheadx2.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamHeadX2" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "az" ;
+            lv2:name "Azimuth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "elev" ;
+            lv2:name "Elevate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "width" ;
+            lv2:name "Width" ;
+        ] ;
+    ] .

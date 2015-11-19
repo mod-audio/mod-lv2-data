@@ -1,0 +1,66 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZaMultiComp>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamulticomp.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamulticomp.css> ;
+        modgui:screenshot <modgui/screenshot-zamulticomp.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamulticomp.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZaMultiComp" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "cream" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "thr1" ;
+            lv2:name "Thr1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "rat1" ;
+            lv2:name "Rat1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "att1" ;
+            lv2:name "A1" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "rel1" ;
+            lv2:name "R1" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "thr2" ;
+            lv2:name "Thr2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "rat2" ;
+            lv2:name "Rat2" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "att2" ;
+            lv2:name "A2" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "rel2" ;
+            lv2:name "R2" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "thr3" ;
+            lv2:name "Thr3" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "rat3" ;
+            lv2:name "Rat3" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "att3" ;
+            lv2:name "A3" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "rel3" ;
+            lv2:name "R3" ;
+        ] ;
+    ] .

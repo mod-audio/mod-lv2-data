@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamAutoSat>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamautosat.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamautosat.css> ;
+        modgui:screenshot <modgui/screenshot-zamautosat.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamautosat.png> ;
+        modgui:brand "ZamAudio" ;
+        modgui:label "ZamAutoSat" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "cream" ;
+    ] .
