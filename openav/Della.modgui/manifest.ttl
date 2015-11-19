@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://www.openavproductions.com/artyfx#della>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-della.html> ;
+        modgui:stylesheet <modgui/stylesheet-della.css> ;
+        modgui:screenshot <modgui/screenshot-della.png> ;
+        modgui:thumbnail <modgui/thumbnail-della.png> ;
+        modgui:brand "OpenAV" ;
+        modgui:label "Della" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "time" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "feedback" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "volume" ;
+            lv2:name "Level" ;
+        ] ;
+    ] .
