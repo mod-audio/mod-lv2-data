@@ -79,7 +79,7 @@
 ###############################################################################
 ## START http://drobilla.net/plugins/blop/sequencer_16
 
-<http://drobilla.net/plugins/blop/sequencer_16
+<http://drobilla.net/plugins/blop/sequencer_16>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon-16-step-sequencer.html> ;

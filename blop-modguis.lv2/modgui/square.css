@@ -1,29 +1,29 @@
-.blop.square {
+.blop_square {
 	width: 200px;
 	height: 297px;
 	border-radius: 0;
 }
-.blop.square .mod-knob {
+.blop_square .mod-knob {
 	height: 110px;
 	float: left;
 	cursor: pointer;
 	margin-left: 10px;
 	overflow: visible !important
 }
-.blop.square .mod-control-group {
+.blop_square .mod-control-group {
 	position: absolute;
 	margin: 0;
 	top:72px;
 	height: 140px;
 	width: 100%;
 }
-.blop.square #freq .mod-knob-image {
+.blop_square #freq .mod-knob-image {
 	background-image: url(/resources/vintage-big2.png{{{ns}}});
 	background-size: auto 110px;
 	width: 110px;
 	height: 110px;
 }
-.blop.square .mod-knob-value {
+.blop_square .mod-knob-value {
 	color: #57D8FF !important;
 	background: #222;
 	font-family: monospace;
@@ -36,10 +36,10 @@
 	width: 90px;
 	overflow: hidden;
 }
-.blop.square {
+.blop_square {
 	background: url(/resources/square.png{{{ns}}}) no-repeat;
 }
-.blop.square .mod-footswitch {
+.blop_square .mod-footswitch {
 	background-image:url(/resources/switch-key.png{{{ns}}});
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -52,13 +52,13 @@
 	position: absolute;
 	z-index: 100;
 }
-.blop.square .mod-footswitch.on {
+.blop_square .mod-footswitch.on {
 	background-position:top center;
 }
-.blop.square .mod-footswitch.off {
+.blop_square .mod-footswitch.off {
 	background-position:bottom center;
 }
-.blop.square .mod-light {
+.blop_square .mod-light {
 	height: 32px;
 	width: 32px;
 	top: 45px;
@@ -67,9 +67,9 @@
 	margin: 0 auto;
 	position: absolute;
 }
-.blop.square .mod-light.off {
+.blop_square .mod-light.off {
 	background-image:url(/resources/red-light-off.png{{{ns}}});
 }
-.blop.square .mod-light.on {
+.blop_square .mod-light.on {
 	background-image:url(/resources/red-light-on.png{{{ns}}});
 }
