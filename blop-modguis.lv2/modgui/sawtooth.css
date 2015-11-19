@@ -1,29 +1,29 @@
-.blop.sawtooth {
+.blop_sawtooth {
 	width: 200px;
 	height: 297px;
 	border-radius: 0;
 }
-.blop.sawtooth .mod-knob {
+.blop_sawtooth .mod-knob {
 	height: 110px;
 	float: left;
 	cursor: pointer;
 	margin-left: 10px;
 	overflow: visible !important
 }
-.blop.sawtooth .mod-control-group {
+.blop_sawtooth .mod-control-group {
 	position: absolute;
 	margin: 0;
 	top:72px;
 	height: 140px;
 	width: 100%;
 }
-.blop.sawtooth #freq .mod-knob-image {
+.blop_sawtooth #freq .mod-knob-image {
 	background-image: url(/resources/vintage-big2.png{{{ns}}});
 	background-size: auto 110px;
 	width: 110px;
 	height: 110px;
 }
-.blop.sawtooth .mod-knob-value {
+.blop_sawtooth .mod-knob-value {
 	color: #57D8FF !important;
 	background: #222;
 	font-family: monospace;
@@ -36,10 +36,10 @@
 	width: 90px;
 	overflow: hidden;
 }
-.blop.sawtooth {
+.blop_sawtooth {
 	background: url(/resources/sawtooth.png{{{ns}}}) no-repeat;
 }
-.blop.sawtooth .mod-footswitch {
+.blop_sawtooth .mod-footswitch {
 	background-image:url(/resources/switch-key.png{{{ns}}});
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -52,13 +52,13 @@
 	position: absolute;
 	z-index: 100;
 }
-.blop.sawtooth .mod-footswitch.on {
+.blop_sawtooth .mod-footswitch.on {
 	background-position:top center;
 }
-.blop.sawtooth .mod-footswitch.off {
+.blop_sawtooth .mod-footswitch.off {
 	background-position:bottom center;
 }
-.blop.sawtooth .mod-light {
+.blop_sawtooth .mod-light {
 	height: 32px;
 	width: 32px;
 	top: 45px;
@@ -67,9 +67,9 @@
 	margin: 0 auto;
 	position: absolute;
 }
-.blop.sawtooth .mod-light.off {
+.blop_sawtooth .mod-light.off {
 	background-image:url(/resources/red-light-off.png{{{ns}}});
 }
-.blop.sawtooth .mod-light.on {
+.blop_sawtooth .mod-light.on {
 	background-image:url(/resources/red-light-on.png{{{ns}}});
 }
