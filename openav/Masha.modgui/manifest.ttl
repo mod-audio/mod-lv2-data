@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://www.openavproductions.com/artyfx#masha>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-masha.html> ;
+        modgui:stylesheet <modgui/stylesheet-masha.css> ;
+        modgui:screenshot <modgui/screenshot-masha.png> ;
+        modgui:thumbnail <modgui/thumbnail-masha.png> ;
+        modgui:brand "OpenAV" ;
+        modgui:label "Masha" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "time" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "amplitude" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "dry_wet" ;
+            lv2:name "Mix" ;
+        ] ;
+    ] .

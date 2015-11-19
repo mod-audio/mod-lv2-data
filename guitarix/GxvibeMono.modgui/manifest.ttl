@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxvibemono.png> ;
         modgui:thumbnail <modgui/thumbnail-gxvibemono.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxvibeMono" ;
+        modgui:label "Vibe Mono" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
         modgui:color "red" ;
@@ -24,15 +24,15 @@
             lv2:name "DEPTH" ;
         ] , [
             lv2:index 2 ;
+            lv2:symbol "WETDRY" ;
+            lv2:name "MIX" ;
+        ] , [
+            lv2:index 3 ;
             lv2:symbol "FB" ;
             lv2:name "Feedback" ;
         ] , [
-            lv2:index 3 ;
+            lv2:index 4 ;
             lv2:symbol "WIDTH" ;
             lv2:name "WIDTH" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "WETDRY" ;
-            lv2:name "MIX" ;
         ] ;
     ] .
