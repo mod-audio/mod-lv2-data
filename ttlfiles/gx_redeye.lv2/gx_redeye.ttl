@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -30,6 +30,7 @@
 @prefix opt:  <http://lv2plug.in/ns/ext/options#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -58,10 +59,11 @@
     lv2:extensionData work:interface ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
+  mod:brand "Guitarix";
+	mod:label "Redeye" ;
 rdfs:comment """
 
 ...
@@ -101,8 +103,8 @@ rdfs:comment """
         lv2:index 3 ;
         lv2:symbol "Feedback" ;
         lv2:name "Feedback";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
         a lv2:InputPort ,
@@ -110,7 +112,7 @@ rdfs:comment """
         lv2:index 4 ;
         lv2:symbol "Speed" ;
         lv2:name "Speed";
-        lv2:default 5 ;
+        lv2:default 5.0 ;
         lv2:minimum 0.1 ;
         lv2:maximum 10.0 ;
     ] , [
@@ -119,8 +121,8 @@ rdfs:comment """
         lv2:index 5 ;
         lv2:symbol "Intensity" ;
         lv2:name "Intensity";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 10.0 ;
     ] , [
         a lv2:InputPort ,
@@ -128,13 +130,14 @@ rdfs:comment """
         lv2:index 6 ;
         lv2:symbol "Sinewave" ;
         lv2:name "Sinewave";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
+				lv2:maximum 1.0 ;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
         lv2:index 7 ;
+        lv2:maximum 1.0 ;
         lv2:symbol "out" ;
         lv2:name "Out"
     ] , [
@@ -145,9 +148,12 @@ rdfs:comment """
         lv2:name "in"
     ] .
 
+
+
 <http://guitarix.sourceforge.net/plugins/gx_redeye#bigchump>
     a lv2:Plugin ,
         lv2:AmplifierPlugin ;
+		mod:brand "Guitarix" ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxRedeye Big Chump";
     doap:license <http://opensource.org/licenses/isc> ;
@@ -161,7 +167,16 @@ rdfs:comment """
     lv2:extensionData work:interface ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-  
+
+	mod:label "Redeye" ;
+	lv2:minorVersion 28;
+	lv2:microVersion 3;
+rdfs:comment """
+
+...
+
+""";
+
     lv2:port [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -195,8 +210,8 @@ rdfs:comment """
         lv2:index 3 ;
         lv2:symbol "Feedback" ;
         lv2:name "Feedback";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
         a lv2:InputPort ,
@@ -204,7 +219,7 @@ rdfs:comment """
         lv2:index 4 ;
         lv2:symbol "Speed" ;
         lv2:name "Speed";
-        lv2:default 5 ;
+        lv2:default 5.0 ;
         lv2:minimum 0.1 ;
         lv2:maximum 10.0 ;
     ] , [
@@ -213,8 +228,8 @@ rdfs:comment """
         lv2:index 5 ;
         lv2:symbol "Intensity" ;
         lv2:name "Intensity";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 10.0 ;
     ] , [
         a lv2:InputPort ,
@@ -222,8 +237,8 @@ rdfs:comment """
         lv2:index 6 ;
         lv2:symbol "Sinewave" ;
         lv2:name "Sinewave";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
         a lv2:AudioPort ,
@@ -254,8 +269,21 @@ rdfs:comment """
     bufsz:maxBlockLength 8192 ;
     lv2:extensionData work:interface ;
 
+
+
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-  
+
+	lv2:minorVersion 28;
+	lv2:microVersion 3;
+mod:brand "Guitarix";
+mod:label "Redeye Vibro" ;
+
+rdfs:comment """
+
+...
+
+""";
+
     lv2:port [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -289,8 +317,8 @@ rdfs:comment """
         lv2:index 3 ;
         lv2:symbol "Feedback" ;
         lv2:name "Feedback";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
         a lv2:InputPort ,
@@ -298,7 +326,7 @@ rdfs:comment """
         lv2:index 4 ;
         lv2:symbol "Speed" ;
         lv2:name "Speed";
-        lv2:default 5 ;
+        lv2:default 5.0 ;
         lv2:minimum 0.1 ;
         lv2:maximum 10.0 ;
     ] , [
@@ -307,8 +335,8 @@ rdfs:comment """
         lv2:index 5 ;
         lv2:symbol "Intensity" ;
         lv2:name "Intensity";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 10.0 ;
     ] , [
         a lv2:InputPort ,
@@ -316,8 +344,8 @@ rdfs:comment """
         lv2:index 6 ;
         lv2:symbol "Sinewave" ;
         lv2:name "Sinewave";
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
         a lv2:AudioPort ,
@@ -337,4 +365,3 @@ rdfs:comment """
   a guiext:GtkUI;
   guiext:binary <gx_redeye_gui.so>;
   guiext:requiredFeature guiext:makeResident .
-

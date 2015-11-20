@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -24,6 +24,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -44,12 +45,12 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_fuzz_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    
+
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzz_#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
+    mod:brand "Guitarix";
 rdfs:comment """
 A Fuzz Effect
 
@@ -82,7 +83,7 @@ A Fuzz Effect
         lv2:name "DRIVE";
         lv2:default 1.0 ;
         lv2:minimum -3.0 ;
-        lv2:maximum 100 ;
+        lv2:maximum 100.0 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -119,4 +120,3 @@ A Fuzz Effect
   a guiext:GtkUI;
   guiext:binary <gx_fuzz_gui.so>;
   guiext:requiredFeature guiext:makeResident .
-  
