@@ -1,0 +1,107 @@
+@prefix doap:  <http://usefulinc.com/ns/doap#>.
+@prefix epp:   <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf:  <http://xmlns.com/foaf/0.1/>.
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#>.
+@prefix mod:   <http://moddevices.com/ns/mod#>.
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix units: <http://lv2plug.in/ns/extensions/units#>.
+
+<http://moddevices.com/plugins/tap/deesser>
+a lv2:Plugin, lv2:DynamicsPlugin;
+
+doap:name "TAP DeEsser";
+
+doap:developer [
+    foaf:name "Tom Szilagyi";
+    foaf:homepage <http://tap-plugins.sourceforge.net/>;
+    foaf:mbox <mailto:tsziagyi@users.sourceforge.net>;
+];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+];
+
+mod:brand "TAP";
+mod:label "DeEsser";
+
+doap:license <http://usefulinc.com/doap/licenses/gpl>;
+doap:wiki <http://tap-plugins.sourceforge.net/ladspa/deesser.html>;
+
+lv2:minorVersion 7;
+lv2:microVersion 2;
+
+rdfs:comment """
+TAP DeEsser is a plugin for attenuating higher pitched frequencies in vocals such as those found in 'ess', 'shh' and 'chh' sounds.
+Almost any vocal recording will contain 'ess' sounds, whether a strong vocal delivery, from bad recording, speech impediments or simply many 'ess' words spoken together.
+Wind instruments and other musical instruments can also create shrill high-pitched noises. Audio engineers need to control these harsh 'ess' sounds in most recordings.
+""";
+
+lv2:port
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 0;
+    lv2:symbol "thresholdlevel";
+    lv2:name "Threshold Level";
+    lv2:default 0.0;
+    lv2:minimum -50.0;
+    lv2:maximum 10.0;
+    units:unit units:db;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 1;
+    lv2:symbol "frequency";
+    lv2:name "Frequency";
+    lv2:default 5500.0;
+    lv2:minimum 2000.0;
+    lv2:maximum 16000.0;
+    units:unit units:hz;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 2;
+    lv2:symbol "sidechainfilter";
+    lv2:name "Sidechain Filter";
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:integer, lv2:enumeration;
+    lv2:scalePoint [rdfs:label "Highpass"; rdf:value 0];
+    lv2:scalePoint [rdfs:label "Bandpass"; rdf:value 1];
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 3;
+    lv2:symbol "monitor";
+    lv2:name "Monitor";
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:integer, lv2:enumeration;
+    lv2:scalePoint [rdfs:label "Audio";     rdf:value 0];
+    lv2:scalePoint [rdfs:label "Sidechain"; rdf:value 1];
+],
+[
+    a lv2:OutputPort, lv2:ControlPort;
+    lv2:index 4;
+    lv2:symbol "attenuation";
+    lv2:name "Attenuation";
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 10.0;
+],
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 5;
+    lv2:symbol "input";
+    lv2:name "Input";
+],
+[
+    a lv2:OutputPort, lv2:AudioPort;
+    lv2:index 6;
+    lv2:symbol "output";
+    lv2:name "Output";
+].
