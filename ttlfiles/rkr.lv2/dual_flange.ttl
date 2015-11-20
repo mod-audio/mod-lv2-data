@@ -17,8 +17,8 @@
 <http://rakarrack.sourceforge.net/effects.html#Dual_Flange>
         a lv2:Plugin, lv2:FlangerPlugin ;
         doap:name "rkr Dual Flange" ;
-        doap:brand "Rakarrack";
         doap:description "Dual Flanger";
+        mod:brand "Rakarrack";
         doap:license <http://opensource.org/licenses/gpl-2.0> ;
         doap:maintainer [
                 foaf:name "Rakarrack Team" ;
