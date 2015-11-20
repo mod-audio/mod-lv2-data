@@ -5,7 +5,6 @@
 @prefix mod: <http://moddevices.com/ns/mod#> .
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>.
 
 mda:Ambience
