@@ -1,0 +1,186 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix rsz:   <http://lv2plug.in/ns/ext/resize-port#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person ;
+	foaf:name "Robin Gareus" ;
+	foaf:mbox <mailto:robin@gareus.org> ;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/balance>
+	a lv2:Plugin, lv2:SpatialPlugin , doap:Project;
+	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+	doap:maintainer <http://gareus.org/rgareus#me> ;
+	doap:name "Stereo Balance Control";
+	lv2:microVersion 0 ;lv2:minorVersion 1538 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:requiredFeature urid:map ;
+	lv2:extensionData state:interface ;
+	rdfs:comment """balance.lv2 facilitates adjusting stereo-microphone recordings (X-Y, A-B, ORTF). But it also generally useful as 'Input Channel Conditioner'.
+	It allows for attenuating the signal on one of the channels as well as delaying the signals (move away from the microphone). To round off the feature-set channels can be swapped or the signal can be downmixed to mono after the delay.
+	It features a Phase-Correlation meter as well as peak programme meters according to IEC 60268-18 (5ms integration, 20dB/1.5 sec fall-off) for input and output signals.
+	The meters can be configure on the right side of the GUI, tilt it using the 'a' key.""" ;
+	lv2:port [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 0 ;
+		lv2:symbol "trim" ;
+		lv2:name "Trim/Gain [dB]";
+		lv2:default 0.0 ;
+		lv2:minimum -20.0 ;
+		lv2:maximum 20.0 ;
+		units:unit units:db;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 1 ;
+		lv2:symbol "phaseL" ;
+		lv2:name "Phase Invert Left";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 2 ;
+		lv2:symbol "phaseR" ;
+		lv2:name "Phase Invert Right";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 3 ;
+		lv2:symbol "balance" ;
+		lv2:name "Balance L/R";
+		lv2:default 0.0 ;
+		lv2:minimum -1.0 ;
+		lv2:maximum 1.0 ;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 4 ;
+		lv2:symbol "unitygain" ;
+		lv2:name "Gain Mode" ;
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 2;
+		lv2:portProperty lv2:enumeration, lv2:integer;
+		lv2:scalePoint [
+			rdfs:label "Balance" ;
+			rdf:value 0
+		] , [
+			rdfs:label "Unity Gain - Equal Amplitude" ;
+			rdf:value 1
+		] , [
+			rdfs:label "Seesaw - Equal Power" ;
+			rdf:value 2
+		];
+		rdfs:comment """The mode defines the behaviour of the balance control.
+		classic 'Balance' mode: Attenuate one channels at a time; no positive gain.
+		'Unity Gain - Equal Amplitude' mode: the behaviour of the attenuated channel is identical to 'Balance' mode. The gain of the previously untouched channel is raised so that the mono sum of both retains equal amplitude.
+		'Seesaw - Equal Power' mode: -6dB .. +6dB range, equal power distribution"""
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 5 ;
+		lv2:symbol "delayLeft" ;
+		lv2:name "Delay Left [samples]";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 2000 ;
+		lv2:portProperty lv2:integer;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 6 ;
+		lv2:symbol "delayRight" ;
+		lv2:name "Delay Right [samples]";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 2000 ;
+		lv2:portProperty lv2:integer;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 7 ;
+		lv2:symbol "monoswap" ;
+		lv2:name "Channel Assignment" ;
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 4;
+		lv2:portProperty lv2:enumeration, lv2:integer;
+		lv2:scalePoint [
+			rdfs:label "L->L, R->R (Straight)" ;
+			rdf:value 0
+		] , [
+			rdfs:label "L->L, L->R (Left Channel Mono)" ;
+			rdf:value 1
+		] , [
+			rdfs:label "R->R, R->L (Right Channel Mono)" ;
+			rdf:value 2
+		] , [
+			rdfs:label "L->R, R->L (Swap Channels)" ;
+			rdf:value 3
+		] , [
+			rdfs:label "Downmix to Mono" ;
+			rdf:value 4
+		]
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 8 ;
+		lv2:symbol "in_left" ;
+		lv2:name "In Left" ;
+		lv2:designation pg:left ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 9 ;
+		lv2:symbol "in_right" ;
+		lv2:name "In Right" ;
+		lv2:designation pg:right ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 10 ;
+		lv2:symbol "out_left" ;
+		lv2:name "Out Left" ;
+		lv2:designation pg:left ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 11 ;
+		lv2:symbol "out_right" ;
+		lv2:name "Out Right" ;
+		lv2:designation pg:right ;
+	] , [
+		a atom:AtomPort ,
+			lv2:InputPort ;
+		atom:bufferType atom:Sequence ;
+		lv2:designation lv2:control ;
+		lv2:index 12 ;
+		lv2:symbol "control" ;
+		lv2:name "UI to plugin communication"
+	] , [
+		a atom:AtomPort ,
+			lv2:OutputPort ;
+		atom:bufferType atom:Sequence ;
+		lv2:designation lv2:control ;
+		lv2:index 13 ;
+		lv2:symbol "notify" ;
+		lv2:name "plugin to UI communication" ;
+		rsz:minimumSize 1024;
+	] .

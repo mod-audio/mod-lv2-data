@@ -1,0 +1,444 @@
+/* Calf */
+.calf {
+    background: url(/resources/background_dark.png{{{ns}}}) repeat;
+    position: relative;
+    color: #FFF;
+}
+
+/* bar top */
+
+.calf .bar-top {
+    background: url(/resources/background_black.png{{{ns}}}) repeat;
+    height: 46px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.calf .bar-top .title-calf {
+    color: #FFF;
+    display: block;
+    left: 35px;
+    position: absolute;
+    top: 13px;
+}
+.calf .bar-top .off-or-on-calf {
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
+    background-size: 46px 62px;
+    cursor: pointer;
+    height: 31px;
+    z-index: 100;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 46px;
+}
+.calf .bar-top .on {
+    background-position: top center;
+}
+.calf .bar-top .off {
+    background-position: bottom center;
+}
+
+.calf .bar-top .off-or-on-calf span {
+    color: #FFF;
+    left: -50px;
+    position: absolute;
+    top: 9px;
+}
+
+/* Global calf div */
+
+.calf .global-calf {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+/*bars left*/
+.calf .groups-bar-left {
+    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-left .top {
+    background: url(/resources/side_nw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+.calf .groups-bar-left .bottom {
+    background: url(/resources/side_sw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+
+/* bars right */
+.calf .groups-bar-right {
+    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .top {
+    background: url(/resources/side_ne.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .bottom {
+    background: url(/resources/side_se.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+.calf .groups-bar-right .logo {
+    background: url(/resources/side_e_logo.png{{{ns}}});
+    height: 90px;
+    left: 0;
+    position: absolute;
+    bottom: 36px;
+    width: 56px;
+}
+
+/* cols */
+
+.calf .border-solid-and-radius {
+    border: solid 1px #FFF;
+    border-radius: 7px;
+}
+.calf .title-of-cols {
+    background: #384454;
+    color: #FFF;
+    font-size: 13px;
+    left: 6px;
+    padding: 0 5px;
+    position: absolute;
+    top: -11px;
+}
+
+/* knob */
+
+.calf .knob {
+    position: absolute;
+    cursor: pointer;
+}
+.calf .knob1 {
+    background: url(/resources/knob1.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob2 {
+    background: url(/resources/knob2-2.png{{{ns}}});
+    height: 40px;
+    width: 40px;
+}
+.calf .knob3 {
+    background: url(/resources/knob3.png{{{ns}}});
+    height: 60px;
+    width: 60px;
+}
+.calf .knob4 {
+    background: url(/resources/knob4.png{{{ns}}});
+    height: 80px;
+    width: 80px;
+}
+.calf .knob5 {
+    background: url(/resources/knob5.png{{{ns}}});
+    height: 100px;
+    width: 100px;
+}
+
+/* titles of things */
+
+.calf .title-fild{
+    color: #FFF;
+    font-size: 10px;
+    position: absolute;
+}
+.toggle1-silver {
+    background: url(/resources/toggle1_silver.png{{{ns}}});
+    height: 20px;
+    position: absolute;
+    width: 30px;
+}
+
+.toggle2_silver-silver {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+.calf .knob1 .title-knob1-top, .calf .knob2 .title-knob2-top, .calf .knob3 .title-knob3-top, .calf .knob4 .title-knob4-top,
+.calf .knob5 .title-knob5-top, .calf .knob1 .title-knob1-bottom, .calf .knob2 .title-knob2-bottom, .calf .knob3 .title-knob3-bottom, .calf .knob4 .title-knob4-bottom,
+.calf .knob5 .title-knob5-bottom {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+}
+
+/* Lines */
+.calf .line-cols-all {
+    background: none repeat scroll 0 0 #222222;
+    box-shadow: 1px 1px #5F5F5F;
+    height: 2px;
+    position: absolute;
+}
+
+/* Slider */
+
+.calf .slider2-vert {
+    background: url(/resources/slider2-vert.png{{{ns}}});
+    height: 36px;
+    position: absolute;
+    width: 46px;
+    cursor: pointer;
+}
+/* Screw */
+
+.calf .screw_min {
+    background: url(/resources/screw1.png{{{ns}}});
+    background-size: 15px;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+
+}
+/* titles of things */
+.calf .title-fild-bottom {
+    font-size: 12px;
+}
+
+/* button of bypess */
+
+.calf .button-bypess {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+.calf-vintagedelay {
+	height: 280px;
+	width: 864px;
+}
+
+/* Config Delay Time - Time*/
+
+.calf-vintagedelay .delay-time {
+    height: 209px;
+    left: 71px;
+    position: absolute;
+    top: 10px;
+    width: 438px;
+}
+
+.calf-vintagedelay .delay-time .knob-time {
+    left: 38px;
+    top: 46px;
+}
+
+.calf-vintagedelay .delay-time .knob-time .title-knob5-top {
+    left: 0;
+    right: 0;
+    top: -30px;
+    width: 100%;
+}
+.calf-vintagedelay .delay-time .knob-time .value-knob-time {
+    background: url(/resources/entry.png{{{ns}}});
+    bottom: -45px;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+.calf-vintagedelay .delay-time .knob-time .value-knob-time .text {
+    color: #333333;
+    display: block;
+    font-size: 11px;
+    padding: 2px 8px;
+    text-align: center;
+}
+
+/* Line */
+.calf-vintagedelay .delay-time .title-cols {
+    font-size: 11px;
+    position: absolute;
+    top: -23px;
+    margin-left: -20px;
+    width: 56px;
+}
+.calf-vintagedelay .delay-time .slider-vert {
+    background: url(/resources/sliders-vert-disable.png{{{ns}}});
+    height: 122px;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    left: -18px;
+    width: 40px;
+}
+.calf-vintagedelay .delay-time .display-delay {
+    background: url(/resources/combo-sm.png{{{ns}}});
+    bottom: -30px;
+    height: 24px;
+    left: -19px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+    position: absolute;
+    width: 40px;
+    color: black;
+}
+
+.calf-vintagedelay .delay-time .subdivide {
+    height: 122px;
+    width: 2px;
+    right: 230px;
+    top: 39px;
+}
+.calf-vintagedelay .delay-time .time-l {
+    height: 122px;
+    width: 2px;
+    right: 150px;
+    top: 39px;
+}
+.calf-vintagedelay .delay-time .time-r {
+    height: 122px;
+    width: 2px;
+    right: 70px;
+    top: 39px;
+}
+
+/* Mixing */
+
+.calf-vintagedelay .mixing {
+    height: 209px;
+    right: 71px;
+    position: absolute;
+    top: 10px;
+    width: 268px;
+}
+.calf-vintagedelay .mixing .feedback {
+    left: 32px;
+    top: 33px;
+}
+.calf-vintagedelay .mixing .dry-amount {
+    left: 117px;
+    top: 33px;
+}
+.calf-vintagedelay .mixing .amount {
+    left: 199px;
+    top: 33px;
+}
+.calf-vintagedelay .mixing .stereo-width {
+    left: 117px;
+    bottom: 33px;
+}
+.calf-vintagedelay .mixing .enum{
+    position: absolute;
+    z-index: 10000 !important;
+    background: url(/resources/entry.png{{{ns}}});
+    bottom: 38px;
+    width: 80px;
+    padding: 2px 0;
+    cursor: pointer;
+}
+.calf-vintagedelay .mixing .enum.mix-mode {
+    left: 8px;
+} 
+.calf-vintagedelay .mixing .enum.medium {
+    right: 8px;
+}
+.calf-vintagedelay .mixing .mod-enumerated-list div:hover{
+    background: white;
+    color: black;
+    }
+.calf-vintagedelay .mixing .mod-enumerated-selected:before {
+    content: '\25BE \a0';
+}
+.calf-vintagedelay .mixing .mod-enumerated-selected {
+    background: transparent;
+    border: none;
+    color: #333333;
+    display: block;
+    font-size: 11px;
+    padding: 0;
+    position: relative;
+    left: 1px;
+    margin: 0 0 0 6px;
+    width: 72px;
+}
+.calf-vintagedelay .mixing .mod-enumerated-list {
+    background-color: rgba(0,0,0,.8) !important;
+    display: none;
+    /* height: 120px; */
+    width: 60px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: 2px;
+    z-index: 100;
+    color: white !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+}
+.calf-vintagedelay .title-entry-top {
+    font-size: 11px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -22px;
+}
+.calf-vintagedelay .knob2 .title-knob2-top {
+    left: -10px;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    width: 63px;
+}
+.calf-vintagedelay .knob2 .title-knob2-bottom {
+    left: -4px;
+    position: absolute;
+    text-align: center;
+    bottom: -25px;
+    width: 50px;
+}
+
+
+/* Z-INDEX */
+
+.calf .knob, .calf .slider-horiz, .calf .slider-horiz, .calf .mix-mode, .calf .medium {
+    z-index: 99999;
+}
+
+
+/* Input/Output */
+ .calf-pedal-input {
+    left:-46px !important;
+ }
+.calf-pedal-output {
+    right:-44px !important;
+}

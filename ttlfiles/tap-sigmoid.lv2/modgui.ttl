@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/tap/sigmoid>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tap-sigmoid-booster.html> ;
+        modgui:stylesheet <modgui/stylesheet-tap-sigmoid-booster.css> ;
+        modgui:screenshot <modgui/screenshot-tap-sigmoid-booster.png> ;
+        modgui:thumbnail <modgui/thumbnail-tap-sigmoid-booster.png> ;
+        modgui:brand "TAP" ;
+        modgui:label "Sigmoid Booster" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "orange" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Postgain" ;
+            lv2:name "Post gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Pregain" ;
+            lv2:name "Pre gain" ;
+        ] ;
+    ] .

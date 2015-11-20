@@ -1,0 +1,91 @@
+.mod-switchtrigger4 {
+  background:url(/resources/bg-switchtrigger4.png{{{ns}}});
+  background-repeat:no-repeat;
+  background-position:center center;
+  width:200px;
+  height:600px;
+  position:absolute;
+  border-radius: 18px;
+}
+
+.mod-switchtrigger4 .mod-pedal-input {
+    top: 270px;
+}
+.mod-switchtrigger4 .mod-pedal-output {
+    top: 40px;
+}
+.mod-switchtrigger4 .mod-output {
+    margin-top: 58px;
+}
+
+.mod-switchtrigger4 .mod-plugin-author {
+  bottom:30px;
+  left:0;
+  position:absolute;
+  right:0;
+  text-align:center;
+}
+.mod-switchtrigger4 .mod-plugin-author h1 {
+  color:white;
+  font-size:21px;
+  text-shadow:0 0 1px black;
+}
+.mod-switchtrigger4 .mod-plugin-name {
+  left:0;
+  position:absolute;
+  right:0;
+  text-align:center;
+  top:20px;
+}
+.mod-switchtrigger4 .mod-plugin-name h1 {
+  color:white;
+  font-size:18px;
+  text-shadow:0 0 1px black;
+}
+.mod-switchtrigger4 .mod-control-group {
+  border:3px solid white;
+  border-radius:9px;
+  bottom:80px;
+  box-shadow:0 0 1px black;
+  left:50px;
+  position:absolute;
+  right:50px;
+  top:70px;
+}
+.mod-switchtrigger4 .mod-control-group .mod-control {
+  display: block;
+  height:112px;
+  position:relative;
+  text-align:center;
+}
+.mod-switchtrigger4 .mod-control-group .mod-control .mod-control-title {
+  bottom:20px;
+  color:white;
+  font-size:11px;
+  left:0;
+  position:absolute;
+  right:0;
+  text-align:center;
+  text-shadow:0 0 1px black;
+  text-transform:uppercase;
+}
+.mod-switchtrigger4 .mod-footswitch5 {
+  background-image:url(/resources/footswitch.png{{{ns}}});
+  background-position:bottom center;
+  background-repeat:no-repeat;
+  background-size:auto 176px;
+  height:88px;
+  width:88px;
+  left:0px;
+  right:0px;
+  margin:0 auto;
+  cursor:pointer;
+  position:absolute;
+  top:10px;
+}
+.mod-switchtrigger4 .mod-footswitch.on {
+    background-position:bottom center;
+}
+.mod-switchtrigger4 .mod-footswitch.off {
+    background-position:top center;
+}

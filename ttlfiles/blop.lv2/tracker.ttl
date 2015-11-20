@@ -1,0 +1,125 @@
+@prefix blop: <http://drobilla.net/plugins/blop/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
+@prefix morph: <http://lv2plug.in/ns/ext/morph#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid: <http://lv2plug.in/ns/ext/urid#> .
+
+blop:tracker
+	a lv2:Plugin ;
+	lv2:project blop: ;
+	lv2:symbol "tracker" ;
+	lv2:microVersion 0 ;
+	lv2:minorVersion 0 ;
+	lv2:extensionData opts:interface ;
+	lv2:optionalFeature lv2:hardRTCapable ,
+		urid:map ;
+	lv2:port [
+		a lv2:CVPort ,
+			lv2:InputPort ;
+		lv2:index 0 ;
+		lv2:name "Gate" ;
+		lv2:portProperty lv2:toggled ;
+		lv2:symbol "gate"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ,
+			morph:MorphPort ;
+		lv2:default 100 ;
+		lv2:index 1 ;
+		lv2:maximum 0.5 ;
+		lv2:minimum 0.00001 ;
+		lv2:name "High Attack Rate" ;
+		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ,
+			lv2:sampleRate ;
+		lv2:symbol "hattack" ;
+		morph:supportsType lv2:CVPort ;
+		units:unit units:hz
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ,
+			morph:MorphPort ;
+		lv2:default 100 ;
+		lv2:index 2 ;
+		lv2:maximum 0.5 ;
+		lv2:minimum 0.00001 ;
+		lv2:name "High Decay Rate" ;
+		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ,
+			lv2:sampleRate ;
+		lv2:symbol "hdecay" ;
+		morph:supportsType lv2:CVPort ;
+		units:unit units:hz
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ,
+			morph:MorphPort ;
+		lv2:default 100 ;
+		lv2:index 3 ;
+		lv2:maximum 0.5 ;
+		lv2:minimum 0.00001 ;
+		lv2:name "Low Attack Rate" ;
+		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ,
+			lv2:sampleRate ;
+		lv2:symbol "lattack" ;
+		morph:supportsType lv2:CVPort ;
+		units:unit units:hz
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ,
+			morph:MorphPort ;
+		lv2:default 100 ;
+		lv2:index 4 ;
+		lv2:maximum 0.5 ;
+		lv2:minimum 0.00001 ;
+		lv2:name "Low Decay Rate" ;
+		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ,
+			lv2:sampleRate ;
+		lv2:symbol "ldecay" ;
+		morph:supportsType lv2:CVPort ;
+		units:unit units:hz
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 5 ;
+		lv2:name "Input" ;
+		lv2:symbol "in"
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 6 ;
+		lv2:name "Output" ;
+		lv2:symbol "out"
+	] ;
+	dct:replaces <urn:ladspa:2025> ,
+		<urn:ladspa:2026> ;
+	doap:name "Tracker" ;
+	mod:brand "BLOP" ;
+	mod:label "Tracker" ;
+	lv2:documentation """
+<p>This tracks an incoming signal and outputs the result.</p>
+<p>The rate controls tell the plugin how quickly to respond to a change in
+input. Low values will mean a slower response - a setting of 0 will hold the
+last value, and a very high value will track the input exactly.</p>
+<p>Attack rate is how quickly an upward change is tracked, and Decay for
+downward changes. There are two pairs of these - the one used depends on the
+level of the Gate.</p>
+<p>Example uses:</p>
+<ul>
+  <li>
+  <em>An envelope tracker</em>- use the &#8216;Gate Low&#8217; track rates with
+  the Gate held low, and run the output through a full-wave rectifier (an ABS()
+  operator) to get an estimate of the level of a signal.</li>
+  <li>
+  <em>Sample and Hold</em>- run a narrow pulse wave into the gate, set the
+  &#8216;Gate High&#8217; rates to maximum, and the &#8216;Gate Low&#8217;
+  rates set to 0.</li>
+  <li>
+  <em>Track and Hold</em>- run a variable pulse wave into the gate, set the
+  &#8216;Gate High&#8217; rates to 0, and the &#8216;Gate Low&#8217; rates set
+  high. Varying the pulsewidth will vary the time the input is tracked, and
+  when it is held.</li>
+</ul>
+""" .

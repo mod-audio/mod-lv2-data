@@ -1,0 +1,11 @@
+{
+    "author": "Calf", 
+    "color": "cream", 
+    "controls": [
+        {
+            "name": "Frequency", 
+            "symbol": "freq"
+        }
+    ], 
+    "label": "Filter"
+}

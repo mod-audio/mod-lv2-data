@@ -1,0 +1,458 @@
+@prefix blop: <http://drobilla.net/plugins/blop/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
+
+blop:sequencer_64
+	a lv2:Plugin ;
+	lv2:project blop: ;
+	lv2:symbol "sequencer_64" ;
+	lv2:microVersion 0 ;
+	lv2:minorVersion 0 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port [
+		a lv2:CVPort ,
+			lv2:InputPort ;
+		lv2:index 0 ;
+		lv2:name "Gate" ;
+		lv2:portProperty lv2:toggled ;
+		lv2:symbol "gate"
+	] , [
+		a lv2:CVPort ,
+			lv2:InputPort ;
+		lv2:index 1 ;
+		lv2:name "Step Trigger" ;
+		lv2:portProperty lv2:toggled ,
+			<http://lv2plug.in/ns/ext/port-props#trigger> ;
+		lv2:symbol "trigger"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 32 ;
+		lv2:index 2 ;
+		lv2:maximum 32 ;
+		lv2:minimum 1 ;
+		lv2:name "Loop Steps" ;
+		lv2:portProperty lv2:integer ;
+		lv2:symbol "steps"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 0 ;
+		lv2:index 3 ;
+		lv2:maximum 1 ;
+		lv2:minimum 0 ;
+		lv2:name "Reset on Gate Close" ;
+		lv2:portProperty lv2:toggled ;
+		lv2:symbol "reset"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 4 ;
+		lv2:name "Closed Gate Value" ;
+		lv2:symbol "closed_val"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 5 ;
+		lv2:name "Value 0" ;
+		lv2:symbol "val00"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 6 ;
+		lv2:name "Value 1" ;
+		lv2:symbol "val01"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 7 ;
+		lv2:name "Value 2" ;
+		lv2:symbol "val02"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 8 ;
+		lv2:name "Value 3" ;
+		lv2:symbol "val03"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 9 ;
+		lv2:name "Value 4" ;
+		lv2:symbol "val04"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 10 ;
+		lv2:name "Value 5" ;
+		lv2:symbol "val05"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 11 ;
+		lv2:name "Value 6" ;
+		lv2:symbol "val06"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 12 ;
+		lv2:name "Value 7" ;
+		lv2:symbol "val07"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 13 ;
+		lv2:name "Value 8" ;
+		lv2:symbol "val08"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 14 ;
+		lv2:name "Value 9" ;
+		lv2:symbol "val09"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 15 ;
+		lv2:name "Value 10" ;
+		lv2:symbol "val10"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 16 ;
+		lv2:name "Value 11" ;
+		lv2:symbol "val11"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 17 ;
+		lv2:name "Value 12" ;
+		lv2:symbol "val12"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 18 ;
+		lv2:name "Value 13" ;
+		lv2:symbol "val13"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 19 ;
+		lv2:name "Value 14" ;
+		lv2:symbol "val14"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 20 ;
+		lv2:name "Value 15" ;
+		lv2:symbol "val15"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 21 ;
+		lv2:name "Value 16" ;
+		lv2:symbol "val16"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 22 ;
+		lv2:name "Value 17" ;
+		lv2:symbol "val17"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 23 ;
+		lv2:name "Value 18" ;
+		lv2:symbol "val18"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 24 ;
+		lv2:name "Value 19" ;
+		lv2:symbol "val19"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 25 ;
+		lv2:name "Value 20" ;
+		lv2:symbol "val20"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 26 ;
+		lv2:name "Value 21" ;
+		lv2:symbol "val21"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 27 ;
+		lv2:name "Value 22" ;
+		lv2:symbol "val22"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 28 ;
+		lv2:name "Value 23" ;
+		lv2:symbol "val23"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 29 ;
+		lv2:name "Value 24" ;
+		lv2:symbol "val24"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 30 ;
+		lv2:name "Value 25" ;
+		lv2:symbol "val25"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 31 ;
+		lv2:name "Value 26" ;
+		lv2:symbol "val26"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 32 ;
+		lv2:name "Value 27" ;
+		lv2:symbol "val27"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 33 ;
+		lv2:name "Value 28" ;
+		lv2:symbol "val28"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 34 ;
+		lv2:name "Value 29" ;
+		lv2:symbol "val29"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 35 ;
+		lv2:name "Value 30" ;
+		lv2:symbol "val30"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 36 ;
+		lv2:name "Value 31" ;
+		lv2:symbol "val31"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 37 ;
+		lv2:name "Value 32" ;
+		lv2:symbol "val32"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 38 ;
+		lv2:name "Value 33" ;
+		lv2:symbol "val33"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 39 ;
+		lv2:name "Value 34" ;
+		lv2:symbol "val34"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 40 ;
+		lv2:name "Value 35" ;
+		lv2:symbol "val35"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 41 ;
+		lv2:name "Value 36" ;
+		lv2:symbol "val36"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 42 ;
+		lv2:name "Value 37" ;
+		lv2:symbol "val37"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 43 ;
+		lv2:name "Value 38" ;
+		lv2:symbol "val38"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 44 ;
+		lv2:name "Value 39" ;
+		lv2:symbol "val39"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 45 ;
+		lv2:name "Value 40" ;
+		lv2:symbol "val40"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 46 ;
+		lv2:name "Value 41" ;
+		lv2:symbol "val41"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 47 ;
+		lv2:name "Value 42" ;
+		lv2:symbol "val42"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 48 ;
+		lv2:name "Value 43" ;
+		lv2:symbol "val43"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 49 ;
+		lv2:name "Value 44" ;
+		lv2:symbol "val44"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 50 ;
+		lv2:name "Value 45" ;
+		lv2:symbol "val45"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 51 ;
+		lv2:name "Value 46" ;
+		lv2:symbol "val46"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 52 ;
+		lv2:name "Value 47" ;
+		lv2:symbol "val47"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 53 ;
+		lv2:name "Value 48" ;
+		lv2:symbol "val48"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 54 ;
+		lv2:name "Value 49" ;
+		lv2:symbol "val49"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 55 ;
+		lv2:name "Value 50" ;
+		lv2:symbol "val50"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 56 ;
+		lv2:name "Value 51" ;
+		lv2:symbol "val51"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 57 ;
+		lv2:name "Value 52" ;
+		lv2:symbol "val52"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 58 ;
+		lv2:name "Value 53" ;
+		lv2:symbol "val53"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 59 ;
+		lv2:name "Value 54" ;
+		lv2:symbol "val54"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 60 ;
+		lv2:name "Value 55" ;
+		lv2:symbol "val55"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 61 ;
+		lv2:name "Value 56" ;
+		lv2:symbol "val56"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 62 ;
+		lv2:name "Value 57" ;
+		lv2:symbol "val57"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 63 ;
+		lv2:name "Value 58" ;
+		lv2:symbol "val58"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 64 ;
+		lv2:name "Value 59" ;
+		lv2:symbol "val59"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 65 ;
+		lv2:name "Value 60" ;
+		lv2:symbol "val60"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 66 ;
+		lv2:name "Value 61" ;
+		lv2:symbol "val61"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 67 ;
+		lv2:name "Value 62" ;
+		lv2:symbol "val62"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 68 ;
+		lv2:name "Value 63" ;
+		lv2:symbol "val63"
+	] , [
+		a lv2:CVPort ,
+			lv2:OutputPort ;
+		lv2:index 69 ;
+		lv2:name "Value Out" ;
+		lv2:symbol "out"
+	] ;
+	dct:replaces <urn:ladspa:1675> ;
+	doap:name "64 Step Sequencer" ;
+	mod:brand "BLOP" ;
+	mod:label "64 Step Seq." ;
+	lv2:documentation """
+<p>Simulates an analogue step sequencer. The sequencer stores a number of
+values which are stepped through using a trigger when the gate is open, looping
+after a given number of steps.  This variant has 64 steps.</p>
+
+<p>When the gate is closed, the sequencer returns to the start.  Output when
+the gate is closed can be set to a default value. If not, it will just output
+the last value reached before the gate was closed.</p>
+""" .

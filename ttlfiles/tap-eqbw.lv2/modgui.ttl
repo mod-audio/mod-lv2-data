@@ -1,0 +1,14 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix ui:     <http://lv2plug.in/ns/extensions/ui#> .
+
+<http://moddevices.com/plugins/tap/eqbw>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tap-equalizerbw.html> ;
+        modgui:stylesheet <modgui/tap-equalizerbw.css> ;
+        modgui:screenshot <modgui/screenshot-tap-equalizerbw.png> ;
+        modgui:thumbnail <modgui/thumbnail-tap-equalizerbw.png> ;
+        modgui:brand "TAP" ;
+        modgui:label "Equalizer/BW" ;
+    ] .

@@ -1,0 +1,130 @@
+<div class="calf calf-vintagedelay">
+    <header class="bar-top">
+        <span class="title-calf">Calf Vintage Delay</span>
+        <div class="off-or-on-calf" mod-role="bypass">
+            <span>On/Off</span>
+        </div>
+    </header>
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+    <div class="global-calf">
+    
+
+        <div class="groups-bar-left">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+
+        <div class="delay-time border-solid-and-radius">
+            <span class="title-of-cols">Delay Time</span>
+            <div class="knob knob5 knob-time" mod-role="input-control-port" mod-port-symbol="bpm">
+                <span class="title-knob5-top">Tempo</span>
+
+                <div class="value-knob-time"><span class="text" mod-role="input-control-value" mod-port-symbol="bpm"></span></div>
+            </div>
+
+            <div class="line-cols-all subdivide">
+                <span class="title-cols">Subdivide</span>
+                <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="subdiv">
+                </div>
+                <span class="display-delay" mod-role="input-control-value" mod-port-symbol="subdiv"></span>
+            </div>
+            <div class="line-cols-all time-l">
+                    <span class="title-cols">Time L</span>
+                    <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="time_l">
+                    </div>
+                    <span class="display-delay" mod-role="input-control-value" mod-port-symbol="time_l"></span>
+            </div>
+            <div class="line-cols-all time-r">
+                    <span class="title-cols">Time R</span>
+                    <div class="slider-vert" mod-role="input-control-port" mod-port-symbol="time_r">
+                    </div>
+                    <span class="display-delay" mod-role="input-control-value" mod-port-symbol="time_r"></span>
+            </div>
+
+        </div>
+
+        <div class="mixing border-solid-and-radius">
+            <span class="title-of-cols">Mixing</span>
+
+            <div class="knob knob2 feedback" mod-role="input-control-port" mod-port-symbol="feedback">
+                <span class="title-knob2-top">Feedback</span>
+                      <span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="feedback"></span>
+            </div>
+            <div class="knob knob2 dry-amount" mod-role="input-control-port" mod-port-symbol="dry">
+                      <span class="title-knob2-top">Dry Amount</span>
+                      <span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="dry"></span>
+            </div>
+            <div class="knob knob2 amount" mod-role="input-control-port" mod-port-symbol="amount">
+                      <span class="title-knob2-top">Amount</span>
+                      <span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="amount"></span>
+            </div>
+            <div class="knob knob2 stereo-width" mod-role="input-control-port" mod-port-symbol="width">
+                      <span class="title-knob2-top">Stero Width</span>
+                      <span class="title-knob2-bottom" mod-role="input-control-value" mod-port-symbol="width">-100%</span>
+            </div>
+            <div class="enum mix-mode">
+            {{#controls.7}}
+                <div class="title-entry-top">Mix mode</div>
+                <div mod-role="input-control-port" mod-port-symbol="mix_mode" mod-widget="custom-select">
+                    <div mod-role="input-control-value" mod-port-symbol="mix_mode" class="mod-enumerated-selected" contenteditable="false">{{label}}</div>
+                    <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none" >
+                        <div mod-role="enumeration-option" mod-port-value="0">Stereo</div>
+                        <div mod-role="enumeration-option" mod-port-value="1">Ping-Pong</div>
+                        <div mod-role="enumeration-option" mod-port-value="2">L then R</div>
+                        <div mod-role="enumeration-option" mod-port-value="3">R then L</div>
+                    </div>
+                </div>
+            {{/controls.7}}
+            </div>
+            <div class="enum medium">
+            {{#controls.8}}
+                <div class="title-entry-top">Medium</div>
+                <div mod-role="input-control-port" mod-port-symbol="medium" mod-widget="custom-select">
+                    <div mod-role="input-control-value" mod-port-symbol="medium" class="mod-enumerated-selected" contenteditable="false">{{label}}</div>
+                    <div class="mod-enumerated-list" mod-widget-property="hidden" style="display: none" >
+                        <div mod-role="enumeration-option" mod-port-value="0">Plain</div>
+                        <div mod-role="enumeration-option" mod-port-value="1">Tape</div>
+                        <div mod-role="enumeration-option" mod-port-value="2">Old Tape</div>
+                    </div>
+                </div>
+            {{/controls.8}}
+            </div>
+        </div>
+
+        <!--################################################################################-->
+
+        <div class="groups-bar-right">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="logo"></div>
+        </div>
+
+    </div>
+
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+
+</div>

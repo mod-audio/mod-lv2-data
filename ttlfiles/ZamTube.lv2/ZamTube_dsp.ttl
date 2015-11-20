@@ -1,0 +1,142 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix unit: <http://lv2plug.in/ns/extensions/units#> .
+
+<urn:zamaudio:ZamTube>
+    a lv2:Plugin ;
+
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
+                      <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
+
+    lv2:optionalFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ;
+
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/options#options> ,
+                        <http://lv2plug.in/ns/ext/urid#map> ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 0 ;
+        lv2:symbol "audio_in_1" ;
+        lv2:name "Audio Input 1" ;
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 1 ;
+        lv2:symbol "audio_out_1" ;
+        lv2:name "Audio Output 1" ;
+    ] ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 2 ;
+        lv2:name "Tube Drive" ;
+        lv2:symbol "tubedrive" ;
+        lv2:default 0.000000 ;
+        lv2:minimum -30.000000 ;
+        lv2:maximum 30.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 3 ;
+        lv2:name "Bass" ;
+        lv2:symbol "bass" ;
+        lv2:default 0.500000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 4 ;
+        lv2:name "Mids" ;
+        lv2:symbol "mids" ;
+        lv2:default 0.500000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 5 ;
+        lv2:name "Treble" ;
+        lv2:symbol "treb" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 6 ;
+        lv2:name "Tone Stack Model" ;
+        lv2:symbol "tonestack" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 24 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+        lv2:portProperty lv2:integer ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 7 ;
+        lv2:name "Output level" ;
+        lv2:symbol "gain" ;
+        lv2:default 0.000000 ;
+        lv2:minimum -15.000000 ;
+        lv2:maximum 15.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 8 ;
+        lv2:name "Quality Insane" ;
+        lv2:symbol "insane" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        unit:unit [
+            a unit:Unit ;
+            unit:name   " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+        lv2:portProperty lv2:toggled ;
+    ] ;
+
+    doap:name "ZamTube" ;
+    doap:maintainer [ foaf:name "Damien Zammit" ] .
+

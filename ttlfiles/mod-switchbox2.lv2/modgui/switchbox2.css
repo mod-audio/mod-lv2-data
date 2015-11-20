@@ -1,0 +1,70 @@
+
+    .mod-switch-box {
+        background-image:url(/resources/switchbox.png{{{ns}}});
+        background-repeat:no-repeat;
+        height:274px;
+        position:relative;
+        width:200px;
+    }
+    .mod-switch-box .mod-drag-handle {
+        bottom:0;
+        left:0;
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .mod-switch-box .mod-plugin-author {
+        bottom:20px;
+        left:0;
+        position:absolute;
+        right:0;
+        text-align:center;
+    }
+    .mod-switch-box .mod-plugin-author h1 {
+        color:rgb(51,51,51);
+        font-size:21px;
+    }
+    .mod-switch-box .mod-plugin-name {
+        left:0;
+        position:absolute;
+        right:0;
+        text-align:center;
+        top:0;
+    }
+    .mod-switch-box .mod-plugin-name  h1 {
+        color:rgb(51,51,51);
+        font-size:18px;
+    }
+    .mod-switch-box-2 .mod-pedal-input {
+        top:119px;
+    }
+    .mod-switch-box-2 .mod-pedal-output {
+        top:50px;
+    }
+    .mod-switch-box-2 .mod-pedal-output .mod-output {
+        margin-bottom: 92px;
+    }
+    .mod-switch-box .mod-control-group {
+        left:52px;
+        position:absolute;
+        top:71px;
+    }
+    .mod-switch-box .mod-control-group .mod-knob .mod-knob-image {
+        background-image:url(/resources/mod-switchbox-knob.png{{{ns}}});
+        background-repeat:no-repeat;
+        background-size:300px 156px;
+        height:156px;
+        margin:0 auto;
+        width:150px;
+        cursor: pointer;
+    }
+    .mod-switch-box .mod-control-group .mod-knob .mod-knob-title {
+        display:none;
+        font-size:11px;
+        left:0;
+        position:absolute;
+        right:0;
+        text-align:center;
+        text-transform:uppercase;
+        top:92px;
+    }

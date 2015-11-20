@@ -1,0 +1,37 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mda:  <http://moddevices.com/plugins/mda/> .
+@prefix mdap: <http://moddevices.com/plugins/mda/presets#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+mda:EPiano
+    a lv2:Plugin ;
+    rdfs:seeAlso <EPiano.ttl> ,
+        <modgui.ttl> ;
+    lv2:binary <EPiano.so> .
+
+mdap:EPiano-default
+    a pset:Preset ;
+    lv2:appliesTo mda:EPiano ;
+    rdfs:seeAlso <presets.ttl> .
+
+mdap:EPiano-bright
+    a pset:Preset ;
+    lv2:appliesTo mda:EPiano ;
+    rdfs:seeAlso <presets.ttl> .
+
+mdap:EPiano-mellow
+    a pset:Preset ;
+    lv2:appliesTo mda:EPiano ;
+    rdfs:seeAlso <presets.ttl> .
+
+mdap:EPiano-autopan
+    a pset:Preset ;
+    lv2:appliesTo mda:EPiano ;
+    rdfs:seeAlso <presets.ttl> .
+
+mdap:EPiano-tremolo
+    a pset:Preset ;
+    lv2:appliesTo mda:EPiano ;
+    rdfs:seeAlso <presets.ttl> .
+

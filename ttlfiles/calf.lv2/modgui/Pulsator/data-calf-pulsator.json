@@ -1,0 +1,39 @@
+{
+    "author": "Calf", 
+    "color": "red", 
+    "controls": [
+        {
+            "name": "Reset", 
+            "symbol": "reset"
+        }, 
+        {
+            "name": "Input Gain", 
+            "symbol": "level_in"
+        }, 
+        {
+            "name": "Output Gain", 
+            "symbol": "level_out"
+        }, 
+        {
+            "name": "Mode", 
+            "symbol": "mode"
+        }, 
+        {
+            "name": "Frequency", 
+            "symbol": "freq"
+        }, 
+        {
+            "name": "Modulation", 
+            "symbol": "amount"
+        }, 
+        {
+            "name": "Offset L/R", 
+            "symbol": "offset"
+        }, 
+        {
+            "name": "Mono-in", 
+            "symbol": "mono"
+        }
+    ], 
+    "label": "Pulsator"
+}

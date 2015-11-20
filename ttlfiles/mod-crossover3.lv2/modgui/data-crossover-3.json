@@ -1,0 +1,27 @@
+{
+    "author": "MOD", 
+    "color": "yellow", 
+    "controls": [
+        {
+            "name": "Gain 1", 
+            "symbol": "Gain_1"
+        }, 
+        {
+            "name": "Gain 2", 
+            "symbol": "Gain_2"
+        }, 
+        {
+            "name": "Gain 3", 
+            "symbol": "Gain_3"
+        }, 
+        {
+            "name": "Freq 1", 
+            "symbol": "Freq_1"
+        }, 
+        {
+            "name": "Freq 2", 
+            "symbol": "Freq_2"
+        }
+    ], 
+    "label": "Cross Over 3x"
+}

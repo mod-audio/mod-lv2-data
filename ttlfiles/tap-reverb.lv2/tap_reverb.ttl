@@ -1,0 +1,361 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props/#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://moddevices.com/plugins/tap/reverb>
+a lv2:Plugin, lv2:ReverbPlugin;
+
+doap:name "TAP Reverberator";
+
+doap:developer [
+    foaf:name "Tom Szilagyi";
+    foaf:homepage <http://tap-plugins.sourceforge.net/index.html>;
+    foaf:mbox <mailto:tszilagyi@users.sourceforge.net>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+    ];
+
+mod:brand "TAP";
+mod:label "Reverberator";
+
+doap:license <http://usefulinc.com/doap/licenses/gpl>;
+
+lv2:minorVersion 7;
+lv2:microVersion 2;
+
+rdfs:comment """
+TAP Reverberator is unique among reverberators freely available on the Linux platform. It supports creating no less than 43 reverberation effects, but its design permits this to be extended even further by the user, without doing any actual programming. Please take a look at TAP Reverb Editor, a separate JACK application for more information about this.
+
+The design is based on the comb/allpass filter model. Comb filters create early reflections and allpass filters add to this by creating a dense reverberation effect. The output of the set of comb and allpass filters (also called the reverberator chamber) is processed further by sending it through a bandpass filter. The resulting band-limited reverberation is very similar to the natural reverberation that occurs in acoustic rooms. To achieve an even more natural-sounding effect, all comb filters have high-frequency compensation in their feedback loop. This is to model that the reflection ratio of acoustic surfaces is the function of frequency: higher frequencies are attenuated more, and thus decay time of higher frequency components is significantly shorter.
+
+To enhance the reverberation sound even further, a special option called Enhanced Stereo is provided. When turned on (which is the default), it results in an added spatial spread of the reverb sound. This feature is most noticeable when applying the plugin to mono tracks: the sound of these tracks will "open up" in space.
+
+source: http://tap-plugins.sourceforge.net/ladspa/reverb.html
+""";
+
+lv2:port
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 0;
+    lv2:symbol "decay";
+    lv2:name "Decay";
+    lv2:default 2800;
+    lv2:minimum 0;
+    lv2:maximum 10000;
+    units:unit units:ms ;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 1;
+    lv2:symbol "drylevel";
+    lv2:name "Dry Level";
+    lv2:default -4;
+    lv2:minimum -70;
+    lv2:maximum 10;
+    units:unit units:db ;
+
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 2;
+    lv2:symbol "wetlevel";
+    lv2:name "Wet Level";
+    lv2:default -12;
+    lv2:minimum -70;
+    lv2:maximum 10;
+    units:unit units:db ;
+
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 3;
+    lv2:symbol "combs_en";
+    lv2:name "Comb Filters";
+    lv2:default 1;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:toggled;
+    lv2:scalePoint
+    [
+        rdfs:label "Off" ;
+        rdf:value 0.0
+    ],
+    [
+        rdfs:label "On" ;
+        rdf:value 1.0
+    ]
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 4;
+    lv2:symbol "allps_en";
+    lv2:name "Allpass Filters";
+    lv2:default 1;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:toggled;
+    lv2:scalePoint
+    [
+        rdfs:label "Off" ;
+        rdf:value 0.0
+    ],
+    [
+        rdfs:label "On" ;
+        rdf:value 1.0
+    ]
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 5;
+    lv2:symbol "bandpass_en";
+    lv2:name "Bandpass Filter";
+    lv2:default 1;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:toggled;
+    lv2:scalePoint
+    [
+        rdfs:label "Off" ;
+        rdf:value 0.0
+    ],
+    [
+        rdfs:label "On" ;
+        rdf:value 1.0
+    ]
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 6;
+    lv2:symbol "stereo_enh";
+    lv2:name "Enhanced Stereo";
+    lv2:default 1;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:toggled;
+    lv2:scalePoint
+    [
+        rdfs:label "Off" ;
+        rdf:value 0.0
+    ],
+    [
+        rdfs:label "On" ;
+        rdf:value 1.0
+    ]
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 7;
+    lv2:symbol "mode";
+    lv2:name "Reverb Type";
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 42;
+    lv2:portProperty lv2:enumeration;
+    lv2:scalePoint
+    [
+        rdfs:label "AfterBurn" ;
+        rdf:value 0.0
+    ],
+    [
+        rdfs:label "AfterBurn (Long)" ;
+        rdf:value 1.0
+    ],
+    [
+        rdfs:label "Ambience" ;
+        rdf:value 2.0
+    ],
+    [
+        rdfs:label "Ambience (Thick)" ;
+        rdf:value 3.0
+    ],
+    [
+        rdfs:label "Ambience (Thick) - HD" ;
+        rdf:value 4.0
+    ],
+    [
+        rdfs:label "Cathedral" ;
+        rdf:value 5.0
+    ],
+    [
+        rdfs:label "Cathedral - HD" ;
+        rdf:value 6.0
+    ],
+    [
+        rdfs:label "Drum Chamber" ;
+        rdf:value 7.0
+    ],
+    [
+        rdfs:label "Garage" ;
+        rdf:value 8.0
+    ],
+    [
+        rdfs:label "Garage (Bright)" ;
+        rdf:value 9.0
+    ],
+    [
+        rdfs:label "Gymnasium" ;
+        rdf:value 10.0
+    ],
+    [
+        rdfs:label "Gymnasium (Bright)" ;
+        rdf:value 11.0
+    ],
+    [
+        rdfs:label "Gymnasium (Bright) - HD" ;
+        rdf:value 12.0
+    ],
+    [
+        rdfs:label "Hall (Small)" ;
+        rdf:value 13.0
+    ],
+    [
+        rdfs:label "Hall (Medium)" ;
+        rdf:value 14.0
+    ],
+    [
+        rdfs:label "Hall (Large)" ;
+        rdf:value 15.0
+    ],
+    [
+        rdfs:label "Hall (Large) - HD" ;
+        rdf:value 16.0
+    ],
+    [
+        rdfs:label "Plate (Small)" ;
+        rdf:value 17.0
+    ],
+    [
+        rdfs:label "Plate (Medium)" ;
+        rdf:value 18.0
+    ],
+    [
+        rdfs:label "Plate (Large)" ;
+        rdf:value 19.0
+    ],
+    [
+        rdfs:label "Plate (Large) - HD" ;
+        rdf:value 20.0
+    ],
+    [
+        rdfs:label "Pulse Chamber" ;
+        rdf:value 21.0
+    ],
+    [
+        rdfs:label "Pulse Chamber (Reverse)" ;
+        rdf:value 22.0
+    ],
+    [
+        rdfs:label "Resonator (96 ms)" ;
+        rdf:value 23.0
+    ],
+    [
+        rdfs:label "Resonator (152 ms)" ;
+        rdf:value 24.0
+    ],
+    [
+        rdfs:label "Resonator (208 ms)" ;
+        rdf:value 25.0
+    ],
+    [
+        rdfs:label "Room (Small)" ;
+        rdf:value 26.0
+    ],
+    [
+        rdfs:label "Room (Medium)" ;
+        rdf:value 27.0
+    ],
+    [
+        rdfs:label "Room (Large)" ;
+        rdf:value 28.0
+    ],
+    [
+        rdfs:label "Room (Large) - HD" ;
+        rdf:value 29.0
+    ],
+    [
+        rdfs:label "Slap Chamber" ;
+        rdf:value 30.0
+    ],
+    [
+        rdfs:label "Slap Chamber - HD" ;
+        rdf:value 31.0
+    ],
+    [
+        rdfs:label "Slap Chamber (Bright)" ;
+        rdf:value 32.0
+    ],
+    [
+        rdfs:label "Slap Chamber (Bright) - HD" ;
+        rdf:value 33.0
+    ],
+    [
+        rdfs:label "Smooth Hall (Small)" ;
+        rdf:value 34.0
+    ],
+    [
+        rdfs:label "Smooth Hall (Medium)" ;
+        rdf:value 35.0
+    ],
+    [
+        rdfs:label "Smooth Hall (Large)" ;
+        rdf:value 36.0
+    ],
+    [
+        rdfs:label "Smooth Hall (Large) - HD" ;
+        rdf:value 37.0
+    ],
+    [
+        rdfs:label "Vocal Plate" ;
+        rdf:value 38.0
+    ],
+    [
+        rdfs:label "Vocal Plate - HD" ;
+        rdf:value 39.0
+    ],
+    [
+        rdfs:label "Warble Chamber" ;
+        rdf:value 40.0
+    ],
+    [
+        rdfs:label "Warehouse" ;
+        rdf:value 41.0
+    ],
+    [
+        rdfs:label "Warehouse - HD" ;
+        rdf:value 42.0
+    ]
+
+],
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 8;
+    lv2:symbol "inputl";
+    lv2:name "Input Left";
+],
+[
+    a lv2:OutputPort, lv2:AudioPort;
+    lv2:index 9;
+    lv2:symbol "outputl";
+    lv2:name "Output Left";
+],
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 10;
+    lv2:symbol "inputr";
+    lv2:name "Input Right";
+],
+[
+    a lv2:OutputPort, lv2:AudioPort;
+    lv2:index 11;
+    lv2:symbol "outputr";
+    lv2:name "Output Right";
+].

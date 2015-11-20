@@ -1,0 +1,47 @@
+{
+    "author": "Calf", 
+    "color": "gray", 
+    "controls": [
+        {
+            "name": "Bypass", 
+            "symbol": "bypass"
+        }, 
+        {
+            "name": "Input", 
+            "symbol": "level_in"
+        }, 
+        {
+            "name": "Output", 
+            "symbol": "level_out"
+        }, 
+        {
+            "name": "Amount", 
+            "symbol": "amount"
+        }, 
+        {
+            "name": "Harmonics", 
+            "symbol": "drive"
+        }, 
+        {
+            "name": "Blend harmonics", 
+            "symbol": "blend"
+        }, 
+        {
+            "name": "Scope", 
+            "symbol": "freq"
+        }, 
+        {
+            "name": "Listen", 
+            "symbol": "listen"
+        }, 
+        {
+            "name": "Ceiling active", 
+            "symbol": "ceil_active"
+        }, 
+        {
+            "name": "Ceiling", 
+            "symbol": "ceil"
+        }
+    ], 
+    "label": "Bass Enhancer"
+}

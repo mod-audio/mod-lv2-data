@@ -1,0 +1,104 @@
+<div class="mod-toggleswitch4 mod-pedal">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="mod-plugin-author"><h1>{{brand}}</h1></div>
+    <div class="mod-plugin-name"><h1>{{label}}</h1></div>
+    <div class="mod-light on" mod-role="bypass-light"></div>
+    <div class="mod-control-group">
+        <div class="mod-control">
+            <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="channel1"></div>
+            <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="channel2"></div>
+            <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="channel3"></div>
+            <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="channel4"></div>
+        </div>
+    </div>
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+</div>
+<style>
+    .mod-toggleswitch4 * {
+        color: white !important;
+    }
+    .mod-toggleswitch4 .mod-plugin-name , .mod-toggleswitch4 .mod-plugin-author  {
+        display: none;
+    }
+
+    .mod-toggleswitch4 {
+        background-image:url(/resources/back.png{{{ns}}}) !important;
+        background-size:219px 375px;
+        background-repeat: no-repeat;
+        width: 209px;
+        height: 375px;
+        position: relative;
+    }
+    .mod-toggleswitch4 .mod-control-group {
+        top: 133px;
+        left:61px;
+        position: absolute;
+    }
+
+    .mod-toggleswitch4 .mod-control-image {
+      background-image: url(/resources/switch.png{{{ns}}});
+      background-position:left center ;
+      background-repeat:no-repeat;
+      background-size:300px 35px;
+      cursor:pointer;
+      height:35px;
+      width: 150px;
+      margin:0 auto 25px auto;
+      cursor: pointer !important;
+      position:relative;
+      overflow:hidden;
+    }
+    .mod-toggleswitch4 .mod-light {
+        top: 172px;
+    }
+    .mod-toggleswitch4 .mod-knob-value {
+        color: #84ff00 !important;
+        background: #222;
+        font-family: monospace;
+        text-align: right;
+        margin: 5px 0 52px 0;
+        border: 1px inset #555;
+        display: block;
+        height: 20px;
+        width: 100px;
+        overflow: hidden;
+    }
+    .mod-toggleswitch4 .mod-footswitch.on {
+        background-position:top center;
+    }
+    .mod-toggleswitch4 .mod-footswitch.off {
+        background-position:bottom center;
+    }
+    .mod-toggleswitch4 .mod-pedal-input {
+        top: 212px;
+    }
+    .mod-toggleswitch4 .mod-pedal-output {
+        top: 124px;
+    }
+    .mod-toggleswitch4 .mod-pedal-output>*  {
+        margin-bottom: 3px !important;
+    }
+</style>

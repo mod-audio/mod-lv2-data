@@ -1,0 +1,478 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix doap:   <http://usefulinc.com/ns/doap#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units:  <http://lv2plug.in/ns/extension/units#> .
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix pg:     <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+
+<http://invadarecords.com/plugins/lv2/filter/lpf/mono> 
+    a lv2:Plugin, lv2:LowpassPlugin ;
+    doap:name "Invada Low Pass Filter (mono)" ;
+    mod:brand "Invada" ;
+    mod:label "Low-Pass Fltr M" ;
+    doap:developer [
+	foaf:name "Fraser Stuart";
+	foaf:homepage <https://launchpad.net/invada-studio> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:maintainer [
+	foaf:name "Invada";
+	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+    lv2:optionalFeature lv2:hardRTCapable ;
+    dct:replaces <urn:ladspa:3302> ;
+
+    lv2:port [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 0 ;
+	lv2:symbol "bypass" ;
+	lv2:name "Bypass" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 1 ;
+	lv2:symbol "freq" ;
+	lv2:name "Frequency" ;
+	lv2:default 1000 ;
+	lv2:minimum 20 ;
+	lv2:maximum 20000 ;
+	units:unit units:hz ;
+        lv2:portProperty pprops:logarithmic ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 2 ;
+	lv2:symbol "gain" ;
+	lv2:name "Gain" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 12.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 3 ;
+	lv2:symbol "noClip" ;
+	lv2:name "Soft Clip" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 4 ;
+	lv2:symbol "meterIn" ;
+	lv2:name "In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 5 ;
+	lv2:symbol "meterOut" ;
+	lv2:name "Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 6 ;
+	lv2:symbol "in" ;
+	lv2:name "In" ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 7 ;
+	lv2:symbol "out" ;
+	lv2:name "Out" ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 8 ;
+	lv2:symbol "lampDrive" ;
+	lv2:name "Drive" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 10.0 ;
+   ] .
+
+<http://invadarecords.com/plugins/lv2/filter/lpf/stereo#in> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "in" .
+  
+<http://invadarecords.com/plugins/lv2/filter/lpf/stereo#out> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "out" .
+
+<http://invadarecords.com/plugins/lv2/filter/lpf/stereo>
+    a lv2:Plugin, lv2:LowpassPlugin ;
+    doap:name "Invada Low Pass Filter (stereo)" ;
+    mod:brand "Invada" ;
+    mod:label "Low-Pass Fltr St" ;
+    doap:developer [
+	foaf:name "Fraser Stuart";
+	foaf:homepage <https://launchpad.net/invada-studio> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:maintainer [
+	foaf:name "Invada";
+	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+    lv2:optionalFeature lv2:hardRTCapable ;
+    dct:replaces <urn:ladspa:3304> ;
+
+    lv2:port [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 0 ;
+	lv2:symbol "bypass" ;
+	lv2:name "Bypass" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 1 ;
+	lv2:symbol "freq" ;
+	lv2:name "Frequency" ;
+	lv2:default 1000 ;
+	lv2:minimum 20 ;
+	lv2:maximum 20000 ;
+	units:unit units:hz ;
+        lv2:portProperty pprops:logarithmic ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 2 ;
+	lv2:symbol "gain" ;
+	lv2:name "Gain" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 12.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 3 ;
+	lv2:symbol "noClip" ;
+	lv2:name "Soft Clip" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 4 ;
+	lv2:symbol "meterInL" ;
+	lv2:name "L In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 5 ;
+	lv2:symbol "meterOutL" ;
+	lv2:name "L Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 6 ;
+	lv2:symbol "inL" ;
+	lv2:name "L In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/lpf/stereo#in> ;
+	pg:role pg:leftChannel ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 7 ;
+	lv2:symbol "outL" ;
+	lv2:name "L Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/lpf/stereo#out> ;
+	pg:role pg:leftChannel ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 8 ;
+	lv2:symbol "lampDrive" ;
+	lv2:name "Drive" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 10.0 ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 9 ;
+	lv2:symbol "meterInR" ;
+	lv2:name "R In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 10 ;
+	lv2:symbol "meterOutR" ;
+	lv2:name "R Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 11 ;
+	lv2:symbol "inR" ;
+	lv2:name "R In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/lpf/stereo#in> ;
+	pg:role pg:rightChannel ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 12 ;
+	lv2:symbol "outR" ;
+	lv2:name "R Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/lpf/stereo#out> ;
+	pg:role pg:rightChannel ;
+    ] .
+
+<http://invadarecords.com/plugins/lv2/filter/hpf/mono>
+    a lv2:Plugin, lv2:HighpassPlugin ;
+    doap:name "Invada High Pass Filter (mono)" ;
+    mod:brand "Invada" ;
+    mod:label "High-Pass Fltr M" ;
+    doap:developer [
+	foaf:name "Fraser Stuart";
+	foaf:homepage <https://launchpad.net/invada-studio> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:maintainer [
+	foaf:name "Invada";
+	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+    lv2:optionalFeature lv2:hardRTCapable ;
+    dct:replaces <urn:ladspa:3303> ;
+
+    lv2:port [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 0 ;
+	lv2:symbol "bypass" ;
+	lv2:name "Bypass" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 1 ;
+	lv2:symbol "freq" ;
+	lv2:name "Frequency" ;
+	lv2:default 1000 ;
+	lv2:minimum 20 ;
+	lv2:maximum 20000 ;
+	units:unit units:hz ;
+        lv2:portProperty pprops:logarithmic ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 2 ;
+	lv2:symbol "gain" ;
+	lv2:name "Gain" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 12.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 3 ;
+	lv2:symbol "noClip" ;
+	lv2:name "Soft Clip" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 4 ;
+	lv2:symbol "meterIn" ;
+	lv2:name "In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 5 ;
+	lv2:symbol "meterOut" ;
+	lv2:name "Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 6 ;
+	lv2:symbol "in" ;
+	lv2:name "In" ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 7 ;
+	lv2:symbol "out" ;
+	lv2:name "Out" ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 8 ;
+	lv2:symbol "lampDrive" ;
+	lv2:name "Drive" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 10.0 ;
+   ] .
+
+<http://invadarecords.com/plugins/lv2/filter/hpf/stereo#in> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "in" .
+  
+<http://invadarecords.com/plugins/lv2/filter/hpf/stereo#out> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "out" .
+
+<http://invadarecords.com/plugins/lv2/filter/hpf/stereo>
+    a lv2:Plugin, lv2:HighpassPlugin ;
+    doap:name "Invada High Pass Filter (stereo)" ;
+    mod:brand "Invada" ;
+    mod:label "High-Pass Fltr S" ;
+    doap:developer [
+	foaf:name "Fraser Stuart";
+	foaf:homepage <https://launchpad.net/invada-studio> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:maintainer [
+	foaf:name "Invada";
+	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+    lv2:optionalFeature lv2:hardRTCapable ;
+    dct:replaces <urn:ladspa:3305> ;
+
+    lv2:port [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 0 ;
+	lv2:symbol "bypass" ;
+	lv2:name "Bypass" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 1 ;
+	lv2:symbol "freq" ;
+	lv2:name "Frequency" ;
+	lv2:default 1000 ;
+	lv2:minimum 20 ;
+	lv2:maximum 20000 ;
+	units:unit units:hz ;
+        lv2:portProperty pprops:logarithmic ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 2 ;
+	lv2:symbol "gain" ;
+	lv2:name "Gain" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 12.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 3 ;
+	lv2:symbol "noClip" ;
+	lv2:name "Soft Clip" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 4 ;
+	lv2:symbol "meterInL" ;
+	lv2:name "L In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 5 ;
+	lv2:symbol "meterOutL" ;
+	lv2:name "L Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 6 ;
+	lv2:symbol "inL" ;
+	lv2:name "L In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/hpf/stereo#in> ;
+	pg:role pg:leftChannel ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 7 ;
+	lv2:symbol "outL" ;
+	lv2:name "L Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/hpf/stereo#out> ;
+	pg:role pg:leftChannel ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 8 ;
+	lv2:symbol "lampDrive" ;
+	lv2:name "Drive" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 10.0 ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 9 ;
+	lv2:symbol "meterInR" ;
+	lv2:name "R In" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 10 ;
+	lv2:symbol "meterOutR" ;
+	lv2:name "R Out" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 11 ;
+	lv2:symbol "inR" ;
+	lv2:name "R In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/hpf/stereo#in> ;
+	pg:role pg:rightChannel ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 12 ;
+	lv2:symbol "outR" ;
+	lv2:name "R Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/filter/hpf/stereo#out> ;
+	pg:role pg:rightChannel ;
+    ] .
+
