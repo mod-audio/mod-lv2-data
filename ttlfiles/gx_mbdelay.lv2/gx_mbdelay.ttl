@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -24,11 +24,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_mbdelay_>
@@ -36,23 +38,30 @@
 	doap:maintainer <http://guitarix.sourceforge.net#me> ;
 	doap:name "Gx_mbdelay_" .
 
+
 <http://guitarix.sourceforge.net/plugins/gx_mbdelay_#_mbdelay_>
     a lv2:Plugin ,
         lv2:DelayPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxMultiBandDelay";
+		doap:brand "Guitarix";
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_mbdelay_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    
+
+
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_mbdelay_#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
+
+
+mod:brand "Guitarix";
+
 rdfs:comment """
 
-...
+A fullyworking delay where it's possible to have a different delay for every
+band
 
 """;
 
@@ -285,4 +294,3 @@ rdfs:comment """
   a guiext:GtkUI;
   guiext:binary <gx_mbdelay_gui.so>;
   guiext:requiredFeature guiext:makeResident .
-  
