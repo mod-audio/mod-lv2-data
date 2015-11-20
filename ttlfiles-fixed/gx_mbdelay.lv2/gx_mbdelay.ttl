@@ -44,7 +44,6 @@
         lv2:DelayPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxMultiBandDelay";
-		doap:brand "Guitarix";
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_mbdelay_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -292,5 +291,4 @@ band
 
 <http://guitarix.sourceforge.net/plugins/gx_mbdelay_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_mbdelay_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_mbdelay_gui.so>; .
