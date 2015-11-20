@@ -6,6 +6,7 @@
 @prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix mod:   <http://moddevices.com/ns/mod#>.
 
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
@@ -30,8 +31,8 @@
 <http://rakarrack.sourceforge.net/effects.html#delm>
         a lv2:Plugin, lv2:DelayPlugin ;
         doap:name "rkr Musical Delay" ;
-        doap:brand "Rakarrack";
-        doap:label "Musical Delay";
+        mod:brand "Rakarrack";
+        mod:label "Musical Delay";
         doap:description "Tempo Selectable Dual Delay";
         doap:license <http://opensource.org/licenses/gpl-2.0> ;
         doap:maintainer [

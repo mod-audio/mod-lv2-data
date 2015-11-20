@@ -4,6 +4,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix mod:   <http://moddevices.com/ns/mod#>.
 
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
@@ -17,7 +18,7 @@
 <http://rakarrack.sourceforge.net/effects.html#Valve>
         a lv2:Plugin, lv2:DistortionPlugin ;
         doap:name "rkr Valve" ;
-        doap:brand "Rakarrack";
+        mod:brand "Rakarrack";
         doap:description "Tube Distortion Emulator";
         doap:license <http://opensource.org/licenses/gpl-2.0> ;
         doap:maintainer [
