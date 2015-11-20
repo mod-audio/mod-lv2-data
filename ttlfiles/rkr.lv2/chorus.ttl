@@ -19,7 +19,7 @@
         a lv2:Plugin, lv2:ChorusPlugin ;
         doap:name "rkr Flanger/Chorus" ;
         mod:brand "Rakarrack";
-	mod:label "Flanger/Chorus";
+        mod:label "Flanger/Chorus";
         doap:description "Flanger/Chorus";
         doap:license <http://opensource.org/licenses/GPL-2.0> ;
         doap:maintainer [

@@ -11,6 +11,7 @@ fomp:mvchpf1
 	doap:name "Moog High-Pass Filter 1" ;
 	mod:brand "FOMP" ;
 	mod:label "Moog High-Pass 1" ;
+	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -66,6 +67,7 @@ fomp:mvchpf1
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
+		lv2:default 0.0 ;
 		lv2:index 6 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum 0.0 ;

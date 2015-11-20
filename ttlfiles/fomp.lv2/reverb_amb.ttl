@@ -14,6 +14,8 @@ fomp:reverb_amb
 	doap:name "reverb-amb" ;
 	mod:brand "FOMP" ;
 	mod:label "Reverb Amb" ;
+	doap:license <http://opensource.org/licenses/gpl-2.0> ;
+	rdfs:comment """FOMP is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.""";
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -69,8 +71,8 @@ fomp:reverb_amb
 			lv2:InputPort ;
 		lv2:default 223.607 ;
 		lv2:index 7 ;
-		lv2:maximum 1000 ;
-		lv2:minimum 50 ;
+		lv2:maximum 1000.0 ;
+		lv2:minimum 50.0 ;
 		lv2:name "Xover" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "xover"
@@ -79,8 +81,8 @@ fomp:reverb_amb
 			lv2:InputPort ;
 		lv2:default 2.75 ;
 		lv2:index 8 ;
-		lv2:maximum 8 ;
-		lv2:minimum 1 ;
+		lv2:maximum 8.0 ;
+		lv2:minimum 1.0 ;
 		lv2:name "RT-low" ;
 		lv2:symbol "rt_low"
 	] , [
@@ -88,17 +90,17 @@ fomp:reverb_amb
 			lv2:InputPort ;
 		lv2:default 2.75 ;
 		lv2:index 9 ;
-		lv2:maximum 8 ;
-		lv2:minimum 1 ;
+		lv2:maximum 8.0 ;
+		lv2:minimum 1.0 ;
 		lv2:name "RT-mid" ;
 		lv2:symbol "rt_mid"
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
-		lv2:default 6000 ;
+		lv2:default 6000.0 ;
 		lv2:index 10 ;
-		lv2:maximum 24000 ;
-		lv2:minimum 1500 ;
+		lv2:maximum 24000.0 ;
+		lv2:minimum 1500.0 ;
 		lv2:name "Damping" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "damping"
@@ -107,18 +109,18 @@ fomp:reverb_amb
 			lv2:InputPort ;
 		lv2:default 159.054 ;
 		lv2:index 11 ;
-		lv2:maximum 10000 ;
-		lv2:minimum 40 ;
+		lv2:maximum 10000.0 ;
+		lv2:minimum 40.0 ;
 		lv2:name "F1-freq" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "fw_freq"
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
-		lv2:default 0 ;
+		lv2:default 0.0 ;
 		lv2:index 12 ;
-		lv2:maximum 20 ;
-		lv2:minimum -20 ;
+		lv2:maximum 20.0 ;
+		lv2:minimum -20.0 ;
 		lv2:name "F1-gain" ;
 		lv2:symbol "fw_gain"
 	] , [
@@ -126,27 +128,27 @@ fomp:reverb_amb
 			lv2:InputPort ;
 		lv2:default 2514.87 ;
 		lv2:index 13 ;
-		lv2:maximum 10000 ;
-		lv2:minimum 40 ;
+		lv2:maximum 10000.0 ;
+		lv2:minimum 40.0 ;
 		lv2:name "F2-freq" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "f2_freq"
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
-		lv2:default 0 ;
+		lv2:default 0.0 ;
 		lv2:index 14 ;
-		lv2:maximum 20 ;
-		lv2:minimum -20 ;
+		lv2:maximum 20.0 ;
+		lv2:minimum -20.0 ;
 		lv2:name "F2-gain" ;
 		lv2:symbol "f2_gain"
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
-		lv2:default 0 ;
+		lv2:default 0.0 ;
 		lv2:index 15 ;
-		lv2:maximum 9 ;
-		lv2:minimum -9 ;
+		lv2:maximum 9.0 ;
+		lv2:minimum -9.0 ;
 		lv2:name "XYZ gain" ;
 		lv2:symbol "xyz_gain"
 	] .

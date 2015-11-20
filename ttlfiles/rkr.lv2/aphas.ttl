@@ -19,7 +19,7 @@
         a lv2:Plugin, lv2:PhaserPlugin ;
         doap:name "rkr Analog Phaser" ;
         mod:brand "Rakarrack";
-	mod:label "Analog Phaser";
+        mod:label "Analog Phaser";
         doap:description "Phaser";
         doap:license <http://opensource.org/licenses/GPL-2.0> ;
         doap:maintainer [

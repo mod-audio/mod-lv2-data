@@ -11,6 +11,7 @@ fomp:mvclpf2
 	doap:name "Moog Low-Pass Filter 2" ;
 	mod:brand "FOMP" ;
 	mod:label "Moog Low-Pass 2" ;
+	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -72,6 +73,7 @@ fomp:mvclpf2
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
+		lv2:default 0.0 ;
 		lv2:index 7 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum 0.0 ;
@@ -80,6 +82,7 @@ fomp:mvclpf2
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
+		lv2:default 0.0 ;
 		lv2:index 8 ;
 		lv2:maximum 1.0 ;
 		lv2:minimum 0.0 ;
@@ -88,6 +91,7 @@ fomp:mvclpf2
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
+		lv2:default 0.0 ;
 		lv2:index 9 ;
 		lv2:maximum 1.0 ;
 		lv2:minimum 0.0 ;

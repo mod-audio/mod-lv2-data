@@ -14,6 +14,8 @@
 	doap:name "Auto-wah" ;
 	mod:brand "FOMP" ;
 	mod:label "Auto-Wah" ;
+	doap:license <http://opensource.org/licenses/gpl-2.0> ;
+	rdfs:comment """FOMP is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.""";
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
