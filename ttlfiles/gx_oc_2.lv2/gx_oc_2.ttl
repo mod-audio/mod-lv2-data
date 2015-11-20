@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2014 Guitarix project MOD project
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -26,6 +26,7 @@
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time: <http://lv2plug.in/ns/ext/time#>.
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -46,12 +47,13 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_oc_2_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-      
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_oc_2_gui#_oc_2_>;
-    
+
+mod:brand "Guitarix";
 rdfs:comment """
 
 ...
@@ -70,7 +72,7 @@ rdfs:comment """
         lv2:index 1 ;
         lv2:symbol "in" ;
         lv2:name "In" ;
-    ] 
+    ]
       , [
         a lv2:InputPort ,
             lv2:ControlPort ;

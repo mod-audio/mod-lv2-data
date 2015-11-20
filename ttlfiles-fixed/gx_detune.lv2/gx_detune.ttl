@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2014 Guitarix project MOD project
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -31,11 +31,13 @@
 @prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
 @prefix opt:  <http://lv2plug.in/ns/ext/options#> .
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
+	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_detune_>
@@ -60,13 +62,16 @@
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_detune_#gui>;
 
-      
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
-rdfs:comment """
 
-...
+		mod:brand "Guitarix";
+
+
+
+rdfs:comment """
+Detuner with an octave option
 
 """;
 
@@ -82,7 +87,7 @@ rdfs:comment """
         lv2:index 1 ;
         lv2:symbol "in" ;
         lv2:name "In" ;
-    ] 
+    ]
       , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -98,11 +103,11 @@ rdfs:comment """
         lv2:index 3 ;
         lv2:symbol "OCTAVE" ;
         lv2:name "OCTAVE" ;
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 2.0 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
         lv2:portProperty lv2:integer;
-        lv2:portProperty lv2:enumeration ; 
+        lv2:portProperty lv2:enumeration ;
         lv2:scalePoint [rdfs:label "normal"; rdf:value 0];
         lv2:scalePoint [rdfs:label "octaveup"; rdf:value 1];
         lv2:scalePoint [rdfs:label "octavedown"; rdf:value 2];
@@ -113,11 +118,11 @@ rdfs:comment """
         lv2:index 4 ;
         lv2:symbol "COMPENSATE" ;
         lv2:name "COMPENSATE" ;
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
         lv2:portProperty lv2:integer;
-        lv2:portProperty lv2:enumeration ; 
+        lv2:portProperty lv2:enumeration ;
         lv2:scalePoint [rdfs:label "latency"; rdf:value 0];
         lv2:scalePoint [rdfs:label "compensate"; rdf:value 1];
 
@@ -127,11 +132,11 @@ rdfs:comment """
         lv2:index 5 ;
         lv2:symbol "LATENCY" ;
         lv2:name "LATENCY" ;
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 2.0 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
         lv2:portProperty lv2:integer;
-        lv2:portProperty lv2:enumeration ; 
+        lv2:portProperty lv2:enumeration ;
         lv2:scalePoint [rdfs:label "highquality"; rdf:value 0];
         lv2:scalePoint [rdfs:label "lowquality"; rdf:value 1];
         lv2:scalePoint [rdfs:label "realtime"; rdf:value 2];
@@ -205,4 +210,3 @@ rdfs:comment """
   a guiext:GtkUI;
   guiext:binary <gx_detune_gui.so>;
   guiext:requiredFeature guiext:makeResident .
-
