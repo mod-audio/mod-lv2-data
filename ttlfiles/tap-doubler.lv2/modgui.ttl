@@ -1,0 +1,50 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/tap/doubler>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tap-fractal-doubler.html> ;
+        modgui:stylesheet <modgui/stylesheet-tap-fractal-doubler.css> ;
+        modgui:screenshot <modgui/screenshot-tap-fractal-doubler.png> ;
+        modgui:thumbnail <modgui/thumbnail-tap-fractal-doubler.png> ;
+        modgui:brand "TAP" ;
+        modgui:label "Fractal Doubler" ;
+        modgui:model "japanese" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "TimeTracking" ;
+            lv2:name "Time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "WetLeftPosition" ;
+            lv2:name "Wet Left Position" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "WetRightPosition" ;
+            lv2:name "Wet Right Position" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "WetLevelDb" ;
+            lv2:name "Wet Level" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "PitchTracking" ;
+            lv2:name "Pitch" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "DryLeftPosition" ;
+            lv2:name "Dry Left Position" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "DryRightPosition" ;
+            lv2:name "Dry Right Position" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "DryLevelDb" ;
+            lv2:name "Dry Level" ;
+        ] ;
+    ] .

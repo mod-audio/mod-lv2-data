@@ -1,0 +1,485 @@
+.calf {
+    background: url(/resources/background_dark.png{{{ns}}}) repeat;
+    position: relative;
+    color: #FFF;
+}
+
+/* bar top */
+
+.calf .bar-top {
+    background: url(/resources/background_black.png{{{ns}}}) repeat;
+    height: 46px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.calf .bar-top .title-calf {
+    color: #FFF;
+    display: block;
+    left: 35px;
+    position: absolute;
+    top: 13px;
+}
+.calf .bar-top .off-or-on-calf {
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
+    background-size: 46px 62px;
+    cursor: pointer;
+    height: 31px;
+    z-index: 100;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 46px;
+}
+.calf .bar-top .off-or-on-calf.on {
+    background-position: top center;
+}
+.calf .bar-top .off-or-on-calf.off {
+    background-position: bottom center;
+}
+.calf .bar-top .off-or-on-calf span {
+    color: #FFF;
+    left: -50px;
+    position: absolute;
+    top: 9px;
+}
+
+/* Global calf div */
+
+.calf .global-calf {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+/*bars left*/
+.calf .groups-bar-left {
+    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-left .top {
+    background: url(/resources/side_nw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+.calf .groups-bar-left .bottom {
+    background: url(/resources/side_sw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+
+/* bars right */
+.calf .groups-bar-right {
+    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .top {
+    background: url(/resources/side_ne.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .bottom {
+    background: url(/resources/side_se.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+.calf .groups-bar-right .logo {
+    background: url(/resources/side_e_logo.png{{{ns}}});
+    height: 90px;
+    left: 0;
+    position: absolute;
+    bottom: 36px;
+    width: 56px;
+}
+
+/* cols */
+
+.calf .border-solid-and-radius {
+    border: solid 1px #FFF;
+    border-radius: 7px;
+}
+.calf .title-of-cols {
+    background: #384454;
+    color: #FFF;
+    font-size: 13px;
+    left: 6px;
+    padding: 0 5px;
+    position: absolute;
+    top: -11px;
+}
+
+/* knob */
+
+.calf .knob {
+    position: absolute;
+    cursor: pointer;
+}
+.calf .knob1 {
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-1 {
+    background: url(/resources/knob1-1.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-2 {
+    background: url(/resources/knob1-2.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-3 {
+    background: url(/resources/knob1-3.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-4 {
+    background: url(/resources/knob1-4.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob2 {
+    height: 40px;
+    width: 40px;
+}
+.calf .knob2-1 {
+    background: url(/resources/knob2-1.png{{{ns}}});
+}
+.calf .knob2-2 {
+    background: url(/resources/knob2-2.png{{{ns}}});
+}
+.calf .knob2-3 {
+    background: url(/resources/knob2-3.png{{{ns}}});
+}
+.calf .knob2-4 {
+    background: url(/resources/knob2-4.png{{{ns}}});
+}
+.calf .knob3 {
+    background: url(/resources/knob3.png{{{ns}}});
+}
+.calf .knob4 {
+    height: 80px;
+    width: 80px;
+}
+.calf .knob4-1 {
+    background: url(/resources/knob4-1.png{{{ns}}});
+}
+.calf .knob4-2 {
+    background: url(/resources/knob4-2.png{{{ns}}});
+}
+.calf .knob4-3 {
+    background: url(/resources/knob4-3.png{{{ns}}});
+}
+.calf .knob4-4 {
+    background: url(/resources/knob4-4.png{{{ns}}});
+}
+.calf .knob5 {
+    height: 100px;
+    width: 100px;
+}
+.calf .knob5-1 {
+    background: url(/resources/knob5-1.png{{{ns}}});
+}
+.calf .knob5-2 {
+    background: url(/resources/knob5-2.png{{{ns}}});
+}
+.calf .knob5-3 {
+    background: url(/resources/knob5-3.png{{{ns}}});
+}
+.calf .knob5-4 {
+    background: url(/resources/knob5-4.png{{{ns}}});
+}
+
+/* titles of things */
+
+.calf .title-fild{
+    color: #FFF;
+    font-size: 10px;
+    position: absolute;
+}
+.toggle1-silver {
+    background: url(/resources/toggle1_silver.png{{{ns}}});
+    height: 20px;
+    position: absolute;
+    width: 30px;
+}
+
+.toggle2_silver-silver {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+.calf .knob1 .title-knob1-top, .calf .knob2 .title-knob2-top, .calf .knob3 .title-knob3-top, .calf .knob4 .title-knob4-top,
+.calf .knob5 .title-knob5-top, .calf .knob1 .title-knob1-bottom, .calf .knob2 .title-knob2-bottom, .calf .knob3 .title-knob3-bottom, .calf .knob4 .title-knob4-bottom,
+.calf .knob5 .title-knob5-bottom {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+}
+
+/* Lines */
+.calf .line-cols-all {
+    background: none repeat scroll 0 0 #222222;
+    box-shadow: 1px 1px #5F5F5F;
+    height: 2px;
+    position: absolute;
+}
+.calf span.value-lines{
+    font-size: 11px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    text-align: center;
+}
+/* Slider */
+
+.calf .slider2-horiz {
+    background: url(/resources/slider2-horiz.png{{{ns}}});
+    height: 36px;
+    position: absolute;
+    width: 46px;
+}
+/* Screw */
+
+.calf .screw_min {
+    background: url(/resources/screw1.png{{{ns}}});
+    background-size: 15px;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    top: -7px;
+
+}
+/* titles of things */
+.calf .title-field-bottom {
+    font-size: 12px;
+}
+
+/* button of bypass */
+
+.calf .button-bypass {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+/* Calf Equalizer */
+.calf-equalizer-5-band {
+	height: 445px;
+	width: 954px;
+}
+
+/* Config Input, Frequency Response and Output*/
+
+.calf-equalizer-5-band .input {
+    height: 191px;
+    left: 73px;
+    position: absolute;
+    top: 13px;
+    width: 184px;
+}
+.calf-equalizer-5-band .input .r, .calf-equalizer-5-band .input .l {
+    right: 7px;
+}
+.calf-equalizer-5-band .input > .disable .title-fild {
+    left: -12px;
+}
+.calf-equalizer-5-band .input .l {
+    top: 10px;
+}
+.calf-equalizer-5-band .input .r {
+    top: 32px;
+}
+
+.calf-equalizer-5-band .knob-rules {
+    bottom: 25px;
+    right: 43px;
+}
+.calf-equalizer-5-band .bottom-knob5 {
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.calf-equalizer-5-band .frequency-response {
+    height: 191px;
+    left: 268px;
+    position: absolute;
+    top: 13px;
+    width: 415px;
+}
+.calf-equalizer-5-band .frequency-response {
+    height: 191px;
+    left: 268px;
+    position: absolute;
+    top: 13px;
+    width: 415px;
+}
+.calf-equalizer-5-band .frequency-response .freque-response-graph {
+    background: url(/resources/disable-freq.png{{{ns}}});
+    height: 176px;
+    left: 13px;
+    position: absolute;
+    top: 10px;
+    width: 387px;
+}
+
+.calf-equalizer-5-band .output {
+    height: 191px;
+    position: absolute;
+    right: 73px;
+    top: 13px;
+    width: 184px;
+}
+.calf-equalizer-5-band .output .r, .calf-equalizer-5-band .output .l {
+    right: 7px;
+}
+.calf-equalizer-5-band .output > .disable .title-fild {
+    left: -12px;
+}
+.calf-equalizer-5-band .output .l {
+    top: 10px;
+}
+.calf-equalizer-5-band .output .r {
+    top: 32px;
+}
+.calf-equalizer-5-band .disable {
+    background: url(/resources/media_des.png{{{ns}}});
+    height: 18px;
+    position: absolute;
+    width: 153px;
+}
+
+/* Config parametric's, Lowshelf and highself*/
+
+.calf-equalizer-5-band .lowshelf {
+    bottom: 12px;
+    height: 160px;
+    left: 73px;
+    position: absolute;
+    width: 184px;
+}
+.calf-equalizer-5-band .parametric-1, .calf-equalizer-5-band .parametric-2, .calf-equalizer-5-band .parametric-3, .calf-equalizer-5-band .highshelf {
+    bottom: 12px;
+    height: 160px;
+    position: absolute;
+    width: 146px;
+}
+.calf-equalizer-5-band .parametric-1 {
+    left: 267px;
+}
+.calf-equalizer-5-band .parametric-2 {
+    left: 421px;
+}
+.calf-equalizer-5-band .parametric-3 {
+    left: 575px;
+}
+.calf-equalizer-5-band .highshelf {
+    left: 731px;
+}
+
+/* Knob lowshelf */
+.calf-equalizer-5-band .position-lowshel-1{
+    top: 22px;
+    left: 27px
+}
+.calf-equalizer-5-band .position-lowshel-2{
+    top: 22px;
+    right: 28px
+}
+/* Parametric */
+
+.calf-equalizer-5-band .parametric .position-1 {
+    top: 22px;
+    left: 18px;
+}
+.calf-equalizer-5-band .parametric .position-2 {
+    top: 22px;
+    right: 19px;
+}
+.calf-equalizer-5-band .parametric .position-3 {
+    bottom: 22px;
+    left: 18px;
+}
+
+/* Titles knobs2 parametric and outhrs */
+
+.calf-equalizer-5-band .knob2 .title-knob2-top {
+    left: -10px;
+    text-align: center;
+    top: -17px;
+    width: 60px;
+}
+.calf-equalizer-5-band .knob2 .title-knob2-bottom {
+    left: -8px;
+    text-align: center;
+    bottom: -20px;
+    width: 62px;
+}
+
+/* Active */
+
+.calf-equalizer-5-band .active {
+    background-image: url(/resources/toggle1_silver.png{{{ns}}});
+    bottom: 30px;
+    height: 20px;
+    right: 20px;
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+}
+.calf-equalizer-5-band .active.off{
+    background-position: 0 top !important;
+}
+.calf-equalizer-5-band .active.on{
+    background-position: 0 bottom !important;
+}
+
+.calf-equalizer-5-band .active .title-active {
+    top: -17px;
+}
+
+.calf .knob, .calf .active, .calf .off-or-on-calf {
+    z-index: 99999;
+}
+
+/* Input/Output */
+ .calf-equalizer-5-band .calf-pedal-input {
+    left:-46px !important;
+ }
+.calf-equalizer-5-band .calf-pedal-output {
+    right:-44px !important;
+}

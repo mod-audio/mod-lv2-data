@@ -1,0 +1,34 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix unit: <http://lv2plug.in/ns/extensions/units#> .
+
+<urn:zamaudio:ZamAutoSat>
+    a lv2:Plugin ;
+
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
+
+    lv2:optionalFeature <http://lv2plug.in/ns/lv2core#hardRTCapable> ,
+                        <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ;
+
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/options#options> ,
+                        <http://lv2plug.in/ns/ext/urid#map> ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 0 ;
+        lv2:symbol "audio_in_1" ;
+        lv2:name "Audio Input 1" ;
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 1 ;
+        lv2:symbol "audio_out_1" ;
+        lv2:name "Audio Output 1" ;
+    ] ;
+
+    doap:name "ZamAutoSat" ;
+    doap:maintainer [ foaf:name "Damien Zammit" ] .
+

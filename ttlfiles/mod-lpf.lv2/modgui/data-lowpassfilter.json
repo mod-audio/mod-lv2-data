@@ -1,0 +1,15 @@
+{
+    "author": "MOD", 
+    "color": "gray", 
+    "controls": [
+        {
+            "name": "Freq", 
+            "symbol": "Freq"
+        }, 
+        {
+            "name": "Order", 
+            "symbol": "Order"
+        }
+    ], 
+    "label": "LowPass Filter"
+}

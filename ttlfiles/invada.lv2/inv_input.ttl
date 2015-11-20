@@ -1,0 +1,182 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units: <http://lv2plug.in/ns/extension/units#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+
+<http://invadarecords.com/plugins/lv2/input#in> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "in" .
+  
+<http://invadarecords.com/plugins/lv2/input#out> 
+    a pg:Group ;
+    a pg:StereoGroup ;
+    lv2:symbol "out" .
+
+<http://invadarecords.com/plugins/lv2/input> 
+    a lv2:Plugin, lv2:UtilityPlugin ;
+    doap:name "Invada Input Module" ;
+    mod:brand "Invada" ;
+    mod:label "Input Module" ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+    doap:developer [
+	foaf:name "Fraser Stuart";
+	foaf:homepage <https://launchpad.net/invada-studio> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    doap:maintainer [
+	foaf:name "Invada";
+	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+	foaf:mbox <mailto:fraser@arkhostings.com> ;
+    ] ;
+    lv2:optionalFeature lv2:hardRTCapable ;
+    dct:replaces <urn:ladspa:3301> ;
+
+    lv2:port [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 0 ;
+	lv2:symbol "bypass" ;
+	lv2:name "Bypass" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 1 ;
+	lv2:symbol "phaseL" ;
+	lv2:name "Phase (L)" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 2 ;
+	lv2:symbol "phaseR" ;
+	lv2:name "Phase (R)" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 3 ;
+	lv2:symbol "gain" ;
+	lv2:name "Gain" ;
+	lv2:default 0.0 ;
+	lv2:minimum -24.0 ;
+	lv2:maximum 24.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 4 ;
+	lv2:symbol "pan" ;
+	lv2:name "Pan" ;
+	lv2:default 0.0 ;
+	lv2:minimum -1.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 5 ;
+	lv2:symbol "width" ;
+	lv2:name "Stereo Width" ;
+	lv2:default 0.0 ;
+	lv2:minimum -1.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:ControlPort ;
+	lv2:index 6 ;
+	lv2:symbol "noClip" ;
+	lv2:name "Soft Clip" ;
+	lv2:portProperty lv2:toggled ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.0 ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 7 ;
+	lv2:symbol "inL" ;
+	lv2:name "L In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/input#in> ;
+	pg:role pg:leftChannel ;
+    ] , [
+	a lv2:InputPort, lv2:AudioPort ;
+	lv2:index 8 ;
+	lv2:symbol "inR" ;
+	lv2:name "R In" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/input#in> ;
+	pg:role pg:rightChannel ;
+    ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 9 ;
+	lv2:symbol "outL" ;
+	lv2:name "L Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/input#out> ;
+	pg:role pg:leftChannel ;
+   ] , [
+	a lv2:OutputPort, lv2:AudioPort ;
+	lv2:index 10 ;
+	lv2:symbol "outR" ;
+	lv2:name "R Out" ;
+	pg:inGroup <http://invadarecords.com/plugins/lv2/input#out> ;
+	pg:role pg:rightChannel ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 11 ;
+	lv2:symbol "meterInL" ;
+	lv2:name "L In Meter" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 12 ;
+	lv2:symbol "meterInR" ;
+	lv2:name "R In Meter" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 13 ;
+	lv2:symbol "meterOutL" ;
+	lv2:name "L Out Meter" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+    ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 14 ;
+	lv2:symbol "meterOutR" ;
+	lv2:name "R Out Meter" ;
+	lv2:default -60.0 ;
+	lv2:minimum -60.0 ;
+	lv2:maximum 6.0 ;
+	units:unit units:db ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 15 ;
+	lv2:symbol "meterPhase" ;
+	lv2:name "Phase Meter" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.57079632675 ;
+   ] , [
+	a lv2:OutputPort, lv2:ControlPort ;
+	lv2:index 16 ;
+	lv2:symbol "lampDrive" ;
+	lv2:name "Drive Lamp" ;
+	lv2:default 0.0 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 10.0 ;
+   ] .
+
+	

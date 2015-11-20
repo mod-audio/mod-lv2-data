@@ -1,0 +1,59 @@
+@prefix doap:  <http://usefulinc.com/ns/doap#>.
+@prefix foaf:  <http://xmlns.com/foaf/0.1/>.
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#>.
+@prefix mod:   <http://moddevices.com/ns/mod#>.
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://moddevices.com/plugins/mod-devel/Gain>
+a lv2:Plugin, lv2:UtilityPlugin;
+
+doap:name "Gain";
+
+doap:developer [
+    foaf:name "Andre";
+    foaf:homepage <>;
+    foaf:mbox <mailto:andre_coutinho@rocketmail.com>;
+];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+];
+
+mod:brand "MOD";
+mod:label "Gain";
+
+doap:license "GPL";
+
+rdfs:comment """
+Simple volume gain plugin without "zipping" noise while messing with the gain parameter.
+""";
+
+lv2:port
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 0;
+    lv2:symbol "In";
+    lv2:name "In";
+    lv2:shortname "In";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 1;
+    lv2:symbol "Out";
+    lv2:name "Out";
+    lv2:shortname "Out";
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 2;
+    lv2:symbol "Gain";
+    lv2:name "Gain";
+    lv2:shortname "Gain";
+    lv2:default 3.0;
+    lv2:minimum -40.0;
+    lv2:maximum 40.0;
+    units:unit units:db ;
+].

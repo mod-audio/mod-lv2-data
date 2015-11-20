@@ -1,0 +1,418 @@
+.calf {
+    background: url(/resources/background_dark.png{{{ns}}}) repeat;
+    position: relative;
+    color: #FFF;
+}
+
+/* bar top */
+
+.calf .bar-top {
+    background: url(/resources/background_black.png{{{ns}}}) repeat;
+    height: 46px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.calf .bar-top .title-calf {
+    color: #FFF;
+    display: block;
+    left: 35px;
+    position: absolute;
+    top: 13px;
+}
+.calf .bar-top .off-or-on-calf {
+    background-image: url(/resources/toggle2_silver.png{{{ns}}});
+    background-size: 46px 62px;
+    cursor: pointer;
+    height: 31px;
+    z-index: 100;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 46px;
+}
+.calf .bar-top .on {
+    background-position: top center;
+}
+.calf .bar-top .off {
+    background-position: bottom center;
+}
+.calf .bar-top .off-or-on-calf span {
+    color: #FFF;
+    left: -50px;
+    position: absolute;
+    top: 9px;
+}
+
+/* Global calf div */
+
+.calf .global-calf {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+/*bars left*/
+.calf .groups-bar-left {
+    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-left .top {
+    background: url(/resources/side_nw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+.calf .groups-bar-left .bottom {
+    background: url(/resources/side_sw.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+
+/* bars right */
+.calf .groups-bar-right {
+    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .top {
+    background: url(/resources/side_ne.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+.calf .groups-bar-right .bottom {
+    background: url(/resources/side_se.png{{{ns}}});
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+}
+.calf .groups-bar-right .logo {
+    background: url(/resources/side_e_logo.png{{{ns}}});
+    height: 90px;
+    left: 0;
+    position: absolute;
+    bottom: 36px;
+    width: 56px;
+}
+
+/* cols */
+
+.calf .border-solid-and-radius {
+    border: solid 1px #FFF;
+    border-radius: 7px;
+}
+.calf .title-of-cols {
+    background: #384454;
+    color: #FFF;
+    font-size: 13px;
+    left: 6px;
+    padding: 0 5px;
+    position: absolute;
+    top: -11px;
+}
+
+/* knob */
+
+.calf .knob {
+    position: absolute;
+    cursor: pointer;
+}
+.calf .knob1 {
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-1 {
+    background: url(/resources/knob1-1.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-2 {
+    background: url(/resources/knob1-2.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-3 {
+    background: url(/resources/knob1-3.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob1-4 {
+    background: url(/resources/knob1-4.png{{{ns}}});
+    height: 20px;
+    width: 20px;
+}
+.calf .knob2 {
+    height: 40px;
+    width: 40px;
+}
+.calf .knob2-1 {
+    background: url(/resources/knob2-1.png{{{ns}}});
+}
+.calf .knob2-2 {
+    background: url(/resources/knob2-2.png{{{ns}}});
+}
+.calf .knob2-3 {
+    background: url(/resources/knob2-3.png{{{ns}}});
+}
+.calf .knob2-4 {
+    background: url(/resources/knob2-4.png{{{ns}}});
+}
+.calf .knob3 {
+    background: url(/resources/knob3.png{{{ns}}});
+}
+.calf .knob4 {
+    height: 80px;
+    width: 80px;
+}
+.calf .knob4-1 {
+    background: url(/resources/knob4-1.png{{{ns}}});
+}
+.calf .knob4-2 {
+    background: url(/resources/knob4-2.png{{{ns}}});
+}
+.calf .knob4-3 {
+    background: url(/resources/knob4-3.png{{{ns}}});
+}
+.calf .knob4-4 {
+    background: url(/resources/knob4-4.png{{{ns}}});
+}
+.calf .knob5 {
+    height: 100px;
+    width: 100px;
+}
+.calf .knob5-1 {
+    background: url(/resources/knob5-1.png{{{ns}}});
+}
+.calf .knob5-2 {
+    background: url(/resources/knob5-2.png{{{ns}}});
+}
+.calf .knob5-3 {
+    background: url(/resources/knob5-3.png{{{ns}}});
+}
+.calf .knob5-4 {
+    background: url(/resources/knob5-4.png{{{ns}}});
+}
+
+/* titles of things */
+
+.calf .title-fild{
+    color: #FFF;
+    font-size: 10px;
+    position: absolute;
+}
+.toggle1-silver {
+    background: url(/resources/toggle1_silver.png{{{ns}}});
+    height: 20px;
+    position: absolute;
+    width: 30px;
+}
+
+.toggle2_silver-silver {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+.calf .knob1 .title-knob1-top, .calf .knob2 .title-knob2-top, .calf .knob3 .title-knob3-top, .calf .knob4 .title-knob4-top,
+.calf .knob5 .title-knob5-top, .calf .knob1 .title-knob1-bottom, .calf .knob2 .title-knob2-bottom, .calf .knob3 .title-knob3-bottom, .calf .knob4 .title-knob4-bottom,
+.calf .knob5 .title-knob5-bottom {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+}
+
+/* Lines */
+.calf .line-cols-all {
+    background: none repeat scroll 0 0 #222222;
+    box-shadow: 1px 1px #5F5F5F;
+    height: 2px;
+    position: absolute;
+}
+
+/* Slider */
+
+.calf .slider2-horiz {
+    background: url(/resources/slider2-horiz.png{{{ns}}});
+    height: 36px;
+    position: absolute;
+    width: 46px;
+}
+/* Screw */
+
+.calf .screw_min {
+    background: url(/resources/screw1.png{{{ns}}});
+    background-size: 15px;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    top: -7px;
+
+}
+/* titles of things */
+.calf .title-fild-bottom {
+    font-size: 12px;
+}
+
+/* button of bypass */
+
+.calf .button-bypass {
+    background: url(/resources/toggle2_silver.png{{{ns}}});
+    height: 40px;
+    position: absolute;
+    width: 60px;
+}
+
+/*--*/
+.calf-pulsator {
+    height: 280px;
+    width: 829px;
+}
+
+/* room size */
+
+.calf-pulsator .mode {
+    background: url(/resources/room-size-two.png{{{ns}}});
+    top: 15px;
+    height: 31px;
+    left: 130px;
+    position: absolute;
+    z-index: 100000 !important;
+    width: 207px;
+    cursor: pointer;
+}
+.calf-pulsator .mode .mod-enumerated-list {
+    background-color: rgba(0,0,0,.8) !important;
+    display: none;
+    height: 120px;
+    width: 187px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: 10px;
+    z-index: 100;
+    color: white !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+}
+.calf-pulsator .mode .mod-enumerated-list div:hover{
+    background: white;
+    color: black;
+    }
+.calf-pulsator .mode .mod-enumerated-selected:before {
+    content: '\25BE \a0';
+}
+.calf-pulsator .mode .mod-enumerated-selected {
+    background: transparent;
+    border: none;
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    position: relative;
+    left: 4px;
+    margin: 0 0 0 5px;
+    top: 7px;
+    width: 200px; 
+}
+.calf-pulsator .mode:hover, .calf-pulsator .mode:active {
+    background: url(/resources/room-size-hover-two.png{{{ns}}}) no-repeat;
+}
+.calf-pulsator .mode .mode-title {
+    color: #FFF;
+    font-size: 12px;
+    left: -55px;
+    top: 5px;
+    position: absolute;
+}
+
+/* knob resonance */
+.calf-pulsator .resonance {
+    left: 90px;
+    top: 130px;
+}
+
+/* knob inertia */
+.calf-pulsator .inertia {
+    left: 294px;
+    top: 130px;
+}
+
+/* knob frequency */
+.calf-pulsator .frequency {
+    left: 164px;
+    top: 100px;
+}
+
+/* Titles knobs */
+
+.calf-pulsator .knob2 .title-knob2-top {
+    left: -10px;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    width: 63px;
+}
+.calf-pulsator .knob2 .title-knob2-bottom {
+    left: -4px;
+    position: absolute;
+    text-align: center;
+    bottom: -40px;
+    width: 50px;
+}
+.calf-pulsator .knob5 .title-knob5-top {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -22px;
+}
+.calf-pulsator .knob5 .title-knob5-bottom {
+    bottom: -22px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.calf-pulsator .freq-response {
+    background: url(/resources/disable-freq.png{{{ns}}}) no-repeat center;
+    bottom: 24px;
+    height: 194px;
+    position: absolute;
+    right: 73px;
+    width: 398px;
+}
+/* Input/Output */
+ .calf-pulsator .calf-pedal-input {
+    left:-45px !important;
+ }
+.calf-pulsator .calf-pedal-output {
+    right:-45px !important;
+}
+/* z-index */
+.calf-pulsator .knob, .calf-pulsator .mode { z-index: 9999; }

@@ -1,0 +1,111 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<http://moddevices.com/plugins/mod-devel/ToggleSwitch4>
+a lv2:Plugin, lv2:UtilityPlugin;
+
+doap:name "ToggleSwitch";
+
+doap:developer [
+    foaf:name "Lucas Takejame";
+    foaf:homepage <>;
+    foaf:mbox <mailto:lucas@moddevices.com.br>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+    ];
+
+rdfs:comment """
+This toggled switch enables the output depending on the button state.
+""";
+
+doap:license <GPL>;
+
+lv2:minorVersion 1;
+lv2:microVersion 1;
+
+lv2:port 
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 0;
+    lv2:symbol "In";
+    lv2:name "In";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 1;
+    lv2:symbol "Out1";
+    lv2:name "Out 1";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 2;
+    lv2:symbol "Out2";
+    lv2:name "Out 2";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 3;
+    lv2:symbol "Out3";
+    lv2:name "Out 3";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 4;
+    lv2:symbol "Out4";
+    lv2:name "Out 4";
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 5;
+    lv2:symbol "channel1";
+    lv2:name "Channel One";
+    lv2:portProperty lv2:toggled;
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 6;
+    lv2:symbol "channel2";
+    lv2:name "Channel Two";
+    lv2:portProperty lv2:toggled;
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 7;
+    lv2:symbol "channel3";
+    lv2:name "Channel Three";
+    lv2:portProperty lv2:toggled;
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 8;
+    lv2:symbol "channel4";
+    lv2:name "Channel Four";
+    lv2:portProperty lv2:toggled;
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+];
+mod:gui [
+    mod:resourcesDirectory <modgui>;
+    mod:iconTemplate <modgui/icon-toggleswitch4.html>;
+    mod:screenshot <modgui/ToggleSwitch4.png>;
+    mod:thumbnail <modgui/ToggleSwitch4-thumb.png>;
+] .

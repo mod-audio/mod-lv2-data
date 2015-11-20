@@ -1,0 +1,109 @@
+    .mod-swhammy {
+        background: url(/resources/superwhammy-bg.png{{{ns}}}) no-repeat;
+        background-image:url(/resources/superwhammy-bg.png{{{ns}}});
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:337px 428px;
+        height:428px;
+        width:337px;
+        position:relative;
+    }
+    .mod-swhammy .mod-drag-handle {
+        bottom:0;
+        left:0;
+        position:absolute;
+        right:0;
+        top:0;
+        z-index: 0;
+    }
+    .mod-swhammy .mod-control-group-1 {
+        position: absolute;
+        z-index: 2;
+        top: 43px;
+        left: 36px;
+    }
+    .mod-swhammy .mod-control-group-2 {
+        position: absolute;
+        z-index: 2;
+        top: 136px;
+        left: 132px;
+        width: 200px;
+    }
+    .mod-swhammy .mod-control-group-1 .mod-slider {
+        position: absolute;
+        z-index: 100;
+        width: 70px;
+        height: 315px;
+    }
+    .mod-swhammy .mod-knob {
+        position: absolute;
+        top: 225px;
+        left: 143px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .mod-swhammy .mod-knob-image {
+        background: url(/resources/superwhammy_knob.png{{{ns}}}) no-repeat;
+        width: 60px;
+        height: 60px
+    }
+    .mod-swhammy .mod-control-group-2 .mod-slider {
+        z-index: 100;
+        width: 87px;
+        margin-right: 13px;
+        float: left;
+    }
+    .mod-swhammy .mod-control-group-1 .mod-slider .mod-slider-image {
+        background: url(/resources/slider-whammy.png{{{ns}}}) no-repeat;
+        width: 70px;
+        height: 315px;
+    }
+    .mod-swhammy .mod-control-group-2 .mod-slider .mod-slider-image {
+        background: url(/resources/slider-serial-whammy.png{{{ns}}}) no-repeat;
+        background-size: auto 33px;
+        width: 87px;
+        height: 33px;
+    }
+    .mod-swhammy .toggle {
+        background: url(/resources/switch-key.png{{{ns}}}) no-repeat;
+        width: 30px;
+        height: 73px;
+        position: absolute;
+        top: 210px;
+        left: 260px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .mod-swhammy .toggle.off {
+        background-position: center bottom
+    }
+    .mod-swhammy .mod-footswitch {
+        background-image:url(/resources/footswitch.png{{{ns}}});
+        background-position:bottom center;
+        background-repeat:no-repeat;
+        background-size:auto 132px;
+        cursor:pointer;
+        height:66px;
+        width: 66px;
+        position: absolute;
+        bottom: 25px;
+        left: 142px;
+        z-index: 2;
+    }
+    .mod-swhammy .mod-footswitch.on {
+        background-position-y: top !important
+    }
+    .mod-swhammy .mod-light {
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        bottom: 45px;
+        left: 260px;
+        z-index: 2;
+    }
+    .mod-swhammy .mod-light.off {
+      background-image:url(/resources/red-light-off.png{{{ns}}});
+    }
+    .mod-swhammy .mod-light.on {
+      background-image:url(/resources/red-light-on.png{{{ns}}});
+    }

@@ -1,0 +1,85 @@
+@prefix blop: <http://drobilla.net/plugins/blop/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+blop:adsr
+	a lv2:Plugin ,
+		lv2:EnvelopePlugin ;
+	lv2:project blop: ;
+	lv2:symbol "adsr" ;
+	lv2:microVersion 0 ;
+	lv2:minorVersion 0 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port [
+		a lv2:CVPort ,
+			lv2:InputPort ;
+		lv2:index 0 ;
+		lv2:name "Driving Signal" ;
+		lv2:symbol "drive"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:index 1 ;
+		lv2:name "Trigger Threshold" ;
+		lv2:symbol "thresh"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 0 ;
+		lv2:index 2 ;
+		lv2:minimum 0 ;
+		lv2:name "Attack Time" ;
+		lv2:symbol "attack" ;
+		units:unit units:s
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 0 ;
+		lv2:index 3 ;
+		lv2:minimum 0 ;
+		lv2:name "Decay Time" ;
+		lv2:symbol "decay" ;
+		units:unit units:s
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 1 ;
+		lv2:index 4 ;
+		lv2:maximum 1 ;
+		lv2:minimum 0 ;
+		lv2:name "Sustain Level" ;
+		lv2:symbol "sustain"
+	] , [
+		a lv2:ControlPort ,
+			lv2:InputPort ;
+		lv2:default 0 ;
+		lv2:index 5 ;
+		lv2:minimum 0 ;
+		lv2:name "Release Time" ;
+		lv2:symbol "release" ;
+		units:unit units:s
+	] , [
+		a lv2:CVPort ,
+			lv2:OutputPort ;
+		lv2:index 6 ;
+		lv2:name "Envelope Out" ;
+		lv2:symbol "out"
+	] ;
+	dct:replaces <urn:ladspa:1653> ;
+	doap:name "ADSR Envelope" ;
+	mod:brand "BLOP" ;
+	mod:label "ADSR Env" ;
+	lv2:documentation """
+<p>Generates an ADSR (Attack, Decay, Sustain and Release) envelope.</p>
+
+<p>Driven by a gate signal - if the level of the signal goes higher than the
+Trigger Threshold, the attack stage begins, proceeds to the decay stage and
+then holds at the sustain level. The release stage begins when the gate falls
+below this theshold - even if the previous stages have not completed.</p>
+
+<p>The output is a signal between 0.0 (rest) and 1.0 (peak) and the transitions
+are linear.</p>
+""" .

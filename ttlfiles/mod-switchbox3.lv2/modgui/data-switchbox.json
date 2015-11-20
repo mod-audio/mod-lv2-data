@@ -1,0 +1,11 @@
+{
+    "author": "MOD", 
+    "color": "gray", 
+    "controls": [
+        {
+            "name": "Switch", 
+            "symbol": "Switch"
+        }
+    ], 
+    "label": "Switchbox"
+}

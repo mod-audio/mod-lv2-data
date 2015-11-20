@@ -1,0 +1,43 @@
+{
+    "author": "Calf", 
+    "color": "gray", 
+    "controls": [
+        {
+            "name": "Center Freq", 
+            "symbol": "base_freq"
+        }, 
+        {
+            "name": "Mod depth", 
+            "symbol": "mod_depth"
+        }, 
+        {
+            "name": "Mod rate", 
+            "symbol": "mod_rate"
+        }, 
+        {
+            "name": "Feedback", 
+            "symbol": "feedback"
+        }, 
+        {
+            "name": "# Stages", 
+            "symbol": "stages"
+        }, 
+        {
+            "name": "Stereo phase", 
+            "symbol": "stereo"
+        }, 
+        {
+            "name": "Reset", 
+            "symbol": "reset"
+        }, 
+        {
+            "name": "Amount", 
+            "symbol": "amount"
+        },
+        {
+            "name": "Dry Amount", 
+            "symbol": "dry"
+        }
+    ], 
+    "label": "Phaser"
+}

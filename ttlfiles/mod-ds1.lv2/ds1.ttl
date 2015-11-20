@@ -1,0 +1,94 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props/#>.
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix units: <http://lv2plug.in/ns/extension/units#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+
+<http://moddevices.com/plugins/mod-devel/DS1>
+a lv2:Plugin, lv2:DistortionPlugin;
+
+doap:name "DS1";
+
+doap:developer [
+    foaf:name "Andre";
+    foaf:homepage <>;
+    foaf:mbox <mailto:andre_coutinho@rocketmail.com>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+    ];
+
+mod:brand "MOD";
+mod:label "DS1";
+
+doap:license "GPL";
+
+rdfs:comment """
+Analog distortion emulation of the classic Boss DS-1 (*)
+
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Boss DS-1 is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
+
+""";
+
+lv2:port 
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 0;
+    lv2:symbol "In";
+    lv2:name "In";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 1;
+    lv2:symbol "Out1";
+    lv2:name "Out 1";
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 2;
+    lv2:symbol "Tone";
+    lv2:name "Tone";
+    lv2:portProperty epp:logarithmic;
+    lv2:default 0.5;
+    lv2:minimum 0.01;
+    lv2:maximum 0.99;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 3;
+    lv2:symbol "Level";
+    lv2:name "Level";
+    lv2:portProperty epp:logarithmic;
+    lv2:default 0.5;
+    lv2:minimum 0.01;
+    lv2:maximum 0.99;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 4;
+    lv2:symbol "Dist";
+    lv2:name "Dist";
+    lv2:portProperty epp:logarithmic;
+    lv2:default 0.5;
+    lv2:minimum 0.01;
+    lv2:maximum 0.99;
+];
+
+modgui:gui [
+    a modgui:Gui;
+    modgui:resourcesDirectory <modgui>;
+    modgui:stylesheet <modgui/ds1.css>;
+    modgui:iconTemplate <modgui/icon-ds1.html>;
+    modgui:screenshot <modgui/screenshot-ds1.png>;
+    modgui:thumbnail <modgui/thumb-ds1.png>;
+] .

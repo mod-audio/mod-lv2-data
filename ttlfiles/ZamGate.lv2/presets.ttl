@@ -1,0 +1,33 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<urn:zamaudio:ZamGate#preset001>
+    rdfs:label "Default" ;
+
+    lv2:port [
+        lv2:symbol "att" ;
+        pset:value 50.000000 ;
+    ] ,
+    [
+        lv2:symbol "rel" ;
+        pset:value 100.000000 ;
+    ] ,
+    [
+        lv2:symbol "thr" ;
+        pset:value -60.000000 ;
+    ] ,
+    [
+        lv2:symbol "mak" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "outlevel" ;
+        pset:value -45.000000 ;
+    ] ,
+    [
+        lv2:symbol "gainr" ;
+        pset:value 0.000000 ;
+    ] .
+
+

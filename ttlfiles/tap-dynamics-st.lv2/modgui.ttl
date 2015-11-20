@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/tap/dynamics-st>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tap-stereo-dynamics.html> ;
+        modgui:stylesheet <modgui/stylesheet-tap-stereo-dynamics.css> ;
+        modgui:screenshot <modgui/screenshot-tap-stereo-dynamics.png> ;
+        modgui:thumbnail <modgui/thumbnail-tap-stereo-dynamics.png> ;
+        modgui:brand "TAP" ;
+        modgui:label "Stereo Dynamics" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "function" ;
+            lv2:name "Function" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "releaseM" ;
+            lv2:name "Release" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "makeup" ;
+            lv2:name "MkUp Gain" ;
+        ] ;
+    ] .

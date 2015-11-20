@@ -1,0 +1,98 @@
+@prefix doap:   <http://usefulinc.com/ns/doap#>.
+@prefix epp:    <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf:   <http://xmlns.com/foaf/0.1/>.
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#>.
+@prefix mod:    <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix units:  <http://lv2plug.in/ns/extensions/units#>.
+
+<http://moddevices.com/plugins/mod-devel/BandPassFilter>
+a lv2:Plugin, lv2:FilterPlugin;
+
+doap:name "BandPassFilter";
+
+doap:developer [
+    foaf:name "Andre";
+    foaf:homepage <>;
+    foaf:mbox <mailto:andre_coutinho@rocketmail.com>;
+];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+];
+
+mod:brand "MOD";
+mod:label "BandPassFilter";
+
+doap:license "GPL";
+
+rdfs:comment """
+A band pass filter, "Freq" determines its Center frequency, "Q" works on the filter bandwith and "Order" is the filter's order
+(or how fast frequencies above the higher cutoff frequency and below the lower cutoff frequency will decay).
+Higher the order, faster the decay.
+""";
+
+lv2:port
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 0;
+    lv2:symbol "In";
+    lv2:name "In";
+    lv2:shortname "In";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 1;
+    lv2:symbol "Out";
+    lv2:name "Out";
+    lv2:shortname "Out";
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 2;
+    lv2:symbol "Freq";
+    lv2:name "Freq";
+    lv2:shortname "Freq";
+    lv2:portProperty epp:logarithmic;
+    lv2:default 600.0;
+    lv2:minimum 200.0;
+    lv2:maximum 2000.0;
+    units:unit units:hz;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 3;
+    lv2:symbol "Q";
+    lv2:name "Q";
+    lv2:shortname "Q";
+    lv2:default 0.707;
+    lv2:minimum 0.707;
+    lv2:maximum 5.0;
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 4;
+    lv2:symbol "Order";
+    lv2:name "Order";
+    lv2:shortname "Order";
+    lv2:portProperty lv2:integer, lv2:enumeration;
+    lv2:scalePoint [rdfs:label "1"; rdf:value 0];
+    lv2:scalePoint [rdfs:label "2"; rdf:value 1];
+    lv2:scalePoint [rdfs:label "3"; rdf:value 2];
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 2;
+];
+
+modgui:gui [
+    modgui:resourcesDirectory <modgui>;
+    modgui:iconTemplate <modgui/icon-bandpassfilter.html>;
+    modgui:stylesheet <modgui/stylesheet-bandpassfilter.css>;
+    modgui:templateData <modgui/data-bandpassfilter.json>;
+    modgui:screenshot <modgui/screenshot-bandpassfilter.png>;
+    modgui:thumbnail <modgui/thumb-bandpassfilter.png>;
+].

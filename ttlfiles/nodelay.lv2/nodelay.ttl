@@ -1,0 +1,63 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person ;
+	foaf:name "Robin Gareus" ;
+	foaf:mbox <mailto:robin@gareus.org> ;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/nodelay>
+	a lv2:Plugin, doap:Project;
+	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+	doap:maintainer <http://gareus.org/rgareus#me> ;
+	doap:name "No Delay Line";
+	lv2:microVersion 0 ;lv2:minorVersion 514 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 0 ;
+		lv2:symbol "delay" ;
+		lv2:name "delay (samples)";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 192000 ;
+		lv2:portProperty lv2:integer;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 1 ;
+		lv2:symbol "report_latency" ;
+		lv2:name "report delay as latency" ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled;
+	] , [
+		a lv2:OutputPort,
+			lv2:ControlPort ;
+		lv2:name "latency (samples)" ;
+		lv2:index 2 ;
+		lv2:symbol "latency" ;
+		lv2:minimum 0 ;
+		lv2:maximum 192000 ;
+		lv2:portProperty lv2:reportsLatency, lv2:integer;
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 3 ;
+		lv2:symbol "in" ;
+		lv2:name "In"
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 4 ;
+		lv2:symbol "out" ;
+		lv2:name "Out"
+	] ;
+	rdfs:comment "Artificial Latency - nodelay is a simple audio delay-line that can report its delay as latency. The effect should be transparent when used with a LV2 host that implements latency compensation." ;
+	.

@@ -1,0 +1,23 @@
+{
+    "author": "brand", 
+    "color": "brown", 
+    "controls": [
+        {
+            "name": "Channel One", 
+            "symbol": "channel1"
+        }, 
+        {
+            "name": "Channel Two", 
+            "symbol": "channel2"
+        }, 
+        {
+            "name": "Channel Three", 
+            "symbol": "channel3"
+        }, 
+        {
+            "name": "Channel Four", 
+            "symbol": "channel4"
+        }
+    ], 
+    "label": "ToggleSwitch"
+}

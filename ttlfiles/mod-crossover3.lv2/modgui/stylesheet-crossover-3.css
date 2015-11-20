@@ -1,0 +1,275 @@
+
+/* STYLES FOR THE BOXY PEDAL */
+
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+/* = CONTAINER
+================================================ */
+.mod-pedal-boxy{{{cns}}} {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:230px 431px;
+    height:431px;
+    position:absolute;
+    width:230px;
+    border-radius: 26px;
+}
+
+/* = PLUGIN'S AUTHOR
+================================================ */
+.mod-pedal-boxy{{{cns}}} .mod-plugin-brand {
+    left:0;
+    position:absolute;
+    right:0;
+    text-align:center;
+    text-transform:uppercase;
+    top:160px;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-plugin-brand h1 {
+    border-color:#000;
+    border-radius:12px;
+    border-style:solid;
+    border-width:4px;
+    display:inline-block;
+    font-family:"Nexa";
+    font-size:32px;
+    padding:3px 9px 0;
+}
+
+/* = PLUGIN'S NAME
+================================================ */
+.mod-pedal-boxy{{{cns}}} .mod-plugin-name {
+    left:30px;
+    overflow:hidden;
+    position:absolute;
+    right:30px;
+    text-align:center;
+    top:340px;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-plugin-name h1 {
+    font-family:"Questrial";
+    font-size:21px;
+    line-height:1;
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.mod-pedal-boxy{{{cns}}} .mod-light {
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:32px;
+    left:10px;
+    position:absolute;
+    right:10px;
+    top:235px;
+}
+
+/* = KNOBS
+================================================ */
+.mod-pedal-boxy{{{cns}}} .mod-control-group {
+    margin:20px;
+    position:relative;
+    text-align:center;
+    z-index:30;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob {
+    overflow:hidden;
+    position:relative;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob {
+    height:110px;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
+    bottom:0px;
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:12px;
+    left:0;
+    line-height:1;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+}
+
+/* = ENUMERATED LIST
+================================================ */
+.mod-pedal-boxy{{{cns}}} .mod-enumerated-group {
+    height:31px;
+    margin:20px auto 0 !important;
+    position:relative;
+    width:190px;
+    z-index:35;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated {
+    background-position:right center;
+    background-repeat:no-repeat;
+    font-size:11px;
+    font-weight:bold;
+    left:0;
+    line-height:2;
+    overflow:hidden;
+    position:absolute;
+    right:0;
+    text-align:left;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-selected {
+    background-color:rgba(0,0,0,.3);
+    box-shadow:inset 0 0 4px rgba(0,0,0,.3);
+    border-radius:4px;
+    padding:3px 9px;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-selected {
+    border-radius:4px 4px 0 0;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-list {
+    display:none;
+    color:#fff;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-list {
+    background-color:rgba(0,0,0,.9);
+    display:none;
+    height:115px;
+    overflow:auto;
+    position:relative;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-list > div {
+    padding:3px 9px;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-list > div:hover {
+    background-color:rgba(255,255,255,.2);
+    cursor:pointer;
+}
+
+/* STYLES FOR THE PLUGIN */
+
+.mod-crossover-3 {
+    border-radius: 0;
+}
+.mod-crossover-3 * {
+    color: white !important;
+}
+.mod-crossover-3 .mod-plugin-name , .mod-crossover-3 .mod-plugin-author  {
+    display: none;
+}
+.mod-crossover-3 .mod-control-group .mod-knob#Order {
+    position: absolute;
+    top: 121px;
+    width: 80px;
+    height: 80px;
+    left: 80px
+}
+.mod-crossover-3 .mod-control-group .mod-knob#Order .mod-knob-image {
+    background-image:url(/resources/3switch.png{{{ns}}}) !important;
+    background-repeat:no-repeat;
+    background-size:210px 70px;
+    height:50px;
+    margin:0 auto;
+    width:70px;
+    cursor: pointer;
+}
+.mod-crossover-3 .mod-knob-title {
+    position: relative !important;
+    padding-top: 20px;
+}
+.mod-crossover-3 {
+    background-image:url(/resources/crossover3x.png{{{ns}}}) !important;
+    background-size:281px 454px;
+    width: 281px;
+    height: 454px;
+}
+.mod-crossover-3 .mod-control-group {
+    top: 59px;
+}
+  .mod-crossover-3 #Freq_1 ,  .mod-crossover-3 #Freq_2 {
+    position: absolute;
+    width: 100px;
+    left: 0;
+}
+  .mod-crossover-3 #Freq_1 {
+    top: 15px;
+}
+  .mod-crossover-3 #Freq_2 {
+    top: 178px;
+}
+  .mod-crossover-3 #Gain_1,  .mod-crossover-3 #Gain_2,  .mod-crossover-3 #Gain_3 {
+    position: absolute;
+    right: -3px;
+}
+  .mod-crossover-3 #Gain_2 {
+    top: 117px;
+}
+  .mod-crossover-3 #Gain_3 {
+    top: 238px;
+}
+
+.mod-crossover-3 .mod-control-group .mod-knob .mod-knob-image {
+  background-image: url(/resources/knob.png{{{ns}}});
+  background-position:left center;
+  background-repeat:no-repeat;
+  background-size:auto 70px;
+  height:70px;
+  width:70px;
+  margin:0 auto;
+  cursor: pointer;
+  position:relative;
+  overflow:hidden;
+}
+.mod-crossover-3 .mod-light {
+    top: 325px;
+    margin-left: 4px;
+}
+.mod-crossover-3 .mod-footswitch {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    bottom: 20px;
+    cursor:pointer;
+    height:66px;
+    left: 12px !important;
+    position:absolute;
+}
+.mod-crossover-3 .mod-knob-value {
+    color: #84ff00 !important;
+    background: #222;
+    font-family: monospace;
+    text-align: right;
+    margin: 5px 0 3px 0;
+    border: 1px inset #555;
+    display: block;
+    height: 20px;
+    width: 100px;
+    overflow: hidden;
+}
+.mod-crossover-3 .mod-footswitch.on {
+    background-position:top center;
+}
+.mod-crossover-3 .mod-footswitch.off {
+    background-position:bottom center;
+}
+.mod-crossover-3 .mod-pedal-input {
+    top: 197px;
+}
+.mod-crossover-3 .mod-pedal-output {
+    top: 77px;
+}
+.mod-crossover-3 .mod-pedal-output>*  {
+    margin-bottom: 64px !important;
+}

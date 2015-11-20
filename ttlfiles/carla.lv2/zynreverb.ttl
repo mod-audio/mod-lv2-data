@@ -1,0 +1,174 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+@prefix unit: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://kxstudio.sf.net/carla/plugins/zynreverb>
+    a lv2:DelayPlugin, lv2:Plugin ;
+
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
+                        <http://lv2plug.in/ns/ext/buf-size#fixedBlockLength> ,
+                        <http://lv2plug.in/ns/ext/options#options> ,
+                        <http://lv2plug.in/ns/ext/urid#map> ;
+
+    lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ;
+    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 0 ;
+        lv2:symbol "lv2_freewheel" ;
+        lv2:name "Freewheel" ;
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:designation <http://lv2plug.in/ns/lv2core#freeWheeling> ;
+        lv2:portProperty lv2:toggled, <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
+    ] ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 1 ;
+        lv2:symbol "lv2_audio_in_1" ;
+        lv2:name "Audio Input 1" ;
+    ] , [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 2 ;
+        lv2:symbol "lv2_audio_in_2" ;
+        lv2:name "Audio Input 2" ;
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 3 ;
+        lv2:symbol "lv2_audio_out_1" ;
+        lv2:name "Audio Output 1" ;
+    ] , [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 4 ;
+        lv2:symbol "lv2_audio_out_2" ;
+        lv2:name "Audio Output 2" ;
+    ] ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 5 ;
+        lv2:symbol "time" ;
+        lv2:name "Time" ;
+        lv2:default 63.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 6 ;
+        lv2:symbol "delay" ;
+        lv2:name "Delay" ;
+        lv2:default 24.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 7 ;
+        lv2:symbol "feedback" ;
+        lv2:name "Feedback" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 8 ;
+        lv2:symbol "bw" ;
+        lv2:name "bw" ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 9 ;
+        lv2:symbol "e_r" ;
+        lv2:name "E/R" ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 10 ;
+        lv2:symbol "low_pass_filter" ;
+        lv2:name "Low-Pass Filter" ;
+        lv2:default 85.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 11 ;
+        lv2:symbol "high_pass_filter" ;
+        lv2:name "High-Pass Filter" ;
+        lv2:default 5.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 12 ;
+        lv2:symbol "damp" ;
+        lv2:name "Damp" ;
+        lv2:default 83.000000 ;
+        lv2:minimum 64.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 13 ;
+        lv2:symbol "type" ;
+        lv2:name "Type" ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 2.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+        lv2:portProperty lv2:enumeration ;
+        lv2:scalePoint [ rdfs:label "Random" ;
+                         rdf:value  0.000000 ] ,
+                       [ rdfs:label "Freeverb" ;
+                         rdf:value  1.000000 ] ,
+                       [ rdfs:label "Bandwidth" ;
+                         rdf:value  2.000000 ] ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 14 ;
+        lv2:symbol "room_size" ;
+        lv2:name "Room size" ;
+        lv2:default 64.000000 ;
+        lv2:minimum 1.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 15 ;
+        lv2:symbol "bandwidth" ;
+        lv2:name "Bandwidth" ;
+        lv2:default 20.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:portProperty lv2:integer ;
+    ] ;
+
+    doap:name "ZynReverb" ;
+    doap:maintainer [ foaf:name "falkTX, Mark McCurry, Nasca Octavian Paul" ] .
