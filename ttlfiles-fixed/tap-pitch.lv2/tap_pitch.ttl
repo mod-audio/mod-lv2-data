@@ -1,0 +1,99 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://moddevices.com/plugins/tap/pitch>
+a lv2:Plugin, lv2:SpectralPlugin, lv2:PitchPlugin;
+
+doap:name "TAP Pitch Shifter";
+
+doap:developer [
+    foaf:name "Tom Szilagyi";
+    foaf:homepage <http://tap-plugins.sourceforge.net/index.html>;
+    foaf:mbox <mailto:tszilagyi@users.sourceforge.net>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+    ];
+
+mod:brand "TAP";
+mod:label "Pitch Shifter";
+
+doap:license <http://usefulinc.com/doap/licenses/gpl>;
+lv2:optionalFeature lv2:hardRTCapable;
+lv2:minorVersion 7;
+lv2:microVersion 2;
+
+rdfs:comment """
+This plugin gives you the opportunity to change the pitch of individual tracks or full mixes, in the range of plus/minus one octave. Audio length (tempo) is not affected by this plugin, since audio is completely resampled. Besides being a special effect for creating foxy guitar tracks, it may come handy if your (otherwise very attractive) singer or chorus-girl was a bit indisposed at the time of recording: with the power of Ardour automation, you are given a chance to correct smaller pitch errors.
+
+source: http://tap-plugins.sourceforge.net/ladspa/pitch.html
+""";
+
+lv2:port
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 0;
+    lv2:symbol "Semitone";
+    lv2:name "Semitone Shift";
+    lv2:default 0.0;
+    lv2:minimum -12.0;
+    lv2:maximum 12.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 1;
+    lv2:symbol "Rate";
+    lv2:name "Rate Shift [%]";
+    lv2:default 0.0;
+    lv2:minimum -50.0;
+    lv2:maximum 100.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 2;
+    lv2:symbol "Drylevel";
+    lv2:name "Dry Level";
+    units:unit units:db ;
+    lv2:default -90.0;
+    lv2:minimum -90.0;
+    lv2:maximum 20.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 3;
+    lv2:symbol "Wetlevel";
+    lv2:name "Wet Level";
+    units:unit units:db ;
+    lv2:default 0.0;
+    lv2:minimum -90.0;
+    lv2:maximum 20.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 4;
+    lv2:symbol "Latency";
+    lv2:name "latency";
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 16027.0;
+],
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 5;
+    lv2:symbol "Input";
+    lv2:name "Input";
+],
+[
+    a lv2:OutputPort,  lv2:AudioPort;
+    lv2:index 6;
+    lv2:symbol "Output";
+    lv2:name "Output";
+].

@@ -1,0 +1,97 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://moddevices.com/plugins/tap/vibrato>
+a lv2:Plugin, lv2:ModulatorPlugin;
+
+doap:name "TAP Vibrato";
+
+doap:developer [
+    foaf:name "Tom Szilagyi";
+    foaf:homepage <http://tap-plugins.sourceforge.net/index.html>;
+    foaf:mbox <mailto:tszilagyi@users.sourceforge.net>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD Team";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:devel@moddevices.com>;
+    ];
+
+mod:brand "TAP";
+mod:label "Vibrato";
+
+doap:license <http://usefulinc.com/doap/licenses/gpl>;
+lv2:optionalFeature lv2:hardRTCapable;
+lv2:minorVersion 7;
+lv2:microVersion 2;
+
+rdfs:comment """
+This plugin modulates the pitch of its input signal with a low-frequency sinusoidal signal. It is useful for guitar and synth tracks, and it can also come handy if a strange effect is needed.
+
+source: http://tap-plugins.sourceforge.net/ladspa/vibrato.html
+""";
+
+lv2:port
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 0;
+    lv2:symbol "frequency";
+    lv2:name "Frequency";
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 30.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 1;
+    lv2:symbol "Depth";
+    lv2:name "Depth";
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 20.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 2;
+    lv2:symbol "drylevel";
+    lv2:name "Drylevel";
+    lv2:default 0.0;
+    lv2:minimum -90.0;
+    lv2:maximum 20.0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 3;
+    lv2:symbol "wetlevel";
+    lv2:name "Wetlevel";
+    lv2:default 0.0;
+    lv2:minimum -90.0;
+    lv2:maximum 20.0;
+],
+[
+    a lv2:OutputPort, lv2:ControlPort;
+    lv2:index 4;
+    lv2:symbol "latency";
+    lv2:name "Latency";
+    lv2:default 6300.0;
+    lv2:minimum 0.0;
+    lv2:maximum 6300.0;
+],
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 5;
+    lv2:symbol "input";
+    lv2:name "Input";
+
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 6;
+    lv2:symbol "output";
+    lv2:name "Output";
+].

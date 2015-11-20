@@ -1,0 +1,177 @@
+/* MOD EQUALIZER */
+.mod-tap-equalizer {
+    background-image: url(/resources/tap-equalizer-background.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    height: 394px;
+    padding: 0;
+    width: 618px;
+}
+/* BRAND */
+.mod-tap-equalizer .mod-tap-equalizer-brand {
+    background: rgba(0,0,0,0.9);
+    border-radius: 8px;
+    bottom: 60px;
+    color: white;
+    left: 406px;
+    padding: 13px 20px;
+    position: absolute;
+    right: 46px;
+    text-align: center;
+}
+.mod-tap-equalizer .mod-plugin-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+.mod-tap-equalizer .mod-plugin-name {
+    margin-right: 10px;
+}
+/* DRAG */
+.mod-tap-equalizer .mod-drag-handle {
+    z-index: 20;
+}
+/* SLIDERS */
+.mod-tap-equalizer .mod-control-group-1 {
+    left: 65px;
+    position: absolute;
+    right: 0;
+    top: 23px;
+    z-index: 30;
+}
+.mod-tap-equalizer .mod-control-group .mod-slider {
+    height: 180px;
+    margin-right: 8px;
+    position: relative;
+    width: 60px;
+}
+.mod-tap-equalizer .mod-control-group .mod-slider:first-child {
+    margin-left: 0px;
+}
+.mod-tap-equalizer .mod-control-group .mod-slider .mod-slider-title {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    font-size: 14px;
+    height: 14px;
+    margin-bottom: 1px;
+    z-index: 40;
+}
+.mod-tap-equalizer .mod-control-group .mod-slider .mod-slider-image-wrapper {
+    background-color: rgb(235,199,38);
+    border-radius: 0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 30;
+}
+/* KNOBS */
+.mod-tap-equalizer .mod-control-group-2 {
+    left: 65px;
+    position: absolute;
+    top: 181px;
+    z-index: 30;
+}
+.mod-tap-equalizer .mod-control-group .mod-knob {
+    display:inline-block;
+    float: left;
+    height:60px;
+    margin-right: 8px;
+    position:relative;
+    width:60px;
+}
+.mod-tap-equalizer .mod-control-group .mod-knob .mod-knob-image-wrapper {
+    background-color: rgb(235,199,38);
+    padding: 5px;
+}
+.mod-tap-equalizer .mod-control-group .mod-knob .mod-knob-image {
+    background-image: url(/resources/tap-equalizer-knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+}
+.mod-tap-equalizer .mod-control-group .mod-knob .mod-knob-value {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1px;
+    text-align: center;
+}
+/* FOOTSWITCH */
+.mod-tap-equalizer .mod-footswitch {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    bottom: 52px;
+    left: 0px;
+    right: 0px;
+    cursor:pointer;
+    height:66px;
+    width: 66px;
+    margin: 0 auto;
+    position:absolute !important;
+}
+.mod-tap-equalizer .mod-footswitch .mod-footswitch.on {
+    background-position-y: top !important
+}
+/* LIGHT */
+.mod-tap-equalizer .mod-light {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 32px;
+    z-index: 40;
+}
+.mod-tap-equalizer .mod-light.off {
+    background-image: url(/resources/red-light-off.png{{{ns}}});
+}
+.mod-tap-equalizer .mod-light.on {
+    background-image: url(/resources/red-light-on.png{{{ns}}});
+}
+/* SLIDER */
+.mod-tap-equalizer .mod-slider:first-child {
+    margin-left:8px;
+}
+.mod-tap-equalizer .mod-slider {
+    color:black;
+    float:left;
+    font-size:11px;
+    height:140px;
+    margin-bottom:2px;
+    margin-right:2px;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    width:33px;
+}
+.mod-tap-equalizer .mod-slider .mod-slider-title {
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:7px;
+    line-height:1;
+    margin-bottom:3px;
+    overflow:hidden;
+    padding:7px 0 5px;
+    position:relative;
+}
+.mod-tap-equalizer .mod-slider .mod-slider-image {
+    background-image:url(/resources/slider.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 110px;
+    height:110px;
+    margin:0 auto;
+    width:44px;
+}
+.mod-tap-equalizer .mod-slider .mod-slider-image:hover {
+    cursor:pointer;
+}

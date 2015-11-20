@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/tap/limiter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tap-scaling-limiter.html> ;
+        modgui:stylesheet <modgui/stylesheet-tap-scaling-limiter.css> ;
+        modgui:screenshot <modgui/screenshot-tap-scaling-limiter.png> ;
+        modgui:thumbnail <modgui/thumbnail-tap-scaling-limiter.png> ;
+        modgui:brand "TAP" ;
+        modgui:label "Scaling Limiter" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "limitlevel" ;
+            lv2:name "Limit" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "outputvolume" ;
+            lv2:name "Level" ;
+        ] ;
+    ] .
