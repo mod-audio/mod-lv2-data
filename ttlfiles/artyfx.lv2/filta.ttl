@@ -20,7 +20,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
-@prefix mod: <http://portalmod.com/ns/modgui#>.
 @prefix pprop:  <http://lv2plug.in/ns/ext/port-props#>.
 
 <http://www.openavproductions.com/artyfx#filta/gui>
