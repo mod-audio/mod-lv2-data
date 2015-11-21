@@ -1,0 +1,56 @@
+#
+# Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# --------------------------------------------------------------------------
+#
+
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+<http://guitarix.sourceforge.net/plugins/gxts9#ts9sim>
+    a lv2:Plugin ;
+    lv2:binary <gxts9.so>  ;
+    rdfs:seeAlso <gxts9.ttl> .
+    @prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+    <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim>
+        modgui:gui [
+            modgui:resourcesDirectory <modgui> ;
+            modgui:iconTemplate <modgui/icon-gxtubescreamer.html> ;
+            modgui:stylesheet <modgui/stylesheet-gxtubescreamer.css> ;
+            modgui:screenshot <modgui/screenshot-gxtubescreamer.png> ;
+            modgui:thumbnail <modgui/thumbnail-gxtubescreamer.png> ;
+            modgui:brand "Guitarix" ;
+            modgui:label "TubeScreamer" ;
+            modgui:model "boxy" ;
+            modgui:panel "3-knobs" ;
+            modgui:color "tribal2" ;
+            modgui:knob "copper" ;
+            modgui:port [
+                lv2:index 0 ;
+                lv2:symbol "fslider2_" ;
+                lv2:name "Drive" ;
+            ] , [
+                lv2:index 1 ;
+                lv2:symbol "fslider1_" ;
+                lv2:name "Tone" ;
+            ] , [
+                lv2:index 2 ;
+                lv2:symbol "fslider0_" ;
+                lv2:name "Level" ;
+            ] ;
+        ] .

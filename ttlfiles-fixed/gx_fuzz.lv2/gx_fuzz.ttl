@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 guitarix project MOD project
+# Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -24,87 +24,84 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
-@prefix time: <http://lv2plug.in/ns/ext/time#>.
-@prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
-	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
+	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
-<http://guitarix.sourceforge.net/plugins/gx_vibe_>
+<http://guitarix.sourceforge.net/plugins/gx_fuzz_>
 	a doap:Project ;
 	doap:maintainer <http://guitarix.sourceforge.net#me> ;
-	doap:name "Gx_vibe_mono" .
+	doap:name "Gx_fuzz_" .
 
-<http://guitarix.sourceforge.net/plugins/gx_vibe_#_vibe_mono>
+<http://guitarix.sourceforge.net/plugins/gx_fuzz_#fuzz_>
     a lv2:Plugin ,
-        lv2:ModulatorPlugin ;
+        lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "GxvibeMono";
+    doap:name "GxFuzz";
     doap:license <http://opensource.org/licenses/isc> ;
-    lv2:project <http://guitarix.sourceforge.net/plugins/gx_vibe_> ;
+    lv2:project <http://guitarix.sourceforge.net/plugins/gx_fuzz_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
+
+  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzz_#gui>;
 
     lv2:minorVersion 28;
     lv2:microVersion 3;
-
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_vibe_gui#_vibe_mono>;
-	mod:brand "Guitarix";
-
+    mod:brand "Guitarix";
 rdfs:comment """
+A Fuzz Effect
 
-...
-
+*Unofficial documentation
 """;
 
-    lv2:port  [
+    lv2:port [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 0 ;
-        lv2:symbol "WIDTH" ;
-        lv2:name "WIDTH" ;
-        lv2:default 0.5 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:symbol "INPUT" ;
+        lv2:name "INPUT";
+        lv2:default 0.0 ;
+        lv2:minimum -20.0 ;
+        lv2:maximum  1e+01 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 1 ;
-        lv2:symbol "DEPTH" ;
-        lv2:name "DEPTH" ;
-        lv2:default 0.37 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:symbol "OUTPUT" ;
+        lv2:name "OUTPUT";
+        lv2:default 1e+02 ;
+        lv2:minimum 5e+01 ;
+        lv2:maximum 1e+02 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 2 ;
-        lv2:symbol "WETDRY" ;
-        lv2:name "WETDRY" ;
+        lv2:symbol "DRIVE" ;
+        lv2:name "DRIVE";
         lv2:default 1.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:minimum -3.0 ;
+        lv2:maximum 100.0 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 3 ;
-        lv2:symbol "FB" ;
-        lv2:name "FB" ;
-        lv2:default -0.6 ;
-        lv2:minimum -1.0 ;
+        lv2:symbol "TONE" ;
+        lv2:name "TONE";
+        lv2:default 0.5 ;
+        lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
+        a  lv2:ControlPort, lv2:OutputPort ;
         lv2:index 4 ;
-        lv2:symbol "TEMPO" ;
-        lv2:name "TEMPO" ;
-        lv2:default 4.4 ;
-        lv2:minimum 0.1 ;
-        lv2:maximum 1e+01 ;
+        lv2:symbol "V1" ;
+        lv2:name "V1";
+        lv2:default 0.0 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.5 ;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
@@ -119,8 +116,7 @@ rdfs:comment """
         lv2:name "In" ;
     ] .
 
-<http://guitarix.sourceforge.net/plugins/gx_vibe_gui#_vibe_mono>
+
+<http://guitarix.sourceforge.net/plugins/gx_fuzz_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_vibe_gui.so>;
-  guiext:requiredFeature guiext:makeResident;
-  .
+  guiext:binary <gx_fuzz_gui.so>; .
