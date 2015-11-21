@@ -1,4 +1,4 @@
-# Ducka LV2 volume ducking tool
+# Masha LV2 beat-mashing tool
 # Copyright 2012 Harry van Haaren <harryhaaren@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any
@@ -19,38 +19,39 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix pprop:  <http://lv2plug.in/ns/ext/port-props#>.
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time: <http://lv2plug.in/ns/ext/time#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
-<http://www.openavproductions.com/artyfx#ducka/gui>
+<http://www.openavproductions.com/artyfx#masha/gui>
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
   lv2:extensionData   ui:idleInterface ;
   ui:requiredFeature ui:makeResident.
 
-<http://www.openavproductions.com/artyfx#ducka>
+<http://www.openavproductions.com/artyfx#masha>
   a lv2:Plugin ,
-    lv2:EnvelopePlugin ;
-  doap:name "Ducka";
-  doap:description "Side-chain Enveloper";
+    lv2:DelayPlugin ;
+  doap:name "Masha";
+  doap:description "Beat Smasher";
   doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
+      foaf:homepage <http://openavproductions.com>;
       foaf:mbox <mailto:harryhaaren@gmail.com>;
       foaf:name "OpenAV"
   ];
   lv2:optionalFeature lv2:hardRTCapable ;
-
-  rdfs:comment "Sidechain envelope plugin, changes the volume of the main audio based on the amplitude of a sidechain signal.";
+  rdfs:comment "A beat-stutter type effect.";
   lv2:minorVersion 2; lv2:microVersion 0;
+  mod:brand "OpenAV";
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
 
-  
-  ui:ui <http://www.openavproductions.com/artyfx#ducka/gui>;
-  
+  ui:ui <http://www.openavproductions.com/artyfx#masha/gui>;
+
   lv2:port [
     a lv2:AudioPort ,
       lv2:InputPort ;
@@ -65,78 +66,72 @@
     lv2:name "In Right";
   ] , [
     a lv2:AudioPort ,
-      lv2:InputPort ;
-    lv2:index 2 ;
-    lv2:symbol "sidechain_input" ;
-    lv2:name "Sidechain Input";
-  ] , [
-    a lv2:AudioPort ,
       lv2:OutputPort ;
-    lv2:index 3 ;
+    lv2:index 2 ;
     lv2:symbol "out_left" ;
     lv2:name "Output Left";
   ] , [
     a lv2:AudioPort ,
       lv2:OutputPort ;
-    lv2:index 4 ;
+    lv2:index 3 ;
     lv2:symbol "out_right" ;
     lv2:name "Output Right";
   ]
-  
+
   ,
-  
+
   [
     a lv2:InputPort ,
       lv2:ControlPort ;
-    lv2:index 5 ;
-    lv2:symbol "threshold" ;
-    lv2:name "Threshold";
-    lv2:default 0.25 ;
+    lv2:index 4 ;
+    lv2:symbol "time" ;
+    lv2:name "Time";
+    lv2:default 0.5 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
   ] , [
     a lv2:InputPort ,
       lv2:ControlPort ;
-    lv2:index 6 ;
-    lv2:symbol "reduction" ;
-    lv2:name "Reduction";
+    lv2:index 5 ;
+    lv2:symbol "amplitude" ;
+    lv2:name "Amplitude";
     lv2:default 1.0 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
   ] , [
     a lv2:InputPort ,
       lv2:ControlPort ;
-    lv2:index 7 ;
-    lv2:symbol "release_time" ;
-    lv2:name "Release Time";
-    lv2:default 0.5 ;
+    lv2:index 6 ;
+    lv2:symbol "dry_wet" ;
+    lv2:name "Dry Wet Mix";
+    lv2:default 1.0 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
   ]
-  
+
   ,
-  
+
   [
-    a lv2:OutputPort ,
+    a lv2:InputPort ,
       lv2:ControlPort ;
-    lv2:index 8 ;
-    lv2:symbol "sidechain_amp" ;
-    lv2:name "Sidechain Amplitude";
-    lv2:default 0.0 ;
+    lv2:index 7 ;
+    lv2:symbol "active" ;
+    lv2:name "Active";
+    lv2:default 1.0 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
+    lv2:portProperty lv2:toggled ;
+    lv2:portProperty pprop:notOnGUI ;
   ]
-  
   ,
-  
+
   [
     a lv2:InputPort ,
       atom:AtomPort ;
     atom:bufferType atom:Sequence ;
     atom:supports time:Position ;
-    lv2:index 9 ;
+    lv2:index 8 ;
     lv2:symbol "control" ;
     lv2:name "Control"
   ]
   .
-

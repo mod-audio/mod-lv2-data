@@ -24,7 +24,7 @@
 @prefix atom:   <http://lv2plug.in/ns/ext/atom#> .
 @prefix ui:     <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time:   <http://lv2plug.in/ns/ext/time#> .
-@prefix mod:    <http://portalmod.com/ns/modgui#>.
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
 
 <http://www.openavproductions.com/artyfx#della/gui>
@@ -38,25 +38,26 @@
 <http://www.openavproductions.com/artyfx#della>
   a lv2:Plugin ,
     lv2:DelayPlugin ;
-  
+
   doap:name "Della";
   doap:description "Delay (BPM adjusted)";
   doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
+      foaf:homepage <http://openavproductions.com>;
       foaf:mbox <mailto:harryhaaren@gmail.com>;
       foaf:name "OpenAV"
   ];
   lv2:optionalFeature lv2:hardRTCapable ;
-  
+
   rdfs:comment "BPM dependant delay with feedback";
   lv2:minorVersion 2; lv2:microVersion 0;
+  mod:brand "OpenAV" ;
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
 
 
   ui:ui <http://www.openavproductions.com/artyfx#della/gui>;
-  
+
   lv2:requiredFeature <http://lv2plug.in/ns/ext/urid#map> ;
 
   lv2:port [

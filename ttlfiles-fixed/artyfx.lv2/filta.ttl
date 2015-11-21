@@ -21,6 +21,7 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix pprop:  <http://lv2plug.in/ns/ext/port-props#>.
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
 <http://www.openavproductions.com/artyfx#filta/gui>
   a ui:X11UI;
@@ -32,24 +33,25 @@
 <http://www.openavproductions.com/artyfx#filta>
   a lv2:Plugin ,
     lv2:FilterPlugin ;
-  
+
   doap:name "Filta";
   doap:description "Lowpass/Highpass Filter";
-  
+
   doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
+      foaf:homepage <http://openavproductions.com>;
       foaf:mbox <mailto:harryhaaren@gmail.com>;
       foaf:name "OpenAV"
   ];
   rdfs:comment "Highpass lowpass filter combination.";
   lv2:minorVersion 2; lv2:microVersion 0;
+  mod:brand "OpenAV";
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
-  
+
   lv2:optionalFeature lv2:hardRTCapable;
-  
+
   ui:ui <http://www.openavproductions.com/artyfx#filta/gui>;
-  
+
   lv2:port [
     a lv2:AudioPort ,
       lv2:InputPort ;
@@ -75,9 +77,9 @@
     lv2:symbol "out_right" ;
     lv2:name "Output Right";
   ]
-  
+
   ,
-  
+
   [
     a lv2:InputPort ,
       lv2:ControlPort ;
@@ -99,5 +101,5 @@
     lv2:portProperty lv2:toggled ;
     lv2:portProperty pprop:notOnGUI ;
   ]
-  
+
   .

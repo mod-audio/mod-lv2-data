@@ -1,5 +1,5 @@
-# Kuiza LV2 Parameteric Equalizer
-# Copyright 2012 Harry van Haaren <harryhaaren@gmail.com>
+# Panda LV2 compressor / expander
+# Copyright 2014 Harry van Haaren <harryhaaren@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -21,34 +21,38 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix pprop:  <http://lv2plug.in/ns/ext/port-props#>.
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
+@prefix time: <http://lv2plug.in/ns/ext/time#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
-<http://www.openavproductions.com/artyfx#kuiza/gui>
+<http://www.openavproductions.com/artyfx#panda/gui>
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
   lv2:extensionData   ui:idleInterface ;
   ui:requiredFeature ui:makeResident.
 
-<http://www.openavproductions.com/artyfx#kuiza>
-  a lv2:Plugin ,
-    lv2:EQPlugin ;
-  
-  doap:name "Kuiza";
-  doap:description "4-band Fixed Parameteric EQ";
+<http://www.openavproductions.com/artyfx#panda>
+  a lv2:Plugin;
+
+  doap:name "Panda";
+  doap:description "Compressor/Expander Combo";
   doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
+      foaf:homepage <http://openavproductions.com>;
       foaf:mbox <mailto:harryhaaren@gmail.com>;
       foaf:name "OpenAV"
   ];
   lv2:optionalFeature lv2:hardRTCapable ;
-  
-  rdfs:comment "A 4 band equalizer with preset bands.";
+  rdfs:comment "A compressor expander limiter that can squeeze the dynamics out of any signal.";
   lv2:minorVersion 2; lv2:microVersion 0;
+  mod:brand "OpenAV";
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
-  ui:ui <http://www.openavproductions.com/artyfx#kuiza/gui>;
-  
+
+  ui:ui <http://www.openavproductions.com/artyfx#panda/gui>;
+
   lv2:requiredFeature <http://lv2plug.in/ns/ext/urid#map> ;
 
   lv2:port [
@@ -64,46 +68,38 @@
   ] , [
       a lv2:InputPort, lv2:ControlPort ;
       lv2:index 2 ;
-      lv2:name "Gain" ;
-      lv2:symbol "gain" ;
-      lv2:default 0.500000 ;
+      lv2:name "Factor" ;
+      lv2:symbol "factor" ;
+      lv2:default 0.000000 ;
       lv2:minimum 0.000000 ;
       lv2:maximum 1.000000 ;
   ] , [
       a lv2:InputPort, lv2:ControlPort ;
       lv2:index 3 ;
-      lv2:name "Low Gain" ;
-      lv2:symbol "gain_1" ;
+      lv2:name "Threshold" ;
+      lv2:symbol "threshold" ;
       lv2:default 0.500000 ;
       lv2:minimum 0.000000 ;
       lv2:maximum 1.000000 ;
   ] , [
       a lv2:InputPort, lv2:ControlPort ;
       lv2:index 4 ;
-      lv2:name "LoMid Gain" ;
-      lv2:symbol "gain_2" ;
+      lv2:name "Attack" ;
+      lv2:symbol "attack" ;
       lv2:default 0.500000 ;
       lv2:minimum 0.000000 ;
       lv2:maximum 1.000000 ;
   ] , [
       a lv2:InputPort, lv2:ControlPort ;
       lv2:index 5 ;
-      lv2:name "HiMid Gain" ;
-      lv2:symbol "gain_3" ;
-      lv2:default 0.500000 ;
+      lv2:name "Release" ;
+      lv2:symbol "release" ;
+      lv2:default 0.250000 ;
       lv2:minimum 0.000000 ;
       lv2:maximum 1.000000 ;
   ] , [
       a lv2:InputPort, lv2:ControlPort ;
       lv2:index 6 ;
-      lv2:name "High Gain" ;
-      lv2:symbol "gain_4" ;
-      lv2:default 0.500000 ;
-      lv2:minimum 0.000000 ;
-      lv2:maximum 1.000000 ;
-  ] , [
-      a lv2:InputPort, lv2:ControlPort ;
-      lv2:index 7 ;
       lv2:name "Active" ;
       lv2:symbol "active" ;
       lv2:default 1.000000 ;
@@ -111,5 +107,15 @@
       lv2:maximum 1.000000 ;
       lv2:portProperty lv2:toggled ;
       lv2:portProperty pprop:notOnGUI ;
+  ]
+  ,
+  [
+    a lv2:InputPort ,
+      atom:AtomPort ;
+    atom:bufferType atom:Sequence ;
+    atom:supports time:Position ;
+    lv2:index 7 ;
+    lv2:symbol "control" ;
+    lv2:name "Control"
   ]
 .
