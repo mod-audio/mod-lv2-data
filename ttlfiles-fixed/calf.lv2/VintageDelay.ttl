@@ -14,6 +14,7 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
 
 :in a pg:StereoGroup , pg:InputGroup ;
     lv2:symbol "in" ;
@@ -26,11 +27,23 @@
 <http://calf.sourceforge.net/plugins/VintageDelay> a lv2:Plugin ;
     a lv2:DelayPlugin ;
     doap:name "Calf Vintage Delay" ;
-    doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ; ] ;
+    doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
+    foaf:homepage <http://calf-studio-gear.org>;
+    ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33922> ;
     lv2:optionalFeature epp:supportsStrictBounds ;
     lv2:optionalFeature lv2:hardRTCapable ;
+
+
+    mod:brand "Calf";
+    mod:label "Delay";
+    lv2:minorVersion 60;
+    lv2:microVersion 0;
+    rdfs:comment """
+    DELAY DELay delay
+    """;
+
     pg:mainInput :in ;
     pg:mainOutput :out ;
     lv2:port [
@@ -205,5 +218,3 @@
         lv2:maximum 1.00000 ;
     ]
 .
-
-
