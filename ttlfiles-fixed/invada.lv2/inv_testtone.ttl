@@ -2,27 +2,18 @@
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix units:  <http://lv2plug.in/ns/extension/units#> .
+@prefix units:  <http://lv2plug.in/ns/extensions/units#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix pg:     <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix mod:    <http://moddevices.com/ns/mod#> .
 
-<http://invadarecords.com/plugins/lv2/testtone> 
+<http://invadarecords.com/plugins/lv2/testtone>
     a lv2:Plugin, lv2:OscillatorPlugin ;
     doap:name "Invada Test Tones" ;
     mod:brand "Invada" ;
     mod:label "Test Tones" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:optionalFeature lv2:hardRTCapable ;
 
     lv2:port [
@@ -68,5 +59,3 @@
 	lv2:maximum 6.0 ;
 	units:unit units:db ;
    ] .
-
-	

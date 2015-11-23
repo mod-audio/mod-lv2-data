@@ -2,32 +2,23 @@
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix units:  <http://lv2plug.in/ns/extension/units#> .
+@prefix units:  <http://lv2plug.in/ns/extensions/units#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix pg:     <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix mod:    <http://moddevices.com/ns/mod#> .
 
-<http://invadarecords.com/plugins/lv2/erreverb/mono#out> 
+<http://invadarecords.com/plugins/lv2/erreverb/mono#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/erreverb/mono> 
+<http://invadarecords.com/plugins/lv2/erreverb/mono>
     a lv2:Plugin, lv2:ReverbPlugin ;
     doap:name "Invada Early Reflection Reverb (mono in)" ;
     mod:brand "Invada" ;
     mod:label "ER Reverb M" ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3311> ;
@@ -133,15 +124,15 @@
 	lv2:index 11 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/mono#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/mono#out> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 12 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/mono#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/mono#out> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:InputPort, lv2:AudioPort ;
 	lv2:index 13 ;
@@ -177,31 +168,22 @@
     ]
 .
 
-<http://invadarecords.com/plugins/lv2/erreverb/sum#in> 
+<http://invadarecords.com/plugins/lv2/erreverb/sum#in>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "in" .
-  
-<http://invadarecords.com/plugins/lv2/erreverb/sum#out> 
+
+<http://invadarecords.com/plugins/lv2/erreverb/sum#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/erreverb/sum> 
+<http://invadarecords.com/plugins/lv2/erreverb/sum>
     a lv2:Plugin, lv2:ReverbPlugin ;
     doap:name "Invada Early Reflection Reverb (sum L+R in)" ;
     mod:brand "Invada" ;
     mod:label "ER Reverb LR" ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3312> ;
@@ -307,22 +289,22 @@
 	lv2:index 11 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/sum#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/sum#out> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 12 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/sum#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/sum#out> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:InputPort, lv2:AudioPort ;
 	lv2:index 13 ;
 	lv2:symbol "inL" ;
 	lv2:name "L In" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/sum#in> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/sum#in> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 14 ;
@@ -355,7 +337,6 @@
 	lv2:index 17 ;
 	lv2:symbol "inR" ;
 	lv2:name "R In" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/erreverb/sum#in> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/erreverb/sum#in> ;
+	lv2:designation pg:right ;
     ] .
-

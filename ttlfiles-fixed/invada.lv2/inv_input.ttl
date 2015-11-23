@@ -2,37 +2,28 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix units: <http://lv2plug.in/ns/extension/units#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix mod:   <http://moddevices.com/ns/mod#> .
 
-<http://invadarecords.com/plugins/lv2/input#in> 
+<http://invadarecords.com/plugins/lv2/input#in>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "in" .
-  
-<http://invadarecords.com/plugins/lv2/input#out> 
+
+<http://invadarecords.com/plugins/lv2/input#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/input> 
+<http://invadarecords.com/plugins/lv2/input>
     a lv2:Plugin, lv2:UtilityPlugin ;
     doap:name "Invada Input Module" ;
     mod:brand "Invada" ;
     mod:label "Input Module" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3301> ;
 
@@ -102,29 +93,29 @@
 	lv2:index 7 ;
 	lv2:symbol "inL" ;
 	lv2:name "L In" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/input#in> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/input#in> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:InputPort, lv2:AudioPort ;
 	lv2:index 8 ;
 	lv2:symbol "inR" ;
 	lv2:name "R In" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/input#in> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/input#in> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 9 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/input#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/input#out> ;
+	lv2:designation pg:left ;
    ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 10 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/input#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/input#out> ;
+	lv2:designation pg:right ;
    ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 11 ;
@@ -178,5 +169,3 @@
 	lv2:minimum 0.0 ;
 	lv2:maximum 10.0 ;
    ] .
-
-	

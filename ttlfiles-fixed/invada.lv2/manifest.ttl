@@ -1,0 +1,89 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix doap:   <http://usefulinc.com/ns/doap#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://invadarecords.com/plugins/lv2/>
+    a doap:Project ;
+doap:developer [
+foaf:name "Fraser Stuart";
+foaf:homepage <https://launchpad.net/invada-studio> ;
+foaf:mbox <fraser@arkhostings.com> ;
+] ;
+doap:maintainer [
+foaf:name "Invada";
+foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
+foaf:mbox <mailto:fraser@arkhostings.com> ;
+] .
+
+<http://invadarecords.com/plugins/lv2/compressor/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_compressor.so> ;
+                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/compressor/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_compressor.so> ;
+                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/delay/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_delay.so> ;
+                                        rdfs:seeAlso <inv_delay.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/delay/sum> a lv2:Plugin ;
+                                        lv2:binary <inv_delay.so> ;
+                                        rdfs:seeAlso <inv_delay.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/erreverb/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_erreverb.so> ;
+                                        rdfs:seeAlso <inv_erreverb.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/erreverb/sum> a lv2:Plugin ;
+                                        lv2:binary <inv_erreverb.so> ;
+                                        rdfs:seeAlso <inv_erreverb.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/filter/lpf/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_filter.so> ;
+                                        rdfs:seeAlso <inv_filter.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/filter/lpf/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_filter.so> ;
+                                        rdfs:seeAlso <inv_filter.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/filter/hpf/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_filter.so> ;
+                                        rdfs:seeAlso <inv_filter.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/filter/hpf/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_filter.so> ;
+                                        rdfs:seeAlso <inv_filter.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/input> a lv2:Plugin ;
+                                        lv2:binary <inv_input.so> ;
+                                        rdfs:seeAlso <inv_input.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/meter> a lv2:Plugin ;
+                                        lv2:binary <inv_meter.so> ;
+                                        rdfs:seeAlso <inv_meter.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/phaser/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_phaser.so> ;
+                                        rdfs:seeAlso <inv_phaser.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/phaser/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_phaser.so> ;
+                                        rdfs:seeAlso <inv_phaser.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/phaser/sum> a lv2:Plugin ;
+                                        lv2:binary <inv_phaser.so> ;
+                                        rdfs:seeAlso <inv_phaser.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/testtone> a lv2:Plugin ;
+                                        lv2:binary <inv_testtone.so> ;
+                                        rdfs:seeAlso <inv_testtone.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/tube/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_tube.so> ;
+                                        rdfs:seeAlso <inv_tube.ttl> , <modguis.ttl> .
+
+<http://invadarecords.com/plugins/lv2/tube/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_tube.so> ;
+                                        rdfs:seeAlso <inv_tube.ttl> , <modguis.ttl> .

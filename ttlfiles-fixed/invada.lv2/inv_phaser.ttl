@@ -2,31 +2,27 @@
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix units:  <http://lv2plug.in/ns/extension/units#> .
+@prefix units:  <http://lv2plug.in/ns/extensions/units#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix pg:     <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix mod:    <http://moddevices.com/ns/mod#> .
 
-<http://invadarecords.com/plugins/lv2/phaser/mono#out> 
+<http://invadarecords.com/plugins/lv2/phaser/mono#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/phaser/mono> 
+<http://invadarecords.com/plugins/lv2/phaser/mono>
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (mono in)" ;
     mod:brand "Invada" ;
     mod:label "Stereo Phaser M" ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+Phaser wich can go very gradually
+""";
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
 
@@ -44,9 +40,9 @@
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
-	lv2:default 25 ;
+	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500 ;
+	lv2:maximum 500.0 ;
 	units:unit units:s ;
         lv2:portProperty pprops:logarithmic ;
     ] , [
@@ -54,9 +50,9 @@
 	lv2:index 2 ;
 	lv2:symbol "phase" ;
 	lv2:name "Phase Offset" ;
-	lv2:default 45 ;
-	lv2:minimum -180 ;
-	lv2:maximum 180 ;
+	lv2:default 45.0 ;
+	lv2:minimum -180.0 ;
+	lv2:maximum 180.0 ;
 	units:unit units:degree ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
@@ -114,15 +110,15 @@
 	lv2:index 9 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/mono#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/mono#out> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 10 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/mono#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/mono#out> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 11 ;
@@ -157,31 +153,27 @@
 	units:unit units:db ;
     ] .
 
-<http://invadarecords.com/plugins/lv2/phaser/stereo#in> 
+<http://invadarecords.com/plugins/lv2/phaser/stereo#in>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "in" .
-  
-<http://invadarecords.com/plugins/lv2/phaser/stereo#out> 
+
+<http://invadarecords.com/plugins/lv2/phaser/stereo#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/phaser/stereo> 
+<http://invadarecords.com/plugins/lv2/phaser/stereo>
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (stereo in)" ;
     mod:brand "Invada" ;
     mod:label "Stereo Phaser St" ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+Phaser wich can go very gradually
+""";
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
 
@@ -199,9 +191,9 @@
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
-	lv2:default 25 ;
+	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500 ;
+	lv2:maximum 500.0 ;
 	units:unit units:s ;
         lv2:portProperty pprops:logarithmic ;
     ] , [
@@ -209,9 +201,9 @@
 	lv2:index 2 ;
 	lv2:symbol "phase" ;
 	lv2:name "Phase Offset" ;
-	lv2:default 45 ;
-	lv2:minimum -180 ;
-	lv2:maximum 180 ;
+	lv2:default 45.0 ;
+	lv2:minimum -180.0 ;
+	lv2:maximum 180.0 ;
 	units:unit units:degree ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
@@ -269,15 +261,15 @@
 	lv2:index 9 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/stereo#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/stereo#out> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 10 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/stereo#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/stereo#out> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 11 ;
@@ -301,8 +293,8 @@
 	lv2:index 13 ;
 	lv2:symbol "inL" ;
 	lv2:name "InL" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/compressor/stereo#in> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/compressor/stereo#in> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 14 ;
@@ -317,8 +309,8 @@
 	lv2:index 15 ;
 	lv2:symbol "inR" ;
 	lv2:name "In R" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/compressor/stereo#in> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/compressor/stereo#in> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 16 ;
@@ -330,31 +322,28 @@
 	units:unit units:db ;
     ] .
 
-<http://invadarecords.com/plugins/lv2/phaser/sum#in> 
+<http://invadarecords.com/plugins/lv2/phaser/sum#in>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "in" .
-  
-<http://invadarecords.com/plugins/lv2/phaser/sum#out> 
+
+<http://invadarecords.com/plugins/lv2/phaser/sum#out>
     a pg:Group ;
     a pg:StereoGroup ;
     lv2:symbol "out" .
 
-<http://invadarecords.com/plugins/lv2/phaser/sum> 
+<http://invadarecords.com/plugins/lv2/phaser/sum>
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (sum L+R in)" ;
     mod:brand "Invada" ;
     mod:label "Stereo Phaser LR" ;
-    doap:developer [
-	foaf:name "Fraser Stuart";
-	foaf:homepage <https://launchpad.net/invada-studio> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
-    doap:maintainer [
-	foaf:name "Invada";
-	foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
-	foaf:mbox <mailto:fraser@arkhostings.com> ;
-    ] ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+Phaser wich can go very gradually
+""";
+
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
 
@@ -372,18 +361,18 @@
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
-	lv2:default 25 ;
+	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500 ;
+	lv2:maximum 500.0 ;
 	units:unit units:s ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
 	lv2:symbol "phase" ;
 	lv2:name "Phase Offset" ;
-	lv2:default 45 ;
-	lv2:minimum -180 ;
-	lv2:maximum 180 ;
+	lv2:default 45.0 ;
+	lv2:minimum -180.0 ;
+	lv2:maximum 180.0 ;
 	units:unit units:degree ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
@@ -441,15 +430,15 @@
 	lv2:index 9 ;
 	lv2:symbol "outL" ;
 	lv2:name "L Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/sum#out> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/sum#out> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:AudioPort ;
 	lv2:index 10 ;
 	lv2:symbol "outR" ;
 	lv2:name "R Out" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/sum#out> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/sum#out> ;
+	lv2:designation pg:right ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 11 ;
@@ -473,8 +462,8 @@
 	lv2:index 13 ;
 	lv2:symbol "inL" ;
 	lv2:name "In L" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/sum#in> ;
-	pg:role pg:leftChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/sum#in> ;
+	lv2:designation pg:left ;
     ] , [
 	a lv2:OutputPort, lv2:ControlPort ;
 	lv2:index 14 ;
@@ -489,6 +478,6 @@
 	lv2:index 15 ;
 	lv2:symbol "inR" ;
 	lv2:name "In R" ;
-	pg:inGroup <http://invadarecords.com/plugins/lv2/phaser/sum#in> ;
-	pg:role pg:rightChannel ;
+	pg:group <http://invadarecords.com/plugins/lv2/phaser/sum#in> ;
+	lv2:designation pg:right ;
     ] .
