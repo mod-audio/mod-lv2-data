@@ -30,8 +30,8 @@
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
-  lv2:extensionData   ui:idleInterface ;
-  ui:requiredFeature ui:makeResident.
+  lv2:extensionData   ui:idleInterface .
+  
 
 <http://www.openavproductions.com/artyfx#bitta>
   a lv2:Plugin,
@@ -39,11 +39,6 @@
 
   doap:name "Bitta";
   doap:description "Bit Crusher";
-  doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>;
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ];
 
   rdfs:comment "Bit crushing causes bit-reduction type distortion";
   lv2:minorVersion 2; lv2:microVersion 0;

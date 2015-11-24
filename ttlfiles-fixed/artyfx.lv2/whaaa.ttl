@@ -29,19 +29,14 @@
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
-  lv2:extensionData   ui:idleInterface ;
-  ui:requiredFeature ui:makeResident.
+  lv2:extensionData   ui:idleInterface .
+  
 
 <http://www.openavproductions.com/artyfx#whaaa>
   a lv2:Plugin;
   
   doap:name "Whaaa";
   doap:description "Wah Pedal";
-  doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ];
   lv2:optionalFeature lv2:hardRTCapable ;
   rdfs:comment "A wah pedal.";
   lv2:minorVersion 2; lv2:microVersion 0;
