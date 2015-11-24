@@ -49,6 +49,7 @@
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_studiopre_st#gui>;
   mod:brand "Guitarix";
+  mod:label "Gx Studio Preamp";
     lv2:minorVersion 28;
     lv2:microVersion 3;
 
