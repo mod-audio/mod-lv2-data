@@ -21,12 +21,7 @@
         doap:name "rkr StompBox" ;
         mod:brand "Rakarrack";
         doap:description "Distortion Pedal Emulator";
-        doap:license <http://opensource.org/licenses/gpl-2.0> ;
-        doap:maintainer [
-                foaf:name "Rakarrack Team" ;
-                foaf:homepage <http://rakarrack.sourceforge.net>;
-                foaf:mbox <mailto:ssjackson71@gmail.com> ;
-        ] ;
+        lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
         rdfs:comment "Physically-informed distortion stompbox emulation with 8 different distortion-character modes. Intended to allow quick dialing-in to the tone you want." ;

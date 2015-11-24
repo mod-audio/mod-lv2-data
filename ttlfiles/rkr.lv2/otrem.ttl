@@ -20,12 +20,7 @@
         doap:name "rkr OpticalTrem" ;
         mod:brand "Rakarrack";
         doap:description "Optical Tremolo Emulation";
-        doap:license <http://opensource.org/licenses/GPL-2.0> ;
-        doap:maintainer [
-                foaf:name "Rakarrack Team" ;
-                foaf:homepage <http://rakarrack.sourceforge.net>;
-                foaf:mbox <mailto:ssjackson71@gmail.com> ;
-        ] ;
+        lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
         rdfs:comment "An optical tremolo effect emulation such as often built into a guitar amplifier. This varies the signal volume through an LFO."

@@ -20,18 +20,13 @@
         doap:name "rkr Valve" ;
         mod:brand "Rakarrack";
         doap:description "Tube Distortion Emulator";
-        doap:license <http://opensource.org/licenses/gpl-2.0> ;
-        doap:maintainer [
-                foaf:name "Rakarrack Team" ;
-                foaf:homepage <http://rakarrack.sourceforge.net>;
-                foaf:mbox <mailto:ssjackson71@gmail.com> ;
-        ] ;
+        lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
         rdfs:comment "Tube distortion emulation with extra distortion available." ;
         lv2:optionalFeature lv2:hardRTCapable,
             <http://lv2plug.in/ns/ext/urid#map>,
-            <http://lv2plug.in/ns/ext/bufsz#boundedBlockLength>;
+            <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength>;
 #        ui:ui  <http://rakarrack.sourceforge.net/effects.html#valve_ui> ;
 
         lv2:port [

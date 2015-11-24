@@ -21,12 +21,7 @@
         mod:brand "Rakarrack";
         mod:label "Flanger/Chorus";
         doap:description "Flanger/Chorus";
-        doap:license <http://opensource.org/licenses/GPL-2.0> ;
-        doap:maintainer [
-                foaf:name "Rakarrack Team" ;
-                foaf:homepage <http://rakarrack.sourceforge.net>;
-                foaf:mbox <mailto:ssjackson71@gmail.com> ;
-        ] ;
+        lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
         rdfs:comment "A flanger or chorus (depending on delay time) effect. Allows for fractional delays for a more intense effect." ;
