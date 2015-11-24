@@ -66,6 +66,36 @@
 ###############################################################################
 
 ###############################################################################
+## START http://www.openavproductions.com/artyfx#driva
+
+<http://www.openavproductions.com/artyfx#driva>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-driva.html> ;
+        modgui:stylesheet <modgui/stylesheet-driva.css> ;
+        modgui:screenshot <modgui/screenshot-driva.png> ;
+        modgui:thumbnail <modgui/thumbnail-driva.png> ;
+        modgui:brand "OpenAV" ;
+        modgui:label "Driva" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "tone" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "distortion" ;
+            lv2:name "Distortion" ;
+        ] ;
+    ] .
+    
+## END http://www.openavproductions.com/artyfx#driva
+###############################################################################
+
+###############################################################################
 ## START http://www.openavproductions.com/artyfx#ducka
 
 <http://www.openavproductions.com/artyfx#ducka>
@@ -331,4 +361,37 @@
     ] .
     
 ## END http://www.openavproductions.com/artyfx#vihda
+###############################################################################
+
+###############################################################################
+## START http://www.openavproductions.com/artyfx#whaaa
+
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://www.openavproductions.com/artyfx#whaaa>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-whaaa.html> ;
+        modgui:stylesheet <modgui/stylesheet-whaaa.css> ;
+        modgui:screenshot <modgui/screenshot-whaaa.png> ;
+        modgui:thumbnail <modgui/thumbnail-whaaa.png> ;
+        modgui:brand "OpenAV" ;
+        modgui:label "Whaaa" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] ;
+    ] .
+    
+## END http://www.openavproductions.com/artyfx#whaaa
 ###############################################################################
