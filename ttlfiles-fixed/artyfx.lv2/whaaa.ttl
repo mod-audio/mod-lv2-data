@@ -20,10 +20,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
-
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time: <http://lv2plug.in/ns/ext/time#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
 <http://www.openavproductions.com/artyfx#whaaa/gui>
   a ui:X11UI;
@@ -47,7 +47,7 @@
   lv2:minorVersion 2; lv2:microVersion 0;
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
-
+  mod:brand "OpenAV" ;
 
   ui:ui <http://www.openavproductions.com/artyfx#whaaa/gui>;
   
