@@ -24,11 +24,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_studiopre_st>
@@ -46,7 +48,7 @@
     lv2:optionalFeature lv2:hardRTCapable ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_studiopre_st#gui>;
-
+  mod:brand "Guitarix";
     lv2:minorVersion 28;
     lv2:microVersion 3;
 
@@ -182,5 +184,4 @@ This is an identical circuit apart from coupling caps whcih could do with filter
 
 <http://guitarix.sourceforge.net/plugins/gx_studiopre_st#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_studiopre_st_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_studiopre_st_gui.so> .
