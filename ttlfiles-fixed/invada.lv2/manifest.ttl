@@ -8,7 +8,6 @@
 doap:developer [
 foaf:name "Fraser Stuart";
 foaf:homepage <https://launchpad.net/invada-studio> ;
-foaf:mbox <fraser@arkhostings.com> ;
 ] ;
 doap:maintainer [
 foaf:name "Invada";
