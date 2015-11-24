@@ -1,0 +1,1090 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#randvelocity
+
+
+
+<http://gareus.org/oss/lv2/midifilter#randvelocity>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-velocity-randomization.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-velocity-randomization.css> ;
+        modgui:screenshot <modgui/screenshot-midi-velocity-randomization.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-velocity-randomization.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Velocity" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Random Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "randfact" ;
+            lv2:name "Velocity Randomization" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#randvelocity
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#velocityscale
+
+
+
+<http://gareus.org/oss/lv2/midifilter#velocityscale>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-velocity-adjust.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-velocity-adjust.css> ;
+        modgui:screenshot <modgui/screenshot-midi-velocity-adjust.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-velocity-adjust.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Velocity Scale" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "onmin" ;
+            lv2:name "Note-on Min" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "onmax" ;
+            lv2:name "Note-on Max" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "onoff" ;
+            lv2:name "Note-on Offset" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "offmin" ;
+            lv2:name "Note-off Min" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "offmax" ;
+            lv2:name "Note-off Max" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "offoff" ;
+            lv2:name "Note-off Offset" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#velocityscale
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#scalecc
+
+
+
+<http://gareus.org/oss/lv2/midifilter#scalecc>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-scale-cc-value.html> ;
+        modgui:stylesheet <modgui/stylesheet-scale-cc-value.css> ;
+        modgui:screenshot <modgui/screenshot-scale-cc-value.png> ;
+        modgui:thumbnail <modgui/thumbnail-scale-cc-value.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Scale CC Value" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "vmode" ;
+            lv2:name "Value Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "lower" ;
+            lv2:name "Minimal" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "upper" ;
+            lv2:name "Maximum" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "valoff" ;
+            lv2:name "Offset" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "valmul" ;
+            lv2:name "Scale" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#scalecc
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#scalecc
+
+
+
+<http://gareus.org/oss/lv2/midifilter#scalecc>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-scale-cc-value.html> ;
+        modgui:stylesheet <modgui/stylesheet-scale-cc-value.css> ;
+        modgui:screenshot <modgui/screenshot-scale-cc-value.png> ;
+        modgui:thumbnail <modgui/thumbnail-scale-cc-value.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Scale CC Value" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "vmode" ;
+            lv2:name "Value Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "lower" ;
+            lv2:name "Minimal" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "upper" ;
+            lv2:name "Maximum" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "valoff" ;
+            lv2:name "Offset" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "valmul" ;
+            lv2:name "Scale" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#scalecc
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#velocityrange
+
+<http://gareus.org/oss/lv2/midifilter#velocityrange>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-velocity-range-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-velocity-range-filter.css> ;
+        modgui:screenshot <modgui/screenshot-midi-velocity-range-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-velocity-range-filter.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Velocity Range Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Operation Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "lower" ;
+            lv2:name "Min Volume" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "upper" ;
+            lv2:name "Max Volume" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#velocityrange
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#passthru
+
+<http://gareus.org/oss/lv2/midifilter#passthru>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-thru.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-thru.css> ;
+        modgui:screenshot <modgui/screenshot-midi-thru.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-thru.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Thru" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#passthru
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#midistrum
+
+<http://gareus.org/oss/lv2/midifilter#midistrum>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-strum.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-strum.css> ;
+        modgui:screenshot <modgui/screenshot-midi-strum.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-strum.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Strum" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "bpm" ;
+            lv2:name "BPM" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mode" ;
+            lv2:name "StrumDir" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "collect" ;
+            lv2:name "notes" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "duration" ;
+            lv2:name "StrumDur" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "adjspeed" ;
+            lv2:name "StrumAcc" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "randspeed" ;
+            lv2:name "RandAcc" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "randvelocity" ;
+            lv2:name "RandVel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#midistrum
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#sostenuto
+
+<http://gareus.org/oss/lv2/midifilter#sostenuto>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-sostenuto.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-sostenuto.css> ;
+        modgui:screenshot <modgui/screenshot-midi-sostenuto.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-sostenuto.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Sostenuto" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "pedal" ;
+            lv2:name "Pedal Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "sostenuto" ;
+            lv2:name "Sostenuto [sec]" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#sostenuto
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#noactivesensing
+
+<http://gareus.org/oss/lv2/midifilter#noactivesensing>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-remove-active-sensing.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-remove-active-sensing.css> ;
+        modgui:screenshot <modgui/screenshot-midi-remove-active-sensing.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-remove-active-sensing.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Remove Active Sensing" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#noactivesensing
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#quantize
+
+<http://gareus.org/oss/lv2/midifilter#quantize>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-quantization.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-quantization.css> ;
+        modgui:screenshot <modgui/screenshot-midi-quantization.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-quantization.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Quantization" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mindur" ;
+            lv2:name "Note-off behaviour" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "bpm" ;
+            lv2:name "BPM" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "quant" ;
+            lv2:name "Grid" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#quantize
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#notetoggle
+
+<http://gareus.org/oss/lv2/midifilter#notetoggle>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-note-toggle.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-note-toggle.css> ;
+        modgui:screenshot <modgui/screenshot-midi-note-toggle.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-note-toggle.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Note Toggle" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#notetoggle
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#ntapdelay
+
+<http://gareus.org/oss/lv2/midifilter#ntapdelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-n-tap-delay.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-n-tap-delay.css> ;
+        modgui:screenshot <modgui/screenshot-midi-n-tap-delay.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-n-tap-delay.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI N-Tap Delay" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "bpmsrc" ;
+            lv2:name "BPM source" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delayBPM" ;
+            lv2:name "BPM" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delayBeats" ;
+            lv2:name "Time Beat" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "taps" ;
+            lv2:name "Repeats" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "velocityadj" ;
+            lv2:name "velocity" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#ntapdelay
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#monolegato
+
+<http://gareus.org/oss/lv2/midifilter#monolegato>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-monophonic-legato.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-monophonic-legato.css> ;
+        modgui:screenshot <modgui/screenshot-midi-monophonic-legato.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-monophonic-legato.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Monophonic Legato" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#monolegato
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#keysplit
+
+<http://gareus.org/oss/lv2/midifilter#keysplit>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-keysplit.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-keysplit.css> ;
+        modgui:screenshot <modgui/screenshot-midi-keysplit.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-keysplit.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Keysplit" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "transp0" ;
+            lv2:name "Low+" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "split" ;
+            lv2:name "Split" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "transp1" ;
+            lv2:name "Up+" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "channel0" ;
+            lv2:name "Chan_Lo" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "channel1" ;
+            lv2:name "Chan_Up" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#keysplit
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#mapkeyscale
+
+<http://gareus.org/oss/lv2/midifilter#mapkeyscale>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-keys-transpose.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-keys-transpose.css> ;
+        modgui:screenshot <modgui/screenshot-midi-keys-transpose.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-keys-transpose.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Keys Transpose" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "k0" ;
+            lv2:name "C" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "k1" ;
+            lv2:name "C#" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "k2" ;
+            lv2:name "D" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "k3" ;
+            lv2:name "D#" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "k4" ;
+            lv2:name "E" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "k5" ;
+            lv2:name "F" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "k6" ;
+            lv2:name "F#" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "k7" ;
+            lv2:name "G" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "k8" ;
+            lv2:name "G#" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "k9" ;
+            lv2:name "A" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "k10" ;
+            lv2:name "A#" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "k11" ;
+            lv2:name "B" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#mapkeyscale
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#keyrange
+
+<http://gareus.org/oss/lv2/midifilter#keyrange>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-key-range-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-key-range-filter.css> ;
+        modgui:screenshot <modgui/screenshot-midi-key-range-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-key-range-filter.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Key-Range" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Operation Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "lower" ;
+            lv2:name "Lowest" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "upper" ;
+            lv2:name "Highest" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Channel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#keyrange
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#eventblocker
+
+<http://gareus.org/oss/lv2/midifilter#eventblocker>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-event-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-event-filter.css> ;
+        modgui:screenshot <modgui/screenshot-midi-event-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-event-filter.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Event" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "blkcc" ;
+            lv2:name "Block CC" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "blknote" ;
+            lv2:name "note" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "blkpc" ;
+            lv2:name "PC" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "blkpp" ;
+            lv2:name "poly" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "blkcp" ;
+            lv2:name "chan" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "blkpb" ;
+            lv2:name "PitchB" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "blksx" ;
+            lv2:name "RT" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "blkcm" ;
+            lv2:name "Cus" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "cmt" ;
+            lv2:name "cusT" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "cmf" ;
+            lv2:name "CusM" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "cm1" ;
+            lv2:name "CmD1" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "cm2" ;
+            lv2:name "CmD2" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#eventblocker
+###############################################################################
+
+###############################################################################
+## http://gareus.org/oss/lv2/midifilter#enforcescale
+
+<http://gareus.org/oss/lv2/midifilter#enforcescale>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-enforce-scale.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-enforce-scale.css> ;
+        modgui:screenshot <modgui/screenshot-midi-enforce-scale.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-enforce-scale.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Enforce Scale" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "scale" ;
+            lv2:name "Scale" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] ;
+    ] .
+
+## http://gareus.org/oss/lv2/midifilter#enforcescale
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#nodup
+
+<http://gareus.org/oss/lv2/midifilter#nodup>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-duplicate-blocker.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-duplicate-blocker.css> ;
+        modgui:screenshot <modgui/screenshot-midi-duplicate-blocker.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-duplicate-blocker.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Duplicate Blocker" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#nodup
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#mididelay
+
+<http://gareus.org/oss/lv2/midifilter#mididelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-delayline.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-delayline.css> ;
+        modgui:screenshot <modgui/screenshot-midi-delayline.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-delayline.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Delayline" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "bpmsrc" ;
+            lv2:name "BPM source" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delayBPM" ;
+            lv2:name "BPM" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delayBeats" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "delayRandom" ;
+            lv2:name "Random" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#mididelay
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#miditranspose
+
+<http://gareus.org/oss/lv2/midifilter#miditranspose>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-chromatic-transpose.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-chromatic-transpose.css> ;
+        modgui:screenshot <modgui/screenshot-midi-chromatic-transpose.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-chromatic-transpose.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Chromatic Transposer" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "transpose" ;
+            lv2:name "Transpose" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "inversion" ;
+            lv2:name "Invers point" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#miditranspose
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#midichord
+
+<http://gareus.org/oss/lv2/midifilter#midichord>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-chord.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-chord.css> ;
+        modgui:screenshot <modgui/screenshot-midi-chord.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-chord.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Chord" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "scale" ;
+            lv2:name "Scale" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "c1" ;
+            lv2:name "prime" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "c3" ;
+            lv2:name "3rd" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "c5" ;
+            lv2:name "5th" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "c6" ;
+            lv2:name "6th" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "c7" ;
+            lv2:name "7th" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "c8" ;
+            lv2:name "octave" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#midichord
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#mididup
+
+<http://gareus.org/oss/lv2/midifilter#mididup>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-channel-unisono.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-channel-unisono.css> ;
+        modgui:screenshot <modgui/screenshot-midi-channel-unisono.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-channel-unisono.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Channel" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "chs" ;
+            lv2:name "Source Channel" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "chd" ;
+            lv2:name "Duplicate to Channel" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#mididup
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#channelmap
+
+<http://gareus.org/oss/lv2/midifilter#channelmap>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-channel-map.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-channel-map.css> ;
+        modgui:screenshot <modgui/screenshot-midi-channel-map.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-channel-map.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Channel Map" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "chn1" ;
+            lv2:name "1 to" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "chn2" ;
+            lv2:name "2 to" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "chn3" ;
+            lv2:name "3 to" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "chn4" ;
+            lv2:name "4 to" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "chn5" ;
+            lv2:name "5 to" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "chn6" ;
+            lv2:name "6 to" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "chn7" ;
+            lv2:name "7 to" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "chn8" ;
+            lv2:name "8 to" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "chn9" ;
+            lv2:name "9 to" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "chn10" ;
+            lv2:name "10 to" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "chn11" ;
+            lv2:name "11 to" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "chn12" ;
+            lv2:name "12 to" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#channelmap
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#channelfilter
+
+<http://gareus.org/oss/lv2/midifilter#channelfilter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-channel-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-channel-filter.css> ;
+        modgui:screenshot <modgui/screenshot-midi-channel-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-channel-filter.png> ;
+        modgui:brand "x42" ;
+        modgui:label "Channel Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "12-sliders" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "chn1" ;
+            lv2:name "1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "chn2" ;
+            lv2:name "2" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "chn3" ;
+            lv2:name "3" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "chn4" ;
+            lv2:name "4" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "chn5" ;
+            lv2:name "5" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "chn6" ;
+            lv2:name "6" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "chn7" ;
+            lv2:name "7" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "chn8" ;
+            lv2:name "8" ;
+        ] , [
+            lv2:index 8 ;
+            lv2:symbol "chn9" ;
+            lv2:name "9" ;
+        ] , [
+            lv2:index 9 ;
+            lv2:symbol "chn10" ;
+            lv2:name "10" ;
+        ] , [
+            lv2:index 10 ;
+            lv2:symbol "chn11" ;
+            lv2:name "11" ;
+        ] , [
+            lv2:index 11 ;
+            lv2:symbol "chn12" ;
+            lv2:name "12" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#channelfilter
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#mapcc
+
+<http://gareus.org/oss/lv2/midifilter#mapcc>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mapcc.html> ;
+        modgui:stylesheet <modgui/stylesheet-mapcc.css> ;
+        modgui:screenshot <modgui/screenshot-mapcc.png> ;
+        modgui:thumbnail <modgui/thumbnail-mapcc.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MapCC" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "channelf" ;
+            lv2:name "Filter Channel" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "ccin" ;
+            lv2:name "CC In" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "ccout" ;
+            lv2:name "CC Out" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#mapcc
+###############################################################################
+
+###############################################################################
+## START http://gareus.org/oss/lv2/midifilter#cctonote
+
+<http://gareus.org/oss/lv2/midifilter#cctonote>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cc2note.html> ;
+        modgui:stylesheet <modgui/stylesheet-cc2note.css> ;
+        modgui:screenshot <modgui/screenshot-cc2note.png> ;
+        modgui:thumbnail <modgui/thumbnail-cc2note.png> ;
+        modgui:brand "x42" ;
+        modgui:label "CC2Note" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Operation Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "param" ;
+            lv2:name "CC Parameter to intercept" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "key" ;
+            lv2:name "Key" ;
+        ] ;
+    ] .
+
+## END http://gareus.org/oss/lv2/midifilter#cctonote
+###############################################################################
