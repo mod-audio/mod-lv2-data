@@ -28,6 +28,7 @@
 <http://calf.sourceforge.net/plugins/Limiter> a lv2:Plugin ;
     a lv2:LimiterPlugin ;
     doap:name "Calf Limiter" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Christian Holschuh / Markus Schmidt" ;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;

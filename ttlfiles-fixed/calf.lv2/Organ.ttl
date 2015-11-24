@@ -23,6 +23,7 @@
 <http://calf.sourceforge.net/plugins/Organ> a lv2:Plugin ;
     a lv2:InstrumentPlugin ;
     doap:name "Calf Organ" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;

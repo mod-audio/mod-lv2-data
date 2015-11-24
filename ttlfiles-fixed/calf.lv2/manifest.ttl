@@ -8,6 +8,7 @@
 
 <http://calf-studio-gear.org>
     a doap:Project ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [
         foaf:homepage <http://calf-studio-gear.org> ;
     ] .

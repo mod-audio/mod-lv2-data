@@ -27,6 +27,7 @@
 <http://calf.sourceforge.net/plugins/RingModulator> a lv2:Plugin ;
     a lv2:ModulatorPlugin ;
     doap:name "Calf Ring Modulator" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt" ;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;

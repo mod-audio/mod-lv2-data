@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/MultibandCompressor> a lv2:Plugin ;
     a lv2:CompressorPlugin ;
     doap:name "Calf Multiband Compressor" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt / Thor Harald Johansen" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34070> ;

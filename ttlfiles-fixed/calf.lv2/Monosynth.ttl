@@ -22,6 +22,7 @@
 <http://calf.sourceforge.net/plugins/Monosynth> a lv2:Plugin ;
     a lv2:InstrumentPlugin ;
     doap:name "Calf Monosynth" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33920> ;

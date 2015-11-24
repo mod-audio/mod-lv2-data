@@ -28,6 +28,7 @@
 <http://calf.sourceforge.net/plugins/MultiChorus> a lv2:Plugin ;
     a lv2:ModulatorPlugin ;
     doap:name "Calf Multi Chorus" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
     ] ;

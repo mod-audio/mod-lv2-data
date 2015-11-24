@@ -27,6 +27,7 @@
 <http://calf.sourceforge.net/plugins/EnvelopeFilter> a lv2:Plugin ;
     a lv2:FilterPlugin ;
     doap:name "Calf Envelope Filter" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Markus Schmidt" ;
     ] ;

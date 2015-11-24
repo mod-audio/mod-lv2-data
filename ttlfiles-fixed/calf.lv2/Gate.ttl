@@ -27,13 +27,13 @@
 <http://calf.sourceforge.net/plugins/Gate> a lv2:Plugin ;
     a lv2:ExpanderPlugin ;
     doap:name "Calf Gate" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Damien Zammit / Thor Harald Johansen" ;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34051> ;
     lv2:optionalFeature epp:supportsStrictBounds ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:project <http://calf-studio-gear.org> ;
 
     mod:brand "Calf";
     mod:label "Gate";
