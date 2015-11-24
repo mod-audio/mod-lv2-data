@@ -24,7 +24,6 @@
     a lv2:InstrumentPlugin ;
     doap:name "Calf Organ" ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33921> ;

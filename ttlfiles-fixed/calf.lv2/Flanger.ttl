@@ -28,7 +28,6 @@
     a lv2:ModulatorPlugin ;
     doap:name "Calf Flanger" ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33917> ;

@@ -29,7 +29,6 @@
     a lv2:LimiterPlugin ;
     doap:name "Calf Limiter" ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Christian Holschuh / Markus Schmidt" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34081> ;

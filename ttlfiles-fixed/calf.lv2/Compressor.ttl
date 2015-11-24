@@ -29,7 +29,6 @@
     doap:name "Calf Compressor" ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Thor Harald Johansen" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
   
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;

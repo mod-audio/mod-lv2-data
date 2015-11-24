@@ -29,7 +29,6 @@
     doap:name "Calf Filterclavier" ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Krzysztof Foltman / Hans Baier" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     mod:brand "Calf";
     mod:label "Compressor";

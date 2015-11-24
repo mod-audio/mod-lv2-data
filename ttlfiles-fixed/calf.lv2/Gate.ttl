@@ -28,7 +28,6 @@
     a lv2:ExpanderPlugin ;
     doap:name "Calf Gate" ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Damien Zammit / Thor Harald Johansen" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34051> ;
