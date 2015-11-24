@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/RotarySpeaker> a lv2:Plugin ;
     a lv2:SimulatorPlugin ;
     doap:name "Calf Rotary Speaker" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33923> ;

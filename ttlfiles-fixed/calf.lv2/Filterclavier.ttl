@@ -27,9 +27,9 @@
 <http://calf.sourceforge.net/plugins/Filterclavier> a lv2:Plugin ;
     a lv2:FilterPlugin ;
     doap:name "Calf Filterclavier" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Krzysztof Foltman / Hans Baier" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
     mod:brand "Calf";
     mod:label "Compressor";

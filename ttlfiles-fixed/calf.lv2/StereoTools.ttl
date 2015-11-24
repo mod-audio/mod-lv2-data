@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/StereoTools> a lv2:Plugin ;
     a lv2:SpatialPlugin ;
     doap:name "Calf Stereo Tools" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34184> ;

@@ -101,6 +101,7 @@ lv2:port [
   lv2:minimum 0;
   lv2:maximum 1;
   lv2:portProperty lv2:integer, lv2:toggled, pprops:trigger;
+<<<<<<< HEAD
 ];
 
 modgui:gui [
@@ -110,4 +111,6 @@ modgui:gui [
   modgui:stylesheet <modgui/sooperlooper.css>;
   modgui:screenshot <modgui/screenshot-sooperlooper.png>;
   modgui:thumbnail <modgui/thumb-sooperlooper.png>;
+=======
+>>>>>>> 1c64925ee4b1392a46cba68cf5944a0679e33fef
 ].

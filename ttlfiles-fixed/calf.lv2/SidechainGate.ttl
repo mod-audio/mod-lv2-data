@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/SidechainGate> a lv2:Plugin ;
     a lv2:ExpanderPlugin ;
     doap:name "Calf Sidechain Gate" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt / Damien Zammit / Thor Harald Johansen" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34052> ;

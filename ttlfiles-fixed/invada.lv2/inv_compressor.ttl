@@ -159,6 +159,7 @@ Compressor
     doap:name "Invada Compressor (stereo)" ;
     mod:brand "Invada" ;
     mod:label "Compressor St" ;
+    lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """

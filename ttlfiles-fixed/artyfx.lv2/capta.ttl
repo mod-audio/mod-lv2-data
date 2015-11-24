@@ -28,8 +28,8 @@
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
-  lv2:extensionData   ui:idleInterface ;
-  ui:requiredFeature ui:makeResident.
+  lv2:extensionData   ui:idleInterface .
+  
 
 <http://www.openavproductions.com/artyfx#capta>
   a lv2:Plugin;
@@ -46,12 +46,6 @@
   ui:ui <http://www.openavproductions.com/artyfx#capta/gui>;
   
   lv2:optionalFeature lv2:hardRTCapable ;
-  
-    doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ];
 
   rdfs:comment """
   Capta is a 4 track recording plugin. It streams the incoming audio to a file

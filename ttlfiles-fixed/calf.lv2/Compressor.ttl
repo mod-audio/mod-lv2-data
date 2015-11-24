@@ -27,9 +27,9 @@
 <http://calf.sourceforge.net/plugins/Compressor> a lv2:Plugin ;
     a lv2:CompressorPlugin ;
     doap:name "Calf Compressor" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [
     foaf:name "Calf Studio Gear / Thor Harald Johansen" ;
-    foaf:homepage <http://calf-studio-gear.org>;
     ] ;
   
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;

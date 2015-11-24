@@ -21,13 +21,14 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix ui: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix pprop:  <http://lv2plug.in/ns/ext/port-props#>.
+@prefix mod:    <http://moddevices.com/ns/mod#> .
 
 <http://www.openavproductions.com/artyfx#satma/gui>
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
   lv2:optionalFeature ui:noUserResize ;
-  lv2:extensionData   ui:idleInterface ;
-  ui:requiredFeature ui:makeResident.
+  lv2:extensionData   ui:idleInterface .
+  
 
 <http://www.openavproductions.com/artyfx#satma>
   a lv2:Plugin ,
@@ -35,17 +36,12 @@
   
   doap:name "Satma";
   doap:description "Distortion Maximizer";
-  doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>; 
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ];
   lv2:optionalFeature lv2:hardRTCapable ;
   rdfs:comment "A distortion maximizer effect.";
   lv2:minorVersion 2; lv2:microVersion 0;
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
-
+  mod:brand "OpenAV" ;
 
   ui:ui <http://www.openavproductions.com/artyfx#satma/gui>;
   

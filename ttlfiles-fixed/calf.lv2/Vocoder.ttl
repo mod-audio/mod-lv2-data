@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/Vocoder> a lv2:Plugin ;
     a lv2:FilterPlugin ;
     doap:name "Calf Vocoder" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt / Christian Holschuh" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34068> ;

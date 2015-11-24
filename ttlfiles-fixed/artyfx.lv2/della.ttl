@@ -30,10 +30,9 @@
 <http://www.openavproductions.com/artyfx#della/gui>
   a ui:X11UI;
   ui:binary <artyfx_ui.so>;
-  ui:requiredFeature ui:makeResident;
+  
   lv2:optionalFeature ui:noUserResize ;
-  lv2:extensionData   ui:idleInterface ;
-  lv2:extensionData ui:idleInterface .
+  lv2:extensionData   ui:idleInterface .
 
 <http://www.openavproductions.com/artyfx#della>
   a lv2:Plugin ,
@@ -41,11 +40,6 @@
 
   doap:name "Della";
   doap:description "Delay (BPM adjusted)";
-  doap:maintainer  [
-      foaf:homepage <http://openavproductions.com>;
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ];
   lv2:optionalFeature lv2:hardRTCapable ;
 
   rdfs:comment "BPM dependant delay with feedback";

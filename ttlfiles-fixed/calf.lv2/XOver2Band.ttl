@@ -26,6 +26,7 @@
 <http://calf.sourceforge.net/plugins/XOver2Band> a lv2:Plugin ;
     a lv2:UtilityPlugin ;
     doap:name "Calf X-Over 2 Band" ;
+    lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Markus Schmidt" ; ] ;
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:34069> ;

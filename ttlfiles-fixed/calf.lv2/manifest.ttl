@@ -2,10 +2,16 @@
 @prefix lv2p:  <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix doap:   <http://usefulinc.com/ns/doap#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
 
+<http://calf-studio-gear.org>
+    a doap:Project ;
+    lv2:project <http://calf-studio-gear.org> ;
+    doap:maintainer [
+        foaf:homepage <http://calf-studio-gear.org> ;
+    ] .
 
 <http://calf.sourceforge.net/plugins/Monosynth> a lv2:Plugin ;
     dct:replaces <urn:ladspa:33920> ;

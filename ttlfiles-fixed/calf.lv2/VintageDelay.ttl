@@ -27,10 +27,15 @@
 <http://calf.sourceforge.net/plugins/VintageDelay> a lv2:Plugin ;
     a lv2:DelayPlugin ;
     doap:name "Calf Vintage Delay" ;
+<<<<<<< HEAD
     doap:maintainer [
     foaf:name "Calf Studio Gear / Krzysztof Foltman" ;
     foaf:homepage <http://calf-studio-gear.org>;
     ] ;
+=======
+    lv2:project <http://calf-studio-gear.org> ;
+    doap:maintainer [ foaf:name "Calf Studio Gear / Krzysztof Foltman" ; ] ;
+>>>>>>> 1c64925ee4b1392a46cba68cf5944a0679e33fef
     doap:license <http://usefulinc.com/doap/licenses/lgpl> ;
     dct:replaces <urn:ladspa:33922> ;
     lv2:optionalFeature epp:supportsStrictBounds ;
