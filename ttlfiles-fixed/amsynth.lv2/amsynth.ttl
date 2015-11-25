@@ -87,7 +87,7 @@
     doap:maintainer [
     foaf:name "Nick Dowell" ;
     foaf:mbox <mailto:nickdowell@gmail.com>;
-    foaf:homepage <http://www.amsynth.com/amsynth.html>;
+    foaf:homepage <https://amsynth.github.io>;
      ] ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:requiredFeature urid:map ;
