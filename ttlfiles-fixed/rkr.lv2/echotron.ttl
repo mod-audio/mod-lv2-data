@@ -6,11 +6,11 @@
 @prefix patch: <http://lv2plug.in/ns/ext/patch#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix pset: <http://lv2plug.in/ns/ext/presets#> .
-@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .  
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
 @prefix worker:  <http://lv2plug.in/ns/ext/worker#> .
 @prefix state:  <http://lv2plug.in/ns/ext/state#> .
-@prefix mediatype: <https://tools.ietf.org/html/rfc2046> .
+@prefix mediatype: <https://tools.ietf.org/html/rfc2046#> .
 @prefix mime:   <http://www.iana.org/assignments/media-types/media-types.xhtml#> .
 
 
@@ -28,7 +28,7 @@
     a lv2:Parameter ;
     rdfs:label "dly file" ;
     rdfs:range atom:Path ;
-    mediatype: mime:text ;
+#    mediatype: mime:text ;
     .
 
 <http://rakarrack.sourceforge.net/effects.html#Echotron>
@@ -197,7 +197,7 @@
             lv2:minimum 0 ;
             lv2:maximum 1 ;
             lv2:portProperty lv2:integer ;
-            lv2:portProperty lv2:toggled ; 
+            lv2:portProperty lv2:toggled ;
     ], [
             a lv2:InputPort, lv2:ControlPort ;
             lv2:index 18 ;
@@ -207,7 +207,7 @@
             lv2:minimum 0 ;
             lv2:maximum 1 ;
             lv2:portProperty lv2:integer ;
-            lv2:portProperty lv2:toggled ; 
+            lv2:portProperty lv2:toggled ;
     ], [
             a lv2:InputPort, lv2:ControlPort ;
             lv2:index 19 ;
@@ -239,11 +239,11 @@
             lv2:minimum 0 ;
             lv2:maximum 1 ;
             lv2:portProperty lv2:integer ;
-            lv2:portProperty lv2:toggled ; 
+            lv2:portProperty lv2:toggled ;
     ] ;
     state:state [
 		<http://rakarrack.sourceforge.net/effects.html#Echotron:dlyfile> <SwingPong.dly>
-	] 
+	]
 	.
 
 <http://rakarrack.sourceforge.net/effects.html#Echotron:preset:summer>
