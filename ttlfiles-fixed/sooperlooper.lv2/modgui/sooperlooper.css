@@ -1,0 +1,97 @@
+
+    .mod-sooperlooper {
+        background-image:url(/resources/bg-sooperlooper.png{{{ns}}});
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:260px 484px;
+        height:484px;
+        position:relative;
+        width:260px;
+    }
+    .mod-sooperlooper .mod-drag-handle {
+        bottom:0;
+        left:0;
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .mod-sooperlooper-2 .mod-pedal-input {
+        top:124px;
+        left: -24px;
+    }
+    .mod-sooperlooper-2 .mod-pedal-output {
+        top:50px;
+        right: -14px;
+    }
+    .mod-sooperlooper-2 .mod-pedal-output .mod-output {
+        margin-bottom: 109px;
+    }
+    .mod-sooperlooper .mod-control-group{
+        float: left !important;
+        margin: 110px -10px 0 26px !important;
+        height: 257px;
+        width: 95px;
+    }
+    .mod-sooperlooper .mod-control-group .mod-control {
+        display: block;
+        width: 49px;
+        height: 96px;
+        margin: 0 auto 26px auto;
+    }
+    .mod-sooperlooper .mod-control-image {
+        background-image:url(/resources/foot-do.png{{{ns}}});
+        z-index: 2000000;
+        position: absolute;
+        width: 49px;
+        height: 84px;
+        cursor: pointer;
+    }
+    .mod-sooperlooper .mod-control-image#rec {
+        background-image:url(/resources/foot-rec.png{{{ns}}}) !important;
+    }
+    .mod-sooperlooper .mod-control-image#play {
+        background-image:url(/resources/foot-play.png{{{ns}}}) !important;
+    }
+    .mod-sooperlooper .mod-control-image#reset {
+        background-image:url(/resources/push_switch1.png{{{ns}}}) !important;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 2000000;
+        position: absolute;
+        bottom: 55px;
+        right: 52px;
+    }
+    .mod-sooperlooper .mod-footswitch{
+        background-image:url(/resources/switch-key.png{{{ns}}});
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 154px;
+        cursor: pointer;
+        height: 77px;
+        width: 43px;
+        bottom: 37px;
+        left: 52px !important;
+        position: absolute;
+        z-index: 100;
+    }
+    .mod-sooperlooper .mod-footswitch.off{
+        background-position-y: bottom;
+    }
+    .mod-sooperlooper .mod-control-image.on {
+        background-position-y: bottom !important
+    }
+    .mod-sooperlooper .mod-light {
+        height: 32px;
+        width: 32px;
+        bottom: 61px;
+        position: absolute;
+        top: inherit;
+        left: 114px;
+    }
+    .mod-sooperlooper .mod-light.off {
+        background-image:url(/resources/red-light-off.png{{{ns}}});
+    }
+    .mod-sooperlooper .mod-light.on {
+        background-image:url(/resources/red-light-on.png{{{ns}}});
+    }
