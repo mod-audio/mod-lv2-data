@@ -29,6 +29,9 @@ doap:maintainer [
 mod:brand "MOD";
 mod:label "Big Muff";
 
+lv2:minorVersion 0;
+lv2:microVersion 0;
+    
 doap:license "GPL";
 
 rdfs:comment """
@@ -59,8 +62,8 @@ lv2:port
     lv2:symbol "Tone";
     lv2:name "Tone";
     lv2:default 0.5;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -68,8 +71,8 @@ lv2:port
     lv2:symbol "Level";
     lv2:name "Level";
     lv2:default 0.5;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -77,8 +80,8 @@ lv2:port
     lv2:symbol "Sustain";
     lv2:name "Sustain";
     lv2:default 0.5;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ];
 modgui:gui [
         a modgui:Gui;
