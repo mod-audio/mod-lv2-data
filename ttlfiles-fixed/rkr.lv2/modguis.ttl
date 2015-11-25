@@ -1703,7 +1703,10 @@
 
 ## END http://rakarrack.sourceforge.net/effects.html#Shuffle
 ###############################################################################
+
+###############################################################################
 ## START http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid
+
 
 <http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid>
     modgui:gui [
@@ -1723,8 +1726,8 @@
             lv2:name "Left Interval" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "WETDRY" ;
-            lv2:name "Wet/Dry" ;
+            lv2:symbol "CHRML" ;
+            lv2:name "Chroma L" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "GAINL" ;
@@ -1739,16 +1742,16 @@
             lv2:name "Right Interval" ;
         ] , [
             lv2:index 5 ;
+            lv2:symbol "CHR" ;
+            lv2:name "Chroma R" ;
+        ] , [
+            lv2:index 6 ;
             lv2:symbol "GAINR" ;
             lv2:name "Right Gain" ;
         ] , [
-            lv2:index 6 ;
-            lv2:symbol "INTR" ;
-            lv2:name "Right Interval" ;
-        ] , [
             lv2:index 7 ;
-            lv2:symbol "CHR" ;
-            lv2:name "Right Chroma" ;
+            lv2:symbol "NOTE" ;
+            lv2:name "note" ;
         ] ;
     ] .
 
