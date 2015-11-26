@@ -13,6 +13,7 @@
 @prefix urid:    <http://lv2plug.in/ns/ext/urid#> .
 @prefix units:   <http://lv2plug.in/ns/extensions/units#> .
 @prefix param:   <http://lv2plug.in/ns/ext/parameters#> .
+@prefix mod:     <http://moddevices.com/ns/mod#> .
 
 <http://code.google.com/p/amsynth/amsynth#group_out>
     a pg:StereoGroup ,
@@ -76,12 +77,24 @@
     lv2:name "Amp Env" ;
     lv2:symbol "amp_env" .
 
+
+
+
+
 <http://code.google.com/p/amsynth/amsynth> a lv2:Plugin ;
     a lv2:InstrumentPlugin;
     doap:name "amsynth" ;
-    doap:maintainer [ foaf:name "Nick Dowell" ; ] ;
+    doap:maintainer [
+    foaf:name "Nick Dowell" ;
+    foaf:mbox <mailto:nickdowell@gmail.com>;
+    foaf:homepage <https://amsynth.github.io>;
+     ] ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:requiredFeature urid:map ;
+    lv2:microVersion 5 ;
+    lv2:minorVersion 1 ;
+    mod:brand "Dowell";
+    rdfs:comment "A Very Big Synth";
     lv2:optionalFeature lv2:hardRTCapable;
     lv2:port [
         a lv2:OutputPort ;
@@ -163,14 +176,14 @@
         lv2:name "Osc1 Waveform" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 2.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 4.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "sine"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "square / pulse" ] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "saw / triangle" ] ;
-        lv2:scalePoint [ rdf:value 3.0 ; rdfs:label "white noise" ] ;
-        lv2:scalePoint [ rdf:value 4.0 ; rdfs:label "noise + sample & hold" ] ;
+        lv2:default 2 ;
+        lv2:minimum 0 ;
+        lv2:maximum 4 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "sine"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "square / pulse" ] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "saw / triangle" ] ;
+        lv2:scalePoint [ rdf:value 3 ; rdfs:label "white noise" ] ;
+        lv2:scalePoint [ rdf:value 4 ; rdfs:label "noise + sample & hold" ] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_osc1> ;
         lv2:designation param:waveform ;
     ] , [
@@ -275,14 +288,14 @@
         lv2:name "Osc2 Waveform" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 2.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 4.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "sine"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "square / pulse" ] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "saw / triangle" ] ;
-        lv2:scalePoint [ rdf:value 3.0 ; rdfs:label "white noise" ] ;
-        lv2:scalePoint [ rdf:value 4.0 ; rdfs:label "noise + sample & hold" ] ;
+        lv2:default 2 ;
+        lv2:minimum 0 ;
+        lv2:maximum 4 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "sine"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "square / pulse" ] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "saw / triangle" ] ;
+        lv2:scalePoint [ rdf:value 3 ; rdfs:label "white noise" ] ;
+        lv2:scalePoint [ rdf:value 4 ; rdfs:label "noise + sample & hold" ] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_osc2> ;
         lv2:designation param:waveform ;
     ] , [
@@ -316,16 +329,16 @@
         lv2:name "LFO Waveform" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 6.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "sine"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "square" ] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "triangle" ] ;
-        lv2:scalePoint [ rdf:value 3.0 ; rdfs:label "white noise" ] ;
-        lv2:scalePoint [ rdf:value 4.0 ; rdfs:label "noise + sample & hold" ] ;
-        lv2:scalePoint [ rdf:value 5.0 ; rdfs:label "sawtooth (up)" ] ;
-        lv2:scalePoint [ rdf:value 6.0 ; rdfs:label "sawtooth (down)" ] ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 6 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "sine"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "square" ] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "triangle" ] ;
+        lv2:scalePoint [ rdf:value 3 ; rdfs:label "white noise" ] ;
+        lv2:scalePoint [ rdf:value 4 ; rdfs:label "noise + sample & hold" ] ;
+        lv2:scalePoint [ rdf:value 5 ; rdfs:label "sawtooth (up)" ] ;
+        lv2:scalePoint [ rdf:value 6 ; rdfs:label "sawtooth (down)" ] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_lfo> ;
         lv2:designation param:waveform ;
     ] , [
@@ -506,12 +519,12 @@
         lv2:name "Keyboard Mode" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 2.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "poly"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "mono"] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "legato"] ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "poly"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "mono"] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "legato"] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_keyboard> ;
     ] , [
         a lv2:InputPort ;
@@ -522,9 +535,9 @@
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer ;
         units:unit units:semitone12TET ;
-        lv2:default 0.000000 ;
-        lv2:minimum -12.000000 ;
-        lv2:maximum 12.000000 ;
+        lv2:default 0 ;
+        lv2:minimum -12 ;
+        lv2:maximum 12 ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_osc2> ;
     ] , [
         a lv2:InputPort ;
@@ -534,12 +547,12 @@
         lv2:name "Filter Type" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 2.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "low pass"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "high pass" ] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "band pass" ] ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "low pass"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "high pass" ] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "band pass" ] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_filter> ;
     ] , [
         a lv2:InputPort ;
@@ -549,11 +562,11 @@
         lv2:name "Filter Slope" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 1.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 1.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "12 dB / octave"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "24 dB / octave"] ;
+        lv2:default 1 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "12 dB / octave"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "24 dB / octave"] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_filter> ;
     ] , [
         a lv2:InputPort ;
@@ -563,12 +576,12 @@
         lv2:name "Freq Mod to Oscillator" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 2.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "osc 1+2"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "osc 1"] ;
-        lv2:scalePoint [ rdf:value 2.0 ; rdfs:label "osc 2"] ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "osc 1+2"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "osc 1"] ;
+        lv2:scalePoint [ rdf:value 2 ; rdfs:label "osc 2"] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_lfo> ;
     ] , [
         a lv2:InputPort ;
@@ -611,11 +624,11 @@
         lv2:name "Portamento Mode" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 1.000000 ;
-        lv2:scalePoint [ rdf:value 0.0 ; rdfs:label "always"] ;
-        lv2:scalePoint [ rdf:value 1.0 ; rdfs:label "legato"] ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "always"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "legato"] ;
         pg:group <http://code.google.com/p/amsynth/amsynth#group_keyboard> ;
     ] .
 
@@ -14676,4 +14689,3 @@
     lv2:appliesTo <http://code.google.com/p/amsynth/amsynth> ;
     rdfs:label "amsynth_factory: 025: Dirty Pulsating Bass" ;
     rdfs:seeAlso <amsynth_factory.bank.ttl> .
-
