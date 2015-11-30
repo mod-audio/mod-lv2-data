@@ -24,33 +24,4 @@
 <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim>
     a lv2:Plugin ;
     lv2:binary <gxts9.so>  ;
-    rdfs:seeAlso <gxts9.ttl> .
-    @prefix modgui: <http://moddevices.com/ns/modgui#> .
-
-    <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim>
-        modgui:gui [
-            modgui:resourcesDirectory <modgui> ;
-            modgui:iconTemplate <modgui/icon-gxtubescreamer.html> ;
-            modgui:stylesheet <modgui/stylesheet-gxtubescreamer.css> ;
-            modgui:screenshot <modgui/screenshot-gxtubescreamer.png> ;
-            modgui:thumbnail <modgui/thumbnail-gxtubescreamer.png> ;
-            modgui:brand "Guitarix" ;
-            modgui:label "TubeScreamer" ;
-            modgui:model "boxy" ;
-            modgui:panel "3-knobs" ;
-            modgui:color "tribal2" ;
-            modgui:knob "copper" ;
-            modgui:port [
-                lv2:index 0 ;
-                lv2:symbol "fslider2_" ;
-                lv2:name "Drive" ;
-            ] , [
-                lv2:index 1 ;
-                lv2:symbol "fslider1_" ;
-                lv2:name "Tone" ;
-            ] , [
-                lv2:index 2 ;
-                lv2:symbol "fslider0_" ;
-                lv2:name "Level" ;
-            ] ;
-        ] .
+    rdfs:seeAlso <gxts9.ttl>, <modgui.ttl> .
