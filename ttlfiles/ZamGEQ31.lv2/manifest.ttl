@@ -10,6 +10,7 @@
 <urn:zamaudio:ZamGEQ31#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamGEQ31> ;
+    rdfs:label "Default" ;
     rdfs:seeAlso <presets.ttl> .
 
 

@@ -1,21 +1,13 @@
-@prefix modgui: <http://moddevices.com/ns/modgui#> .
-@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
-<http://distrho.sf.net/plugins/Kars>
+<http://distrho.sf.net/plugins/PingPongPan>
+    mod:brand "DISTRHO";
+    mod:label "PingPongPan";
     modgui:gui [
-        modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-kars.html> ;
-        modgui:stylesheet <modgui/stylesheet-kars.css> ;
-        modgui:screenshot <modgui/screenshot-kars.png> ;
-        modgui:thumbnail <modgui/thumbnail-kars.png> ;
-        modgui:brand "DISTRHO" ;
-        modgui:label "Kars" ;
-        modgui:model "boxy-small" ;
-        modgui:panel "1-footswitch" ;
-        modgui:color "yellow" ;
-        modgui:port [
-            lv2:index 0 ;
-            lv2:symbol "sustain" ;
-            lv2:name "Sustain" ;
-        ] ;
-    ] .
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-ppp.html>;
+        modgui:stylesheet <modgui/stylesheet-ppp.css>;
+        modgui:screenshot <modgui/screenshot-ppp.png>;
+        modgui:thumbnail <modgui/thumb-ppp.png>;
+    ].

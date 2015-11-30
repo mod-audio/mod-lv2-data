@@ -6,10 +6,14 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/LowPassFilter>
 a lv2:Plugin, lv2:FilterPlugin;
+
+mod:brand "MOD";
+mod:label "Lowpass";
 
 doap:name "LowPassFilter";
 
@@ -29,7 +33,7 @@ mod:brand "MOD";
     lv2:minorVersion 0;
     lv2:microVersion 0;
 
-doap:license "GPL";    
+doap:license "GPL";
 
 rdfs:comment """
 A simple low pass filter, "Freq" determines its cutoff frequency and "Order" the filter order (or how fast frequencies below the cutoff frequency will decay. Higher the order, faster the decay).
@@ -75,11 +79,12 @@ lv2:port
     lv2:minimum 0;
     lv2:maximum 2;
 ];
- mod:gui [
-        mod:resourcesDirectory <modgui>;
-        mod:iconTemplate <modgui/icon-lowpassfilter.html>;
-        mod:stylesheet <modgui/stylesheet-lowpassfilter.css>;
-        mod:templateData <modgui/data-lowpassfilter.json>;
-        mod:screenshot <modgui/screenshot-lowpassfilter.png>;
-        mod:thumbnail <modgui/thumb-lowpassfilter.png>;
+ modgui:gui [
+    modgui:brand "MOD";
+    modgui:label "Lowpass";
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-lowpassfilter.html>;
+        modgui:stylesheet <modgui/stylesheet-lowpassfilter.css>;
+        modgui:screenshot <modgui/screenshot-lowpassfilter.png>;
+        modgui:thumbnail <modgui/thumb-lowpassfilter.png>;
     ] .

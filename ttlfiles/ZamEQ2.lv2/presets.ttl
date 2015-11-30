@@ -1,10 +1,7 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 <urn:zamaudio:ZamEQ2#preset001>
-    rdfs:label "Zero" ;
-
     lv2:port [
         lv2:symbol "boost1" ;
         pset:value 0.000000 ;
@@ -55,8 +52,6 @@
     ] .
 
 <urn:zamaudio:ZamEQ2#preset002>
-    rdfs:label "CarvedBass" ;
-
     lv2:port [
         lv2:symbol "boost1" ;
         pset:value 0.000000 ;
@@ -107,8 +102,6 @@
     ] .
 
 <urn:zamaudio:ZamEQ2#preset003>
-    rdfs:label "CarvedGuitar" ;
-
     lv2:port [
         lv2:symbol "boost1" ;
         pset:value 5.600000 ;
@@ -159,8 +152,6 @@
     ] .
 
 <urn:zamaudio:ZamEQ2#preset004>
-    rdfs:label "CarvedVox" ;
-
     lv2:port [
         lv2:symbol "boost1" ;
         pset:value 0.000000 ;

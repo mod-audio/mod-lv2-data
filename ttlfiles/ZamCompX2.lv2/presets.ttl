@@ -1,10 +1,7 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 <urn:zamaudio:ZamCompX2#preset001>
-    rdfs:label "Zero" ;
-
     lv2:port [
         lv2:symbol "att" ;
         pset:value 10.000000 ;
@@ -47,8 +44,6 @@
     ] .
 
 <urn:zamaudio:ZamCompX2#preset002>
-    rdfs:label "PoppySnare" ;
-
     lv2:port [
         lv2:symbol "att" ;
         pset:value 10.000000 ;
@@ -91,8 +86,6 @@
     ] .
 
 <urn:zamaudio:ZamCompX2#preset003>
-    rdfs:label "VocalLeveller" ;
-
     lv2:port [
         lv2:symbol "att" ;
         pset:value 50.000000 ;

@@ -10,6 +10,7 @@
 <urn:zamaudio:ZaMaximX2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZaMaximX2> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 
