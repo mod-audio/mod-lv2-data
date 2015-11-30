@@ -10,21 +10,25 @@
 <urn:zamaudio:ZamEQ2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamEQ2> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZamEQ2#preset002>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamEQ2> ;
+    rdfs:label "CarvedBass" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZamEQ2#preset003>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamEQ2> ;
+    rdfs:label "CarvedGuitar" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZamEQ2#preset004>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamEQ2> ;
+    rdfs:label "CarvedVox" ;
     rdfs:seeAlso <presets.ttl> .
 
 

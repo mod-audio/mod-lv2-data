@@ -10,11 +10,13 @@
 <urn:zamaudio:ZaMultiCompX2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZaMultiCompX2> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZaMultiCompX2#preset002>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZaMultiCompX2> ;
+    rdfs:label "Presence" ;
     rdfs:seeAlso <presets.ttl> .
 
 

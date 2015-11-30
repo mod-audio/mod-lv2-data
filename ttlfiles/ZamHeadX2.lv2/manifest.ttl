@@ -10,6 +10,7 @@
 <urn:zamaudio:ZamHeadX2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamHeadX2> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 
