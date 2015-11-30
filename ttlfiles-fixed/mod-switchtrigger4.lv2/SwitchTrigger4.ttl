@@ -2,20 +2,17 @@
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/SwitchTrigger4>
 a lv2:Plugin, lv2:UtilityPlugin;
 
 doap:name "SwitchTrigger4";
 
-doap:developer [
-    foaf:name "Luis Fagundes";
-    foaf:homepage <>;
-    foaf:mbox <mailto:lhfagundes@hacklab.com.br>;
-    ];
+doap:developer <http://hacklab.com.br#lhfagundes> ;
 
 doap:maintainer [
     foaf:name "MOD Team";
@@ -23,7 +20,7 @@ doap:maintainer [
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
     
-mod:brand "MOD";
+# mod:brand "MOD";
 mod:label "SwitchTrigger4";
     lv2:minorVersion 1;
     lv2:microVersion 1;
@@ -114,10 +111,12 @@ lv2:port
     lv2:minimum 0.0;
     lv2:maximum 1.0;
 ];
-mod:gui [
-    mod:resourcesDirectory <modgui>;
-    mod:iconTemplate <modgui/icon-switchtrigger4.html>;
-    mod:stylesheet <modgui/stylesheet-switchtrigger4.css>;
-    mod:screenshot <modgui/SwitchTrigger4.png>;
-    mod:thumbnail <modgui/SwitchTrigger4-thumb.png>;
+modgui:gui [
+    modgui:brand "MOD";
+    modgui:label "SwitchTrigger4";
+    modgui:resourcesDirectory <modgui>;
+    modgui:iconTemplate <modgui/icon-switchtrigger4.html>;
+    modgui:stylesheet <modgui/stylesheet-switchtrigger4.css>;
+    modgui:screenshot <modgui/SwitchTrigger4.png>;
+    modgui:thumbnail <modgui/SwitchTrigger4-thumb.png>;
 ].
