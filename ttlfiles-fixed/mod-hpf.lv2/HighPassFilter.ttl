@@ -6,7 +6,8 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/HighPassFilter>
 a lv2:Plugin, lv2:FilterPlugin;
@@ -24,6 +25,9 @@ doap:maintainer [
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
+
+mod:brand "MOD";
+mod:label "HighPassFilter";
 
 doap:license "GPL";
 
@@ -77,11 +81,12 @@ lv2:port
     lv2:minimum 0;
     lv2:maximum 2;
 ];
-    mod:gui [
-        mod:resourcesDirectory <modgui>;
-        mod:iconTemplate <modgui/icon-highpassfilter.html>;
-        mod:stylesheet <modgui/stylesheet-highpassfilter.css>;
-        mod:templateData <modgui/data-highpassfilter.json>;
-        mod:screenshot <modgui/screenshot-highpassfilter.png>;
-        mod:thumbnail <modgui/thumb-highpassfilter.png>;
+    modgui:gui [
+	modgui:brand "MOD";
+	modgui:label "HighPassFilter";
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-highpassfilter.html>;
+        modgui:stylesheet <modgui/stylesheet-highpassfilter.css>;
+        modgui:screenshot <modgui/screenshot-highpassfilter.png>;
+        modgui:thumbnail <modgui/thumb-highpassfilter.png>;
     ] .

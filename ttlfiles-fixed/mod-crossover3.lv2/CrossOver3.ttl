@@ -6,7 +6,8 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/CrossOver3>
 a lv2:Plugin, lv2:FilterPlugin;
@@ -24,6 +25,9 @@ doap:maintainer [
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
+
+mod:brand "MOD";
+mod:label "CrossOver3";
 
 doap:license "GPL";
 
@@ -127,13 +131,14 @@ lv2:port
     lv2:maximum 2;
 ];
 
-mod:gui [
-    mod:resourcesDirectory <modgui>;
-    mod:iconTemplate <modgui/icon-crossover-3.html>;
-    mod:stylesheet <modgui/stylesheet-crossover-3.css>;
-    mod:templateData <modgui/data-crossover-3.json>;
-    mod:screenshot <modgui/screenshot-crossover-3.png>;
-    mod:thumbnail <modgui/thumb-crossover-3.png>;
+modgui:gui [
+    modgui:brand "MOD";
+    modgui:label "CrossOver3";
+    modgui:resourcesDirectory <modgui>;
+    modgui:iconTemplate <modgui/icon-crossover-3.html>;
+    modgui:stylesheet <modgui/stylesheet-crossover-3.css>;
+    modgui:screenshot <modgui/screenshot-crossover-3.png>;
+    modgui:thumbnail <modgui/thumb-crossover-3.png>;
 ];
 
 mod:brand "MOD";
