@@ -6,30 +6,36 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
-<http://moddevices.com/plugins/mod-devel/CrossOver3>
+<http://moddevices.com/plugins/mod-devel/CrossOver2>
 a lv2:Plugin, lv2:FilterPlugin;
 
-doap:name "CrossOver 3";
+mod:brand "MOD";
+mod:label "CrossOver";
+
+doap:name "CrossOver 2";
 
 doap:developer [
     foaf:name "Andre";
     foaf:homepage <>;
     foaf:mbox <mailto:andre_coutinho@rocketmail.com>;
-    ];
+];
 
 doap:maintainer [
     foaf:name "MOD Team";
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:devel@moddevices.com>;
-    ];
+];
 
+    lv2:minorVersion 1;
+    lv2:microVersion 0;
+    
 doap:license "GPL";
 
 rdfs:comment """
-This plugin receives an input signal and outputs 3 filtered signals. First one is filtered with a low pass filter (LPF), the second with a band pass filter (BPF) and the third with a high pass filter (HPF), cutoff frequency used on LPF and as the lower frequency from BPF is controlled by "Freq 1" and cutoff frequency used as the higher frequency on BPF and in HPF is controlled by "Freq 2". "Order" indicates filter's orders (or how fast frequencies above (in HPF) or below (in LPF) the cutoff frequency will decay. Higher the order, faster the decay) ."Gain 1", "Gain 2" and "Gain 3" controls the gains of all outputs respectively.
-
+This plugin receives an input signal and outputs 2 filtered signals. First one is filtered with a low pass filter (LPF) and the second, with a high pass filter (HPF), both cutoff frequencies are determined by "Freq" parameter. "Order" indicates filter's orders (or how fast frequencies above (in HPF) or below (in LPF) the cutoff frequency will decay. Higher the order, faster the decay) ."Gain 1" and "Gain 2" controls the gains of both outputs respectively.
 
 """;
 
@@ -53,38 +59,20 @@ lv2:port
     lv2:name "Out 2";
 ],
 [
-    a lv2:AudioPort, lv2:OutputPort;
+    a lv2:ControlPort, lv2:InputPort;
     lv2:index 3;
-    lv2:symbol "Out3";
-    lv2:name "Out 3";
+    lv2:symbol "Freq";
+    lv2:name "Freq";
+    lv2:portProperty epp:logarithmic;
+    lv2:portProperty pprops:logarithmic ;
+    units:unit units:hz ;
+    lv2:default 600.0;
+    lv2:minimum 20.0;
+    lv2:maximum 20000.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 4;
-    lv2:symbol "Freq_1";
-    lv2:name "Freq 1";
-    lv2:portProperty epp:logarithmic;
-    lv2:portProperty pprops:logarithmic ;
-    units:unit units:hz ;
-    lv2:default 100.0;
-    lv2:minimum 20.0;
-    lv2:maximum 20000.0;
-],
-[
-    a lv2:ControlPort, lv2:InputPort;
-    lv2:index 5;
-    lv2:symbol "Freq_2";
-    lv2:name "Freq 2";
-    lv2:portProperty epp:logarithmic;
-    lv2:portProperty pprops:logarithmic ;
-    units:unit units:hz ;
-    lv2:default 1000.0;
-    lv2:minimum 20.0;
-    lv2:maximum 20000.0;
-],
-[
-    a lv2:ControlPort, lv2:InputPort;
-    lv2:index 6;
     lv2:symbol "Gain_1";
     lv2:name "Gain 1";
     units:unit units:db ;
@@ -94,7 +82,7 @@ lv2:port
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
-    lv2:index 7;
+    lv2:index 5;
     lv2:symbol "Gain_2";
     lv2:name "Gain 2";
     units:unit units:db ;
@@ -104,17 +92,7 @@ lv2:port
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
-    lv2:index 8;
-    lv2:symbol "Gain_3";
-    lv2:name "Gain 3";
-    units:unit units:db ;
-    lv2:default 3.0;
-    lv2:minimum -40.0;
-    lv2:maximum 40.0;
-],
-[
-    a lv2:ControlPort, lv2:InputPort;
-    lv2:index 9;
+    lv2:index 6;
     lv2:symbol "Order";
     lv2:name "Order";
     lv2:portProperty lv2:integer;
@@ -127,15 +105,12 @@ lv2:port
     lv2:maximum 2;
 ];
 
-mod:gui [
-    mod:resourcesDirectory <modgui>;
-    mod:iconTemplate <modgui/icon-crossover-3.html>;
-    mod:stylesheet <modgui/stylesheet-crossover-3.css>;
-    mod:templateData <modgui/data-crossover-3.json>;
-    mod:screenshot <modgui/screenshot-crossover-3.png>;
-    mod:thumbnail <modgui/thumb-crossover-3.png>;
-];
-
-mod:brand "MOD";
-lv2:minorVersion 1;
-lv2:microVersion 0 .
+modgui:gui [
+	modgui:brand "MOD";
+	modgui:label "CrossOver2";
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-crossover-2.html>;
+        modgui:stylesheet <modgui/stylesheet-crossover-2.css>;
+        modgui:screenshot <modgui/screenshot-crossover-2.png>;
+        modgui:thumbnail <modgui/thumb-crossover-2.png>;
+].

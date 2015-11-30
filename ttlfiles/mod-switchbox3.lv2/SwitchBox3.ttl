@@ -23,7 +23,18 @@ doap:maintainer [
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
 
-doap:license <GPL>;
+mod:brand "MOD";
+    lv2:minorVersion 1;
+    lv2:microVersion 1;
+
+rdfs:comment """
+This switch box receives an audio input and channels it by one of it's outputs.
+
+""";
+
+    
+doap:license "GPL";
+
 lv2:port 
 [
     a lv2:AudioPort, lv2:InputPort;

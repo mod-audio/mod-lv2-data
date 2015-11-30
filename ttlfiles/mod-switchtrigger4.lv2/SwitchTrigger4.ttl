@@ -22,6 +22,13 @@ doap:maintainer [
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
+    
+mod:brand "MOD";
+mod:label "SwitchTrigger4";
+    lv2:minorVersion 1;
+    lv2:microVersion 1;
+
+doap:license "GPL";
 
 rdfs:comment """
 The Switch Trigger gets one audio stream as input and chooses one of four outputs
@@ -31,11 +38,6 @@ control.
 The switch trigger was designed to use the MOD on stage. By addressing each control to a
 footswitch, the musician can quickly access a desired chain of effects.
 """;
-
-doap:license <GPL>;
-
-lv2:minorVersion 1;
-lv2:microVersion 1;
 
 lv2:port 
 [
@@ -75,9 +77,9 @@ lv2:port
     lv2:name "Channel One";
     lv2:portProperty lv2:toggled;
     lv2:portProperty epp:trigger;
-    lv2:default 0;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -86,9 +88,9 @@ lv2:port
     lv2:name "Channel Two";
     lv2:portProperty lv2:toggled;
     lv2:portProperty epp:trigger;
-    lv2:default 0;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -97,9 +99,9 @@ lv2:port
     lv2:name "Channel Three";
     lv2:portProperty lv2:toggled;
     lv2:portProperty epp:trigger;
-    lv2:default 0;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -108,9 +110,9 @@ lv2:port
     lv2:name "Channel Four";
     lv2:portProperty lv2:toggled;
     lv2:portProperty epp:trigger;
-    lv2:default 0;
-    lv2:minimum 0;
-    lv2:maximum 1;
+    lv2:default 0.0;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
 ];
 mod:gui [
     mod:resourcesDirectory <modgui>;
