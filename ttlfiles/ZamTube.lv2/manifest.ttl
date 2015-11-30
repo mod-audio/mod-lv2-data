@@ -10,6 +10,7 @@
 <urn:zamaudio:ZamTube#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamTube> ;
+    rdfs:label "Default" ;
     rdfs:seeAlso <presets.ttl> .
 
 

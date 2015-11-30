@@ -10,6 +10,7 @@
 <urn:zamaudio:ZamDelay#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamDelay> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 

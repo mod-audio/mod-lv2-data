@@ -1,10 +1,10 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 
 <urn:zamaudio:ZaMultiComp#preset001>
-    rdfs:label "Zero" ;
+    state:state [
+    ] ;
 
     lv2:port [
         lv2:symbol "att1" ;
@@ -144,7 +144,8 @@
     ] .
 
 <urn:zamaudio:ZaMultiComp#preset002>
-    rdfs:label "Presence" ;
+    state:state [
+    ] ;
 
     lv2:port [
         lv2:symbol "att1" ;

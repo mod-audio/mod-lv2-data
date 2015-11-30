@@ -10,6 +10,7 @@
 <urn:zamaudio:ZamGateX2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamGateX2> ;
+    rdfs:label "Default" ;
     rdfs:seeAlso <presets.ttl> .
 
 

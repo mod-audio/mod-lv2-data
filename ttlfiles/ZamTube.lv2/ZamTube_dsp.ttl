@@ -1,6 +1,8 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
@@ -18,14 +20,14 @@
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
         lv2:index 0 ;
-        lv2:symbol "audio_in_1" ;
+        lv2:symbol "lv2_audio_in_1" ;
         lv2:name "Audio Input 1" ;
     ] ;
 
     lv2:port [
         a lv2:OutputPort, lv2:AudioPort ;
         lv2:index 1 ;
-        lv2:symbol "audio_out_1" ;
+        lv2:symbol "lv2_audio_out_1" ;
         lv2:name "Audio Output 1" ;
     ] ;
 
@@ -38,8 +40,7 @@
         lv2:minimum -30.000000 ;
         lv2:maximum 30.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -53,8 +54,7 @@
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -68,8 +68,7 @@
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -83,8 +82,7 @@
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -98,8 +96,7 @@
         lv2:minimum 0 ;
         lv2:maximum 24 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -114,8 +111,7 @@
         lv2:minimum -15.000000 ;
         lv2:maximum 15.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
@@ -129,14 +125,29 @@
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
         unit:unit [
-            a unit:Unit ;
-            unit:name   " " ;
+            rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
         lv2:portProperty lv2:toggled ;
     ] ;
 
+    rdfs:comment """
+Wicked distortion effect.
+Wave digital filter physical model of a triode tube amplifier stage, with modelled tone stacks from real guitar amplifiers (thanks D. Yeh et al).
+""" ;
+
+    mod:brand "ZamAudio" ;
+    mod:label "ZamTube" ;
+
     doap:name "ZamTube" ;
-    doap:maintainer [ foaf:name "Damien Zammit" ] .
+    doap:license "GPL v2+" ;
+
+    doap:maintainer [
+        foaf:name "Damien Zammit" ;
+        foaf:homepage <http://www.zamaudio.com> ;
+    ] ;
+
+    lv2:microVersion 21 ;
+    lv2:minorVersion 0 .
 

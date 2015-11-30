@@ -10,16 +10,19 @@
 <urn:zamaudio:ZamCompX2#preset001>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamCompX2> ;
+    rdfs:label "Zero" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZamCompX2#preset002>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamCompX2> ;
+    rdfs:label "PoppySnare" ;
     rdfs:seeAlso <presets.ttl> .
 
 <urn:zamaudio:ZamCompX2#preset003>
     a pset:Preset ;
     lv2:appliesTo <urn:zamaudio:ZamCompX2> ;
+    rdfs:label "VocalLeveller" ;
     rdfs:seeAlso <presets.ttl> .
 
 
