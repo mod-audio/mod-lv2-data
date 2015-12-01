@@ -8,7 +8,7 @@
         modgui:stylesheet <modgui/stylesheet-shiroverb.css> ;
         modgui:screenshot <modgui/screenshot-shiroverb.png> ;
         modgui:thumbnail <modgui/thumbnail-shiroverb.png> ;
-        modgui:brand "SHIRO" ;
+        modgui:brand "Shiro" ;
         modgui:label "Shiroverb" ;
         modgui:model "boxy" ;
         modgui:panel "8-knobs" ;
