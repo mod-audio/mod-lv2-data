@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://faust-lv2.googlecode.com/Prefreak>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-prefreak.html> ;
+        modgui:stylesheet <modgui/stylesheet-prefreak.css> ;
+        modgui:screenshot <modgui/screenshot-prefreak.png> ;
+        modgui:thumbnail <modgui/thumbnail-prefreak.png> ;
+        modgui:brand "Freaked" ;
+        modgui:label "Prefreak" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "slime" ;
+        modgui:knob "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Pre_DelTime_s" ;
+            lv2:name "Blurtime" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "PreGain" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
