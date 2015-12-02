@@ -93,4 +93,6 @@ fomp:triple_chorus
 		lv2:symbol "mod_amp_2" ;
 		units:unit units:ms
 	] ;
-	rdfs:comment "The same as CS Chorus 2, but has three separate outputs.  Plan L,C,R for a nice stereo effect." .
+	rdfs:comment "Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+
+	The same as CS Chorus 2, but has three separate outputs.  Plan L,C,R for a nice stereo effect." .

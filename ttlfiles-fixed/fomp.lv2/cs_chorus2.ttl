@@ -81,4 +81,6 @@ fomp:cs_chorus2
 		lv2:symbol "mod_amp_2" ;
 		units:unit units:ms
 	] ;
-	rdfs:comment "Functionally identical to variant 1, but upsamples the input to the delay lines in an attempt to mitigate the errors produced by the linear interpolation at the output." .
+	rdfs:comment "Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+
+	Functionally identical to variant 1, but upsamples the input to the delay lines in an attempt to mitigate the errors produced by the linear interpolation at the output." .
