@@ -12,6 +12,9 @@ fomp:pulse_vco
 	mod:brand "FOMP" ;
 	mod:label "Pulse VCO" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	
+	Based on the principle of using a precomputed interpolated dirac pulse. This is the pulse variant (flat amplitude spectrum). Aliases should be below -80dB for fundamental frequencies below the sample rate / 6 (i.e. up to 8 kHz at Fsamp = 48 kHz). This frequency range includes the fundamental frequencies of all known musical instruments.""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -93,7 +96,4 @@ fomp:pulse_vco
 		lv2:minimum 0.0 ;
 		lv2:name "LP filter" ;
 		lv2:symbol "lp_filter"
-	] ;
-	rdfs:comment """Based on the principle of using a precomputed interpolated dirac pulse.  This is the pulse variant (flat amplitude spectrum).
-
-Aliases should be below -80dB for fundamental frequencies below the sample rate / 6 (i.e. up to 8 kHz at Fsamp = 48 kHz).  This frequency range includes the fundamental frequencies of all known musical instruments.""" .
+	] .

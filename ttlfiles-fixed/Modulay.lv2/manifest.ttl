@@ -4,6 +4,7 @@
 <http://distrho.sf.net/plugins/Modulay>
     a lv2:Plugin ;
     lv2:binary <Modulay_dsp.so> ;
-    rdfs:seeAlso <Modulay_dsp.ttl> , <modgui.ttl> .
+    rdfs:seeAlso <Modulay_dsp.ttl> ,
+                 <modgui.ttl> .
 
 

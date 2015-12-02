@@ -15,7 +15,9 @@ fomp:reverb_amb
 	mod:brand "FOMP" ;
 	mod:label "Reverb Amb" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """FOMP is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.""";
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+
+	This is a stereo reverb plugin based on the well-known greverb.""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

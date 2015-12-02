@@ -20,11 +20,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "freq_1" ;
-            lv2:name "Frq1" ;
+            lv2:name "Freq1" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "bw_1" ;
-            lv2:name "Bnd1" ;
+            lv2:name "Band1" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "gain_1" ;
@@ -32,11 +32,11 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "freq_2" ;
-            lv2:name "Frq2" ;
+            lv2:name "Freq2" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "bw_2" ;
-            lv2:name "Bnd2" ;
+            lv2:name "Band2" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "gain_2" ;
@@ -44,11 +44,11 @@
         ] , [
             lv2:index 6 ;
             lv2:symbol "freq_3" ;
-            lv2:name "Frq3" ;
+            lv2:name "Freq3" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "bw_3" ;
-            lv2:name "Bnd3" ;
+            lv2:name "Band3" ;
         ] , [
             lv2:index 8 ;
             lv2:symbol "gain_3" ;
@@ -56,11 +56,11 @@
         ] , [
             lv2:index 9 ;
             lv2:symbol "freq_4" ;
-            lv2:name "Frq4" ;
+            lv2:name "Freq4" ;
         ] , [
             lv2:index 10 ;
             lv2:symbol "bw_4" ;
-            lv2:name "Bnd4" ;
+            lv2:name "Band4" ;
         ] , [
             lv2:index 11 ;
             lv2:symbol "gain_4" ;
@@ -81,7 +81,7 @@
         modgui:stylesheet <modgui/stylesheet-auto-wah.css> ;
         modgui:screenshot <modgui/screenshot-auto-wah.png> ;
         modgui:thumbnail <modgui/thumbnail-auto-wah.png> ;
-        modgui:brand "fomp" ;
+        modgui:brand "FOMP" ;
         modgui:label "Auto-Wah" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
@@ -93,16 +93,16 @@
             lv2:name "Range" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "freq" ;
-            lv2:name "Freq" ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "mix" ;
             lv2:name "Mix" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "decay" ;
-            lv2:name "Decay" ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "drive" ;
@@ -132,11 +132,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "mod_amp_1" ;
-            lv2:name "Depth 1" ;
+            lv2:name "Depth1" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "mod_freq_1" ;
-            lv2:name "Rate 1" ;
+            lv2:name "Rate1" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "delay" ;
@@ -144,11 +144,11 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "mod_amp_2" ;
-            lv2:name "Depth 2" ;
+            lv2:name "Depth2" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "mod_freq_2" ;
-            lv2:name "Rate 2" ;
+            lv2:name "Rate2" ;
         ] ;
     ] .
     
@@ -174,11 +174,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "mod_amp_1" ;
-            lv2:name "Depth 1" ;
+            lv2:name "Depth1" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "mod_freq_1" ;
-            lv2:name "Rate 1" ;
+            lv2:name "Rate1" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "delay" ;
@@ -186,11 +186,11 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "mod_amp_2" ;
-            lv2:name "Depth 2" ;
+            lv2:name "Depth2" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "mod_freq_2" ;
-            lv2:name "Rate 2" ;
+            lv2:name "Rate2" ;
         ] ;
     ] .
     
@@ -207,7 +207,7 @@
         modgui:stylesheet <modgui/stylesheet-cs-phaser-1.css> ;
         modgui:screenshot <modgui/screenshot-cs-phaser-1.png> ;
         modgui:thumbnail <modgui/thumbnail-cs-phaser-1.png> ;
-        modgui:brand "fomp" ;
+        modgui:brand "FOMP" ;
         modgui:label "CS Phaser 1" ;
         modgui:model "boxy" ;
         modgui:panel "7-knobs" ;
@@ -215,32 +215,32 @@
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "freq" ;
-            lv2:name "Freq" ;
+            lv2:symbol "exp_fm_gain" ;
+            lv2:name "Exp FM" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "fb_gain" ;
-            lv2:name "Feedback" ;
+            lv2:symbol "lin_fm_gain" ;
+            lv2:name "Lin FM" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "sections" ;
-            lv2:name "Sections" ;
+            lv2:symbol "fb_gain" ;
+            lv2:name "Feedback" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "out_mix" ;
             lv2:name "Mix" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "exp_fm_gain" ;
-            lv2:name "Exp FM" ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "lin_fm_gain" ;
-            lv2:name "Lin FM" ;
-        ] , [
-            lv2:index 6 ;
             lv2:symbol "in_gain" ;
             lv2:name "Input" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "sections" ;
+            lv2:name "Sections" ;
         ] ;
     ] .
     
@@ -265,32 +265,32 @@
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "freq" ;
-            lv2:name "Freq" ;
+            lv2:symbol "mod_gain" ;
+            lv2:name "Depth" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "fb_gain" ;
-            lv2:name "Feedback" ;
+            lv2:symbol "lfo_freq" ;
+            lv2:name "Rate" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "sections" ;
-            lv2:name "Sections" ;
+            lv2:symbol "fb_gain" ;
+            lv2:name "Feedback" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "out_mix" ;
             lv2:name "Mix" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "lfo_freq" ;
-            lv2:name "LFO freq" ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "lfo_waveform" ;
-            lv2:name "LFO wave" ;
+            lv2:name "Wave" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "mod_gain" ;
-            lv2:name "Mod" ;
+            lv2:symbol "sections" ;
+            lv2:name "Sections" ;
         ] ;
     ] .
     
@@ -316,19 +316,19 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "freq" ;
-            lv2:name "Frequency" ;
+            lv2:name "Freq" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "exp_gm_gain" ;
-            lv2:name "Exp FM gain" ;
+            lv2:name "Exp FM" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "in_gain" ;
-            lv2:name "Input gain" ;
+            lv2:symbol "out_gain" ;
+            lv2:name "Output" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "out_gain" ;
-            lv2:name "Output gain" ;
+            lv2:symbol "in_gain" ;
+            lv2:name "Input" ;
         ] ;
     ] .
     
@@ -533,7 +533,7 @@
         modgui:stylesheet <modgui/stylesheet-pulse-vco.css> ;
         modgui:screenshot <modgui/screenshot-pulse-vco.png> ;
         modgui:thumbnail <modgui/thumbnail-pulse-vco.png> ;
-        modgui:brand "fomp" ;
+        modgui:brand "FOMP" ;
         modgui:label "Pulse VCO" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
@@ -575,7 +575,7 @@
         modgui:stylesheet <modgui/stylesheet-rec-vco.css> ;
         modgui:screenshot <modgui/screenshot-rec-vco.png> ;
         modgui:thumbnail <modgui/thumbnail-rec-vco.png> ;
-        modgui:brand "fomp" ;
+        modgui:brand "FOMP" ;
         modgui:label "Rec VCO" ;
         modgui:model "boxy" ;
         modgui:panel "7-knobs" ;
@@ -634,11 +634,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "rt_low" ;
-            lv2:name "Dec. low" ;
+            lv2:name "Decay l" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "rt_mid" ;
-            lv2:name "Dec. mid" ;
+            lv2:name "Decay m" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "damping" ;
@@ -650,11 +650,11 @@
         ] , [
             lv2:index 4 ;
             lv2:symbol "fw_freq" ;
-            lv2:name "Freq 1" ;
+            lv2:name "Freq1" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "f2_freq" ;
-            lv2:name "Freq 2" ;
+            lv2:name "Freq2" ;
         ] , [
             lv2:index 6 ;
             lv2:symbol "xover" ;
@@ -684,11 +684,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "rt_low" ;
-            lv2:name "Dec. low" ;
+            lv2:name "Decay L" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "rt_mid" ;
-            lv2:name "Dec. mid" ;
+            lv2:name "Decay M" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "damping" ;
@@ -700,11 +700,11 @@
         ] , [
             lv2:index 4 ;
             lv2:symbol "f1_freq" ;
-            lv2:name "Freq 1" ;
+            lv2:name "Freq1" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "f2_freq" ;
-            lv2:name "Freq 2" ;
+            lv2:name "Freq2" ;
         ] , [
             lv2:index 6 ;
             lv2:symbol "xover" ;
@@ -725,7 +725,7 @@
         modgui:stylesheet <modgui/stylesheet-saw-vco.css> ;
         modgui:screenshot <modgui/screenshot-saw-vco.png> ;
         modgui:thumbnail <modgui/thumbnail-saw-vco.png> ;
-        modgui:brand "fomp" ;
+        modgui:brand "FOMP" ;
         modgui:label "Saw VCO" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
@@ -776,11 +776,11 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "mod_amp_1" ;
-            lv2:name "Depth 1" ;
+            lv2:name "Depth1" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "mod_freq_1" ;
-            lv2:name "Rate 1" ;
+            lv2:name "Rate1" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "delay" ;
@@ -788,11 +788,11 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "mod_amp_2" ;
-            lv2:name "Depth 2" ;
+            lv2:name "Depth2" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "mod_freq_2" ;
-            lv2:name "Rate 2" ;
+            lv2:name "Rate2" ;
         ] ;
     ] .
     
