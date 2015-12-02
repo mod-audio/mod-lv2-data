@@ -14,7 +14,7 @@ fomp:parametric1
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
-	There's one plugin in this first release, a four-band parametric equaliser. Each section has an active/bypass switch, frequency, bandwidth and gain controls. There is also a global bypass switch and gain control. The 2nd order resonant filters are implemented using a Mitra-Regalia style lattice filter, which has the nice property of being stable even while parameters are being changed. All switches and controls are internally smoothed, so they can be used 'live' whithout any clicks or zipper noises. This should make this plugin a good candidate for use in systems that allow automation of plugin control ports, such as Ardour, or for stage use.""";
+	There's one plugin in this first release, a four-band parametric equaliser. Each section has an active/bypass switch, frequency, bandwidth and gain controls. There is also a global bypass switch and gain control. The 2nd order resonant filters are implemented using a Mitra-Regalia style lattice filter, which has the nice property of being stable even while parameters are being changed. All switches and controls are internally smoothed, so they can be used 'live' whithout any clicks or zipper noises. This should make this plugin a good candidate for use in systems that allow automation of plugin control ports, such as Ardour, or for stage use.""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

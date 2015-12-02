@@ -17,7 +17,7 @@ fomp:reverb
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
-	This is a stereo reverb plugin based on the well-known greverb.""";
+	This is a stereo reverb plugin based on the well-known greverb.""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

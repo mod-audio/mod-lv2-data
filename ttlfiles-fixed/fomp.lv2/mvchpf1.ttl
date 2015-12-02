@@ -12,6 +12,9 @@ fomp:mvchpf1
 	mod:brand "FOMP" ;
 	mod:label "Moog High-Pass 1" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	
+	Based on the voltage controlled highpass filter by Robert Moog, with some attention to the nonlinear effects.  This is quite different from the lowpass filters.  When you 'overdrive' the filter, the cutoff frequency will rise.  This first version is really very experimental.""";
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -83,5 +86,4 @@ fomp:mvchpf1
 		lv2:name "Output gain" ;
 		lv2:symbol "out_gain" ;
 		units:unit units:db
-	] ;
-	rdfs:comment "Based on the voltage controlled highpass filter by Robert Moog, with some attention to the nonlinear effects.  This is quite different from the lowpass filters.  When you 'overdrive' the filter, the cutoff frequency will rise.  This first version is really very experimental." .
+	] .
