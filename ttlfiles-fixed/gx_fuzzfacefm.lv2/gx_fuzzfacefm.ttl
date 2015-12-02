@@ -56,8 +56,7 @@
     mod:brand "Guitarix";
 rdfs:comment """
 
-...
-
+A fuzz effect
 """;
 
     lv2:port  [
