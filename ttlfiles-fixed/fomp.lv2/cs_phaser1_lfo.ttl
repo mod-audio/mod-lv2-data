@@ -116,4 +116,6 @@ fomp:cs_phaser1_lfo
 		lv2:name "Output mix" ;
 		lv2:symbol "out_mix"
 	] ;
-	rdfs:comment "Similar to CS Phaser 1, but the external modulation has been replaced by a built-in LFO." .
+	rdfs:comment "Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+
+	Similar to the CSound module 'phaser1'. It's a series connection of 1 to 30 first order allpass filters with feedback. The frequency of the allpass filter can be controlled by a built-in LFO." .

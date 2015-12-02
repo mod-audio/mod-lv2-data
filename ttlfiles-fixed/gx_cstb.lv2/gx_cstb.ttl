@@ -58,8 +58,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_cstb_gui#_cstb_>;
 
 rdfs:comment """
-
-...
+A fuzzbox, based on the Tonebender
 
 """;
 

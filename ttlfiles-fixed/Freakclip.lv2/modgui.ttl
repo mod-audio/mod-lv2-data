@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://faust-lv2.googlecode.com/Freakclip>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-freakclip.html> ;
+        modgui:stylesheet <modgui/stylesheet-freakclip.css> ;
+        modgui:screenshot <modgui/screenshot-freakclip.png> ;
+        modgui:thumbnail <modgui/thumbnail-freakclip.png> ;
+        modgui:brand "Freaked" ;
+        modgui:label "Freakclip" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "tribal2" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Drive" ;
+            lv2:name "Drive" ;
+        ] ;
+    ] .
