@@ -4,6 +4,7 @@
 <http://distrho.sf.net/plugins/Shiroverb>
     a lv2:Plugin ;
     lv2:binary <Shiroverb_dsp.so> ;
-    rdfs:seeAlso <Shiroverb_dsp.ttl> , <modgui.ttl> .
+    rdfs:seeAlso <Shiroverb_dsp.ttl> ,
+                 <modgui.ttl> .
 
 

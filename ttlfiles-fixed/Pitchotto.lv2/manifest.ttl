@@ -4,6 +4,7 @@
 <http://distrho.sf.net/plugins/Pitchotto>
     a lv2:Plugin ;
     lv2:binary <Pitchotto_dsp.so> ;
-    rdfs:seeAlso <Pitchotto_dsp.ttl> , <modgui.ttl> .
+    rdfs:seeAlso <Pitchotto_dsp.ttl> ,
+                 <modgui.ttl> .
 
 

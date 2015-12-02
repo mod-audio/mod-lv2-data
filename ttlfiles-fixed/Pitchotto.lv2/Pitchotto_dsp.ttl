@@ -96,7 +96,7 @@
 
     rdfs:comment """
 Pitchotto is a pitch-shifter based on the "Pitch-Shift"-genpatch in Max, where Phase-shifting is used to achieve different intervals.
-There are two shifted signals available, both with variable delay-lenghts for arpeggio-like sounds.
+There are two shifted signals available, both with variable delay-lengths for arpeggio-like sounds.
 """ ;
 
     mod:brand "Shiro" ;
