@@ -56,7 +56,7 @@
      mod:brand "Guitarix" ;
 rdfs:comment """
 
-...
+A fuzz Plugin
 
 """;
 
