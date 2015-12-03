@@ -27,7 +27,7 @@
 		pset:value 525.0
 	] , [
 		lv2:symbol "F2" ;
-		pset:value 23520.0
+		pset:value 23500.0
 	] , [
 		lv2:symbol "MODE" ;
 		pset:value 0.0
@@ -42,8 +42,8 @@
 		pset:value 6.0
 	] , [
 		lv2:symbol "T60DS" ;
-		pset:value 6.46875
+		pset:value 6.5
 	] , [
 		lv2:symbol "T60M" ;
-		pset:value 5.921875
+		pset:value 6.0
 	] .

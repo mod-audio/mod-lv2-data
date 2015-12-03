@@ -21,8 +21,8 @@
 		pset:value 0.75
 	] , [
 		lv2:symbol "mod_freq_1" ;
-		pset:value 0.19661
+		pset:value 0.1
 	] , [
 		lv2:symbol "mod_freq_2" ;
-		pset:value 0.547723
+		pset:value 0.5
 	] .
