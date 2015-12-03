@@ -17,22 +17,22 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "locomp" ;
-            lv2:name "lo.Comp" ;
+            lv2:name "lo-Comp" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "lof" ;
-            lv2:name "lo.freq" ;
+            lv2:name "lo-freq" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "logain" ;
-            lv2:name "lo.gain" ;
+            lv2:name "lo-gain" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "hif" ;
-            lv2:name "hi.freq" ;
+            lv2:name "hi-freq" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "higain" ;
-            lv2:name "hi.gain" ;
+            lv2:name "hi-gain" ;
         ] ;
     ] .

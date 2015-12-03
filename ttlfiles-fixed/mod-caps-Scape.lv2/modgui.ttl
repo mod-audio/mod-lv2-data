@@ -11,17 +11,17 @@
         modgui:brand "CAPS" ;
         modgui:label "Scape" ;
         modgui:model "boxy" ;
-        modgui:panel "4-knobs" ;
+        modgui:panel "1-select-3-knobs" ;
         modgui:color "zinc" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "bpm" ;
-            lv2:name "Time" ;
+            lv2:symbol "divider" ;
+            lv2:name "Divider" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "divider" ;
-            lv2:name "Division" ;
+            lv2:symbol "bpm" ;
+            lv2:name "Time" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "feedback" ;

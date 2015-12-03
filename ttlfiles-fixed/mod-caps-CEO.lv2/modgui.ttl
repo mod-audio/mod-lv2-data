@@ -20,11 +20,11 @@
             lv2:name "Profit" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "volume" ;
-            lv2:name "Level" ;
-        ] , [
-            lv2:index 2 ;
             lv2:symbol "damping" ;
             lv2:name "Damping" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "volume" ;
+            lv2:name "Level" ;
         ] ;
     ] .
