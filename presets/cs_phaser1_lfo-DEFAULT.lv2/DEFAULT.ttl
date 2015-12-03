@@ -1,0 +1,37 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/cs_phaser1_lfo> ;
+	rdfs:label "DEFAULT" ;
+	lv2:port [
+		lv2:symbol "fb_gain" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo_freq" ;
+		pset:value 0.201336
+	] , [
+		lv2:symbol "lfo_waveform" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mod_gain" ;
+		pset:value 2.5
+	] , [
+		lv2:symbol "out_mix" ;
+		pset:value 0.75
+	] , [
+		lv2:symbol "sections" ;
+		pset:value 8.0
+	] .

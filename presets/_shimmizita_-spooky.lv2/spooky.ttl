@@ -1,0 +1,49 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_shimmizita_#_shimmizita_> ;
+	rdfs:label "spooky" ;
+	lv2:port [
+		lv2:symbol "CONTROL" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "DRYWET" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "ENVELOPE" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "F1" ;
+		pset:value 525.0
+	] , [
+		lv2:symbol "F2" ;
+		pset:value 23520.0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "PSDRYWET" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "SHIFT" ;
+		pset:value 6.0
+	] , [
+		lv2:symbol "SPEED" ;
+		pset:value 6.0
+	] , [
+		lv2:symbol "T60DS" ;
+		pset:value 6.46875
+	] , [
+		lv2:symbol "T60M" ;
+		pset:value 5.921875
+	] .
