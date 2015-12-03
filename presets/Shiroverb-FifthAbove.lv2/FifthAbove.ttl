@@ -18,7 +18,7 @@
 		pset:value 3000.0
 	] , [
 		lv2:symbol "damping" ;
-		pset:value 0.9
+		pset:value 0.89999998
 	] , [
 		lv2:symbol "decay" ;
 		pset:value 180.0
@@ -36,7 +36,7 @@
 		pset:value 150.0
 	] , [
 		lv2:symbol "shimmer" ;
-		pset:value 0.8
+		pset:value 0.80000001
 	] , [
 		lv2:symbol "spread" ;
 		pset:value 25.0

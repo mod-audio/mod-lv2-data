@@ -8,30 +8,36 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://drobilla.net/plugins/fomp/cs_phaser1_lfo> ;
-	rdfs:label "DEFAULT" ;
+	lv2:appliesTo <http://distrho.sf.net/plugins/Modulay> ;
+	rdfs:label "vibrato" ;
 	lv2:port [
-		lv2:symbol "fb_gain" ;
-		pset:value 0.5
-	] , [
-		lv2:symbol "freq" ;
-		pset:value 3.0
-	] , [
-		lv2:symbol "in_gain" ;
+		lv2:symbol "bleed" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "lfo_freq" ;
-		pset:value 0.201336
+		lv2:symbol "cutoff" ;
+		pset:value 4000.0
 	] , [
-		lv2:symbol "lfo_waveform" ;
+		lv2:symbol "delay" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "mod_gain" ;
-		pset:value 2.5
+		lv2:symbol "depth" ;
+		pset:value 1.25
 	] , [
-		lv2:symbol "out_mix" ;
+		lv2:symbol "feedback" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "feedforward" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 2.11093807
+	] , [
+		lv2:symbol "repeats" ;
 		pset:value 0.75
 	] , [
-		lv2:symbol "sections" ;
-		pset:value 8.0
+		lv2:symbol "time" ;
+		pset:value 489.53125
 	] .

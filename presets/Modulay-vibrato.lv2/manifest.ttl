@@ -6,23 +6,7 @@
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<>
+<vibrato.ttl>
+	lv2:appliesTo <http://distrho.sf.net/plugins/Modulay> ;
 	a pset:Preset ;
-	lv2:appliesTo <http://drobilla.net/plugins/fomp/cs_chorus1> ;
-	rdfs:label "DEFAULT" ;
-	lv2:port [
-		lv2:symbol "delay" ;
-		pset:value 7.5
-	] , [
-		lv2:symbol "mod_amp_1" ;
-		pset:value 2.5
-	] , [
-		lv2:symbol "mod_amp_2" ;
-		pset:value 0.75
-	] , [
-		lv2:symbol "mod_freq_1" ;
-		pset:value 0.19661
-	] , [
-		lv2:symbol "mod_freq_2" ;
-		pset:value 0.79716998
-	] .
+	rdfs:seeAlso <vibrato.ttl> .
