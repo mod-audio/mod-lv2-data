@@ -29,7 +29,7 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "WetLevelDb" ;
-            lv2:name "Wet Level" ;
+            lv2:name "Wet" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "PitchTracking" ;
@@ -45,6 +45,6 @@
         ] , [
             lv2:index 7 ;
             lv2:symbol "DryLevelDb" ;
-            lv2:name "Dry Level" ;
+            lv2:name "Dry" ;
         ] ;
     ] .

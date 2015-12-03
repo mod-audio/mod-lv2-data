@@ -17,10 +17,10 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "Postgain" ;
-            lv2:name "Post gain" ;
+            lv2:name "Post-gain" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "Pregain" ;
-            lv2:name "Pre gain" ;
+            lv2:name "Pre-gain" ;
         ] ;
     ] .
