@@ -16,7 +16,7 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Tube distortion
+Tube distortion, with a DC offset options
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -124,7 +124,7 @@ Tube distortion
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Tube Distortion
+Tube distortion, with a DC offset options
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;

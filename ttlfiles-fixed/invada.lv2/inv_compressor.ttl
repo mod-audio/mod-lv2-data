@@ -17,7 +17,7 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Compressor
+An easy to use high-quality compressor.
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -163,7 +163,7 @@ Compressor
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Compressor
+An easy to use high-quality compressor. 
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;

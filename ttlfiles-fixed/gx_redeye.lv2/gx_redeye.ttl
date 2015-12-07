@@ -67,7 +67,7 @@
 	mod:label "Redeye" ;
 rdfs:comment """
 
-...
+A very complete fuzz
 
 """;
 
@@ -174,7 +174,7 @@ rdfs:comment """
 	lv2:microVersion 3;
 rdfs:comment """
 
-...
+More then the normal redeye fuzz
 
 """;
 
@@ -281,7 +281,7 @@ mod:label "Redeye Vibro" ;
 
 rdfs:comment """
 
-...
+A Fuzz, with a vibrato option.
 
 """;
 

@@ -24,6 +24,11 @@
     mod:label "Input Module" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+    Lets you modify the basics of a stereo signal, such as stereo width, panning and phase
+""";
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3301> ;
 

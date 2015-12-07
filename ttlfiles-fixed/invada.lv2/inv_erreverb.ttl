@@ -19,6 +19,11 @@
     mod:brand "Invada" ;
     mod:label "ER Reverb M" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+    A Room simulator wich let you set the height, width and length of the room.
+""";
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3311> ;
@@ -184,6 +189,11 @@
     mod:brand "Invada" ;
     mod:label "ER Reverb LR" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
+    lv2:minorVersion 2;
+    lv2:microVersion 1;
+    rdfs:comment """
+    A Room simulator wich let you set the height, width and length of the room.
+""";
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     dct:replaces <urn:ladspa:3312> ;

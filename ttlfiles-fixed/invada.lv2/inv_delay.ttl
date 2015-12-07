@@ -21,7 +21,7 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Delay
+A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -228,7 +228,7 @@ Delay
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Delay
+A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
