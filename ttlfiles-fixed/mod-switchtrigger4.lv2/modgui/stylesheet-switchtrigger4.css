@@ -69,7 +69,7 @@
   text-shadow:0 0 1px black;
   text-transform:uppercase;
 }
-.mod-switchtrigger4 .mod-footswitch5 {
+.mod-switchtrigger4 .mod-footswitch {
   background-image:url(/resources/footswitch.png{{{ns}}});
   background-position:bottom center;
   background-repeat:no-repeat;

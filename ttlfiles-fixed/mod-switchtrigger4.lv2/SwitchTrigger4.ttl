@@ -3,9 +3,9 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/SwitchTrigger4>
 a lv2:Plugin, lv2:UtilityPlugin;
@@ -19,11 +19,12 @@ doap:maintainer [
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:devel@moddevices.com>;
     ];
-    
-# mod:brand "MOD";
+
+mod:brand "MOD";
 mod:label "SwitchTrigger4";
-    lv2:minorVersion 1;
-    lv2:microVersion 1;
+
+lv2:minorVersion 1;
+lv2:microVersion 1;
 
 doap:license "GPL";
 
