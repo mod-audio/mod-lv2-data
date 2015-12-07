@@ -1,0 +1,61 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/DX10> ;
+	rdfs:label "mod-default" ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "coarse" ;
+		pset:value 33.68000031
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 65.0
+	] , [
+		lv2:symbol "fine" ;
+		pset:value 0.24699999
+	] , [
+		lv2:symbol "finetune" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo_rate" ;
+		pset:value 10.35000038
+	] , [
+		lv2:symbol "mod_dec" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "mod_init" ;
+		pset:value 23.0
+	] , [
+		lv2:symbol "mod_rel" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "mod_sus" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "mod_thru" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mod_vel" ;
+		pset:value 90.0
+	] , [
+		lv2:symbol "octave" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 44.09999847
+	] , [
+		lv2:symbol "vibrato" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "waveform" ;
+		pset:value 44.70000076
+	] .

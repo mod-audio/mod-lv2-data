@@ -1,0 +1,70 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_mbdelay_#_mbdelay_> ;
+	rdfs:label "mod-default" ;
+	lv2:port [
+		lv2:symbol "CROSSOVER_B1_B2" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "CROSSOVER_B2_B3" ;
+		pset:value 210.0
+	] , [
+		lv2:symbol "CROSSOVER_B3_B4" ;
+		pset:value 1700.0
+	] , [
+		lv2:symbol "CROSSOVER_B4_B5" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "DELAY1" ;
+		pset:value 297.0
+	] , [
+		lv2:symbol "DELAY2" ;
+		pset:value 155.25
+	] , [
+		lv2:symbol "DELAY3" ;
+		pset:value 134.25
+	] , [
+		lv2:symbol "DELAY4" ;
+		pset:value 302.25
+	] , [
+		lv2:symbol "DELAY5" ;
+		pset:value 307.5
+	] , [
+		lv2:symbol "FEEDBACK1" ;
+		pset:value 84.53125
+	] , [
+		lv2:symbol "FEEDBACK2" ;
+		pset:value 58.234375
+	] , [
+		lv2:symbol "FEEDBACK3" ;
+		pset:value 58.234375
+	] , [
+		lv2:symbol "FEEDBACK4" ;
+		pset:value 62.875
+	] , [
+		lv2:symbol "FEEDBACK5" ;
+		pset:value 61.328125
+	] , [
+		lv2:symbol "GAIN1" ;
+		pset:value -3.25
+	] , [
+		lv2:symbol "GAIN2" ;
+		pset:value -5.0
+	] , [
+		lv2:symbol "GAIN3" ;
+		pset:value -2.0
+	] , [
+		lv2:symbol "GAIN4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "GAIN5" ;
+		pset:value -10.0
+	] .

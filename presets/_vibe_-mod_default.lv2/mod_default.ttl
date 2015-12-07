@@ -1,0 +1,37 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_vibe_#_vibe_> ;
+	rdfs:label "mod-default" ;
+	lv2:port [
+		lv2:symbol "CROSS" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 0.37
+	] , [
+		lv2:symbol "DF" ;
+		pset:value 0.11
+	] , [
+		lv2:symbol "FB" ;
+		pset:value -0.60000002
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 4.4000001
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 0.5
+	] .

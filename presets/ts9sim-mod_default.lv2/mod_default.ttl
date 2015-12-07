@@ -1,0 +1,22 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim> ;
+	rdfs:label "mod-default" ;
+	lv2:port [
+		lv2:symbol "fslider0_" ;
+		pset:value -7.625
+	] , [
+		lv2:symbol "fslider1_" ;
+		pset:value 971.875
+	] , [
+		lv2:symbol "fslider2_" ;
+		pset:value 1.0
+	] .

@@ -1,0 +1,22 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_oc_2_#_oc_2_> ;
+	rdfs:label "mod-default" ;
+	lv2:port [
+		lv2:symbol "DIRECT" ;
+		pset:value 0.21875
+	] , [
+		lv2:symbol "OCTAVE1" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "OCTAVE2" ;
+		pset:value 0.5
+	] .
