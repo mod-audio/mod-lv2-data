@@ -10,7 +10,7 @@ fomp:parametric1
 		lv2:ParaEQPlugin ;
 	doap:name "4-Band Parametric Filter" ;
 	mod:brand "FOMP" ;
-	mod:label "Parametric Filtr" ;
+	mod:label "ParametricFilter" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
