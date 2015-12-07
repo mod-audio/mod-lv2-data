@@ -1,14 +1,10 @@
-
-
 <div class="mod-pedal mod-switch-box mod-switch-box-2">
     <div mod-role="drag-handle" class="mod-drag-handle"></div>
     <div class="mod-control-group clearfix">
-        {{#controls}}
         <div class="mod-knob">
-            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
-            <span class="mod-knob-title">{{name}}</span>
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="Switch"></div>
+            <span class="mod-knob-title">Channel</span>
         </div>
-        {{/controls}}
     </div>
     <div class="mod-pedal-input">
         {{#effect.ports.audio.input}}
