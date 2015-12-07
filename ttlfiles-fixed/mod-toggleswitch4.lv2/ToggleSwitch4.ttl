@@ -109,8 +109,8 @@ lv2:port
 modgui:gui [
     modgui:brand "MOD";
     modgui:label "ToggleSwitch4";
-    mod:resourcesDirectory <modgui>;
-    mod:iconTemplate <modgui/icon-toggleswitch4.html>;
-    mod:screenshot <modgui/ToggleSwitch4.png>;
-    mod:thumbnail <modgui/ToggleSwitch4-thumb.png>;
+    modgui:resourcesDirectory <modgui>;
+    modgui:iconTemplate <modgui/icon-toggleswitch4.html>;
+    modgui:screenshot <modgui/ToggleSwitch4.png>;
+    modgui:thumbnail <modgui/ToggleSwitch4-thumb.png>;
 ] .
