@@ -58,6 +58,7 @@ lv2:port
     lv2:index 1;
     lv2:symbol "drylevel";
     lv2:name "Dry Level";
+    lv2:shortName "Dry" ;
     lv2:default -4.0;
     lv2:minimum -70.0;
     lv2:maximum 10.0;
@@ -69,6 +70,7 @@ lv2:port
     lv2:index 2;
     lv2:symbol "wetlevel";
     lv2:name "Wet Level";
+    lv2:shortName "Wet" ;
     lv2:default -12.0;
     lv2:minimum -70.0;
     lv2:maximum 10.0;
@@ -80,6 +82,7 @@ lv2:port
     lv2:index 3;
     lv2:symbol "combs_en";
     lv2:name "Comb Filters";
+    lv2:shortName "Comb" ;
     lv2:default 1.0;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
@@ -99,6 +102,7 @@ lv2:port
     lv2:index 4;
     lv2:symbol "allps_en";
     lv2:name "Allpass Filters";
+    lv2:shortName "Allpass" ;
     lv2:default 1.0;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
@@ -118,6 +122,7 @@ lv2:port
     lv2:index 5;
     lv2:symbol "bandpass_en";
     lv2:name "Bandpass Filter";
+    lv2:shortName "Bandpass" ;
     lv2:default 1.0;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
@@ -137,6 +142,7 @@ lv2:port
     lv2:index 6;
     lv2:symbol "stereo_enh";
     lv2:name "Enhanced Stereo";
+    lv2:shortName "Enhanced" ;
     lv2:default 1.0;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
@@ -156,6 +162,7 @@ lv2:port
     lv2:index 7;
     lv2:symbol "mode";
     lv2:name "Reverb Type";
+    lv2:shortName "Type" ;
     lv2:default 0.0;
     lv2:minimum 0.0;
     lv2:maximum 42.0;
