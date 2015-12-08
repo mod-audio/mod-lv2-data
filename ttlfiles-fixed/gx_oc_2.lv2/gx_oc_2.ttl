@@ -57,7 +57,8 @@
 mod:brand "Guitarix";
 rdfs:comment """
 
-...
+A plugin that drops the original sound 1 and 2 octaves down to create an
+extra fat sound
 
 """;
 
