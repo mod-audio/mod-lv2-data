@@ -281,14 +281,14 @@
         modgui:thumbnail <modgui/thumbnail-roomy.png> ;
         modgui:brand "OpenAV" ;
         modgui:label "Roomy" ;
-        modgui:model "japanese" ;
-        modgui:panel "4-knobs" ;
-        modgui:color "darkblue" ;
-        modgui:knob "orange" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "cream" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "time" ;
-            lv2:name "Time" ;
+            lv2:name "Decay" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "damping" ;
