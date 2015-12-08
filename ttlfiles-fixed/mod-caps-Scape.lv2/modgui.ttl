@@ -21,7 +21,7 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "bpm" ;
-            lv2:name "Time" ;
+            lv2:name "BPM" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "feedback" ;

@@ -65,7 +65,6 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "Feedback";
-    lv2:shortName "FB";
     lv2:symbol "feedback";
 ],
 [
@@ -75,8 +74,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "Dry";
-    lv2:shortName "Dry" ;
     lv2:symbol "dry";
+    mod:default 0.75;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -95,7 +94,6 @@ lv2:port
     lv2:maximum 467.0;
     lv2:minimum 415.0;
     lv2:name "Tune";
-    lv2:shortName "Tune" ;
     lv2:symbol "tune";
     units:unit units:hz;
 ],
