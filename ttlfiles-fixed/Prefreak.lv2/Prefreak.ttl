@@ -24,6 +24,7 @@ a doap:Project ;
 
 <http://faust-lv2.googlecode.com/Prefreak>
        a lv2:Plugin ;
+           lv2:ReverbPlugin ;
        doap:name "Prefreak" ;
        lv2:binary <Prefreak.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
@@ -50,7 +51,7 @@ a doap:Project ;
 	lv2:name "PreGain" ;
 	lv2:default 1.0 ;
 	lv2:minimum 1.0 ;
-	lv2:maximum 999.0 ;
+	lv2:maximum 998.0 ;
     ] , [
 	a lv2:AudioPort ;
 	a lv2:InputPort ;

@@ -24,6 +24,7 @@ a doap:Project ;
 
 <http://faust-lv2.googlecode.com/Freaktail>
        a lv2:Plugin ;
+           lv2:ReverbPlugin ;
        doap:name "Freaktail" ;
        lv2:binary <Freaktail.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
@@ -56,9 +57,9 @@ a doap:Project ;
 	lv2:index 2 ;
 	lv2:symbol "Gain" ;
 	lv2:name "Gain" ;
-	lv2:default 0.81 ;
+	lv2:default 0.1 ;
 	lv2:minimum 0.1 ;
-	lv2:maximum 1.0 ;
+	lv2:maximum 0.9 ;
     ] , [
 	a lv2:ControlPort ;
 	a lv2:InputPort ;
