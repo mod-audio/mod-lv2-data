@@ -8,8 +8,8 @@
         modgui:stylesheet <modgui/stylesheet-tap-reverberator.css> ;
         modgui:screenshot <modgui/screenshot-tap-reverberator.png> ;
         modgui:thumbnail <modgui/thumbnail-tap-reverberator.png> ;
-        modgui:brand "MOD" ;
-        modgui:label "TAP Reverberator" ;
+        modgui:brand "TAP" ;
+        modgui:label "Reverberator" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-3-knobs" ;
         modgui:color "cream" ;
@@ -17,7 +17,7 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "mode" ;
-            lv2:name "Reverb Type" ;
+            lv2:name "Type" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "decay" ;
