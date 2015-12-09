@@ -8,15 +8,30 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://invadarecords.com/plugins/lv2/testtone> ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/TestTone> ;
 	rdfs:label "mod-default" ;
 	lv2:port [
-		lv2:symbol "active" ;
+		lv2:symbol "channel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "f1" ;
+		pset:value 0.46875
+	] , [
+		lv2:symbol "f2" ;
+		pset:value 0.640625
+	] , [
+		lv2:symbol "level" ;
+		pset:value 0.70999998
+	] , [
+		lv2:symbol "mode" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "frequency" ;
-		pset:value 139.56611633
+		lv2:symbol "sweep" ;
+		pset:value 0.30000001
 	] , [
-		lv2:symbol "trim" ;
+		lv2:symbol "thru" ;
 		pset:value 0.0
+	] , [
+		lv2:symbol "zero_db" ;
+		pset:value 1.0
 	] .

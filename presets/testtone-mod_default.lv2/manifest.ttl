@@ -7,6 +7,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <mod_default.ttl>
-	lv2:appliesTo <http://invadarecords.com/plugins/lv2/testtone> ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/TestTone> ;
 	a pset:Preset ;
 	rdfs:seeAlso <mod_default.ttl> .
