@@ -36,7 +36,7 @@
     pg:mainOutput :out ;
     lv2:port [
         a lv2:InputPort ;
-        a lv2:AudioPort ;
+        a lv2:AudioPort   ;
         lv2:index 0 ;
         lv2:symbol "in_l" ;
         lv2:name "In L" ;
@@ -283,5 +283,3 @@
         ue:unit ue:hz ;
     ]
 .
-
-
