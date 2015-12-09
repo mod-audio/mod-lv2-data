@@ -69,6 +69,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 0 ;
         lv2:symbol "bright_l" ;
         lv2:name "Bright_L";
+        lv2:shortName "Bright L" ;
         lv2:portProperty lv2:integer;
         lv2:portProperty lv2:toggled ;
         lv2:default 0 ;
@@ -80,6 +81,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 1 ;
         lv2:symbol "volume_l" ;
         lv2:name "Volume_L";
+        lv2:shortName "Level L" ;
         lv2:default 5.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 20.0 ;
@@ -89,6 +91,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 2 ;
         lv2:symbol "bass_l" ;
         lv2:name "Bass_L";
+        lv2:shortName "Bass L" ;
         lv2:default 0.5 ;
         lv2:minimum  0.0;
         lv2:maximum 1.0 ;
@@ -98,6 +101,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 3 ;
         lv2:symbol "middle_l" ;
         lv2:name "Middle_L";
+        lv2:shortName "Mid L" ;
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -107,6 +111,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 4 ;
         lv2:symbol "treble_l" ;
         lv2:name "Treble_L";
+        lv2:shortName "Treble L" ;
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -116,6 +121,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 5 ;
         lv2:symbol "bright_r" ;
         lv2:name "Bright_R";
+        lv2:shortName "Bright R" ;
         lv2:portProperty lv2:integer;
         lv2:portProperty lv2:toggled ;
         lv2:default 0 ;
@@ -127,6 +133,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 6 ;
         lv2:symbol "volume_r" ;
         lv2:name "Volume_R";
+        lv2:shortName "Level R" ;
         lv2:default 5.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 20.0 ;
@@ -136,6 +143,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 7 ;
         lv2:symbol "bass_r" ;
         lv2:name "Bass_R";
+        lv2:shortName "Bass R" ;
         lv2:default 0.5 ;
         lv2:minimum  0.0;
         lv2:maximum 1.0 ;
@@ -145,6 +153,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 8 ;
         lv2:symbol "middle_r" ;
         lv2:name "Middle_R";
+        lv2:shortName "Mid R"
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -154,6 +163,7 @@ This is an identical circuit apart from coupling caps whcih could do with filter
         lv2:index 9 ;
         lv2:symbol "treble_r" ;
         lv2:name "Treble_R";
+        lv2:shortName "Treble R" ;
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
