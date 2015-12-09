@@ -51,7 +51,7 @@ fomp:cs_chorus2
 		lv2:name "Mod Frequency 1" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_1" ;
-		units:unit units:ms
+		units:unit units:hz
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
