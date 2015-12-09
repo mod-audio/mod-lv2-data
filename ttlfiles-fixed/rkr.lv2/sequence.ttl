@@ -60,6 +60,7 @@
                 lv2:maximum 1 ;
                 lv2:portProperty lv2:integer ;
                 lv2:portProperty lv2:toggled ;
+                lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI>;
         ], [
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 5 ;

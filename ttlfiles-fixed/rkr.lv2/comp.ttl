@@ -59,6 +59,7 @@
                 lv2:maximum 1 ;
                 lv2:portProperty lv2:integer ;
                 lv2:portProperty lv2:toggled ;
+                lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI>;
         ], [
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 5 ;
@@ -174,4 +175,3 @@
     rdfs:label "Limiter" ;
 	rdfs:seeAlso <comp_presets.ttl> ;
 	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#comp> .
-
