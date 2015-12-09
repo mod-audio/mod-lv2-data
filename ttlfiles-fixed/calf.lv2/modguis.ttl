@@ -1,6 +1,7 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 
-<http://calf.sourceforge.net/plugins/BassEnhancer>
+###############################################################################
+## START http://calf.sourceforge.net/plugins/BassEnhancer
     modgui:gui [
         modgui:resourcesDirectory <modgui/img/>;
         modgui:stylesheet <modgui/BassEnhancer/icon-calf-bassenhancer.css>;
@@ -8,8 +9,11 @@
         modgui:screenshot <modgui/BassEnhancer/screenshot-calf-bassenhancer.png>;
         modgui:thumbnail <modgui/BassEnhancer/thumb-calf-bassenhancer.png>;
     ] .
+## END http://calf.sourceforge.net/plugins/BassEnhancer
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Compressor>
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Compressor
     modgui:gui [
         modgui:resourcesDirectory <modgui/img/>;
         modgui:stylesheet <modgui/Compressor/icon-calf-compressor.css>;
@@ -17,93 +21,125 @@
         modgui:screenshot <modgui/Compressor/screenshot-calf-compressor.png>;
         modgui:thumbnail <modgui/Compressor/thumb-calf-compressor.png>;
     ] .
+## END http://calf.sourceforge.net/plugins/Compressor
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Equalizer5Band>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
-        modgui:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
-        modgui:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
-        modgui:thumbnail <modgui/Equalizer5Band/thumb-calf-equalizer-5-band.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Equalizer5Band
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
+    modgui:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
+    modgui:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
+    modgui:thumbnail <modgui/Equalizer5Band/thumb-calf-equalizer-5-band.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Equalizer5Band
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Exciter>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
-        modgui:iconTemplate <modgui/Exciter/icon-calf-exciter.html>;
-        modgui:screenshot <modgui/Exciter/screenshot-calf-exciter.png>;
-        modgui:thumbnail <modgui/Exciter/thumb-calf-exciter.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Exciter
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
+    modgui:iconTemplate <modgui/Exciter/icon-calf-exciter.html>;
+    modgui:screenshot <modgui/Exciter/screenshot-calf-exciter.png>;
+    modgui:thumbnail <modgui/Exciter/thumb-calf-exciter.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Exciter
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Filter>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Filter/icon-calf-filter.css>;
-        modgui:iconTemplate <modgui/Filter/icon-calf-filter.html>;
-        modgui:screenshot <modgui/Filter/screenshot-calf-filter.png>;
-        modgui:thumbnail <modgui/Filter/thumb-calf-filter.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Filter
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Filter/icon-calf-filter.css>;
+    modgui:iconTemplate <modgui/Filter/icon-calf-filter.html>;
+    modgui:screenshot <modgui/Filter/screenshot-calf-filter.png>;
+    modgui:thumbnail <modgui/Filter/thumb-calf-filter.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Filter
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Filterclavier>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img>;
-        modgui:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
-        modgui:iconTemplate <modgui/Filterclavier/icon-calf-filterclavier.html>;
-        modgui:screenshot <modgui/Filterclavier/screenshot-calf-filterclavier.png>;
-        modgui:thumbnail <modgui/Filterclavier/thumb-calf-filterclavier.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Filterclavier
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img>;
+    modgui:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
+    modgui:iconTemplate <modgui/Filterclavier/icon-calf-filterclavier.html>;
+    modgui:screenshot <modgui/Filterclavier/screenshot-calf-filterclavier.png>;
+    modgui:thumbnail <modgui/Filterclavier/thumb-calf-filterclavier.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Filterclavier
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Flanger>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img>;
-        modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
-        modgui:iconTemplate <modgui/Flanger/icon-calf-flanger.html>;
-        modgui:screenshot <modgui/Flanger/screenshot-calf-flanger.png>;
-        modgui:thumbnail <modgui/Flanger/thumb-calf-flanger.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Flanger
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img>;
+    modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
+    modgui:iconTemplate <modgui/Flanger/icon-calf-flanger.html>;
+    modgui:screenshot <modgui/Flanger/screenshot-calf-flanger.png>;
+    modgui:thumbnail <modgui/Flanger/thumb-calf-flanger.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Flanger
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Monosynth>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img>;
-        modgui:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
-        modgui:iconTemplate <modgui/Monosynth/icon-calf-monosynth.html>;
-        modgui:screenshot <modgui/Monosynth/screenshot-calf-monosynth.png>;
-        modgui:thumbnail <modgui/Monosynth/thumb-calf-monosynth.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Monosynth
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img>;
+    modgui:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
+    modgui:iconTemplate <modgui/Monosynth/icon-calf-monosynth.html>;
+    modgui:screenshot <modgui/Monosynth/screenshot-calf-monosynth.png>;
+    modgui:thumbnail <modgui/Monosynth/thumb-calf-monosynth.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Monosynth
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Phaser>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
-        modgui:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
-        modgui:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
-        modgui:thumbnail <modgui/Phaser/thumb-calf-phaser.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Phaser
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
+    modgui:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
+    modgui:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
+    modgui:thumbnail <modgui/Phaser/thumb-calf-phaser.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Phaser
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Pulsator>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
-        modgui:iconTemplate <modgui/Pulsator/icon-calf-pulsator.html>;
-        modgui:screenshot <modgui/Pulsator/screenshot-calf-pulsator.png>;
-        modgui:thumbnail <modgui/Pulsator/thumb-calf-pulsator.png>;
-    ].
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Pulsator
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
+    modgui:iconTemplate <modgui/Pulsator/icon-calf-pulsator.html>;
+    modgui:screenshot <modgui/Pulsator/screenshot-calf-pulsator.png>;
+    modgui:thumbnail <modgui/Pulsator/thumb-calf-pulsator.png>;
+].
+## END http://calf.sourceforge.net/plugins/Pulsator
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/Saturator>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
-        modgui:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
-        modgui:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
-        modgui:thumbnail <modgui/Saturator/thumb-calf-saturator.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Saturator
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
+    modgui:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
+    modgui:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
+    modgui:thumbnail <modgui/Saturator/thumb-calf-saturator.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Saturator
+###############################################################################
 
-<http://calf.sourceforge.net/plugins/VintageDelay>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
-        modgui:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
-        modgui:iconTemplate <modgui/VintageDelay/icon-calf-vintage-delay.html>;
-        modgui:screenshot <modgui/VintageDelay/screenshot-calf-vintage-delay.png>;
-        modgui:thumbnail <modgui/VintageDelay/thumb-calf-vintage-delay.png>;
-    ] .
+###############################################################################
+## START http://calf.sourceforge.net/plugins/VintageDelay
+modgui:gui [
+    modgui:resourcesDirectory <modgui/img/>;
+    modgui:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
+    modgui:iconTemplate <modgui/VintageDelay/icon-calf-vintage-delay.html>;
+    modgui:screenshot <modgui/VintageDelay/screenshot-calf-vintage-delay.png>;
+    modgui:thumbnail <modgui/VintageDelay/thumb-calf-vintage-delay.png>;
+] .
+## END http://calf.sourceforge.net/plugins/VintageDelay
+###############################################################################
