@@ -10,9 +10,10 @@
         modgui:thumbnail <modgui/thumbnail-gx-studio-preamp-stereo.png> ;
         modgui:brand "Guitarix" ;
         modgui:label "Stereo Studio Preamp" ;
-        modgui:model "lata" ;
+        modgui:model "boxy" ;
         modgui:panel "8-knobs" ;
         modgui:color "racing" ;
+        modgui:knob "bronze" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "bass_l" ;
@@ -27,8 +28,8 @@
             lv2:name "Treble L" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "bright_l" ;
-            lv2:name "Bright L" ;
+            lv2:symbol "volume_l" ;
+            lv2:name "Level L" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "bass_r" ;
@@ -43,7 +44,7 @@
             lv2:name "Treble R" ;
         ] , [
             lv2:index 7 ;
-            lv2:symbol "bright_r" ;
-            lv2:name "Bright R" ;
+            lv2:symbol "volume_r" ;
+            lv2:name "Level R" ;
         ] ;
     ] .

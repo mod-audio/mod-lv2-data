@@ -77,6 +77,7 @@
     lv2:index 4 ;
     lv2:symbol "time" ;
     lv2:name "Time";
+    lv2:shortName "Decay" ;
     lv2:default 0.5 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
@@ -95,6 +96,7 @@
     lv2:index 6 ;
     lv2:symbol "dry_wet" ;
     lv2:name "Dry Wet Mix";
+    lv2:shortName "Mix" ;
     lv2:default 0.5 ;
     lv2:minimum 0.0 ;
     lv2:maximum 1.0 ;
