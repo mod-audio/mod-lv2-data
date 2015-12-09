@@ -59,10 +59,6 @@ foaf:mbox <mailto:fraser@arkhostings.com> ;
 #                                         lv2:binary <inv_input.so> ;
 #                                         rdfs:seeAlso <inv_input.ttl> , <modguis.ttl> .
 
-# <http://invadarecords.com/plugins/lv2/meter> a lv2:Plugin ;
-#                                        lv2:binary <inv_meter.so> ;
-#                                        rdfs:seeAlso <inv_meter.ttl> , <modguis.ttl> .
-
 <http://invadarecords.com/plugins/lv2/phaser/mono> a lv2:Plugin ;
                                         lv2:binary <inv_phaser.so> ;
                                         rdfs:seeAlso <inv_phaser.ttl> , <modguis.ttl> .
