@@ -84,7 +84,7 @@ A Delay that can also pitchshift per delay.
         lv2:default 55.0 ;
         lv2:minimum -110.0 ;
         lv2:maximum 110.0 ;
-        units:unit [
+        units:unit units:pc[
             rdfs:label   "Saturation/Limiter" ;
             units:symbol "Sat <> Lim" ;
             units:render "%f" ;
