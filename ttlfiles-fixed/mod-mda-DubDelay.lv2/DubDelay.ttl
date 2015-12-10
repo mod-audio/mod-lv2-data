@@ -84,11 +84,7 @@ A Delay that can also pitchshift per delay.
         lv2:default 55.0 ;
         lv2:minimum -110.0 ;
         lv2:maximum 110.0 ;
-        units:unit units:pc[
-            rdfs:label   "Saturation/Limiter" ;
-            units:symbol "Sat <> Lim" ;
-            units:render "%f" ;
-        ];
+        units:unit units:pc ;
         rdfs:comment "Feedback - with soft saturation at maximum left position, hard clipping at maximum right"
     ] , [
         a lv2:InputPort ,
