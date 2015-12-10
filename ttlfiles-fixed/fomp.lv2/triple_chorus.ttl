@@ -50,6 +50,7 @@ fomp:triple_chorus
 		lv2:index 4 ;
 		lv2:maximum 30.0 ;
 		lv2:minimum 0.0 ;
+		mod:default 22.5 ;
 		lv2:name "Delay" ;
 		lv2:symbol "delay" ;
 		units:unit units:ms
@@ -60,7 +61,9 @@ fomp:triple_chorus
 		lv2:index 5 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum 0.003 ;
+		mod:default 0.10 ;
 		lv2:name "Mod Frequency 1" ;
+		lv2:shortName "Rate1" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_1" ;
 		units:unit units:hz
@@ -71,7 +74,9 @@ fomp:triple_chorus
 		lv2:index 6 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum 0.0 ;
+		mod:default 5.0 ;
 		lv2:name "Mod Amplitude 1" ;
+		lv2:shortName "Depth1" ;
 		lv2:symbol "mod_amp_1" ;
 		units:unit units:ms
 	] , [
@@ -81,7 +86,9 @@ fomp:triple_chorus
 		lv2:index 7 ;
 		lv2:maximum 30.0 ;
 		lv2:minimum 0.01 ;
+		mod:default 0.55 ;
 		lv2:name "Mod Frequency 2" ;
+		lv2:shortName "Rate2" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_2" ;
 		units:unit units:hz
@@ -92,7 +99,9 @@ fomp:triple_chorus
 		lv2:index 8 ;
 		lv2:maximum 3.0 ;
 		lv2:minimum 0.0 ;
+		mod:default 1.5 ;
 		lv2:name "Mod Amplitude 2" ;
+		lv2:shortName "Depth2" ;
 		lv2:symbol "mod_amp_2" ;
 		units:unit units:ms
 	] .

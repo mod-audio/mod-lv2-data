@@ -50,16 +50,6 @@ fomp:mvchpf1
 	rdfs:seeAlso <mvchpf1.ttl> , <modguis.ttl> ;
 	lv2:binary <mvchpf24.so> .
 
-fomp:cs_chorus1
-	a lv2:Plugin ;
-	rdfs:seeAlso <cs_chorus1.ttl> , <modguis.ttl> ;
-	lv2:binary <cs_chorus.so> .
-
-fomp:cs_chorus2
-	a lv2:Plugin ;
-	rdfs:seeAlso <cs_chorus2.ttl> , <modguis.ttl> ;
-	lv2:binary <cs_chorus.so> .
-
 fomp:cs_phaser1
 	a lv2:Plugin ;
 	rdfs:seeAlso <cs_phaser1.ttl> , <modguis.ttl> ;
@@ -89,11 +79,6 @@ fomp:parametric1
 	a lv2:Plugin ;
 	rdfs:seeAlso <parametric1.ttl> , <modguis.ttl> ;
 	lv2:binary <filters.so> .
-
-fomp:autowah
-	a lv2:Plugin ;
-	rdfs:seeAlso <autowah.ttl> , <modguis.ttl> ;
-	lv2:binary <autowah.so> .
 
 fomp:reverb
 	a lv2:Plugin ;
