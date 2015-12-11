@@ -4,7 +4,7 @@
 @prefix mod:  <http://moddevices.com/ns/mod#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
-@prefix unit: <http://lv2plug.in/ns/extensions/units#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
 
 <http://distrho.sf.net/plugins/Modulay>
     a lv2:DelayPlugin, lv2:Plugin ;
@@ -38,6 +38,7 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 30.000000 ;
+        units:unit units:ms
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -56,6 +57,7 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 5.000000 ;
+        units:unit units:ms
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -92,6 +94,7 @@
         lv2:default 4000.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 6000.000000 ;
+        units:unit units:hz
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -101,6 +104,7 @@
         lv2:default 2.000000 ;
         lv2:minimum 0.100000 ;
         lv2:maximum 10.000000 ;
+        units:unit units:hz
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -110,6 +114,7 @@
         lv2:default 500.000000 ;
         lv2:minimum 10.000000 ;
         lv2:maximum 1000.000000 ;
+        units:unit units:ms
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
