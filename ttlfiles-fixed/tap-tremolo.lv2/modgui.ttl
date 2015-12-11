@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-tap-tremolo.png> ;
         modgui:thumbnail <modgui/thumbnail-tap-tremolo.png> ;
         modgui:brand "TAP" ;
-        modgui:label "TAP Tremolo" ;
+        modgui:label "Tremolo" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
         modgui:color "racing" ;
