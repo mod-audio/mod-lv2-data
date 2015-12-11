@@ -21,7 +21,7 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "bpm" ;
-            lv2:name "rate" ;
+            lv2:name "bpm" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "damping" ;
@@ -30,5 +30,6 @@
             lv2:index 3 ;
             lv2:symbol "volume" ;
             lv2:name "level" ;
+            lv2:shortName "level" ;
         ] ;
     ] .

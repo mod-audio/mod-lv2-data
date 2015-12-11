@@ -18,42 +18,52 @@
             lv2:index 0 ;
             lv2:symbol "DELAY1" ;
             lv2:name "DELAY 1" ;
+            lv2:shortName "Delay 1" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "DELAY2" ;
             lv2:name "DEL 2" ;
+            lv2:shortName "Delay 2" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "DELAY3" ;
             lv2:name "DEL 3" ;
+            lv2:shortName "Delay 3" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "DELAY4" ;
             lv2:name "DEL 4" ;
+            lv2:shortName "Delay 4" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "DELAY5" ;
             lv2:name "DEL 5" ;
+            lv2:shortName "Delay 5" ;
         ] , [
             lv2:index 5 ;
             lv2:symbol "FEEDBACK1" ;
             lv2:name "FeedBack 1" ;
+            lv2:shortName "Feedback 1" ;
         ] , [
             lv2:index 6 ;
             lv2:symbol "FEEDBACK2" ;
             lv2:name "FB 2" ;
+            lv2:shortName "Feedback 2" ;
         ] , [
             lv2:index 7 ;
             lv2:symbol "FEEDBACK3" ;
             lv2:name "FB 3" ;
+            lv2:shortName "Feedback 3" ;
         ] , [
             lv2:index 8 ;
             lv2:symbol "FEEDBACK4" ;
             lv2:name "FB 4" ;
+            lv2:shortName "Feedback 4" ;
         ], [
             lv2:index 9 ;
             lv2:symbol "FEEDBACK5" ;
             lv2:name "FB 5" ;
+            lv2:shortName "Feedback 5" ;
         ] , [
             lv2:index 10 ;
             lv2:symbol "GAIN1" ;
