@@ -1,0 +1,424 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset001>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 50 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 90 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 40 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 85 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 64 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 119 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset002>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 45 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 98 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 56 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 90 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 64 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 19 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset003>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 29 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 42 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 97 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 95 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 90 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 127 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset004>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 26 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 42 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 115 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 18 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 90 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 127 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset005>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 29 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 117 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 50 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 115 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 9 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 31 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 127 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset006>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 57 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 60 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 23 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 3 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 62 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset007>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 33 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 34 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 40 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 35 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 3 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 109 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset008>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 53 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 34 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 94 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 35 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 3 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 54 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset009>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 40 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 62 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 12 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 19 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 97 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] .
+
+<http://zynaddsubfx.sourceforge.net/fx#Chorus:preset010>
+    lv2:port [
+        lv2:symbol "" ;
+        pset:value 55 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 105 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 24 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 39 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 19 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 17 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 0 ;
+    ] ,
+    [
+        lv2:symbol "" ;
+        pset:value 1 ;
+    ] .
+
+
