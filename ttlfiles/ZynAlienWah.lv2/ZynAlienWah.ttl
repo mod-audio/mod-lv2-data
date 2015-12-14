@@ -113,8 +113,7 @@
         lv2:minimum 1 ;
         lv2:maximum 100 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
