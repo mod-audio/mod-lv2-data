@@ -109,8 +109,8 @@ Detuner with an octave option
         lv2:portProperty lv2:integer;
         lv2:portProperty lv2:enumeration ;
         lv2:scalePoint [rdfs:label "normal"; rdf:value 0];
-        lv2:scalePoint [rdfs:label "octaveup"; rdf:value 1];
-        lv2:scalePoint [rdfs:label "octavedown"; rdf:value 2];
+        lv2:scalePoint [rdfs:label "up"; rdf:value 1];
+        lv2:scalePoint [rdfs:label "down"; rdf:value 2];
 
     ]      , [
         a lv2:InputPort ,
