@@ -11,7 +11,7 @@
         modgui:brand "Shiro" ;
         modgui:label "Shiroverb" ;
         modgui:model "boxy" ;
-        modgui:panel "8-knobs" ;
+        modgui:panel "7-knobs" ;
         modgui:color "petrol" ;
         modgui:knob "black" ;
         modgui:port [
@@ -20,8 +20,8 @@
             lv2:name "decay" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "tail" ;
-            lv2:name "tail" ;
+            lv2:symbol "roomsize" ;
+            lv2:name "roomsize" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "damping" ;
@@ -32,18 +32,14 @@
             lv2:name "mix" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "roomsize" ;
-            lv2:name "roomsize" ;
-        ] , [
-            lv2:index 5 ;
             lv2:symbol "ratio" ;
             lv2:name "ratio" ;
         ] , [
-            lv2:index 6 ;
-            lv2:symbol "cutoff" ;
-            lv2:name "cutoff" ;
+            lv2:index 5 ;
+            lv2:symbol "tone" ;
+            lv2:name "tone" ;
         ] , [
-            lv2:index 7 ;
+            lv2:index 6 ;
             lv2:symbol "shimmer" ;
             lv2:name "shimmer" ;
         ] ;

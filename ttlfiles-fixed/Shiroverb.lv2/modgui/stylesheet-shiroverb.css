@@ -159,7 +159,7 @@
 /* = KNOBS
 ================================================ */
 .mod-pedal-boxy{{{cns}}} .mod-control-group {
-    margin:16px !important;
+    margin:20px !important;
     position:relative;
     text-align:center;
     z-index:30;
@@ -252,7 +252,7 @@
 
 /* EIGTH KNOBS */
 .mod-pedal-boxy{{{cns}}}.mod-eight-knobs .mod-knob {
-    width:64px;
+    width:70px;
 }
 
 /* = ENUMERATED LIST
