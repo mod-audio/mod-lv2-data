@@ -7,7 +7,7 @@
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
 <http://zynaddsubfx.sourceforge.net/fx#Distortion>
-    a lv2:Plugin ;
+    a lv2:DistortionPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
@@ -48,7 +48,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:name "L/R Cross" ;
-        lv2:symbol "lv2_port_3" ;
+        lv2:symbol "lrcross" ;
         lv2:default 35 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -58,7 +58,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:name "Drive" ;
-        lv2:symbol "lv2_port_4" ;
+        lv2:symbol "drive" ;
         lv2:default 56 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -68,7 +68,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
         lv2:name "Level" ;
-        lv2:symbol "lv2_port_5" ;
+        lv2:symbol "level" ;
         lv2:default 70 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -78,7 +78,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
         lv2:name "Type" ;
-        lv2:symbol "lv2_port_6" ;
+        lv2:symbol "type" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 13 ;
@@ -88,7 +88,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
         lv2:name "Negate" ;
-        lv2:symbol "lv2_port_7" ;
+        lv2:symbol "negate" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -99,7 +99,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:name "Low-Pass Filter" ;
-        lv2:symbol "lv2_port_8" ;
+        lv2:symbol "lpf" ;
         lv2:default 96 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -109,7 +109,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:name "High-Pass Filter" ;
-        lv2:symbol "lv2_port_9" ;
+        lv2:symbol "hpf" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -119,7 +119,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:name "Stereo" ;
-        lv2:symbol "lv2_port_10" ;
+        lv2:symbol "stereo" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -130,7 +130,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:name "Pre-Filtering" ;
-        lv2:symbol "lv2_port_11" ;
+        lv2:symbol "pf" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -139,9 +139,9 @@
     ] ;
 
     mod:brand "ZynAddSubFX" ;
-    mod:label "Distortion" ;
+    mod:label "ZynDistortion" ;
 
-    doap:name "Distortion" ;
+    doap:name "ZynDistortion" ;
     doap:license "GPL v2" ;
 
     doap:maintainer [
