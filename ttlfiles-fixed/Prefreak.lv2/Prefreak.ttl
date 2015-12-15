@@ -23,8 +23,8 @@ a doap:Project ;
   ] .
 
 <http://faust-lv2.googlecode.com/Prefreak>
-       a lv2:Plugin ,
-           lv2:ReverbPlugin ;
+      a lv2:Plugin ,
+        lv2:ReverbPlugin ;
        doap:name "Prefreak" ;
        lv2:binary <Prefreak.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
