@@ -2,12 +2,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
 <http://zynaddsubfx.sourceforge.net/fx#Reverb>
-    a lv2:Plugin ;
+    a lv2:ReverbPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
@@ -48,7 +49,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:name "Time" ;
-        lv2:symbol "lv2_port_3" ;
+        lv2:symbol "time" ;
         lv2:default 63 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -58,19 +59,18 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:name "Delay" ;
-        lv2:symbol "lv2_port_4" ;
+        lv2:symbol "delay" ;
         lv2:default 24 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
         lv2:name "Feedback" ;
-        lv2:symbol "lv2_port_5" ;
+        lv2:symbol "fb" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -79,56 +79,52 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
-        lv2:name "bw" ;
-        lv2:symbol "lv2_port_6" ;
+        lv2:name "bw (unused)" ;
+        lv2:symbol "unused_bw" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
-        lv2:maximum 1 ;
+        lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
-        lv2:name "E/R" ;
-        lv2:symbol "lv2_port_7" ;
+        lv2:name "E/R (unused)" ;
+        lv2:symbol "unused_er" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
-        lv2:maximum 1 ;
+        lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:name "Low-Pass Filter" ;
-        lv2:symbol "lv2_port_8" ;
+        lv2:symbol "lpf" ;
         lv2:default 85 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:name "High-Pass Filter" ;
-        lv2:symbol "lv2_port_9" ;
+        lv2:symbol "hpf" ;
         lv2:default 5 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:name "Damp" ;
-        lv2:symbol "lv2_port_10" ;
+        lv2:symbol "damp" ;
         lv2:default 83 ;
         lv2:minimum 64 ;
         lv2:maximum 127 ;
@@ -138,43 +134,50 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:name "Type" ;
-        lv2:symbol "lv2_port_11" ;
+        lv2:symbol "type" ;
         lv2:default 1 ;
         lv2:minimum 0 ;
         lv2:maximum 2 ;
-        lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty lv2:integer , lv2:enumeration ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
+        lv2:scalePoint [
+            rdfs:label "Random" ;
+            rdf:value 0 ;
+        ] , [
+            rdfs:label "Freeverb" ;
+            rdf:value 1 ;
+        ] , [
+            rdfs:label "Bandwidth" ;
+            rdf:value 2 ;
+        ] ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 13 ;
         lv2:name "Room size" ;
-        lv2:symbol "lv2_port_12" ;
+        lv2:symbol "size" ;
         lv2:default 64 ;
         lv2:minimum 1 ;
         lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 14 ;
         lv2:name "Bandwidth" ;
-        lv2:symbol "lv2_port_13" ;
+        lv2:symbol "bw" ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
         lv2:portProperty lv2:integer ;
-        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ,
-                         <http://kxstudio.sf.net/ns/lv2ext/props#NonAutomable> ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#expensive> ;
     ] ;
 
     mod:brand "ZynAddSubFX" ;
-    mod:label "Reverb" ;
+    mod:label "ZynReverb" ;
 
-    doap:name "Reverb" ;
+    doap:name "ZynReverb" ;
     doap:license "GPL v2" ;
 
     doap:maintainer [

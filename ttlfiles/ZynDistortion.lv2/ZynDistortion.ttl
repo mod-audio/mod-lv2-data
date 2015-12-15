@@ -2,12 +2,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
 <http://zynaddsubfx.sourceforge.net/fx#Distortion>
-    a lv2:Plugin ;
+    a lv2:DistortionPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
@@ -48,7 +49,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:name "L/R Cross" ;
-        lv2:symbol "lv2_port_3" ;
+        lv2:symbol "lrcross" ;
         lv2:default 35 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -58,7 +59,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:name "Drive" ;
-        lv2:symbol "lv2_port_4" ;
+        lv2:symbol "drive" ;
         lv2:default 56 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -68,7 +69,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
         lv2:name "Level" ;
-        lv2:symbol "lv2_port_5" ;
+        lv2:symbol "level" ;
         lv2:default 70 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -78,17 +79,60 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
         lv2:name "Type" ;
-        lv2:symbol "lv2_port_6" ;
+        lv2:symbol "type" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 13 ;
-        lv2:portProperty lv2:integer ;
+        lv2:portProperty lv2:integer , lv2:enumeration ;
+        lv2:scalePoint [
+            rdfs:label "Arctangent" ;
+            rdf:value 0 ;
+        ] , [
+            rdfs:label "Asymmetric" ;
+            rdf:value 1 ;
+        ] , [
+            rdfs:label "Pow" ;
+            rdf:value 2 ;
+        ] , [
+            rdfs:label "Sine" ;
+            rdf:value 3 ;
+        ] , [
+            rdfs:label "Quantisize" ;
+            rdf:value 4 ;
+        ] , [
+            rdfs:label "Zigzag" ;
+            rdf:value 5 ;
+        ] , [
+            rdfs:label "Limiter" ;
+            rdf:value 6 ;
+        ] , [
+            rdfs:label "Upper Limiter" ;
+            rdf:value 7 ;
+        ] , [
+            rdfs:label "Lower Limiter" ;
+            rdf:value 8 ;
+        ] , [
+            rdfs:label "Inverse Limiter" ;
+            rdf:value 9 ;
+        ] , [
+            rdfs:label "Clip" ;
+            rdf:value 10 ;
+        ] , [
+            rdfs:label "Asym2" ;
+            rdf:value 11 ;
+        ] , [
+            rdfs:label "Pow2" ;
+            rdf:value 12 ;
+        ] , [
+            rdfs:label "Sigmoid" ;
+            rdf:value 13 ;
+        ] ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
         lv2:name "Negate" ;
-        lv2:symbol "lv2_port_7" ;
+        lv2:symbol "negate" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -99,7 +143,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:name "Low-Pass Filter" ;
-        lv2:symbol "lv2_port_8" ;
+        lv2:symbol "lpf" ;
         lv2:default 96 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -109,7 +153,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:name "High-Pass Filter" ;
-        lv2:symbol "lv2_port_9" ;
+        lv2:symbol "hpf" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -119,7 +163,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:name "Stereo" ;
-        lv2:symbol "lv2_port_10" ;
+        lv2:symbol "stereo" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -130,7 +174,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:name "Pre-Filtering" ;
-        lv2:symbol "lv2_port_11" ;
+        lv2:symbol "pf" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -139,9 +183,9 @@
     ] ;
 
     mod:brand "ZynAddSubFX" ;
-    mod:label "Distortion" ;
+    mod:label "ZynDistortion" ;
 
-    doap:name "Distortion" ;
+    doap:name "ZynDistortion" ;
     doap:license "GPL v2" ;
 
     doap:maintainer [

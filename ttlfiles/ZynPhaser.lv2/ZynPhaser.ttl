@@ -2,12 +2,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
 <http://zynaddsubfx.sourceforge.net/fx#Phaser>
-    a lv2:Plugin ;
+    a lv2:PhaserPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
@@ -48,7 +49,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:name "LFO Frequency" ;
-        lv2:symbol "lv2_port_3" ;
+        lv2:symbol "lfofreq" ;
         lv2:default 36 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -58,7 +59,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:name "LFO Randomness" ;
-        lv2:symbol "lv2_port_4" ;
+        lv2:symbol "lforand" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -68,17 +69,24 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
         lv2:name "LFO Type" ;
-        lv2:symbol "lv2_port_5" ;
+        lv2:symbol "lfotype" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
-        lv2:portProperty lv2:integer ;
+        lv2:portProperty lv2:integer , lv2:enumeration ;
+        lv2:scalePoint [
+            rdfs:label "Sine" ;
+            rdf:value 0 ;
+        ] , [
+            rdfs:label "Triangle" ;
+            rdf:value 1 ;
+        ] ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
         lv2:name "LFO Stereo" ;
-        lv2:symbol "lv2_port_6" ;
+        lv2:symbol "lfostereo" ;
         lv2:default 64 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -88,7 +96,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
         lv2:name "Depth" ;
-        lv2:symbol "lv2_port_7" ;
+        lv2:symbol "depth" ;
         lv2:default 110 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -98,7 +106,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:name "Feedback" ;
-        lv2:symbol "lv2_port_8" ;
+        lv2:symbol "fb" ;
         lv2:default 64 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -108,7 +116,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:name "Stages" ;
-        lv2:symbol "lv2_port_9" ;
+        lv2:symbol "stages" ;
         lv2:default 1 ;
         lv2:minimum 1 ;
         lv2:maximum 12 ;
@@ -118,7 +126,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:name "L/R Cross|Offset" ;
-        lv2:symbol "lv2_port_10" ;
+        lv2:symbol "lrcross" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -128,7 +136,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:name "Subtract Output" ;
-        lv2:symbol "lv2_port_11" ;
+        lv2:symbol "subsout" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -139,7 +147,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 13 ;
         lv2:name "Phase|Width" ;
-        lv2:symbol "lv2_port_12" ;
+        lv2:symbol "phase" ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -149,7 +157,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 14 ;
         lv2:name "Hyper" ;
-        lv2:symbol "lv2_port_13" ;
+        lv2:symbol "hyper" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -160,7 +168,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 15 ;
         lv2:name "Distortion" ;
-        lv2:symbol "lv2_port_14" ;
+        lv2:symbol "dist" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 127 ;
@@ -170,7 +178,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 16 ;
         lv2:name "Analog" ;
-        lv2:symbol "lv2_port_15" ;
+        lv2:symbol "analog" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -179,9 +187,9 @@
     ] ;
 
     mod:brand "ZynAddSubFX" ;
-    mod:label "Phaser" ;
+    mod:label "ZynPhaser" ;
 
-    doap:name "Phaser" ;
+    doap:name "ZynPhaser" ;
     doap:license "GPL v2" ;
 
     doap:maintainer [

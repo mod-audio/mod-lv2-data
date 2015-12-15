@@ -2,7 +2,6 @@
 @prefix foaf:   <http://xmlns.com/foaf/0.1/>.
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#>.
 @prefix mod:    <http://moddevices.com/ns/mod#>.
-@prefix modgui: <http://moddevices.com/ns/modgui#>.
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>.
 

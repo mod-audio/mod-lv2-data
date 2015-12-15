@@ -3,6 +3,7 @@
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/BassEnhancer
+<http://calf.sourceforge.net/plugins/BassEnhancer>
     modgui:gui [
         modgui:resourcesDirectory <modgui/img/>;
         modgui:stylesheet <modgui/BassEnhancer/icon-calf-bassenhancer.css>;
@@ -15,6 +16,7 @@
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Compressor
+<http://calf.sourceforge.net/plugins/Compressor>
     modgui:gui [
         modgui:resourcesDirectory <modgui/img/>;
         modgui:stylesheet <modgui/Compressor/icon-calf-compressor.css>;
@@ -27,6 +29,7 @@
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Equalizer5Band
+<http://calf.sourceforge.net/plugins/Equalizer5Band>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
@@ -39,6 +42,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Exciter
+<http://calf.sourceforge.net/plugins/Exciter>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
@@ -51,6 +55,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Filter
+<http://calf.sourceforge.net/plugins/Filter>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Filter/icon-calf-filter.css>;
@@ -63,6 +68,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Filterclavier
+<http://calf.sourceforge.net/plugins/Filterclavier>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img>;
     modgui:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
@@ -75,6 +81,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Flanger
+<http://calf.sourceforge.net/plugins/Flanger>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img>;
     modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
@@ -87,6 +94,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Monosynth
+<http://calf.sourceforge.net/plugins/Monosynth>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img>;
     modgui:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
@@ -99,6 +107,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Phaser
+<http://calf.sourceforge.net/plugins/Phaser>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
@@ -111,6 +120,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Pulsator
+<http://calf.sourceforge.net/plugins/Pulsator>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
@@ -123,6 +133,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/Saturator
+<http://calf.sourceforge.net/plugins/Saturator>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
@@ -135,6 +146,7 @@ modgui:gui [
 
 ###############################################################################
 ## START http://calf.sourceforge.net/plugins/VintageDelay
+<http://calf.sourceforge.net/plugins/VintageDelay>
 modgui:gui [
     modgui:resourcesDirectory <modgui/img/>;
     modgui:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
