@@ -32,7 +32,7 @@
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 2 ;
+        lv2:index 8 ;
         lv2:name "morph" ;
         lv2:symbol "morph" ;
         lv2:default 50.000000 ;
@@ -52,7 +52,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 4 ;
+        lv2:index 6 ;
         lv2:name "rate" ;
         lv2:symbol "rate" ;
         lv2:default 2.000000 ;
@@ -62,7 +62,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 5 ;
+        lv2:index 2 ;
         lv2:name "time" ;
         lv2:symbol "time" ;
         lv2:default 500.000000 ;
@@ -72,7 +72,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 6 ;
+        lv2:index 7 ;
         lv2:name "mix" ;
         lv2:symbol "mix" ;
         lv2:default 100.000000 ;
@@ -82,7 +82,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 4 ;
         lv2:name "tone" ;
         lv2:symbol "tone" ;
         lv2:default 2500.000000 ;
@@ -92,7 +92,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 5 ;
         lv2:name "depth" ;
         lv2:symbol "depth" ;
         lv2:default 1.000000 ;
