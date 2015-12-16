@@ -7,192 +7,239 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <roomy/out_right> ;
-    ingen:head <playback_2> .
+    ingen:tail <reflector/output> ;
+    ingen:head <Scape/in> .
 
 _:b2
-    ingen:tail <CabinetIV/out> ;
-    ingen:head <roomy/in_right> .
-
-_:b3
-    ingen:tail <roomy/out_left> ;
+    ingen:tail <PlateX2/outl> ;
     ingen:head <playback_1> .
 
+_:b3
+    ingen:tail <PlateX2/outr> ;
+    ingen:head <playback_2> .
+
 _:b4
-    ingen:tail <CabinetIV/out> ;
-    ingen:head <roomy/in_left> .
+    ingen:tail <capture_1> ;
+    ingen:head <triple_chorus/in> .
 
 _:b5
-    ingen:tail <capture_1> ;
-    ingen:head <AmpVTS/in> .
+    ingen:tail <triple_chorus/out3> ;
+    ingen:head <reflector/input> .
 
 _:b6
-    ingen:tail <AmpVTS/out> ;
-    ingen:head <CabinetIV/in> .
+    ingen:tail <triple_chorus/out1> ;
+    ingen:head <PlateX2/inl> .
 
-<CabinetIV>
-    ingen:canvasX 1621.0 ;
-    ingen:canvasY 310.0 ;
+_:b7
+    ingen:tail <triple_chorus/out2> ;
+    ingen:head <PlateX2/inr> .
+
+_:b8
+    ingen:tail <Scape/outl> ;
+    ingen:head <PlateX2/inl> .
+
+_:b9
+    ingen:tail <Scape/outr> ;
+    ingen:head <PlateX2/inr> .
+
+<Scape>
+    ingen:canvasX 1409.8 ;
+    ingen:canvasY 596.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 24 ;
     lv2:minorVersion 24 ;
-    lv2:port <CabinetIV/in> ,
-             <CabinetIV/out> ,
-             <CabinetIV/model> ,
-             <CabinetIV/gain> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/CabinetIV> ;
+    lv2:port <Scape/in> ,
+             <Scape/outl> ,
+             <Scape/outr> ,
+             <Scape/bpm> ,
+             <Scape/divider> ,
+             <Scape/feedback> ,
+             <Scape/dry> ,
+             <Scape/blend> ,
+             <Scape/tune> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/Scape> ;
     a ingen:Block .
 
-<CabinetIV/in>
+<Scape/in>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<CabinetIV/in>
+<Scape/in>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<CabinetIV/model>
-    ingen:value 10.000000 ;
+<Scape/blend>
+    ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<CabinetIV/gain>
-    ingen:value 9.000000 ;
+<Scape/divider>
+    ingen:value 3.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS>
-    ingen:canvasX 311.0 ;
-    ingen:canvasY 306.5 ;
+<Scape/feedback>
+    ingen:value 0.750000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Scape/dry>
+    ingen:value 0.750000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Scape/tune>
+    ingen:value 440.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Scape/bpm>
+    ingen:value 100.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<reflector>
+    ingen:canvasX 863.3 ;
+    ingen:canvasY 592.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 2 ;
+    lv2:port <reflector/input> ,
+             <reflector/output> ,
+             <reflector/fragment> ,
+             <reflector/dry> ,
+             <reflector/wet> ;
+    lv2:prototype <http://moddevices.com/plugins/tap/reflector> ;
+    a ingen:Block .
+
+<reflector/input>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<reflector/input>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<reflector/fragment>
+    ingen:value 1000.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<reflector/wet>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<reflector/dry>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<PlateX2>
+    ingen:canvasX 1917.3 ;
+    ingen:canvasY 306.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 24 ;
     lv2:minorVersion 24 ;
-    lv2:port <AmpVTS/in> ,
-             <AmpVTS/out> ,
-             <AmpVTS/over> ,
-             <AmpVTS/gain> ,
-             <AmpVTS/bright> ,
-             <AmpVTS/power> ,
-             <AmpVTS/tonestack> ,
-             <AmpVTS/bass> ,
-             <AmpVTS/mid> ,
-             <AmpVTS/treble> ,
-             <AmpVTS/attack> ,
-             <AmpVTS/squash> ,
-             <AmpVTS/low_cut> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/AmpVTS> ;
+    lv2:port <PlateX2/inl> ,
+             <PlateX2/inr> ,
+             <PlateX2/outl> ,
+             <PlateX2/outr> ,
+             <PlateX2/bandwidth> ,
+             <PlateX2/tail> ,
+             <PlateX2/damping> ,
+             <PlateX2/blend> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/PlateX2> ;
     a ingen:Block .
 
-<AmpVTS/in>
+<PlateX2/inl>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<AmpVTS/in>
+<PlateX2/inr>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<PlateX2/inl>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<AmpVTS/power>
-    ingen:value 0.750000 ;
+<PlateX2/inr>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<PlateX2/tail>
+    ingen:value 0.625000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/gain>
-    ingen:value 0.250000 ;
+<PlateX2/bandwidth>
+    ingen:value 0.999500 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/treble>
-    ingen:value 0.500000 ;
+<PlateX2/damping>
+    ingen:value 0.000500 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/attack>
-    ingen:value 0.750000 ;
+<PlateX2/blend>
+    ingen:value 0.375000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/squash>
-    ingen:value 0.250000 ;
+<triple_chorus>
+    ingen:canvasX 388.4 ;
+    ingen:canvasY 308.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    lv2:port <triple_chorus/in> ,
+             <triple_chorus/out1> ,
+             <triple_chorus/out2> ,
+             <triple_chorus/out3> ,
+             <triple_chorus/delay> ,
+             <triple_chorus/mod_freq_1> ,
+             <triple_chorus/mod_amp_1> ,
+             <triple_chorus/mod_freq_2> ,
+             <triple_chorus/mod_amp_2> ;
+    lv2:prototype <http://drobilla.net/plugins/fomp/triple_chorus> ;
+    a ingen:Block .
+
+<triple_chorus/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<triple_chorus/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<triple_chorus/mod_freq_1>
+    ingen:value 0.100000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/tonestack>
+<triple_chorus/mod_freq_2>
+    ingen:value 0.550000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<triple_chorus/mod_amp_1>
     ingen:value 5.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/bass>
-    ingen:value 0.250000 ;
+<triple_chorus/delay>
+    ingen:value 22.500000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/mid>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/over>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/bright>
-    ingen:value 0.750000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/low_cut>
-    ingen:value 0.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<roomy>
-    ingen:canvasX 2221.3 ;
-    ingen:canvasY 296.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    lv2:port <roomy/in_left> ,
-             <roomy/in_right> ,
-             <roomy/out_left> ,
-             <roomy/out_right> ,
-             <roomy/time> ,
-             <roomy/damping> ,
-             <roomy/dry_wet> ;
-    lv2:prototype <http://www.openavproductions.com/artyfx#roomy> ;
-    a ingen:Block .
-
-<roomy/in_left>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<roomy/in_right>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<roomy/in_left>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<roomy/in_right>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<roomy/time>
-    ingen:value 0.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<roomy/damping>
-    ingen:value 0.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<roomy/dry_wet>
-    ingen:value 0.250000 ;
+<triple_chorus/mod_amp_2>
+    ingen:value 1.500000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -271,7 +318,7 @@ _:b6
         lv2:OutputPort .
 
 <>
-    doap:name "Guitar-AmpCabVerbStereo" ;
+    doap:name "Guitar-SoundscapeStereo" ;
     pedal:width 2880 ;
     pedal:height 1444 ;
     pedal:addressings <addressings.json> ;
@@ -283,10 +330,14 @@ _:b6
               _:b3 ,
               _:b4 ,
               _:b5 ,
-              _:b6 ;
-    ingen:block <CabinetIV> ,
-                <AmpVTS> ,
-                <roomy> ;
+              _:b6 ,
+              _:b7 ,
+              _:b8 ,
+              _:b9 ;
+    ingen:block <Scape> ,
+                <reflector> ,
+                <PlateX2> ,
+                <triple_chorus> ;
     lv2:port <control_in> ,
              <control_out> ,
              <serial_midi_in> ,
