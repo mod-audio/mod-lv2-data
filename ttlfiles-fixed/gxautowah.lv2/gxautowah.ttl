@@ -124,5 +124,4 @@ All other trademarks are the property of their respective holders.'
 <http://guitarix.sourceforge.net/plugins/gxautowah#gui>
   a guiext:GtkUI;
   guiext:binary <gxautowah_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
   
