@@ -16,7 +16,7 @@
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (mono in)" ;
     mod:brand "Invada" ;
-    mod:label "Stereo Phaser M" ;
+    mod:label "SPhaser Mono" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
@@ -44,7 +44,7 @@ Phaser wich can go very gradually
 	lv2:minimum 0.5 ;
 	lv2:maximum 500.0 ;
 	units:unit units:s ;
-        lv2:portProperty pprops:logarithmic ;
+      lv2:portProperty pprops:logarithmic ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
@@ -167,7 +167,7 @@ Phaser wich can go very gradually
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (stereo in)" ;
     mod:brand "Invada" ;
-    mod:label "Stereo Phaser St" ;
+    mod:label "SPhaser Stereo" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
@@ -336,7 +336,7 @@ Phaser wich can go very gradually
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (sum L+R in)" ;
     mod:brand "Invada" ;
-    mod:label "Stereo Phaser LR" ;
+    mod:label "SPhaser sum" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
@@ -365,6 +365,7 @@ Phaser wich can go very gradually
 	lv2:minimum 0.5 ;
 	lv2:maximum 500.0 ;
 	units:unit units:s ;
+        lv2:portProperty pprops:logarithmic ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
