@@ -23,9 +23,4 @@
 <http://guitarix.sourceforge.net/plugins/gxautowah#autowah>
     a lv2:Plugin ;
     lv2:binary <gxautowah.so>  ;
-    rdfs:seeAlso <gxautowah.ttl> , <modguis.ttl> .
-
-<http://guitarix.sourceforge.net/plugins/gxautowah#wah>
-    a lv2:Plugin ;
-    lv2:binary <gxautowah.so>  ;
-    rdfs:seeAlso <gxautowah.ttl> , <modguis.ttl> .
+    rdfs:seeAlso <gxautowah.ttl> , <modgui.ttl> .
