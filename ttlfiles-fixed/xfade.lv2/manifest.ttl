@@ -5,4 +5,4 @@
 <http://gareus.org/oss/lv2/xfade>
 	a lv2:Plugin ;
 	lv2:binary <xfade.so>  ;
-	rdfs:seeAlso <xfade.ttl> .
+	rdfs:seeAlso <xfade.ttl>, <modgui.ttl> .

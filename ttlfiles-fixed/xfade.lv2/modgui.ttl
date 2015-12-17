@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://gareus.org/oss/lv2/xfade>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-stereo-dj-x-fade.html> ;
+        modgui:stylesheet <modgui/stylesheet-stereo-dj-x-fade.css> ;
+        modgui:screenshot <modgui/screenshot-stereo-dj-x-fade.png> ;
+        modgui:thumbnail <modgui/thumbnail-stereo-dj-x-fade.png> ;
+        modgui:brand "Robin" ;
+        modgui:label "Stereo DJ X-Fade" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "xfade" ;
+            lv2:name "Signal A/B" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "shape" ;
+            lv2:name "Shape" ;
+        ] ;
+    ] .
