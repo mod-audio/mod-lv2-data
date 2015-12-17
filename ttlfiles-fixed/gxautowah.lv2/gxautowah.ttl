@@ -28,7 +28,7 @@
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
-	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:mbox <mailto:brummer@web.de> 
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gxautowah>
@@ -123,5 +123,5 @@ All other trademarks are the property of their respective holders.'
 
 <http://guitarix.sourceforge.net/plugins/gxautowah#gui>
   a guiext:GtkUI;
-  guiext:binary <gxautowah_gui.so>;
+  guiext:binary <gxautowah_gui.so>.
   

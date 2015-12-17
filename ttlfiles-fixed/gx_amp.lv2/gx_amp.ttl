@@ -280,7 +280,7 @@ https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=Cabinet_Impulse_
         lv2:symbol "SCHEDULE" ;
         lv2:name "SCHEDULE";
         lv2:portProperty lv2:integer;
-        lv2:portProperty lv2:notOnGUI;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI>;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -302,7 +302,6 @@ https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=Cabinet_Impulse_
 <http://guitarix.sourceforge.net/plugins/gx_amp#gui>
   a guiext:GtkUI;
   guiext:binary <gx_amp_gui.so>;
-  guiext:requiredFeature guiext:makeResident;
   lv2:extensionData work:interface ;
   guiext:portNotification [
         guiext:plugin <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX>;
