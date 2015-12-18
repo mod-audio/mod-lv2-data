@@ -3,7 +3,7 @@
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 @prefix bwhirl:       <http://gareus.org/oss/lv2/b_whirl#> .
 
-bwhirl:simple
+bwhirl:extended
 	a lv2:Plugin ;
 	lv2:binary <b_whirl.so>  ;
-	rdfs:seeAlso <b_whirl.ttl> , <modgui.ttl> .
+	rdfs:seeAlso <b_whirl-configurable.ttl> , <modgui.ttl> .
