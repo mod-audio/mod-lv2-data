@@ -152,7 +152,7 @@
             lv2:name "Rate" ;
         ] ;
     ] .
-    
+
 ## END http://invadarecords.com/plugins/lv2/delay/mono
 ###############################################################################
 
@@ -493,9 +493,9 @@
         modgui:screenshot <modgui/screenshot-invada-stereo-phaser-mono-in.png> ;
         modgui:thumbnail <modgui/thumbnail-invada-stereo-phaser-mono-in.png> ;
         modgui:brand "Invada" ;
-        modgui:label "Stereo Phaser" ;
+        modgui:label "SPhaser Mono" ;
         modgui:model "japanese" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "green" ;
         modgui:knob "green" ;
         modgui:port [
@@ -514,10 +514,6 @@
             lv2:index 3 ;
             lv2:symbol "width" ;
             lv2:name "Width" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "noClip" ;
-            lv2:name "Soft Clip" ;
         ] ;
     ] .
 
@@ -535,9 +531,9 @@
         modgui:screenshot <modgui/screenshot-invada-stereo-phaser-stereo-in.png> ;
         modgui:thumbnail <modgui/thumbnail-invada-stereo-phaser-stereo-in.png> ;
         modgui:brand "Invada" ;
-        modgui:label "Stereo Phaser" ;
+        modgui:label "SPhaser Stereo" ;
         modgui:model "japanese" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "green" ;
         modgui:knob "green" ;
         modgui:port [
@@ -556,13 +552,8 @@
             lv2:index 3 ;
             lv2:symbol "width" ;
             lv2:name "Width" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "noClip" ;
-            lv2:name "Soft Clip" ;
         ] ;
     ] .
-
 ## END http://invadarecords.com/plugins/lv2/phaser/stereo
 ###############################################################################
 
@@ -577,9 +568,9 @@
         modgui:screenshot <modgui/screenshot-invada-stereo-phaser-sum-lr-in.png> ;
         modgui:thumbnail <modgui/thumbnail-invada-stereo-phaser-sum-lr-in.png> ;
         modgui:brand "Invada" ;
-        modgui:label "Stereo Phaser" ;
+        modgui:label "SPhaser Sum" ;
         modgui:model "japanese" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "green" ;
         modgui:knob "green" ;
         modgui:port [
@@ -598,10 +589,6 @@
             lv2:index 3 ;
             lv2:symbol "width" ;
             lv2:name "Width" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "noClip" ;
-            lv2:name "Soft Clip" ;
         ] ;
     ] .
 
