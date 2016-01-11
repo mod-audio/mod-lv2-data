@@ -24,6 +24,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
@@ -208,6 +209,7 @@ band
         lv2:default 8e+01 ;
         lv2:minimum 2e+01 ;
         lv2:maximum 2e+04 ;
+			  						lv2:portProperty pprops:logarithmic ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -217,6 +219,7 @@ band
         lv2:default 2.1e+02 ;
         lv2:minimum 2e+01 ;
         lv2:maximum 2e+04 ;
+			 						  lv2:portProperty pprops:logarithmic ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -226,6 +229,7 @@ band
         lv2:default 1.7e+03 ;
         lv2:minimum 2e+01 ;
         lv2:maximum 2e+04 ;
+										lv2:portProperty pprops:logarithmic ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -235,6 +239,7 @@ band
         lv2:default 5e+03 ;
         lv2:minimum 2e+01 ;
         lv2:maximum 2e+04 ;
+										lv2:portProperty pprops:logarithmic ;
     ] , [
         a  lv2:ControlPort, lv2:OutputPort ;
         lv2:index 19 ;
