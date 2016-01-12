@@ -12,8 +12,8 @@
         modgui:label "FuzzFaceFuller" ;
         modgui:model "boxy" ;
         modgui:panel "6-knobs" ;
-        modgui:color "warning" ;
-        modgui:knob "copper" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "LEVEL" ;

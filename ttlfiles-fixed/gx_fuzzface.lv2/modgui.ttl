@@ -12,15 +12,15 @@
         modgui:label "FuzzFace JH2" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
-        modgui:color "warning" ;
+        modgui:color "red" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "FUZZ" ;
-            lv2:name "FUZZ" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "LEVEL" ;
             lv2:name "LEVEL" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "FUZZ" ;
+            lv2:name "FUZZ" ;
         ] ;
     ] .
