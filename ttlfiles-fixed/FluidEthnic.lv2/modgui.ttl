@@ -9,10 +9,10 @@
         modgui:screenshot <modgui/screenshot-fluid-ethnic-percussion.png> ;
         modgui:thumbnail <modgui/thumbnail-fluid-ethnic-percussion.png> ;
         modgui:brand "FluidGM" ;
-        modgui:label "Ethnic Percussion" ;
+        modgui:label "Ethnic" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-1-knob" ;
-        modgui:color "tribal2" ;
+        modgui:color "flowerpower" ;
         modgui:knob "steel" ;
         modgui:port [
             lv2:index 0 ;
@@ -21,6 +21,6 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "gain" ;
-            lv2:name "Gain" ;
+            lv2:name "Level" ;
         ] ;
     ] .
