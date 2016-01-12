@@ -23,7 +23,7 @@
         ] , [
             lv2:index 2 ;
             lv2:symbol "Distortion" ;
-            lv2:name "Mix" ;
+            lv2:name "Distortion" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "MasterGain" ;
