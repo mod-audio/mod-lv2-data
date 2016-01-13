@@ -1,6 +1,5 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
-@prefix ui:     <http://lv2plug.in/ns/extensions/ui#> .
 
 <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX>
     modgui:gui [
@@ -10,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxamplifier-x.png> ;
         modgui:thumbnail <modgui/thumbnail-gxamplifier-x.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Gx Amp X" ;
+        modgui:label "Amp X" ;
         modgui:model "rack" ;
         modgui:panel "model-001" ;
         modgui:port [
@@ -24,7 +23,7 @@
         ] , [
             lv2:index 2 ;
             lv2:symbol "Distortion" ;
-            lv2:name "Mix" ;
+            lv2:name "Distortion" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "MasterGain" ;
