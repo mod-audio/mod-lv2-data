@@ -4,6 +4,7 @@
 ###############################################################################
 ## START http://invadarecords.com/plugins/lv2/compressor/mono
 
+
 <http://invadarecords.com/plugins/lv2/compressor/mono>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
@@ -39,15 +40,10 @@
             lv2:name "Release" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "noClip" ;
-            lv2:name "Soft Clip" ;
-        ] , [
-            lv2:index 6 ;
             lv2:symbol "gain" ;
             lv2:name "Makeup" ;
         ] ;
     ] .
-
 ## END http://invadarecords.com/plugins/lv2/compressor/mono
 ###############################################################################
 
@@ -89,10 +85,6 @@
             lv2:name "Release" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "noClip" ;
-            lv2:name "Soft Clip" ;
-        ] , [
-            lv2:index 6 ;
             lv2:symbol "gain" ;
             lv2:name "Makeup" ;
         ] ;
@@ -689,14 +681,10 @@
             lv2:name "DC Offset" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "phase" ;
-            lv2:name "Phase" ;
-        ] , [
-            lv2:index 3 ;
             lv2:symbol "mix" ;
             lv2:name "Mix" ;
         ] ;
     ] .
-
+    
 ## END http://invadarecords.com/plugins/lv2/tube/stereo
 ###############################################################################
