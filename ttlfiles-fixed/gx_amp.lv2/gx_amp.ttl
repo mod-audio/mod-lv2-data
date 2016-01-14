@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -36,6 +36,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://www.guitarix.org/>
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_amp>
@@ -72,7 +73,7 @@ At the Tonestack part, we find a basic equalization set ("Bass", "Middle", "Treb
 
 Finally, at the Cabinet path, we have "Cabinet", which corresponds to another output gain, it doesn't distort the signal so it can be used as a Master output and there's another list, containing a virtual sound of the cabinet of speakers selected (more details in the link below).
 
-Based on: 
+Based on:
 https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=EnhancedUI
 https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=Tonestack
 https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=Cabinet_Impulse_Response_convolution
@@ -281,9 +282,9 @@ https://sourceforge.net/apps/mediawiki/guitarix/index.php?title=Cabinet_Impulse_
         lv2:name "SCHEDULE";
         lv2:portProperty lv2:integer;
         lv2:portProperty <http://lv2plug.in/ns/ext/port-props#notOnGUI>;
-        lv2:default 1.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 1 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
