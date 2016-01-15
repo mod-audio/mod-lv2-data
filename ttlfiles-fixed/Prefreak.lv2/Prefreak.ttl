@@ -22,24 +22,25 @@ a doap:Project ;
       foaf:mbox <mailto:ploplolma@gmail.com>;
   ] .
 
+
 <http://faust-lv2.googlecode.com/Prefreak>
-      a lv2:Plugin ,
-        lv2:ReverbPlugin ;
+       a lv2:Plugin ,
+         lv2:ReverbPlugin ;
        doap:name "Prefreak" ;
        lv2:binary <Prefreak.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
        mod:brand "Freaked" ;
        lv2:minorVersion 0;
        lv2:microVersion 1;
-       doap:license "nolicense" ;
-     rdfs:comment "A blurry pre-delay; can be used in combination with Prefreak to complete the reverb";
+       doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+       rdfs:comment "A blurry pre-delay; can be used in combination with Prefreak to complete the reverb";
 
     lv2:port [
 	a lv2:ControlPort ;
 	a lv2:InputPort ;
 	lv2:index 0 ;
-	lv2:symbol "Pre_DelTime_s" ;
-	lv2:name "Pre-DelTime's" ;
+	lv2:symbol "Blur" ;
+	lv2:name "Blur" ;
 	lv2:default 0.6 ;
 	lv2:minimum 0.0 ;
 	lv2:maximum 15.0 ;
@@ -47,11 +48,11 @@ a doap:Project ;
 	a lv2:ControlPort ;
 	a lv2:InputPort ;
 	lv2:index 1 ;
-	lv2:symbol "PreGain" ;
-	lv2:name "PreGain" ;
-	lv2:default 1.0 ;
-	lv2:minimum 1.0 ;
-	lv2:maximum 998.0 ;
+	lv2:symbol "Level" ;
+	lv2:name "Level" ;
+	lv2:default 0.2 ;
+	lv2:minimum 0.0 ;
+	lv2:maximum 1.5 ;
     ] , [
 	a lv2:AudioPort ;
 	a lv2:InputPort ;

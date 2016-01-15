@@ -16,11 +16,11 @@
         modgui:knob "blue" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "Pre_DelTime_s" ;
-            lv2:name "Blurtime" ;
+            lv2:symbol "Blur" ;
+            lv2:name "Blur" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "PreGain" ;
-            lv2:name "Gain" ;
+            lv2:symbol "Level" ;
+            lv2:name "Level" ;
         ] ;
     ] .

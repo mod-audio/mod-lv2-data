@@ -11,7 +11,7 @@
         modgui:brand "Freaked" ;
         modgui:label "Freaktail" ;
         modgui:model "boxy" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "3-knobs" ;
         modgui:color "slime" ;
         modgui:knob "blue" ;
         modgui:port [
@@ -24,11 +24,7 @@
             lv2:name "Decay" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "Gain" ;
-            lv2:name "Gain" ;
-        ] , [
-            lv2:index 3 ;
-            lv2:symbol "Drive" ;
-            lv2:name "Drive" ;
+            lv2:symbol "Tail_level" ;
+            lv2:name "Level" ;
         ] ;
     ] .

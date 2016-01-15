@@ -11,16 +11,20 @@
         modgui:brand "Freaked" ;
         modgui:label "Freakclip" ;
         modgui:model "boxy" ;
-        modgui:panel "2-knobs" ;
+        modgui:panel "3-knobs" ;
         modgui:color "tribal2" ;
         modgui:knob "aluminium" ;
         modgui:port [
             lv2:index 0 ;
+            lv2:symbol "Drive" ;
+            lv2:name "Drive" ;
+        ] , [
+            lv2:index 1 ;
             lv2:symbol "Delay" ;
             lv2:name "Delay" ;
         ] , [
-            lv2:index 1 ;
-            lv2:symbol "Drive" ;
-            lv2:name "Drive" ;
+            lv2:index 2 ;
+            lv2:symbol "Clip" ;
+            lv2:name "Clip" ;
         ] ;
     ] .
