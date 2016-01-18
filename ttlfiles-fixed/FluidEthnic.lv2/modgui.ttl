@@ -4,10 +4,10 @@
 <http://kxstudio.linuxaudio.org/plugins/FluidPlug_FluidEthnic>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-fluid-ethnic-percussion.html> ;
-        modgui:stylesheet <modgui/stylesheet-fluid-ethnic-percussion.css> ;
-        modgui:screenshot <modgui/screenshot-fluid-ethnic-percussion.png> ;
-        modgui:thumbnail <modgui/thumbnail-fluid-ethnic-percussion.png> ;
+        modgui:iconTemplate <modgui/icon-fluid-ethnic.html> ;
+        modgui:stylesheet <modgui/stylesheet-fluid-ethnic.css> ;
+        modgui:screenshot <modgui/screenshot-fluid-ethnic.png> ;
+        modgui:thumbnail <modgui/thumbnail-fluid-ethnic.png> ;
         modgui:brand "FluidGM" ;
         modgui:label "Ethnic" ;
         modgui:model "boxy" ;
