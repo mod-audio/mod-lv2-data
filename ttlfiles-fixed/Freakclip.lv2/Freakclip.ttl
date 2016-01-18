@@ -57,8 +57,8 @@ a doap:Project ;
 	lv2:index 2 ;
 	lv2:symbol "Drive" ;
 	lv2:name "Drive" ;
-	lv2:default 1 ;
-	lv2:minimum 1 ;
+	lv2:default 1.0 ;
+	lv2:minimum 1.0 ;
 	lv2:maximum 9.9 ;
     ] , [
 	a lv2:AudioPort ;
