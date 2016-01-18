@@ -133,8 +133,8 @@ Shiroverb is a shimmer-reverb based on the "Gigaverb"-genpatch, ported from the 
     doap:license "ISC" ;
 
     doap:maintainer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://github.com/DISTRHO/DPF-Max-Gen> ;
+        foaf:name "SHIRO" ;
+        foaf:homepage <https://github.com/ninodewit> ;
     ] ;
 
     lv2:microVersion 1 ;

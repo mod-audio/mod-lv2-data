@@ -116,8 +116,8 @@ Modulay is a delay with variable types of modulation based on the setting of the
     doap:license "ISC" ;
 
     doap:maintainer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://github.com/DISTRHO/DPF-Max-Gen> ;
+        foaf:name "SHIRO" ;
+        foaf:homepage <https://github.com/ninodewit> ;
     ] ;
 
     lv2:microVersion 1 ;
