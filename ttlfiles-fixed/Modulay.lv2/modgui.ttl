@@ -11,7 +11,7 @@
         modgui:brand "SHIRO" ;
         modgui:label "Modulay" ;
         modgui:model "boxy" ;
-        modgui:panel "7-knobs" ;
+        modgui:panel "6-knobs" ;
         modgui:color "racing" ;
         modgui:knob "black" ;
         modgui:port [
@@ -28,18 +28,14 @@
             lv2:name "tone" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "mix" ;
-            lv2:name "mix" ;
-        ] , [
-            lv2:index 4 ;
             lv2:symbol "depth" ;
             lv2:name "depth" ;
         ] , [
-            lv2:index 5 ;
+            lv2:index 4 ;
             lv2:symbol "rate" ;
             lv2:name "rate" ;
         ] , [
-            lv2:index 6 ;
+            lv2:index 5 ;
             lv2:symbol "morph" ;
             lv2:name "morph" ;
         ] ;
