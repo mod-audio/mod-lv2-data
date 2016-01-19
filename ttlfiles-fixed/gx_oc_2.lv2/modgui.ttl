@@ -10,21 +10,21 @@
         modgui:thumbnail <modgui/thumbnail-gxoc2.png> ;
         modgui:brand "Guitarix" ;
         modgui:label "OC-2" ;
-        modgui:model "boxy" ;
-        modgui:panel "3-knobs" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
         modgui:color "brown" ;
-        modgui:knob "silver" ;
+        modgui:knob "white" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "OCTAVE1" ;
-            lv2:name "OCTAVE1" ;
+            lv2:symbol "OCTAVE2" ;
+            lv2:name "OCT2" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "OCTAVE2" ;
-            lv2:name "OCTAVE2" ;
+            lv2:symbol "DIRECT" ;
+            lv2:name "DIRECT" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "DIRECT" ;
-            lv2:name "DRY" ;
+            lv2:symbol "OCTAVE1" ;
+            lv2:name "OCT1" ;
         ] ;
     ] .

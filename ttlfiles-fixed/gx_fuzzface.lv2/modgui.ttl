@@ -9,15 +9,15 @@
         modgui:screenshot <modgui/screenshot-gxfuzzfacejh2.png> ;
         modgui:thumbnail <modgui/thumbnail-gxfuzzfacejh2.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "FuzzFace JH2" ;
+        modgui:label "Fuzz Face JH-2" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
-        modgui:color "red" ;
+        modgui:color "black" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "LEVEL" ;
-            lv2:name "LEVEL" ;
+            lv2:name "Volume" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "FUZZ" ;
