@@ -37,7 +37,7 @@ a doap:Project ;
 	lv2:index 0 ;
 	lv2:symbol "Decay" ;
 	lv2:name "Decay" ;
-	lv2:default 0.81 ;
+	lv2:default 0.94 ;
 	lv2:minimum 0.1 ;
 	lv2:maximum 1.0 ;
     ] , [
@@ -46,7 +46,7 @@ a doap:Project ;
 	lv2:index 1 ;
 	lv2:symbol "Roomsize" ;
 	lv2:name "Roomsize" ;
-	lv2:default 0.8 ;
+	lv2:default 0.79 ;
 	lv2:minimum 0.01 ;
 	lv2:maximum 5.0 ;
     ] , [
@@ -55,7 +55,7 @@ a doap:Project ;
 	lv2:index 2 ;
 	lv2:symbol "Tail_level" ;
 	lv2:name "Tail level" ;
-	lv2:default 0.81 ;
+	lv2:default 0.24 ;
 	lv2:minimum 0.1 ;
 	lv2:maximum 1.0 ;
     ] , [
