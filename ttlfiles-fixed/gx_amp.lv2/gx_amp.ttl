@@ -56,7 +56,7 @@
         bufsz:boundedBlockLength ,
         work:schedule ;
     mod:brand "Guitarix" ;
-    mod:label "Gx Amp X" ;
+    mod:label "GxAmplifier-X" ;
     bufsz:minBlockLength 64 ;
     bufsz:maxBlockLength 8192 ;
     lv2:extensionData work:interface ;

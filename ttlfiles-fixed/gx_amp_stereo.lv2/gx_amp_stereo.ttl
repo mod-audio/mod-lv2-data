@@ -59,7 +59,7 @@
     bufsz:maxBlockLength 8192 ;
     lv2:extensionData work:interface ;
 		mod:brand "Guitarix" ;
-		mod:label "Gx Amp X" ;
+		mod:label "GxAmplifier-Stereo-X" ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_amp_stereo#gui>;
 
