@@ -54,7 +54,7 @@
     lv2:microVersion 3;
 
 		mod:brand "Guitarix";
-		mod:label "Color Tonebender"
+		mod:label "GxCsTonebender"
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_cstb_gui#_cstb_>;
 
 rdfs:comment """

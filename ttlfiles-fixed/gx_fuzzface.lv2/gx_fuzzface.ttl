@@ -44,7 +44,7 @@
     a lv2:Plugin ,
         lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "GxFuzzFaceJH2";
+    doap:name "GxFuzzFaceJH-2";
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_fuzzface_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -55,7 +55,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzzface_gui#_fuzzface_>;
      mod:brand "Guitarix" ;
 rdfs:comment """
-Analog distortion emulation of the classic Dunlop Fuzz Face (*)
+Analog distortion emulation of the classic Dunlop Fuzz Face JH-2 (*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
 Dunlop Fuzz Face is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.

@@ -58,10 +58,13 @@
 		mod:brand "Guitarix";
 
 rdfs:comment """
+Based on simple Alembic F-2B studio preamp (*)
+2 sections of 12AX7 together with tonestack and volume
+This is an identical circuit apart from coupling caps which could do with filters
 
-Based on simple Alembic F-2B vstudio preamp
-2 sectionos of 12AX7 together with tonestack and volume
-This is an identical circuit apart from coupling caps whcih could do with filters
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Alembic F-2B is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
 
 *Unofficial documentation
 

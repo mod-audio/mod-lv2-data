@@ -8,8 +8,8 @@
         modgui:stylesheet <modgui/stylesheet-stereo-dj-x-fade.css> ;
         modgui:screenshot <modgui/screenshot-stereo-dj-x-fade.png> ;
         modgui:thumbnail <modgui/thumbnail-stereo-dj-x-fade.png> ;
-        modgui:brand "Robin" ;
-        modgui:label "Stereo DJ X-Fade" ;
+        modgui:brand "x42" ;
+        modgui:label "Stereo X-Fade" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-2-knobs" ;
         modgui:color "black" ;
