@@ -67,10 +67,10 @@
 		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:enumeration;
 		lv2:scalePoint [
-			rdfs:label "X-fade: Overlapping Cross Fade: [-1..+1]" ;
+			rdfs:label "X-fade: Overlap [-1..+1]" ;
 			rdf:value 0 ;
 		] , [
-			rdfs:label "V-fade: Non-overlapping Fade [-1..0], [0..1]" ;
+			rdfs:label "V-fade: Non-overlap [-1..0][0..1]" ;
 			rdf:value 1 ;
 		]
 	] , [
