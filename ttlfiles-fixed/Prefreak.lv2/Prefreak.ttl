@@ -6,6 +6,7 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://faust-lv2.googlecode.com/Prefreak>
@@ -42,7 +43,7 @@ a doap:Project ;
 	lv2:symbol "Blur" ;
 	lv2:name "Blur" ;
 	lv2:default 1.64 ;
-	lv2:minimum 0.0 ;
+	lv2:minimum 0.001 ;
 	lv2:maximum 15.0 ;
   lv2:portProperty pprops:logarithmic ;
     ] , [
