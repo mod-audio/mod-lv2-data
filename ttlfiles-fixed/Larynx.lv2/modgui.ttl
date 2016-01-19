@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://distrho.sf.net/plugins/Larynx>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-larynx.html> ;
+        modgui:stylesheet <modgui/stylesheet-larynx.css> ;
+        modgui:screenshot <modgui/screenshot-larynx.png> ;
+        modgui:thumbnail <modgui/thumbnail-larynx.png> ;
+        modgui:brand "SHIRO" ;
+        modgui:label "Larynx" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "depth" ;
+            lv2:name "depth" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "rate" ;
+            lv2:name "rate" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "tone" ;
+            lv2:name "tone" ;
+        ] ;
+    ] .

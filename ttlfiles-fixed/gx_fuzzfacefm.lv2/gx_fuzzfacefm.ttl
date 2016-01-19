@@ -55,8 +55,14 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzzfacefm_gui#_fuzzfacefm_>;
     mod:brand "Guitarix";
 rdfs:comment """
+Analog distortion emulation of the classic Dunlop Fuzz Face (Fuller Mods) (*)
 
-A fuzz effect
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Dunlop Fuzz Face is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
+
+*Unofficial documentation
+
 """;
 
     lv2:port  [

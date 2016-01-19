@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxfuzzfacefuller.png> ;
         modgui:thumbnail <modgui/thumbnail-gxfuzzfacefuller.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "FuzzFaceFuller" ;
+        modgui:label "Fuzz Face FM" ;
         modgui:model "boxy" ;
         modgui:panel "6-knobs" ;
         modgui:color "red" ;
@@ -17,7 +17,7 @@
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "LEVEL" ;
-            lv2:name "LEVEL" ;
+            lv2:name "Volume" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "FUZZ" ;

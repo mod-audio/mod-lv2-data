@@ -9,11 +9,11 @@
         modgui:screenshot <modgui/screenshot-gxcolorsound-tonebender.png> ;
         modgui:thumbnail <modgui/thumbnail-gxcolorsound-tonebender.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "ColorSound Tonebender" ;
+        modgui:label "Colorsound Tonebender" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
-        modgui:color "flowerpower" ;
-        modgui:knob "black" ;
+        modgui:color "zinc" ;
+        modgui:knob "bronze" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "ATTACK" ;

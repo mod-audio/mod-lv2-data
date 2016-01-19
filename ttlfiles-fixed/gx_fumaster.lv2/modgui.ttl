@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxfuzzmaster.png> ;
         modgui:thumbnail <modgui/thumbnail-gxfuzzmaster.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "FuzzMaster" ;
+        modgui:label "Fuzz Master" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
         modgui:color "black" ;

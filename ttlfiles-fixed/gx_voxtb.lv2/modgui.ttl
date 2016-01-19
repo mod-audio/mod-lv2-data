@@ -9,10 +9,10 @@
         modgui:screenshot <modgui/screenshot-gxvox-tonebender.png> ;
         modgui:thumbnail <modgui/thumbnail-gxvox-tonebender.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "Vox Tonebender" ;
+        modgui:label "Vox Tone Bender" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
-        modgui:color "orange" ;
+        modgui:color "zinc" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
