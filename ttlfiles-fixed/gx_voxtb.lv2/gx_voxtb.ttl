@@ -53,7 +53,7 @@
     lv2:microVersion 3;
 
     mod:brand "Guitarix" ;
-    mod:label "GxVox Tonebender" ;
+    mod:label "GxVoxTonebender" ;
 
 rdfs:comment """
 Analog distortion emulation of the classic Vox Tone Bender (*)
