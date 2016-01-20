@@ -64,7 +64,7 @@ mda:JX10
 	pg:mainInput mda:mainIn ;
 	pg:mainOutput mda:mainOut ;
 	rdfs:comment """
-  A very nice polyphone synthesizer. This one has a lot of options to modulate the filter, with envelope and/or lfo.
+  A polyphonic synthesizer with a lot of options to modulate the filter, with envelope and/or lfo.
   When Vibrato is set to PWM, the two oscillators are phase-locked and will produce a square wave if set to the same pitch. Pitch modulation of one oscillator then causes Pulse Width Modulation. (pitch modulation of both oscillators for vibrato is still available from the modulation wheel). Unlike other synths, in PWM mode the oscillators can still be detuned to give a wider range of PWM effects.
     """ ;
 	lv2:minorVersion 0;
