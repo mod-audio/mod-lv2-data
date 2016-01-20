@@ -12,8 +12,8 @@
         modgui:label "Hornet" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
-        modgui:color "lava" ;
-        modgui:knob "petrol" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "VOLUME" ;

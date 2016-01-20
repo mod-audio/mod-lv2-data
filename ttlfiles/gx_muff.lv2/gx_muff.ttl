@@ -40,7 +40,7 @@
 
 <http://guitarix.sourceforge.net/plugins/gx_muff_#_muff_>
     a lv2:Plugin ,
-        lv2:EQPlugin ;
+        lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxMuff";
     doap:license <http://opensource.org/licenses/isc> ;
@@ -53,8 +53,13 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_muff_gui#_muff_>;
     
 rdfs:comment """
+Analog distortion emulation of the Electro-Harmonix Muff (*)
 
-...
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Electro-Harmonix Muff is a trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
+
+*Unofficial documentation
 
 """;
 

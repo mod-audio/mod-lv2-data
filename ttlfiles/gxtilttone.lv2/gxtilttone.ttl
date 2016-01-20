@@ -51,9 +51,9 @@
     lv2:microVersion 3;
     
 rdfs:comment """
-Simple Tilt tone control
+A simple Tilt Tone control (*)
 
-The tilt control imposes a shelving function, which attenuates half of frequency band and augments the other half. In other words, it is special type of a tone control that, unlike the typical tone control that boosts or cuts just the highs or mids or lows, shifts both highs and lows at once. 
+(*) The Tilt control imposes a shelving function, which attenuates half of frequency band and augments the other half. In other words, it is special type of a tone control that, unlike the typical tone control that boosts or cuts just the highs or mids or lows, shifts both highs and lows at once. 
 
 *Unofficial documentation
 

@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxrangemaster.png> ;
         modgui:thumbnail <modgui/thumbnail-gxrangemaster.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "RangeMaster" ;
+        modgui:label "Rangemaster" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "gray" ;

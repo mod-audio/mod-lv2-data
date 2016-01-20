@@ -36,11 +36,11 @@
 <http://guitarix.sourceforge.net/plugins/gx_hfb_>
 	a doap:Project ;
 	doap:maintainer <http://guitarix.sourceforge.net#me> ;
-	doap:name "Gx_hfb_" .
+	doap:name "GxHighFrequencyBrightener" .
 
 <http://guitarix.sourceforge.net/plugins/gx_hfb_#_hfb_>
     a lv2:Plugin ,
-        lv2:EQPlugin ;
+        lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxHF_Brightener";
     doap:license <http://opensource.org/licenses/isc> ;
@@ -53,8 +53,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_hfb_gui#_hfb_>;
     
 rdfs:comment """
-
-...
+A High Frequency Brightener
 
 """;
 

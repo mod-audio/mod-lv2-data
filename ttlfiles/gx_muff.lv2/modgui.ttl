@@ -16,11 +16,11 @@
         modgui:knob "copper" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "TONE" ;
-            lv2:name "TONE" ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "BOOST" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "VOLUME" ;
-            lv2:name "Level" ;
+            lv2:symbol "TONE" ;
+            lv2:name "TONE" ;
         ] ;
     ] .

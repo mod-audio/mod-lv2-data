@@ -40,7 +40,7 @@
 
 <http://guitarix.sourceforge.net/plugins/gx_mole_#_mole_>
     a lv2:Plugin ,
-        lv2:FilterPlugin ;
+        lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxMole";
     doap:license <http://opensource.org/licenses/isc> ;
@@ -53,8 +53,13 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_mole_gui#_mole_>;
     
 rdfs:comment """
+Emulation of the Electro-Harmonix Mole bass booster (*)
 
-...
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Electro-Harmonix Mole is a trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
+
+*Unofficial documentation
 
 """;
 
