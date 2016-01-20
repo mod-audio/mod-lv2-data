@@ -5,7 +5,7 @@
 <http://zynaddsubfx.sourceforge.net>
     a lv2:Plugin ;
     lv2:binary <ZynAddSubFX.so> ;
-    rdfs:seeAlso <ZynAddSubFX.ttl> .
+    rdfs:seeAlso <ZynAddSubFX.ttl> , <modgui.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset001>
     a pset:Preset ;
