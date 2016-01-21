@@ -44,7 +44,7 @@
     a lv2:Plugin ,
         lv2:DistortionPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "GxVox Tonebender";
+    doap:name "GxVoxTonebender";
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_voxtb_> ;
     lv2:optionalFeature lv2:hardRTCapable ;

@@ -43,7 +43,7 @@
 
 <http://guitarix.sourceforge.net/plugins/gx_jcm800pre_st#_jcm800pre_st>
     a lv2:Plugin ,
-        lv2:AmplifierPlugin ;
+        lv2:SimulatorPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxJCM800pre Stereo";
     doap:license <http://opensource.org/licenses/isc> ;
