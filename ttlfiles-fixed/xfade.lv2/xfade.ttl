@@ -116,5 +116,5 @@
 		lv2:name "Out Right" ;
 		lv2:designation pg:right ;
 	] ;
-	rdfs:comment "stereo DJ X-fade plugin"
+	rdfs:comment "A stereo crossfade plugin"
 	.

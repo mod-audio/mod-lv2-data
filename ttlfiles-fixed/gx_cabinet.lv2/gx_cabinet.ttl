@@ -30,6 +30,7 @@
 @prefix opt:  <http://lv2plug.in/ns/ext/options#> .
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -72,6 +73,7 @@ rdfs:comment """
         lv2:index 0 ;
         lv2:symbol "CLevel" ;
         lv2:name "Cabinet";
+        lv2:shortName "Master" ;
         lv2:default 1.0 ;
         lv2:minimum 0.5 ;
         lv2:maximum 5.0 ;
@@ -146,7 +148,7 @@ rdfs:comment """
         lv2:symbol "SCHEDULE" ;
         lv2:name "SCHEDULE";
         lv2:portProperty lv2:integer;
-        lv2:portProperty lv2:notOnGUI;
+        lv2:portProperty pprops:notOnGUI;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -168,7 +170,6 @@ rdfs:comment """
 <http://guitarix.sourceforge.net/plugins/gx_cabinet#gui>
   a guiext:GtkUI;
   guiext:binary <gx_cabinet_gui.so>;
-  guiext:requiredFeature guiext:makeResident;
   lv2:extensionData work:interface ;
   guiext:portNotification [
         guiext:plugin <http://guitarix.sourceforge.net/plugins/gx_cabinet#CABINET>;
