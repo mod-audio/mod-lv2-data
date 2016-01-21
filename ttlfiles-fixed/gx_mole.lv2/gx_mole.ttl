@@ -56,7 +56,7 @@ rdfs:comment """
 Emulation of the Electro-Harmonix Mole bass booster (*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Electro-Harmonix Mole is a trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+Electro-Harmonix Mole is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
 All other trademarks are the property of their respective holders.'
 
 *Unofficial documentation
@@ -91,6 +91,7 @@ All other trademarks are the property of their respective holders.'
         lv2:index 3 ;
         lv2:symbol "WET_DRY" ;
         lv2:name "WET_DRY" ;
+        lv2:shortName "MIX" ;
         lv2:default 1e+02 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1e+02 ;

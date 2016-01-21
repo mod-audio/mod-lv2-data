@@ -4,10 +4,10 @@
 <http://guitarix.sourceforge.net/plugins/gx_cstb_#_cstb_>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-gxcolorsound-tonebender.html> ;
-        modgui:stylesheet <modgui/stylesheet-gxcolorsound-tonebender.css> ;
-        modgui:screenshot <modgui/screenshot-gxcolorsound-tonebender.png> ;
-        modgui:thumbnail <modgui/thumbnail-gxcolorsound-tonebender.png> ;
+        modgui:iconTemplate <modgui/icon-gxcolorsoundtonebender.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxcolorsoundtonebender.css> ;
+        modgui:screenshot <modgui/screenshot-gxcolorsoundtonebender.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxcolorsoundtonebender.png> ;
         modgui:brand "Guitarix" ;
         modgui:label "Colorsound Tonebender" ;
         modgui:model "boxy" ;
@@ -16,12 +16,12 @@
         modgui:knob "bronze" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "ATTACK" ;
-            lv2:name "ATTACK" ;
+            lv2:symbol "LEVEL" ;
+            lv2:name "VOLUME" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "LEVEL" ;
-            lv2:name "LEVEL" ;
+            lv2:symbol "ATTACK" ;
+            lv2:name "ATTACK" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "WET_DRY" ;
