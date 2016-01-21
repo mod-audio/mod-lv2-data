@@ -34,9 +34,9 @@
 #   lv2:binary <artyfx.so> ;
 #   rdfs:seeAlso <filta.ttl> , <modguis.ttl> .
 
-# <http://www.openavproductions.com/artyfx#kuiza> a lv2:Plugin ;
-#   lv2:binary <artyfx.so> ;
-#   rdfs:seeAlso <kuiza.ttl> , <modguis.ttl> .
+<http://www.openavproductions.com/artyfx#kuiza> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <kuiza.ttl> , <modguis.ttl> .
 
 # <http://www.openavproductions.com/artyfx#masha> a lv2:Plugin ;
 #   lv2:binary <artyfx.so> ;
