@@ -12,7 +12,7 @@
 	foaf:homepage <http://gareus.org/> .
 
 <http://gareus.org/oss/lv2/b_reverb>
-	a doap:Project, lv2:Plugin, lv2:SpatialPlugin ;
+	a doap:Project, lv2:Plugin, lv2:ReverbPlugin ;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree Organ Reverb";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;

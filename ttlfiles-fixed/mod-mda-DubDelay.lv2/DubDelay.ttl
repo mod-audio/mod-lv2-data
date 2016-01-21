@@ -58,7 +58,7 @@ mda:DubDelay
     mod:brand "MDA" ;
     mod:label "DubDelay" ;
     rdfs:comment """
-A Delay that can also pitchshift per delay.
+Delay with feedback saturation and time/pitch modulation
 """;
 
 

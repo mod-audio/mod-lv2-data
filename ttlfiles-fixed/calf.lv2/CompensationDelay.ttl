@@ -24,7 +24,7 @@
     rdfs:label "Output" .
 
 <http://calf.sourceforge.net/plugins/CompensationDelay> a lv2:Plugin ;
-    a lv2:DelayPlugin ;
+    a lv2:UtilityPlugin ;
     doap:name "Calf Compensation Delay Line" ;
     lv2:project <http://calf-studio-gear.org> ;
     doap:maintainer [ foaf:name "Calf Studio Gear / Vladimir Sadovnikov" ; ] ;

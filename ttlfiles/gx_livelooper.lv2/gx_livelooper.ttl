@@ -40,7 +40,7 @@
 
 <http://guitarix.sourceforge.net/plugins/gx_livelooper_#_livelooper_>
     a lv2:Plugin ,
-        lv2:DelayPlugin ;
+        lv2:UtilityPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "Gxlivelooper";
     doap:license <http://opensource.org/licenses/isc> ;

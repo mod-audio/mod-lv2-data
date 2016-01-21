@@ -71,7 +71,9 @@
 
 
 rdfs:comment """
-Detuner with an octave option
+A detuner with an octave option
+
+*Unofficial documentation
 
 """;
 

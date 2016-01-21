@@ -11,13 +11,13 @@
         modgui:brand "Guitarix" ;
         modgui:label "Fuzz" ;
         modgui:model "boxy" ;
-        modgui:panel "3-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "flowerpower" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "OUTPUT" ;
-            lv2:name "Level" ;
+            lv2:name "LEVEL" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "TONE" ;
@@ -26,5 +26,9 @@
             lv2:index 2 ;
             lv2:symbol "DRIVE" ;
             lv2:name "DRIVE" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "INPUT" ;
+            lv2:name "INPUT" ;
         ] ;
     ] .

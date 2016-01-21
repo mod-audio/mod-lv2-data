@@ -59,9 +59,9 @@
 mod:brand "Guitarix";
 
 rdfs:comment """
+A delay that makes it possible to delay every frequency band individually, with crossovers
 
-A fullyworking delay where it's possible to have a different delay for every
-band
+*Unofficial documentation
 
 """;
 

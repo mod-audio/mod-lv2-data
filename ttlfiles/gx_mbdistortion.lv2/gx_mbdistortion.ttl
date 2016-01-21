@@ -51,8 +51,9 @@
     lv2:microVersion 3;
     
 rdfs:comment """
+A distortion that makes it possible to distort every frequency band individually, with crossovers
 
-...
+*Unofficial documentation
 
 """;
 

@@ -53,7 +53,7 @@
     lv2:microVersion 3;
     mod:brand "Guitarix";
 rdfs:comment """
-A Fuzz Effect
+A Fuzz effect
 
 *Unofficial documentation
 """;

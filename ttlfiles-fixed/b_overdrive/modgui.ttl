@@ -9,15 +9,15 @@
         modgui:screenshot <modgui/screenshot-setbfree-organ-overdrive.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-organ-overdrive.png> ;
         modgui:brand "x42" ;
-        modgui:label "setBfree Overdrive" ;
+        modgui:label "Organ Overdrive" ;
         modgui:model "boxy" ;
         modgui:panel "7-knobs" ;
         modgui:color "wood3" ;
         modgui:knob "copper" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "gainin" ;
-            lv2:name "Drive" ;
+            lv2:symbol "gainout" ;
+            lv2:name "Level" ;
         ] , [
             lv2:index 1 ;
             lv2:symbol "bias" ;
@@ -25,22 +25,22 @@
         ] , [
             lv2:index 2 ;
             lv2:symbol "sagtobias" ;
-            lv2:name "Sag2Bias" ;
+            lv2:name "Sag" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "postfeed" ;
-            lv2:name "Postdiff feedback" ;
+            lv2:symbol "gainin" ;
+            lv2:name "Gain" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "globfeed" ;
             lv2:name "Global feedback" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "feedback" ;
-            lv2:name "Feedback" ;
+            lv2:symbol "postfeed" ;
+            lv2:name "Postdiff feedback" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "gainout" ;
-            lv2:name "Level" ;
+            lv2:symbol "feedback" ;
+            lv2:name "Feedback" ;
         ] ;
     ] .
