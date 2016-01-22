@@ -23,10 +23,6 @@
         lv2:binary <rkrlv2.so> ;
         rdfs:seeAlso <comp.ttl> , <modguis.ttl> .
 # 2
-<http://rakarrack.sourceforge.net/effects.html#dist>
-        a lv2:Plugin, lv2:DistortionPlugin ;
-        lv2:binary <rkrlv2.so> ;
-        rdfs:seeAlso <dist.ttl> , <modguis.ttl> .
 # 3
 <http://rakarrack.sourceforge.net/effects.html#eco>
         a lv2:Plugin, lv2:ReverbPlugin ;

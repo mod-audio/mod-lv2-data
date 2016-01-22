@@ -7,6 +7,7 @@
 
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+@prefix mod:   <http://moddevices.com/ns/mod#>.
 
 # <http://rakarrack.sourceforge.net/effects.html#dist_ui>
 # 	a ui:X11UI ;
@@ -16,12 +17,18 @@
 
 <http://rakarrack.sourceforge.net/effects.html#dist>
         a lv2:Plugin, lv2:DistortionPlugin ;
-        doap:name "rkr Distorsion" ;
+        doap:name "rkr Distortion" ;
+        mod:brand "Rakarrack";
+        mod:label "Distortion";
         doap:description "Waveshaping Distortion";
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
-        rdfs:comment "A flexible waveshaping distortion with 30 waveshapes to choose from." ;
+        rdfs:comment """Adapted from the ZynAddSubFX Distortion
+        
+This is a waveshaper, and not particularly an amp or stompbox modeling effect. This must be used judiciously with EQ's as well as the LPF and HPF settings (Low Pass Filter, High Pass Filter)
+
+""" ;
         lv2:optionalFeature lv2:hardRTCapable,
             <http://lv2plug.in/ns/ext/urid#map>,
             <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength>;
@@ -67,6 +74,7 @@
                 lv2:index 5 ;
                 lv2:symbol "WETDRY" ;
                 lv2:name "Wet/Dry" ;
+                lv2:shortName "Mix" ;
                 lv2:default 84 ;
                 lv2:minimum 0 ;
                 lv2:maximum 127 ;
@@ -224,19 +232,19 @@
 <http://rakarrack.sourceforge.net/effects.html#dist:preset:distortion_1>
         a pset:Preset ;
         lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dist> ;
-        rdfs:label "Distorsion 1" ;
+        rdfs:label "Distortion 1" ;
         rdfs:seeAlso <dist_presets.ttl> .
 
 <http://rakarrack.sourceforge.net/effects.html#dist:preset:distortion_2>
         a pset:Preset ;
         lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dist> ;
-        rdfs:label "Distorsion 2" ;
+        rdfs:label "Distortion 2" ;
         rdfs:seeAlso <dist_presets.ttl> .
 
 <http://rakarrack.sourceforge.net/effects.html#dist:preset:distortion_3>
         a pset:Preset ;
         lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dist> ;
-        rdfs:label "Distorsion 3" ;
+        rdfs:label "Distortion 3" ;
         rdfs:seeAlso <dist_presets.ttl> .
 
 <http://rakarrack.sourceforge.net/effects.html#dist:preset:guitar_amp>
