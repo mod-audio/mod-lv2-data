@@ -107,7 +107,7 @@
         modgui:brand "Invada" ;
         modgui:label "Delay Munge" ;
         modgui:model "japanese" ;
-        modgui:panel "8-knobs" ;
+        modgui:panel "7-a-knobs" ;
         modgui:color "red" ;
         modgui:knob "yellow" ;
         modgui:port [
@@ -124,22 +124,18 @@
             lv2:name "Munge" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "mungemode" ;
-            lv2:name "Mode" ;
-        ] , [
-            lv2:index 4 ;
             lv2:symbol "delay2" ;
             lv2:name "Time 2" ;
         ] , [
-            lv2:index 5 ;
+            lv2:index 4 ;
             lv2:symbol "fb2" ;
             lv2:name "Feedb 2" ;
         ] , [
-            lv2:index 6 ;
+            lv2:index 5 ;
             lv2:symbol "LFOdepth" ;
             lv2:name "Depth" ;
         ] , [
-            lv2:index 7 ;
+            lv2:index 6 ;
             lv2:symbol "LFOcycle" ;
             lv2:name "Rate" ;
         ] ;
@@ -162,7 +158,7 @@
         modgui:brand "Invada" ;
         modgui:label "Delay Munge" ;
         modgui:model "japanese" ;
-        modgui:panel "8-knobs" ;
+        modgui:panel "7-a-knobs" ;
         modgui:color "red" ;
         modgui:knob "yellow" ;
         modgui:port [
@@ -179,26 +175,23 @@
             lv2:name "Munge" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "mungemode" ;
-            lv2:name "Mode" ;
-        ] , [
-            lv2:index 4 ;
             lv2:symbol "delay2" ;
             lv2:name "Time 2" ;
         ] , [
-            lv2:index 5 ;
+            lv2:index 4 ;
             lv2:symbol "fb2" ;
             lv2:name "Feedb 2" ;
         ] , [
-            lv2:index 6 ;
+            lv2:index 5 ;
             lv2:symbol "LFOdepth" ;
             lv2:name "Depth" ;
         ] , [
-            lv2:index 7 ;
+            lv2:index 6 ;
             lv2:symbol "LFOcycle" ;
             lv2:name "Rate" ;
         ] ;
     ] .
+    
 ## END http://invadarecords.com/plugins/lv2/delay/sum
 ###############################################################################
 

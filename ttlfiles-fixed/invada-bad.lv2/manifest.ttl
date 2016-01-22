@@ -23,14 +23,6 @@ foaf:mbox <mailto:fraser@arkhostings.com> ;
                                         lv2:binary <inv_compressor.so> ;
                                         rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
 
-<http://invadarecords.com/plugins/lv2/delay/mono> a lv2:Plugin ;
-                                        lv2:binary <inv_delay.so> ;
-                                        rdfs:seeAlso <inv_delay.ttl> , <modguis.ttl> .
-
-<http://invadarecords.com/plugins/lv2/delay/sum> a lv2:Plugin ;
-                                        lv2:binary <inv_delay.so> ;
-                                        rdfs:seeAlso <inv_delay.ttl> , <modguis.ttl> .
-
 <http://invadarecords.com/plugins/lv2/erreverb/mono> a lv2:Plugin ;
                                         lv2:binary <inv_erreverb.so> ;
                                         rdfs:seeAlso <inv_erreverb.ttl> , <modguis.ttl> .

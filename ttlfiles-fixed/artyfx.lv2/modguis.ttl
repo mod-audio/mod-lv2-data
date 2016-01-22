@@ -141,14 +141,14 @@
         modgui:thumbnail <modgui/thumbnail-filta.png> ;
         modgui:brand "OpenAV" ;
         modgui:label "Filta" ;
-        modgui:model "japanese" ;
-        modgui:panel "4-knobs" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
         modgui:color "darkblue" ;
-        modgui:knob "orange" ;
+        modgui:knob "bronze" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "frequency_control" ;
-            lv2:name "Freq" ;
+            lv2:name "Frequency" ;
         ] ;
     ] .
     
