@@ -4,12 +4,12 @@
 <http://guitarix.sourceforge.net/plugins/gx_jcm800pre_st#_jcm800pre_st>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-gxjcm800prest.html> ;
-        modgui:stylesheet <modgui/stylesheet-gxjcm800prest.css> ;
-        modgui:screenshot <modgui/screenshot-gxjcm800prest.png> ;
-        modgui:thumbnail <modgui/thumbnail-gxjcm800prest.png> ;
+        modgui:iconTemplate <modgui/icon-gxjcm800pre-st.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxjcm800pre-st.css> ;
+        modgui:screenshot <modgui/screenshot-gxjcm800pre-st.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxjcm800pre-st.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "JCM800 preST" ;
+        modgui:label "JCM800pre Stereo" ;
         modgui:model "combo-model-001" ;
         modgui:panel "0778" ;
         modgui:port [

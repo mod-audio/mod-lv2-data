@@ -27,6 +27,6 @@
         ] , [
             lv2:index 3 ;
             lv2:symbol "CLevel" ;
-            lv2:name "Master" ;
+            lv2:name "Output" ;
         ] ;
     ] .
