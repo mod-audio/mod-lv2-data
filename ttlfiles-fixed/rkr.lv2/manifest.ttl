@@ -63,10 +63,10 @@
 #         lv2:binary <rkrlv2.so> ;
 #         rdfs:seeAlso <alienwah.ttl> , <modguis.ttl> .
 # # 10
-# <http://rakarrack.sourceforge.net/effects.html#reve>
-#         a lv2:Plugin, lv2:ReverbPlugin ;
-#         lv2:binary <rkrlv2.so> ;
-#         rdfs:seeAlso <reve.ttl> , <modguis.ttl> .
+<http://rakarrack.sourceforge.net/effects.html#reve>
+        a lv2:Plugin, lv2:ReverbPlugin ;
+        lv2:binary <rkrlv2.so> ;
+        rdfs:seeAlso <reve.ttl> , <modguis.ttl> .
 # 11
 <http://rakarrack.sourceforge.net/effects.html#eqp>
         a lv2:Plugin, lv2:ParaEQPlugin ;

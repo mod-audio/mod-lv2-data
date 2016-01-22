@@ -58,11 +58,6 @@
         a lv2:Plugin, lv2:PhaserPlugin ;
         lv2:binary <rkrlv2.so> ;
         rdfs:seeAlso <alienwah.ttl> , <modguis.ttl> .
-# 10
-<http://rakarrack.sourceforge.net/effects.html#reve>
-        a lv2:Plugin, lv2:ReverbPlugin ;
-        lv2:binary <rkrlv2.so> ;
-        rdfs:seeAlso <reve.ttl> , <modguis.ttl> .
 # 12
 <http://rakarrack.sourceforge.net/effects.html#cabe>
         a lv2:Plugin, lv2:FilterPlugin ;
