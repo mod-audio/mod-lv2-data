@@ -16,7 +16,7 @@
     a lv2:Plugin, lv2:DelayPlugin ;
     doap:name "Invada Delay Munge (mono in)" ;
     mod:brand "Invada" ;
-    mod:label "Delay Munge M" ;
+    mod:label "Delay Munge" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
@@ -226,7 +226,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
     a lv2:Plugin, lv2:DelayPlugin ;
     doap:name "Invada Delay Munge (sum L+R in)" ;
     mod:brand "Invada" ;
-    mod:label "Delay Munge LR" ;
+    mod:label "Delay Munge ST" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;
