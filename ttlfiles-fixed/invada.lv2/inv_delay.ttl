@@ -21,7 +21,7 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
+A wet only delay with munged delays, the pitch can be modulated by a lfo.
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -67,6 +67,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 4 ;
 	lv2:symbol "LFOcycle" ;
 	lv2:name "LFO" ;
+	lv2:shortName "Rate 2" ;
 	lv2:default 20.0 ;
 	lv2:minimum 2.0 ;
 	lv2:maximum 200.0 ;
@@ -86,6 +87,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 6 ;
 	lv2:symbol "delay1" ;
 	lv2:name "Delay 1" ;
+	lv2:shortName "Time 1" ;
 	lv2:default 0.3 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -122,6 +124,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 10 ;
 	lv2:symbol "delay2" ;
 	lv2:name "Delay 2" ;
+	lv2:shortName "Time 2" ;
 	lv2:default 0.2 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -228,7 +231,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
+A wet only delay with munged delays, the pitch can be modulated by a lfo.
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -274,6 +277,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 4 ;
 	lv2:symbol "LFOcycle" ;
 	lv2:name "LFO" ;
+	lv2:shortName "Rate" ;
 	lv2:default 20.0 ;
 	lv2:minimum 2.0 ;
 	lv2:maximum 200.0 ;
@@ -293,6 +297,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 6 ;
 	lv2:symbol "delay1" ;
 	lv2:name "Delay 1" ;
+	lv2:shortName "Time 1" ;
 	lv2:default 0.3 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -329,6 +334,7 @@ A Delay with nice lo-fi sound, also the pitch can be modulated with the lfo.
 	lv2:index 10 ;
 	lv2:symbol "delay2" ;
 	lv2:name "Delay 2" ;
+	lv2:shortName "Time 2" ;
 	lv2:default 0.2 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
