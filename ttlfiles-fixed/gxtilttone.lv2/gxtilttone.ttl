@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -29,6 +29,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://www.guitarix.org/>
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gxtilttone>
@@ -44,16 +45,16 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gxtilttone> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    
+
   guiext:ui <http://guitarix.sourceforge.net/plugins/gxtilttone#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
+
 rdfs:comment """
 A simple Tilt Tone control (*)
 
-(*) The Tilt control imposes a shelving function, which attenuates half of frequency band and augments the other half. In other words, it is special type of a tone control that, unlike the typical tone control that boosts or cuts just the highs or mids or lows, shifts both highs and lows at once. 
+(*) The Tilt control imposes a shelving function, which attenuates half of frequency band and augments the other half. In other words, it is special type of a tone control that, unlike the typical tone control that boosts or cuts just the highs or mids or lows, shifts both highs and lows at once.
 
 *Unofficial documentation
 
