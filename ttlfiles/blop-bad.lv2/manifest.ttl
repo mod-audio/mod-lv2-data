@@ -1,0 +1,140 @@
+@prefix blop: <http://drobilla.net/plugins/blop/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://drobilla.net/drobilla#me>
+	a foaf:Person ;
+	foaf:name "David Robillard" ;
+	foaf:mbox <mailto:d@drobilla.net> ;
+	rdfs:seeAlso <http://drobilla.net/drobilla> .
+
+blop:
+	a doap:Project ;
+	lv2:symbol "blop" ;
+	doap:name "Blop LV2" ;
+	doap:shortdesc "An LV2 port of the Blop plugins." ;
+	doap:homepage <http://drobilla.net/software/blop-lv2> ;
+	doap:license <http://opensource.org/licenses/gpl-3.0> ;
+	doap:maintainer <http://drobilla.net/drobilla#me> ;
+	doap:developer [
+		a foaf:Person ;
+		foaf:name "Mike Rawes" ;
+		foaf:mbox <mike_rawes@yahoo.co.uk>
+	] .
+
+blop:adsr
+	a lv2:Plugin ;
+	rdfs:seeAlso <adsr.ttl> , <modguis.ttl> ;
+	lv2:binary <adsr.so> .
+
+blop:adsr_gt
+	a lv2:Plugin ;
+	rdfs:seeAlso <adsr_gt.ttl> , <modguis.ttl> ;
+	lv2:binary <adsr_gt.so> .
+
+blop:amp
+	a lv2:Plugin ;
+	rdfs:seeAlso <amp.ttl> , <modguis.ttl> ;
+	lv2:binary <amp.so> .
+
+blop:branch
+	a lv2:Plugin ;
+	rdfs:seeAlso <branch.ttl> , <modguis.ttl> ;
+	lv2:binary <branch.so> .
+
+blop:dahdsr
+	a lv2:Plugin ;
+	rdfs:seeAlso <dahdsr.ttl> , <modguis.ttl> ;
+	lv2:binary <dahdsr.so> .
+
+blop:difference
+	a lv2:Plugin ;
+	rdfs:seeAlso <difference.ttl> , <modguis.ttl> ;
+	lv2:binary <difference.so> .
+
+blop:fmod
+	a lv2:Plugin ;
+	rdfs:seeAlso <fmod.ttl> , <modguis.ttl> ;
+	lv2:binary <fmod.so> .
+
+blop:interpolator
+	a lv2:Plugin ;
+	rdfs:seeAlso <interpolator.ttl> , <modguis.ttl> ;
+	lv2:binary <interpolator.so> .
+
+blop:lp4pole
+	a lv2:Plugin ;
+	rdfs:seeAlso <lp4pole.ttl> , <modguis.ttl> ;
+	lv2:binary <lp4pole.so> .
+
+blop:product
+	a lv2:Plugin ;
+	rdfs:seeAlso <product.ttl> , <modguis.ttl> ;
+	lv2:binary <product.so> .
+
+blop:pulse
+	a lv2:Plugin ;
+	rdfs:seeAlso <pulse.ttl> , <modguis.ttl> ;
+	lv2:binary <pulse.so> .
+
+blop:quantiser_20
+	a lv2:Plugin ;
+	rdfs:seeAlso <quantiser_20.ttl> , <modguis.ttl> ;
+	lv2:binary <quantiser_20.so> .
+
+blop:quantiser_50
+	a lv2:Plugin ;
+	rdfs:seeAlso <quantiser_50.ttl> , <modguis.ttl> ;
+	lv2:binary <quantiser_50.so> .
+
+blop:quantiser_100
+	a lv2:Plugin ;
+	rdfs:seeAlso <quantiser_100.ttl> , <modguis.ttl> ;
+	lv2:binary <quantiser_100.so> .
+
+blop:random
+	a lv2:Plugin ;
+	rdfs:seeAlso <random.ttl> , <modguis.ttl> ;
+	lv2:binary <random.so> .
+
+blop:ratio
+	a lv2:Plugin ;
+	rdfs:seeAlso <ratio.ttl> , <modguis.ttl> ;
+	lv2:binary <ratio.so> .
+
+blop:sequencer_16
+	a lv2:Plugin ;
+	rdfs:seeAlso <sequencer_16.ttl> , <modguis.ttl> ;
+	lv2:binary <sequencer_16.so> .
+
+blop:sequencer_32
+	a lv2:Plugin ;
+	rdfs:seeAlso <sequencer_32.ttl> , <modguis.ttl> ;
+	lv2:binary <sequencer_32.so> .
+
+blop:sequencer_64
+	a lv2:Plugin ;
+	rdfs:seeAlso <sequencer_64.ttl> , <modguis.ttl> ;
+	lv2:binary <sequencer_64.so> .
+
+blop:sum
+	a lv2:Plugin ;
+	rdfs:seeAlso <sum.ttl> , <modguis.ttl> ;
+	lv2:binary <sum.so> .
+
+blop:sync_pulse
+	a lv2:Plugin ;
+	rdfs:seeAlso <sync_pulse.ttl> , <modguis.ttl> ;
+	lv2:binary <sync_pulse.so> .
+
+blop:sync_square
+	a lv2:Plugin ;
+	rdfs:seeAlso <sync_square.ttl> , <modguis.ttl> ;
+	lv2:binary <sync_square.so> .
+
+blop:tracker
+	a lv2:Plugin ;
+	rdfs:seeAlso <tracker.ttl> , <modguis.ttl> ;
+	lv2:binary <tracker.so> .
