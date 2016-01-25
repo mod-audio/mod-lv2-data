@@ -30,6 +30,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://www.guitarix.org/> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gxautowah>

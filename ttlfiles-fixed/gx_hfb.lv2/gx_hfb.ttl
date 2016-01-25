@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2014 Guitarix project MOD project
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -31,6 +31,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
+	foaf:homepage <http://www.guitarix.org/> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_hfb_>
@@ -46,12 +47,12 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_hfb_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-      
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_hfb_gui#_hfb_>;
-    
+
 rdfs:comment """
 A High Frequency Brightener
 
@@ -69,7 +70,7 @@ A High Frequency Brightener
         lv2:index 1 ;
         lv2:symbol "in" ;
         lv2:name "In" ;
-    ] 
+    ]
       , [
         a lv2:InputPort ,
             lv2:ControlPort ;
