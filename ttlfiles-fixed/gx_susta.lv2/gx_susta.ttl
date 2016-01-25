@@ -31,7 +31,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
-	foaf:homepage <http://www.guitarix.org/>
+	foaf:homepage <http://www.guitarix.org/>;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_susta_>

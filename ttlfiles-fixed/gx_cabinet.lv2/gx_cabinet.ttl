@@ -36,7 +36,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
-	foaf:homepage <http://www.guitarix.org/>
+	foaf:homepage <http://www.guitarix.org/> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gx_cabinet>
@@ -150,9 +150,9 @@ rdfs:comment """
         lv2:name "SCHEDULE";
         lv2:portProperty lv2:integer;
         lv2:portProperty pprops:notOnGUI;
-        lv2:default 1.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 1 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
