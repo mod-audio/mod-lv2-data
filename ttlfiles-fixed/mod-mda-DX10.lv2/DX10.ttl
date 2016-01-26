@@ -109,7 +109,7 @@ mda:DX10
         lv2:symbol "coarse" ;
         lv2:portProperty epp:logarithmic;
         lv2:default 33.68 ;
-        lv2:minimum 0.0 ;
+        lv2:minimum 0.01 ;
         lv2:maximum 40.0 ;
         units:unit [
             rdfs:label   "ratio" ;
@@ -124,7 +124,7 @@ mda:DX10
         lv2:symbol "fine" ;
         lv2:portProperty epp:logarithmic;
         lv2:default 0.247 ;
-        lv2:minimum 0.000 ;
+        lv2:minimum 0.001 ;
         lv2:maximum 0.750 ;
         units:unit [
             rdfs:label   "ratio" ;
