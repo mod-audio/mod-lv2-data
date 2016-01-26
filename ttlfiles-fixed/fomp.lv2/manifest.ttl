@@ -65,10 +65,10 @@ fomp:cs_chorus2
 # 	rdfs:seeAlso <cs_phaser1.ttl> , <modguis.ttl> ;
 # 	lv2:binary <cs_phaser.so> .
 
-# fomp:cs_phaser1_lfo
-# 	a lv2:Plugin ;
-# 	rdfs:seeAlso <cs_phaser1_lfo.ttl> , <modguis.ttl> ;
-# 	lv2:binary <cs_phaser.so> .
+fomp:cs_phaser1_lfo
+	a lv2:Plugin ;
+	rdfs:seeAlso <cs_phaser1_lfo.ttl> , <modguis.ttl> ;
+	lv2:binary <cs_phaser.so> .
 
 fomp:triple_chorus
 	a lv2:Plugin ;
@@ -100,10 +100,10 @@ fomp:autowah
 	rdfs:seeAlso <autowah.ttl> , <modguis.ttl> ;
 	lv2:binary <autowah.so> .
 
-# fomp:reverb
-# 	a lv2:Plugin ;
-# 	rdfs:seeAlso <reverb.ttl> , <modguis.ttl> ;
-# 	lv2:binary <reverbs.so> .
+fomp:reverb
+	a lv2:Plugin ;
+	rdfs:seeAlso <reverb.ttl> , <modguis.ttl> ;
+	lv2:binary <reverbs.so> .
 
 # fomp:reverb_amb
 # 	a lv2:Plugin ;
