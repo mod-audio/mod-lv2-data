@@ -13,7 +13,7 @@ fomp:cs_phaser1_lfo
 	mod:brand "FOMP" ;
 	mod:label "CS Phaser 1+LFO" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
 	Similar to CS Phaser 1, but the external modulation has been replaced by a built-in LFO.""" ;
 	lv2:microVersion 0 ;
@@ -40,6 +40,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 2 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum -40.0 ;
+		mod:default -4.0;
 		lv2:name "Input gain" ;
 		lv2:symbol "in_gain"
 	] , [
@@ -49,6 +50,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 3 ;
 		lv2:maximum 30 ;
 		lv2:minimum 1 ;
+		mod:default 7;
 		lv2:name "Sections" ;
 		lv2:portProperty lv2:integer ;
 		lv2:symbol "sections"
@@ -59,6 +61,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 4 ;
 		lv2:maximum 6.0 ;
 		lv2:minimum -6.0 ;
+		mod:default 5.6;
 		lv2:name "Frequency" ;
 		lv2:symbol "freq"
 	] , [
@@ -68,6 +71,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 5 ;
 		lv2:maximum 30.0 ;
 		lv2:minimum 0.01 ;
+		mod:default 1.0;
 		lv2:name "LFO frequency" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "lfo_freq" ;
@@ -98,6 +102,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 7 ;
 		lv2:maximum 10.0 ;
 		lv2:minimum 0.0 ;
+		mod:default 7.66;
 		lv2:name "Modulation gain" ;
 		lv2:symbol "mod_gain"
 	] , [
@@ -107,6 +112,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 8 ;
 		lv2:maximum 1.0 ;
 		lv2:minimum -1.0 ;
+		mod:default 0.13;
 		lv2:name "Feedback gain" ;
 		lv2:symbol "fb_gain"
 	] , [
@@ -116,6 +122,7 @@ fomp:cs_phaser1_lfo
 		lv2:index 9 ;
 		lv2:maximum 1.0 ;
 		lv2:minimum -1.0 ;
+		mod:default 0.22;
 		lv2:name "Output mix" ;
 		lv2:symbol "out_mix"
 	] .
