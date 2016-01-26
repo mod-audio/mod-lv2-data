@@ -55,11 +55,6 @@ fomp:cs_phaser1
 	rdfs:seeAlso <cs_phaser1.ttl> , <modguis.ttl> ;
 	lv2:binary <cs_phaser.so> .
 
-fomp:cs_phaser1_lfo
-	a lv2:Plugin ;
-	rdfs:seeAlso <cs_phaser1_lfo.ttl> , <modguis.ttl> ;
-	lv2:binary <cs_phaser.so> .
-
 fomp:pulse_vco
 	a lv2:Plugin ;
 	rdfs:seeAlso <pulse_vco.ttl> , <modguis.ttl> ;
@@ -79,11 +74,6 @@ fomp:parametric1
 	a lv2:Plugin ;
 	rdfs:seeAlso <parametric1.ttl> , <modguis.ttl> ;
 	lv2:binary <filters.so> .
-
-fomp:reverb
-	a lv2:Plugin ;
-	rdfs:seeAlso <reverb.ttl> , <modguis.ttl> ;
-	lv2:binary <reverbs.so> .
 
 fomp:reverb_amb
 	a lv2:Plugin ;
