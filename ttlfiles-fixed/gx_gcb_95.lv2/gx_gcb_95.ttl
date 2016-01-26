@@ -42,7 +42,7 @@
     a lv2:Plugin ,
         lv2:FilterPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "Gxgcb_95";
+    doap:name "GxCrybabyGCB95";
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_gcb_95_> ;
     lv2:optionalFeature lv2:hardRTCapable ;
