@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_gcb_95_#_gcb_95_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxgcb95.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxgcb95.css> ;
+        modgui:screenshot <modgui/screenshot-gxgcb95.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxgcb95.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GCB95 Crybaby" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "warning" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "HOTPOTZ" ;
+            lv2:name "WAH" ;
+        ] ;
+    ] .
