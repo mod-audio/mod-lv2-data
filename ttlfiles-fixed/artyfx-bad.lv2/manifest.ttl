@@ -1,22 +1,50 @@
-@prefix modgui: <http://moddevices.com/ns/modgui#> .
-@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+# The manifest file for all OpenAV ArtyFX plugins
 
-<http://www.openavproductions.com/artyfx#filta>
-    modgui:gui [
-        modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-filta.html> ;
-        modgui:stylesheet <modgui/stylesheet-filta.css> ;
-        modgui:screenshot <modgui/screenshot-filta.png> ;
-        modgui:thumbnail <modgui/thumbnail-filta.png> ;
-        modgui:brand "OpenAV" ;
-        modgui:label "Filta" ;
-        modgui:model "boxy" ;
-        modgui:panel "1-knob" ;
-        modgui:color "darkblue" ;
-        modgui:knob "bronze" ;
-        modgui:port [
-            lv2:index 0 ;
-            lv2:symbol "frequency_control" ;
-            lv2:name "Frequency" ;
-        ] ;
-    ] .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.openavproductions.com/artyfx>
+  a doap:Project;
+  doap:maintainer [
+      foaf:homepage <http://openavproductions.com>; 
+      foaf:mbox <mailto:harryhaaren@gmail.com>;
+      foaf:name "OpenAV"
+  ].
+
+<http://www.openavproductions.com/artyfx#bitta> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <bitta.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#della> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <della.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#driva> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <driva.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#ducka> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <ducka.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#masha> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <masha.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#panda> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <panda.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#satma> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <satma.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#vihda> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <vihda.ttl> , <modguis.ttl> .
+
+<http://www.openavproductions.com/artyfx#whaaa> a lv2:Plugin ;
+  lv2:binary <artyfx.so> ;
+  rdfs:seeAlso <whaaa.ttl> , <modguis.ttl> .
