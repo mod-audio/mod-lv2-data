@@ -109,6 +109,7 @@
         lv2:index 10 ;
         lv2:name "Gain" ;
         lv2:symbol "gain" ;
+        lv2:shortName "Level" ;
         lv2:default 100.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -128,6 +129,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:name "Early/Late Mix" ;
+        lv2:shortName "Reflections" ;
         lv2:symbol "earlymix" ;
         lv2:default 50.000000 ;
         lv2:minimum 0.000000 ;

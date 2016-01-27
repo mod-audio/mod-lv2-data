@@ -21,7 +21,7 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Phaser wich can go very gradually
+Subtle phaser with a very large LFO range
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -172,7 +172,7 @@ Phaser wich can go very gradually
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Phaser wich can go very gradually
+Subtle phaser with a very large LFO range
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -341,7 +341,7 @@ Phaser wich can go very gradually
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Phaser wich can go very gradually
+Subtle phaser with a very large LFO range
 """;
 
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
