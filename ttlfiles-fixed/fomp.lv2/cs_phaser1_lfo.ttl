@@ -13,7 +13,7 @@ fomp:cs_phaser1_lfo
 	mod:brand "FOMP" ;
 	mod:label "CS Phaser 1+LFO" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is a LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
 	Similar to CS Phaser 1, but the external modulation has been replaced by a built-in LFO.""" ;
 	lv2:microVersion 0 ;

@@ -12,7 +12,7 @@ fomp:mvclpf2
 	mod:brand "FOMP" ;
 	mod:label "Moog Low-Pass 2" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is a LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
 	
 	Uses five non-linear elements, in the input and in all four filter sections. It works by using the derivative of the nonlinearity (for which 1 / (1 + x * x) is reasonable approximation). The main advantage of this is that only one evaluation of the non-linear function is required for each section. The four variables that contain the filter state (c1...c4) represent not the voltage on the capacitors (as in the first filter) but the current flowing in the resistive part.""" ;
 	lv2:microVersion 0 ;
