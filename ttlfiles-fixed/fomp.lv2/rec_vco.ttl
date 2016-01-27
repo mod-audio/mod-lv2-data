@@ -12,7 +12,7 @@ fomp:rec_vco
 	mod:brand "FOMP" ;
 	mod:label "Rec VCO" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is a LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
 	
 	Based on the principle of using a precomputed interpolated dirac pulse. The 'edge' for this rectangular variant is made by integrating the anti-aliased pulse. Aliases should be below -80dB for fundamental frequencies below the sample rate / 6 (i.e. up to 8 kHz at Fsamp = 48 kHz). This frequency range includes the fundamental frequencies of all known musical instruments. Tests by Matthias Nagorni revealed the output sounded quite 'harsh' when compared to his analogue instruments. Comparing the spectra, it became clear that a mathematically 'exact' spectrum was not desirable from a musical point of view. For this reason, a built-in lowpass filter was added. The default setting (0.5) will yield output identical to that of the Moog Voyager.""" ;
 	lv2:microVersion 0 ;

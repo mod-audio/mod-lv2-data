@@ -11,7 +11,7 @@
 <http://faust-lv2.googlecode.com/Granulator>
        a lv2:Plugin ;
        doap:name "Granulator" ;
-       lv2:binary <granulator.so> ;
+       lv2:binary <Granulator.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
        doap:maintainer [
               foaf:name "Mayank Sanganeria";

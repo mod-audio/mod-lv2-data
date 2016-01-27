@@ -1,7 +1,7 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<http://distrho.sf.net/plugins/Pitchotto>
+<https://github.com/ninodewit/SHIRO-Plugins/plugins/pitchotto>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon-pitchotto.html> ;
