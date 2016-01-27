@@ -12,7 +12,7 @@ fomp:cs_chorus1
 	mod:brand "FOMP" ;
 	mod:label "CS Chorus 1" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	rdfs:comment """Fomp is a LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
 
 	Based on a CSound orchestra file by Sean Costello. There are two low frequency oscillators, each having three outputs that are 120 degrees apart in phase. The summed outputs modulate three delay lines. Make sure the static delay (first parameter) is at least equal to the sum of the two modulation depths.""" ;
 	lv2:microVersion 0 ;
@@ -51,7 +51,7 @@ fomp:cs_chorus1
 		lv2:minimum 0.003 ;
 		mod:default 0.2 ;
 		lv2:name "Mod Frequency 1" ;
-		lv2:shortName "Rate1" ;
+		lv2:shortName "Rate 1" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_1" ;
 		units:unit units:hz
@@ -64,7 +64,7 @@ fomp:cs_chorus1
 		lv2:minimum 0.0 ;
 		mod:default 2.5 ;
 		lv2:name "Mod Amplitude 1" ;
-		lv2:shortName "Depth1" ;
+		lv2:shortName "Depth 1" ;
 		lv2:symbol "mod_amp_1" ;
 		units:unit units:ms
 	] , [
@@ -76,7 +76,7 @@ fomp:cs_chorus1
 		lv2:minimum 0.01 ;
 		mod:default 0.8 ;
 		lv2:name "Mod Frequency 2" ;
-		lv2:shortName "Rate2" ;
+		lv2:shortName "Rate 2" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_2" ;
 		units:unit units:hz
@@ -89,7 +89,7 @@ fomp:cs_chorus1
 		lv2:minimum 0.0 ;
 		mod:default 0.75 ;
 		lv2:name "Mod Amplitude 2" ;
-		lv2:shortName "Depth2" ;
+		lv2:shortName "Depth 2" ;
 		lv2:symbol "mod_amp_2" ;
 		units:unit units:ms
 	] .

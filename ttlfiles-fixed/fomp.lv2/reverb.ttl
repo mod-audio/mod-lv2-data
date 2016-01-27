@@ -15,7 +15,7 @@ fomp:reverb
 	mod:brand "FOMP" ;
 	mod:label "Reverb" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+	rdfs:comment """Fomp is a LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
 	This is a stereo reverb plugin based on the well-known greverb.""" ;
 	lv2:microVersion 0 ;
@@ -74,6 +74,7 @@ fomp:reverb
 		lv2:maximum 8.0 ;
 		lv2:minimum 1.0 ;
 		lv2:name "RT-low" ;
+		lv2:shortName "Decay Low" ;
 		lv2:symbol "rt_low"
 	] , [
 		a lv2:ControlPort ,
@@ -83,6 +84,7 @@ fomp:reverb
 		lv2:maximum 8.0 ;
 		lv2:minimum 1.0 ;
 		lv2:name "RT-mid" ;
+		lv2:shortName "Decay Mid" ;
 		lv2:symbol "rt_mid"
 	] , [
 		a lv2:ControlPort ,
@@ -102,6 +104,7 @@ fomp:reverb
 		lv2:maximum 10000.0 ;
 		lv2:minimum 40.0 ;
 		lv2:name "F1-freq" ;
+		lv2:shortName "Frequency 1" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "f1_freq"
 	] , [
@@ -121,6 +124,7 @@ fomp:reverb
 		lv2:maximum 10000.0 ;
 		lv2:minimum 40.0 ;
 		lv2:name "F2-freq" ;
+		lv2:shortName "Frequency 2" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "f2_freq"
 	] , [
@@ -140,5 +144,6 @@ fomp:reverb
 		lv2:maximum 1.0 ;
 		lv2:minimum 0.0 ;
 		lv2:name "Output mix" ;
+		lv2:shortName "Mix" ;
 		lv2:symbol "out_mix"
 	] .
