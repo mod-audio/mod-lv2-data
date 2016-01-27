@@ -7,7 +7,7 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 
-<http://distrho.sf.net/plugins/Larynx>
+<https://github.com/ninodewit/SHIRO-Plugins/plugins/larynx>
     a lv2:ModulatorPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
@@ -76,8 +76,8 @@ Larynx is a simple vibrato with a tone control.
     doap:license "ISC" ;
 
     doap:maintainer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://github.com/DISTRHO/DPF-Max-Gen> ;
+        foaf:name "SHIRO" ;
+        foaf:homepage <https://github.com/ninodewit/SHIRO-Plugins> ;
     ] ;
 
     lv2:microVersion 1 ;

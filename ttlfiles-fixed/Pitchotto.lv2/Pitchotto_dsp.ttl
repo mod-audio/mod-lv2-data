@@ -6,7 +6,7 @@
 @prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
 @prefix unit: <http://lv2plug.in/ns/extensions/units#> .
 
-<http://distrho.sf.net/plugins/Pitchotto>
+<https://github.com/ninodewit/SHIRO-Plugins/plugins/pitchotto>
     a lv2:PitchPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
@@ -106,8 +106,8 @@ There are two shifted signals available, both with variable delay-lengths for ar
     doap:license "ISC" ;
 
     doap:maintainer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://github.com/DISTRHO/DPF-Max-Gen> ;
+        foaf:name "SHIRO" ;
+        foaf:homepage <https://github.com/ninodewit/SHIRO-Plugins> ;
     ] ;
 
     lv2:microVersion 1 ;

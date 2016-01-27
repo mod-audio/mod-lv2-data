@@ -8,7 +8,7 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://distrho.sf.net/plugins/Shiroverb>
+<https://github.com/ninodewit/SHIRO-Plugins/plugins/shiroverb>
     a lv2:ReverbPlugin, lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
@@ -133,8 +133,8 @@ Shiroverb is a shimmer-reverb based on the "Gigaverb"-genpatch, ported from the 
     doap:license "ISC" ;
 
     doap:maintainer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://github.com/DISTRHO/DPF-Max-Gen> ;
+        foaf:name "SHIRO" ;
+        foaf:homepage <https://github.com/ninodewit/SHIRO-Plugins> ;
     ] ;
 
     lv2:microVersion 1 ;
