@@ -2,6 +2,10 @@
 @prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:distrho:state>
+    a <http://lv2plug.in/ns/ext/state#State> ;
+    rdfs:label "State for DPF-based plugins" .
+
 <http://zynaddsubfx.sourceforge.net>
     a lv2:Plugin ;
     lv2:binary <ZynAddSubFX.so> ;
@@ -391,161 +395,161 @@
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0001-AHH Choir 1.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0002-AHH%20Choir%202>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0002-AHH Choir 2.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0003-EHH%20Choir%201>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0003-EHH Choir 1.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0004-Voice%20OOH>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0004-Voice OOH.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0005-Choir%20Pad1>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0005-Choir Pad1.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0006-Choir%20Pad2>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0006-Choir Pad2.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0007-Choir%20Pad3>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0007-Choir Pad3.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0008-Choir%20Pad4>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0008-Choir Pad4.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0009-Choir%20Pad5>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0009-Choir Pad5.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0010-Choir%20Pad6>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0010-Choir Pad6.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0033-Choir>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0033-Choir.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0034-Slow%20Morph_Choir>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0034-Slow Morph_Choir.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0035-Wah%20Choir>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0035-Wah Choir.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0036-Eooooo>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0036-Eooooo.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0037-Voiced%20Synth>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0037-Voiced Synth.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0039-Ohh%20Choir>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0039-Ohh Choir.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0065-Vocal%20Morph%201>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0065-Vocal Morph 1.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0066-Vocal%20Morph%202>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0066-Vocal Morph 2.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0067-Vocal%20Morph%203>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0067-Vocal Morph 3.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0068-Vocal%20Morph%204>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0068-Vocal Morph 4.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0069-Vocal%20Morph%205>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0069-Vocal Morph 5.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0070-Vocal%20Morph%206>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0070-Vocal Morph 6.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Choir%20and%20Voice_0071-Vocal%20Morph%207>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Choir%20and%20Voice> ;
     rdfs:label "Choir and Voice: 0071-Vocal Morph 7.xiz" ;
-    rdfs:seeAlso <Choir%20and%20Voice.ttl> .
+    rdfs:seeAlso <Choir_and_Voice.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#bank_Collection>
     a pset:Bank ;
@@ -6129,126 +6133,126 @@
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0001-Flute 1.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0002-Flute%202>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0002-Flute 2.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0003-Flute%203>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0003-Flute 3.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0005-FM%20Reed>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0005-FM Reed.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0006-Clarinet>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0006-Clarinet.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0007-Breathy1>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0007-Breathy1.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0033-Reed%201>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0033-Reed 1.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0034-Reed%202>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0034-Reed 2.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0035-Reed%203>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0035-Reed 3.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0036-Reed%204>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0036-Reed 4.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0037-Reed%205>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0037-Reed 5.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0038-Reed%206>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0038-Reed 6.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0039-Reed%207>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0039-Reed 7.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0040-Reed%208>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0040-Reed 8.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0065-Fat%20Reed1>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0065-Fat Reed1.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0066-Fat%20Reed2>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0066-Fat Reed2.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0067-Fat%20Reed3%20square>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0067-Fat Reed3 square.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#preset_Reed%20and%20Wind_0068-Chorused%20Flute>
     a pset:Preset ;
     lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_Reed%20and%20Wind> ;
     rdfs:label "Reed and Wind: 0068-Chorused Flute.xiz" ;
-    rdfs:seeAlso <Reed%20and%20Wind.ttl> .
+    rdfs:seeAlso <Reed_and_Wind.ttl> .
 
 <http://zynaddsubfx.sourceforge.net#bank_Rhodes>
     a pset:Bank ;
