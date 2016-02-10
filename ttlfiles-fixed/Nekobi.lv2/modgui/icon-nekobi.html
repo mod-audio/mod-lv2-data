@@ -1,18 +1,36 @@
-<div class="mod-pedal mod-pedal-lata{{{cns}}} mod-eight-knobs mod-boxy75 mod-{{color}} {{color}}">
+<div class="dpf-nekobi mod-pedal mod-pedal-boxy{{{cns}}}">
     <div mod-role="drag-handle" class="mod-drag-handle"></div>
-    <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
-    <div class="mod-plugin-name"><h1>{{label}}</h1></div>
+
     <div class="mod-light on" mod-role="bypass-light"></div>
+
     <div class="mod-control-group clearfix">
-        {{#controls}}
-        <div class="mod-knob">
-            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
-            <span class="mod-knob-title">{{name}}</span>
+        <div class="mod-knob dpf-nekobi-knob_tuning">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="tuning"></div>
         </div>
-        {{/controls}}
+        <div class="mod-knob dpf-nekobi-knob_cutoff">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="cutoff"></div>
+        </div>
+        <div class="mod-knob dpf-nekobi-knob_resonance">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="resonance"></div>
+        </div>
+        <div class="mod-knob dpf-nekobi-knob_env_mod">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="env_mod"></div>
+        </div>
+        <div class="mod-knob dpf-nekobi-knob_decay">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="decay"></div>
+        </div>
+        <div class="mod-knob dpf-nekobi-knob_accent">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="accent"></div>
+        </div>
+        <div class="mod-knob dpf-nekobi-knob_volume">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="volume"></div>
+        </div>
+        <div class="mod-footswitch dpf-nekobi-knob_waveform" mod-role="input-control-port" mod-port-symbol="waveform"></div>
     </div>
-   <div class="mod-footswitch" mod-role="bypass"></div>
-   <div class="mod-pedal-input">
+
+    <div class="mod-footswitch" mod-role="bypass"></div>
+
+    <div class="mod-pedal-input">
         {{#effect.ports.audio.input}}
         <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
             <div class="mod-pedal-input-image"></div>
@@ -23,13 +41,8 @@
             <div class="mod-pedal-input-image"></div>
         </div>
         {{/effect.ports.midi.input}}
-        {{#effect.ports.cv.input}}
-        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-cv-port" mod-port-symbol="{{symbol}}">
-            <div class="mod-pedal-input-image"></div>
-        </div>
-        {{/effect.ports.cv.input}}
-   </div>
-   <div class="mod-pedal-output">
+    </div>
+    <div class="mod-pedal-output">
         {{#effect.ports.audio.output}}
         <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
             <div class="mod-pedal-output-image"></div>
@@ -37,13 +50,8 @@
         {{/effect.ports.audio.output}}
         {{#effect.ports.midi.output}}
         <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
-            <div class="mod-pedal-output-image"></div>
+            <div class="mod-pedal-input-image"></div>
         </div>
         {{/effect.ports.midi.output}}
-        {{#effect.ports.cv.output}}
-        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-cv-port" mod-port-symbol="{{symbol}}">
-            <div class="mod-pedal-output-image"></div>
-        </div>
-        {{/effect.ports.cv.output}}
-   </div>
+    </div>
 </div>

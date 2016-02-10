@@ -1,49 +1,13 @@
-@prefix modgui: <http://moddevices.com/ns/modgui#> .
-@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://distrho.sf.net/plugins/Nekobi>
+    mod:brand "DISTRHO";
+    mod:label "Nekobi";
     modgui:gui [
-        modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-nekobi.html> ;
-        modgui:stylesheet <modgui/stylesheet-nekobi.css> ;
-        modgui:screenshot <modgui/screenshot-nekobi.png> ;
-        modgui:thumbnail <modgui/thumbnail-nekobi.png> ;
-        modgui:brand "DISTRHO" ;
-        modgui:label "Nekobi" ;
-        modgui:model "lata" ;
-        modgui:panel "8-knobs" ;
-        modgui:color "humphreys" ;
-        modgui:port [
-            lv2:index 0 ;
-            lv2:symbol "waveform" ;
-            lv2:name "Waveform" ;
-        ] , [
-            lv2:index 1 ;
-            lv2:symbol "tuning" ;
-            lv2:name "Tuning" ;
-        ] , [
-            lv2:index 2 ;
-            lv2:symbol "cutoff" ;
-            lv2:name "Cutoff" ;
-        ] , [
-            lv2:index 3 ;
-            lv2:symbol "resonance" ;
-            lv2:name "Resonance" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "env_mod" ;
-            lv2:name "Env Mod" ;
-        ] , [
-            lv2:index 5 ;
-            lv2:symbol "decay" ;
-            lv2:name "Decay" ;
-        ] , [
-            lv2:index 6 ;
-            lv2:symbol "accent" ;
-            lv2:name "Accent" ;
-        ] , [
-            lv2:index 7 ;
-            lv2:symbol "volume" ;
-            lv2:name "Volume" ;
-        ] ;
-    ] .
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-nekobi.html>;
+        modgui:stylesheet <modgui/stylesheet-nekobi.css>;
+        modgui:screenshot <modgui/screenshot-nekobi.png>;
+        modgui:thumbnail <modgui/thumb-nekobi.png>;
+    ].
