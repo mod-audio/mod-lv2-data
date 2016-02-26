@@ -19,23 +19,32 @@
     .mod-sooperlooper .mod-controls {
         position: absolute;
         top: 32%;
-        left: 1em;
-        right: 1em;
-        bottom: 2em;
+        left: 20px;
+        right: 20px;
+        bottom: 35px;
     }
     
     .mod-sooperlooper .mod-control-group {
         border: 1px solid white;
         border-radius: 6px;
-        width: calc(50% - 2em);
-        height: calc(100%);
-        margin: 0 1em !important;
-        display: inline-block;
-        box-sizing: border-box;
+        position: absolute;
     }
     .mod-sooperlooper .mod-control-group.top {
-        margin-left: calc(50%) !important;
         border: 1px solid transparent;
+        top: 6px;
+        right: 0;
+    }
+    .mod-sooperlooper .mod-control-group.left {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: calc(50% - 10px);
+    }
+    .mod-sooperlooper .mod-control-group.right {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: calc(50% - 10px);
     }
     .mod-sooperlooper-2 .mod-pedal-input {
         top:124px;
@@ -50,29 +59,32 @@
     }
     .mod-sooperlooper .mod-control-group .mod-control {
         display: inline-block;
-        width: 64px;
+        width: 132px;
         height: 128px;
-        margin-left: 35px;
+        text-align: center;
     }
     .mod-sooperlooper .mod-control-group .mod-control:nth-child(2) {
-        margin-left: 53px;
     }
     .mod-sooperlooper .mod-control-group .mod-control-image::after {
         color: white;
         content: "";
         position: absolute;
         top: 110%;
-        left: 50%;
-        transform: translate(-50%, 0);
+        left: 0;
+        right: 0;
+        text-align: center;
     }
     
     .mod-sooperlooper .mod-control-image {
         z-index: 2000000;
         position: relative;
-        width: 64px;
+        width: 100%;
         height: 128px;
         cursor: pointer;
         color: white;
+        margin: auto;
+        background-position-x: center;
+        background-repeat: no-repeat;
     }
     .mod-sooperlooper .mod-control-image#undo {
         background-image:url(/resources/foot-undo.png{{{ns}}});
@@ -106,15 +118,17 @@
         cursor: pointer;
         z-index: 2000000;
         position: absolute;
-        top: 15px;
-        right: 68px;
+        top: 10px;
+        right: 62px;
     }
     .mod-sooperlooper .mod-control-image#reset::after {
         content: "RESET";
         position: absolute;
-        right: 0px;
-        top: 50%;
-        transform: translate(100%, -50%);
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        height: 64px;
+        line-height: 64px;
         color: white;
     }
     .mod-sooperlooper .mod-footswitch{
