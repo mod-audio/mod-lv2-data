@@ -46,28 +46,28 @@ lv2:port
     lv2:index 0;
     lv2:symbol "In";
     lv2:name "In";
-    lv2:shortname "In";
+    lv2:shortName "In";
 ],
 [
     a lv2:AudioPort, lv2:OutputPort;
     lv2:index 1;
     lv2:symbol "Out1";
     lv2:name "Out 1";
-    lv2:shortname "Out 1";
+    lv2:shortName "Out 1";
 ],
 [
     a lv2:AudioPort, lv2:OutputPort;
     lv2:index 2;
     lv2:symbol "Out2";
     lv2:name "Out 2";
-    lv2:shortname "Out 2";
+    lv2:shortName "Out 2";
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 3;
     lv2:symbol "Tone";
     lv2:name "Tone";
-    lv2:shortname "Tone";
+    lv2:shortName "Tone";
     lv2:default 0;
     lv2:minimum 0;
     lv2:maximum 11;
@@ -90,7 +90,7 @@ lv2:port
     lv2:index 4;
     lv2:symbol "Scale";
     lv2:name "Scale";
-    lv2:shortname "Scale";
+    lv2:shortName "Scale";
     lv2:default 0;
     lv2:minimum 0;
     lv2:maximum 2;
@@ -104,7 +104,7 @@ lv2:port
     lv2:index 5;
     lv2:symbol "Interval";
     lv2:name "Interval";
-    lv2:shortname "Interval";
+    lv2:shortName "Interval";
     lv2:default 0;
     lv2:minimum 0;
     lv2:maximum 9;
@@ -119,7 +119,7 @@ lv2:port
     lv2:index 6;
     lv2:symbol "Mode";
     lv2:name "Mode";
-    lv2:shortname "Mode";
+    lv2:shortName "Mode";
     lv2:default 0;
     lv2:minimum 0;
     lv2:maximum 2;
@@ -133,7 +133,7 @@ lv2:port
     lv2:index 7;
     lv2:symbol "LowestNoteToChangeThePitch";
     lv2:name "Lowest note to change the pitch";
-    lv2:shortname "Lowest Wet";
+    lv2:shortName "Lowest Wet";
     lv2:default 0;
     lv2:minimum 0;
     lv2:maximum 14;
@@ -159,7 +159,7 @@ lv2:port
     lv2:index 8;
     lv2:symbol "Gain1";
     lv2:name "Gain 1";
-    lv2:shortname "Gain 1";
+    lv2:shortName "Gain 1";
     lv2:default 0.0;
     lv2:minimum -20.0;
     lv2:maximum 20.0;
@@ -170,7 +170,7 @@ lv2:port
     lv2:index 9;
     lv2:symbol "Gain2";
     lv2:name "Gain 2";
-    lv2:shortname "Gain 2";
+    lv2:shortName "Gain 2";
     lv2:default 3.0;
     lv2:minimum -20.0;
     lv2:maximum 20.0;

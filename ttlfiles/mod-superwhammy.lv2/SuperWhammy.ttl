@@ -45,21 +45,21 @@ lv2:port
     lv2:index 0;
     lv2:symbol "In";
     lv2:name "In";
-    lv2:shortname "In";
+    lv2:shortName "In";
 ],
 [
     a lv2:AudioPort, lv2:OutputPort;
     lv2:index 1;
     lv2:symbol "Out";
     lv2:name "Out";
-    lv2:shortname "Out";
+    lv2:shortName "Out";
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 2;
     lv2:symbol "Step";
     lv2:name "Step";
-    lv2:shortname "Step";
+    lv2:shortName "Step";
     lv2:default 0.0;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
@@ -69,7 +69,7 @@ lv2:port
     lv2:index 3;
     lv2:symbol "First";
     lv2:name "First";
-    lv2:shortname "First";
+    lv2:shortName "First";
     lv2:portProperty lv2:integer;
     lv2:default 0;
     lv2:minimum -12;
@@ -80,7 +80,7 @@ lv2:port
     lv2:index 4;
     lv2:symbol "Last";
     lv2:name "Last";
-    lv2:shortname "Last";
+    lv2:shortName "Last";
     lv2:portProperty lv2:integer;
     lv2:default 12;
     lv2:minimum -12;
@@ -91,7 +91,7 @@ lv2:port
     lv2:index 5;
     lv2:symbol "Clean";
     lv2:name "Clean";
-    lv2:shortname "Clean";
+    lv2:shortName "Clean";
     lv2:portProperty lv2:toggled, lv2:integer;
     lv2:default 0;
     lv2:minimum 0;
@@ -102,7 +102,7 @@ lv2:port
     lv2:index 6;
     lv2:symbol "Gain";
     lv2:name "Gain";
-    lv2:shortname "Gain";
+    lv2:shortName "Gain";
     lv2:default 3.0;
     lv2:minimum -20.0;
     lv2:maximum 20.0;
