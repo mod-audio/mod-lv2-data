@@ -82,7 +82,7 @@
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob {
-    height:110px;
+    height:115px;
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
@@ -243,7 +243,8 @@
     bottom: 20px;
     cursor:pointer;
     height:66px;
-    left: 12px !important;
+    width: 66px;
+    left: 110px !important;
     position:absolute;
 }
 .mod-crossover-3 .mod-knob-value {
@@ -265,10 +266,10 @@
     background-position:bottom center;
 }
 .mod-crossover-3 .mod-pedal-input {
-    top: 197px;
+    top: 208px;
 }
 .mod-crossover-3 .mod-pedal-output {
-    top: 77px;
+    top: 88px;
 }
 .mod-crossover-3 .mod-pedal-output>*  {
     margin-bottom: 64px !important;
