@@ -1,1 +1,5 @@
-This repository contains several modguis that are not yet imported upstream, or never will be by upstream's choice.
+This repository contains the following MOD LV2 data:
+* Pedalboards
+* Plugin bundles (including modguis)
+* Plugin presets
+
