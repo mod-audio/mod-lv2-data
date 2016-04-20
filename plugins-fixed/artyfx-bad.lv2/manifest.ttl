@@ -21,10 +21,6 @@
   lv2:binary <artyfx.so> ;
   rdfs:seeAlso <della.ttl> , <modguis.ttl> .
 
-<http://www.openavproductions.com/artyfx#driva> a lv2:Plugin ;
-  lv2:binary <artyfx.so> ;
-  rdfs:seeAlso <driva.ttl> , <modguis.ttl> .
-
 <http://www.openavproductions.com/artyfx#ducka> a lv2:Plugin ;
   lv2:binary <artyfx.so> ;
   rdfs:seeAlso <ducka.ttl> , <modguis.ttl> .
