@@ -84,13 +84,4 @@ lv2:port
     lv2:default 0.5;
     lv2:minimum 0.01;
     lv2:maximum 0.99;
-];
-
-modgui:gui [
-    a modgui:Gui;
-    modgui:resourcesDirectory <modgui>;
-    modgui:stylesheet <modgui/ds1.css>;
-    modgui:iconTemplate <modgui/icon-ds1.html>;
-    modgui:screenshot <modgui/screenshot-ds1.png>;
-    modgui:thumbnail <modgui/thumb-ds1.png>;
-] .
+].

@@ -3,5 +3,5 @@
 
 <http://moddevices.com/plugins/mod-devel/DS1> a lv2:Plugin;
     lv2:binary <mod-ds1.so> ;
-    rdfs:seeAlso <ds1.ttl>.
+    rdfs:seeAlso <ds1.ttl> , <modgui.ttl> .
 

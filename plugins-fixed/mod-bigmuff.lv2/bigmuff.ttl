@@ -7,7 +7,6 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix mod: <http://moddevices.com/ns/mod#>.
-@prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://moddevices.com/plugins/mod-devel/BigMuffPi>
 a lv2:Plugin, lv2:DistortionPlugin;
@@ -82,30 +81,4 @@ lv2:port
     lv2:default 0.5;
     lv2:minimum 0.0;
     lv2:maximum 1.0;
-];
-modgui:gui [
-        a modgui:Gui;
-        modgui:resourcesDirectory <modgui>;
-        modgui:iconTemplate <modgui/icon-big-muff-pi.html>;
-        modgui:stylesheet <modgui/bigmuff.css>;
-        modgui:screenshot <modgui/screenshot-big-muff.png>;
-        modgui:thumbnail <modgui/thumb-big-muff.png>;
-        modgui:color "orange";
-        modgui:brand "MOD";
-        modgui:label "Big Muff";
-        modgui:port [
-            lv2:index 0;
-            lv2:name "Tone";
-            lv2:symbol "Tone";
-        ],
-        [
-            lv2:index 1;
-            lv2:name "Level";
-            lv2:symbol "Level";
-        ],
-        [
-            lv2:index 2;
-            lv2:name "Sustain";
-            lv2:symbol "Sustain";
-        ];
-    ].
+].

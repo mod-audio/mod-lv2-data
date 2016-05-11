@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/mod-devel/BigMuffPi>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-open-big-muff.html> ;
+        modgui:stylesheet <modgui/stylesheet-open-big-muff.css> ;
+        modgui:screenshot <modgui/screenshot-open-big-muff.png> ;
+        modgui:thumbnail <modgui/thumbnail-open-big-muff.png> ;
+        modgui:brand "MOD" ;
+        modgui:label "Big Muff" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "racing" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Tone" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Level" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "Sustain" ;
+            lv2:name "Sustain" ;
+        ] ;
+    ] .

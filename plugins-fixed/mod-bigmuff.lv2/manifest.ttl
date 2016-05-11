@@ -3,5 +3,5 @@
 
 <http://moddevices.com/plugins/mod-devel/BigMuffPi> a lv2:Plugin;
     lv2:binary <mod-bigmuff.so> ;
-    rdfs:seeAlso <bigmuff.ttl>.
+    rdfs:seeAlso <bigmuff.ttl> , <modgui.ttl> .
 

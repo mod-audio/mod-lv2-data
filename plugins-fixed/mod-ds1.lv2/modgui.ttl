@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/mod-devel/DS1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ds1.html> ;
+        modgui:stylesheet <modgui/stylesheet-ds1.css> ;
+        modgui:screenshot <modgui/screenshot-ds1.png> ;
+        modgui:thumbnail <modgui/thumbnail-ds1.png> ;
+        modgui:brand "MOD" ;
+        modgui:label "DS-1" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "orange" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Tone" ;
+            lv2:name "Tone" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Level" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "Dist" ;
+            lv2:name "Dist" ;
+        ] ;
+    ] .
