@@ -110,6 +110,6 @@ There are two shifted signals available, both with variable delay-lengths for ar
         foaf:homepage <https://github.com/ninodewit/SHIRO-Plugins> ;
     ] ;
 
-    lv2:microVersion 1 ;
-    lv2:minorVersion 0 .
+    lv2:minorVersion 2 ;
+    lv2:microVersion 0 .
 
