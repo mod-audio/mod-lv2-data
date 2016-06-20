@@ -1,0 +1,84 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person ;
+	foaf:name "Robin Gareus" ;
+	foaf:mbox <mailto:robin@gareus.org> ;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/stereoroute>
+	a lv2:Plugin, lv2:MixerPlugin, doap:Project;
+	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+	doap:maintainer <http://gareus.org/rgareus#me> ;
+	doap:name "Stereo Routing";
+	lv2:microVersion 0 ;lv2:minorVersion 256 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 0 ;
+		lv2:symbol "routing" ;
+		lv2:name "Channel Assignment";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 6 ;
+		lv2:portProperty lv2:enumeration, lv2:integer;
+		lv2:scalePoint [
+			rdfs:label "Downmix to Mono (-3dB)" ;
+			rdf:value 0
+		] , [
+			rdfs:label "Downmix to Mono (-6dB)" ;
+			rdf:value 1
+		] , [
+			rdfs:label "Downmix to Mono (0dB)" ;
+			rdf:value 2
+		] , [
+			rdfs:label "L->L, L->R (Left Channel Mono)" ;
+			rdf:value 3
+		] , [
+			rdfs:label "R->R, R->L (Right Channel Mono)" ;
+			rdf:value 4
+		] , [
+			rdfs:label "L->R, R->L (Swap Channels)" ;
+			rdf:value 5
+		] , [
+			rdfs:label "L->L, R->R (Straight)" ;
+			rdf:value 6
+		]
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 1 ;
+		lv2:symbol "in_left" ;
+		lv2:name "In Left" ;
+		lv2:designation pg:left ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 2 ;
+		lv2:symbol "in_right" ;
+		lv2:name "In Right" ;
+		lv2:designation pg:right ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 3 ;
+		lv2:symbol "out_left" ;
+		lv2:name "Out Left" ;
+		lv2:designation pg:left ;
+	] , [
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 4 ;
+		lv2:symbol "out_right" ;
+		lv2:name "Out Right" ;
+		lv2:designation pg:right ;
+	] ;
+	rdfs:comment "Stereo Signal Routing"
+	.

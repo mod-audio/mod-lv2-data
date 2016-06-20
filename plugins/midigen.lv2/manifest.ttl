@@ -1,0 +1,32 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/oss/lv2/midigen>
+	a lv2:Plugin ;
+	lv2:binary <midigen.so>  ;
+	rdfs:seeAlso <midigen.ttl> .
+
+<http://gareus.org/oss/lv2/midigen>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi-generator.html> ;
+        modgui:stylesheet <modgui/stylesheet-midi-generator.css> ;
+        modgui:screenshot <modgui/screenshot-midi-generator.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi-generator.png> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Generator" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "gray" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "sequence" ;
+            lv2:name "Select Sequence" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "bpm" ;
+            lv2:name "BPM" ;
+        ] ;
+    ] .
