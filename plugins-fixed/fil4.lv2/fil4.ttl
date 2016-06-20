@@ -25,11 +25,12 @@ fil4:mono
 	a lv2:Plugin, doap:Project, lv2:ParaEQPlugin;
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
-	lv2:microVersion 101 ;lv2:minorVersion 1033 ;
+	lv2:microVersion 0 ;lv2:minorVersion 1282 ;
 	doap:name "x42-eq - Parametric Equalizer Mono";
 	lv2:requiredFeature urid:map ;
 	lv2:extensionData state:interface ;
 	lv2:optionalFeature lv2:hardRTCapable ;
+  
 	mod:brand "x42";
 	mod:label "x42-eq mono";
 	lv2:port [
@@ -417,11 +418,12 @@ fil4:stereo
 	a lv2:Plugin, doap:Project, lv2:ParaEQPlugin;
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
-	lv2:microVersion 101 ;lv2:minorVersion 1033 ;
+	lv2:microVersion 0 ;lv2:minorVersion 1282 ;
 	doap:name "x42-eq - Parametric Equalizer Stereo";
 	lv2:requiredFeature urid:map ;
 	lv2:extensionData state:interface ;
 	lv2:optionalFeature lv2:hardRTCapable ;
+  
 	mod:brand "x42";
 	mod:label "x42-eq stereo";
 	lv2:port [

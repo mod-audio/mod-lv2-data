@@ -97,7 +97,7 @@ function (event) {
 		svg.rect (clp, -1, 0, width + 3, 100);
 
 		var color = 'white';
-		if (!ds['enable']) {
+		if (!ds['enable'] || 1 == ds[':bypass']) {
 			color = '#444444';
 		}
 
@@ -111,6 +111,44 @@ function (event) {
 		path.push ([0, 50]);
 		g = svg.group ({stroke: 'none', fill: color, fillOpacity: '0.35'});
 		svg.polyline (g, path, {clipPath: 'url(#tfClip)'});
+	}
+
+	/* test if all transfer-function relevant
+	 * port-parameters are known. Cache the result.
+	 */
+	function check_information (tf) {
+		var ok = tf.data ('xModOK');
+		if (ok) {
+			return true;
+		}
+		var ds = tf.data ('xModPorts');
+		/* 33 plugin control inputs + MOD bypass */
+		if (34 > Object.keys (ds).length) {
+			return false;
+		}
+
+		var pname = [
+			'sec1', 'gain1', 'freq1', 'q1',
+			'sec2', 'gain2', 'freq2', 'q2',
+			'sec3', 'gain3', 'freq3', 'q3',
+			'sec4', 'gain4', 'freq4', 'q4',
+			'HSsec', 'HSgain', 'HSfreq', 'HSq',
+			'LSsec', 'LSgain', 'LSfreq', 'LSq',
+			'HighPass', 'HPfreq', 'HPQ',
+			'LowPass',  'LPfreq', 'LPQ',
+			'enable', ':bypass' // 32
+			// gain, reset-peak
+		];
+
+		ok = true;
+		for (var p in pname) {
+			if (typeof ds[pname[p]] === 'undefined') {
+				ok = false;
+				break;
+			}
+		}
+		tf.data ('xModOK', ok);
+		return ok;
 	}
 
 	/* Call when an input parameter changes, update the
@@ -170,6 +208,7 @@ function (event) {
 				dsp[7] = new X42EQLowPass (ds['LowPass'], ds['LPfreq'], ds['LPQ'], rate);
 				break;
 			case 'enable':
+			case ':bypass':
 				return 0;
 			default:
 				return -1;
@@ -187,8 +226,7 @@ function (event) {
 		ds[symbol] = value;
 		tf.data ('xModPorts', ds);
 
-		/* 33 plugin control inputs (MOD .bypass may not be sent)*/
-		if (33 <= Object.keys (ds).length) {
+		if (check_information (tf)) {
 			if (0 == set_filter (tf, symbol)) {
 				x42_draw_tf (tf);
 			}
@@ -220,9 +258,9 @@ function (event) {
 
 		tf.data ('xModDSP', []);
 		tf.data ('xModPorts', ds);
+		tf.data ('xModOK', false);
 
-		/* 33 plugin control inputs + MOD .bypass */
-		if (34 > Object.keys (ds).length) {
+		if (!check_information (tf)) {
 			/* MOD < v0.15.0  does not set initial values */
 			return;
 		}
