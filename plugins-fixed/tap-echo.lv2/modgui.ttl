@@ -4,7 +4,7 @@
 <http://moddevices.com/plugins/tap/echo>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-tap-stereo-echo.html> ;
+        modgui:iconTemplate <modgui/icon-tap-stereo-echo.htm> ;
         modgui:stylesheet <modgui/stylesheet-tap-stereo-echo.css> ;
         modgui:screenshot <modgui/screenshot-tap-stereo-echo.png> ;
         modgui:thumbnail <modgui/thumbnail-tap-stereo-echo.png> ;
