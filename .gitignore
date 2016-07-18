@@ -1,2 +1,4 @@
 *.so
 .DS_Store
+presets/__bad/
+presets/__good/
