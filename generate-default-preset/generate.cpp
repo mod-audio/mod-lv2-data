@@ -1,6 +1,7 @@
 
 #include <cstdio>
 #include <cstdlib>
+#include <cstring>
 
 #include <algorithm>
 #include <fstream>
@@ -9,11 +10,65 @@
 #include <vector>
 
 #include <lilv/lilv.h>
+#include <lv2/lv2plug.in/ns/ext/atom/atom.h>
+#include <lv2/lv2plug.in/ns/ext/buf-size/buf-size.h>
+#include <lv2/lv2plug.in/ns/ext/options/options.h>
+#include <lv2/lv2plug.in/ns/ext/presets/presets.h>
+#include <lv2/lv2plug.in/ns/ext/state/state.h>
+#include <lv2/lv2plug.in/ns/ext/uri-map/uri-map.h>
+#include <lv2/lv2plug.in/ns/ext/worker/worker.h>
+
+typedef struct {
+    const char* symbol;
+    float value;
+} StatePortValue;
 
 // --------------------------------------------------------------------------------------------------------------------
 
 static std::vector<std::string> g_handled_bundles;
-static std::vector<std::string> g_uri_mapping;
+static std::vector<std::string> g_uri_mapping = {
+    LV2_ATOM__Int,
+    LV2_ATOM__Float,
+    LV2_BUF_SIZE__maxBlockLength,
+    LV2_BUF_SIZE__minBlockLength,
+};
+
+// note: the ids below must match the ones on the mapping
+static const uint32_t k_urid_null        =  0;
+static const uint32_t k_urid_atom_int    =  1;
+static const uint32_t k_urid_atom_float  =  2;
+static const uint32_t k_urid_atom_bz_max =  3;
+static const uint32_t k_urid_atom_bz_min =  4;
+
+static const int32_t g_buffer_size = 128;
+static const double g_sample_rate = 48000.0;
+
+static void* g_user_data = (void*)0x1; // non-null
+
+// --------------------------------------------------------------------------------------------------------------------
+
+static LV2_Options_Option g_options[] = {
+    {
+        LV2_OPTIONS_INSTANCE,
+        0,
+        k_urid_atom_bz_max,
+        sizeof(int32_t),
+        k_urid_atom_int,
+        &g_buffer_size
+    },
+    {
+        LV2_OPTIONS_INSTANCE,
+        0,
+        k_urid_atom_bz_min,
+        sizeof(int32_t),
+        k_urid_atom_int,
+        &g_buffer_size
+    }
+};
+
+static LV2_Feature g_options_feature = {
+    LV2_OPTIONS__options, g_options
+};
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -36,8 +91,27 @@ static LV2_URID lv2_urid_map(LV2_URID_Map_Handle, const char* const uri_)
     return urid;
 }
 
-static LV2_URID_Map g_urid_map_feature = {
-    NULL, lv2_urid_map
+static LV2_URID_Map g_urid_map = {
+    g_user_data, lv2_urid_map
+};
+
+static LV2_Feature g_urid_map_feature = {
+    LV2_URID__map, &g_urid_map
+};
+
+// --------------------------------------------------------------------------------------------------------------------
+
+static uint32_t lv2_uri_to_id(LV2_URI_Map_Callback_Data handle, const char*, const char* uri)
+{
+    return lv2_urid_map(handle, uri);
+}
+
+static LV2_URI_Map_Feature g_uri_map = {
+    g_user_data, lv2_uri_to_id
+};
+
+static LV2_Feature g_uri_map_feature = {
+    LV2_URI_MAP_URI, &g_uri_map
 };
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -50,10 +124,86 @@ static const char* lv2_urid_unmap(LV2_URID_Unmap_Handle, const LV2_URID urid)
     return g_uri_mapping[urid].c_str();
 }
 
-static LV2_URID_Unmap g_urid_unmap_feature = {
-    NULL, lv2_urid_unmap
+static LV2_URID_Unmap g_urid_unmap = {
+    g_user_data, lv2_urid_unmap
 };
 
+static LV2_Feature g_urid_unmap_feature = {
+    LV2_URID__unmap, &g_urid_unmap
+};
+
+// --------------------------------------------------------------------------------------------------------------------
+
+static LV2_Worker_Status lv2_worker_schedule(LV2_Worker_Schedule_Handle, uint32_t, const void*)
+{
+    return LV2_WORKER_SUCCESS;
+}
+
+static LV2_Worker_Schedule g_worker = {
+    g_user_data, lv2_worker_schedule
+};
+
+static LV2_Feature g_worker_feature = {
+    LV2_WORKER__schedule, &g_worker
+};
+
+// --------------------------------------------------------------------------------------------------------------------
+
+static const LV2_Feature* g_features[] = {
+    &g_options_feature,
+    &g_urid_map_feature,
+    &g_uri_map_feature,
+    &g_urid_unmap_feature,
+    &g_worker_feature,
+    NULL
+};
+
+// --------------------------------------------------------------------------------------------------------------------
+
+static const void* get_port_value_for_state(const char* const symbol, void* user_data, uint32_t* size, uint32_t* type)
+{
+    const std::vector<StatePortValue>& values = *(std::vector<StatePortValue>*)user_data;
+
+    for (const StatePortValue& value : values)
+    {
+        if (strcmp(value.symbol, symbol) != 0)
+            continue;
+
+        *size = sizeof(float);
+        *type = k_urid_atom_float;
+        return &value.value;
+    }
+
+    return NULL;
+}
+
+static void set_port_value_for_state(const char* const symbol, void* const user_data, const void* value, uint32_t size, uint32_t type)
+{
+    std::vector<StatePortValue>* const values = (std::vector<StatePortValue>*)user_data;
+
+    switch (type)
+    {
+    case k_urid_atom_int:
+        if (size == sizeof(int32_t))
+        {
+            int32_t ivalue = *(const int32_t*)value;
+            values->push_back({ strdup(symbol), (float)ivalue });
+            return;
+        }
+        break;
+
+    case k_urid_atom_float:
+        if (size == sizeof(float))
+        {
+            float fvalue = *(const float*)value;
+            values->push_back({ strdup(symbol), fvalue });
+            return;
+        }
+        break;
+    }
+
+    fprintf(stderr, "set_port_value_for_state called with unknown type: %u %u\n", type, size);
+}
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -83,13 +233,40 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
         return;
     }
 
-    LilvState* const state = lilv_state_new_from_world(world, &g_urid_map_feature, uri);
+    LilvState* state = lilv_state_new_from_world(world, &g_urid_map, uri);
 
     if (state == NULL)
     {
         lilv_free(bundlepath);
-        fprintf(stderr, "failed to generate preset for '%s'\n", lilv_node_as_uri(uri));
+        fprintf(stderr, "failed to get state for '%s'\n", lilv_node_as_uri(uri));
         return;
+    }
+
+    LilvInstance* const instance = lilv_plugin_instantiate(plugin, g_sample_rate, g_features);
+
+    if (instance != NULL)
+    {
+#if 0
+        float buffer[g_buffer_size];
+        memset(buffer, 0, sizeof(float)*g_buffer_size);
+
+        for (uint32_t i=0, count=lilv_plugin_get_num_ports(plugin); i<count; ++i)
+        {
+            // FIXME: adjust to other port types
+            lilv_instance_connect_port(instance, i, buffer);
+        }
+
+        lilv_instance_activate(instance);
+        lilv_instance_run(instance, g_buffer_size);
+#endif
+
+        std::vector<StatePortValue> values;
+        lilv_state_emit_port_values(state, set_port_value_for_state, &values);
+
+        lilv_state_free(state);
+        state = lilv_state_new_from_instance(plugin, instance, &g_urid_map,
+                                             bundlepath, bundlepath, bundlepath, bundlepath,
+                                             get_port_value_for_state, &values, LV2_STATE_IS_POD|LV2_STATE_IS_PORTABLE, NULL);
     }
 
     std::string preseturi("default-preset");
@@ -102,7 +279,7 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
         preseturi += std::to_string(count);
     }
 
-    char* const string = lilv_state_to_string(world, &g_urid_map_feature, &g_urid_unmap_feature, state, preseturi.c_str(), NULL);
+    char* const string = lilv_state_to_string(world, &g_urid_map, &g_urid_unmap, state, preseturi.c_str(), NULL);
 
     if (string == NULL)
     {
@@ -116,8 +293,9 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     if (count == 0)
     {
-        presetfile << "@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .\n";
-        presetfile << "@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .\n";
+        presetfile << "@prefix lv2:   <" LV2_CORE_PREFIX "> .\n";
+        presetfile << "@prefix pset:  <" LV2_PRESETS_PREFIX "> .\n";
+        presetfile << "@prefix state: <" LV2_STATE_PREFIX "> .\n";
         presetfile << "\n";
     }
 
@@ -141,16 +319,24 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
         std::fstream manifestfile(sbundlepath + "/manifest.ttl", std::ios::out|std::ios::app);
         manifestfile << "\n";
         manifestfile << "<" << preseturi << ">\n";
-        manifestfile << "    a <http://lv2plug.in/ns/ext/presets#Preset> ;\n";
-        manifestfile << "    <http://lv2plug.in/ns/lv2core#appliesTo> <" << lilv_node_as_uri(uri) << "> ;\n";
-        manifestfile << "    <http://www.w3.org/2000/01/rdf-schema#label> \"Default\" ;\n";
-        manifestfile << "    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .\n";
+        manifestfile << "    a <" LV2_PRESETS__Preset "> ;\n";
+        manifestfile << "    <" LV2_CORE__appliesTo "> <" << lilv_node_as_uri(uri) << "> ;\n";
+        manifestfile << "    <" LILV_NS_RDFS "label> \"Default\" ;\n";
+        manifestfile << "    <" LILV_NS_RDFS "seeAlso> <default-preset.ttl> .\n";
         manifestfile.close();
     }
 
     lilv_free(string);
     lilv_free(bundlepath);
     lilv_state_free(state);
+
+    if (instance != NULL)
+    {
+#if 0
+        lilv_instance_deactivate(instance);
+#endif
+        lilv_instance_free(instance);
+    }
 }
 
 // --------------------------------------------------------------------------------------------------------------------
