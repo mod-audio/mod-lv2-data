@@ -1,0 +1,4 @@
+This folder contains code to generate LV2 "default" presets.
+Make sure to build first, then run generate.
+
+You'll need lilv (devel package) to build.
