@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_room_simulator_#_room_simulator_> ;
+	lv2:port [
+		lv2:symbol "DRYWET" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "EFFECT" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "PREDELAYMS" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "ROOMSIZE" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "RT" ;
+		pset:value 0.30000001
+	] .
+

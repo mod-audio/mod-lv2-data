@@ -1,0 +1,319 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/cs_phaser1> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "fb_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lin_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_mix" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sections" ;
+		pset:value 1
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvchpf1> ;
+	lv2:port [
+		lv2:symbol "exp_gm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_gain" ;
+		pset:value 0.0
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvclpf1> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res_gain" ;
+		pset:value 0.0
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvclpf2> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res_gain" ;
+		pset:value 0.0
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvclpf3> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res_gain" ;
+		pset:value 0.0
+	] .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvclpf4> ;
+	lv2:port [
+		lv2:symbol "exp_fm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "fm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "in_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "out_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "poles" ;
+		pset:value 0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res_mod" ;
+		pset:value 0.0
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/parametric1> ;
+	lv2:port [
+		lv2:symbol "bw_1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bw_2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bw_3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bw_4" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filter" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq_1" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "freq_2" ;
+		pset:value 400.0
+	] , [
+		lv2:symbol "freq_3" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "freq_4" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sec_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sec_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sec_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sec_4" ;
+		pset:value 0.0
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/pulse_vco> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "lin_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lp_filter" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "octave" ;
+		pset:value 0
+	] , [
+		lv2:symbol "tune" ;
+		pset:value 0.0
+	] .
+
+<default-preset_8>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/rec_vco> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "form_mod" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "lin_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lp_filrer" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "octave" ;
+		pset:value 0
+	] , [
+		lv2:symbol "tune" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "waveform" ;
+		pset:value 0.0
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/reverb_amb> ;
+	lv2:port [
+		lv2:symbol "damping" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 0.06
+	] , [
+		lv2:symbol "f2_freq" ;
+		pset:value 2514.87011719
+	] , [
+		lv2:symbol "f2_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "fw_freq" ;
+		pset:value 159.05400085
+	] , [
+		lv2:symbol "fw_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rt_low" ;
+		pset:value 2.75
+	] , [
+		lv2:symbol "rt_mid" ;
+		pset:value 2.75
+	] , [
+		lv2:symbol "xover" ;
+		pset:value 223.60699463
+	] , [
+		lv2:symbol "xyz_gain" ;
+		pset:value 0.0
+	] .
+
+<default-preset_10>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/fomp/saw_vco> ;
+	lv2:port [
+		lv2:symbol "exp_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "lin_fm_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lp_filter" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "octave" ;
+		pset:value 0
+	] , [
+		lv2:symbol "tune" ;
+		pset:value 0.0
+	] .
+

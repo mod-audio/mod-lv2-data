@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Loudness> ;
+	lv2:port [
+		lv2:symbol "link" ;
+		pset:value 0.34999999
+	] , [
+		lv2:symbol "loudness" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "output" ;
+		pset:value 0.5
+	] .
+

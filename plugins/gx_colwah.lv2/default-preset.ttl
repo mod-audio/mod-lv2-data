@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_colwah_#_colwah_> ;
+	lv2:port [
+		lv2:symbol "FREQ" ;
+		pset:value 24.0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "MODEL" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "WAH" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "WET_DRY" ;
+		pset:value 100.0
+	] .
+

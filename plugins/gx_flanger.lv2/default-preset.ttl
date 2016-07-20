@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_flanger#_flanger> ;
+	lv2:port [
+		lv2:symbol "depth" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "dry_wet" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value -0.70700002
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 5.0
+	] .
+

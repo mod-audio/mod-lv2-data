@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://hippie.lt/lv2/gate> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 30
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 1000
+	] , [
+		lv2:symbol "gaterange" ;
+		pset:value -90
+	] , [
+		lv2:symbol "hold" ;
+		pset:value 500
+	] , [
+		lv2:symbol "switch" ;
+		pset:value 0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value -70
+	] .
+

@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/vibrato> ;
+	lv2:port [
+		lv2:symbol "Depth" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drylevel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "frequency" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "latency" ;
+		pset:value 6300.0
+	] , [
+		lv2:symbol "wetlevel" ;
+		pset:value 0.0
+	] .
+

@@ -1,0 +1,247 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/delay/mono> ;
+	lv2:port [
+		lv2:symbol "LFOcycle" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "LFOdepth" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "LFOlamp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay1" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "delay2" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "fb1" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "fb2" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "meterIn" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "munge" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "mungemode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan1" ;
+		pset:value -0.69999999
+	] , [
+		lv2:symbol "pan2" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "vol1" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "vol2" ;
+		pset:value 100.0
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/delay/sum> ;
+	lv2:port [
+		lv2:symbol "LFOcycle" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "LFOdepth" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "LFOlamp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay1" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "delay2" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "fb1" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "fb2" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "meterIn" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "munge" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "mungemode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan1" ;
+		pset:value -0.69999999
+	] , [
+		lv2:symbol "pan2" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "vol1" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "vol2" ;
+		pset:value 100.0
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/phaser/mono> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "cycle" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 75.01000214
+	] , [
+		lv2:symbol "lampDrive" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampL" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampR" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "meterIn" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase" ;
+		pset:value 45.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 8.0
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/phaser/stereo> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "cycle" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 75.01000214
+	] , [
+		lv2:symbol "lampDrive" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampL" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampR" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "meterInL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterInR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase" ;
+		pset:value 45.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 8.0
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/phaser/sum> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "cycle" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 75.01000214
+	] , [
+		lv2:symbol "lampDrive" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampL" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lampR" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "meterIn" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutL" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "meterOutR" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase" ;
+		pset:value 45.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 8.0
+	] .
+

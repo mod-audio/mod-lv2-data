@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_chorus_stereo#_chorus_stereo> ;
+	lv2:port [
+		lv2:symbol "delay" ;
+		pset:value 0.02
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 0.02
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "level" ;
+		pset:value 0.5
+	] .
+

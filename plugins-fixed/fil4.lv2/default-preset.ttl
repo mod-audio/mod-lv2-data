@@ -1,0 +1,211 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/fil4#mono> ;
+	lv2:port [
+		lv2:symbol "HPQ" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "HPfreq" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "HSfreq" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "HSgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "HSq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "HSsec" ;
+		pset:value 1
+	] , [
+		lv2:symbol "HighPass" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LPQ" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "LPfreq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "LSfreq" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "LSgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "LSq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "LSsec" ;
+		pset:value 1
+	] , [
+		lv2:symbol "LowPass" ;
+		pset:value 0
+	] , [
+		lv2:symbol "enable" ;
+		pset:value 1
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 160.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 397.0
+	] , [
+		lv2:symbol "freq3" ;
+		pset:value 1250.0
+	] , [
+		lv2:symbol "freq4" ;
+		pset:value 2500.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "peakreset" ;
+		pset:value 1
+	] , [
+		lv2:symbol "q1" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q2" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q3" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q4" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "sec1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec2" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec3" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec4" ;
+		pset:value 1
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/fil4#stereo> ;
+	lv2:port [
+		lv2:symbol "HPQ" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "HPfreq" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "HSfreq" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "HSgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "HSq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "HSsec" ;
+		pset:value 1
+	] , [
+		lv2:symbol "HighPass" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LPQ" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "LPfreq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "LSfreq" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "LSgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "LSq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "LSsec" ;
+		pset:value 1
+	] , [
+		lv2:symbol "LowPass" ;
+		pset:value 0
+	] , [
+		lv2:symbol "enable" ;
+		pset:value 1
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 160.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 397.0
+	] , [
+		lv2:symbol "freq3" ;
+		pset:value 1250.0
+	] , [
+		lv2:symbol "freq4" ;
+		pset:value 2500.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "peakreset" ;
+		pset:value 1
+	] , [
+		lv2:symbol "q1" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q2" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q3" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "q4" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "sec1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec2" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec3" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sec4" ;
+		pset:value 1
+	] .
+

@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/sooperlooper> ;
+	lv2:port [
+		lv2:symbol "play_pause" ;
+		pset:value 0
+	] , [
+		lv2:symbol "record" ;
+		pset:value 0
+	] , [
+		lv2:symbol "redo" ;
+		pset:value 0
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0
+	] , [
+		lv2:symbol "undo" ;
+		pset:value 0
+	] .
+

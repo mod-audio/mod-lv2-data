@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxts9#ts9sim> ;
+	lv2:port [
+		lv2:symbol "fslider0_" ;
+		pset:value -16.0
+	] , [
+		lv2:symbol "fslider1_" ;
+		pset:value 400.0
+	] , [
+		lv2:symbol "fslider2_" ;
+		pset:value 0.5
+	] .
+

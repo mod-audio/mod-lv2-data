@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxtubedelay#tubedelay> ;
+	lv2:port [
+		lv2:symbol "fslider0_" ;
+		pset:value -40.0
+	] , [
+		lv2:symbol "fslider1_" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "fslider2_" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "fslider3_" ;
+		pset:value -60.0
+	] .
+

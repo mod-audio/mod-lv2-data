@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Transient> ;
+	lv2:port [
+		lv2:symbol "att_hold" ;
+		pset:value 35.0
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "filter" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "output" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rel_hold" ;
+		pset:value 35.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 50.0
+	] .
+

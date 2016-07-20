@@ -1,0 +1,212 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/adsr> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0
+	] , [
+		lv2:symbol "sustain" ;
+		pset:value 1
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/adsr_gt> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0
+	] , [
+		lv2:symbol "sustain" ;
+		pset:value 1
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/amp> .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/dahdsr> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 0
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 0
+	] , [
+		lv2:symbol "hold" ;
+		pset:value 0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0
+	] , [
+		lv2:symbol "sustain" ;
+		pset:value 1
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/interpolator> .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/lp4pole> ;
+	lv2:port [
+		lv2:symbol "cutoff" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "resonance" ;
+		pset:value 0
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/pulse> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "pwidth" ;
+		pset:value 0.5
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_100> ;
+	lv2:port [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "range" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 20
+	] .
+
+<default-preset_8>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_20> ;
+	lv2:port [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "range" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 20
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_50> ;
+	lv2:port [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "range" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 20
+	] .
+
+<default-preset_10>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/random> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 440.0
+	] , [
+		lv2:symbol "smooth" ;
+		pset:value 1
+	] .
+
+<default-preset_11>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_16> ;
+	lv2:port [
+		lv2:symbol "reset" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 16
+	] .
+
+<default-preset_12>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_32> ;
+	lv2:port [
+		lv2:symbol "reset" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 32
+	] .
+
+<default-preset_13>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_64> ;
+	lv2:port [
+		lv2:symbol "reset" ;
+		pset:value 0
+	] , [
+		lv2:symbol "steps" ;
+		pset:value 32
+	] .
+
+<default-preset_14>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/sync_pulse> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 16
+	] , [
+		lv2:symbol "pwidth" ;
+		pset:value 0.5
+	] .
+
+<default-preset_15>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/sync_square> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 16
+	] .
+
+<default-preset_16>
+	a pset:Preset ;
+	lv2:appliesTo <http://drobilla.net/plugins/blop/tracker> ;
+	lv2:port [
+		lv2:symbol "hattack" ;
+		pset:value 100
+	] , [
+		lv2:symbol "hdecay" ;
+		pset:value 100
+	] , [
+		lv2:symbol "lattack" ;
+		pset:value 100
+	] , [
+		lv2:symbol "ldecay" ;
+		pset:value 100
+	] .
+

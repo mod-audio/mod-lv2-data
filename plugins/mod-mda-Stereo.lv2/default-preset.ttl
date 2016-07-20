@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Stereo> ;
+	lv2:port [
+		lv2:symbol "balance" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 22.43000031
+	] , [
+		lv2:symbol "mod" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 56.0
+	] .
+

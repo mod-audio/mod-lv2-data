@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxechocat#echocat> ;
+	lv2:port [
+		lv2:symbol "head1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "head2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "head3" ;
+		pset:value 0
+	] , [
+		lv2:symbol "input_gain" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "outputgain" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "sustain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "swell" ;
+		pset:value 0.0
+	] .
+

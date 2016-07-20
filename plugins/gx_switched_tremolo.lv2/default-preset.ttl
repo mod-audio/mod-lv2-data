@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo_> ;
+	lv2:port [
+		lv2:symbol "DEPTH" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "FREQ0" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "FREQ1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "FREQ2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "FREQ3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "STEPS" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "SWITCHFREQ" ;
+		pset:value 1.0
+	] .
+

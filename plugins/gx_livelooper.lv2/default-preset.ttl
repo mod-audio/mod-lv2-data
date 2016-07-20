@@ -1,0 +1,134 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_livelooper_#_livelooper_> ;
+	lv2:port [
+		lv2:symbol "bar1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bar2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bar3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bar4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "clip1" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "clip2" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "clip3" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "clip4" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "clips1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "clips2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "clips3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "clips4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level1" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "level2" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "level3" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "level4" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "play1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "play2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "play3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "play4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "playh1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "playh2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "playh3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "playh4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rec1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rec2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rec3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rec4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "reset1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "reset2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "reset3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "reset4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rplay1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rplay2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rplay3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rplay4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed4" ;
+		pset:value 0.0
+	] .
+

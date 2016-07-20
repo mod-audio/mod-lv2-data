@@ -1,0 +1,14 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/b_reverb> ;
+	lv2:port [
+		lv2:symbol "gain_in" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 0.30000001
+	] .
+

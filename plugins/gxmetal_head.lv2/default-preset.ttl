@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxmetal_head#metal_head> ;
+	lv2:port [
+		lv2:symbol "DRIVE" ;
+		pset:value 0.31999999
+	] , [
+		lv2:symbol "GAIN1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "PREGAIN" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "TONE" ;
+		pset:value 0.5
+	] .
+

@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/ChorusI> ;
+	lv2:port [
+		lv2:symbol "blend" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "feedforward" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 1.25
+	] , [
+		lv2:symbol "time" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 3.0
+	] .
+

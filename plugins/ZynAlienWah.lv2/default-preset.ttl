@@ -1,0 +1,35 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#AlienWah> ;
+	lv2:port [
+		lv2:symbol "delay" ;
+		pset:value 25
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 60
+	] , [
+		lv2:symbol "fb" ;
+		pset:value 105
+	] , [
+		lv2:symbol "lfofreq" ;
+		pset:value 70
+	] , [
+		lv2:symbol "lforand" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfostereo" ;
+		pset:value 62
+	] , [
+		lv2:symbol "lfotype" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lrcross" ;
+		pset:value 0
+	] , [
+		lv2:symbol "phase" ;
+		pset:value 64
+	] .
+

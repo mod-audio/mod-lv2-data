@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://distrho.sf.net/plugins/Nekobi> ;
+	lv2:port [
+		lv2:symbol "accent" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "cutoff" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "env_mod" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "resonance" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "tuning" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "volume" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "waveform" ;
+		pset:value 0
+	] .
+

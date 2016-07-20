@@ -1,0 +1,41 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#Reverb> ;
+	lv2:port [
+		lv2:symbol "bw" ;
+		pset:value 20
+	] , [
+		lv2:symbol "damp" ;
+		pset:value 83
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 24
+	] , [
+		lv2:symbol "fb" ;
+		pset:value 0
+	] , [
+		lv2:symbol "hpf" ;
+		pset:value 5
+	] , [
+		lv2:symbol "lpf" ;
+		pset:value 85
+	] , [
+		lv2:symbol "size" ;
+		pset:value 64
+	] , [
+		lv2:symbol "time" ;
+		pset:value 63
+	] , [
+		lv2:symbol "type" ;
+		pset:value 1
+	] , [
+		lv2:symbol "unused_bw" ;
+		pset:value 0
+	] , [
+		lv2:symbol "unused_er" ;
+		pset:value 0
+	] .
+

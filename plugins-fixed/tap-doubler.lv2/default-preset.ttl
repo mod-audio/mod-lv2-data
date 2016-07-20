@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/doubler> ;
+	lv2:port [
+		lv2:symbol "DryLeftPosition" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "DryLevelDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "DryRightPosition" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "PitchTracking" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "TimeTracking" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "WetLeftPosition" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "WetLevelDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "WetRightPosition" ;
+		pset:value 1.0
+	] .
+

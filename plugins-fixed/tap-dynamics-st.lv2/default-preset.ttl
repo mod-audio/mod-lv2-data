@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/dynamics-st> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 128.0
+	] , [
+		lv2:symbol "function" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lenvelope" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "offset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "releaseM" ;
+		pset:value 502.0
+	] , [
+		lv2:symbol "renvelope" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "rgain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 0
+	] .
+

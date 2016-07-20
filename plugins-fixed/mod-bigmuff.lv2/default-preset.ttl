@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/BigMuffPi> ;
+	lv2:port [
+		lv2:symbol "Level" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "Sustain" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "Tone" ;
+		pset:value 0.5
+	] .
+

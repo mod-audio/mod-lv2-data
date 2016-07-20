@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/SpiceX2> ;
+	lv2:port [
+		lv2:symbol "hif" ;
+		pset:value 1350.0
+	] , [
+		lv2:symbol "higain" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "locomp" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lof" ;
+		pset:value 225.0
+	] , [
+		lv2:symbol "logain" ;
+		pset:value 0.25
+	] .
+

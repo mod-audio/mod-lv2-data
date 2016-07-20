@@ -1,0 +1,127 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "crush" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "drywet" ;
+		pset:value 1.0
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#della> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "volume" ;
+		pset:value 0.5
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#ducka> ;
+	lv2:port [
+		lv2:symbol "reduction" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "sidechain_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.25
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#masha> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "amplitude" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dry_wet" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "time" ;
+		pset:value 0.5
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#panda> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "factor" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.5
+	] .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#satma> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "distort" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "tone" ;
+		pset:value 0.0
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#vihda> ;
+	lv2:port [
+		lv2:symbol "active" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "invert" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 0.5
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#whaaa> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 0.5
+	] .
+

@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/ninodewit/SHIRO-Plugins/plugins/modulay> ;
+	lv2:port [
+		lv2:symbol "depth" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "morph" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "repeats" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "time" ;
+		pset:value 500.0
+	] , [
+		lv2:symbol "tone" ;
+		pset:value 3000.0
+	] .
+

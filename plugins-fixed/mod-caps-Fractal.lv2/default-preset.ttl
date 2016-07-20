@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/Fractal> ;
+	lv2:port [
+		lv2:symbol "hp" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "x" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "y" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "z" ;
+		pset:value 0.5
+	] .
+

@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/echo> ;
+	lv2:port [
+		lv2:symbol "crossmode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dryLevel" ;
+		pset:value -4.0
+	] , [
+		lv2:symbol "haaseffect" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ldelay" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "lecholevel" ;
+		pset:value -4.0
+	] , [
+		lv2:symbol "lfeedback" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "recholevel" ;
+		pset:value -4.0
+	] , [
+		lv2:symbol "rhaasdelay" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "rhaasfeedback" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "swapoutputs" ;
+		pset:value 0.0
+	] .
+

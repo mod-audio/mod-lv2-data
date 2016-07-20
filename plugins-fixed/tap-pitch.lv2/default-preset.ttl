@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/pitch> ;
+	lv2:port [
+		lv2:symbol "Drylevel" ;
+		pset:value -90.0
+	] , [
+		lv2:symbol "Latency" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Semitone" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Wetlevel" ;
+		pset:value 0.0
+	] .
+

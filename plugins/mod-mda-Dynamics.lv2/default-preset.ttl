@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Dynamics> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 283.14001465
+	] , [
+		lv2:symbol "gate_att" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "gate_rel" ;
+		pset:value 173.92999268
+	] , [
+		lv2:symbol "gate_thr" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "limiter" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "output" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value -10
+	] , [
+		lv2:symbol "release" ;
+		pset:value 864.59997559
+	] , [
+		lv2:symbol "thresh" ;
+		pset:value -16.0
+	] .
+

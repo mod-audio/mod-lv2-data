@@ -1,0 +1,41 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/AmpVTS> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bass" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "bright" ;
+		pset:value 0.75
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "low_cut" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "mid" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "over" ;
+		pset:value 2
+	] , [
+		lv2:symbol "power" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "squash" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "tonestack" ;
+		pset:value 1
+	] , [
+		lv2:symbol "treble" ;
+		pset:value 0.75
+	] .
+

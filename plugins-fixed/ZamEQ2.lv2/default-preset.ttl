@@ -1,0 +1,44 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <urn:zamaudio:ZamEQ2> ;
+	lv2:port [
+		lv2:symbol "boost1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "boost2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "boosth" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "boostl" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bw1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bw2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "f1" ;
+		pset:value 500.0
+	] , [
+		lv2:symbol "f2" ;
+		pset:value 3000.0
+	] , [
+		lv2:symbol "fh" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "fl" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "peaks" ;
+		pset:value 0.0
+	] .
+

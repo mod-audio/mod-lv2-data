@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/fabla2> ;
+	lv2:port [
+		lv2:symbol "master_pitch" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master_vol" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "record_over_last_played_pad" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sequencer_bpm" ;
+		pset:value 120.0
+	] .
+

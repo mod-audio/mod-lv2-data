@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://faust-lv2.googlecode.com/Freaktail> ;
+	lv2:port [
+		lv2:symbol "Decay" ;
+		pset:value 0.94
+	] , [
+		lv2:symbol "Roomsize" ;
+		pset:value 0.79000002
+	] , [
+		lv2:symbol "Tail_level" ;
+		pset:value 0.23999999
+	] .
+

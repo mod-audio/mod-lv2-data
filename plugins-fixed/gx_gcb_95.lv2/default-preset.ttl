@@ -1,0 +1,14 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_gcb_95_#_gcb_95_> ;
+	lv2:port [
+		lv2:symbol "HOTPOTZ" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "VOLUME" ;
+		pset:value 0.0
+	] .
+

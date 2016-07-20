@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/TestTone> ;
+	lv2:port [
+		lv2:symbol "channel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "f1" ;
+		pset:value 0.56999999
+	] , [
+		lv2:symbol "f2" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "level" ;
+		pset:value 0.70999998
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sweep" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "thru" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "zero_db" ;
+		pset:value 1.0
+	] .
+

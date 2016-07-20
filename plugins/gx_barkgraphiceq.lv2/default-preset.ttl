@@ -1,0 +1,152 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_barkgraphiceq_#_barkgraphiceq_> ;
+	lv2:port [
+		lv2:symbol "G1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G12" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G13" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G14" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G15" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G16" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G17" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G18" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G19" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "G20" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G21" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G22" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G23" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G24" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "G8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V12" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V13" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V14" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V15" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V16" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V17" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V18" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V19" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V20" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V21" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V22" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V23" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V24" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V9" ;
+		pset:value 0.0
+	] .
+

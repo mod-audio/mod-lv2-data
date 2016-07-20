@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_jcm800pre_#_jcm800pre_> ;
+	lv2:port [
+		lv2:symbol "Bass" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Middle" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "P6v" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "Treble" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "WET_DRY" ;
+		pset:value 50.0
+	] .
+

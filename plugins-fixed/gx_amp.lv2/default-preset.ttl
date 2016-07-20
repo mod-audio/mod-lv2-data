@@ -1,0 +1,47 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	lv2:port [
+		lv2:symbol "Bass" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "Cabinet" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "Distortion" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "Drive" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "MasterGain" ;
+		pset:value -15.0
+	] , [
+		lv2:symbol "Middle" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "PreGain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Presence" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "SCHEDULE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "Treble" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "c_model" ;
+		pset:value 0
+	] , [
+		lv2:symbol "model" ;
+		pset:value 0
+	] , [
+		lv2:symbol "t_model" ;
+		pset:value 1
+	] .
+

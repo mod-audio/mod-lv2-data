@@ -1,0 +1,47 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#Phaser> ;
+	lv2:port [
+		lv2:symbol "analog" ;
+		pset:value 0
+	] , [
+		lv2:symbol "depth" ;
+		pset:value 110
+	] , [
+		lv2:symbol "dist" ;
+		pset:value 0
+	] , [
+		lv2:symbol "fb" ;
+		pset:value 64
+	] , [
+		lv2:symbol "hyper" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfofreq" ;
+		pset:value 36
+	] , [
+		lv2:symbol "lforand" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfostereo" ;
+		pset:value 64
+	] , [
+		lv2:symbol "lfotype" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lrcross" ;
+		pset:value 0
+	] , [
+		lv2:symbol "phase" ;
+		pset:value 20
+	] , [
+		lv2:symbol "stages" ;
+		pset:value 1
+	] , [
+		lv2:symbol "subsout" ;
+		pset:value 0
+	] .
+

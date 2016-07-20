@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#DynamicFilter> ;
+	lv2:port [
+		lv2:symbol "ampsmooth" ;
+		pset:value 60
+	] , [
+		lv2:symbol "ampsns" ;
+		pset:value 90
+	] , [
+		lv2:symbol "ampsnsinv" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfodepth" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfofreq" ;
+		pset:value 80
+	] , [
+		lv2:symbol "lforand" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfostereo" ;
+		pset:value 64
+	] , [
+		lv2:symbol "lfotype" ;
+		pset:value 0
+	] .
+

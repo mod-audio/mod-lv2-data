@@ -1,0 +1,59 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/Eq4p> ;
+	lv2:port [
+		lv2:symbol "a_freq" ;
+		pset:value 102.87000275
+	] , [
+		lv2:symbol "a_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "a_mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "a_q" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "b_freq" ;
+		pset:value 529.15002441
+	] , [
+		lv2:symbol "b_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "b_mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "b_q" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "c_freq" ;
+		pset:value 1080.0
+	] , [
+		lv2:symbol "c_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "c_mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "c_q" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "d_freq" ;
+		pset:value 2721.7800293
+	] , [
+		lv2:symbol "d_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "d_mode" ;
+		pset:value 2
+	] , [
+		lv2:symbol "d_q" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "latency" ;
+		pset:value 3
+	] .
+

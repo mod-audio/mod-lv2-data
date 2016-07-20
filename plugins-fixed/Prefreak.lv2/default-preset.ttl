@@ -1,0 +1,14 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://faust-lv2.googlecode.com/Prefreak> ;
+	lv2:port [
+		lv2:symbol "Blur" ;
+		pset:value 1.63999999
+	] , [
+		lv2:symbol "Level" ;
+		pset:value 0.25999999
+	] .
+

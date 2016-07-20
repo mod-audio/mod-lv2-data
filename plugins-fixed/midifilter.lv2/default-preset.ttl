@@ -1,0 +1,580 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#cctonote> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "key" ;
+		pset:value 48
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "param" ;
+		pset:value 0
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#channelfilter> ;
+	lv2:port [
+		lv2:symbol "chn1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn10" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn11" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn12" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn13" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn14" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn15" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn16" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn2" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn3" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn4" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn5" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn6" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn7" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn8" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn9" ;
+		pset:value 1
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#channelmap> ;
+	lv2:port [
+		lv2:symbol "chn1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "chn10" ;
+		pset:value 10
+	] , [
+		lv2:symbol "chn11" ;
+		pset:value 11
+	] , [
+		lv2:symbol "chn12" ;
+		pset:value 12
+	] , [
+		lv2:symbol "chn13" ;
+		pset:value 13
+	] , [
+		lv2:symbol "chn14" ;
+		pset:value 14
+	] , [
+		lv2:symbol "chn15" ;
+		pset:value 15
+	] , [
+		lv2:symbol "chn16" ;
+		pset:value 16
+	] , [
+		lv2:symbol "chn2" ;
+		pset:value 2
+	] , [
+		lv2:symbol "chn3" ;
+		pset:value 3
+	] , [
+		lv2:symbol "chn4" ;
+		pset:value 4
+	] , [
+		lv2:symbol "chn5" ;
+		pset:value 5
+	] , [
+		lv2:symbol "chn6" ;
+		pset:value 6
+	] , [
+		lv2:symbol "chn7" ;
+		pset:value 7
+	] , [
+		lv2:symbol "chn8" ;
+		pset:value 8
+	] , [
+		lv2:symbol "chn9" ;
+		pset:value 9
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#enforcescale> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "scale" ;
+		pset:value 0
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#eventblocker> ;
+	lv2:port [
+		lv2:symbol "blkcc" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blkcm" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blkcp" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blknote" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blkpb" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blkpc" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blkpp" ;
+		pset:value 0
+	] , [
+		lv2:symbol "blksx" ;
+		pset:value 0
+	] , [
+		lv2:symbol "cm1" ;
+		pset:value -1
+	] , [
+		lv2:symbol "cm2" ;
+		pset:value -1
+	] , [
+		lv2:symbol "cmf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "cmt" ;
+		pset:value 0
+	] .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#keyrange> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lower" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "upper" ;
+		pset:value 127
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#keysplit> ;
+	lv2:port [
+		lv2:symbol "channel0" ;
+		pset:value 1
+	] , [
+		lv2:symbol "channel1" ;
+		pset:value 2
+	] , [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "split" ;
+		pset:value 48
+	] , [
+		lv2:symbol "transp0" ;
+		pset:value 0
+	] , [
+		lv2:symbol "transp1" ;
+		pset:value 0
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mapcc> ;
+	lv2:port [
+		lv2:symbol "ccin" ;
+		pset:value 0
+	] , [
+		lv2:symbol "ccout" ;
+		pset:value 0
+	] , [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] .
+
+<default-preset_8>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mapkeyscale> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k0" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k10" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k11" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k3" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k4" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k5" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k6" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "k9" ;
+		pset:value 0
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#midichord> ;
+	lv2:port [
+		lv2:symbol "_8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "c11" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c13" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c3" ;
+		pset:value 1
+	] , [
+		lv2:symbol "c5" ;
+		pset:value 1
+	] , [
+		lv2:symbol "c6" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c8" ;
+		pset:value 1
+	] , [
+		lv2:symbol "c9" ;
+		pset:value 0
+	] , [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "scale" ;
+		pset:value 0
+	] .
+
+<default-preset_10>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mididelay> ;
+	lv2:port [
+		lv2:symbol "bpmsrc" ;
+		pset:value 1
+	] , [
+		lv2:symbol "delayBPM" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "delayBeats" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "delayRandom" ;
+		pset:value 0.0
+	] .
+
+<default-preset_11>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mididup> ;
+	lv2:port [
+		lv2:symbol "chd" ;
+		pset:value 2
+	] , [
+		lv2:symbol "chs" ;
+		pset:value 1
+	] .
+
+<default-preset_12>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#midistrum> ;
+	lv2:port [
+		lv2:symbol "adjspeed" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adjvelocity" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bpm" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "bpmsrc" ;
+		pset:value 1
+	] , [
+		lv2:symbol "collect" ;
+		pset:value 15.0
+	] , [
+		lv2:symbol "duration" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 2
+	] , [
+		lv2:symbol "randspeed" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "randvelocity" ;
+		pset:value 0.0
+	] .
+
+<default-preset_13>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#miditranspose> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "inversion" ;
+		pset:value 0
+	] , [
+		lv2:symbol "transpose" ;
+		pset:value 0
+	] .
+
+<default-preset_14>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#monolegato> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] .
+
+<default-preset_15>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#noactivesensing> .
+
+<default-preset_16>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#nodup> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] .
+
+<default-preset_17>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#notetocc> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "key" ;
+		pset:value 48
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "param" ;
+		pset:value 0
+	] .
+
+<default-preset_18>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#notetoggle> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] .
+
+<default-preset_19>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#ntapdelay> ;
+	lv2:port [
+		lv2:symbol "bpmsrc" ;
+		pset:value 1
+	] , [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "delayBPM" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "delayBeats" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "taps" ;
+		pset:value 3
+	] , [
+		lv2:symbol "velocityadj" ;
+		pset:value -10.0
+	] .
+
+<default-preset_20>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#passthru> .
+
+<default-preset_21>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#quantize> ;
+	lv2:port [
+		lv2:symbol "bpm" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "bpmsrc" ;
+		pset:value 1
+	] , [
+		lv2:symbol "mindur" ;
+		pset:value 1
+	] , [
+		lv2:symbol "quant" ;
+		pset:value 0.25
+	] .
+
+<default-preset_22>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#randvelocity> ;
+	lv2:port [
+		lv2:symbol "channel" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "randfact" ;
+		pset:value 8.0
+	] .
+
+<default-preset_23>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#scalecc> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lower" ;
+		pset:value 0
+	] , [
+		lv2:symbol "pmode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "upper" ;
+		pset:value 127
+	] , [
+		lv2:symbol "valmul" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "valoff" ;
+		pset:value 0
+	] , [
+		lv2:symbol "vmode" ;
+		pset:value 0
+	] .
+
+<default-preset_24>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#sostenuto> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "pedal" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sostenuto" ;
+		pset:value 0.0
+	] .
+
+<default-preset_25>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#velocityrange> ;
+	lv2:port [
+		lv2:symbol "channelf" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lower" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "upper" ;
+		pset:value 127
+	] .
+
+<default-preset_26>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#velocityscale> ;
+	lv2:port [
+		lv2:symbol "channel" ;
+		pset:value 0
+	] , [
+		lv2:symbol "offmax" ;
+		pset:value 127.0
+	] , [
+		lv2:symbol "offmin" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "offoff" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "onmax" ;
+		pset:value 127.0
+	] , [
+		lv2:symbol "onmin" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "onoff" ;
+		pset:value 0.0
+	] .
+

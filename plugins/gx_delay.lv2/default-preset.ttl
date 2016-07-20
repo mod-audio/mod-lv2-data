@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_delay_stereo#_delay_stereo> ;
+	lv2:port [
+		lv2:symbol "level_l" ;
+		pset:value -10.0
+	] , [
+		lv2:symbol "level_r" ;
+		pset:value -10.0
+	] , [
+		lv2:symbol "lfo" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "link" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "timt_l" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "timt_r" ;
+		pset:value 1000.0
+	] .
+

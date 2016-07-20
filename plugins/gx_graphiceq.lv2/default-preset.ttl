@@ -1,0 +1,74 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_graphiceq_#_graphiceq_> ;
+	lv2:port [
+		lv2:symbol "G1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "G3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "G8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "G9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "V9" ;
+		pset:value 0.0
+	] .
+

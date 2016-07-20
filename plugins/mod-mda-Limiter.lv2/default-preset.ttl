@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Limiter> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 234.44999695
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "output" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 758.5
+	] , [
+		lv2:symbol "thresh" ;
+		pset:value -16.0
+	] .
+

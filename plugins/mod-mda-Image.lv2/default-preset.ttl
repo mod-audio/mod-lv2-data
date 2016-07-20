@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/Image> ;
+	lv2:port [
+		lv2:symbol "m_level" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "m_pan" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "output" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "s_pan" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "s_width" ;
+		pset:value 100.0
+	] .
+

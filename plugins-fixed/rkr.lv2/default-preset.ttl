@@ -1,0 +1,146 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 64
+	] , [
+		lv2:symbol "HI" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MID" ;
+		pset:value 0
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dist> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DRIVE" ;
+		pset:value 56
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 21
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 40
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 6703
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 87
+	] , [
+		lv2:symbol "NEG" ;
+		pset:value 0
+	] , [
+		lv2:symbol "OCT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PREFILTER" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 84
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#eqp> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HFREQ" ;
+		pset:value 12000
+	] , [
+		lv2:symbol "HGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HQ" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LFREQ" ;
+		pset:value 200
+	] , [
+		lv2:symbol "LGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LQ" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MFREQ" ;
+		pset:value 800
+	] , [
+		lv2:symbol "MGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MQ" ;
+		pset:value 0
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#reve> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 83
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 27
+	] , [
+		lv2:symbol "IDEL" ;
+		pset:value 24
+	] , [
+		lv2:symbol "IDELFB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 4002
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RS" ;
+		pset:value 64
+	] , [
+		lv2:symbol "TIME" ;
+		pset:value 63
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 80
+	] .
+

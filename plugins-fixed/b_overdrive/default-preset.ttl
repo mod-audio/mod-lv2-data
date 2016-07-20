@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/b_overdrive> ;
+	lv2:port [
+		lv2:symbol "bias" ;
+		pset:value 0.87399
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.58209997
+	] , [
+		lv2:symbol "gainin" ;
+		pset:value 0.3567
+	] , [
+		lv2:symbol "gainout" ;
+		pset:value 0.07873
+	] , [
+		lv2:symbol "globfeed" ;
+		pset:value 0.5826
+	] , [
+		lv2:symbol "postfeed" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "sagtobias" ;
+		pset:value 0.18799999
+	] .
+

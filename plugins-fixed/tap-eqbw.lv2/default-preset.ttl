@@ -1,0 +1,80 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/eqbw> ;
+	lv2:port [
+		lv2:symbol "Band1BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band1FreqHz" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "Band1GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band2BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band2FreqHz" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "Band2GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band3BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band3FreqHz" ;
+		pset:value 400.0
+	] , [
+		lv2:symbol "Band3GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band4BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band4FreqHz" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "Band4GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band5BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band5FreqHz" ;
+		pset:value 3000.0
+	] , [
+		lv2:symbol "Band5GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band6BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band6FreqHz" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "Band6GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band7BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band7FreqHz" ;
+		pset:value 12000.0
+	] , [
+		lv2:symbol "Band7GainDb" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Band8BandwidthOctaves" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Band8FreqHz" ;
+		pset:value 15000.0
+	] , [
+		lv2:symbol "Band8GainDb" ;
+		pset:value 0.0
+	] .
+

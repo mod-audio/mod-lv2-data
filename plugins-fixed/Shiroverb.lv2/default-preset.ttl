@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/ninodewit/SHIRO-Plugins/plugins/shiroverb> ;
+	lv2:port [
+		lv2:symbol "bandwidth" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "damping" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "roomsize" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "shimmer" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "tone" ;
+		pset:value 1500.0
+	] .
+

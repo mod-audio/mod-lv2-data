@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/RezFilter> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "env_vcf" ;
+		pset:value 70.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 33.0
+	] , [
+		lv2:symbol "lfo_rate" ;
+		pset:value 40.0
+	] , [
+		lv2:symbol "lfo_vcf" ;
+		pset:value 40.0
+	] , [
+		lv2:symbol "max_freq" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "output" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 7250.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 70.0
+	] , [
+		lv2:symbol "trigger" ;
+		pset:value -37.0
+	] .
+

@@ -1,0 +1,15 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/convoLV2#Mono> .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/convoLV2#MonoToStereo> .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/convoLV2#Stereo> .
+

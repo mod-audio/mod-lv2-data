@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/rotspeak> ;
+	lv2:port [
+		lv2:symbol "bassfreq" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hornfreq" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hrbal" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "latency" ;
+		pset:value 9200.0
+	] , [
+		lv2:symbol "stwidht" ;
+		pset:value 0.0
+	] .
+

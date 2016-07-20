@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_oc_2_#_oc_2_> ;
+	lv2:port [
+		lv2:symbol "DIRECT" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "OCTAVE1" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "OCTAVE2" ;
+		pset:value 0.5
+	] .
+

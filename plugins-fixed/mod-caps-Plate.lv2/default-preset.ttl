@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/Plate> ;
+	lv2:port [
+		lv2:symbol "bandwidth" ;
+		pset:value 0.99949998
+	] , [
+		lv2:symbol "blend" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "damping" ;
+		pset:value 0.0005
+	] , [
+		lv2:symbol "tail" ;
+		pset:value 0.5
+	] .
+

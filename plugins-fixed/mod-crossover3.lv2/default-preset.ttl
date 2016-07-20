@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/CrossOver3> ;
+	lv2:port [
+		lv2:symbol "Freq_1" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "Freq_2" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "Gain_1" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "Gain_2" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "Gain_3" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "Order" ;
+		pset:value 0
+	] .
+

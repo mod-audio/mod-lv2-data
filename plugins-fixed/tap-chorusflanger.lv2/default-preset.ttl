@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/tap/chorusflanger> ;
+	lv2:port [
+		lv2:symbol "Contour" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "Delay" ;
+		pset:value 25.0
+	] , [
+		lv2:symbol "Depth" ;
+		pset:value 75.0
+	] , [
+		lv2:symbol "DryLevel" ;
+		pset:value -3.0
+	] , [
+		lv2:symbol "Frequency" ;
+		pset:value 1.75
+	] , [
+		lv2:symbol "LRPhaseShift" ;
+		pset:value 90.0
+	] , [
+		lv2:symbol "WetLevel" ;
+		pset:value -3.0
+	] .
+

@@ -1,0 +1,26 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <urn:zamaudio:ZamGateX2> ;
+	lv2:port [
+		lv2:symbol "att" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "gainr" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mak" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "outlevel" ;
+		pset:value -45.0
+	] , [
+		lv2:symbol "rel" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "thr" ;
+		pset:value -60.0
+	] .
+

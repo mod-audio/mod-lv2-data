@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.niallmoody.com/ndcplugs/soulforce.htm> ;
+	lv2:port [
+		lv2:symbol "fback" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "foot" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "shape" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "source" ;
+		pset:value 0.0
+	] .
+

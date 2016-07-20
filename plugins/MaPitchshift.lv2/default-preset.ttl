@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://distrho.sf.net/plugins/MaPitchshift> ;
+	lv2:port [
+		lv2:symbol "blur" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "window" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "xfade" ;
+		pset:value 1.0
+	] .
+

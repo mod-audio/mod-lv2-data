@@ -1,0 +1,44 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_shimmizita_#_shimmizita_> ;
+	lv2:port [
+		lv2:symbol "CONTROL" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "DRYWET" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "ENVELOPE" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "F1" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "F2" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "PSDRYWET" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "SHIFT" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "SPEED" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "T60DS" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "T60M" ;
+		pset:value 2.0
+	] .
+

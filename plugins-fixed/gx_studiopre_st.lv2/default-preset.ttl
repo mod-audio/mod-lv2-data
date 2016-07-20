@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_studiopre_st#studiopre_st> ;
+	lv2:port [
+		lv2:symbol "bass_l" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "bass_r" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "bright_l" ;
+		pset:value 0
+	] , [
+		lv2:symbol "bright_r" ;
+		pset:value 0
+	] , [
+		lv2:symbol "middle_l" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "middle_r" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "treble_l" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "treble_r" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "volume_l" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "volume_r" ;
+		pset:value 5.0
+	] .
+

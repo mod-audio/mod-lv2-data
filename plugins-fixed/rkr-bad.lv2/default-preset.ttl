@@ -1,0 +1,1576 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Arpie> ;
+	lv2:port [
+		lv2:symbol "ARP" ;
+		pset:value 127
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FEEDBACK" ;
+		pset:value 59
+	] , [
+		lv2:symbol "HARM" ;
+		pset:value 1
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 30
+	] , [
+		lv2:symbol "LR_DELAY" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PATTERN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SUBD" ;
+		pset:value 3
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 565
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 67
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#CoilCrafter> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "F1" ;
+		pset:value 3000
+	] , [
+		lv2:symbol "F2" ;
+		pset:value 2600
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "Q1" ;
+		pset:value 20
+	] , [
+		lv2:symbol "Q2" ;
+		pset:value 20
+	] , [
+		lv2:symbol "TONE" ;
+		pset:value 200
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#CompBand> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 88
+	] , [
+		lv2:symbol "HR" ;
+		pset:value 4
+	] , [
+		lv2:symbol "HT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LMCR" ;
+		pset:value 200
+	] , [
+		lv2:symbol "LR" ;
+		pset:value 4
+	] , [
+		lv2:symbol "LT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "M1R" ;
+		pset:value 4
+	] , [
+		lv2:symbol "M1T" ;
+		pset:value 0
+	] , [
+		lv2:symbol "M2R" ;
+		pset:value 4
+	] , [
+		lv2:symbol "M2T" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MHCR" ;
+		pset:value 15000
+	] , [
+		lv2:symbol "MMCR" ;
+		pset:value 2000
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#DistBand> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DRIVE" ;
+		pset:value 56
+	] , [
+		lv2:symbol "HVOL" ;
+		pset:value 35
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 40
+	] , [
+		lv2:symbol "LMCR" ;
+		pset:value 150
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 87
+	] , [
+		lv2:symbol "LVOL" ;
+		pset:value 50
+	] , [
+		lv2:symbol "MHCR" ;
+		pset:value 1200
+	] , [
+		lv2:symbol "MVOL" ;
+		pset:value 14
+	] , [
+		lv2:symbol "NEG" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPEH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPEL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPEM" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 84
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Dual_Flange> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 20
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INTENSE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 2000
+	] , [
+		lv2:symbol "LRC" ;
+		pset:value 64
+	] , [
+		lv2:symbol "OFFS" ;
+		pset:value 4
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value 64
+	] , [
+		lv2:symbol "SUB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 14
+	] , [
+		lv2:symbol "THZ" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 32
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 4
+	] .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Echotron> ;
+	lv2:port [
+		lv2:symbol "AF" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 99
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LENGTH" ;
+		pset:value 127
+	] , [
+		lv2:symbol "LFOTYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LRC" ;
+		pset:value 20
+	] , [
+		lv2:symbol "MD" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MF" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDF" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 41
+	] ;
+	state:state [
+		
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Echoverse> ;
+	lv2:port [
+		lv2:symbol "ANGLE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DELAY" ;
+		pset:value 128
+	] , [
+		lv2:symbol "ES" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FEEDBACK" ;
+		pset:value 59
+	] , [
+		lv2:symbol "LR_DELAY" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "REV" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SUBD" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 67
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Exciter> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR10" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR3" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR4" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR5" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR6" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HAR9" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 20
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 20000
+	] .
+
+<default-preset_8>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Expander> ;
+	lv2:port [
+		lv2:symbol "ATTACK" ;
+		pset:value 20
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 76
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 3134
+	] , [
+		lv2:symbol "OUTPUT" ;
+		pset:value 10
+	] , [
+		lv2:symbol "RELEASE" ;
+		pset:value 120
+	] , [
+		lv2:symbol "SHAPE" ;
+		pset:value 2
+	] , [
+		lv2:symbol "THRESHOLD" ;
+		pset:value -30
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Infinity> ;
+	lv2:port [
+		lv2:symbol "AUTOPAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "B1" ;
+		pset:value 64
+	] , [
+		lv2:symbol "B2" ;
+		pset:value -64
+	] , [
+		lv2:symbol "B3" ;
+		pset:value 64
+	] , [
+		lv2:symbol "B4" ;
+		pset:value -64
+	] , [
+		lv2:symbol "B5" ;
+		pset:value 64
+	] , [
+		lv2:symbol "B6" ;
+		pset:value -64
+	] , [
+		lv2:symbol "B7" ;
+		pset:value 64
+	] , [
+		lv2:symbol "B8" ;
+		pset:value -64
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "END" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RES" ;
+		pset:value 0
+	] , [
+		lv2:symbol "REV" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STAGE" ;
+		pset:value 4
+	] , [
+		lv2:symbol "START" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDF" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SUBD" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 14
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_10>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#MuTroMojo> ;
+	lv2:port [
+		lv2:symbol "AMODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BP" ;
+		pset:value 10
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 50
+	] , [
+		lv2:symbol "HP" ;
+		pset:value -30
+	] , [
+		lv2:symbol "LP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MINFREQ" ;
+		pset:value 300
+	] , [
+		lv2:symbol "Q" ;
+		pset:value 10
+	] , [
+		lv2:symbol "QMODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RANGE" ;
+		pset:value 2000
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SENSE" ;
+		pset:value -30
+	] , [
+		lv2:symbol "SMOOTH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STAGES" ;
+		pset:value 1
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value -2
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 128
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "VARIQ" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WAH" ;
+		pset:value 2
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_11>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Otrem> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 64
+	] , [
+		lv2:symbol "INV" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDF" ;
+		pset:value 16
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 33
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] .
+
+<default-preset_12>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Reverbtron> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 99
+	] , [
+		lv2:symbol "DELAY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "DIFFUSE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "ES" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FADE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LENGTH" ;
+		pset:value 500
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 70
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 20000
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SAFE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "SH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STRETCH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] ;
+	state:state [
+		
+	] .
+
+<default-preset_13>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Ring> ;
+	lv2:port [
+		lv2:symbol "AFREQ" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 1
+	] , [
+		lv2:symbol "FREQ" ;
+		pset:value 64
+	] , [
+		lv2:symbol "INPUT" ;
+		pset:value 64
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 14
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SAW" ;
+		pset:value 10
+	] , [
+		lv2:symbol "SIN" ;
+		pset:value 40
+	] , [
+		lv2:symbol "SQUARE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TRI" ;
+		pset:value 4
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_14>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Sequence> ;
+	lv2:port [
+		lv2:symbol "AMP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LAG" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "Q" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RANGE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "S0" ;
+		pset:value 64
+	] , [
+		lv2:symbol "S2" ;
+		pset:value 64
+	] , [
+		lv2:symbol "S3" ;
+		pset:value 84
+	] , [
+		lv2:symbol "S4" ;
+		pset:value 64
+	] , [
+		lv2:symbol "S5" ;
+		pset:value 24
+	] , [
+		lv2:symbol "S6" ;
+		pset:value 64
+	] , [
+		lv2:symbol "S7" ;
+		pset:value 84
+	] , [
+		lv2:symbol "S8" ;
+		pset:value 64
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 120
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_15>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#ShelfBoost> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 10
+	] , [
+		lv2:symbol "PRES" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 1
+	] , [
+		lv2:symbol "TONE" ;
+		pset:value 2020
+	] .
+
+<default-preset_16>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Shifter> ;
+	lv2:port [
+		lv2:symbol "ATACK" ;
+		pset:value 500
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DECAY" ;
+		pset:value 500
+	] , [
+		lv2:symbol "DN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INT" ;
+		pset:value 1
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "THRESH" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WHAMMY" ;
+		pset:value 0
+	] .
+
+<default-preset_17>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Shuffle> ;
+	lv2:port [
+		lv2:symbol "BAND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HFREQ" ;
+		pset:value 12000
+	] , [
+		lv2:symbol "HGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LFREQ" ;
+		pset:value 200
+	] , [
+		lv2:symbol "LGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "M1FREQ" ;
+		pset:value 400
+	] , [
+		lv2:symbol "M1GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "M2FREQ" ;
+		pset:value 2000
+	] , [
+		lv2:symbol "M2GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "Q" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_18>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#StereoHarm_no_mid> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "CHORD" ;
+		pset:value 0
+	] , [
+		lv2:symbol "CHR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "CHRML" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAINL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAINR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INTL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INTR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LRC" ;
+		pset:value 0
+	] , [
+		lv2:symbol "NOTE" ;
+		pset:value 4
+	] , [
+		lv2:symbol "SELECT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_19>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#StompBox> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 64
+	] , [
+		lv2:symbol "HI" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MID" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0
+	] .
+
+<default-preset_20>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Sustainer> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 40
+	] , [
+		lv2:symbol "SUS" ;
+		pset:value 64
+	] .
+
+<default-preset_21>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Synthfilter> ;
+	lv2:port [
+		lv2:symbol "ATIME" ;
+		pset:value 80
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 100
+	] , [
+		lv2:symbol "DIST" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FB" ;
+		pset:value -30
+	] , [
+		lv2:symbol "HSTAGES" ;
+		pset:value 1
+	] , [
+		lv2:symbol "LSTAGES" ;
+		pset:value 2
+	] , [
+		lv2:symbol "OFFSET" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RTIME" ;
+		pset:value 100
+	] , [
+		lv2:symbol "SENSE" ;
+		pset:value -30
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value -2
+	] , [
+		lv2:symbol "SUB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 80
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 50
+	] .
+
+<default-preset_22>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Valve> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DIST" ;
+		pset:value 52
+	] , [
+		lv2:symbol "DRIVE" ;
+		pset:value 56
+	] , [
+		lv2:symbol "ED" ;
+		pset:value 1
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 21
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 40
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 6703
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 87
+	] , [
+		lv2:symbol "NEG" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PREFILTER" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PRES" ;
+		pset:value 18
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 84
+	] .
+
+<default-preset_23>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#VaryBand> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LMCR" ;
+		pset:value 150
+	] , [
+		lv2:symbol "M1B" ;
+		pset:value 0
+	] , [
+		lv2:symbol "M2B" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MHCR" ;
+		pset:value 12000
+	] , [
+		lv2:symbol "MMCR" ;
+		pset:value 1200
+	] , [
+		lv2:symbol "STDL1" ;
+		pset:value -2
+	] , [
+		lv2:symbol "STDL2" ;
+		pset:value -2
+	] , [
+		lv2:symbol "TEMPO1" ;
+		pset:value 64
+	] , [
+		lv2:symbol "TEMPO2" ;
+		pset:value 120
+	] , [
+		lv2:symbol "TYPE1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPE2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_24>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Vibe> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 64
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 40
+	] , [
+		lv2:symbol "LRCR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value 32
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 14
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 64
+	] .
+
+<default-preset_25>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#Vocoder> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INGAIN" ;
+		pset:value 10
+	] , [
+		lv2:symbol "INPUT" ;
+		pset:value -48
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MUF" ;
+		pset:value 10
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 10
+	] , [
+		lv2:symbol "Q" ;
+		pset:value 71
+	] , [
+		lv2:symbol "RING" ;
+		pset:value 50
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 0
+	] .
+
+<default-preset_26>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#aphas> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 64
+	] , [
+		lv2:symbol "DISTORT" ;
+		pset:value 20
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 40
+	] , [
+		lv2:symbol "HYPER" ;
+		pset:value 1
+	] , [
+		lv2:symbol "MISMATCH" ;
+		pset:value 10
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STAGES" ;
+		pset:value 4
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value 64
+	] , [
+		lv2:symbol "SUB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 14
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 1
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 110
+	] .
+
+<default-preset_27>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#awha> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DELAY" ;
+		pset:value 25
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 60
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 105
+	] , [
+		lv2:symbol "LRCR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PHASE" ;
+		pset:value 64
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value -2
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 80
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_28>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#cabe> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PRESET" ;
+		pset:value 0
+	] .
+
+<default-preset_29>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#chor> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DELAY" ;
+		pset:value 85
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 40
+	] , [
+		lv2:symbol "FB" ;
+		pset:value 64
+	] , [
+		lv2:symbol "INTENSE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "LRCR" ;
+		pset:value 118
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SUB" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 33
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 16
+	] .
+
+<default-preset_30>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#comp> ;
+	lv2:port [
+		lv2:symbol "ATTACK" ;
+		pset:value 20
+	] , [
+		lv2:symbol "AUTOOUT" ;
+		pset:value 1
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KNEE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "OUTPUT" ;
+		pset:value -6
+	] , [
+		lv2:symbol "PEAK" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RATIO" ;
+		pset:value 2
+	] , [
+		lv2:symbol "RELEASE" ;
+		pset:value 120
+	] , [
+		lv2:symbol "STEREO" ;
+		pset:value 0
+	] , [
+		lv2:symbol "THRESHOLD" ;
+		pset:value -30
+	] .
+
+<default-preset_31>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#delm> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEL1" ;
+		pset:value 2
+	] , [
+		lv2:symbol "DEL2" ;
+		pset:value 4
+	] , [
+		lv2:symbol "FB1" ;
+		pset:value 59
+	] , [
+		lv2:symbol "FB2" ;
+		pset:value 59
+	] , [
+		lv2:symbol "GAIN1" ;
+		pset:value 75
+	] , [
+		lv2:symbol "GAIN2" ;
+		pset:value 75
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 0
+	] , [
+		lv2:symbol "OFFS" ;
+		pset:value 7
+	] , [
+		lv2:symbol "PAN1" ;
+		pset:value -64
+	] , [
+		lv2:symbol "PAN2" ;
+		pset:value 63
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 106
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_32>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dere> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "COLOR" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DRIVE" ;
+		pset:value 56
+	] , [
+		lv2:symbol "HPF" ;
+		pset:value 21
+	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value 40
+	] , [
+		lv2:symbol "LPF" ;
+		pset:value 6703
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 87
+	] , [
+		lv2:symbol "NEG" ;
+		pset:value 0
+	] , [
+		lv2:symbol "OCT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PREFILTER" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 84
+	] .
+
+<default-preset_33>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#eco> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DAMP" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DELAY" ;
+		pset:value 565
+	] , [
+		lv2:symbol "DIRECT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FEEDBACK" ;
+		pset:value 59
+	] , [
+		lv2:symbol "LRCr" ;
+		pset:value 30
+	] , [
+		lv2:symbol "LR_DELAY" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "REV" ;
+		pset:value 127
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 67
+	] .
+
+<default-preset_34>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#eql> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HZ125" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HZ250" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HZ31" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HZ500" ;
+		pset:value 0
+	] , [
+		lv2:symbol "HZ63" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KHZ1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KHZ16" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KHZ2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KHZ4" ;
+		pset:value 0
+	] , [
+		lv2:symbol "KHZ8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "Q" ;
+		pset:value 0
+	] .
+
+<default-preset_35>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#har_no_mid> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "CHORD" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FGAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FQ" ;
+		pset:value 0
+	] , [
+		lv2:symbol "FREQ" ;
+		pset:value 6000
+	] , [
+		lv2:symbol "GAIN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "INT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "NOTE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SELECT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_36>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#pan> ;
+	lv2:port [
+		lv2:symbol "AUTO" ;
+		pset:value 1
+	] , [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "EXTRA_AMOUNT" ;
+		pset:value 0
+	] , [
+		lv2:symbol "EXTRA_ON" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "STDL" ;
+		pset:value 0
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 26
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] .
+
+<default-preset_37>
+	a pset:Preset ;
+	lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#wha> ;
+	lv2:port [
+		lv2:symbol "BYPASS" ;
+		pset:value 0
+	] , [
+		lv2:symbol "DEPTH" ;
+		pset:value 70
+	] , [
+		lv2:symbol "INV" ;
+		pset:value 0
+	] , [
+		lv2:symbol "MODE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "PAN" ;
+		pset:value 0
+	] , [
+		lv2:symbol "RND" ;
+		pset:value 0
+	] , [
+		lv2:symbol "SENSE" ;
+		pset:value 90
+	] , [
+		lv2:symbol "SMOOTH" ;
+		pset:value 60
+	] , [
+		lv2:symbol "TEMPO" ;
+		pset:value 80
+	] , [
+		lv2:symbol "TYPE" ;
+		pset:value 0
+	] , [
+		lv2:symbol "WETDRY" ;
+		pset:value 64
+	] , [
+		lv2:symbol "WIDTH" ;
+		pset:value 0
+	] .
+

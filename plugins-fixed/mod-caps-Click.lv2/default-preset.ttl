@@ -1,0 +1,20 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/Click> ;
+	lv2:port [
+		lv2:symbol "bpm" ;
+		pset:value 63.0
+	] , [
+		lv2:symbol "damping" ;
+		pset:value 0.75
+	] , [
+		lv2:symbol "model" ;
+		pset:value 1
+	] , [
+		lv2:symbol "volume" ;
+		pset:value 0.75
+	] .
+

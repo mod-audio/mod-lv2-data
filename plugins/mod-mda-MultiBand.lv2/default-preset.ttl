@@ -1,0 +1,47 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/MultiBand> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 387.64001465
+	] , [
+		lv2:symbol "h_comp" ;
+		pset:value 18.0
+	] , [
+		lv2:symbol "h_out" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l_comp" ;
+		pset:value 15.0
+	] , [
+		lv2:symbol "l_m" ;
+		pset:value 110.69999695
+	] , [
+		lv2:symbol "l_out" ;
+		pset:value -2.0
+	] , [
+		lv2:symbol "listen" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m_comp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "m_h" ;
+		pset:value 17153.7890625
+	] , [
+		lv2:symbol "m_out" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "process" ;
+		pset:value 0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 946.34399414
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 110.0
+	] .
+

@@ -1,0 +1,62 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/EqFA4p> ;
+	lv2:port [
+		lv2:symbol "B_f" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "a_act" ;
+		pset:value 0
+	] , [
+		lv2:symbol "a_bw" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "a_f" ;
+		pset:value 3500.0
+	] , [
+		lv2:symbol "a_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "b_act" ;
+		pset:value 0
+	] , [
+		lv2:symbol "b_bw" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "b_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "c_act" ;
+		pset:value 0
+	] , [
+		lv2:symbol "c_bw" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "c_f" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "c_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "d_act" ;
+		pset:value 0
+	] , [
+		lv2:symbol "d_bw" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "d_f" ;
+		pset:value 11000.0
+	] , [
+		lv2:symbol "d_gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "latency" ;
+		pset:value 3
+	] .
+

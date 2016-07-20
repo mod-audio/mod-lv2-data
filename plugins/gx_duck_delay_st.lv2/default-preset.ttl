@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_duck_delay_st_#_duck_delay_st_> ;
+	lv2:port [
+		lv2:symbol "AMOUNT" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "ATTACK" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "COLORATION" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "EFFECT" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "FEEDBACK" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "PINGPONG" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "RELEASE" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "TIME" ;
+		pset:value 500.0
+	] .
+

@@ -1,0 +1,38 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/Eq10> ;
+	lv2:port [
+		lv2:symbol "band125hz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band16khz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band1khz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band250hz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band2khz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band31hz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band4khz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band500hz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band63hz" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "band8khz" ;
+		pset:value 0.0
+	] .
+

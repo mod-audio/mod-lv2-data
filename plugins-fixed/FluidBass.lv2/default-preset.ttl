@@ -1,0 +1,14 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://kxstudio.linuxaudio.org/plugins/FluidPlug_FluidBass> ;
+	lv2:port [
+		lv2:symbol "level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "program" ;
+		pset:value 0
+	] .
+

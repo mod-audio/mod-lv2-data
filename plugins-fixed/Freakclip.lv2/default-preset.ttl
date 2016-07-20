@@ -1,0 +1,17 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://faust-lv2.googlecode.com/Freakclip> ;
+	lv2:port [
+		lv2:symbol "Clip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Delay" ;
+		pset:value 0.99599999
+	] , [
+		lv2:symbol "Drive" ;
+		pset:value 1.0
+	] .
+

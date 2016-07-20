@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/mda/VocInput> ;
+	lv2:port [
+		lv2:symbol "breath" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "max_freq" ;
+		pset:value 0.34999999
+	] , [
+		lv2:symbol "pitch" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "s_thresh" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "tracking" ;
+		pset:value 0.0
+	] .
+

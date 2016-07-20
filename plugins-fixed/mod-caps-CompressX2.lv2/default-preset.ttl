@@ -1,0 +1,32 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://moddevices.com/plugins/caps/CompressX2> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.75
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "measure" ;
+		pset:value 1
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "state" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "strength" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.5
+	] .
+

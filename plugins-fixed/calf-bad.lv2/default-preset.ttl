@@ -1,0 +1,3221 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/BassEnhancer> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "blend" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drive" ;
+		pset:value 8.5
+	] , [
+		lv2:symbol "floor" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "floor_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "listen" ;
+		pset:value 0.0
+	] .
+
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/CompensationDelay> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "distance_cm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "distance_m" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "distance_mm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 0.00024414
+	] , [
+		lv2:symbol "temp" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "wet" ;
+		pset:value 1.0
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Compressor> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "stereo_link" ;
+		pset:value 0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Crusher> ;
+	lv2:port [
+		lv2:symbol "anti_aliasing" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "bits" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "dc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lfo" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lforange" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "lforate" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "morph" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "samples" ;
+		pset:value 1.0
+	] .
+
+<default-preset_4>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Deesser> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_freq" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "f1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "f2_freq" ;
+		pset:value 4500.0
+	] , [
+		lv2:symbol "f2_level" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "f2_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "laxity" ;
+		pset:value 15.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "sc_listen" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Emphasis> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "type" ;
+		pset:value 4.0
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Equalizer12Band> ;
+	lv2:port [
+		lv2:symbol "analyzer" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "analyzer_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hp_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hp_freq" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "hp_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "hs_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hs_freq" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "hs_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "individuals" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lp_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lp_freq" ;
+		pset:value 18000.0
+	] , [
+		lv2:symbol "lp_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ls_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ls_freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "ls_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p1_freq" ;
+		pset:value 60.0
+	] , [
+		lv2:symbol "p1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p2_freq" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "p2_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p3_freq" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "p3_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p4_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p4_freq" ;
+		pset:value 500.0
+	] , [
+		lv2:symbol "p4_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p4_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p5_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p5_freq" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "p5_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p5_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p6_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p6_freq" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "p6_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p6_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p7_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p7_freq" ;
+		pset:value 4000.0
+	] , [
+		lv2:symbol "p7_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p7_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p8_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p8_freq" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "p8_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p8_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "zoom" ;
+		pset:value 0.25
+	] .
+
+<default-preset_7>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Equalizer30Band> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "filters" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gainscale1" ;
+		pset:value 18.0
+	] , [
+		lv2:symbol "gainscale2" ;
+		pset:value 18.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] .
+
+<default-preset_8>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Equalizer5Band> ;
+	lv2:port [
+		lv2:symbol "analyzer" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "analyzer_mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hs_active" ;
+		pset:value 0
+	] , [
+		lv2:symbol "hs_freq" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "hs_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "individuals" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ls_active" ;
+		pset:value 0
+	] , [
+		lv2:symbol "ls_freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "ls_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_active" ;
+		pset:value 0
+	] , [
+		lv2:symbol "p1_freq" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "p1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_active" ;
+		pset:value 0
+	] , [
+		lv2:symbol "p2_freq" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "p2_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_active" ;
+		pset:value 0
+	] , [
+		lv2:symbol "p3_freq" ;
+		pset:value 4000.0
+	] , [
+		lv2:symbol "p3_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "zoom" ;
+		pset:value 0.25
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Equalizer8Band> ;
+	lv2:port [
+		lv2:symbol "analyzer" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "analyzer_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hp_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hp_freq" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "hp_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "hs_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hs_freq" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "hs_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "individuals" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lp_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lp_freq" ;
+		pset:value 18000.0
+	] , [
+		lv2:symbol "lp_mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ls_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ls_freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "ls_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p1_freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "p1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p1_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p2_freq" ;
+		pset:value 500.0
+	] , [
+		lv2:symbol "p2_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p2_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p3_freq" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "p3_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p3_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p4_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "p4_freq" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "p4_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p4_q" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "zoom" ;
+		pset:value 0.25
+	] .
+
+<default-preset_10>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Exciter> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "blend" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ceil" ;
+		pset:value 16000.0
+	] , [
+		lv2:symbol "ceil_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drive" ;
+		pset:value 8.5
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 7500.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "listen" ;
+		pset:value 0.0
+	] .
+
+<default-preset_11>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Filter> ;
+	lv2:port [
+		lv2:symbol "freq" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "inertia" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 0.70700002
+	] .
+
+<default-preset_12>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Filterclavier> ;
+	lv2:port [
+		lv2:symbol "detune" ;
+		pset:value 0
+	] , [
+		lv2:symbol "inertia" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "maxres" ;
+		pset:value 32.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 6
+	] , [
+		lv2:symbol "transpose" ;
+		pset:value 0
+	] .
+
+<default-preset_13>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Flanger> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "min_delay" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mod_rate" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 90.0
+	] .
+
+<default-preset_14>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Gate> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "range" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "stereo_link" ;
+		pset:value 0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_15>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/HaasEnhancer> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m_phase" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "m_source" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "s_balance1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "s_balance2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "s_delay1" ;
+		pset:value 2.04999995
+	] , [
+		lv2:symbol "s_delay2" ;
+		pset:value 2.11999989
+	] , [
+		lv2:symbol "s_gain" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "s_gain1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "s_gain2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "s_phase1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "s_phase2" ;
+		pset:value 1.0
+	] .
+
+<default-preset_16>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Limiter> ;
+	lv2:port [
+		lv2:symbol "asc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "asc_coeff" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "limit" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "oversampling" ;
+		pset:value 1
+	] , [
+		lv2:symbol "release" ;
+		pset:value 50.0
+	] .
+
+<default-preset_17>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MonoCompressor> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_18>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MonoInput> ;
+	lv2:port [
+		lv2:symbol "balance_out" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mutel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "muter" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phasel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phaser" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "softclip" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_base" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_phase" ;
+		pset:value 0.0
+	] .
+
+<default-preset_19>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Monosynth> ;
+	lv2:port [
+		lv2:symbol "adsr2_a" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr2_amp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr2_cutoff" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adsr2_d" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "adsr2_f" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adsr2_r" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "adsr2_res" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "adsr2_s" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "adsr_a" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr_d" ;
+		pset:value 350.0
+	] , [
+		lv2:symbol "adsr_f" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adsr_r" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "adsr_s" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "cutoff" ;
+		pset:value 33.0
+	] , [
+		lv2:symbol "env2amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "env2cutoff" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "env2res" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filter" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filter_sep" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "key_follow" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "legato" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo1_trig" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lfo2_rate" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "lfo2_trig" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2filter" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2pitch" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "lfo2pw" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lfo_rate" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "mwhl2lfo" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "o12_detune" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "o12_mix" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "o1_pw" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o1_stretch" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "o1_wave" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o1_window" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o1_xpose" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o2_pw" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o2_unison" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "o2_unisonfrq" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "o2_wave" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "o2_xpose" ;
+		pset:value 12.0
+	] , [
+		lv2:symbol "pbend_range" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "phase_mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "portamento" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "res" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "scale_detune" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "vel2amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "vel2filter" ;
+		pset:value 0.5
+	] .
+
+<default-preset_20>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MultiChorus> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "min_delay" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 6.0
+	] , [
+		lv2:symbol "mod_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "overlap" ;
+		pset:value 0.75
+	] , [
+		lv2:symbol "q" ;
+		pset:value 0.125
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 180.0
+	] , [
+		lv2:symbol "voices" ;
+		pset:value 4
+	] , [
+		lv2:symbol "vphase" ;
+		pset:value 64.0
+	] .
+
+<default-preset_21>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MultibandCompressor> ;
+	lv2:port [
+		lv2:symbol "attack0" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack1" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack2" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack3" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass0" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "detection0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "knee0" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee1" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee2" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee3" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup0" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup1" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup2" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup3" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "notebook" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "ratio0" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio1" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio2" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio3" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release0" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release1" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release2" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release3" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "solo0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "threshold0" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold1" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold2" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold3" ;
+		pset:value 0.25
+	] .
+
+<default-preset_22>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MultibandGate> ;
+	lv2:port [
+		lv2:symbol "attack0" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack1" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack2" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "attack3" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass0" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "detection0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 6000.0
+	] , [
+		lv2:symbol "knee0" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee1" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee2" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "knee3" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup0" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup1" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup2" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "makeup3" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "notebook" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "range0" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "range1" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "range2" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "range3" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "ratio0" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio1" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio2" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ratio3" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release0" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release1" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release2" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "release3" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "solo0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "threshold0" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold1" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold2" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "threshold3" ;
+		pset:value 0.25
+	] .
+
+<default-preset_23>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/MultibandLimiter> ;
+	lv2:port [
+		lv2:symbol "asc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "asc_coeff" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 750.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "limit" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "minrel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "oversampling" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "release0" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "release1" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "release2" ;
+		pset:value -0.2
+	] , [
+		lv2:symbol "release3" ;
+		pset:value -0.5
+	] , [
+		lv2:symbol "solo0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight3" ;
+		pset:value 0.0
+	] .
+
+<default-preset_24>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Organ> ;
+	lv2:port [
+		lv2:symbol "adsr2_a" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr2_d" ;
+		pset:value 350.0
+	] , [
+		lv2:symbol "adsr2_r" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "adsr2_s" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "adsr2_v" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adsr3_a" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr3_d" ;
+		pset:value 350.0
+	] , [
+		lv2:symbol "adsr3_r" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "adsr3_s" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "adsr3_v" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "adsr_a" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "adsr_d" ;
+		pset:value 350.0
+	] , [
+		lv2:symbol "adsr_r" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "adsr_s" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "adsr_v" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bass_freq" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "bass_gain" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "detune" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detune9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "eg1_amp_ctl" ;
+		pset:value 0
+	] , [
+		lv2:symbol "eg2_amp_ctl" ;
+		pset:value 0
+	] , [
+		lv2:symbol "eg3_amp_ctl" ;
+		pset:value 0
+	] , [
+		lv2:symbol "f1" ;
+		pset:value 1
+	] , [
+		lv2:symbol "f1_cutoff" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "f1_env1" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "f1_env2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_env3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_keyf" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_res" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "f2" ;
+		pset:value 3
+	] , [
+		lv2:symbol "f2_cutoff" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "f2_env1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f2_env2" ;
+		pset:value 8000.0
+	] , [
+		lv2:symbol "f2_env3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f2_keyf" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f2_res" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "f3" ;
+		pset:value 2
+	] , [
+		lv2:symbol "f4" ;
+		pset:value 4
+	] , [
+		lv2:symbol "f5" ;
+		pset:value 6
+	] , [
+		lv2:symbol "f6" ;
+		pset:value 8
+	] , [
+		lv2:symbol "f7" ;
+		pset:value 10
+	] , [
+		lv2:symbol "f8" ;
+		pset:value 12
+	] , [
+		lv2:symbol "f9" ;
+		pset:value 16
+	] , [
+		lv2:symbol "filter1_type" ;
+		pset:value 0
+	] , [
+		lv2:symbol "filter_chain" ;
+		pset:value 0
+	] , [
+		lv2:symbol "foldnote" ;
+		pset:value 108
+	] , [
+		lv2:symbol "l1" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "l2" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "l3" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "l4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "l9" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "pan1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pbend_range" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "perc_decay" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "perc_fm_decay" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "perc_fm_depth" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "perc_fm_harmonic" ;
+		pset:value 6
+	] , [
+		lv2:symbol "perc_fm_waveform" ;
+		pset:value 0
+	] , [
+		lv2:symbol "perc_harmonic" ;
+		pset:value 6
+	] , [
+		lv2:symbol "perc_level" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "perc_stereo" ;
+		pset:value 90.0
+	] , [
+		lv2:symbol "perc_trigger" ;
+		pset:value 0
+	] , [
+		lv2:symbol "perc_vel2amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "perc_vel2fm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "perc_waveform" ;
+		pset:value 0
+	] , [
+		lv2:symbol "phase1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "polyphony" ;
+		pset:value 16
+	] , [
+		lv2:symbol "quad_env" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "routing1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing3" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing4" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing5" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing6" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "routing9" ;
+		pset:value 0
+	] , [
+		lv2:symbol "transpose" ;
+		pset:value -12
+	] , [
+		lv2:symbol "treble_freq" ;
+		pset:value 12000.0
+	] , [
+		lv2:symbol "treble_gain" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "vib_amt" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "vib_mode" ;
+		pset:value 5
+	] , [
+		lv2:symbol "vib_phase" ;
+		pset:value 180.0
+	] , [
+		lv2:symbol "vib_rate" ;
+		pset:value 6.5999999
+	] , [
+		lv2:symbol "vib_type" ;
+		pset:value 3
+	] , [
+		lv2:symbol "vib_wet" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "w1" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w2" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w3" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w4" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w5" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w6" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w7" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w8" ;
+		pset:value 0
+	] , [
+		lv2:symbol "w9" ;
+		pset:value 0
+	] .
+
+<default-preset_25>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Phaser> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "base_freq" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 4000.0
+	] , [
+		lv2:symbol "mod_rate" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stages" ;
+		pset:value 6
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 180.0
+	] .
+
+<default-preset_26>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Pulsator> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mono" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "offset" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] .
+
+<default-preset_27>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Reverb> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "bass_cut" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "decay_time" ;
+		pset:value 1.5
+	] , [
+		lv2:symbol "diffusion" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "hf_damp" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "predelay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "room_size" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "treble_cut" ;
+		pset:value 5000.0
+	] .
+
+<default-preset_28>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/ReverseDelay> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bpm" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "bpm_host" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "subdiv" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "sync" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "time_l" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "time_r" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "window" ;
+		pset:value 0.5
+	] .
+
+<default-preset_29>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/RingModulator> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lfo1_freq" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "lfo1_mod_detune_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo1_mod_detune_hi" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "lfo1_mod_detune_lo" ;
+		pset:value -100.0
+	] , [
+		lv2:symbol "lfo1_mod_freq_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo1_mod_freq_hi" ;
+		pset:value 10000.0
+	] , [
+		lv2:symbol "lfo1_mod_freq_lo" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "lfo1_mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfo1_reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2_freq" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "lfo2_lfo1_freq_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2_lfo1_freq_hi" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lfo2_lfo1_freq_lo" ;
+		pset:value 0.05
+	] , [
+		lv2:symbol "lfo2_mod_amount_active" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lfo2_mod_amount_hi" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "lfo2_mod_amount_lo" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "lfo2_mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "lfo2_reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mod_amount" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "mod_detune" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mod_freq" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "mod_listen" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mod_mode" ;
+		pset:value 0
+	] , [
+		lv2:symbol "mod_phase" ;
+		pset:value 0.5
+	] .
+
+<default-preset_30>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/RotarySpeaker> ;
+	lv2:port [
+		lv2:symbol "am_depth" ;
+		pset:value 0.44999999
+	] , [
+		lv2:symbol "bass_speed" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "mic_distance" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 0.44999999
+	] , [
+		lv2:symbol "reflection" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "shift" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "spacing" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "test" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "treble_speed" ;
+		pset:value 36.0
+	] , [
+		lv2:symbol "vib_speed" ;
+		pset:value 5.0
+	] .
+
+<default-preset_31>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Saturator> ;
+	lv2:port [
+		lv2:symbol "blend" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drive" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "hp_post_freq" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "hp_pre_freq" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lp_post_freq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "lp_pre_freq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p_freq" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "p_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p_q" ;
+		pset:value 1.0
+	] .
+
+<default-preset_32>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainCompressor> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_freq" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "f1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "f2_freq" ;
+		pset:value 4500.0
+	] , [
+		lv2:symbol "f2_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "sc_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "sc_listen" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_route" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_link" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_33>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainGate> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "f1_freq" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "f1_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "f2_freq" ;
+		pset:value 4500.0
+	] , [
+		lv2:symbol "f2_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "range" ;
+		pset:value 0.06125
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "sc_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "sc_listen" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_route" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_link" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
+
+<default-preset_34>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainLimiter> ;
+	lv2:port [
+		lv2:symbol "asc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "asc_coeff" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 750.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_sc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "limit" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "minrel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "oversampling" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "release0" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "release1" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "release2" ;
+		pset:value -0.2
+	] , [
+		lv2:symbol "release3" ;
+		pset:value -0.5
+	] , [
+		lv2:symbol "release_sc" ;
+		pset:value -0.5
+	] , [
+		lv2:symbol "solo0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo_sc" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "weight_sc" ;
+		pset:value 0.0
+	] .
+
+<default-preset_35>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/StereoTools> ;
+	lv2:port [
+		lv2:symbol "balance_in" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "balance_out" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mlev" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mpan" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mutel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "muter" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phasel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phaser" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sbal" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sc_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "slev" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "softclip" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_base" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo_phase" ;
+		pset:value 0.0
+	] .
+
+<default-preset_36>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/TapeSimulator> ;
+	lv2:port [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lowpass" ;
+		pset:value 12500.0
+	] , [
+		lv2:symbol "magnetical" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mechanical" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "noise" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "post" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed" ;
+		pset:value 1.0
+	] .
+
+<default-preset_37>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/TransientDesigner> ;
+	lv2:port [
+		lv2:symbol "attack_boost" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "attack_time" ;
+		pset:value 30.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "display" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "display_threshold" ;
+		pset:value 0.00024414
+	] , [
+		lv2:symbol "hipass" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "hp_mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "listen" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lookahead" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "lopass" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "lp_mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release_boost" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "release_time" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "sustain_threshold" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "view" ;
+		pset:value 0.0
+	] .
+
+<default-preset_38>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/VintageDelay> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "bpm" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "bpm_host" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "medium" ;
+		pset:value 1
+	] , [
+		lv2:symbol "mix_mode" ;
+		pset:value 1
+	] , [
+		lv2:symbol "subdiv" ;
+		pset:value 1
+	] , [
+		lv2:symbol "sync" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "time_l" ;
+		pset:value 1
+	] , [
+		lv2:symbol "time_r" ;
+		pset:value 1
+	] , [
+		lv2:symbol "width" ;
+		pset:value 1.0
+	] .
+
+<default-preset_39>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Vocoder> ;
+	lv2:port [
+		lv2:symbol "analyzer" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "attack" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "bands" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "carrier" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "carrier_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "detectors" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "hiq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "link" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mod1" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod10" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod11" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod12" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod13" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod14" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod15" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod16" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod17" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod18" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod19" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod2" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod20" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod21" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod22" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod23" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod24" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod25" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod26" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod27" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod28" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod29" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod3" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod30" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod31" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod32" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod4" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod5" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod6" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod7" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod8" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod9" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "mod_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "modulator" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "noise1" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise10" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise11" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise12" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise13" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise14" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise15" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise16" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise17" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise18" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise19" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise2" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise20" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise21" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise22" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise23" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise24" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise25" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise26" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise27" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise28" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise29" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise3" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise30" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise31" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise32" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise4" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise5" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise6" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise7" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise8" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "noise9" ;
+		pset:value 0.000015849
+	] , [
+		lv2:symbol "order" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "pan1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan12" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan13" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan14" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan15" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan16" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan17" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan18" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan19" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan20" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan21" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan22" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan23" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan24" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan25" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan26" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan27" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan28" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan29" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan30" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan31" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan32" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "pan9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "processed" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "solo1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo10" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo11" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo12" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo13" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo14" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo15" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo16" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo17" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo18" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo19" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo20" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo21" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo22" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo23" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo24" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo25" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo26" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo27" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo28" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo29" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo30" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo31" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo32" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "solo9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "volume1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume10" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume11" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume12" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume13" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume14" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume15" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume16" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume17" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume18" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume19" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume20" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume21" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume22" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume23" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume24" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume25" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume26" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume27" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume28" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume29" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume30" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume31" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume32" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume4" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume5" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume6" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume7" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume8" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "volume9" ;
+		pset:value 1.0
+	] .
+
+<default-preset_40>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver2Band> ;
+	lv2:port [
+		lv2:symbol "active1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "delay1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase2" ;
+		pset:value 0.0
+	] .
+
+<default-preset_41>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver3Band> ;
+	lv2:port [
+		lv2:symbol "active1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "delay1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 150.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 3000.0
+	] , [
+		lv2:symbol "level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase3" ;
+		pset:value 0.0
+	] .
+
+<default-preset_42>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver4Band> ;
+	lv2:port [
+		lv2:symbol "active1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "active4" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "delay1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "delay4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "freq0" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 500.0
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 5000.0
+	] , [
+		lv2:symbol "level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level4" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "phase1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "phase4" ;
+		pset:value 0.0
+	] .
+
