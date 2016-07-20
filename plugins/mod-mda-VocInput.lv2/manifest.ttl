@@ -41,3 +41,9 @@ mda:VocInput
     rdfs:seeAlso <VocInput.ttl> ,
         <modgui.ttl> ;
     lv2:binary <VocInput.so> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/mda/VocInput> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

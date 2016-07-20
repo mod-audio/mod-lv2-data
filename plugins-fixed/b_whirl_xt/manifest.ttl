@@ -7,3 +7,9 @@ bwhirl:extended
 	a lv2:Plugin ;
 	lv2:binary <b_whirl.so>  ;
 	rdfs:seeAlso <b_whirl-configurable.ttl> , <modgui.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/b_whirl#extended> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

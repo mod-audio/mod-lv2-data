@@ -5,3 +5,9 @@
     lv2:binary <tap_eq.so>;
     rdfs:seeAlso <tap_eq.ttl>,<modgui.ttl>.
 
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/tap/eq> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

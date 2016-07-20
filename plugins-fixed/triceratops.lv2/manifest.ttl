@@ -427,3 +427,9 @@
 	a pset:Preset ;
 	rdfs:seeAlso <nervous_in_a_cavern.ttl> ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://nickbailey.co.nr/triceratops> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

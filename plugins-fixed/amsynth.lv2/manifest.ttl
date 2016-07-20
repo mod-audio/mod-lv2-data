@@ -4,3 +4,9 @@
 <http://code.google.com/p/amsynth/amsynth> a lv2:Plugin;
   lv2:binary   <amsynth_lv2.so> ;
   rdfs:seeAlso <amsynth.ttl> , <modgui.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://code.google.com/p/amsynth/amsynth> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

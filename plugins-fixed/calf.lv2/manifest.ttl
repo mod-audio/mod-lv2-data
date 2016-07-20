@@ -145,3 +145,9 @@
 # <http://calf.sourceforge.net/plugins/XOver4Band> a lv2:Plugin ;
 #     dct:replaces <urn:ladspa:34069> ;
 #     lv2:binary <calf.so> ; rdfs:seeAlso <modguis.ttl> , <XOver4Band.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://calf.sourceforge.net/plugins/EnvelopeFilter> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

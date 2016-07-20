@@ -202,3 +202,9 @@ mdap:DX10-syn-tom
     a pset:Preset ;
     lv2:appliesTo mda:DX10 ;
     rdfs:seeAlso <presets.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/mda/DX10> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
