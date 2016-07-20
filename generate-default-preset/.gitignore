@@ -1,0 +1,4 @@
+*.o
+generate
+.kdev_include_paths
+
