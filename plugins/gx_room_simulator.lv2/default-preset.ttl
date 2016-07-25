@@ -12,9 +12,6 @@
 		lv2:symbol "EFFECT" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "PREDELAYMS" ;
-		pset:value 20.0
-	] , [
 		lv2:symbol "ROOMSIZE" ;
 		pset:value 1.0
 	] , [

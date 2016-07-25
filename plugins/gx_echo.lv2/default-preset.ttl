@@ -16,10 +16,10 @@
 		pset:value 0.2
 	] , [
 		lv2:symbol "link" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "timt_l" ;
 		pset:value 100.0

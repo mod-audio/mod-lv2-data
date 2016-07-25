@@ -17,8 +17,5 @@
 	] , [
 		lv2:symbol "RELESE" ;
 		pset:value 0.1
-	] , [
-		lv2:symbol "TIME" ;
-		pset:value 500.0
 	] .
 

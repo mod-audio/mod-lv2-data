@@ -25,6 +25,7 @@
     lv2:binary <gx_cstb.so>  ;
     rdfs:seeAlso <gx_cstb.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gx_cstb_#_cstb_> ;

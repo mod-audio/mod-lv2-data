@@ -40,7 +40,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "G2" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "G20" ;
 		pset:value 0.0
@@ -70,84 +70,12 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "G7" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "G8" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "G9" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V1" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V10" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V11" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V12" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V13" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V14" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V15" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V16" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V17" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V18" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V19" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V2" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V20" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V21" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V22" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V23" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V24" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V3" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V4" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V5" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V6" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V7" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V8" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "V9" ;
 		pset:value 0.0
 	] .
 

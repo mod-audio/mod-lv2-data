@@ -30,19 +30,16 @@
 		lv2:symbol "Presence" ;
 		pset:value 5.0
 	] , [
-		lv2:symbol "SCHEDULE" ;
-		pset:value 0
-	] , [
 		lv2:symbol "Treble" ;
 		pset:value 0.5
 	] , [
 		lv2:symbol "c_model" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "model" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "t_model" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 

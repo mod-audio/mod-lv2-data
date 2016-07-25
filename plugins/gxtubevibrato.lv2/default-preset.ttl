@@ -13,7 +13,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "sinewave" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "speed" ;
 		pset:value 0.1

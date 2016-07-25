@@ -17,8 +17,5 @@
 	] , [
 		lv2:symbol "WAH" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "WET_DRY" ;
-		pset:value 100.0
 	] .
 

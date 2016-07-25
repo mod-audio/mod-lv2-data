@@ -25,6 +25,7 @@
     lv2:binary <gxtuner.so>  ;
     rdfs:seeAlso <gxtuner.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gxtuner#tuner> ;

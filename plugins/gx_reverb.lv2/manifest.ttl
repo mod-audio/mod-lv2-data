@@ -25,6 +25,7 @@
     lv2:binary <gx_reverb.so>  ;
     rdfs:seeAlso <gx_reverb.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gx_reverb_stereo#_reverb_stereo> ;

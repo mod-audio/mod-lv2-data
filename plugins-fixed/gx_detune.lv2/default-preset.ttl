@@ -7,7 +7,7 @@
 	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune_> ;
 	lv2:port [
 		lv2:symbol "COMPENSATE" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "DETUNE" ;
 		pset:value 0.0
@@ -16,7 +16,7 @@
 		pset:value 50.0
 	] , [
 		lv2:symbol "LATENCY" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "LOW" ;
 		pset:value 1.0
@@ -28,7 +28,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "OCTAVE" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "TREBLE" ;
 		pset:value 1.0

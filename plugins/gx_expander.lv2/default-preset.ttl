@@ -17,8 +17,5 @@
 	] , [
 		lv2:symbol "RELEASE" ;
 		pset:value 0.1
-	] , [
-		lv2:symbol "THRESHOLD" ;
-		pset:value -40.0
 	] .
 

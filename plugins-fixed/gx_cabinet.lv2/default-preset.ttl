@@ -15,10 +15,7 @@
 		lv2:symbol "CTreble" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "SCHEDULE" ;
-		pset:value 1
-	] , [
 		lv2:symbol "c_model" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

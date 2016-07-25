@@ -25,6 +25,7 @@
     lv2:binary <gx_jcm800pre_st.so>  ;
     rdfs:seeAlso <gx_jcm800pre_st.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gx_jcm800pre_st#_jcm800pre_st> ;

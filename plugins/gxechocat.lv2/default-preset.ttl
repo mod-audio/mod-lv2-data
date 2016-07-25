@@ -7,13 +7,13 @@
 	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gxechocat#echocat> ;
 	lv2:port [
 		lv2:symbol "head1" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "head2" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "head3" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "input_gain" ;
 		pset:value 0.5

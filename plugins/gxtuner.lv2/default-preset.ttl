@@ -10,57 +10,51 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "CHANNEL" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "FASTNOTE" ;
-		pset:value 0
-	] , [
-		lv2:symbol "FREQ" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "GAIN" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "GATE" ;
-		pset:value 0
-	] , [
-		lv2:symbol "LEVEL" ;
-		pset:value -45
-	] , [
-		lv2:symbol "MAXL" ;
 		pset:value 0.0
 	] , [
+		lv2:symbol "LEVEL" ;
+		pset:value -45.0
+	] , [
 		lv2:symbol "MIDI_ON" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "PITCHBEND" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "REFFREQ" ;
 		pset:value 440.0
 	] , [
 		lv2:symbol "RESET" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "SINGLENOTE" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "SYNTHFREQ" ;
-		pset:value 220
+		pset:value 220.0
 	] , [
 		lv2:symbol "TEMPERAMENT" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "THRESHOLD" ;
-		pset:value -50
+		pset:value -50.0
 	] , [
 		lv2:symbol "TUNER_MODE" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "VELOCITY" ;
 		pset:value 64.0
 	] , [
 		lv2:symbol "VERIFY" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 

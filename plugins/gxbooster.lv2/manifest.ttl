@@ -25,6 +25,7 @@
     lv2:binary <gxbooster.so>  ;
     rdfs:seeAlso <gxbooster.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gxbooster#booster> ;

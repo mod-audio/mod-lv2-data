@@ -6,30 +6,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_livelooper_#_livelooper_> ;
 	lv2:port [
-		lv2:symbol "bar1" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "bar2" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "bar3" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "bar4" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "clip1" ;
-		pset:value 100.0
-	] , [
-		lv2:symbol "clip2" ;
-		pset:value 100.0
-	] , [
-		lv2:symbol "clip3" ;
-		pset:value 100.0
-	] , [
-		lv2:symbol "clip4" ;
-		pset:value 100.0
-	] , [
 		lv2:symbol "clips1" ;
 		pset:value 0.0
 	] , [
@@ -45,21 +21,6 @@
 		lv2:symbol "gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "level1" ;
-		pset:value 50.0
-	] , [
-		lv2:symbol "level2" ;
-		pset:value 50.0
-	] , [
-		lv2:symbol "level3" ;
-		pset:value 50.0
-	] , [
-		lv2:symbol "level4" ;
-		pset:value 50.0
-	] , [
-		lv2:symbol "mix" ;
-		pset:value 100.0
-	] , [
 		lv2:symbol "play1" ;
 		pset:value 0.0
 	] , [
@@ -70,18 +31,6 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "play4" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "playh1" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "playh2" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "playh3" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "playh4" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "rec1" ;

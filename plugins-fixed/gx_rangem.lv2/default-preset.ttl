@@ -8,8 +8,5 @@
 	lv2:port [
 		lv2:symbol "BOOST" ;
 		pset:value 0.5
-	] , [
-		lv2:symbol "WET_DRY" ;
-		pset:value 100.0
 	] .
 

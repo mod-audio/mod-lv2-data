@@ -18,12 +18,6 @@
 		lv2:symbol "ENVELOPE" ;
 		pset:value 1.0
 	] , [
-		lv2:symbol "F1" ;
-		pset:value 200.0
-	] , [
-		lv2:symbol "F2" ;
-		pset:value 6000.0
-	] , [
 		lv2:symbol "MODE" ;
 		pset:value 0.0
 	] , [

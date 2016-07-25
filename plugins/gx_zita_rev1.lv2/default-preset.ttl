@@ -16,19 +16,10 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "EQ2_FREQ" ;
-		pset:value 1500
+		pset:value 1500.0
 	] , [
 		lv2:symbol "EQ2_LEVEL" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "HF_DAMPING" ;
-		pset:value 6000.0
-	] , [
-		lv2:symbol "IN_DELAY" ;
-		pset:value 60.0
-	] , [
-		lv2:symbol "LF_X" ;
-		pset:value 200.0
 	] , [
 		lv2:symbol "LOW_RT60" ;
 		pset:value 3.0
