@@ -9,10 +9,3 @@
       lv2:InstrumentPlugin;
     lv2:binary <fabla2.so> ;
     rdfs:seeAlso <fabla2.ttl> .
-
-
-<default-preset>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://www.openavproductions.com/fabla2> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
