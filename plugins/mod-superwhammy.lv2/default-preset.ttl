@@ -7,16 +7,16 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/SuperWhammy> ;
 	lv2:port [
 		lv2:symbol "Clean" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "First" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "Gain" ;
 		pset:value 3.0
 	] , [
 		lv2:symbol "Last" ;
-		pset:value 12
+		pset:value 12.0
 	] , [
 		lv2:symbol "Step" ;
 		pset:value 0.0

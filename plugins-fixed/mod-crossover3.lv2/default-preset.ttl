@@ -22,6 +22,6 @@
 		pset:value 3.0
 	] , [
 		lv2:symbol "Order" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

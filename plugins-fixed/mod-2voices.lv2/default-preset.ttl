@@ -13,9 +13,9 @@
 		pset:value 3.0
 	] , [
 		lv2:symbol "Step1" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "Step2" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

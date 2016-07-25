@@ -7,6 +7,6 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mod-devel/SwitchBox2> ;
 	lv2:port [
 		lv2:symbol "Switch" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 
