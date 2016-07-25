@@ -7,33 +7,33 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mda/Bandisto> ;
 	lv2:port [
 		lv2:symbol "h_dist" ;
-		pset:value 45
+		pset:value 45.0
 	] , [
 		lv2:symbol "h_out" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "l_dist" ;
-		pset:value 45
+		pset:value 45.0
 	] , [
 		lv2:symbol "l_m" ;
-		pset:value 550
+		pset:value 550.0
 	] , [
 		lv2:symbol "l_out" ;
-		pset:value 6
+		pset:value 6.0
 	] , [
 		lv2:symbol "listen" ;
-		pset:value 3
+		pset:value 3.0
 	] , [
 		lv2:symbol "m_dist" ;
-		pset:value 45
+		pset:value 45.0
 	] , [
 		lv2:symbol "m_h" ;
-		pset:value 9859
+		pset:value 9859.0
 	] , [
 		lv2:symbol "m_out" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

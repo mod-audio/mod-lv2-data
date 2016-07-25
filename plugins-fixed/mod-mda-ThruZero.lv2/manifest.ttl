@@ -63,6 +63,7 @@ mdap:ThruZero-mad-modulator
     lv2:appliesTo mda:ThruZero ;
     rdfs:seeAlso <presets.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/mda/ThruZero> ;

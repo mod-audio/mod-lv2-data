@@ -43,7 +43,7 @@
 		pset:value 90.0
 	] , [
 		lv2:symbol "octave" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "release" ;
 		pset:value 44.09999847

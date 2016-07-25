@@ -7,24 +7,24 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mda/Combo> ;
 	lv2:port [
 		lv2:symbol "bias" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "drive" ;
-		pset:value 50
+		pset:value 50.0
 	] , [
 		lv2:symbol "hpf_freq" ;
 		pset:value 1.0
 	] , [
 		lv2:symbol "hpf_reso" ;
-		pset:value 50
+		pset:value 50.0
 	] , [
 		lv2:symbol "model" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "output" ;
-		pset:value 14
+		pset:value 14.0
 	] , [
 		lv2:symbol "stereo" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

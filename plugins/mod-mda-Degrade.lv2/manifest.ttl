@@ -42,6 +42,7 @@ mda:Degrade
         <modgui.ttl> ;
     lv2:binary <Degrade.so> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/mda/Degrade> ;

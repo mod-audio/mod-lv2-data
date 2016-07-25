@@ -28,7 +28,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "polyphonic" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "random_tuning" ;
 		pset:value 7.30000019

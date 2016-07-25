@@ -28,7 +28,7 @@
 		pset:value 4.0
 	] , [
 		lv2:symbol "ratio" ;
-		pset:value -10
+		pset:value -10.0
 	] , [
 		lv2:symbol "release" ;
 		pset:value 864.59997559

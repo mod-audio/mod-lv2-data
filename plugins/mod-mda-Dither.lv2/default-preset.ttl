@@ -13,10 +13,10 @@
 		pset:value 2.0
 	] , [
 		lv2:symbol "dither" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "word_len" ;
-		pset:value 16
+		pset:value 16.0
 	] , [
 		lv2:symbol "zoom" ;
 		pset:value 0.0
