@@ -25,7 +25,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "sections" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_1>
@@ -118,13 +118,7 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://drobilla.net/plugins/fomp/mvclpf4> ;
 	lv2:port [
-		lv2:symbol "exp_fm" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "exp_fm_gain" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "fm" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "freq" ;
@@ -137,15 +131,12 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "poles" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "res" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "res_gain" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "res_mod" ;
 		pset:value 0.0
 	] .
 
@@ -215,9 +206,6 @@
 		lv2:symbol "exp_fm_gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "freq" ;
-		pset:value 440.0
-	] , [
 		lv2:symbol "lin_fm_gain" ;
 		pset:value 0.0
 	] , [
@@ -225,7 +213,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "octave" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "tune" ;
 		pset:value 0.0
@@ -241,9 +229,6 @@
 		lv2:symbol "form_mod" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "freq" ;
-		pset:value 440.0
-	] , [
 		lv2:symbol "lin_fm_gain" ;
 		pset:value 0.0
 	] , [
@@ -251,7 +236,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "octave" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "tune" ;
 		pset:value 0.0
@@ -302,9 +287,6 @@
 		lv2:symbol "exp_fm_gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "freq" ;
-		pset:value 440.0
-	] , [
 		lv2:symbol "lin_fm_gain" ;
 		pset:value 0.0
 	] , [
@@ -312,7 +294,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "octave" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "tune" ;
 		pset:value 0.0

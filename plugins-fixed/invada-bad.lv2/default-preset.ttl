@@ -15,18 +15,6 @@
 		lv2:symbol "gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "grmeter" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOut" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "noClip" ;
 		pset:value 1.0
 	] , [
@@ -55,24 +43,6 @@
 	] , [
 		lv2:symbol "gain" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "grmeter" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterInL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterInR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
 	] , [
 		lv2:symbol "noClip" ;
 		pset:value 1.0
@@ -109,23 +79,14 @@
 		lv2:symbol "listLR" ;
 		pset:value 0.01
 	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "roomHeight" ;
-		pset:value 10
+		pset:value 10.0
 	] , [
 		lv2:symbol "roomLength" ;
-		pset:value 25
+		pset:value 25.0
 	] , [
 		lv2:symbol "roomWidth" ;
-		pset:value 30
+		pset:value 30.0
 	] , [
 		lv2:symbol "sourceFB" ;
 		pset:value 0.80000001
@@ -156,23 +117,14 @@
 		lv2:symbol "listLR" ;
 		pset:value 0.01
 	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "roomHeight" ;
-		pset:value 10
+		pset:value 10.0
 	] , [
 		lv2:symbol "roomLength" ;
-		pset:value 25
+		pset:value 25.0
 	] , [
 		lv2:symbol "roomWidth" ;
-		pset:value 30
+		pset:value 30.0
 	] , [
 		lv2:symbol "sourceFB" ;
 		pset:value 0.80000001
@@ -197,15 +149,6 @@
 		lv2:symbol "gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOut" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "noClip" ;
 		pset:value 0.0
 	] .
@@ -222,21 +165,6 @@
 	] , [
 		lv2:symbol "gain" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterInL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterInR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
 	] , [
 		lv2:symbol "noClip" ;
 		pset:value 0.0
@@ -255,15 +183,6 @@
 		lv2:symbol "gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOut" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "noClip" ;
 		pset:value 0.0
 	] .
@@ -281,21 +200,6 @@
 		lv2:symbol "gain" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterInL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterInR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "noClip" ;
 		pset:value 0.0
 	] .
@@ -308,24 +212,6 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "gain" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "lampDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterInL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterInR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterPhase" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "noClip" ;
@@ -354,9 +240,6 @@
 		lv2:symbol "frequency" ;
 		pset:value 1000.0
 	] , [
-		lv2:symbol "meterOut" ;
-		pset:value -60.0
-	] , [
 		lv2:symbol "trim" ;
 		pset:value 0.0
 	] .
@@ -373,15 +256,6 @@
 	] , [
 		lv2:symbol "drive" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "meterDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterIn" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOut" ;
-		pset:value -60.0
 	] , [
 		lv2:symbol "mix" ;
 		pset:value 75.0
@@ -402,21 +276,6 @@
 	] , [
 		lv2:symbol "drive" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "meterDrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "meterInL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterInR" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutL" ;
-		pset:value -60.0
-	] , [
-		lv2:symbol "meterOutR" ;
-		pset:value -60.0
 	] , [
 		lv2:symbol "mix" ;
 		pset:value 75.0

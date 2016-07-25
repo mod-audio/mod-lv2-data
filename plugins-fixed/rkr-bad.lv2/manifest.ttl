@@ -203,6 +203,7 @@
         a lv2:Plugin, lv2:ModulatorPlugin ;
         lv2:binary <rkrlv2.so> ;
         rdfs:seeAlso <inf.ttl> , <modguis.ttl> .
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://rakarrack.sourceforge.net/effects.html#Arpie> ;

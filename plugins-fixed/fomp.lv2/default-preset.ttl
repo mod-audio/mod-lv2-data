@@ -88,7 +88,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "sections" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_4>
