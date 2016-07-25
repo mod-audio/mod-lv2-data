@@ -6,17 +6,11 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://moddevices.com/plugins/tap/dynamics> ;
 	lv2:port [
-		lv2:symbol "adjustment" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "attack" ;
 		pset:value 128.0
 	] , [
-		lv2:symbol "envelope" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "function" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "makeup" ;
 		pset:value 0.0

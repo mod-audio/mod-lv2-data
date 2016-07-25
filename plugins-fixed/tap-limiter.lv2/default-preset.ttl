@@ -6,9 +6,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://moddevices.com/plugins/tap/limiter> ;
 	lv2:port [
-		lv2:symbol "latency" ;
-		pset:value 2500.10009766
-	] , [
 		lv2:symbol "limitlevel" ;
 		pset:value 0.0
 	] , [

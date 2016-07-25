@@ -10,12 +10,6 @@
 		pset:value 128.0
 	] , [
 		lv2:symbol "function" ;
-		pset:value 0
-	] , [
-		lv2:symbol "lenvelope" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "lgain" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "makeup" ;
@@ -27,13 +21,7 @@
 		lv2:symbol "releaseM" ;
 		pset:value 502.0
 	] , [
-		lv2:symbol "renvelope" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "rgain" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "stereo" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

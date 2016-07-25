@@ -6,17 +6,14 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://moddevices.com/plugins/tap/deesser> ;
 	lv2:port [
-		lv2:symbol "attenuation" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "frequency" ;
 		pset:value 5500.0
 	] , [
 		lv2:symbol "monitor" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "sidechainfilter" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "thresholdlevel" ;
 		pset:value 0.0

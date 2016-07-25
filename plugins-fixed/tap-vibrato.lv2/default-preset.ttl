@@ -15,9 +15,6 @@
 		lv2:symbol "frequency" ;
 		pset:value 0.0
 	] , [
-		lv2:symbol "latency" ;
-		pset:value 6300.0
-	] , [
 		lv2:symbol "wetlevel" ;
 		pset:value 0.0
 	] .

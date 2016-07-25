@@ -15,9 +15,6 @@
 		lv2:symbol "hrbal" ;
 		pset:value 0.5
 	] , [
-		lv2:symbol "latency" ;
-		pset:value 9200.0
-	] , [
 		lv2:symbol "stwidht" ;
 		pset:value 0.0
 	] .
