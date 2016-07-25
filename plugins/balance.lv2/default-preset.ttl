@@ -10,24 +10,30 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "delayLeft" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "delayRight" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "monoswap" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "phaseL" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "phaseR" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "trim" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "unitygain" ;
-		pset:value 0
+		pset:value 0.0
+	] ;
+	state:state [
+		<http://gareus.org/oss/lv2/balance#controlkey> """peak_integrate=0.005000
+meter_falloff=13.300000
+peak_hold=2.000000
+"""
 	] .
 

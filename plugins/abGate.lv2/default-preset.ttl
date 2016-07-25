@@ -7,21 +7,21 @@
 	lv2:appliesTo <http://hippie.lt/lv2/gate> ;
 	lv2:port [
 		lv2:symbol "attack" ;
-		pset:value 30
+		pset:value 30.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 1000
+		pset:value 1000.0
 	] , [
 		lv2:symbol "gaterange" ;
-		pset:value -90
+		pset:value -90.0
 	] , [
 		lv2:symbol "hold" ;
-		pset:value 500
+		pset:value 500.0
 	] , [
 		lv2:symbol "switch" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value -70
+		pset:value -70.0
 	] .
 
