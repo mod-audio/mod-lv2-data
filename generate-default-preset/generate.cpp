@@ -28,6 +28,7 @@ typedef struct {
 static std::vector<std::string> g_handled_bundles;
 static std::vector<std::string> g_uri_mapping = {
     LV2_ATOM__Int,
+    LV2_ATOM__Long,
     LV2_ATOM__Float,
     LV2_BUF_SIZE__maxBlockLength,
     LV2_BUF_SIZE__minBlockLength,
@@ -36,9 +37,10 @@ static std::vector<std::string> g_uri_mapping = {
 // note: the ids below must match the ones on the mapping
 static const uint32_t k_urid_null        =  0;
 static const uint32_t k_urid_atom_int    =  1;
-static const uint32_t k_urid_atom_float  =  2;
-static const uint32_t k_urid_atom_bz_max =  3;
-static const uint32_t k_urid_atom_bz_min =  4;
+static const uint32_t k_urid_atom_long   =  2;
+static const uint32_t k_urid_atom_float  =  3;
+static const uint32_t k_urid_atom_bz_max =  4;
+static const uint32_t k_urid_atom_bz_min =  5;
 
 static const int32_t g_buffer_size = 128;
 static const double g_sample_rate = 48000.0;
@@ -192,6 +194,15 @@ static void set_port_value_for_state(const char* const symbol, void* const user_
         }
         break;
 
+    case k_urid_atom_long:
+        if (size == sizeof(int64_t))
+        {
+            int64_t ivalue = *(const int64_t*)value;
+            values->push_back({ strdup(symbol), (float)ivalue });
+            return;
+        }
+        break;
+
     case k_urid_atom_float:
         if (size == sizeof(float))
         {
@@ -202,7 +213,7 @@ static void set_port_value_for_state(const char* const symbol, void* const user_
         break;
     }
 
-    fprintf(stderr, "set_port_value_for_state called with unknown type: %u %u\n", type, size);
+    fprintf(stderr, "set_port_value_for_state called with unknown type: %u %u '%s'\n", type, size, lv2_urid_unmap(NULL, type));
 }
 
 // --------------------------------------------------------------------------------------------------------------------
