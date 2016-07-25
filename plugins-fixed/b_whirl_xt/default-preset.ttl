@@ -40,7 +40,7 @@
 		pset:value 2.74559999
 	] , [
 		lv2:symbol "filtatype" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "filtbfreq" ;
 		pset:value 300.0
@@ -52,7 +52,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "filtbtype" ;
-		pset:value 7
+		pset:value 7.0
 	] , [
 		lv2:symbol "filtdfreq" ;
 		pset:value 811.96948242
@@ -64,7 +64,7 @@
 		pset:value 1.60160005
 	] , [
 		lv2:symbol "filtdtype" ;
-		pset:value 8
+		pset:value 8.0
 	] , [
 		lv2:symbol "guitrigger" ;
 		pset:value 0.0
@@ -103,7 +103,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "link" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "micangle" ;
 		pset:value 180.0
@@ -112,6 +112,6 @@
 		pset:value 42.0
 	] , [
 		lv2:symbol "rt_speed" ;
-		pset:value 4
+		pset:value 4.0
 	] .
 

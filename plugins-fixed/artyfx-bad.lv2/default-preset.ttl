@@ -43,9 +43,6 @@
 		lv2:symbol "release_time" ;
 		pset:value 0.5
 	] , [
-		lv2:symbol "sidechain_amp" ;
-		pset:value 0.0
-	] , [
 		lv2:symbol "threshold" ;
 		pset:value 0.25
 	] .

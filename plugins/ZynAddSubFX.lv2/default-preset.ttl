@@ -5,8 +5,7 @@
 <default-preset>
 	a pset:Preset ;
 	lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
-	lv2:port [
-		lv2:symbol "osc_port" ;
-		pset:value 0.0
+	state:state [
+		
 	] .
 

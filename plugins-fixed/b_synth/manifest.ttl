@@ -7,6 +7,7 @@
 	lv2:binary <b_synth.so>  ;
 	rdfs:seeAlso <b_synth.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/b_synth> ;

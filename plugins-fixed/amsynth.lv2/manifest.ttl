@@ -5,6 +5,7 @@
   lv2:binary   <amsynth_lv2.so> ;
   rdfs:seeAlso <amsynth.ttl> , <modgui.ttl> .
 
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://code.google.com/p/amsynth/amsynth> ;

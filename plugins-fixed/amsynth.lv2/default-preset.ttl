@@ -52,13 +52,13 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "filter_slope" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "filter_sustain" ;
 		pset:value 1.0
 	] , [
 		lv2:symbol "filter_type" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "filter_vel_sens" ;
 		pset:value 1.0
@@ -67,16 +67,16 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "freq_mod_osc" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "keyboard_mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "lfo_freq" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "lfo_waveform" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "master_vol" ;
 		pset:value 0.67000002
@@ -85,13 +85,13 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "osc1_waveform" ;
-		pset:value 2
+		pset:value 2.0
 	] , [
 		lv2:symbol "osc2_detune" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "osc2_pitch" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "osc2_pulsewidth" ;
 		pset:value 1.0
@@ -103,7 +103,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "osc2_waveform" ;
-		pset:value 2
+		pset:value 2.0
 	] , [
 		lv2:symbol "osc_mix" ;
 		pset:value 0.0
@@ -112,7 +112,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "portamento_mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "portamento_time" ;
 		pset:value 0.0

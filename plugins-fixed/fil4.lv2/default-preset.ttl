@@ -22,10 +22,10 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "HSsec" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "HighPass" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "LPQ" ;
 		pset:value 1.0
@@ -43,13 +43,13 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "LSsec" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "LowPass" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "enable" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "freq1" ;
 		pset:value 160.0
@@ -79,7 +79,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "peakreset" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "q1" ;
 		pset:value 0.60000002
@@ -94,16 +94,22 @@
 		pset:value 0.60000002
 	] , [
 		lv2:symbol "sec1" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec2" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec3" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec4" ;
-		pset:value 1
+		pset:value 1.0
+	] ;
+	state:state [
+		<http://gareus.org/oss/lv2/fil4#fftgain> "30.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftmode> "0.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftchannel> "4609"^^xsd:int ;
+		<http://gareus.org/oss/lv2/fil4#uiscale> "-1"^^xsd:int
 	] .
 
 <default-preset_1>
@@ -126,10 +132,10 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "HSsec" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "HighPass" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "LPQ" ;
 		pset:value 1.0
@@ -147,13 +153,13 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "LSsec" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "LowPass" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "enable" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "freq1" ;
 		pset:value 160.0
@@ -183,7 +189,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "peakreset" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "q1" ;
 		pset:value 0.60000002
@@ -198,15 +204,21 @@
 		pset:value 0.60000002
 	] , [
 		lv2:symbol "sec1" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec2" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec3" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "sec4" ;
-		pset:value 1
+		pset:value 1.0
+	] ;
+	state:state [
+		<http://gareus.org/oss/lv2/fil4#fftgain> "30.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftmode> "0.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftchannel> "4609"^^xsd:int ;
+		<http://gareus.org/oss/lv2/fil4#uiscale> "-1"^^xsd:int
 	] .
 
