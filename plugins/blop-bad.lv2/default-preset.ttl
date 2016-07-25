@@ -7,16 +7,16 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/adsr> ;
 	lv2:port [
 		lv2:symbol "attack" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "release" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "sustain" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_1>
@@ -24,16 +24,16 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/adsr_gt> ;
 	lv2:port [
 		lv2:symbol "attack" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "release" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "sustain" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_2>
@@ -45,22 +45,22 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/dahdsr> ;
 	lv2:port [
 		lv2:symbol "attack" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "delay" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "hold" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "release" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "sustain" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_4>
@@ -75,7 +75,7 @@
 		pset:value 0.5
 	] , [
 		lv2:symbol "resonance" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 
 <default-preset_6>
@@ -94,13 +94,13 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_100> ;
 	lv2:port [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "range" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 20
+		pset:value 20.0
 	] .
 
 <default-preset_8>
@@ -108,13 +108,13 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_20> ;
 	lv2:port [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "range" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 20
+		pset:value 20.0
 	] .
 
 <default-preset_9>
@@ -122,13 +122,13 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/quantiser_50> ;
 	lv2:port [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "range" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 20
+		pset:value 20.0
 	] .
 
 <default-preset_10>
@@ -139,7 +139,7 @@
 		pset:value 440.0
 	] , [
 		lv2:symbol "smooth" ;
-		pset:value 1
+		pset:value 1.0
 	] .
 
 <default-preset_11>
@@ -147,10 +147,10 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_16> ;
 	lv2:port [
 		lv2:symbol "reset" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 16
+		pset:value 16.0
 	] .
 
 <default-preset_12>
@@ -158,10 +158,10 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_32> ;
 	lv2:port [
 		lv2:symbol "reset" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 32
+		pset:value 32.0
 	] .
 
 <default-preset_13>
@@ -169,10 +169,10 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/sequencer_64> ;
 	lv2:port [
 		lv2:symbol "reset" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "steps" ;
-		pset:value 32
+		pset:value 32.0
 	] .
 
 <default-preset_14>
@@ -180,7 +180,7 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/sync_pulse> ;
 	lv2:port [
 		lv2:symbol "freq" ;
-		pset:value 16
+		pset:value 16.0
 	] , [
 		lv2:symbol "pwidth" ;
 		pset:value 0.5
@@ -191,7 +191,7 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/sync_square> ;
 	lv2:port [
 		lv2:symbol "freq" ;
-		pset:value 16
+		pset:value 16.0
 	] .
 
 <default-preset_16>
@@ -199,15 +199,15 @@
 	lv2:appliesTo <http://drobilla.net/plugins/blop/tracker> ;
 	lv2:port [
 		lv2:symbol "hattack" ;
-		pset:value 100
+		pset:value 100.0
 	] , [
 		lv2:symbol "hdecay" ;
-		pset:value 100
+		pset:value 100.0
 	] , [
 		lv2:symbol "lattack" ;
-		pset:value 100
+		pset:value 100.0
 	] , [
 		lv2:symbol "ldecay" ;
-		pset:value 100
+		pset:value 100.0
 	] .
 
