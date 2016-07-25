@@ -7,36 +7,36 @@
 	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#Reverb> ;
 	lv2:port [
 		lv2:symbol "bw" ;
-		pset:value 20
+		pset:value 20.0
 	] , [
 		lv2:symbol "damp" ;
-		pset:value 83
+		pset:value 83.0
 	] , [
 		lv2:symbol "delay" ;
-		pset:value 24
+		pset:value 24.0
 	] , [
 		lv2:symbol "fb" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "hpf" ;
-		pset:value 5
+		pset:value 5.0
 	] , [
 		lv2:symbol "lpf" ;
-		pset:value 85
+		pset:value 85.0
 	] , [
 		lv2:symbol "size" ;
-		pset:value 64
+		pset:value 64.0
 	] , [
 		lv2:symbol "time" ;
-		pset:value 63
+		pset:value 63.0
 	] , [
 		lv2:symbol "type" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "unused_bw" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "unused_er" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

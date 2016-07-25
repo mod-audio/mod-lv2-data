@@ -7,33 +7,33 @@
 	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#Chorus> ;
 	lv2:port [
 		lv2:symbol "delay" ;
-		pset:value 85
+		pset:value 85.0
 	] , [
 		lv2:symbol "depth" ;
-		pset:value 40
+		pset:value 40.0
 	] , [
 		lv2:symbol "fb" ;
-		pset:value 64
+		pset:value 64.0
 	] , [
 		lv2:symbol "flang" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "lfofreq" ;
-		pset:value 50
+		pset:value 50.0
 	] , [
 		lv2:symbol "lforand" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "lfostereo" ;
-		pset:value 90
+		pset:value 90.0
 	] , [
 		lv2:symbol "lfotype" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "lrcross" ;
-		pset:value 119
+		pset:value 119.0
 	] , [
 		lv2:symbol "subsout" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

@@ -7,30 +7,30 @@
 	lv2:appliesTo <http://zynaddsubfx.sourceforge.net/fx#Distortion> ;
 	lv2:port [
 		lv2:symbol "drive" ;
-		pset:value 56
+		pset:value 56.0
 	] , [
 		lv2:symbol "hpf" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "level" ;
-		pset:value 70
+		pset:value 70.0
 	] , [
 		lv2:symbol "lpf" ;
-		pset:value 96
+		pset:value 96.0
 	] , [
 		lv2:symbol "lrcross" ;
-		pset:value 35
+		pset:value 35.0
 	] , [
 		lv2:symbol "negate" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "pf" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "stereo" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "type" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 

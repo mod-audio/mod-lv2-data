@@ -7,6 +7,6 @@
 	lv2:appliesTo <http://gareus.org/oss/lv2/stereoroute> ;
 	lv2:port [
 		lv2:symbol "routing" ;
-		pset:value 0
+		pset:value 0.0
 	] .
 
