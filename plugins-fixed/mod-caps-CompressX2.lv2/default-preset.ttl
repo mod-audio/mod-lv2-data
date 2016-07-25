@@ -13,16 +13,13 @@
 		pset:value 3.0
 	] , [
 		lv2:symbol "measure" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "mode" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "release" ;
 		pset:value 0.5
-	] , [
-		lv2:symbol "state" ;
-		pset:value 0.0
 	] , [
 		lv2:symbol "strength" ;
 		pset:value 0.25

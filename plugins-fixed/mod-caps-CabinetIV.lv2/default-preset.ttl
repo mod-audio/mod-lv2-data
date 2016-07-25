@@ -10,6 +10,6 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "model" ;
-		pset:value 12
+		pset:value 12.0
 	] .
 

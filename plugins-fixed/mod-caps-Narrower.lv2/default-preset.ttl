@@ -7,7 +7,7 @@
 	lv2:appliesTo <http://moddevices.com/plugins/caps/Narrower> ;
 	lv2:port [
 		lv2:symbol "mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "strength" ;
 		pset:value 0.25

@@ -13,7 +13,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "a_mode" ;
-		pset:value 0
+		pset:value 0.0
 	] , [
 		lv2:symbol "a_q" ;
 		pset:value 0.25
@@ -25,7 +25,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "b_mode" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "b_q" ;
 		pset:value 0.25
@@ -37,7 +37,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "c_mode" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "c_q" ;
 		pset:value 0.25
@@ -49,12 +49,9 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "d_mode" ;
-		pset:value 2
+		pset:value 2.0
 	] , [
 		lv2:symbol "d_q" ;
 		pset:value 0.25
-	] , [
-		lv2:symbol "latency" ;
-		pset:value 3
 	] .
 

@@ -25,7 +25,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "over" ;
-		pset:value 2
+		pset:value 2.0
 	] , [
 		lv2:symbol "power" ;
 		pset:value 0.5
@@ -34,7 +34,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "tonestack" ;
-		pset:value 1
+		pset:value 1.0
 	] , [
 		lv2:symbol "treble" ;
 		pset:value 0.75

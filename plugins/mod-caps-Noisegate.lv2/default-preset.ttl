@@ -13,7 +13,7 @@
 		pset:value -67.5
 	] , [
 		lv2:symbol "mains" ;
-		pset:value 50
+		pset:value 50.0
 	] , [
 		lv2:symbol "open" ;
 		pset:value -45.0
