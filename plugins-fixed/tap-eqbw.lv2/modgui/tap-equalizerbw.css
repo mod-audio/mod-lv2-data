@@ -35,7 +35,7 @@
 }
 /* SLIDERS */
 .mod-tap-equalizer-bw .mod-control-group-1 {
-    left: 65px;
+    left: 50px;
     position: absolute;
     right: 0;
     top: 23px;
@@ -68,13 +68,13 @@
 }
 /* KNOBS */
 .mod-tap-equalizer-bw .mod-control-group-2 {
-    left: 65px;
+    left: 50px;
     position: absolute;
     top: 181px;
     z-index: 30;
 }
 .mod-tap-equalizer-bw .mod-control-group-3 {
-    left: 65px;
+    left: 50px;
     position: absolute;
     top: 263px;
     z-index: 30;
