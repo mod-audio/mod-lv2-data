@@ -8,7 +8,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "marsian_orchestra_2";
+	rdfs:label "marsian orchestra 2";
 lv2:port [
 		lv2:symbol "preset_category" ;
 		pset:value 7

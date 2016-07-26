@@ -8,7 +8,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "sync_lead";
+	rdfs:label "sync lead" ;
 lv2:port [
 		lv2:symbol "preset_category" ;
 		pset:value 2

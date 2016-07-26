@@ -8,7 +8,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "nice_square_mod_3";
+	rdfs:label "nice square mod 3" ;
 lv2:port [
 		lv2:symbol "preset_category" ;
 		pset:value 2

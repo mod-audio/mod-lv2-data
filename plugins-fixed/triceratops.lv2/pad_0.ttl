@@ -9,7 +9,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "pad 0" ;
+	rdfs:label "pad 1" ;
 	lv2:port [
 		lv2:symbol "active_one" ;
 		pset:value 1.0

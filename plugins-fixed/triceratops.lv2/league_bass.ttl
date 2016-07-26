@@ -8,7 +8,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "league_bass_2";
+	rdfs:label "league_bass";
 lv2:port [
 		lv2:symbol "preset_category" ;
 		pset:value 1
