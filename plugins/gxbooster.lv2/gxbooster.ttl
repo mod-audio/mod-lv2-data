@@ -44,9 +44,7 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gxbooster> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gxbooster#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
     
@@ -89,10 +87,3 @@ A 2 band boost plugin. With this plugin you can boost the high and the low frequ
         lv2:symbol "in" ;
         lv2:name "in"
     ] .
-
-
-<http://guitarix.sourceforge.net/plugins/gxbooster#gui>
-  a guiext:GtkUI;
-  guiext:binary <gxbooster_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
-  
