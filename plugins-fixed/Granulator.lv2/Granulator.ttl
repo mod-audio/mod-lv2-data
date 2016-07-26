@@ -21,7 +21,8 @@
        lv2:microVersion 0;
        doap:license <http://usefulinc.com/doap/licenses/gpl> ;
        rdfs:comment "A realtime granulator plays small chunks of audio in the delay time setted"
-       mod:brand "mayank";
+       mod:brand "Mayank";
+       mod:label "Granulator";
 
     lv2:port [
 	a lv2:ControlPort ;
