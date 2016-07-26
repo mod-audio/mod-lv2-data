@@ -58,6 +58,7 @@
     height: 14px;
     margin-bottom: 1px;
     z-index: 40;
+    box-sizing: content-box;
 }
 .mod-tap-equalizer .mod-control-group .mod-slider .mod-slider-image-wrapper {
     background-color: rgb(235,199,38);
