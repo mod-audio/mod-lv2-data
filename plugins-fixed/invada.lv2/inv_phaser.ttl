@@ -336,7 +336,7 @@ Subtle phaser with a very large LFO range
     a lv2:Plugin, lv2:PhaserPlugin ;
     doap:name "Invada Stereo Phaser (sum L+R in)" ;
     mod:brand "Invada" ;
-    mod:label "SPhaser sum" ;
+    mod:label "SPhaser Sum" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
     lv2:microVersion 1;

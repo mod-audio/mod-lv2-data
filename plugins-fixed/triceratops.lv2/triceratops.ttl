@@ -22,7 +22,7 @@
 	doap:license <http://opensource.org/licenses/gpl-3.0> ;
 	lv2:microVersion 3 ;
 	lv2:minorVersion 0 ;
-	mod:brand "NickBailey" ;
+	mod:brand "Nick Bailey" ;
 	rdfs:comment "A Big Synth" ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 

@@ -9,7 +9,7 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> ;
-	rdfs:label "128-growlie.ttl" ;
+	rdfs:label "128-growlie" ;
 	lv2:port [
 		lv2:symbol "active_one" ;
 		pset:value 0.0
