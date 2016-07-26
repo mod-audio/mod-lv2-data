@@ -29,6 +29,7 @@
 	a foaf:Person ;
 	foaf:name "Guitarix team" ;
 	foaf:mbox <mailto:brummer@web.de> ;
+	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
 
 <http://guitarix.sourceforge.net/plugins/gxbooster>
