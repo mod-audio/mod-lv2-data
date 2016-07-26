@@ -4,9 +4,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     color: black;
-    height: 394px;
+    height: 392px;
     padding: 0;
-    width: 618px;
+    width: 616px;
+    border-radius: 21px;
+    position: absolute;
 }
 /* BRAND */
 .mod-tap-equalizer .mod-tap-equalizer-brand {
@@ -114,10 +116,10 @@
     cursor:pointer;
     height:66px;
     width: 66px;
-    margin: 0 auto;
+    margin: auto;
     position:absolute !important;
 }
-.mod-tap-equalizer .mod-footswitch .mod-footswitch.on {
+.mod-tap-equalizer .mod-footswitch.on {
     background-position-y: top !important
 }
 /* LIGHT */
