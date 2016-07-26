@@ -104,12 +104,6 @@
 	] , [
 		lv2:symbol "sec4" ;
 		pset:value 1.0
-	] ;
-	state:state [
-		<http://gareus.org/oss/lv2/fil4#fftgain> "30.0"^^xsd:float ;
-		<http://gareus.org/oss/lv2/fil4#fftmode> "0.0"^^xsd:float ;
-		<http://gareus.org/oss/lv2/fil4#fftchannel> "4609"^^xsd:int ;
-		<http://gareus.org/oss/lv2/fil4#uiscale> "-1"^^xsd:int
 	] .
 
 <default-preset_1>
@@ -214,11 +208,5 @@
 	] , [
 		lv2:symbol "sec4" ;
 		pset:value 1.0
-	] ;
-	state:state [
-		<http://gareus.org/oss/lv2/fil4#fftgain> "30.0"^^xsd:float ;
-		<http://gareus.org/oss/lv2/fil4#fftmode> "0.0"^^xsd:float ;
-		<http://gareus.org/oss/lv2/fil4#fftchannel> "4609"^^xsd:int ;
-		<http://gareus.org/oss/lv2/fil4#uiscale> "-1"^^xsd:int
 	] .
 

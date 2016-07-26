@@ -32,7 +32,7 @@ fil4:mono
 	lv2:optionalFeature lv2:hardRTCapable ;
   
 	mod:brand "x42";
-	mod:label "x42-eq mono";
+	mod:label "Parametric EQ";
 	lv2:port [
 		a atom:AtomPort ,
 			lv2:InputPort ;
@@ -425,7 +425,7 @@ fil4:stereo
 	lv2:optionalFeature lv2:hardRTCapable ;
   
 	mod:brand "x42";
-	mod:label "x42-eq stereo";
+	mod:label "Parametric EQ ST";
 	lv2:port [
 		a atom:AtomPort ,
 			lv2:InputPort ;
