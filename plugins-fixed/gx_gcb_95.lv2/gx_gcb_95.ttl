@@ -26,6 +26,7 @@
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time: <http://lv2plug.in/ns/ext/time#>.
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix mod: <http://moddevices.com/ns/mod#>.
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -49,6 +50,9 @@
       
     lv2:minorVersion 28;
     lv2:microVersion 3;
+
+    mod:brand "Guitarix" ;
+    mod:label "GxCrybabyGCB95" ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_gcb_95_gui#_gcb_95_>;
     

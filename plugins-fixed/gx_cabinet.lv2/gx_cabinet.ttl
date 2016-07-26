@@ -31,6 +31,7 @@
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix mod: <http://moddevices.com/ns/mod#>.
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -61,6 +62,9 @@
 
     lv2:minorVersion 28;
     lv2:microVersion 3;
+
+    mod:brand "Guitarix" ;
+    mod:label "GxCabinet" ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_cabinet#gui>;
 

@@ -26,6 +26,7 @@
 @prefix guiext: <http://lv2plug.in/ns/extensions/ui#>.
 @prefix time: <http://lv2plug.in/ns/ext/time#>.
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix mod: <http://moddevices.com/ns/mod#>.
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -50,6 +51,9 @@
 
     lv2:minorVersion 28;
     lv2:microVersion 3;
+
+    mod:brand "Guitarix" ;
+    mod:label "GxMole" ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_mole_gui#_mole_>;
 
