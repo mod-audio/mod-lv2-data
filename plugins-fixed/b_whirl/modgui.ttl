@@ -24,15 +24,15 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "hornlvl" ;
-            lv2:name "Horn Level" ;
+            lv2:name "Horn Lvl" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "drumlvl" ;
-            lv2:name "Drum Level" ;
+            lv2:name "Drum Lvl" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "drumwidth" ;
-            lv2:name "Stereo Width" ;
+            lv2:name "St. Width" ;
         ] ;
     ] .
 

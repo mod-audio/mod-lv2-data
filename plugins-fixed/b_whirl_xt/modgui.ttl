@@ -12,7 +12,7 @@
         modgui:screenshot <modgui/screenshot-setbfree-whirl-speaker-extended-version.png> ;
         modgui:thumbnail <modgui/thumbnail-setbfree-whirl-speaker-extended-version.png> ;
         modgui:brand "x42" ;
-        modgui:label "setBfree Whirl Speaker XT" ;
+        modgui:label "setBfree Whirl Speaker Extended Version" ;
         modgui:model "boxy" ;
         modgui:panel "1-select-4-knobs" ;
         modgui:color "wood3" ;
@@ -24,19 +24,19 @@
         ] , [
             lv2:index 1 ;
             lv2:symbol "hornlvl" ;
-            lv2:name "Horn Level" ;
+            lv2:name "Horn Lvl" ;
         ] , [
             lv2:index 2 ;
             lv2:symbol "drumlvl" ;
-            lv2:name "Drum Level" ;
+            lv2:name "Drum Lvl" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "micdist" ;
-            lv2:name "MicDist" ;
+            lv2:name "Mic. Dist" ;
         ] , [
             lv2:index 4 ;
             lv2:symbol "hornwidth" ;
-            lv2:name "Width" ;
+            lv2:name "St. Width" ;
         ] ;
     ] .
 
