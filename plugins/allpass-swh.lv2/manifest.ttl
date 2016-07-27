@@ -1,0 +1,8 @@
+@prefix : <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swh: <http://plugin.org.uk/swh-plugins/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+swh:allpass_n a :Plugin ;
+  :binary <plugin-Linux.so> ;
+  rdfs:seeAlso <plugin.ttl> .
