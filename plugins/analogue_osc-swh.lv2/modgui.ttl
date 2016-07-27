@@ -1,0 +1,10 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+
+<http://plugin.org.uk/swh-plugins/analogueOsc>
+   modgui:gui [
+        modgui:resourcesDirectory <modgui>;
+        modgui:stylesheet <modgui/swh_oscillator.css>;
+        modgui:iconTemplate <modgui/icon-analogue-oscillator.html>;
+        modgui:screenshot <modgui/screenshot-analogue-oscillator.png>;
+        modgui:thumbnail <modgui/thumb-analogue-oscillator.png>;
+    ] .

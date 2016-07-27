@@ -1,0 +1,206 @@
+
+    .swh-oscillator * {
+        color: white !important;
+    }
+    .swh-oscillator .mod-plugin-name , .swh-oscillator .mod-plugin-author  {
+        display: none;
+    }
+    .swh-oscillator .mod-control-group .mod-knob {
+        text-align: center;
+        }
+    .swh-oscillator .mod-knob-title {
+        position: relative !important;
+        padding-top: 20px;
+    }
+    .swh-oscillator .mod-light {
+      height: 32px;
+      right: 38px;
+      margin: 0 auto;
+      position: absolute;
+      width: 32px;
+      top: 25px;
+      }
+    .swh-oscillator .mod-light.off { 
+      background-image:url(/resources/red-light-off.png{{{ns}}}); 
+    }
+    .swh-oscillator .mod-light.on  { 
+      background-image:url(/resources/red-light-on.png{{{ns}}}); 
+    }
+    .swh-oscillator {
+        background-image:url(/resources/swh_oscillator.png{{{ns}}}) !important;
+        background-repeat: no-repeat;
+        width: 266px;
+        height: 456px;
+        position: absolute;
+    }
+    .swh-oscillator .left {
+      float: left !important;
+    }
+    .swh-oscillator .right {
+      float:right !important;
+    }
+     .swh-oscillator .mod-control-group {
+      top: 0;
+      height: auto !important;
+      width: auto !important;
+      text-align: left;
+      position: relative;
+     }
+    .swh-oscillator .mod-control-group#wet {
+      left: 370px;
+      top: 375px;
+      position: absolute;
+      width: 70px !important;
+      height: 70px !important;
+    }
+
+    .swh-oscillator .mod-control-group.group1 {
+        margin-top: 126px;
+        margin-left: 26px;
+        float: left;
+        width: 217px !important;
+    }
+    .swh-oscillator .mod-control-group.group2 {
+        margin-top: 126px;
+        margin-left: 23px;
+        float: left;
+        width: 255px !important;
+    }
+    .swh-oscillator .mod-control-group.group1 .mod-knob {
+      text-align: center;
+      margin: 0 29px 24px 0;
+      float: left;
+    }
+    .swh-oscillator .mod-control-group.group2 .mod-knob {
+      text-align: center;
+      margin: 0 46px 24px 0;
+      float: left;
+    }
+    .swh-oscillator .mod-knob#freq .mod-knob-image{
+       background-image: url(/resources/knob.png{{{ns}}});
+      background-repeat:no-repeat;
+      background-size:auto 109px;
+      height:109px;
+      width:109px;
+      margin: 0 auto;
+      cursor: pointer;
+      position:relative;
+      overflow:hidden;
+    }
+    .swh-oscillator .mod-knob#wave .mod-knob-image{
+       background-image: url(/resources/knob2.png{{{ns}}});
+      background-repeat:no-repeat;
+      background-size:auto 68px;
+      height:68px;
+      width:68px;
+      cursor: pointer;
+      position:relative;
+      overflow:hidden;
+    }
+    .swh-oscillator .mod-control-group.top {
+      width: 108px !important;
+      margin: auto;
+      margin-top: 96px !important;
+    }
+    .swh-oscillator .mod-control-group.bottom {
+      width: 215px !important;
+      margin: -3px auto;
+    }
+    .swh-oscillator .mod-control-group.bottom .mod-knob {
+      float: left;
+      margin-top: 11px;
+    } 
+    .swh-oscillator .mod-control-group .mod-knob .mod-knob-image {
+      background-image: url(/resources/knob.png{{{ns}}});
+      background-repeat:no-repeat;
+      background-size:auto 70px;
+      height:70px;
+      width:70px;
+      margin:0 auto 0 auto;
+      cursor: pointer;
+      position:relative;
+      overflow:hidden;
+    }
+/* SLIDER
+================================================ */
+.swh-oscillator .mod-slider:first-child {
+    margin-left:8px;
+}
+.swh-oscillator .mod-slider .mod-slider-title {
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:7px;
+    line-height:1;
+    margin-bottom:3px;
+    overflow:hidden;
+    padding:7px 0 5px;
+    position:relative;
+}
+.swh-oscillator .mod-slider .mod-slider-image:hover {
+    cursor:pointer;
+}
+.swh-oscillator .mod-slider {
+    color:black;
+    float:left;
+    font-size:11px;
+    height:140px;
+    margin-bottom:2px;
+    margin-right:2px;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    width:33px;
+    left: 15px;
+}
+.swh-oscillator .mod-slider .mod-slider-image {
+    background-image: url(/resources/_strip.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 110px;
+    height:110px;
+    margin:0 auto;
+    width:44px;
+}
+/* other stuff
+================================================ */
+    .swh-oscillator .mod-footswitch {
+        background-image:url(/resources/switch-key.png{{{ns}}});
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 154px;
+        top: 2px;
+        cursor: pointer;
+        height: 77px;
+        width: 43px;
+        left: 45px !important;
+        position: absolute;
+        z-index: 100
+    }
+    .swh-oscillator .mod-knob-value  {
+        color: #57D8FF !important;
+        background: #222;
+        font-family: monospace;
+        text-align: right;
+        margin: 38px auto;
+        padding-right: 2px;
+        border: 1px inset #555;
+        display: block;
+        height: 20px;
+        width: 90px;
+        overflow: hidden;
+    }
+    .swh-oscillator .mod-footswitch.on {
+        background-position:top center;
+    }
+    .swh-oscillator .mod-footswitch.off {
+        background-position:bottom center;
+    }
+    .swh-oscillator .mod-pedal-input {
+        top: 120px;
+    }
+    .swh-oscillator .mod-pedal-output {
+        top: 120px;
+    }
+    .swh-oscillator .mod-pedal-output>*  {
+        margin-bottom: 75px !important;
+    }

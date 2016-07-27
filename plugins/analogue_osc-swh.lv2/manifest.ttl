@@ -5,5 +5,6 @@
 
 swh:analogueOsc a :Plugin ;
   :binary <plugin-Linux.so> ;
-  rdfs:seeAlso <plugin.ttl> ;
+  rdfs:seeAlso <plugin.ttl> ,
+               <modgui.ttl> ;
   dcterms:replaces <urn:ladspa:1416> .
