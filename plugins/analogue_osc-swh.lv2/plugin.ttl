@@ -5,44 +5,47 @@
 @prefix swhext: <http://plugin.org.uk/extensions#> .
 @prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix mod: <http://moddevices.com/ns/mod#> .
 
 swh:analogueOsc a :Plugin ;
    a :OscillatorPlugin ;
 
    doap:name "Analogue Oscillator" ;
-   doap:maintainer [
-      foaf:name "Steve Harris";
-      foaf:homepage <http://plugin.org.uk/> ;
-      foaf:mbox <mailto:steve@plugin.org.uk> ;
-   ] ;
+   doap:maintainer <http://plugin.org.uk/swh.xrdf#me> ;
    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 
    :optionalFeature :hardRTCapable ;
     
    :port [
      a :InputPort, :ControlPort ;
-     :name "Waveform (1=sin, 2=tri, 3=squ, 4=saw)" ;
+     :name "Waveform" ;
      :index 0 ;
      :symbol "wave" ;
      :minimum 1 ;
      :maximum 4 ;
-     
-     :default 1.0 ;
+     :default 1 ;
      :portProperty :integer ;
+     :portProperty :enumeration ;
+     :scalePoint [rdfs:label "Sine"; rdf:value 1];
+     :scalePoint [rdfs:label "Triangle"; rdf:value 2];
+     :scalePoint [rdfs:label "Square"; rdf:value 3];
+     :scalePoint [rdfs:label "Saw"; rdf:value 4];
    ] ;
   
    :port [
      a :InputPort, :ControlPort ;
-     :name "Frequency (Hz)" ;
+     :name "Frequency" ;
      :index 1 ;
      :symbol "freq" ;
      :minimum 0.000001 ;
      :maximum 0.499 ;
-     
      :default 440.0 ;
      :portProperty pprops:logarithmic ;
      :portProperty :sampleRate ;
+     units:unit units:hz ;
    ] ;
   
    :port [
@@ -50,9 +53,8 @@ swh:analogueOsc a :Plugin ;
      :name "Warmth" ;
      :index 2 ;
      :symbol "warm" ;
-     :minimum 0 ;
-     :maximum 1 ;
-     
+     :minimum 0.0 ;
+     :maximum 1.0 ;
      :default 0.0 ;
    ] ;
   
@@ -61,9 +63,8 @@ swh:analogueOsc a :Plugin ;
      :name "Instability" ;
      :index 3 ;
      :symbol "instab" ;
-     :minimum 0 ;
-     :maximum 1 ;
-     
+     :minimum 0.0 ;
+     :maximum 1.0 ;
      :default 0.0 ;
    ] ;
   
