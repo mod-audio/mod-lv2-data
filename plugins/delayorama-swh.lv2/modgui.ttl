@@ -1,0 +1,10 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+
+<http://plugin.org.uk/swh-plugins/delayorama>
+   modgui:gui [
+        modgui:resourcesDirectory <modgui>;
+        modgui:stylesheet <modgui/delayorama.css>;
+        modgui:iconTemplate <modgui/icon-delayorama.html>;
+        modgui:screenshot <modgui/screenshot-delayorama.png>;
+        modgui:thumbnail <modgui/thumb-delayorama.png>;
+    ] .

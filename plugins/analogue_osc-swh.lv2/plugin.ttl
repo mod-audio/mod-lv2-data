@@ -18,7 +18,15 @@ swh:analogueOsc a :Plugin ;
    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 
    :optionalFeature :hardRTCapable ;
-    
+
+rdfs:comment """
+This plugin simulates the output you get from an analogue synth's osciallators.
+You can get a reasonable emualtion of a 303's square (for exmaple) if you set the warmth to about 0.4 and the instability to about 0.05.
+The frequency is currently a control input, and there is no interpolation.
+
+source: http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html#tth_sEc2.7
+""";
+
    :port [
      a :InputPort, :ControlPort ;
      :name "Waveform" ;

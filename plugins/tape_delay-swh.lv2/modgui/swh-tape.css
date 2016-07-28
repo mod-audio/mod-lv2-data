@@ -1,0 +1,111 @@
+
+.swh-tapedelay .mod-control-group {
+    position:relative;
+    text-align:center;
+    z-index:30;
+}
+.swh-tapedelay .mod-control-group .mod-knob {
+    overflow:hidden;
+    position:relative;
+    height:150px;
+    display:inline-block;
+}
+
+    .swh-tapedelay * {
+        color: white !important;
+    }
+    .swh-tapedelay .mod-plugin-name , .swh-tapedelay .mod-plugin-author  {
+        display: none;
+    }
+    .swh-tapedelay .mod-control-group .mod-knob {
+        text-align: center;
+        width: 70px
+    }
+    .mod-knob#speed {
+      position: absolute;
+      top: 66px;
+      left: 20px;
+    }
+    .mod-knob#da_db {
+      position: absolute;
+      top: 66px;
+      left: 265px;
+    }
+    .swh-tapedelay .mod-knob-title {
+        position: relative !important;
+        padding-top: 20px;
+    }
+    .swh-tapedelay {
+        background-image:url(/resources/swh-tape.png{{{ns}}}) !important;
+        background-size:461px 508px;
+        width: 461px;
+        height: 508px;
+    }
+    .swh-tapedelay .mod-control-group {
+        top: 134px;
+        left: 48px;
+    }
+    .swh-tapedelay .mod-control-group .mod-knob .{
+      text-align: center
+    }
+    .swh-tapedelay .mod-control-group .mod-knob .mod-knob-image {
+      background-image: url(/resources/knob.png{{{ns}}});
+      background-position:left center;
+      background-repeat:no-repeat;
+      background-size:auto 55px;
+      height:55px;
+      width:55px;
+      margin:0 auto 5px auto;
+      cursor: pointer;
+      position:relative;
+      overflow:hidden;
+    }
+    .swh-tapedelay .mod-light {
+        background-position:center center;
+        background-repeat:no-repeat;
+        height:32px;
+        left:10px;
+        position:absolute;
+        right:10px;
+        top: 336px;
+    }
+    .swh-tapedelay .mod-footswitch {
+        background-image:url(/resources/footswitch.png{{{ns}}});
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:auto 132px;
+        bottom: 65px;
+        cursor:pointer;
+        height:66px;
+        width: 66px;
+        left: 196px !important;
+        position:absolute;
+    }
+    .swh-tapedelay .mod-knob-value {
+        color: #ff5555 !important;
+        background: #222;
+        font-family: monospace;
+        text-align: right;
+        margin: 5px 0 8px 8px;
+        padding-right: 2px;
+        border: 1px inset #555;
+        display: block;
+        height: 20px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .swh-tapedelay .mod-footswitch.on {
+        background-position:top center;
+    }
+    .swh-tapedelay .mod-footswitch.off {
+        background-position:bottom center;
+    }
+    .swh-tapedelay .mod-pedal-input {
+        top: 120px;
+    }
+    .swh-tapedelay .mod-pedal-output {
+        top: 120px;
+    }
+    .swh-tapedelay .mod-pedal-output>*  {
+        margin-bottom: 75px !important;
+    }

@@ -1,0 +1,63 @@
+<div class="swh-tapedelay mod-pedal mod-pedal-lata mod-eight-knobs mod-{{color}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="mod-light on" mod-role="bypass-light"></div>
+    <div class="mod-control-group clearfix" id="top">
+        <div class="mod-knob" id="t1">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t1d"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="t1d"></div>
+
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t1a_db"></div>
+        </div>
+        <div class="mod-knob" id="t2">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t2d"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="t2d"></div>
+
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t2a_db"></div>
+        </div>
+        <div class="mod-knob" id="t3">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t3d"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="t3d"></div>
+
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t3a_db"></div>
+        </div>
+        <div class="mod-knob" id="t4">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t4d"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="t4d"></div>
+
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="t4a_db"></div>
+        </div>
+    </div>
+    <div class="mod-control-group">
+      <div class="mod-knob" id="speed">
+          <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="speed"></div>
+      </div>
+      <div class="mod-knob" id="da_db">
+          <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="da_db"></div>
+      </div>
+    </div>
+   <div class="mod-footswitch" mod-role="bypass"></div>
+   <div class="mod-pedal-input">
+       {{#effect.ports.audio.input}}
+       <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+           <div class="mod-pedal-input-image"></div>
+       </div>
+       {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+   </div>
+   <div class="mod-pedal-output">
+       {{#effect.ports.audio.output}}
+       <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+           <div class="mod-pedal-output-image"></div>
+       </div>
+       {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+   </div>
+</div>

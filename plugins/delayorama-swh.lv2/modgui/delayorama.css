@@ -1,0 +1,167 @@
+
+    .swh-delayorama * {
+        color: white !important;
+    }
+    .swh-delayorama .mod-plugin-name , .swh-delayorama .mod-plugin-author  {
+        display: none;
+    }
+    .swh-delayorama .mod-control-group .mod-knob {
+        text-align: center;
+        width: 70px
+        }
+    .mod-knob#speed {
+      position: absolute;
+      top: 66px;
+      left: 20px;
+    }
+    .mod-knob#da_db {
+      position: absolute;
+      top: 66px;
+      left: 265px;
+    }
+    .swh-delayorama .mod-knob-title {
+        position: relative !important;
+        padding-top: 20px;
+    }
+    .swh-delayorama {
+        background-image:url(/resources/swh_delayorama.png{{{ns}}}) !important;
+/*
+        background-size: 575px 464px;
+*/
+        width: 565px;
+        height: 456px;
+        border-radius: 0;
+    }
+     .swh-delayorama .mod-control-group {
+      top: 0;
+      height: auto !important;
+      width: auto !important;
+      text-align: left;
+      position: relative;
+     }
+    .swh-delayorama .mod-control-group#wet {
+      left: 355px;
+      top: 365px;
+      position: absolute;
+      width: 70px !important;
+      height: 70px !important;
+    }
+
+    .swh-delayorama .mod-control-group.group1 {
+        margin-top: 119px;
+        margin-left: 24px;
+        float: left;
+        width: 217px !important;
+    }
+    .swh-delayorama .mod-control-group.group2 {
+        margin-top: 119px;
+        margin-left: 23px;
+        float: left;
+        width: 255px !important;
+    }
+    .swh-delayorama .mod-control-group.group1 .mod-knob {
+      text-align: center;
+      margin: 0 29px 24px 0;
+      float: left;
+    }
+    .swh-delayorama .mod-control-group.group2 .mod-knob {
+      text-align: center;
+      margin: 0 46px 24px 0;
+      float: left;
+    }
+
+    .swh-delayorama .mod-control-group .mod-slider {
+      position: absolute;
+      right: 0;
+      margin-top: 14px;
+    }
+    .swh-delayorama .mod-control-group .mod-knob .mod-knob-image {
+      background-image: url(/resources/knob.png{{{ns}}});
+      background-repeat:no-repeat;
+      background-size:auto 70px;
+      height:70px;
+      width:70px;
+      margin:0 auto 0 auto;
+      cursor: pointer;
+      position:relative;
+      overflow:hidden;
+    }
+    .swh-delayorama .mod-light {
+        top: 390px;
+    }
+    .swh-delayorama .mod-slider {
+      position: relative;
+      float: right;
+      height: 200px;
+      color: black;
+      font-size: inherit;
+      margin-right: -18px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      width: 68px;
+    }
+    .swh-delayorama .mod-slider-value {
+      position: absolute;
+      color: #57D8FF !important;
+      background: #222;
+      font-family: monospace;
+      text-align: right;
+      padding-right: 2px;
+      border: 1px inset #555;
+      display: block;
+      height: 20px;
+      width: 50px;
+      left: 275px;
+      top: 72px;
+
+      overflow: hidden;
+    }
+    .swh-delayorama .mod-slider .mod-slider-image {
+        background-image: url(/resources/_strip.png{{{ns}}});
+        background-repeat: no-repeat;
+        background-size: auto 170px;
+        height: 170px;
+        margin: 0 auto;
+        width: 68px;
+    }
+    .swh-delayorama .mod-footswitch {
+        background-image:url(/resources/footswitch.png{{{ns}}});
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:auto 132px;
+        bottom: 25px;
+        cursor:pointer;
+        height:66px;
+        width: 66px;
+        left: 150px !important;
+        position:absolute;
+    }
+    .swh-delayorama .mod-knob-value  {
+        color: #57D8FF !important;
+        background: #222;
+        font-family: monospace;
+        text-align: right;
+        margin: 0 0 8px 8px;
+        padding-right: 2px;
+        border: 1px inset #555;
+        display: block;
+        height: 20px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .swh-delayorama .mod-footswitch.on {
+        background-position:top center;
+    }
+    .swh-delayorama .mod-footswitch.off {
+        background-position:bottom center;
+    }
+    .swh-delayorama .mod-pedal-input {
+        top: 120px;
+    }
+    .swh-delayorama .mod-pedal-output {
+        top: 120px;
+    }
+    .swh-delayorama .mod-pedal-output>*  {
+        margin-bottom: 75px !important;
+    }
