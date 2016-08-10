@@ -1,15 +1,15 @@
-<div class="mod-pedal x42-midifilter{{{cns}}} x42-midi-mapcc">
+<div class="mod-pedal x42-midifilter{{{cns}}} x42-midi-velocityscale">
     <div mod-role="drag-handle" class="mod-drag-handle"></div>
     <div class="x42-brand"><h1 title="Brought to you by x42.">x42</h1></div>
-    <div class="x42-plugin-name"><h1>MIDI CC Map</h1></div>
+    <div class="x42-plugin-name"><h1>MIDI Velocity Adjust</h1></div>
 
     <div class="mod-light on" mod-role="bypass-light"></div>
     <div class="mod-footswitch" mod-role="bypass"></div>
 
     <div class="mod-control-group mod-enumerated-group bottom clearfix">
         <span class="mod-knob-title">Midi Channel</span>
-        <div class="mod-enumerated" mod-role="input-control-port" mod-port-symbol="channelf" mod-widget="custom-select">
-          <div mod-role="input-control-value" mod-port-symbol="channelf" class="mod-enumerated-selected"></div>
+        <div class="mod-enumerated" mod-role="input-control-port" mod-port-symbol="channel" mod-widget="custom-select">
+          <div mod-role="input-control-value" mod-port-symbol="channel" class="mod-enumerated-selected"></div>
           <div class="mod-enumerated-list">
             <div mod-role="enumeration-option" mod-port-value="0">Any</div>
             <div mod-role="enumeration-option" mod-port-value="1">1</div>
@@ -35,12 +35,31 @@
 
     <div class="mod-control-group top clearfix">
         <div class="mod-knob">
-          <span class="mod-knob-title">From Param</span>
-            <div class="mod-knob-n128-image" mod-role="input-control-port" mod-port-symbol="ccin"></div>
+          <span class="mod-knob-title">Note-on Min</span>
+            <div class="mod-knob-n127-image" mod-role="input-control-port" mod-port-symbol="onmin"></div>
         </div>
         <div class="mod-knob">
-            <span class="mod-knob-title">To Param</span>
-            <div class="mod-knob-n128-image" mod-role="input-control-port" mod-port-symbol="ccout"></div>
+          <span class="mod-knob-title">Note-on Max</span>
+            <div class="mod-knob-n128-image" mod-role="input-control-port" mod-port-symbol="onmax"></div>
+        </div>
+        <div class="mod-knob">
+            <span class="mod-knob-title">Note-on Offset</span>
+            <div class="mod-knob-m6464-image" mod-role="input-control-port" mod-port-symbol="onoff"></div>
+        </div>
+    </div>
+
+    <div class="mod-control-group top clearfix">
+        <div class="mod-knob">
+          <span class="mod-knob-title">Note-off Min</span>
+            <div class="mod-knob-n128-image" mod-role="input-control-port" mod-port-symbol="offmin"></div>
+        </div>
+        <div class="mod-knob">
+          <span class="mod-knob-title">Note-off Max</span>
+            <div class="mod-knob-n128-image" mod-role="input-control-port" mod-port-symbol="offmax"></div>
+        </div>
+        <div class="mod-knob">
+            <span class="mod-knob-title">Note-off Offset</span>
+            <div class="mod-knob-m6464-image" mod-role="input-control-port" mod-port-symbol="offoff"></div>
         </div>
     </div>
 

@@ -236,6 +236,47 @@
 
 <default-preset_8>
 	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mapkeychannel> ;
+	lv2:port [
+		lv2:symbol "k0" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k1" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k10" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k11" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k2" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k3" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k4" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k5" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k6" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k7" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k8" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "k9" ;
+		pset:value 1.0
+	] .
+
+<default-preset_9>
+	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mapkeyscale> ;
 	lv2:port [
 		lv2:symbol "channelf" ;
@@ -278,7 +319,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_9>
+<default-preset_10>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#midichord> ;
 	lv2:port [
@@ -319,7 +360,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_10>
+<default-preset_11>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mididelay> ;
 	lv2:port [
@@ -336,7 +377,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_11>
+<default-preset_12>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#mididup> ;
 	lv2:port [
@@ -347,7 +388,7 @@
 		pset:value 1.0
 	] .
 
-<default-preset_12>
+<default-preset_13>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#midistrum> ;
 	lv2:port [
@@ -379,7 +420,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_13>
+<default-preset_14>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#miditranspose> ;
 	lv2:port [
@@ -393,7 +434,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_14>
+<default-preset_15>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#monolegato> ;
 	lv2:port [
@@ -401,11 +442,11 @@
 		pset:value 0.0
 	] .
 
-<default-preset_15>
+<default-preset_16>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#noactivesensing> .
 
-<default-preset_16>
+<default-preset_17>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#nodup> ;
 	lv2:port [
@@ -413,7 +454,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_17>
+<default-preset_18>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#notetocc> ;
 	lv2:port [
@@ -430,7 +471,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_18>
+<default-preset_19>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#notetoggle> ;
 	lv2:port [
@@ -438,7 +479,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_19>
+<default-preset_20>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#ntapdelay> ;
 	lv2:port [
@@ -461,11 +502,19 @@
 		pset:value -10.0
 	] .
 
-<default-preset_20>
+<default-preset_21>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#onechannelfilter> ;
+	lv2:port [
+		lv2:symbol "channel" ;
+		pset:value 1.0
+	] .
+
+<default-preset_22>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#passthru> .
 
-<default-preset_21>
+<default-preset_23>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#quantize> ;
 	lv2:port [
@@ -482,7 +531,7 @@
 		pset:value 0.25
 	] .
 
-<default-preset_22>
+<default-preset_24>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#randvelocity> ;
 	lv2:port [
@@ -496,7 +545,7 @@
 		pset:value 8.0
 	] .
 
-<default-preset_23>
+<default-preset_25>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#scalecc> ;
 	lv2:port [
@@ -522,7 +571,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_24>
+<default-preset_26>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#sostenuto> ;
 	lv2:port [
@@ -536,7 +585,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_25>
+<default-preset_27>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#velocityrange> ;
 	lv2:port [
@@ -553,7 +602,7 @@
 		pset:value 127.0
 	] .
 
-<default-preset_26>
+<default-preset_28>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#velocityscale> ;
 	lv2:port [
