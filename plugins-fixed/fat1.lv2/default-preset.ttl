@@ -1,0 +1,69 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/fat1> ;
+	lv2:port [
+		lv2:symbol "bias" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "channelf" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "corr" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filter" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "m00" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m01" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m02" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m03" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m04" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m05" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m06" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m07" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m08" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m09" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m10" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "m11" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "offset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "panic" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "tuning" ;
+		pset:value 440.0
+	] .
+
