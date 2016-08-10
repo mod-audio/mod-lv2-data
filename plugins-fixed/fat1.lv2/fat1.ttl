@@ -4,6 +4,7 @@
 @prefix kx:    <http://kxstudio.sf.net/ns/lv2ext/external-ui#> .
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
 @prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,10 +25,13 @@
 	doap:license <http://usefulinc.com/doap/licenses/gpl>;
 	doap:maintainer <http://gareus.org/rgareus#me>;
 	doap:name "Autotune";
-	lv2:microVersion 0 ;lv2:minorVersion 0 ;
+	rdfs:comment "AT1 is an 'autotuner', normally used to correct the pitch of a voice singing (slightly) out of tune. The 'expected' pitch can be controlled by MIDI, or be a fixed set of notes. AT1 can probably be used on some instruments as well, but is primarily designed to cover the vocal range.";
+	lv2:microVersion 0 ;lv2:minorVersion 516 ;
   
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
+	mod:brand "x42";
+	mod:label "AT1";
 	
 
 	lv2:port [
@@ -97,10 +101,12 @@
 		lv2:index 5 ;
 		lv2:symbol "tuning" ;
 		lv2:name "Tuning";
-		lv2:default 440 ;
-		lv2:minimum 400 ;
-		lv2:maximum 480 ;
+		lv2:default 440.0 ;
+		lv2:minimum 400.0 ;
+		lv2:maximum 480.0 ;
 		units:unit units:hz;
+		pprop:rangeSteps 400;
+		rdfs:comment "This sets the frequency corresponding to 'A' pitch, in other words the required tuning. This will be the default 440 Hz in most cases.";
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
@@ -110,6 +116,8 @@
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
+		pprop:rangeSteps 270;
+		rdfs:comment "Normally the pitch estimator will select the enabled note closest to the measured pitch. The Bias control adds some preference for the current note - this allows it to go off-tune more than would be the case otherwise.";
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
@@ -123,15 +131,19 @@
 		lv2:scalePoint [ rdfs:label  "Med";  rdf:value 0.1 ; ] ;
 		lv2:scalePoint [ rdfs:label  "Fast"; rdf:value 0.02 ; ] ;
 		lv2:portProperty pprop:logarithmic;
+		pprop:rangeSteps 200;
+		rdfs:comment "This sets the amount of smoothing on the pitch correction while the current note does not change. If it does change the filter is bypassed and the correction jumps immediately to the new value.";
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "corr" ;
-		lv2:name "Correlation";
+		lv2:name "Correction";
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
+		pprop:rangeSteps 270;
+		rdfs:comment "Determines how much of the estimated pitch error gets corrected. Full correction may remove expression or vibrato.";
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
@@ -141,15 +153,18 @@
 		lv2:default 0.0 ;
 		lv2:minimum -2.0 ;
 		lv2:maximum  2.0 ;
+		pprop:rangeSteps 400;
+		units:unit units:semitone12TET;
+		rdfs:comment "Adds an offset in the range of +/- two semitones to the pitch correction. With the Correction control set to zero the result is a constant pitch change.";
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 10 ;
 		lv2:symbol "m00" ;
 		lv2:name "C";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -157,9 +172,9 @@
 		lv2:index 11 ;
 		lv2:symbol "m01" ;
 		lv2:name "C#";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -167,9 +182,9 @@
 		lv2:index 12 ;
 		lv2:symbol "m02" ;
 		lv2:name "D";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -177,9 +192,9 @@
 		lv2:index 13 ;
 		lv2:symbol "m03" ;
 		lv2:name "D#";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -187,9 +202,9 @@
 		lv2:index 14 ;
 		lv2:symbol "m04" ;
 		lv2:name "E";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -197,9 +212,9 @@
 		lv2:index 15 ;
 		lv2:symbol "m05" ;
 		lv2:name "F";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -207,9 +222,9 @@
 		lv2:index 16 ;
 		lv2:symbol "m06" ;
 		lv2:name "F#";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -217,9 +232,9 @@
 		lv2:index 17 ;
 		lv2:symbol "m07" ;
 		lv2:name "G";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -227,9 +242,9 @@
 		lv2:index 18 ;
 		lv2:symbol "m08" ;
 		lv2:name "G#";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -237,9 +252,9 @@
 		lv2:index 19 ;
 		lv2:symbol "m09" ;
 		lv2:name "A";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -247,9 +262,9 @@
 		lv2:index 20 ;
 		lv2:symbol "m10" ;
 		lv2:name "A#";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -257,9 +272,9 @@
 		lv2:index 21 ;
 		lv2:symbol "m11" ;
 		lv2:name "B";
-		lv2:default 1.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled;
 	] , [
 		a lv2:InputPort ,
@@ -267,9 +282,9 @@
 		lv2:index 22 ;
 		lv2:symbol "panic" ;
 		lv2:name "MIDI Panic";
-		lv2:default 0.0 ;
-		lv2:minimum 0.0 ;
-		lv2:maximum 1.0 ;
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
 		lv2:portProperty lv2:integer, lv2:toggled, pprop:trigger;
 	] , [
 		a lv2:OutputPort ,
@@ -277,7 +292,7 @@
 		lv2:index 23 ;
 		lv2:symbol "nmask" ;
 		lv2:name "Note Mask";
-		lv2:minimum 0.0 ;
+		lv2:minimum 0 ;
 		lv2:maximum 4096 ;
 		lv2:portProperty lv2:integer;
 	] , [
@@ -286,7 +301,7 @@
 		lv2:index 24 ;
 		lv2:symbol "nset" ;
 		lv2:name "Note Set";
-		lv2:minimum 0.0 ;
+		lv2:minimum 0 ;
 		lv2:maximum 4096 ;
 		lv2:portProperty lv2:integer;
 	] , [
@@ -303,10 +318,9 @@
 		lv2:index 26 ;
 		lv2:symbol "latency" ;
 		lv2:name "latency";
-		lv2:minimum 0.0 ;
+		lv2:minimum 0 ;
 		lv2:maximum 4096;
 		lv2:portProperty lv2:reportsLatency, lv2:integer;
 		units:unit units:frame;
 	];
-	rdfs:comment "...";
 	.
