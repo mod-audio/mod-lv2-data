@@ -7,12 +7,12 @@
 	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_voxtb_#_voxtb_> ;
 	lv2:port [
 		lv2:symbol "ATTACK" ;
-		pset:value 0.5
+		pset:value 1.0
 	] , [
 		lv2:symbol "VOLUME" ;
-		pset:value 0.2
+		pset:value 0.06
 	] , [
 		lv2:symbol "WET_DRY" ;
-		pset:value 100.0
+		pset:value 25.0
 	] .
 
