@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_switchless_wah#wah>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxswitchlesswah.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxswitchlesswah.css> ;
+        modgui:screenshot <modgui/screenshot-gxswitchlesswah.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxswitchlesswah.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "Switchless Wah" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "warning" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "fslider1_" ;
+            lv2:name "Wah" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "faslider0_" ;
+            lv2:name "ATTACK" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "faslider1_" ;
+            lv2:name "RELEASE" ;
+        ] ;
+    ] .
