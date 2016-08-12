@@ -1,0 +1,19 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4>
+	a lv2:Plugin ;
+	lv2:binary <stepseq.so>  ;
+	rdfs:seeAlso <stepseq.ttl> .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-stepseq.html> ;
+        modgui:stylesheet <modgui/style-stepseq.css> ;
+        modgui:screenshot <modgui/screenshot-stepseq.png> ;
+        modgui:thumbnail <modgui/thumbnail-stepseq.png> ;
+        modgui:brand "x42";
+        modgui:label "Step Seq. 8x4";
+    ] .
