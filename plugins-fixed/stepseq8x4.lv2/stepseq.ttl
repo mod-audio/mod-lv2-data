@@ -150,8 +150,8 @@
 		lv2:name "Grid S: 1 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 13 ;
@@ -159,8 +159,8 @@
 		lv2:name "Grid S: 2 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 14 ;
@@ -168,8 +168,8 @@
 		lv2:name "Grid S: 3 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 15 ;
@@ -177,8 +177,8 @@
 		lv2:name "Grid S: 4 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 16 ;
@@ -186,8 +186,8 @@
 		lv2:name "Grid S: 5 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 17 ;
@@ -195,8 +195,8 @@
 		lv2:name "Grid S: 6 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 18 ;
@@ -204,8 +204,8 @@
 		lv2:name "Grid S: 7 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 19 ;
@@ -213,8 +213,8 @@
 		lv2:name "Grid S: 8 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 20 ;
@@ -222,8 +222,8 @@
 		lv2:name "Grid S: 1 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 21 ;
@@ -231,8 +231,8 @@
 		lv2:name "Grid S: 2 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 22 ;
@@ -240,8 +240,8 @@
 		lv2:name "Grid S: 3 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 23 ;
@@ -249,8 +249,8 @@
 		lv2:name "Grid S: 4 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 24 ;
@@ -258,8 +258,8 @@
 		lv2:name "Grid S: 5 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 25 ;
@@ -267,8 +267,8 @@
 		lv2:name "Grid S: 6 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 26 ;
@@ -276,8 +276,8 @@
 		lv2:name "Grid S: 7 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 27 ;
@@ -285,8 +285,8 @@
 		lv2:name "Grid S: 8 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 28 ;
@@ -294,8 +294,8 @@
 		lv2:name "Grid S: 1 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 29 ;
@@ -303,8 +303,8 @@
 		lv2:name "Grid S: 2 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 30 ;
@@ -312,8 +312,8 @@
 		lv2:name "Grid S: 3 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 31 ;
@@ -321,8 +321,8 @@
 		lv2:name "Grid S: 4 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 32 ;
@@ -330,8 +330,8 @@
 		lv2:name "Grid S: 5 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 33 ;
@@ -339,8 +339,8 @@
 		lv2:name "Grid S: 6 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 34 ;
@@ -348,8 +348,8 @@
 		lv2:name "Grid S: 7 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 35 ;
@@ -357,8 +357,8 @@
 		lv2:name "Grid S: 8 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 36 ;
@@ -366,8 +366,8 @@
 		lv2:name "Grid S: 1 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 37 ;
@@ -375,8 +375,8 @@
 		lv2:name "Grid S: 2 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 38 ;
@@ -384,8 +384,8 @@
 		lv2:name "Grid S: 3 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 39 ;
@@ -393,8 +393,8 @@
 		lv2:name "Grid S: 4 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 40 ;
@@ -402,8 +402,8 @@
 		lv2:name "Grid S: 5 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 41 ;
@@ -411,8 +411,8 @@
 		lv2:name "Grid S: 6 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 42 ;
@@ -420,8 +420,8 @@
 		lv2:name "Grid S: 7 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 43 ;
@@ -429,6 +429,6 @@
 		lv2:name "Grid S: 8 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
-		lv2:maximum 1 ;
-		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:maximum 127 ;
+		lv2:portProperty lv2:integer;
 ]; .
