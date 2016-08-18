@@ -1,45 +1,49 @@
-@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
-@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<default-preset>
+<>
 	a pset:Preset ;
 	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	rdfs:label "Mesa II - Low Gain" ;
 	lv2:port [
 		lv2:symbol "Bass" ;
 		pset:value 0.5
 	] , [
 		lv2:symbol "Cabinet" ;
-		pset:value 10.0
+		pset:value 4.265625
 	] , [
 		lv2:symbol "Distortion" ;
-		pset:value 20.0
+		pset:value 50.5
 	] , [
 		lv2:symbol "Drive" ;
-		pset:value 0.25
+		pset:value 0.505
 	] , [
 		lv2:symbol "MasterGain" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "Middle" ;
-		pset:value 0.5
+		pset:value 1.0
 	] , [
 		lv2:symbol "PreGain" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "Presence" ;
-		pset:value 5.0
+		pset:value 8.453125
 	] , [
 		lv2:symbol "Treble" ;
-		pset:value 0.5
+		pset:value 1.0
 	] , [
 		lv2:symbol "c_model" ;
-		pset:value 0.0
+		pset:value 13.0
 	] , [
 		lv2:symbol "model" ;
-		pset:value 0.0
+		pset:value 12.0
 	] , [
 		lv2:symbol "t_model" ;
-		pset:value 1.0
+		pset:value 9.0
 	] .
-

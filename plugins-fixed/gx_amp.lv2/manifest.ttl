@@ -18,6 +18,7 @@
 #
 
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX>
@@ -26,6 +27,65 @@
     rdfs:seeAlso <gx_amp.ttl> ,
         <modgui.ttl> .
 
+<Bassman_Clean.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Bassman Clean" ;
+	rdfs:seeAlso <Bassman_Clean.ttl> .
+
+<Bassman_High_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Bassman High Gain" ;
+	rdfs:seeAlso <Bassman_High_Gain.ttl> .
+
+<Bassman_Low_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Bassman Low Gain" ;
+	rdfs:seeAlso <Bassman_Low_Gain.ttl> .
+
+<Bassman_Mid_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Bassman Mid Gain" ;
+	rdfs:seeAlso <Bassman_Mid_Gain.ttl> .
+
+<Mesa_I_High_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa I - High Gain" ;
+	rdfs:seeAlso <Mesa_I_High_Gain.ttl> .
+
+<Mesa_II_High_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa II - High Gain" ;
+	rdfs:seeAlso <Mesa_II_High_Gain.ttl> .
+
+<Mesa_II_Low_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa II - Low Gain" ;
+	rdfs:seeAlso <Mesa_II_Low_Gain.ttl> .
+
+<Mesa_II_Mid_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa II - Mid Gain" ;
+	rdfs:seeAlso <Mesa_II_Mid_Gain.ttl> .
+
+<Mesa_I_Low_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa I - Low Gain" ;
+	rdfs:seeAlso <Mesa_I_Low_Gain.ttl> .
+
+<Mesa_I_Mid_Gain.ttl>
+	lv2:appliesTo <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+	a pset:Preset ;
+	rdfs:label "Mesa I - Mid Gain" ;
+	rdfs:seeAlso <Mesa_I_Mid_Gain.ttl> .
 
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
