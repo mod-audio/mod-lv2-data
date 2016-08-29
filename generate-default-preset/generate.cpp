@@ -30,17 +30,19 @@ static std::vector<std::string> g_uri_mapping = {
     LV2_ATOM__Int,
     LV2_ATOM__Long,
     LV2_ATOM__Float,
+    LV2_ATOM__Double,
     LV2_BUF_SIZE__maxBlockLength,
     LV2_BUF_SIZE__minBlockLength,
 };
 
 // note: the ids below must match the ones on the mapping
-static const uint32_t k_urid_null        =  0;
-static const uint32_t k_urid_atom_int    =  1;
-static const uint32_t k_urid_atom_long   =  2;
-static const uint32_t k_urid_atom_float  =  3;
-static const uint32_t k_urid_atom_bz_max =  4;
-static const uint32_t k_urid_atom_bz_min =  5;
+static const uint32_t k_urid_null         =  0;
+static const uint32_t k_urid_atom_int     =  1;
+static const uint32_t k_urid_atom_long    =  2;
+static const uint32_t k_urid_atom_float   =  3;
+static const uint32_t k_urid_atom_double  =  4;
+static const uint32_t k_urid_atom_bz_max  =  5;
+static const uint32_t k_urid_atom_bz_min  =  6;
 
 static const int32_t g_buffer_size = 128;
 static const double g_sample_rate = 48000.0;
@@ -120,10 +122,10 @@ static LV2_Feature g_uri_map_feature = {
 
 static const char* lv2_urid_unmap(LV2_URID_Unmap_Handle, const LV2_URID urid)
 {
-    if (urid >= g_uri_mapping.size())
+    if (urid == 0 || urid >= g_uri_mapping.size())
         return NULL;
 
-    return g_uri_mapping[urid].c_str();
+    return g_uri_mapping[urid-1].c_str();
 }
 
 static LV2_URID_Unmap g_urid_unmap = {
@@ -211,9 +213,18 @@ static void set_port_value_for_state(const char* const symbol, void* const user_
             return;
         }
         break;
+
+    case k_urid_atom_double:
+        if (size == sizeof(double))
+        {
+            double dvalue = *(const double*)value;
+            values->push_back({ strdup(symbol), (float)dvalue });
+            return;
+        }
+        break;
     }
 
-    fprintf(stderr, "set_port_value_for_state called with unknown type: %u %u '%s'\n", type, size, lv2_urid_unmap(NULL, type));
+    fprintf(stderr, "set_port_value_for_state for port '%s' called with unknown type '%s' (num:%u, size:%u)\n", symbol, lv2_urid_unmap(NULL, type), type, size);
 }
 
 // --------------------------------------------------------------------------------------------------------------------
