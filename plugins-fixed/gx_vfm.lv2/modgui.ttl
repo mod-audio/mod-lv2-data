@@ -9,9 +9,11 @@
         modgui:screenshot <modgui/screenshot-gxvintagefuzzmaster.png> ;
         modgui:thumbnail <modgui/thumbnail-gxvintagefuzzmaster.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GxVintageFuzz" ;
-        modgui:model "head-model-001" ;
-        modgui:panel "0550" ;
+        modgui:label "GxVintageFuzz Master" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "dots" ;
+        modgui:knob "petrol" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "MODE" ;
