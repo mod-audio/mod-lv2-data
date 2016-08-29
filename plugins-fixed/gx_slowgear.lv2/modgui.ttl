@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_slowgear_#_slowgear_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxslowgear.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxslowgear.css> ;
+        modgui:screenshot <modgui/screenshot-gxslowgear.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxslowgear.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxSlowGear" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "DOWNTIME" ;
+            lv2:name "RELEASE" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "TRESHOLD" ;
+            lv2:name "TRESHOLD" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "UPTIME" ;
+            lv2:name "ATTACK" ;
+        ] ;
+    ] .
