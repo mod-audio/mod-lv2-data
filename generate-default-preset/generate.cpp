@@ -123,7 +123,7 @@ static LV2_Feature g_uri_map_feature = {
 static const char* lv2_urid_unmap(LV2_URID_Unmap_Handle, const LV2_URID urid)
 {
     if (urid == 0 || urid >= g_uri_mapping.size())
-        return NULL;
+        return nullptr;
 
     return g_uri_mapping[urid-1].c_str();
 }
@@ -159,7 +159,7 @@ static const LV2_Feature* g_features[] = {
     &g_uri_map_feature,
     &g_urid_unmap_feature,
     &g_worker_feature,
-    NULL
+    nullptr
 };
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -178,7 +178,7 @@ static const void* get_port_value_for_state(const char* const symbol, void* user
         return &value.value;
     }
 
-    return NULL;
+    return nullptr;
 }
 
 static void set_port_value_for_state(const char* const symbol, void* const user_data, const void* value, uint32_t size, uint32_t type)
@@ -224,7 +224,8 @@ static void set_port_value_for_state(const char* const symbol, void* const user_
         break;
     }
 
-    fprintf(stderr, "set_port_value_for_state for port '%s' called with unknown type '%s' (num:%u, size:%u)\n", symbol, lv2_urid_unmap(NULL, type), type, size);
+    fprintf(stderr, "set_port_value_for_state for port '%s' called with unknown type '%s' (num:%u, size:%u)\n",
+                    symbol, lv2_urid_unmap(nullptr, type), type, size);
 }
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -241,15 +242,15 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     const LilvNode* const bundle = lilv_plugin_get_bundle_uri(plugin);
 
-    if (bundle == NULL)
+    if (bundle == nullptr)
     {
         fprintf(stderr, "failed to get bundle for '%s'\n", lilv_node_as_uri(uri));
         return;
     }
 
-    char* const bundlepath = lilv_file_uri_parse(lilv_node_as_uri(bundle), NULL);
+    char* const bundlepath = lilv_file_uri_parse(lilv_node_as_uri(bundle), nullptr);
 
-    if (bundlepath == NULL)
+    if (bundlepath == nullptr)
     {
         fprintf(stderr, "failed to get bundle path for '%s'\n", lilv_node_as_uri(uri));
         return;
@@ -257,7 +258,7 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     LilvState* state = lilv_state_new_from_world(world, &g_urid_map, uri);
 
-    if (state == NULL)
+    if (state == nullptr)
     {
         lilv_free(bundlepath);
         fprintf(stderr, "failed to get state for '%s'\n", lilv_node_as_uri(uri));
@@ -266,7 +267,7 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     LilvInstance* const instance = lilv_plugin_instantiate(plugin, g_sample_rate, g_features);
 
-    if (instance != NULL)
+    if (instance != nullptr)
     {
 #if 0
         float buffer[g_buffer_size];
@@ -281,14 +282,50 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
         lilv_instance_activate(instance);
         lilv_instance_run(instance, g_buffer_size);
 #endif
+        LilvNode* node_port_control = lilv_new_uri(world, LILV_URI_CONTROL_PORT);
+        LilvNode* node_port_input   = lilv_new_uri(world, LILV_URI_INPUT_PORT);
+        LilvNode* node_mod_default  = lilv_new_uri(world, "http://moddevices.com/ns/mod#default");
 
         std::vector<StatePortValue> values;
         lilv_state_emit_port_values(state, set_port_value_for_state, &values);
 
+        // Load mod:default values
+        for (uint32_t i=0, count=lilv_plugin_get_num_ports(plugin); i<count; ++i)
+        {
+            const LilvPort* const port = lilv_plugin_get_port_by_index(plugin, i);
+            const char* const symbol = lilv_node_as_string(lilv_port_get_symbol(plugin, port));
+
+            if (! lilv_port_is_a(plugin, port, node_port_control))
+                continue;
+            if (! lilv_port_is_a(plugin, port, node_port_input))
+                continue;
+
+            if (LilvNode* const ndef = lilv_port_get(plugin, port, node_mod_default))
+            {
+                const float mod_default = lilv_node_as_float(ndef);
+
+                for (StatePortValue& v : values)
+                {
+                    if (strcmp(v.symbol, symbol) != 0)
+                        continue;
+
+                    v.value = mod_default;
+                    break;
+                }
+
+                lilv_node_free(ndef);
+            }
+        }
+
         lilv_state_free(state);
         state = lilv_state_new_from_instance(plugin, instance, &g_urid_map,
                                              bundlepath, bundlepath, bundlepath, bundlepath,
-                                             get_port_value_for_state, &values, LV2_STATE_IS_POD|LV2_STATE_IS_PORTABLE, NULL);
+                                             get_port_value_for_state, &values, LV2_STATE_IS_POD|LV2_STATE_IS_PORTABLE,
+                                             nullptr);
+
+        lilv_node_free(node_mod_default);
+        lilv_node_free(node_port_input);
+        lilv_node_free(node_port_control);
     }
 
     std::string preseturi("default-preset");
@@ -301,9 +338,9 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
         preseturi += std::to_string(count);
     }
 
-    char* const string = lilv_state_to_string(world, &g_urid_map, &g_urid_unmap, state, preseturi.c_str(), NULL);
+    char* const string = lilv_state_to_string(world, &g_urid_map, &g_urid_unmap, state, preseturi.c_str(), nullptr);
 
-    if (string == NULL)
+    if (string == nullptr)
     {
         lilv_free(bundlepath);
         lilv_state_free(state);
@@ -352,7 +389,7 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
     lilv_free(bundlepath);
     lilv_state_free(state);
 
-    if (instance != NULL)
+    if (instance != nullptr)
     {
 #if 0
         lilv_instance_deactivate(instance);
@@ -384,7 +421,7 @@ int main(int argc, char* argv[])
     }
 #endif
 
-    lv2_folder = realpath(lv2_folder, NULL);
+    lv2_folder = realpath(lv2_folder, nullptr);
 
     setenv("LV2_PATH", lv2_folder, 1);
     fprintf(stdout, "Using folder '%s'\n", lv2_folder);
