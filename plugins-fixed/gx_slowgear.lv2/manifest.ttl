@@ -23,7 +23,8 @@
 <http://guitarix.sourceforge.net/plugins/gx_slowgear_#_slowgear_>
     a lv2:Plugin ;
     lv2:binary <gx_slowgear.so>  ;
-    rdfs:seeAlso <gx_slowgear.ttl> .
+    rdfs:seeAlso <gx_slowgear.ttl> ,
+                 <modgui.ttl> .
 
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;

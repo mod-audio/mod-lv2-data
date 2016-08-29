@@ -23,7 +23,8 @@
 <http://guitarix.sourceforge.net/plugins/gx_vfm_#_vfm_>
     a lv2:Plugin ;
     lv2:binary <gx_vfm.so>  ;
-    rdfs:seeAlso <gx_vfm.ttl> .
+    rdfs:seeAlso <gx_vfm.ttl> ,
+                 <modgui.ttl> .
 
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
