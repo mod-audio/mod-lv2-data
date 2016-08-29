@@ -1,0 +1,246 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/stepseq#s8n8> ;
+	lv2:port [
+		lv2:symbol "bpm" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "chn" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "div" ;
+		pset:value 3.0
+	] , [
+		lv2:symbol "drummode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_1_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_2_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_3_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_4_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_5_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_6_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_7_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_5" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_6" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "grid_8_8" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "note1" ;
+		pset:value 69.0
+	] , [
+		lv2:symbol "note2" ;
+		pset:value 67.0
+	] , [
+		lv2:symbol "note3" ;
+		pset:value 65.0
+	] , [
+		lv2:symbol "note4" ;
+		pset:value 64.0
+	] , [
+		lv2:symbol "note5" ;
+		pset:value 62.0
+	] , [
+		lv2:symbol "note6" ;
+		pset:value 60.0
+	] , [
+		lv2:symbol "note7" ;
+		pset:value 59.0
+	] , [
+		lv2:symbol "note8" ;
+		pset:value 57.0
+	] , [
+		lv2:symbol "panic" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "swing" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "sync" ;
+		pset:value 0.0
+	] .
+

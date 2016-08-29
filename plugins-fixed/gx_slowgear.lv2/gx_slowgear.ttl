@@ -82,7 +82,7 @@ rdfs:comment """
         lv2:name "RELEASE" ;
         lv2:default 5.0 ;
         lv2:minimum 0.0 ;
-        lv2:maximum 1e+03 ;
+        lv2:maximum 1000.0 ;
     ]      , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -91,14 +91,14 @@ rdfs:comment """
         lv2:name "TRESHOLD" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
-        lv2:maximum 1e+01 ;
+        lv2:maximum 10.0 ;
     ]      , [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "UPTIME" ;
         lv2:name "ATTACK" ;
-        lv2:default 1e+02 ;
+        lv2:default 100.0 ;
         lv2:minimum 0.0 ;
-        lv2:maximum 1e+03 ;
+        lv2:maximum 1000.0 ;
     ] .
