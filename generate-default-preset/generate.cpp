@@ -269,19 +269,6 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     if (instance != nullptr)
     {
-#if 0
-        float buffer[g_buffer_size];
-        memset(buffer, 0, sizeof(float)*g_buffer_size);
-
-        for (uint32_t i=0, count=lilv_plugin_get_num_ports(plugin); i<count; ++i)
-        {
-            // FIXME: adjust to other port types
-            lilv_instance_connect_port(instance, i, buffer);
-        }
-
-        lilv_instance_activate(instance);
-        lilv_instance_run(instance, g_buffer_size);
-#endif
         LilvNode* node_port_control = lilv_new_uri(world, LILV_URI_CONTROL_PORT);
         LilvNode* node_port_input   = lilv_new_uri(world, LILV_URI_INPUT_PORT);
         LilvNode* node_mod_default  = lilv_new_uri(world, "http://moddevices.com/ns/mod#default");
@@ -391,9 +378,6 @@ void create_plugin_preset(LilvWorld* const world, const LilvPlugin* const plugin
 
     if (instance != nullptr)
     {
-#if 0
-        lilv_instance_deactivate(instance);
-#endif
         lilv_instance_free(instance);
     }
 }
