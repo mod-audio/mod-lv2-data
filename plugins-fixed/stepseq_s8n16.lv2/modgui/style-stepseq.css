@@ -1,0 +1,393 @@
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+/* = CONTAINER
+================================================ */
+.x42-stepseq{{{cns}}} {
+    background-image:url(/resources/box.png{{{ns}}});
+    background-position:center center;
+    background-repeat:no-repeat;
+    border-radius: 21px;
+    position:absolute;
+
+    background-size:618px 928px;
+    height:928px;
+    width:618px;
+    line-height:1.429;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* = Labels
+================================================ */
+.x42-stepseq{{{cns}}} .center {
+    text-align:center;
+}
+
+.x42-stepseq{{{cns}}} .x42-brand {
+    bottom:32px;
+    cursor:default;
+    left: 20px;
+    position:absolute;
+    width: 26px;
+}
+
+.x42-stepseq{{{cns}}} .x42-brand h1 {
+    font-family:"Nexa";
+    font-size:28px;
+    padding:0;
+    margin:0;
+    color:#eee;
+    text-shadow: -2px 2px 2px #444;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+}
+
+.x42-stepseq{{{cns}}} .x42-plugin-name {
+    overflow:hidden;
+    position:absolute;
+    right:20px;
+    text-align:center;
+    bottom:22px;
+}
+
+.x42-stepseq{{{cns}}} .x42-plugin-name h1 {
+    font-family:"Questrial";
+    font-size:19px;
+    line-height:1;
+    color:#222;
+    text-shadow: -1px -1px 0 #bbb;
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.x42-stepseq{{{cns}}} .mod-light {
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+    position:absolute;
+    right:51px;
+    bottom:45px;
+}
+
+/* = FOOTSWITCH
+================================================ */
+.x42-stepseq{{{cns}}} .mod-footswitch {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 88px;
+    cursor:pointer;
+    height:44px;
+    margin:auto;
+    width:44px;
+    position:absolute;
+    bottom:81px;
+    right:45px;
+}
+
+.x42-stepseq{{{cns}}} .mod-footswitch.on {
+    background-position: top center !important;
+}
+
+.x42-stepseq{{{cns}}} .hidden-ctrl {
+	display:none;
+	height:0px;
+	width:0px;
+}
+
+/* = Display Radio
+================================================ */
+.x42-stepseq{{{cns}}} .displaybuttons {
+    width:80px;
+    position:absolute;
+    bottom:136px;
+    left:64px;
+    z-index: 35;
+}
+
+.x42-stepseq{{{cns}}} .displaybuttons .displayradio {
+    color:white;
+    background-color:#444;
+    border-radius: 5px;
+    cursor:default;
+    float:left;
+    font-size:10px;
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+    text-align:center;
+    z-index: 35;
+    box-shadow: 2px 2px 2px 0px #000 inset, -2px -2px 2px 1px #888 inset;
+    padding: 2px 0 0 0;
+}
+
+.x42-stepseq{{{cns}}} .displaybuttons .displayradio.selected {
+    background-color:#f93;
+    box-shadow: 0 -2px 2px 1px #951 inset, -1px -2px 1px 1px #e82 inset;
+    padding: 3px 0 0 0;
+}
+
+/* = KNOBS
+================================================ */
+.x42-stepseq{{{cns}}} .mod-control-group {
+    position:absolute;
+    text-align:center;
+    margin:0;
+    z-index:30;
+}
+
+.x42-stepseq{{{cns}}} .grid-group {
+    top:10px;
+    left:46px;
+}
+
+.x42-stepseq{{{cns}}} .bottom-group {
+    margin:10px auto 0 auto;
+    width:280px;
+    position:absolute;
+    bottom:36px;
+    left:64px;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob {
+    overflow:hidden;
+    position:relative;
+    display:inline-block;
+    height:88px;
+    margin: 0;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob.midi {
+    height:74px;
+    margin-bottom:0;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob.wide {
+    width:44px;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob.wider {
+    width:72px;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group span.mod-knob-title,
+.x42-stepseq{{{cns}}} .mod-control-group span.mod-knob-right-title {
+    color:#333;
+    font-size:11px;
+    font-weight:bold;
+    line-height:1;
+    text-transform:uppercase;
+    cursor:default;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-right-title {
+    bottom:12px;
+    display:block;
+    height:12px;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:5px;
+    text-align:right;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
+    bottom:12px;
+    display:block;
+    height:12px;
+    left:0;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:0;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-value {
+    color:#333;
+    bottom:13px;
+    font-size:11px;
+    position:absolute;
+    line-height:1;
+    left:5px;
+    z-index:60;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-image {
+    background-image:url(/resources/knob.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 44px;
+    height:44px;
+    width:64px;
+    margin:0 auto;
+    margin:4px auto 0 auto;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-m16-image {
+    background-image:url(/resources/m16.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 42px;
+    background-color:#222;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 2px 1px #fff inset;
+    height:42px;
+    width:48px;
+    margin:6px auto 0 auto;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-step-image {
+    background-image:url(/resources/division.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 42px;
+    background-color:#222;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 2px 1px #fff inset;
+    height:42px;
+    width:30px;
+    margin:6px auto 0 auto;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-swing-image {
+    background-image:url(/resources/swinger.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 42px;
+    background-color:#222;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 2px 1px #fff inset;
+    height:42px;
+    width:30px;
+    margin:6px auto 0 auto;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-16seg-image {
+    background-repeat:no-repeat;
+    background-size:auto 42px;
+    background-color:#222;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 2px 1px #fff inset;
+    height:42px;
+    width:114px;
+    margin:0 auto;
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-16seg-image.drum {
+    background-image:url(/resources/m_drum.png{{{ns}}});
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-16seg-image.note {
+    background-image:url(/resources/m_note.png{{{ns}}});
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-16seg-image.nums {
+    background-image:url(/resources/m_nums.png{{{ns}}});
+}
+
+/* = Push Buttons
+================================================ */
+.x42-stepseq{{{cns}}} .mod-pushbutton {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:auto 88px;
+    cursor:pointer;
+    height:44px;
+    margin: 4px auto 0 auto;
+    width: 44px;
+}
+
+.x42-stepseq{{{cns}}} .mod-pushbutton.on {
+    background-position: bottom center !important;
+}
+
+/* = Toggle Buttons
+================================================ */
+.x42-stepseq{{{cns}}} .buttongrid {
+    overflow:hidden;
+    margin: 10px auto;
+    position:relative;
+    z-index: 30;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid th,
+.x42-stepseq{{{cns}}} .buttongrid td {
+  margin:0;
+  padding:0;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .togglebtn {
+    background-color:#444;
+    border-radius: 5px;
+    cursor:default;
+    float:left;
+    height: 42px;
+    margin: 2px;
+    width: 42px;
+    overflow: hidden;
+    padding: 20px 0 0 6px;
+    color:white;
+    z-index: 35;
+    text-align:left;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .togglebtn.on {
+    background-color:#f93;
+    box-shadow: 0 -2px 2px 1px #951 inset, -1px -2px 1px 1px #e82 inset;
+    padding: 21px 0 0 6px;
+    background-position: 21px 2px;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .togglebtn.off {
+    box-shadow: 2px 2px 2px 0px #000 inset, -2px -2px 2px 1px #888 inset;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .togglebtn.on.highlight {
+    background-color:#f60;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .togglebtn.off.highlight {
+    background-color:#666;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .resetbutton {
+    border-radius: 5px;
+    background-color:#444;
+    border-radius: 5px;
+    cursor:default;
+    float:left;
+    font-size:10px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    padding: 2px 0 0 0;
+    color:white;
+    z-index: 35;
+    text-align:center;
+    box-shadow: 2px 2px 2px 0px #000 inset, -2px -2px 2px 1px #888 inset;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .resetbutton.col {
+    margin: 13px 13px 0 13px;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .resetbutton.row {
+    margin: 13px 0 13px 13px;
+}
+
+.x42-stepseq{{{cns}}} .buttongrid .resetbutton.all {
+    margin: 13px 13px 0 13px;
+}
+
+/* = COLORS
+================================================ */
+.x42-stepseq{{{cns}}} h1,
+.x42-stepseq{{{cns}}} .mod-enumerated,
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
+    color:black;
+}
+.x42-stepseq{{{cns}}} h1 {
+    border-color:black;
+}
