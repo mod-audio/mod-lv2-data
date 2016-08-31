@@ -56,9 +56,9 @@
     mod:label "GxVintageFuzz" ;
     
 rdfs:comment """
-
-...
-
+An analogue simulation of the Vintage Fuzz Master (Devi Ever).
+This one comes with a bass/bright switch and is a bit modified to produce less volume then the original pedal.
+With "intensity" down it will blow up the low end, but turn it up and it produce the well known and loved octave up artifacts.
 """;
 
     lv2:port  [
