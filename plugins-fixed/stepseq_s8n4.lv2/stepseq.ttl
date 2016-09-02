@@ -26,8 +26,11 @@
 	doap:license <http://usefulinc.com/doap/licenses/gpl>;
 	doap:maintainer <http://gareus.org/rgareus#me>;
 	doap:name "MIDI Step Sequencer8x4";
-	rdfs:comment "A simple step sequencer.";
-	lv2:microVersion 0 ;lv2:minorVersion 0 ;
+	rdfs:comment """
+A simple step sequencer. It allows to trigger MIDI note events placed on a time/note grid.
+The Step-duration is configurable to musical time and can optionally be modulated for a swing-time effect.
+This plugin version contains 4 notes and 8 steps.""";
+	lv2:microVersion 5 ;lv2:minorVersion 777 ;
   
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
