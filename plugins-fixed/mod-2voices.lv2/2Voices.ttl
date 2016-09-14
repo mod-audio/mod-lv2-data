@@ -120,7 +120,7 @@ lv2:port
     lv2:index 7;
     lv2:symbol "Fidelity";
     lv2:name "Fidelity";
-    lv2:shortname "Fidelity";
+    lv2:shortName "Fidelity";
     lv2:default 1;
     lv2:minimum 0;
     lv2:maximum 3;
