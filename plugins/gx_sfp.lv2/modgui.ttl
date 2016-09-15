@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_sfp_#_sfp_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxsuperfuzz.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxsuperfuzz.css> ;
+        modgui:screenshot <modgui/screenshot-gxsuperfuzz.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxsuperfuzz.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxSuperFuzz" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BALANCE" ;
+            lv2:name "BALANCE" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "EXPANDER" ;
+            lv2:name "EXPANDER" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "TONE" ;
+            lv2:name "TONE" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "TRIM" ;
+            lv2:name "TRIM" ;
+        ] ;
+    ] .

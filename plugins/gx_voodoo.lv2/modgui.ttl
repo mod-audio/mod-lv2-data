@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_voodoo_#_voodoo_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxvoodoofuzz.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxvoodoofuzz.css> ;
+        modgui:screenshot <modgui/screenshot-gxvoodoofuzz.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxvoodoofuzz.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxVoodooFuzz" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "ATTACK" ;
+            lv2:name "ATTACK" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "RESONACE" ;
+            lv2:name "RESONACE" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "TONE" ;
+            lv2:name "TONE" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "VOLUME" ;
+        ] ;
+    ] .
