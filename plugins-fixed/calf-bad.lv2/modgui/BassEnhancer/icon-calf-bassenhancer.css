@@ -1,6 +1,6 @@
 /* Global */
 .calf {
-    background: url(/resources/background_dark.png{{{ns}}}) repeat;
+    background: url(/resources/img/background_dark.png{{{ns}}}) repeat;
     position: relative;
     color: #FFF;
 }
@@ -8,7 +8,7 @@
 /* bar top */
 
 .calf.calf-bassenhancer .bar-top {
-    background: url(/resources/background_black.png{{{ns}}}) repeat;
+    background: url(/resources/img/background_black.png{{{ns}}}) repeat;
     height: 46px;
     left: 0;
     position: absolute;
@@ -24,7 +24,7 @@
     top: 13px;
 }
 .calf .bar-top .off-or-on-calf {
-    background-image: url(/resources/toggle2_silver.png{{{ns}}});
+    background-image: url(/resources/img/toggle2_silver.png{{{ns}}});
     background-size: 46px 62px;
     cursor: pointer;
     height: 31px;
@@ -64,7 +64,7 @@
 
 /*bars left*/
 .calf .groups-bar-left {
-    background: url(/resources/side_w.png{{{ns}}}) repeat-y;
+    background: url(/resources/img/side_w.png{{{ns}}}) repeat-y;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -73,7 +73,7 @@
 }
 
 .calf .groups-bar-left .top {
-    background: url(/resources/side_nw.png{{{ns}}});
+    background: url(/resources/img/side_nw.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -81,7 +81,7 @@
     width: 56px;
 }
 .calf .groups-bar-left .bottom {
-    background: url(/resources/side_sw.png{{{ns}}});
+    background: url(/resources/img/side_sw.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -91,7 +91,7 @@
 
 /* bars right */
 .calf .groups-bar-right {
-    background: url(/resources/side_e.png{{{ns}}}) repeat-y;
+    background: url(/resources/img/side_e.png{{{ns}}}) repeat-y;
     bottom: 0;
     right: 0;
     position: absolute;
@@ -100,7 +100,7 @@
 }
 
 .calf .groups-bar-right .top {
-    background: url(/resources/side_ne.png{{{ns}}});
+    background: url(/resources/img/side_ne.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -109,7 +109,7 @@
 }
 
 .calf .groups-bar-right .bottom {
-    background: url(/resources/side_se.png{{{ns}}});
+    background: url(/resources/img/side_se.png{{{ns}}});
     height: 36px;
     left: 0;
     position: absolute;
@@ -117,7 +117,7 @@
     width: 56px;
 }
 .calf .groups-bar-right .logo {
-    background: url(/resources/side_e_logo.png{{{ns}}});
+    background: url(/resources/img/side_e_logo.png{{{ns}}});
     height: 90px;
     left: 0;
     position: absolute;
@@ -155,22 +155,22 @@
     width: 20px;
 }
 .calf .knob1-1 {
-    background: url(/resources/knob1-1.png{{{ns}}});
+    background: url(/resources/img/knob1-1.png{{{ns}}});
     height: 20px;
     width: 20px;
 }
 .calf .knob1-2 {
-    background: url(/resources/knob1-2.png{{{ns}}});
+    background: url(/resources/img/knob1-2.png{{{ns}}});
     height: 20px;
     width: 20px;
 }
 .calf .knob1-3 {
-    background: url(/resources/knob1-3.png{{{ns}}});
+    background: url(/resources/img/knob1-3.png{{{ns}}});
     height: 20px;
     width: 20px;
 }
 .calf .knob1-4 {
-    background: url(/resources/knob1-4.png{{{ns}}});
+    background: url(/resources/img/knob1-4.png{{{ns}}});
     height: 20px;
     width: 20px;
 }
@@ -179,53 +179,53 @@
     width: 40px;
 }
 .calf .knob2-1 {
-    background: url(/resources/knob2-1.png{{{ns}}});
+    background: url(/resources/img/knob2-1.png{{{ns}}});
 }
 .calf .knob2-2 {
-    background: url(/resources/knob2-2.png{{{ns}}});
+    background: url(/resources/img/knob2-2.png{{{ns}}});
 }
 .calf .knob2-3 {
-    background: url(/resources/knob2-3.png{{{ns}}});
+    background: url(/resources/img/knob2-3.png{{{ns}}});
 }
 .calf .knob2-4 {
-    background: url(/resources/knob2-4.png{{{ns}}});
+    background: url(/resources/img/knob2-4.png{{{ns}}});
 }
 .calf .knob3 {
     height: 60px;
     width: 60px;
-    background: url(/resources/knob3.png{{{ns}}});
+    background: url(/resources/img/knob3.png{{{ns}}});
 }
 .calf .knob4 {
     height: 80px;
     width: 80px;
 }
 .calf .knob4-1 {
-    background: url(/resources/knob4-1.png{{{ns}}});
+    background: url(/resources/img/knob4-1.png{{{ns}}});
 }
 .calf .knob4-2 {
-    background: url(/resources/knob4-2.png{{{ns}}});
+    background: url(/resources/img/knob4-2.png{{{ns}}});
 }
 .calf .knob4-3 {
-    background: url(/resources/knob4-3.png{{{ns}}});
+    background: url(/resources/img/knob4-3.png{{{ns}}});
 }
 .calf .knob4-4 {
-    background: url(/resources/knob4-4.png{{{ns}}});
+    background: url(/resources/img/knob4-4.png{{{ns}}});
 }
 .calf .knob5 {
     height: 100px;
     width: 100px;
 }
 .calf .knob5-1 {
-    background: url(/resources/knob5-1.png{{{ns}}});
+    background: url(/resources/img/knob5-1.png{{{ns}}});
 }
 .calf .knob5-2 {
-    background: url(/resources/knob5-2.png{{{ns}}});
+    background: url(/resources/img/knob5-2.png{{{ns}}});
 }
 .calf .knob5-3 {
-    background: url(/resources/knob5-3.png{{{ns}}});
+    background: url(/resources/img/knob5-3.png{{{ns}}});
 }
 .calf .knob5-4 {
-    background: url(/resources/knob5-4.png{{{ns}}});
+    background: url(/resources/img/knob5-4.png{{{ns}}});
 }
 
 /* titles of things */
@@ -235,14 +235,14 @@
     font-size: 10px;
 }
 .toggle1-silver {
-    background: url(/resources/toggle1_silver.png{{{ns}}});
+    background: url(/resources/img/toggle1_silver.png{{{ns}}});
     height: 20px;
     position: absolute;
     width: 30px;
 }
 
 .toggle2_silver-silver {
-    background: url(/resources/toggle2_silver.png{{{ns}}});
+    background: url(/resources/img/toggle2_silver.png{{{ns}}});
     height: 40px;
     position: absolute;
     width: 60px;
@@ -271,7 +271,7 @@
 /* Screw */
 
 .calf .screw_min {
-    background: url(/resources/screw1.png{{{ns}}});
+    background: url(/resources/img/screw1.png{{{ns}}});
     background-size: 15px;
     height: 15px;
     position: absolute;
@@ -287,7 +287,7 @@
 /* button of bypass */
 
 .calf .button-bypass {
-    background: url(/resources/toggle2_silver.png{{{ns}}});
+    background: url(/resources/img/toggle2_silver.png{{{ns}}});
     height: 40px;
     position: absolute;
     width: 60px;
@@ -326,14 +326,14 @@
     float: left;
 }
 .calf-bassenhancer .toggle .small {
-    background-image: url(/resources/toggle1_silver.png{{{ns}}});
+    background-image: url(/resources/img/toggle1_silver.png{{{ns}}});
 margin: auto;
     height: 20px;
     width: 30px;
     cursor: pointer;
 }
 .calf-bassenhancer .toggle .mid {
-    background-image: url(/resources/toggle2_silver.png{{{ns}}});
+    background-image: url(/resources/img/toggle2_silver.png{{{ns}}});
     margin: auto;
     height: 40px;
     width: 60px;
@@ -348,7 +348,7 @@ margin: auto;
 }
 
 .calf-bassenhancer .slider-horiz {
-    background: url(/resources/sliders-vert-disable2.png{{{ns}}});
+    background: url(/resources/img/sliders-vert-disable2.png{{{ns}}});
     background-size: auto 114px;
     height: 114px;
     margin: auto;
@@ -363,7 +363,7 @@ line-height: 16px;
 font-style: italic
 }
 .calf-bassenhancer .display {
-    background: url(/resources/combo-sm.png{{{ns}}});
+    background: url(/resources/img/combo-sm.png{{{ns}}});
     top: 181px;
     background-size: 50px auto;
     height: 28px;

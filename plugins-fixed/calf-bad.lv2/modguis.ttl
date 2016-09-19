@@ -5,7 +5,7 @@
 ## START http://calf.sourceforge.net/plugins/BassEnhancer
 <http://calf.sourceforge.net/plugins/BassEnhancer>
     modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
+        modgui:resourcesDirectory <modgui>;
         modgui:stylesheet <modgui/BassEnhancer/icon-calf-bassenhancer.css>;
         modgui:iconTemplate <modgui/BassEnhancer/icon-calf-bassenhancer.html>;
         modgui:screenshot <modgui/BassEnhancer/screenshot-calf-bassenhancer.png>;
@@ -18,7 +18,7 @@
 ## START http://calf.sourceforge.net/plugins/Compressor
 <http://calf.sourceforge.net/plugins/Compressor>
     modgui:gui [
-        modgui:resourcesDirectory <modgui/img/>;
+        modgui:resourcesDirectory <modgui>;
         modgui:stylesheet <modgui/Compressor/icon-calf-compressor.css>;
         modgui:iconTemplate <modgui/Compressor/icon-calf-compressor.html>;
         modgui:screenshot <modgui/Compressor/screenshot-calf-compressor.png>;
@@ -31,7 +31,7 @@
 ## START http://calf.sourceforge.net/plugins/Equalizer5Band
 <http://calf.sourceforge.net/plugins/Equalizer5Band>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Equalizer5Band/icon-calf-equalizer-5-band.css>;
     modgui:iconTemplate <modgui/Equalizer5Band/icon-calf-equalizer-5-band.html>;
     modgui:screenshot <modgui/Equalizer5Band/screenshot-calf-equalizer-5-band.png>;
@@ -44,7 +44,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Exciter
 <http://calf.sourceforge.net/plugins/Exciter>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Exciter/icon-calf-exciter.css>;
     modgui:iconTemplate <modgui/Exciter/icon-calf-exciter.html>;
     modgui:screenshot <modgui/Exciter/screenshot-calf-exciter.png>;
@@ -57,7 +57,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Filter
 <http://calf.sourceforge.net/plugins/Filter>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Filter/icon-calf-filter.css>;
     modgui:iconTemplate <modgui/Filter/icon-calf-filter.html>;
     modgui:screenshot <modgui/Filter/screenshot-calf-filter.png>;
@@ -109,7 +109,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Phaser
 <http://calf.sourceforge.net/plugins/Phaser>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
     modgui:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
     modgui:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
@@ -122,7 +122,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Pulsator
 <http://calf.sourceforge.net/plugins/Pulsator>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Pulsator/icon-calf-pulsator.css>;
     modgui:iconTemplate <modgui/Pulsator/icon-calf-pulsator.html>;
     modgui:screenshot <modgui/Pulsator/screenshot-calf-pulsator.png>;
@@ -135,7 +135,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Saturator
 <http://calf.sourceforge.net/plugins/Saturator>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
     modgui:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
     modgui:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
@@ -148,7 +148,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/VintageDelay
 <http://calf.sourceforge.net/plugins/VintageDelay>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img/>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/VintageDelay/icon-calf-vintage-delay.css>;
     modgui:iconTemplate <modgui/VintageDelay/icon-calf-vintage-delay.html>;
     modgui:screenshot <modgui/VintageDelay/screenshot-calf-vintage-delay.png>;
