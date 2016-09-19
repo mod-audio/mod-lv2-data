@@ -70,7 +70,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Filterclavier
 <http://calf.sourceforge.net/plugins/Filterclavier>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Filterclavier/icon-calf-filterclavier.css>;
     modgui:iconTemplate <modgui/Filterclavier/icon-calf-filterclavier.html>;
     modgui:screenshot <modgui/Filterclavier/screenshot-calf-filterclavier.png>;
@@ -83,7 +83,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Flanger
 <http://calf.sourceforge.net/plugins/Flanger>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
     modgui:iconTemplate <modgui/Flanger/icon-calf-flanger.html>;
     modgui:screenshot <modgui/Flanger/screenshot-calf-flanger.png>;
@@ -96,7 +96,7 @@ modgui:gui [
 ## START http://calf.sourceforge.net/plugins/Monosynth
 <http://calf.sourceforge.net/plugins/Monosynth>
 modgui:gui [
-    modgui:resourcesDirectory <modgui/img>;
+    modgui:resourcesDirectory <modgui>;
     modgui:stylesheet <modgui/Monosynth/icon-calf-monosynth.css>;
     modgui:iconTemplate <modgui/Monosynth/icon-calf-monosynth.html>;
     modgui:screenshot <modgui/Monosynth/screenshot-calf-monosynth.png>;
