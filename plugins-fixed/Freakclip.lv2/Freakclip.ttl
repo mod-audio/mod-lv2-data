@@ -32,7 +32,7 @@ a doap:Project ;
       lv2:minorVersion 1;
       lv2:microVersion 2;
       doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-      rdfs:comment "Clipped Filter"
+      rdfs:comment "Clipped Filter" ;
     lv2:port [
 	a lv2:ControlPort ;
 	a lv2:InputPort ;
