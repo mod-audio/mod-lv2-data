@@ -1,0 +1,18 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/ninodewit/SHIRO-Plugins/plugins/harmless> ;
+	lv2:port [
+		lv2:symbol "depth" ;
+		pset:value 100.0
+	] , [
+		lv2:symbol "rate" ;
+		pset:value 7.0
+	] , [
+		lv2:symbol "tone" ;
+		pset:value 6000.0
+	] .
+

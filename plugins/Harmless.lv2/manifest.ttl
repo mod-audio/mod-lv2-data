@@ -1,0 +1,17 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/ninodewit/SHIRO-Plugins/plugins/harmless>
+    a lv2:Plugin ;
+    lv2:binary <Harmless_dsp.so> ;
+    rdfs:seeAlso <Harmless_dsp.ttl> ,
+                 <modgui.ttl> .
+
+
+
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <https://github.com/ninodewit/SHIRO-Plugins/plugins/harmless> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
