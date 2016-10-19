@@ -116,6 +116,7 @@ A very complete fuzz
         lv2:default 5.0 ;
         lv2:minimum 0.1 ;
         lv2:maximum 10.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -125,6 +126,7 @@ A very complete fuzz
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 10.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -134,6 +136,7 @@ A very complete fuzz
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
 				lv2:maximum 1.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
@@ -223,6 +226,7 @@ More then the normal redeye fuzz
         lv2:default 5.0 ;
         lv2:minimum 0.1 ;
         lv2:maximum 10.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -232,6 +236,7 @@ More then the normal redeye fuzz
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 10.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -241,6 +246,7 @@ More then the normal redeye fuzz
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:notOnGUI;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
@@ -348,6 +354,8 @@ A Fuzz, with a vibrato option.
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled;
+        lv2:portProperty lv2:integer;
     ] , [
         a lv2:AudioPort ,
             lv2:OutputPort ;
