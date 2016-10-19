@@ -40,6 +40,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
 	lv2:maximum 500.0 ;
@@ -191,6 +192,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
 	lv2:maximum 500.0 ;
@@ -361,6 +363,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 1 ;
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 25.0 ;
 	lv2:minimum 0.5 ;
 	lv2:maximum 500.0 ;

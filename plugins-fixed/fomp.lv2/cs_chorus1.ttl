@@ -52,6 +52,7 @@ fomp:cs_chorus1
 		mod:default 0.2 ;
 		lv2:name "Mod Frequency 1" ;
 		lv2:shortName "Rate 1" ;
+		lv2:portProperty mod:tapTempo;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_1" ;
 		units:unit units:hz
@@ -77,6 +78,7 @@ fomp:cs_chorus1
 		mod:default 0.8 ;
 		lv2:name "Mod Frequency 2" ;
 		lv2:shortName "Rate 2" ;
+		lv2:portProperty mod:tapTempo;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "mod_freq_2" ;
 		units:unit units:hz
