@@ -71,6 +71,7 @@ A delay that makes it possible to delay every frequency band individually, with 
         lv2:index 0 ;
         lv2:symbol "DELAY1" ;
         lv2:name "DELAY1";
+        lv2:portProperty mod:tapTempo;
         lv2:default 3e+01 ;
         lv2:minimum 24.0 ;
         lv2:maximum 3.6e+02 ;
@@ -80,6 +81,7 @@ A delay that makes it possible to delay every frequency band individually, with 
         lv2:index 1 ;
         lv2:symbol "DELAY2" ;
         lv2:name "DELAY2";
+        lv2:portProperty mod:tapTempo;
         lv2:default 6e+01 ;
         lv2:minimum 24.0 ;
         lv2:maximum 3.6e+02 ;
@@ -89,6 +91,7 @@ A delay that makes it possible to delay every frequency band individually, with 
         lv2:index 2 ;
         lv2:symbol "DELAY3" ;
         lv2:name "DELAY3";
+        lv2:portProperty mod:tapTempo;
         lv2:default 9e+01 ;
         lv2:minimum 24.0 ;
         lv2:maximum 3.6e+02 ;
@@ -98,6 +101,7 @@ A delay that makes it possible to delay every frequency band individually, with 
         lv2:index 3 ;
         lv2:symbol "DELAY4" ;
         lv2:name "DELAY4";
+        lv2:portProperty mod:tapTempo;
         lv2:default 1.2e+02 ;
         lv2:minimum 24.0 ;
         lv2:maximum 3.6e+02 ;
@@ -107,6 +111,7 @@ A delay that makes it possible to delay every frequency band individually, with 
         lv2:index 4 ;
         lv2:symbol "DELAY5" ;
         lv2:name "DELAY5";
+        lv2:portProperty mod:tapTempo;
         lv2:default 1.5e+02 ;
         lv2:minimum 24.0 ;
         lv2:maximum 3.6e+02 ;

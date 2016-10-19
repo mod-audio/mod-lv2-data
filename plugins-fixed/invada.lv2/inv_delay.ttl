@@ -67,7 +67,8 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:index 4 ;
 	lv2:symbol "LFOcycle" ;
 	lv2:name "LFO" ;
-	lv2:shortName "Rate 2" ;
+	lv2:shortName "Rate" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 20.0 ;
 	lv2:minimum 2.0 ;
 	lv2:maximum 200.0 ;
@@ -88,6 +89,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:symbol "delay1" ;
 	lv2:name "Delay 1" ;
 	lv2:shortName "Time 1" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 0.3 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -125,6 +127,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:symbol "delay2" ;
 	lv2:name "Delay 2" ;
 	lv2:shortName "Time 2" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 0.2 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -278,6 +281,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:symbol "LFOcycle" ;
 	lv2:name "LFO" ;
 	lv2:shortName "Rate" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 20.0 ;
 	lv2:minimum 2.0 ;
 	lv2:maximum 200.0 ;
@@ -298,6 +302,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:symbol "delay1" ;
 	lv2:name "Delay 1" ;
 	lv2:shortName "Time 1" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 0.3 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
@@ -335,6 +340,7 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
 	lv2:symbol "delay2" ;
 	lv2:name "Delay 2" ;
 	lv2:shortName "Time 2" ;
+	lv2:portProperty mod:tapTempo;
 	lv2:default 0.2 ;
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
