@@ -44,226 +44,9 @@
 	doap:maintainer <http://guitarix.sourceforge.net#me> ;
 	doap:name "GxRedeye" .
 
-<http://guitarix.sourceforge.net/plugins/gx_redeye#chump>
-    a lv2:Plugin ,
-        lv2:AmplifierPlugin ;
-    doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "GxRedeye Chump";
-    doap:license <http://opensource.org/licenses/isc> ;
-    lv2:project <http://guitarix.sourceforge.net/plugins/gx_redeye> ;
-    lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:requiredFeature urid:map ,
-        bufsz:boundedBlockLength ,
-        work:schedule ;
-    bufsz:minBlockLength 64 ;
-    bufsz:maxBlockLength 8192 ;
-    lv2:extensionData work:interface ;
-
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-
-    lv2:minorVersion 28;
-    lv2:microVersion 3;
-  mod:brand "Guitarix";
-	mod:label "Redeye" ;
-rdfs:comment """
-
-A very complete fuzz
-
-""";
-
-    lv2:port [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 0 ;
-        lv2:symbol "Gain" ;
-        lv2:name "Gain";
-        lv2:default 0.0 ;
-        lv2:minimum -20.0 ;
-        lv2:maximum 20.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 1 ;
-        lv2:symbol "Tone" ;
-        lv2:name "Tone";
-        lv2:default 0.5 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 2 ;
-        lv2:symbol "Volume" ;
-        lv2:name "Volume";
-        lv2:default 0.0 ;
-        lv2:minimum -20.0 ;
-        lv2:maximum 10.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 3 ;
-        lv2:symbol "Feedback" ;
-        lv2:name "Feedback";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 4 ;
-        lv2:symbol "Speed" ;
-        lv2:name "Speed";
-        lv2:default 5.0 ;
-        lv2:minimum 0.1 ;
-        lv2:maximum 10.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 5 ;
-        lv2:symbol "Intensity" ;
-        lv2:name "Intensity";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 10.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 6 ;
-        lv2:symbol "Sinewave" ;
-        lv2:name "Sinewave";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-				lv2:maximum 1.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:AudioPort ,
-            lv2:OutputPort ;
-        lv2:index 7 ;
-        lv2:maximum 1.0 ;
-        lv2:symbol "out" ;
-        lv2:name "Out"
-    ] , [
-        a lv2:AudioPort ,
-            lv2:InputPort ;
-        lv2:index 8 ;
-        lv2:symbol "in" ;
-        lv2:name "in"
-    ] .
-
-
-
-<http://guitarix.sourceforge.net/plugins/gx_redeye#bigchump>
-    a lv2:Plugin ,
-        lv2:AmplifierPlugin ;
-		mod:brand "Guitarix" ;
-    doap:maintainer <http://guitarix.sourceforge.net#me> ;
-    doap:name "GxRedeye Big Chump";
-    doap:license <http://opensource.org/licenses/isc> ;
-    lv2:project <http://guitarix.sourceforge.net/plugins/gx_redeye> ;
-    lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:requiredFeature urid:map ,
-        bufsz:boundedBlockLength ,
-        work:schedule ;
-    bufsz:minBlockLength 64 ;
-    bufsz:maxBlockLength 8192 ;
-    lv2:extensionData work:interface ;
-
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-
-	mod:label "Redeye" ;
-	lv2:minorVersion 28;
-	lv2:microVersion 3;
-rdfs:comment """
-
-More then the normal redeye fuzz
-
-""";
-
-    lv2:port [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 0 ;
-        lv2:symbol "Gain" ;
-        lv2:name "Gain";
-        lv2:default 0.0 ;
-        lv2:minimum -20.0 ;
-        lv2:maximum 20.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 1 ;
-        lv2:symbol "Tone" ;
-        lv2:name "Tone";
-        lv2:default 0.5 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 2 ;
-        lv2:symbol "Volume" ;
-        lv2:name "Volume";
-        lv2:default 0.0 ;
-        lv2:minimum -20.0 ;
-        lv2:maximum 10.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 3 ;
-        lv2:symbol "Feedback" ;
-        lv2:name "Feedback";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 4 ;
-        lv2:symbol "Speed" ;
-        lv2:name "Speed";
-        lv2:default 5.0 ;
-        lv2:minimum 0.1 ;
-        lv2:maximum 10.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 5 ;
-        lv2:symbol "Intensity" ;
-        lv2:name "Intensity";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 10.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:InputPort ,
-            lv2:ControlPort ;
-        lv2:index 6 ;
-        lv2:symbol "Sinewave" ;
-        lv2:name "Sinewave";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
-        lv2:portProperty lv2:notOnGUI;
-    ] , [
-        a lv2:AudioPort ,
-            lv2:OutputPort ;
-        lv2:index 7 ;
-        lv2:symbol "out" ;
-        lv2:name "Out"
-    ] , [
-        a lv2:AudioPort ,
-            lv2:InputPort ;
-        lv2:index 8 ;
-        lv2:symbol "in" ;
-        lv2:name "in"
-    ] .
-
 <http://guitarix.sourceforge.net/plugins/gx_redeye#vibrochump>
     a lv2:Plugin ,
-        lv2:AmplifierPlugin ;
+        lv2:SimulatorPlugin ;
     doap:maintainer <http://guitarix.sourceforge.net#me> ;
     doap:name "GxRedeye Vibro Chump";
     doap:license <http://opensource.org/licenses/isc> ;
@@ -275,20 +58,15 @@ More then the normal redeye fuzz
     bufsz:minBlockLength 64 ;
     bufsz:maxBlockLength 8192 ;
     lv2:extensionData work:interface ;
+    lv2:minorVersion 28;
+    lv2:microVersion 3;
+    mod:brand "Guitarix";
+    mod:label "Redeye Vibro" ;
 
-
-
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_redeye#gui>;
-
-	lv2:minorVersion 28;
-	lv2:microVersion 3;
-mod:brand "Guitarix";
-mod:label "Redeye Vibro" ;
-
-rdfs:comment """
-
-A Fuzz, with a vibrato option.
-
+    rdfs:comment """
+The Vibro Chump is a guitar-amp simulator, sounding a lot like a vintage amplifier whose brandname starts with an F.
+In similar fashion to the original amplifiers from that brand and era, the Vibro Chump sports a "Vibrato" control, which does not actually pitch-shift the sound, but instead, sounds like a really warm tremolo.
+Does not include cabinet simulation, best used in conjunction with the GxCabinet plugin.
 """;
 
     lv2:port [
@@ -351,9 +129,9 @@ A Fuzz, with a vibrato option.
         lv2:index 6 ;
         lv2:symbol "Sinewave" ;
         lv2:name "Sinewave";
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
         lv2:portProperty lv2:toggled;
         lv2:portProperty lv2:integer;
     ] , [
@@ -369,7 +147,3 @@ A Fuzz, with a vibrato option.
         lv2:symbol "in" ;
         lv2:name "in"
     ] .
-
-<http://guitarix.sourceforge.net/plugins/gx_redeye#gui>
-  a guiext:GtkUI;
-  guiext:binary <gx_redeye_gui.so>; .
