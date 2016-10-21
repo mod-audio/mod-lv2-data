@@ -10,9 +10,15 @@
 		pset:value 100.0
 	] , [
 		lv2:symbol "rate" ;
-		pset:value 7.0
+		pset:value 4.0
 	] , [
 		lv2:symbol "tone" ;
 		pset:value 6000.0
+	] . [
+		lv2:symbol "shape" ;
+		pset:value 0.5
+	] . [
+		lv2:symbol "phase" ;
+		pset:value 0.0
 	] .
 

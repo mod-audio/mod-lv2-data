@@ -25,15 +25,51 @@
     ] ;
 
     lv2:port [
-        a lv2:OutputPort, lv2:AudioPort ;
+        a lv2:InputPort, lv2:AudioPort ;
         lv2:index 1 ;
+        lv2:symbol "lv2_audio_in_2" ;
+        lv2:name "Audio Input 2" ;
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 2 ;
         lv2:symbol "lv2_audio_out_1" ;
         lv2:name "Audio Output 1" ;
     ] ;
 
     lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 3 ;
+        lv2:symbol "lv2_audio_out_2" ;
+        lv2:name "Audio Output 2" ;
+    ] ;
+
+    lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 2 ;
+        lv2:index 4 ;
+        lv2:name "rate" ;
+        lv2:symbol "rate" ;
+        lv2:portProperty mod:tapTempo;
+        lv2:portProperty epp:logarithmic ;
+        lv2:default 4.000000 ;
+        lv2:minimum 0.100000 ;
+        lv2:maximum 20.000000 ;
+        units:unit units:hz ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 5 ;
+        lv2:name "shape" ;
+        lv2:symbol "shape" ;
+        lv2:default 0.500000 ;
+        lv2:minimum 0.010000 ;
+        lv2:maximum 0.990000 ;
+        units:unit units:pc ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 6 ;
         lv2:name "tone" ;
         lv2:symbol "tone" ;
         lv2:portProperty epp:logarithmic ;
@@ -43,21 +79,20 @@
         units:unit units:hz ;
     ] ,
     [
-            a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 3 ;
-        lv2:name "rate" ;
-        lv2:symbol "rate" ;
-        lv2:portProperty mod:tapTempo;
-        lv2:portProperty epp:logarithmic ;
-        lv2:default 7.000000 ;
-        lv2:minimum 0.100000 ;
-        lv2:maximum 20.000000 ;
-        units:unit units:hz ;
+
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 7 ;
+        lv2:name "phase" ;
+        lv2:symbol "phase" ;
+        lv2:default 0.000000 ;
+        lv2:minimum -180.000000 ;
+        lv2:maximum 180.000000 ;
+        units:unit units:degree ;
     ] ,
     [
 
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 4 ;
+        lv2:index 8 ;
         lv2:name "depth" ;
         lv2:symbol "depth" ;
         lv2:default 100.000000 ;
@@ -67,7 +102,7 @@
     ] ;
 
     rdfs:comment """
-Harmless is a harmonic tremolo with a crossover tone control.
+Harmless is a waveshapeable harmonic tremolo with a stereo phase control.
 """ ;
 
     mod:brand "SHIRO" ;

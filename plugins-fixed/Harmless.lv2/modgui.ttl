@@ -11,7 +11,7 @@
         modgui:brand "SHIRO" ;
         modgui:label "Harmless" ;
         modgui:model "boxy" ;
-        modgui:panel "3-knobs" ;
+        modgui:panel "5-knobs" ;
         modgui:color "wood3" ;
         modgui:knob "black" ;
         modgui:port [
@@ -26,5 +26,13 @@
             lv2:index 2 ;
             lv2:symbol "tone" ;
             lv2:name "tone" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "shape" ;
+            lv2:name "shape" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "phase" ;
+            lv2:name "phase" ;
         ] ;
     ] .
