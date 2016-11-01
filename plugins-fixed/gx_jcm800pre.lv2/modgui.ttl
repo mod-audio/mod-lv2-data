@@ -35,6 +35,6 @@
         ] , [
             lv2:index 5 ;
             lv2:symbol "GAIN" ;
-            lv2:name "Master Volume" ;
+            lv2:name "Master" ;
         ] ;
     ] .
