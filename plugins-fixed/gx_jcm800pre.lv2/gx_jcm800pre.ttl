@@ -29,6 +29,7 @@
 @prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
 @prefix opt:  <http://lv2plug.in/ns/ext/options#> .
 @prefix bufsz: <http://lv2plug.in/ns/ext/buf-size#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
@@ -54,6 +55,8 @@
         bufsz:boundedBlockLength ;
     bufsz:minBlockLength 64 ;
     bufsz:maxBlockLength 8192 ;
+    mod:brand "Guitarix" ;
+    mod:label "GxJCM800pre" ;
 
     lv2:minorVersion 28;
     lv2:microVersion 3;
