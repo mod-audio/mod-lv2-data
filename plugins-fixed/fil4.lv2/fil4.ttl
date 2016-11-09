@@ -55,6 +55,7 @@ fil4:mono
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
+		lv2:designation lv2:enabled;
 		lv2:index 2 ;
 		lv2:symbol "enable" ;
 		lv2:name "Enable";
@@ -448,6 +449,7 @@ fil4:stereo
 	] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
+		lv2:designation lv2:enabled;
 		lv2:index 2 ;
 		lv2:symbol "enable" ;
 		lv2:name "Enable";
