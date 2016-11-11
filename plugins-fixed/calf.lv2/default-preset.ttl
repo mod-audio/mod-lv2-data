@@ -46,3 +46,40 @@
 		pset:value 3000.0
 	] .
 
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Compressor> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "detection" ;
+		pset:value 0
+	] , [
+		lv2:symbol "knee" ;
+		pset:value 2.82842994
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "makeup" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 250.0
+	] , [
+		lv2:symbol "stereo_link" ;
+		pset:value 0
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.125
+	] .
