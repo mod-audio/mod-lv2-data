@@ -52,9 +52,6 @@
 <http://calf.sourceforge.net/plugins/ReverseDelay> a lv2:Plugin ;
     dct:replaces <urn:ladspa:33922> ;
     lv2:binary <calf.so> ; rdfs:seeAlso <modguis.ttl> , <ReverseDelay.ttl> .
-<http://calf.sourceforge.net/plugins/Compressor> a lv2:Plugin ;
-    dct:replaces <urn:ladspa:34050> ;
-    lv2:binary <calf.so> ; rdfs:seeAlso <modguis.ttl> , <Compressor.ttl> .
 <http://calf.sourceforge.net/plugins/SidechainCompressor> a lv2:Plugin ;
     dct:replaces <urn:ladspa:34071> ;
     lv2:binary <calf.so> ; rdfs:seeAlso <modguis.ttl> , <SidechainCompressor.ttl> .
