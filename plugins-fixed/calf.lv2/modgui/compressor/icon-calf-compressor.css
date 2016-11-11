@@ -257,18 +257,18 @@
 
 /* titles of things */
 
-.calf-compressor .title-field{
+.calf-compressor .title-field {
     color: #FFF;
     font-size: 10px;
 }
-.toggle1-silver {
+.calf-compressor .toggle1-silver {
     background: url(/resources/img/toggle1_silver.png{{{ns}}});
     height: 20px;
     position: absolute;
     width: 30px;
 }
 
-.toggle2_silver-silver {
+.calf-compressor .toggle2_silver-silver {
     background: url(/resources/img/toggle2_silver.png{{{ns}}});
     height: 40px;
     position: absolute;
@@ -294,7 +294,7 @@
 .calf-compressor .line-cols-all {
     position: absolute;
 }
-.calf-compressor span.value-lines{
+.calf-compressor span.value-lines {
     font-size: 11px;
     left: 0;
     right: 0;
@@ -333,7 +333,7 @@
     width: 360px !important;
 }
 
-.calf-compressor .calf-control-group.top{
+.calf-compressor .calf-control-group.top {
     width: 406px;
     height: 116px;
     margin-left: 111px;
@@ -341,13 +341,12 @@
 .calf-compressor .calf-control-group.sides {
     width: 100px;
 }
-.calf-compressor .border-solid-and-radius{
-    width: 406px;
+.calf-compressor .border-solid-and-radius {
     height: 112px;
     margin-left: 70px;
     bottom: 10px;
 }
-.calf-compressor .knob{
+.calf-compressor .knob {
     margin-left: 28px;
 }
 .calf-compressor .slider {
@@ -373,10 +372,10 @@
     cursor: pointer;
 }
 
-.calf-compressor .toggle .off{
+.calf-compressor .toggle .off {
     background-position: 0 top !important;
 }
-.calf-compressor .toggle .on{
+.calf-compressor .toggle .on {
     background-position: 0 bottom !important;
 }
 
@@ -410,14 +409,17 @@
     text-align: center;
 }
 
-.knob, .slider-horiz, .tubeh2-off, .freq {
+.calf-compressor .knob,
+.calf-compressor .slider-horiz,
+.calf-compressor .tubeh2-off,
+.calf-compressor .freq {
     z-index: 99999;
 }
 
 /* Input/Output */
- .calf-pedal-input {
+.calf-compressor .calf-pedal-input {
     left:-46px !important;
  }
-.calf-pedal-output {
+.calf-compressor .calf-pedal-output {
     right:-44px !important;
 }
