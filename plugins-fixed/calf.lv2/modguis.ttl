@@ -5,11 +5,11 @@
 ## START http://calf.sourceforge.net/plugins/Compressor
 <http://calf.sourceforge.net/plugins/Compressor>
     modgui:gui [
-        modgui:resourcesDirectory <modgui-compressor>;
-        modgui:stylesheet <modgui-compressor/icon-calf-compressor.css>;
-        modgui:iconTemplate <modgui-compressor/icon-calf-compressor.html>;
-        modgui:screenshot <modgui-compressor/screenshot-calf-compressor.png>;
-        modgui:thumbnail <modgui-compressor/thumb-calf-compressor.png>;
+        modgui:resourcesDirectory <modgui>;
+        modgui:stylesheet <modgui/compressor/icon-calf-compressor.css>;
+        modgui:iconTemplate <modgui/compressor/icon-calf-compressor.html>;
+        modgui:screenshot <modgui/compressor/screenshot-calf-compressor.png>;
+        modgui:thumbnail <modgui/compressor/thumb-calf-compressor.png>;
     ] .
 ## END http://calf.sourceforge.net/plugins/Compressor
 ###############################################################################
