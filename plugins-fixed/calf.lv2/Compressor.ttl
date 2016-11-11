@@ -87,6 +87,7 @@
         lv2:symbol "bypass" ;
         lv2:name "Bypass" ;
         lv2:portProperty epp:hasStrictBounds ;
+        lv2:portProperty epp:notOnGUI ;
         lv2:portProperty lv2:toggled ;
         lv2:default 0.00000 ;
         lv2:minimum 0.00000 ;
