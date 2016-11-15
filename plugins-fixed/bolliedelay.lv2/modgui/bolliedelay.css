@@ -1,0 +1,253 @@
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+
+/* = CONTAINER
+================================================ */
+.bolliedelay {
+    background-image:url(/resources/background.png{{{ns}}});
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:640px 320px;
+    border-radius: 21px;
+    height:312px;
+    position:absolute;
+    width:623px;
+    padding: 10px 10px 10px 5px;
+    text-align: center;
+}
+
+/* = Labels
+================================================ */
+
+.bolliedelay .bollie-plugin-name {
+    overflow:hidden;
+    position:absolute;
+    left:260px;
+    bottom: 0px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.bolliedelay .bollie-plugin-name h1 {
+    font-family:"cooper hewitt", Sans-serif !important;
+    font-weight: bold;
+    font-size:80px;
+    color: #898989;
+    line-height:1;
+}
+
+.bolliedelay .bollie-label {
+    text-transform:uppercase;
+    font-size:11px;
+    font-weight:bold;
+    color: #efefef;
+    display: block;
+    position: absolute;
+}
+
+.bolliedelay .bollie-label.bypass {
+    bottom: 10px;
+    left: 145px;
+}
+
+.bolliedelay .bollie-label.tap {
+    bottom: 10px;
+    right: 40px;
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.bolliedelay .mod-light {
+    background-position:center center;
+    background-repeat:no-repeat;
+    bottom:58px;
+    height:32px;
+    width:32px;
+    left:125px;
+    position:absolute;
+}
+
+/* = FOOTSWITCH
+================================================ */
+.bolliedelay .mod-footswitch {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    cursor:pointer;
+    height:66px;
+    width: 66px;
+    margin: 4px auto 0 auto;
+    position: absolute;
+    left: 180px;
+    bottom: 12px;
+    z-index: 20;
+}
+
+.bolliedelay .mod-footswitch.on {
+    background-position: top center !important;
+}
+
+
+/* = Push Buttons
+================================================ */
+.bolliedelay .mod-pushbutton {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    cursor:pointer;
+    height: 66px;
+    width: 66px;
+    margin: 4px auto 0 auto;
+    position: absolute;
+    bottom: 12px;
+    right: 50px;
+}
+
+.bolliedelay .mod-pushbutton.on {
+    background-position: bottom center !important;
+}
+
+/* = Toggle
+================================================ */
+.bolliedelay .mod-toggle {
+    background-image:url(/resources/toggle.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 120px;
+    cursor:pointer;
+    height: 60px;
+    width: 43px;
+    margin: 4px auto 0 auto;
+}
+
+.bolliedelay .mod-toggle.on {
+    background-position: top center !important;
+}
+
+
+/* = KNOBS
+================================================ */
+.bolliedelay .bollie-group {
+    margin:5px 0px 0px 5px !important;
+    position:relative;
+    text-align:left;
+    z-index:30;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    width: auto;
+    display:inline-block;
+    padding: 2px 2px 0px 2px;
+}
+
+.bolliedelay .bollie-group .mod-knob > span.mod-knob-title {
+    bottom:14px;
+    cursor:default;
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:12px;
+    left:0;
+    line-height:1;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+    text-align: center;
+    color: #efefef;
+}
+
+.bolliedelay .bollie-group .mod-knob .mod-knob-value {
+    bottom:0px;
+    font-size:11px;
+    left:0;
+    line-height:1;
+    position:absolute;
+    right:0;
+    z-index:60;
+    color: #32af3e;
+    background-color: #111111;
+    padding: 2px;
+    text-align: right;
+}
+
+.bolliedelay .bollie-group .mod-knob .bollie-value{
+    font-size:11px;
+    left:0;
+    line-height:1;
+    right:0;
+    z-index:60;
+    padding: 5px;
+    top: 23px;
+    color: #32af3e;
+    position:absolute;
+    background-color: #111111;
+    text-align: center;
+}
+
+.bolliedelay .bollie-group .mod-knob .mod-knob-image {
+    background-image:url(/resources/aluminium.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 60px;
+    height:60px;
+    width:60px;
+    margin:0 auto;
+}
+
+.bolliedelay .bollie-group .mod-knob {
+    display:inline-block;
+    height:88px;
+    width:70px;
+    margin:1px 1px;
+    overflow:hidden;
+    position:relative;
+}
+
+.bolliedelay .bollie-group .mod-knob.bpm {
+    width: 62px;
+}
+
+/* = ENUMERATED LIST
+================================================ */
+
+.bolliedelay .mod-enumerated {
+    background-image:url(/resources/dropdown-arrow-black.png{{{ns}}});
+    background-position:right center;
+    background-repeat:no-repeat;
+    font-size:11px;
+    font-weight:bold;
+    left:0;
+    line-height:2;
+    overflow:hidden;
+    position:absolute;
+    right:0;
+    text-align:center;
+}
+
+.bolliedelay .mod-enumerated .mod-enumerated-selected {
+    padding:3px 9px;
+}
+
+.bolliedelay .mod-enumerated .mod-enumerated-list {
+    background-color:rgba(0,0,0,.9);
+    color:#fff;
+    display:none;
+    height:115px;
+    overflow:auto;
+    position:relative;
+}
+
+.bolliedelay .mod-enumerated .mod-enumerated-list > div {
+    padding:3px 9px;
+}
+
+.bolliedelay .mod-enumerated .mod-enumerated-list > div:hover {
+    background-color:rgba(255,255,255,.2);
+    cursor:pointer;
+}
+

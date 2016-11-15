@@ -1,0 +1,154 @@
+  <div class="mod-pedal bolliedelay">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="bollie-group">
+      <div class="mod-knob" title="This sets the tempo mode.">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="tempo_mode"></div><span class=
+        "mod-knob-title">Tempo Mode</span>
+        <div class="mod-knob-value" contenteditable="false"
+        mod-role="input-control-value" mod-port-symbol=
+        "tempo_mode"></div>
+      </div>
+      <div class="mod-knob" title="This sets the tempo in BPM.">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="tempo_user"></div><span class=
+        "mod-knob-title">User Tempo</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol=
+        "tempo_user"></div>
+      </div>
+      <div class="mod-knob" title="Delay Time Division Left">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="div_l"></div><span class=
+        "mod-knob-title">Div. L</span>
+        <div class="mod-knob-value" contenteditable="false"
+        mod-role="input-control-value" mod-port-symbol="div_l">
+        </div>
+      </div>
+      <div class="mod-knob" title="Delay Time Division Right">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="div_r"></div><span class=
+        "mod-knob-title">Div. R</span>
+        <div class="mod-knob-value" contenteditable="false"
+        mod-role="input-control-value" mod-port-symbol="div_r">
+        </div>
+      </div>
+    </div><div class="bollie-group">
+      <div class="mod-knob" title=
+      "This sets the dry/wet blending.">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="mix"></div><span class=
+        "mod-knob-title">Blend</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="mix"></div>
+      </div>
+      <div class="mod-knob" title=
+      "Feedback determines how much is fed back to the same channel.">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="feedback"></div><span class=
+        "mod-knob-title">Feedback</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="feedback">
+        </div>
+      </div>
+      <div class="mod-knob" title=
+      "Crossfeed determines how much is fed to the opposite channel.">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="crossf"></div><span class=
+        "mod-knob-title">Crossfeed</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="crossf">
+        </div>
+      </div>
+    </div><div class="bollie-group">
+      <div class="mod-knob" title="Switch on/off low cut.">
+        <div class="mod-toggle off" mod-role="input-control-port"
+        mod-port-symbol="low_on" mod-widget="switch">
+        </div><span class="mod-knob-title">LCF on</span>
+      </div>
+      <div class="mod-knob" title="Low Cut Frequency">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="low_f"></div><span class=
+        "mod-knob-title">LCF</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="low_f">
+        </div>
+      </div>
+      <div class="mod-knob" title="Low Cut Quality">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="low_q"></div><span class=
+        "mod-knob-title">Low Q</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="low_q">
+        </div>
+      </div>
+    </div><div class="bollie-group">
+      <div class="mod-knob" title="Switch on/off high cut.">
+        <div class="mod-toggle off" mod-role="input-control-port"
+        mod-port-symbol="high_on" mod-widget="switch">
+        </div><span class="mod-knob-title">HCF on</span>
+      </div>
+      <div class="mod-knob" title="High Cut Frequency">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="high_f"></div><span class=
+        "mod-knob-title">HCF</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="high_f">
+        </div>
+      </div>
+      <div class="mod-knob" title="High Cut Quality">
+        <div class="mod-knob-image" mod-role="input-control-port"
+        mod-port-symbol="high_q"></div><span class=
+        "mod-knob-title">High Q</span>
+        <div class="mod-knob-value" contenteditable="true"
+        mod-role="input-control-value" mod-port-symbol="high_q">
+        </div>
+      </div>
+    </div><div class="bollie-group">
+      <div class="mod-knob bpm" title="Current BPM">
+        <div class="bollie-value" contenteditable="false"
+        mod-role="output-control-value" mod-port-symbol=
+        "tempo_out"></div><span class="mod-knob-title">
+        Cur. Tempo</span>
+      </div>
+    </div>
+    <div class="mod-light on" mod-role="bypass-light"></div>
+    <div class="bollie-label bypass">Bypass</div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="bollie-label tap">Tap</div>
+    <div class="mod-pushbutton off" mod-role=
+        "input-control-port" mod-port-symbol="tap" mod-widget=
+        "switch">
+    </div>
+    <div class="bollie-plugin-name">
+      <h1>Delay</h1>
+    </div>
+    <div class="mod-pedal-input">
+      {{#effect.ports.audio.input}}
+      <div class="mod-input mod-input-disconnected" title=
+      "{{name}}" mod-role="input-audio-port" mod-port-symbol=
+      "{{symbol}}">
+        <div class="mod-pedal-input-image"></div>
+      </div>{{/effect.ports.audio.input}}
+      {{#effect.ports.midi.input}}
+      <div class="mod-input mod-input-disconnected" title=
+      "{{name}}" mod-role="input-midi-port" mod-port-symbol=
+      "{{symbol}}">
+        <div class="mod-pedal-input-image"></div>
+      </div>{{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+      {{#effect.ports.audio.output}}
+      <div class="mod-output mod-output-disconnected" title=
+      "{{name}}" mod-role="output-audio-port" mod-port-symbol=
+      "{{symbol}}">
+        <div class="mod-pedal-output-image"></div>
+      </div>{{/effect.ports.audio.output}}
+      {{#effect.ports.midi.output}}
+      <div class="mod-output mod-output-disconnected" title=
+      "{{name}}" mod-role="output-midi-port" mod-port-symbol=
+      "{{symbol}}">
+        <div class="mod-pedal-input-image"></div>
+      </div>{{/effect.ports.midi.output}}
+    </div>
+  </div>

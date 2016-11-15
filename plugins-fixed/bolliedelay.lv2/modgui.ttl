@@ -1,0 +1,17 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+
+<https://ca9.eu/lv2/bolliedelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/bolliedelay.html> ;
+        modgui:stylesheet <modgui/bolliedelay.css> ;
+        modgui:javascript <modgui/bolliedelay.js> ;
+        modgui:screenshot <modgui/screenshot-bollie-delay.png> ;
+        modgui:thumbnail <modgui/thumbnail-bollie-delay.png> ;
+        modgui:brand "Bollie" ;
+        modgui:label "Delay" ;
+        modgui:monitoredOutputs [
+            lv2:symbol "tempo_out" ;
+        ] ; 
+    ] .
