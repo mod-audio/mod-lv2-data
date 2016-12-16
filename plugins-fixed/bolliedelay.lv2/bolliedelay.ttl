@@ -18,7 +18,7 @@
     a lv2:Plugin, lv2:DelayPlugin, doap:Project;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     doap:maintainer <http://ca9.eu/bollie#me> ;
-    lv2:microVersion 2 ; lv2:minorVersion 1 ;
+    lv2:microVersion 2 ; lv2:minorVersion 2 ;
     doap:name "Bollie Delay";
     lv2:optionalFeature lv2:hardRTCapable ;
     lv2:port [
@@ -82,7 +82,7 @@
         lv2:index 4 ;
         lv2:symbol "mix" ;
         lv2:name "Blend" ;
-        lv2:default 50.000 ;
+        lv2:default 20.000 ;
         lv2:minimum 0.000 ;
         lv2:maximum 100.000 ;
     ] , [
@@ -269,15 +269,6 @@
         lv2:minimum 6 ;
         lv2:maximum 1000 ;
         units:unit units:bpm ;
-    ] , [
-        a lv2:OutputPort ,
-            lv2:ControlPort ;
-        lv2:index 20 ;
-        lv2:symbol "fade_out" ;
-        lv2:name "Fade Out" ;
-        lv2:default 0 ;
-        lv2:minimum 0.0000 ;
-        lv2:maximum 100.0000 ;
     ] ;
     rdfs:comment '''This stereo tempo delay features high pass and low pass filters as well as host tempo. When using it with the MOD Duo on software version >1.2.0, then please assign a footswitch to Host/MOD-Tempo. Otherwise you can assign the tap button to a foot switch. Always make sure to set the correct tempo mode. 
     Enjoy! :-) And feedback is always welcome.''' .
