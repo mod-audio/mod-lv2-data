@@ -48,8 +48,6 @@
 
 <http://gareus.org/oss/lv2/midifilter#ntapdelay> a lv2:Plugin ; lv2:binary <midifilter.so> ; rdfs:seeAlso <midifilter.ttl> .
 
-<http://gareus.org/oss/lv2/midifilter#passthru> a lv2:Plugin ; lv2:binary <midifilter.so> ; rdfs:seeAlso <midifilter.ttl> .
-
 <http://gareus.org/oss/lv2/midifilter#quantize> a lv2:Plugin ; lv2:binary <midifilter.so> ; rdfs:seeAlso <midifilter.ttl> .
 
 <http://gareus.org/oss/lv2/midifilter#randvelocity> a lv2:Plugin ; lv2:binary <midifilter.so> ; rdfs:seeAlso <midifilter.ttl> .
@@ -105,8 +103,6 @@
 <http://gareus.org/oss/lv2/midifilter#notetoggle> modgui:gui [ modgui:resourcesDirectory <modgui> ; modgui:iconTemplate <modgui/icon-notetoggle.html> ; modgui:stylesheet <modgui/x42-style.css> ; modgui:screenshot <modgui/screenshot-notetoggle.png> ; modgui:thumbnail <modgui/thumbnail-notetoggle.png> ; modgui:brand "x42" ; modgui:label "notetoggle" ; ].
 
 <http://gareus.org/oss/lv2/midifilter#ntapdelay> modgui:gui [ modgui:resourcesDirectory <modgui> ; modgui:iconTemplate <modgui/icon-ntapdelay.html> ; modgui:stylesheet <modgui/x42-style.css> ; modgui:screenshot <modgui/screenshot-ntapdelay.png> ; modgui:thumbnail <modgui/thumbnail-ntapdelay.png> ; modgui:brand "x42" ; modgui:label "ntapdelay" ; ].
-
-<http://gareus.org/oss/lv2/midifilter#passthru> modgui:gui [ modgui:resourcesDirectory <modgui> ; modgui:iconTemplate <modgui/icon-passthru.html> ; modgui:stylesheet <modgui/x42-style.css> ; modgui:screenshot <modgui/screenshot-passthru.png> ; modgui:thumbnail <modgui/thumbnail-passthru.png> ; modgui:brand "x42" ; modgui:label "passthru" ; ].
 
 <http://gareus.org/oss/lv2/midifilter#quantize> modgui:gui [ modgui:resourcesDirectory <modgui> ; modgui:iconTemplate <modgui/icon-quantize.html> ; modgui:stylesheet <modgui/x42-style.css> ; modgui:screenshot <modgui/screenshot-quantize.png> ; modgui:thumbnail <modgui/thumbnail-quantize.png> ; modgui:brand "x42" ; modgui:label "quantize" ; ].
 
@@ -255,12 +251,6 @@ rdfs:seeAlso <presets.ttl> .
 <default-preset_21>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/midifilter#onechannelfilter> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
-
-<default-preset_22>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/midifilter#passthru> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
 

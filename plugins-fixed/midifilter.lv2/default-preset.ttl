@@ -510,10 +510,6 @@
 		pset:value 1.0
 	] .
 
-<default-preset_22>
-	a pset:Preset ;
-	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#passthru> .
-
 <default-preset_23>
 	a pset:Preset ;
 	lv2:appliesTo <http://gareus.org/oss/lv2/midifilter#quantize> ;
