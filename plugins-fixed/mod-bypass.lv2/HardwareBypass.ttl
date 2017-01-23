@@ -22,12 +22,17 @@ doap:maintainer [
     foaf:mbox <mailto:devel@moddevices.com>;
 ];
 
+lv2:minorVersion 1;
+lv2:microVersion 0;
+
 mod:brand "MOD";
 mod:label "Hardware Bypass";
 
 doap:license "GPL";
 
 rdfs:comment """
+Plugin for changing the MOD's True-Bypass switch.
+By having the switch as a plugin control, you address it to a footswitch or MIDI controller.
 """;
 
 lv2:port [
