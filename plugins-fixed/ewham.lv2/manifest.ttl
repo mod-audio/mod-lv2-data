@@ -1,0 +1,13 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://ssj71.github.io/infamousPlugins/plugs.html#ewham>
+        a lv2:Plugin, lv2:PitchPlugin;
+        lv2:binary <ewham.so> ;
+        rdfs:seeAlso <ewham.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://ssj71.github.io/infamousPlugins/plugs.html#ewham> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
