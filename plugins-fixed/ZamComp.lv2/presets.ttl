@@ -37,6 +37,10 @@
     [
         lv2:symbol "outlevel" ;
         pset:value -45.000000 ;
+    ] ,
+    [
+        lv2:symbol "sidech" ;
+        pset:value 0.000000 ;
     ] .
 
 <urn:zamaudio:ZamComp#preset002>
@@ -75,6 +79,10 @@
     [
         lv2:symbol "outlevel" ;
         pset:value -45.000000 ;
+    ] ,
+    [
+        lv2:symbol "sidech" ;
+        pset:value 0.000000 ;
     ] .
 
 <urn:zamaudio:ZamComp#preset003>
@@ -113,6 +121,10 @@
     [
         lv2:symbol "outlevel" ;
         pset:value -45.000000 ;
+    ] ,
+    [
+        lv2:symbol "sidech" ;
+        pset:value 0.000000 ;
     ] .
 
 

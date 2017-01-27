@@ -138,6 +138,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -152,6 +153,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -166,6 +168,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -435,6 +438,6 @@ Mono multiband compressor, with 3 adjustable bands.
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 23 ;
-    lv2:minorVersion 0 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

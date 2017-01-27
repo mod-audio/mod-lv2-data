@@ -102,6 +102,6 @@ HRTF acoustic filtering plugin for directional sound.
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 6 ;
-    lv2:minorVersion 3 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

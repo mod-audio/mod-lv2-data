@@ -10,16 +10,13 @@
     a lv2:Plugin ;
 
     lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ,
-                      <http://lv2plug.in/ns/ext/options#interface> ,
-                      <http://lv2plug.in/ns/ext/worker#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
 
     lv2:optionalFeature <http://lv2plug.in/ns/lv2core#hardRTCapable> ,
                         <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ;
 
     lv2:requiredFeature <http://lv2plug.in/ns/ext/options#options> ,
-                        <http://lv2plug.in/ns/ext/urid#map> ,
-                        <http://lv2plug.in/ns/ext/worker#schedule> ;
+                        <http://lv2plug.in/ns/ext/urid#map> ;
 
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
@@ -150,6 +147,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -164,6 +162,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -178,6 +177,7 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -473,6 +473,6 @@ Stereo version of ZaMultiComp, with individual threshold controls for each band 
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 23 ;
-    lv2:minorVersion 0 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

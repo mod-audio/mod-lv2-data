@@ -148,6 +148,6 @@ Wave digital filter physical model of a triode tube amplifier stage, with modell
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 21 ;
-    lv2:minorVersion 0 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

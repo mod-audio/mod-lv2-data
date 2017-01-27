@@ -47,6 +47,6 @@ You can apply this plugin generously without affecting the tone.
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 6 ;
-    lv2:minorVersion 3 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

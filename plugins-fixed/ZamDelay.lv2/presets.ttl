@@ -20,7 +20,7 @@
     ] ,
     [
         lv2:symbol "div" ;
-        pset:value 3.000000 ;
+        pset:value 3 ;
     ] ,
     [
         lv2:symbol "gain" ;

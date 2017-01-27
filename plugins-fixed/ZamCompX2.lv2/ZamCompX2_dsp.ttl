@@ -29,24 +29,31 @@
         lv2:index 1 ;
         lv2:symbol "lv2_audio_in_2" ;
         lv2:name "Audio Input 2" ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 2 ;
+        lv2:symbol "lv2_sidechain_in" ;
+        lv2:name "Sidechain Input" ;
+        lv2:portProperty lv2:isSideChain;
     ] ;
 
     lv2:port [
         a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 2 ;
+        lv2:index 3 ;
         lv2:symbol "lv2_audio_out_1" ;
         lv2:name "Audio Output 1" ;
     ] ,
     [
         a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 3 ;
+        lv2:index 4 ;
         lv2:symbol "lv2_audio_out_2" ;
         lv2:name "Audio Output 2" ;
     ] ;
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 4 ;
+        lv2:index 5 ;
         lv2:name "Attack" ;
         lv2:symbol "att" ;
         lv2:default 10.000000 ;
@@ -56,7 +63,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 5 ;
+        lv2:index 6 ;
         lv2:name "Release" ;
         lv2:symbol "rel" ;
         lv2:default 80.000000 ;
@@ -66,7 +73,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 6 ;
+        lv2:index 7 ;
         lv2:name "Knee" ;
         lv2:symbol "kn" ;
         lv2:default 0.000000 ;
@@ -76,7 +83,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 8 ;
         lv2:name "Ratio" ;
         lv2:symbol "rat" ;
         lv2:default 4.000000 ;
@@ -87,10 +94,11 @@
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
+        lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 9 ;
         lv2:name "Threshold" ;
         lv2:symbol "thr" ;
         lv2:default 0.000000 ;
@@ -100,7 +108,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 10 ;
         lv2:name "Makeup" ;
         lv2:symbol "mak" ;
         lv2:default 0.000000 ;
@@ -110,7 +118,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 10 ;
+        lv2:index 11 ;
         lv2:name "Slew" ;
         lv2:symbol "slew" ;
         lv2:default 1.000000 ;
@@ -124,22 +132,37 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 11 ;
+        lv2:index 12 ;
         lv2:name "Stereo Detection" ;
         lv2:symbol "stereodet" ;
-        lv2:default 0 ;
-        lv2:minimum 0 ;
-        lv2:maximum 1 ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
         unit:unit [
             rdfs:label  " " ;
             unit:symbol " " ;
             unit:render "%f  " ;
         ] ;
-        lv2:portProperty lv2:integer ;
+        lv2:portProperty lv2:toggled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 13 ;
+        lv2:name "Sidechain" ;
+        lv2:symbol "sidechain" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        unit:unit [
+            rdfs:label  " " ;
+            unit:symbol " " ;
+            unit:render "%f  " ;
+        ] ;
+        lv2:portProperty lv2:toggled ;
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 12 ;
+        lv2:index 14 ;
         lv2:name "Gain Reduction" ;
         lv2:symbol "gr" ;
         lv2:default 0.000000 ;
@@ -149,7 +172,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 13 ;
+        lv2:index 15 ;
         lv2:name "Output Level" ;
         lv2:symbol "outlevel" ;
         lv2:default -45.000000 ;
@@ -173,6 +196,6 @@ Stereo version of ZamComp with knee slew control.
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 19 ;
-    lv2:minorVersion 0 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

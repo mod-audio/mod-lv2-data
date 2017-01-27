@@ -1,11 +1,7 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
-@prefix state: <http://lv2plug.in/ns/ext/state#> .
 
 <urn:zamaudio:ZaMultiCompX2#preset001>
-    state:state [
-    ] ;
-
     lv2:port [
         lv2:symbol "att1" ;
         pset:value 10.000000 ;
@@ -152,9 +148,6 @@
     ] .
 
 <urn:zamaudio:ZaMultiCompX2#preset002>
-    state:state [
-    ] ;
-
     lv2:port [
         lv2:symbol "att1" ;
         pset:value 10.000000 ;

@@ -348,6 +348,6 @@
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 16 ;
-    lv2:minorVersion 1 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 

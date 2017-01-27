@@ -19,6 +19,14 @@
         pset:value 0.000000 ;
     ] ,
     [
+        lv2:symbol "sidechain" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "close" ;
+        pset:value -50.000000 ;
+    ] ,
+    [
         lv2:symbol "outlevel" ;
         pset:value -45.000000 ;
     ] ,

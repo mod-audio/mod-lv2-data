@@ -187,6 +187,6 @@ Two band parametric equaliser with high and low shelving circuits.
         foaf:homepage <http://www.zamaudio.com> ;
     ] ;
 
-    lv2:microVersion 6 ;
-    lv2:minorVersion 3 .
+    lv2:microVersion 7 ;
+    lv2:minorVersion 2 .
 
