@@ -15,13 +15,13 @@ foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
 foaf:mbox <mailto:fraser@arkhostings.com> ;
 ] .
 
-# <http://invadarecords.com/plugins/lv2/compressor/mono> a lv2:Plugin ;
-#                                         lv2:binary <inv_compressor.so> ;
-#                                         rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
+<http://invadarecords.com/plugins/lv2/compressor/mono> a lv2:Plugin ;
+                                        lv2:binary <inv_compressor.so> ;
+                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
 
-# <http://invadarecords.com/plugins/lv2/compressor/stereo> a lv2:Plugin ;
-#                                         lv2:binary <inv_compressor.so> ;
-#                                         rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
+<http://invadarecords.com/plugins/lv2/compressor/stereo> a lv2:Plugin ;
+                                        lv2:binary <inv_compressor.so> ;
+                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
 
 <http://invadarecords.com/plugins/lv2/delay/mono> a lv2:Plugin ;
                                         lv2:binary <inv_delay.so> ;
@@ -111,5 +111,17 @@ foaf:mbox <mailto:fraser@arkhostings.com> ;
 <default-preset_4>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://invadarecords.com/plugins/lv2/phaser/sum> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
+
+<default-preset_5>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://invadarecords.com/plugins/lv2/compressor/mono> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
+
+<default-preset_6>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://invadarecords.com/plugins/lv2/compressor/stereo> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

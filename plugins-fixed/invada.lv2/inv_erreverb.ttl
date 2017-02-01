@@ -42,27 +42,27 @@
 	lv2:index 1 ;
 	lv2:symbol "roomLength" ;
 	lv2:name "Room Length" ;
-	lv2:default 25 ;
-	lv2:minimum 3 ;
-	lv2:maximum 100 ;
+	lv2:default 25.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 100.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
 	lv2:symbol "roomWidth" ;
 	lv2:name "Room Width" ;
-	lv2:default 30 ;
-	lv2:minimum 3 ;
-	lv2:maximum 100 ;
+	lv2:default 30.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 100.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 3 ;
 	lv2:symbol "roomHeight" ;
 	lv2:name "Room Height" ;
-	lv2:default 10 ;
-	lv2:minimum 3 ;
-	lv2:maximum 30 ;
+	lv2:default 10.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 30.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
@@ -212,27 +212,27 @@
 	lv2:index 1 ;
 	lv2:symbol "roomLength" ;
 	lv2:name "Room Length" ;
-	lv2:default 25 ;
-	lv2:minimum 3 ;
-	lv2:maximum 100 ;
+	lv2:default 25.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 100.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
 	lv2:symbol "roomWidth" ;
 	lv2:name "Room Width" ;
-	lv2:default 30 ;
-	lv2:minimum 3 ;
-	lv2:maximum 100 ;
+	lv2:default 30.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 100.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 3 ;
 	lv2:symbol "roomHeight" ;
 	lv2:name "Room Height" ;
-	lv2:default 10 ;
-	lv2:minimum 3 ;
-	lv2:maximum 30 ;
+	lv2:default 10.0 ;
+	lv2:minimum 3.0 ;
+	lv2:maximum 30.0 ;
 	units:unit units:m ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;

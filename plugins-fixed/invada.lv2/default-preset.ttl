@@ -165,3 +165,60 @@
 		pset:value 8.0
 	] .
 
+<default-preset_5>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/compressor/mono> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.015
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.05
+	] , [
+		lv2:symbol "rms" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.0
+	] .
+
+<default-preset_6>
+	a pset:Preset ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/compressor/stereo> ;
+	lv2:port [
+		lv2:symbol "attack" ;
+		pset:value 0.015
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "ratio" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.05
+	] , [
+		lv2:symbol "rms" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value 0.0
+	] .

@@ -15,14 +15,6 @@ foaf:homepage <http://www.invadarecords.com/Downloads.php?ID=00000264> ;
 foaf:mbox <mailto:fraser@arkhostings.com> ;
 ] .
 
-<http://invadarecords.com/plugins/lv2/compressor/mono> a lv2:Plugin ;
-                                        lv2:binary <inv_compressor.so> ;
-                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
-
-<http://invadarecords.com/plugins/lv2/compressor/stereo> a lv2:Plugin ;
-                                        lv2:binary <inv_compressor.so> ;
-                                        rdfs:seeAlso <inv_compressor.ttl> , <modguis.ttl> .
-
 <http://invadarecords.com/plugins/lv2/erreverb/mono> a lv2:Plugin ;
                                         lv2:binary <inv_erreverb.so> ;
                                         rdfs:seeAlso <inv_erreverb.ttl> , <modguis.ttl> .
@@ -62,19 +54,6 @@ foaf:mbox <mailto:fraser@arkhostings.com> ;
 <http://invadarecords.com/plugins/lv2/tube/stereo> a lv2:Plugin ;
                                         lv2:binary <inv_tube.so> ;
                                         rdfs:seeAlso <inv_tube.ttl> , <modguis.ttl> .
-
-
-<default-preset>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://invadarecords.com/plugins/lv2/compressor/mono> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
-
-<default-preset_1>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://invadarecords.com/plugins/lv2/compressor/stereo> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
 
 <default-preset_2>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;

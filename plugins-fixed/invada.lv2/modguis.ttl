@@ -4,7 +4,6 @@
 ###############################################################################
 ## START http://invadarecords.com/plugins/lv2/compressor/mono
 
-
 <http://invadarecords.com/plugins/lv2/compressor/mono>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
