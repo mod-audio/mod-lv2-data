@@ -30,12 +30,13 @@
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-x42-eq .x42-brand h1 {
+    font-family:"Nexa";
     font-size:28px;
     padding:0;
     margin:0;
     color:#aaa;
-    -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
     text-shadow: 0 2px 2px #111;
 }
 
@@ -136,6 +137,13 @@
     overflow:hidden;
 }
 
+.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-toggle .mod-toggle-image.on {
+    background-position: 0px 0px;
+}
+
+.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-toggle .mod-toggle-image.off {
+    background-position: -90px 0px;
+}
 
 .mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-led .mod-led-image {
     background-image:url(/resources/x42-led.png{{{ns}}});
@@ -154,32 +162,6 @@
     position:absolute;
     right:0px;
     bottom:0px;
-    width:24px;
-}
-
-.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-bypass-led .mod-light {
-    height:24px;
-    width:24px;
-    margin:0px;
-    overflow:hidden;
-}
-
-.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-bypass-led .mod-light.off {
-    background-image: url(/resources/led-bypassed.gif{{{ns}}});
-}
-
-.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-bypass-led .mod-light.on {
-    background-image: url(/resources/led-enabled.png{{{ns}}});
-}
-
-.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-bypass-led .mod-footswitch {
-    display:none;
-}
-
-.mod-pedal-boxy{{{cns}}}.mod-x42-eq .mod-control-group .mod-bypass-led {
-    position:absolute;
-    right:0px;
-    top:0px;
     width:24px;
 }
 
