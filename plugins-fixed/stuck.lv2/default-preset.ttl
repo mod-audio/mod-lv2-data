@@ -16,3 +16,17 @@
 		pset:value 0.0
 	] .
 
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://ssj71.github.io/infamousPlugins/plugs.html#stuckstacker> ;
+	lv2:port [
+		lv2:symbol "DRONE_GAIN" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "RELEASE" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "STICK_IT" ;
+		pset:value 0.0
+	] .
+

@@ -12,8 +12,24 @@
 	ui:binary <stuck_ui.so> ;
 	lv2:extensionData ui:idleInterface, ui:resize .
 
+<http://ssj71.github.io/infamousPlugins/plugs.html#stuckstacker>
+        a lv2:Plugin, lv2:DelayPlugin ;
+        lv2:binary <stuck.so> ;
+        rdfs:seeAlso <stuck.ttl> .
+
+<http://ssj71.github.io/infamousPlugins/plugs.html#stuckstacker_ui>
+	a ui:X11UI ;
+	ui:binary <stuck_ui.so> ;
+	lv2:extensionData ui:idleInterface, ui:resize .
+
 <default-preset>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://ssj71.github.io/infamousPlugins/plugs.html#stuck> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
+
+<default-preset_1>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://ssj71.github.io/infamousPlugins/plugs.html#stuckstacker> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
