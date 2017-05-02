@@ -10,7 +10,4 @@
         modgui:thumbnail <modgui/thumbnail-setbfree-dsp-tonewheel-organ.png> ;
         modgui:brand "x42" ;
         modgui:label "setBfree" ;
-        modgui:model "boxy-small" ;
-        modgui:panel "1-footswitch" ;
-        modgui:color "wood3" ;
     ] .

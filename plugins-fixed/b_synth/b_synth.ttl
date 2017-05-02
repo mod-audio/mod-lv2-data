@@ -23,7 +23,7 @@
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree DSP Tonewheel Organ";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-	lv2:microVersion 0 ;lv2:minorVersion 2048 ;
+	lv2:microVersion 0 ;lv2:minorVersion 2056 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:requiredFeature urid:map , work:schedule ;
 	lv2:extensionData state:interface , work:interface ;
@@ -54,6 +54,7 @@
 		lv2:index 2 ;
 		lv2:symbol "outL" ;
 		lv2:name "Left Output" ;
+		pg:group pg:StereoGroup;
 		lv2:designation pg:left ;
 	],	
 	[
@@ -62,9 +63,10 @@
 		lv2:index 3 ;
 		lv2:symbol "outR" ;
 		lv2:name "Right Output" ;
+		pg:group pg:StereoGroup;
 		lv2:designation pg:right
 	];
-	mod:brand "x42" ;
-	mod:label "setBfree" ;
+	mod:brand "x42";
+	mod:label "setBfree";
 	rdfs:comment "setBfree is a MIDI-controlled, software synthesizer designed to imitate the sound and properties of the electromechanical organs and sound modification devices that brought world-wide fame to the names and products of Laurens Hammond and Don Leslie."
 	.
