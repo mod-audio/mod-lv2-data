@@ -1,0 +1,90 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/b_whirl#mod> ;
+	lv2:port [
+		lv2:symbol "drumaccel" ;
+		pset:value 4.12699986
+	] , [
+		lv2:symbol "drumbrake" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "drumdecel" ;
+		pset:value 1.37100005
+	] , [
+		lv2:symbol "drumlvl" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drumrpmfast" ;
+		pset:value 357.29998779
+	] , [
+		lv2:symbol "drumrpmslow" ;
+		pset:value 36.0
+	] , [
+		lv2:symbol "drumwidth" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filtafreq" ;
+		pset:value 4500.0
+	] , [
+		lv2:symbol "filtagain" ;
+		pset:value -30.0
+	] , [
+		lv2:symbol "filtaq" ;
+		pset:value 2.74559999
+	] , [
+		lv2:symbol "filtatype" ;
+		pset:value 0
+	] , [
+		lv2:symbol "filtbfreq" ;
+		pset:value 300.0
+	] , [
+		lv2:symbol "filtbgain" ;
+		pset:value -30.0
+	] , [
+		lv2:symbol "filtbq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "filtbtype" ;
+		pset:value 7
+	] , [
+		lv2:symbol "filtdfreq" ;
+		pset:value 811.96948242
+	] , [
+		lv2:symbol "filtdgain" ;
+		pset:value -38.92910004
+	] , [
+		lv2:symbol "filtdq" ;
+		pset:value 1.60160005
+	] , [
+		lv2:symbol "filtdtype" ;
+		pset:value 8
+	] , [
+		lv2:symbol "hornaccel" ;
+		pset:value 0.161
+	] , [
+		lv2:symbol "hornbrakepos" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "horndecel" ;
+		pset:value 0.32100001
+	] , [
+		lv2:symbol "hornleak" ;
+		pset:value -16.46999931
+	] , [
+		lv2:symbol "hornlvl" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "hornrpmfast" ;
+		pset:value 423.35998535
+	] , [
+		lv2:symbol "hornrpmslow" ;
+		pset:value 40.31999969
+	] , [
+		lv2:symbol "rt_speed" ;
+		pset:value 1
+	] .
+

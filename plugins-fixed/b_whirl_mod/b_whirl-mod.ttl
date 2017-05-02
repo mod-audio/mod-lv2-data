@@ -1,0 +1,445 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix mod: <http://moddevices.com/ns/mod#> .
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix pp: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person ;
+	foaf:name "Robin Gareus" ;
+	foaf:mbox <mailto:robin@gareus.org> ;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/b_whirl#mod>
+	a doap:Project, lv2:Plugin, lv2:SimulatorPlugin;
+	doap:maintainer <http://gareus.org/rgareus#me> ;
+	doap:name "setBfree Whirl Speaker";
+	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
+	lv2:microVersion 0 ;lv2:minorVersion 2056 ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port
+	[
+		a lv2:AudioPort ,
+			lv2:InputPort ;
+		lv2:index 0 ;
+		lv2:symbol "in" ;
+		lv2:name "Input" ;
+		lv2:designation pg:center ;
+	],
+	[
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 1 ;
+		lv2:symbol "left" ;
+		lv2:name "Left Output" ;
+		lv2:designation pg:left ;
+	],
+	[
+		a lv2:AudioPort ,
+			lv2:OutputPort ;
+		lv2:index 2 ;
+		lv2:symbol "right" ;
+		lv2:name "Right Output" ;
+		lv2:designation pg:right ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 3 ;
+		lv2:symbol "rt_speed" ;
+		lv2:name "Motor";
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 2 ;
+		lv2:portProperty lv2:integer, lv2:enumeration ;
+		lv2:scalePoint [ rdfs:label "Stop"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Slow"; rdf:value 1 ; ] ;
+		lv2:scalePoint [ rdfs:label "Fast"; rdf:value 2 ; ] ;
+		rdfs:comment "Motor control" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 4 ;
+		lv2:symbol "hornlvl" ;
+		lv2:name "Horn Level";
+		lv2:default 0.0 ;
+		lv2:minimum -20.0;
+		lv2:maximum +20.0 ;
+		units:unit units:db;
+		rdfs:comment "Horn wet-signal volume" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 5 ;
+		lv2:symbol "drumlvl" ;
+		lv2:name "Drum Level";
+		lv2:default 0.0 ;
+		lv2:minimum -20.0;
+		lv2:maximum +20.0 ;
+		units:unit units:db;
+		rdfs:comment "Drum wet-signal level" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 6 ;
+		lv2:symbol "drumwidth" ;
+		lv2:name "Drum Stereo Width";
+		lv2:default 1.0 ;
+		lv2:minimum 0.0;
+		lv2:maximum 2.0 ;
+		rdfs:comment "Microphone angle/setup for the baffle" ;
+		lv2:scalePoint [
+			rdfs:label "Mono/Left" ;
+			rdf:value 0.0 ;
+		] , [
+			rdfs:label "stereo" ;
+			rdf:value 1.0 ;
+		] , [
+			rdfs:label "Mono/Right" ;
+			rdf:value 2.0 ;
+		];
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 7 ;
+		lv2:symbol "hornrpmslow" ;
+		lv2:name "Horn Speed Slow";
+		lv2:default 40.32;
+		lv2:minimum   5.0 ;
+		lv2:maximum 200.0 ;
+		units:unit [ a units:Unit; rdfs:label "rpm"; units:symbol "rpm"; units:render "%.1f RPM"; ] ;
+		rdfs:comment "Target RPM for slow (aka choral) horn speed" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 8 ;
+		lv2:symbol "hornrpmfast" ;
+		lv2:name "Horn Speed Fast";
+		lv2:default 423.36;
+		lv2:minimum 100.0;
+		lv2:maximum 1000.0 ;
+		units:unit [ a units:Unit; rdfs:label "rpm"; units:symbol "rpm"; units:render "%.1f RPM"; ] ;
+		rdfs:comment "Target RPM for fask (aka tremolo) horn speed" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 9 ;
+		lv2:symbol "hornaccel" ;
+		lv2:name "Horn Acceleration";
+		lv2:default 0.161 ;
+		lv2:minimum 0.001 ;
+		lv2:maximum 10.0 ;
+		units:unit units:s;
+		rdfs:comment "Time required to accelerate the horn (exponential time constant)" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 10 ;
+		lv2:symbol "horndecel" ;
+		lv2:name "Horn Deceleration";
+		lv2:default 0.321 ;
+		lv2:minimum 0.001 ;
+		lv2:maximum 10.0 ;
+		units:unit units:s;
+		rdfs:comment "Time required to decelerate the horn (exponential time constant)" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 11 ;
+		lv2:symbol "hornbrakepos" ;
+		lv2:name "Horn Brake Position";
+		lv2:default 1.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		rdfs:comment "Horn stop position. Clockwise position where to stop. (0: free-stop, 1.0:front-center). Note, the original Leslie can not do this, yet sometimes the horn is aimed at the back of the cabinet when it comes to a halt, which results in a less than desirable sound." ;
+		lv2:scalePoint [
+			rdfs:label "No brake" ;
+			rdf:value 0.0 ;
+		] , [
+			rdfs:label "Left" ;
+			rdf:value .25 ;
+		] , [
+			rdfs:label "Back" ;
+			rdf:value .5 ;
+		] , [
+			rdfs:label "Right" ;
+			rdf:value .75 ;
+		] , [
+			rdfs:label "Front" ;
+			rdf:value 1.0 ;
+		];
+		units:unit units:degree;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 12 ;
+		lv2:symbol "filtatype" ;
+		lv2:name "Horn Flt-1 Type";
+		lv2:default 0;
+		lv2:minimum 0 ;
+		lv2:maximum 8 ;
+		lv2:portProperty lv2:integer, lv2:enumeration ;
+		lv2:scalePoint [ rdfs:label "low-pass"; rdf:value 0 ] ;
+		lv2:scalePoint [ rdfs:label "high-pass"; rdf:value 1 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 0 (peak gain = Q)"; rdf:value 2 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 1 (constant 0dB peak gain)"; rdf:value 3 ] ;
+		lv2:scalePoint [ rdfs:label "notch"; rdf:value 4 ] ;
+		lv2:scalePoint [ rdfs:label "all-pass"; rdf:value 5 ] ;
+		lv2:scalePoint [ rdfs:label "peaking-eq"; rdf:value 6 ] ;
+		lv2:scalePoint [ rdfs:label "low-shelf"; rdf:value 7 ] ;
+		lv2:scalePoint [ rdfs:label "high-shelf"; rdf:value 8 ] ;
+		lv2:portProperty pp:causesArtifacts;
+		rdfs:comment "This is the first of two filters to shape the signal to be sent to the horn-speaker. Changing the type will fade the audio.";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 13 ;
+		lv2:symbol "filtafreq" ;
+		lv2:name "Horn Flt-1 Frequency";
+		lv2:default 4500.0 ;
+		lv2:minimum 250.0 ;
+		lv2:maximum 8000.0 ;
+		rdfs:comment "Filter frequency";
+		units:unit units:hz;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 14 ;
+		lv2:symbol "filtaq" ;
+		lv2:name "Horn Flt-1 Quality";
+		lv2:default 2.7456 ;
+		lv2:minimum 0.01 ;
+		lv2:maximum 6.0 ;
+		rdfs:comment "Filter bandwidth" ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 15 ;
+		lv2:symbol "filtagain" ;
+		lv2:name "Horn Flt-1 Gain";
+		lv2:default -30.0 ;
+		lv2:minimum -48.0 ;
+		lv2:maximum  48.0 ;
+		units:unit units:db;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 16 ;
+		lv2:symbol "filtbtype" ;
+		lv2:name "Horn Flt-2 Type";
+		lv2:default 7;
+		lv2:minimum 0 ;
+		lv2:maximum 8 ;
+		lv2:portProperty lv2:integer, lv2:enumeration ;
+		lv2:scalePoint [ rdfs:label "low-pass"; rdf:value 0 ] ;
+		lv2:scalePoint [ rdfs:label "high-pass"; rdf:value 1 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 0 (peak gain = Q)"; rdf:value 2 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 1 (constant 0dB peak gain)"; rdf:value 3 ] ;
+		lv2:scalePoint [ rdfs:label "notch"; rdf:value 4 ] ;
+		lv2:scalePoint [ rdfs:label "all-pass"; rdf:value 5 ] ;
+		lv2:scalePoint [ rdfs:label "peaking-eq"; rdf:value 6 ] ;
+		lv2:scalePoint [ rdfs:label "low-shelf"; rdf:value 7 ] ;
+		lv2:scalePoint [ rdfs:label "high-shelf"; rdf:value 8 ] ;
+		lv2:portProperty pp:causesArtifacts;
+		rdfs:comment "This is the second of two filters to shape the signal to be sent to the horn-speaker, by default a low-shelf filter with negative gain to remove frequencies which are sent to the drum. Changing the type will fade the audio.";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 17 ;
+		lv2:symbol "filtbfreq" ;
+		lv2:name "Horn Flt-2 Frequency";
+		lv2:default 300.0 ;
+		lv2:minimum 250.0 ;
+		lv2:maximum 8000.0 ;
+		rdfs:comment "Filter frequency";
+		units:unit units:hz;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 18 ;
+		lv2:symbol "filtbq" ;
+		lv2:name "Horn Flt-2 Quality";
+		lv2:default 1.0 ;
+		lv2:minimum 0.01 ;
+		lv2:maximum 6.0 ;
+		rdfs:comment "Filter bandwidth";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 19 ;
+		lv2:symbol "filtbgain" ;
+		lv2:name "Horn Flt-2 Gain";
+		lv2:default -30.0 ;
+		lv2:minimum -48.0 ;
+		lv2:maximum  48.0 ;
+		units:unit units:db;
+	],
+
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 20 ;
+		lv2:symbol "drumrpmslow" ;
+		lv2:name "Drum Speed Slow";
+		lv2:default 36.0 ;
+		lv2:minimum 5.0 ;
+		lv2:maximum 100.0 ;
+		rdfs:comment "Target RPM for slow (aka choral) drum speed" ;
+		units:unit [ a units:Unit; rdfs:label "rpm"; units:symbol "rpm"; units:render "%.1f RPM"; ] ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 21 ;
+		lv2:symbol "drumrpmfast" ;
+		lv2:name "Drum Speed Fast";
+		lv2:default 357.3;
+		lv2:minimum 60.0;
+		lv2:maximum 600.0 ;
+		rdfs:comment "Target RPM for fast (aka tremolo) drum speed" ;
+		units:unit [ a units:Unit; rdfs:label "rpm"; units:symbol "rpm"; units:render "%.1f RPM"; ] ;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 22 ;
+		lv2:symbol "drumaccel" ;
+		lv2:name "Drum Acceleration";
+		lv2:default 4.127 ;
+		lv2:minimum 0.01 ;
+		lv2:maximum 20.0 ;
+		units:unit units:s;
+		rdfs:comment "Time required to accelerate the drum (exponential time constant)" ;
+
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 23 ;
+		lv2:symbol "drumdecel" ;
+		lv2:name "Drum Deceleration";
+		lv2:default 1.371 ;
+		lv2:minimum 0.01 ;
+		lv2:maximum 20.0 ;
+		rdfs:comment "Time required to decelerate the drum (exponential time constant)" ;
+		units:unit units:s;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 24 ;
+		lv2:symbol "drumbrake" ;
+		lv2:name "Drum Brake Position";
+		lv2:default 1.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		lv2:scalePoint [
+			rdfs:label "No brake" ;
+			rdf:value 0.0 ;
+		] , [
+			rdfs:label "Right" ;
+			rdf:value .25 ;
+		] , [
+			rdfs:label "Back" ;
+			rdf:value .5 ;
+		] , [
+			rdfs:label "Left" ;
+			rdf:value .75 ;
+		] , [
+			rdfs:label "Front" ;
+			rdf:value 1.0 ;
+		];
+		units:unit units:degree;
+		rdfs:comment "Drum stop position. Clockwise position where to stop. (0: free-stop, 1.0:front-center)";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 25 ;
+		lv2:symbol "filtdtype" ;
+		lv2:name "Drum Filter Type";
+		lv2:default 8;
+		lv2:minimum 0 ;
+		lv2:maximum 8 ;
+		lv2:portProperty lv2:integer, lv2:enumeration ;
+		lv2:scalePoint [ rdfs:label "low-pass"; rdf:value 0 ] ;
+		lv2:scalePoint [ rdfs:label "high-pass"; rdf:value 1 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 0 (peak gain = Q)"; rdf:value 2 ] ;
+		lv2:scalePoint [ rdfs:label "band-pass 1 (constant 0dB peak gain)"; rdf:value 3 ] ;
+		lv2:scalePoint [ rdfs:label "notch"; rdf:value 4 ] ;
+		lv2:scalePoint [ rdfs:label "all-pass"; rdf:value 5 ] ;
+		lv2:scalePoint [ rdfs:label "peaking-eq"; rdf:value 6 ] ;
+		lv2:scalePoint [ rdfs:label "low-shelf"; rdf:value 7 ] ;
+		lv2:scalePoint [ rdfs:label "high-shelf"; rdf:value 8 ] ;
+		lv2:portProperty pp:causesArtifacts;
+		rdfs:comment "This filter separates the signal to be sent to the drum-speaker. It should be a high-shelf filter with negative gain. Changing the type will fade the audio."
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 26;
+		lv2:symbol "filtdfreq" ;
+		lv2:name "Drum Filter Frequency";
+		lv2:default 811.9695 ;
+		lv2:minimum 50.0 ;
+		lv2:maximum 8000.0 ;
+		units:unit units:hz;
+		rdfs:comment "Filter frequency";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 27 ;
+		lv2:symbol "filtdq" ;
+		lv2:name "Drum Filter Quality";
+		lv2:minimum 0.01 ;
+		lv2:default 1.6016 ;
+		lv2:maximum 6.0 ;
+		rdfs:comment "Filter bandwidth";
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 28 ;
+		lv2:symbol "filtdgain" ;
+		lv2:name "Drum Filter Gain";
+		lv2:default -38.9291;
+		lv2:minimum -48.0 ;
+		lv2:maximum  48.0 ;
+		units:unit units:db;
+	],
+	[
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 29 ;
+		lv2:symbol "hornleak" ;
+		lv2:name "Horn Signal Leakage";
+		lv2:default -16.47;
+		lv2:minimum -80.0 ;
+		lv2:maximum  -3.0 ;
+		units:unit units:db;
+	];
+	mod:brand "x42";
+	mod:label "Whirl Speaker";
+	rdfs:comment "A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie" ;
+	.
