@@ -17,7 +17,7 @@
 <http://gareus.org/oss/lv2/b_whirl#simple>
 	a  doap:Project, lv2:Plugin, lv2:SimulatorPlugin;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
-	doap:name "setBfree Whirl Speaker";
+	doap:name "setBfree Whirl Speaker (Old version)";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	lv2:microVersion 0 ;lv2:minorVersion 2048 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
@@ -112,5 +112,8 @@
 	];
 	mod:brand "x42" ;
 	mod:label "Whirl Speaker" ;
-	rdfs:comment "A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie" ;
+	rdfs:comment """
+A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie.
+Please not that this plugin is an old version, kept online for backwards-compatibility purposes.
+""" ;
 	.
