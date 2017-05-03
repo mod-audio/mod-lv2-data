@@ -111,7 +111,7 @@
 	];
 	];
 	mod:brand "x42" ;
-	mod:label "Whirl Speaker" ;
+	mod:label "Whirl Spkr (Old)" ;
 	rdfs:comment """
 A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie.
 Please not that this plugin is an old version, kept online for backwards-compatibility purposes.
