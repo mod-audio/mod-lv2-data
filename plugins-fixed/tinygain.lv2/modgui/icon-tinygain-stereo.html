@@ -1,0 +1,34 @@
+<div class="mod-pedal x42-tinygain{{{cns}}}">
+	<div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+	<div class="db-label"><h1>dB</h1></div>
+	<div class="enable-led off" mod-role="input-control-port" mod-port-symbol="mute"></div>
+
+	<div class="mod-display-group clearfix" mod-role="dpm">
+		<div title="Output Digital Peak, rise-time: immediate, falloff: 15dB/sec">
+			<span class="db" mod-role="level">0.0</span>
+		</div>
+	</div>
+	<div class="mod-control-group clearfix">
+		<div class="mod-knob" title="Gain Control">
+			<div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="gain"></div>
+			<div class="mod-knob-value" contenteditable="true" mod-role="input-control-value" mod-port-symbol="gain"></div>
+			<div class="mod-knob-value hidden" mod-role="muted">muted</div>
+		</div>
+	</div>
+
+	<div class="mod-pedal-input stereo">
+		{{#effect.ports.audio.input}}
+		<div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+			<div class="mod-pedal-input-image"></div>
+		</div>
+		{{/effect.ports.audio.input}}
+	</div>
+	<div class="mod-pedal-output stereo">
+		{{#effect.ports.audio.output}}
+		<div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+			<div class="mod-pedal-output-image"></div>
+		</div>
+		{{/effect.ports.audio.output}}
+	</div>
+</div>

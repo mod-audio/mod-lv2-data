@@ -1,0 +1,51 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/oss/lv2/tinygain#mono>
+	a lv2:Plugin ;
+	lv2:binary <tinygain.so>  ;
+	rdfs:seeAlso <tinygain.ttl> .
+
+<http://gareus.org/oss/lv2/tinygain#stereo>
+	a lv2:Plugin ;
+	lv2:binary <tinygain.so>  ;
+	rdfs:seeAlso <tinygain.ttl> .
+
+<http://gareus.org/oss/lv2/tinygain#mono>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tinygain.html> ;
+        modgui:stylesheet <modgui/stylesheet-tinygain.css> ;
+        modgui:screenshot <modgui/screenshot-tinygain.png> ;
+        modgui:thumbnail <modgui/thumbnail-tinygain.png> ;
+        modgui:javascript <modgui/script-tinygain.js> ;
+        modgui:brand "x42" ;
+        modgui:label "TinyGain Mono" ;
+        modgui:monitoredOutputs [ lv2:symbol "level" ] , [ lv2:symbol "mute" ] ;
+    ] .
+
+<http://gareus.org/oss/lv2/tinygain#stereo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tinygain-stereo.html> ;
+        modgui:stylesheet <modgui/stylesheet-tinygain.css> ;
+        modgui:screenshot <modgui/screenshot-tinygain-stereo.png> ;
+        modgui:thumbnail <modgui/thumbnail-tinygain-stereo.png> ;
+        modgui:javascript <modgui/script-tinygain.js> ;
+        modgui:brand "x42" ;
+        modgui:label "TinyGain Stereo" ;
+        modgui:monitoredOutputs [ lv2:symbol "level" ] , [ lv2:symbol "mute" ] ;
+    ] .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/tinygain#mono> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
+
+<default-preset_1>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/tinygain#stereo> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

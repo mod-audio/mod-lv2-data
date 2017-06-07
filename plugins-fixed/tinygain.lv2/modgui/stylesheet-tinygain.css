@@ -1,0 +1,142 @@
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+.x42-tinygain{{{cns}}} {
+    background-image:url(/resources/box.png{{{ns}}});
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:90px 155px;
+    height:155px;
+    position:absolute;
+    width:90px;
+    border-radius: 21px;
+
+    line-height:1.429;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    border-color:white;
+    color:white;
+}
+
+.x42-tinygain{{{cns}}} .mod-pedal-input.mono,
+.x42-tinygain{{{cns}}} .mod-pedal-output.mono {
+    top: 60px !important;
+}
+
+.x42-tinygain{{{cns}}} .mod-pedal-input.stereo,
+.x42-tinygain{{{cns}}} .mod-pedal-output.stereo {
+    top: 15px !important;
+}
+
+.x42-tinygain{{{cns}}} .enable-led {
+    background-image:url(/resources/x42-led.png{{{ns}}});
+    background-position:right center;
+    background-repeat:no-repeat;
+    background-size:48px 24px;
+    height:24px;
+    width:24px;
+    margin:0px auto 0 auto;
+    cursor:pointer !important;
+    position:relative;
+    overflow:hidden;
+    position:absolute;
+    left:5px;
+    bottom:15px;
+    z-index:503;
+}
+
+.x42-tinygain{{{cns}}} .enable-led.on {
+    background-position:left center;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group {
+    margin:2px 15px 0 !important;
+    position:relative;
+    text-align:center;
+    z-index:500 !important;
+}
+
+.x42-tinygain{{{cns}}} .mod-display-group {
+    background-color:#aacc66;
+    margin:10px 11px 0 10px !important;
+    position:relative;
+    text-align:center;
+    z-index:0;
+    color:black;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group div,
+.x42-tinygain{{{cns}}} .mod-display-group div {
+    padding:0;
+    line-height:1.25em;
+    vertical-align:middle;
+}
+
+.x42-tinygain{{{cns}}} .mod-display-group .db {
+    font-size:20px;
+    line-height:1.5em;
+    width:60px;
+    display:inline-block;
+    text-align:right;
+    z-index:6;
+    margin: 4px 0 2px 0;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group .hidden {
+    display:none;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group .mod-knob {
+    overflow:hidden;
+    position:relative;
+    display:inline-block;
+    height:88px;
+    margin: 0;
+    z-index:501;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group .mod-knob-value {
+    background-color:rgba(0,0,0,.3);
+    font-size:11px;
+    position:absolute;
+    line-height:1.5em;
+    z-index:60;
+    bottom:1px;
+    width:40px;
+    left:10px;
+    color:white;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
+}
+
+.x42-tinygain{{{cns}}} .mod-control-group .mod-knob-image {
+    background-image:url(/resources/knob.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 60px;
+    height:60px;
+    width:60px;
+    margin:0 auto;
+    margin:4px auto 0 auto;
+    z-index:502;
+}
+
+.x42-tinygain{{{cns}}} .db-label {
+    overflow:hidden;
+    position:absolute;
+    text-align:center;
+    cursor:default;
+    right:10px;
+    bottom:12px;
+}
+
+.x42-tinygain{{{cns}}} .db-label h1 {
+    font-family:"Questrial";
+    line-height:1;
+    color:#aaa;
+    margin:0.8em 0;
+    font-size:12px;
+    text-shadow: 0px -1px 1px #111;
+}

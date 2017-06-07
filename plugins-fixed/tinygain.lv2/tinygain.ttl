@@ -1,0 +1,158 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+@prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person;
+	foaf:name "Robin Gareus";
+	foaf:mbox <mailto:robin@gareus.org>;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/tinygain#mono>
+	a lv2:Plugin, doap:Project, lv2:UtilityPlugin;
+	doap:license <http://usefulinc.com/doap/licenses/gpl>;
+	doap:maintainer <http://gareus.org/rgareus#me>;
+	doap:name "TinyGain Mono";
+	lv2:microVersion 0 ;lv2:minorVersion 770 ;
+	lv2:optionalFeature lv2:hardRTCapable;
+	lv2:requiredFeature urid:map;
+	rdfs:comment """Tiny amplifier with output meter.
+
+A gain-stage with the range of +/-20dB and additional mute-control.
+The gain control is low-pass filtered at 20Hz to prevent zipper noise.
+The level display shows digital-peak (dBFS) of the output signal
+(rise-time: immediate, falloff: 15dB/sec).
+""";
+
+	mod:brand "x42";
+	mod:label "TinyGain Mono";
+	
+
+	lv2:port [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 0;
+		lv2:symbol "gain";
+		lv2:name "Gain";
+		lv2:minimum -20;
+		lv2:default 0;
+		lv2:maximum 20;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 1 ;
+		lv2:symbol "enable" ;
+		lv2:name "Enable";
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:designation lv2:enabled;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 2 ;
+		lv2:symbol "mute" ;
+		lv2:name "Mute";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+	] , [
+		a lv2:ControlPort, lv2:OutputPort ;
+		lv2:index 3 ;
+		lv2:symbol "level" ;
+		lv2:name "Output Level" ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+	] , [
+		a lv2:AudioPort, lv2:InputPort ;
+		lv2:index 4 ;
+		lv2:symbol "in" ;
+		lv2:name "In";
+	] , [
+		a lv2:AudioPort, lv2:OutputPort ;
+		lv2:index 5 ;
+		lv2:symbol "out" ;
+		lv2:name "Out";
+	]
+	.
+
+<http://gareus.org/oss/lv2/tinygain#stereo>
+	a lv2:Plugin, doap:Project, lv2:UtilityPlugin;
+	doap:license <http://usefulinc.com/doap/licenses/gpl>;
+	doap:maintainer <http://gareus.org/rgareus#me>;
+	doap:name "TinyGain Stereo";
+	lv2:microVersion 0 ;lv2:minorVersion 770 ;
+	lv2:optionalFeature lv2:hardRTCapable;
+	lv2:requiredFeature urid:map;
+	rdfs:comment "Simple amp with output meter";
+
+	mod:brand "x42";
+	mod:label "TinyGain Stereo";
+	
+
+	lv2:port [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 0;
+		lv2:symbol "gain";
+		lv2:name "Gain";
+		lv2:minimum -20;
+		lv2:default 0;
+		lv2:maximum 20;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 1 ;
+		lv2:symbol "enable" ;
+		lv2:name "Enable";
+		lv2:default 1 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:designation lv2:enabled;
+	] , [
+		a lv2:InputPort ,
+			lv2:ControlPort ;
+		lv2:index 2 ;
+		lv2:symbol "mute" ;
+		lv2:name "Mute";
+		lv2:default 0 ;
+		lv2:minimum 0 ;
+		lv2:maximum 1 ;
+		lv2:portProperty lv2:integer, lv2:toggled;
+	] , [
+		a lv2:ControlPort, lv2:OutputPort ;
+		lv2:index 3 ;
+		lv2:symbol "level" ;
+		lv2:name "Output Level" ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+	] , [
+		a lv2:AudioPort, lv2:InputPort ;
+		lv2:index 4 ;
+		lv2:symbol "inL" ;
+		lv2:name "In Left";
+	] , [
+		a lv2:AudioPort, lv2:OutputPort ;
+		lv2:index 5 ;
+		lv2:symbol "outL" ;
+		lv2:name "Out Left";
+	] , [
+		a lv2:AudioPort, lv2:InputPort ;
+		lv2:index 6 ;
+		lv2:symbol "inR" ;
+		lv2:name "In Right";
+	] , [
+		a lv2:AudioPort, lv2:OutputPort ;
+		lv2:index 7 ;
+		lv2:symbol "outR" ;
+		lv2:name "Out Right";
+	]
+	.
