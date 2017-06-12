@@ -1,9 +1,13 @@
 function (event) {
 
     function handle_event (symbol, value) {
-        if (symbol == 'tempo_out') {
-            var output = value.toFixed(2) + " BPM";
-            event.icon.find ('[mod-port-symbol=tempo_out]').text(output);
+        var output = value.toFixed(2) + " BPM";
+        switch (symbol) {
+            case 'tempo_out':
+                event.icon.find ('[mod-port-symbol=tempo_out]').text(output);
+                break;
+            default:
+                break;
         }
     }
 

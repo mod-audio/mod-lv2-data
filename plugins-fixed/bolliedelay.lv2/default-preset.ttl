@@ -7,7 +7,7 @@
 	lv2:appliesTo <https://ca9.eu/lv2/bolliedelay> ;
 	lv2:port [
 		lv2:symbol "crossf" ;
-		pset:value 10.0
+		pset:value 20.0
 	] , [
 		lv2:symbol "div_l" ;
 		pset:value 0
@@ -16,7 +16,7 @@
 		pset:value 0
 	] , [
 		lv2:symbol "feedback" ;
-		pset:value 10.0
+		pset:value 40.0
 	] , [
 		lv2:symbol "high_f" ;
 		pset:value 7500.0
@@ -37,7 +37,7 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "mix" ;
-		pset:value 20.0
+		pset:value 30.0
 	] , [
 		lv2:symbol "tap" ;
 		pset:value 0

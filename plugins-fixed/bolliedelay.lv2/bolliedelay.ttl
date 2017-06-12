@@ -18,7 +18,7 @@
     a lv2:Plugin, lv2:DelayPlugin, doap:Project;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     doap:maintainer <http://ca9.eu/bollie#me> ;
-    lv2:microVersion 2 ; lv2:minorVersion 2 ;
+    lv2:microVersion 5 ; lv2:minorVersion 2 ;
     doap:name "Bollie Delay";
     lv2:optionalFeature lv2:hardRTCapable ;
     lv2:port [
@@ -82,7 +82,7 @@
         lv2:index 4 ;
         lv2:symbol "mix" ;
         lv2:name "Blend" ;
-        lv2:default 20.000 ;
+        lv2:default 30.000 ;
         lv2:minimum 0.000 ;
         lv2:maximum 100.000 ;
     ] , [
@@ -91,18 +91,18 @@
         lv2:index 5 ;
         lv2:symbol "feedback" ;
         lv2:name "Feedback" ;
-        lv2:default 10.000 ;
+        lv2:default 40.000 ;
         lv2:minimum 0.000 ;
-        lv2:maximum 50.000 ;
+        lv2:maximum 100.000 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "crossf" ;
         lv2:name "Crossfeed" ;
-        lv2:default 10.000 ;
+        lv2:default 20.000 ;
         lv2:minimum 0.000 ;
-        lv2:maximum 50.000 ;
+        lv2:maximum 100.000 ;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
