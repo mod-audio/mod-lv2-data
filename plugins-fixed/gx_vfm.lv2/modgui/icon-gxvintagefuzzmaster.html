@@ -3,27 +3,21 @@
     <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
     <div class="mod-plugin-name"><h1>{{label}}</h1></div>
     <div class="mod-light on" mod-role="bypass-light"></div>
-    <div class="mod-control-group mod-enumerated-group bottom clearfix">
-        {{#controls.0}}
-        <div class="mod-enumerated" mod-role="input-control-port" mod-port-symbol="{{symbol}}" mod-widget="custom-select">
-          <div mod-role="input-control-value" mod-port-symbol="{{symbol}}" class="mod-enumerated-selected"></div>
-          <div class="mod-enumerated-list">
-            {{#scalePoints}}
-            <div mod-role="enumeration-option" mod-port-value="{{value}}">{{label}}</div>
-            {{/scalePoints}}
-          </div>
-        </div>
-        {{/controls.0}}
-    </div>
-    <div class="mod-control-group mod-{{knob}} top clearfix">
+    <div class="mod-control-group mod-{{knob}} clearfix">
         {{#controls.1}}
-        <div class="mod-knob">
+        <div class="mod-knob" title="{{comment}}">
             <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
             <span class="mod-knob-title">{{name}}</span>
         </div>
         {{/controls.1}}
+        {{#controls.0}}
+        <div class="mod-knob-tone" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <span class="mod-knob-title">TONE</span>
+        </div>
+        {{/controls.0}}
         {{#controls.2}}
-        <div class="mod-knob">
+        <div class="mod-knob" title="{{comment}}">
             <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
             <span class="mod-knob-title">{{name}}</span>
         </div>

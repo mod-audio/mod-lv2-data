@@ -50,7 +50,7 @@
     lv2:optionalFeature lv2:hardRTCapable ;
       
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
 
     mod:brand "Guitarix" ;
     mod:label "GxVintageFuzz" ;
@@ -80,7 +80,7 @@ With "intensity" down it will blow up the low end, but turn it up and it produce
         lv2:index 2 ;
         lv2:symbol "INTENSITY" ;
         lv2:name "INTENSITY" ;
-        lv2:default 0.5 ;
+        lv2:default 0.2 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ]      , [
@@ -103,7 +103,7 @@ With "intensity" down it will blow up the low end, but turn it up and it produce
         lv2:index 4 ;
         lv2:symbol "VOLUME" ;
         lv2:name "VOLUME" ;
-        lv2:default 0.5 ;
+        lv2:default 0.2 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] .

@@ -11,9 +11,9 @@
         modgui:brand "Guitarix" ;
         modgui:label "GxVintageFuzz Master" ;
         modgui:model "boxy" ;
-        modgui:panel "1-select-2-knobs" ;
-        modgui:color "dots" ;
-        modgui:knob "petrol" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "vintage" ;
+        modgui:knob "cairo" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "MODE" ;
