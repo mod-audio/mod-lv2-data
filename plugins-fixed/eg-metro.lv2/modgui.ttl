@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://lv2plug.in/plugins/eg-metro>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-example-metronome.html> ;
+        modgui:stylesheet <modgui/stylesheet-example-metronome.css> ;
+        modgui:screenshot <modgui/screenshot-example-metronome.png> ;
+        modgui:thumbnail <modgui/thumbnail-example-metronome.png> ;
+        modgui:brand "drobilla" ;
+        modgui:label "Metronome" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "gray" ;
+    ] .
