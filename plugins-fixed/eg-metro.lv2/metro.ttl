@@ -15,7 +15,7 @@
 	rdfs:seeAlso <http://drobilla.net/drobilla> .
 
 <http://lv2plug.in/plugins/eg-metro>
-	a lv2:Plugin ;
+	a lv2:Plugin , lv2:UtilityPlugin ;
 	doap:maintainer <http://drobilla.net/drobilla#me> ;
 	doap:name "Metronome" ;
 	doap:license <http://opensource.org/licenses/isc> ;
@@ -24,7 +24,7 @@
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:minorVersion 1;
 	lv2:microVersion 0;
-	mod:brand "drobilla" ;
+	mod:brand "LV2" ;
 	mod:label "Metronome" ;
 	rdfs:comment "Simple metronome plugin that clicks on every beat.";
 	lv2:port [
