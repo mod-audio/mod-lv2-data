@@ -1,0 +1,73 @@
+<div class="mod-pedal x42-mclk{{{cns}}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+    <div class="x42-brand"><h1 title="Brought to you by x42.">x42</h1></div>
+    <div class="x42-plugin-name"><h1>MIDI Clock</h1></div>
+
+    <div class="mod-control-group mod-enumerated-group bottom clearfix">
+        {{#controls.0}}
+        <div class="mod-enumerated" mod-role="input-control-port" mod-port-symbol="{{symbol}}" mod-widget="custom-select">
+          <div mod-role="input-control-value" mod-port-symbol="{{symbol}}" class="mod-enumerated-selected"></div>
+          <div class="mod-enumerated-list">
+            {{#scalePoints}}
+            <div mod-role="enumeration-option" mod-port-value="{{value}}">{{label}}</div>
+            {{/scalePoints}}
+          </div>
+        </div>
+        {{/controls.0}}
+    </div>
+
+    <div class="mod-bbt-group clearfix">
+        <div>
+            <span class="bbt" mod-role="bbt_bar">00</span>
+            <span>|</span>
+            <span class="bbt" mod-role="bbt_beat">00</span>
+            <span>|</span>
+            <span class="bbt" mod-role="bbt_tick">00</span>
+        </div>
+    </div>
+
+    <div class="mod-control-group clearfix">
+        <div class="mod-sync-knob" title="Host Sync">
+            <div class="mod-togglebutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="sync"></div>
+            <span class="mod-knob-title-on">Host Sync</span>
+            <span class="mod-knob-title-off">Free Running</span>
+        </div>
+    </div>
+
+    <div class="mod-control-group clearfix" mod-role="bpm-control">
+        <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="bpm"></div>
+        <div class="mod-knob-value" contenteditable="true" mod-role="input-control-value" mod-port-symbol="bpm"></div>
+    </div>
+
+    <div class="mod-control-group clearfix insensitive" mod-role="bpm-display">
+        <div class="mod-knob-image host-sync"></div>
+        <div class="mod-knob-value" mod-role="bpm-value">XXX.XX</div>
+    </div>
+
+    <div class="mod-control-group clearfix bottom-group">
+        <div class="mod-knob" title="Play/Pause in 'Free Run' mode (start/stop/continue)">
+            <div class="mod-pushbutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="transport"></div>
+            <span class="mod-knob-title">Play</span>
+        </div>
+        <div class="mod-knob" title="Reset Song-Position to the beginning. This produces a 'start' rather than 'continue' message at play. This control is only relevant in 'Free Run' mode.">
+            <div class="mod-pushbutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="rewind"></div>
+            <span class="mod-knob-title">Rewind</span>
+        </div>
+    </div>
+
+    <div class="mod-pedal-input">
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+</div>

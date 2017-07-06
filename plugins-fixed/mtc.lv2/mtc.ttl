@@ -1,0 +1,137 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+@prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://lv2plug.in/ns/ext/time#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person;
+	foaf:name "Robin Gareus";
+	foaf:mbox <mailto:robin@gareus.org>;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/mtc>
+	a lv2:Plugin, doap:Project, lv2:UtilityPlugin;
+	doap:license <http://usefulinc.com/doap/licenses/gpl>;
+	doap:maintainer <http://gareus.org/rgareus#me>;
+	doap:name "MIDI Timecode (MTC) Generator";
+	lv2:microVersion 0 ;lv2:minorVersion 0 ;
+	lv2:optionalFeature lv2:hardRTCapable;
+	lv2:requiredFeature urid:map;
+	rdfs:comment "A MIDI Timecode generator with optional host transport synchronization.";
+
+	mod:brand "x42";
+	mod:label "MIDI Timecode";
+	
+
+	lv2:port [
+		a atom:AtomPort, lv2:InputPort;
+		atom:bufferType atom:Sequence;
+		atom:supports time:Position;
+		lv2:index 0;
+		lv2:symbol "control";
+		lv2:name "Control Input";
+	] , [
+		a atom:AtomPort, lv2:OutputPort;
+		atom:bufferType atom:Sequence;
+		atom:supports midi:MidiEvent;
+		lv2:index 1;
+		lv2:symbol "mtc";
+		lv2:name "MIDI Timecode Out";
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 2;
+		lv2:symbol "fps";
+		lv2:name "Generator FPS";
+		lv2:minimum 0;
+		lv2:default 3;
+		lv2:maximum 3;
+		lv2:portProperty lv2:integer, lv2:enumeration;
+		lv2:scalePoint [ rdf:value 0 ; rdfs:label "24fps"; ] ;
+		lv2:scalePoint [ rdf:value 1 ; rdfs:label "25fps"; ] ;
+		lv2:scalePoint [ rdf:value 2 ; rdfs:label "29.97df"; ] ;
+		lv2:scalePoint [ rdf:value 3 ; rdfs:label "30fps"; ] ;
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 3;
+		lv2:symbol "sync";
+		lv2:name "Sync";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:enumeration, lv2:toggled;
+		lv2:scalePoint [ rdfs:label "Free Running"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Host Sync (if available)"; rdf:value 1 ; ] ;
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 4;
+		lv2:symbol "transport";
+		lv2:name "Transport";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:scalePoint [ rdfs:label "Pause"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Play"; rdf:value 1 ; ] ;
+		rdfs:comment "Play/Pause in 'Free Run' mode.";
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 5;
+		lv2:symbol "rewind";
+		lv2:name "Rewind";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled, pprop:trigger;
+		rdfs:comment "Reset Timecode to rewind position (default 00:00:00:00). This control is only relevant in 'Free Run' mode. ";
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 6;
+		lv2:symbol "startpos";
+		lv2:name "Rewind position";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 86400;
+		units:unit units:s;
+		rdfs:comment "Rewind position in seconds. This control is only relevant in 'Free Run' mode. ";
+	] , [
+		a lv2:OutputPort, lv2:ControlPort;
+		lv2:index 7;
+		lv2:symbol "tc_hour";
+		lv2:name "Hour";
+		lv2:minimum 0;
+		lv2:maximum 23;
+		lv2:portProperty lv2:integer, pprop:notOnGUI;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort;
+		lv2:index 8;
+		lv2:symbol "tc_minute";
+		lv2:name "Timecode Minute";
+		lv2:minimum 0;
+		lv2:maximum 59;
+		lv2:portProperty lv2:integer, pprop:notOnGUI;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort;
+		lv2:index 9;
+		lv2:symbol "tc_second";
+		lv2:name "Timecode Second";
+		lv2:minimum 0;
+		lv2:maximum 59;
+		lv2:portProperty lv2:integer, pprop:notOnGUI;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort;
+		lv2:index 10;
+		lv2:symbol "tc_frame";
+		lv2:name "Timecode Frame";
+		lv2:minimum 0;
+		lv2:maximum 30;
+		lv2:portProperty lv2:integer, pprop:notOnGUI;
+	]
+	.

@@ -1,0 +1,27 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/oss/lv2/mtc>
+	a lv2:Plugin ;
+	lv2:binary <mtc.so>  ;
+	rdfs:seeAlso <mtc.ttl> .
+
+<http://gareus.org/oss/lv2/mtc>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mtc.html> ;
+        modgui:stylesheet <modgui/stylesheet-mtc.css> ;
+        modgui:screenshot <modgui/screenshot-mtc.png> ;
+        modgui:thumbnail <modgui/thumbnail-mtc.png> ;
+        modgui:javascript <modgui/script-mtc.js> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI TimeCode" ;
+        modgui:monitoredOutputs [ lv2:symbol "tc_hour" ] , [ lv2:symbol "tc_minute" ] , [ lv2:symbol "tc_second" ]  , [ lv2:symbol "tc_frame" ] ;
+    ] .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/mtc> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

@@ -1,0 +1,154 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
+@prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://lv2plug.in/ns/ext/time#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+
+<http://gareus.org/rgareus#me>
+	a foaf:Person;
+	foaf:name "Robin Gareus";
+	foaf:mbox <mailto:robin@gareus.org>;
+	foaf:homepage <http://gareus.org/> .
+
+<http://gareus.org/oss/lv2/mclk>
+	a lv2:Plugin, doap:Project, lv2:UtilityPlugin;
+	doap:license <http://usefulinc.com/doap/licenses/gpl>;
+	doap:maintainer <http://gareus.org/rgareus#me>;
+	doap:name "MIDI Clock Generator";
+	lv2:microVersion 0 ;lv2:minorVersion 0 ;
+	lv2:optionalFeature lv2:hardRTCapable;
+	lv2:requiredFeature urid:map;
+	rdfs:comment "A MIDI clock generator with optional host transport synchronization.";
+
+	mod:brand "x42";
+	mod:label "MIDI Clock";
+	
+
+	lv2:port [
+		a atom:AtomPort, lv2:InputPort;
+		atom:bufferType atom:Sequence;
+		atom:supports time:Position;
+		lv2:index 0;
+		lv2:symbol "control";
+		lv2:name "Control Input";
+	] , [
+		a atom:AtomPort, lv2:OutputPort;
+		atom:bufferType atom:Sequence;
+		atom:supports midi:MidiEvent;
+		lv2:index 1;
+		lv2:symbol "mclk";
+		lv2:name "Midi Clock Out";
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 2;
+		lv2:symbol "mode";
+		lv2:name "Generator Mode";
+		lv2:minimum 0;
+		lv2:default 3;
+		lv2:maximum 3;
+		lv2:portProperty lv2:integer, lv2:enumeration;
+		lv2:scalePoint [ rdf:value 0 ; rdfs:label "Start/Stop Only"; ] ;
+		lv2:scalePoint [ rdf:value 1 ; rdfs:label "MIDI Clock Only"; ] ;
+		lv2:scalePoint [ rdf:value 2 ; rdfs:label "Clock + Start/Stop"; ] ;
+		lv2:scalePoint [ rdf:value 3 ; rdfs:label "Clock + Transport + Pos"; ] ;
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 3;
+		lv2:symbol "sync";
+		lv2:name "Sync";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:enumeration;
+		lv2:scalePoint [ rdfs:label "Free Running"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Host Sync (if available)"; rdf:value 1 ; ] ;
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 4;
+		lv2:symbol "bpm";
+		lv2:name "BPM";
+		lv2:minimum  40.0;
+		lv2:default 120.0;
+		lv2:maximum 208.0;
+		units:unit units:bpm;
+		rdfs:comment "'Free Run' speed.";
+		pprop:rangeSteps 169;
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 5;
+		lv2:symbol "transport";
+		lv2:name "Transport";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled;
+		lv2:scalePoint [ rdfs:label "Pause"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Play"; rdf:value 1 ; ] ;
+		rdfs:comment "Play/Pause in 'Free Run' mode (start/stop/continue).";
+	] , [
+		a lv2:InputPort, lv2:ControlPort;
+		lv2:index 6;
+		lv2:symbol "rewind";
+		lv2:name "Rewind";
+		lv2:minimum 0;
+		lv2:default 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled, pprop:trigger;
+		rdfs:comment "Reset Song-Position to the beginning. This produces a 'start' rather than 'continue' message at play. This control is only relevant in 'Free Run' mode. ";
+	] , [
+		a lv2:OutputPort, lv2:ControlPort ;
+		lv2:index 7;
+		lv2:symbol "hostbpm";
+		lv2:name "Host BPM";
+		lv2:minimum -1;
+		lv2:maximum 208;
+		lv2:portProperty pprop:notOnGUI ;
+		lv2:scalePoint [ rdfs:label "N/A"; rdf:value -1 ; ] ;
+		lv2:scalePoint [ rdfs:label "No Sync"; rdf:value 0 ; ] ;
+		units:unit units:bpm;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort ;
+		lv2:index 8;
+		lv2:symbol "songpos";
+		lv2:name "Song Position";
+		lv2:minimum -1;
+		lv2:maximum 16384;
+		lv2:portProperty pprop:notOnGUI ;
+		lv2:scalePoint [ rdfs:label "N/A"; rdf:value -1 ; ] ;
+		units:unit units:beat;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort ;
+		lv2:index 9;
+		lv2:symbol "bbt_bar";
+		lv2:name "BBT Bar";
+		lv2:minimum 1;
+		lv2:maximum 16384;
+		lv2:portProperty pprop:notOnGUI ;
+		units:unit units:bar;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort ;
+		lv2:index 10;
+		lv2:symbol "bbt_beat";
+		lv2:name "BBT Beat";
+		lv2:minimum 1;
+		lv2:maximum 16;
+		lv2:portProperty pprop:notOnGUI ;
+		units:unit units:beat;
+	] , [
+		a lv2:OutputPort, lv2:ControlPort ;
+		lv2:index 11;
+		lv2:symbol "bbt_tick";
+		lv2:name "BBT Tick";
+		lv2:minimum 0;
+		lv2:maximum 960;
+		lv2:portProperty pprop:notOnGUI ;
+		units:unit units:beat;
+	]
+	.

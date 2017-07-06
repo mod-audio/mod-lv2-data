@@ -1,0 +1,32 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gareus.org/oss/lv2/mclk>
+	a lv2:Plugin ;
+	lv2:binary <mclk.so>  ;
+	rdfs:seeAlso <mclk.ttl> .
+
+<http://gareus.org/oss/lv2/mclk>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mclk.html> ;
+        modgui:stylesheet <modgui/stylesheet-mclk.css> ;
+        modgui:screenshot <modgui/screenshot-mclk.png> ;
+        modgui:thumbnail <modgui/thumbnail-mclk.png> ;
+        modgui:javascript <modgui/script-mclk.js> ;
+        modgui:brand "x42" ;
+        modgui:label "MIDI Clock" ;
+        modgui:monitoredOutputs  [ lv2:symbol "hostbpm" ] , [ lv2:symbol "bbt_bar" ] , [ lv2:symbol "bbt_beat" ] , [ lv2:symbol "bbt_tick" ];
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Mode" ;
+        ] ;
+    ] .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://gareus.org/oss/lv2/mclk> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

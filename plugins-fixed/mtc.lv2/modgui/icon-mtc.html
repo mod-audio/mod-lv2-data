@@ -1,0 +1,56 @@
+<div class="mod-pedal x42-mtc{{{cns}}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+    <div class="x42-brand"><h1 title="Brought to you by x42.">x42</h1></div>
+    <div class="x42-plugin-name"><h1>MIDI TimeCode</h1></div>
+
+    <div class="mod-control-group bottom clearfix">
+        <div class="mod-fps-knob-image" mod-role="input-control-port" mod-port-symbol="fps" title="FPS"></div>
+    </div>
+
+    <div class="mod-timecode-group clearfix">
+        <div>
+            <span class="timecode" mod-role="tc_hour">00</span>
+            <span>:</span>
+            <span class="timecode" mod-role="tc_minute">00</span>
+            <span>:</span>
+            <span class="timecode" mod-role="tc_second">00</span>
+            <span>:</span>
+            <span class="timecode" mod-role="tc_frame">00</span>
+        </div>
+    </div>
+
+    <div class="mod-control-group clearfix">
+        <div class="mod-sync-knob" title="Host Sync">
+            <div class="mod-togglebutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="sync"></div>
+            <span class="mod-knob-title-on">Host Sync</span>
+            <span class="mod-knob-title-off">Free Running</span>
+        </div>
+    </div>
+
+    <div class="mod-control-group clearfix bottom-group">
+        <div class="mod-knob" title="Play/Pause in 'Free Run' mode">
+            <div class="mod-pushbutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="transport"></div>
+            <span class="mod-knob-title">Play</span>
+        </div>
+        <div class="mod-knob" title="Reset Timecode to 00:00:00:00. This control is only relevant in 'Free Run' mode.">
+            <div class="mod-pushbutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="rewind"></div>
+            <span class="mod-knob-title">Rewind</span>
+        </div>
+    </div>
+
+    <div class="mod-pedal-input">
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+</div>
