@@ -82,6 +82,7 @@
     padding: 4px 0 2px 0;
     line-height:1.5em;
     vertical-align:middle;
+    cursor:default;
 }
 
 .x42-mclk{{{cns}}} .mod-control-group .mod-knob {
@@ -233,6 +234,7 @@
     box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
     color: black;
     border-radius: 3px;
+    cursor:pointer;
 }
 
 .x42-mclk{{{cns}}} .mod-enumerated .mod-enumerated-selected {
