@@ -16,7 +16,7 @@
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree Organ Overdrive";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-	lv2:microVersion 0 ;lv2:minorVersion 2048 ;
+	lv2:microVersion 0 ;lv2:minorVersion 2058 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:port
 	[
