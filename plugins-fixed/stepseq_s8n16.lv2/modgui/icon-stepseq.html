@@ -212,18 +212,27 @@
             <span class="mod-knob-title">Step</span>
             <div class="mod-knob-step-image" mod-role="input-control-port" mod-port-symbol="div"></div>
         </div>
+        <div class="mod-knob wide">
+            <span class="mod-knob-title">Swing</span>
+            <div class="mod-knob-swing-image" mod-role="input-control-port" mod-port-symbol="swing"></div>
+        </div>
         <div class="mod-knob m16 wider">
             <span class="mod-knob-title">Midi Chan.</span>
             <div class="mod-knob-m16-image" mod-role="input-control-port" mod-port-symbol="chn"></div>
         </div>
-        <div class="mod-knob wider">
+        <div class="mod-knob wider" mod-role="bpm-control">
             <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="bpm"></div>
             <span class="mod-knob-right-title">BPM</span>
             <div class="mod-knob-value" contenteditable="true" mod-role="input-control-value" mod-port-symbol="bpm"></div>
         </div>
-        <div class="mod-knob wide">
-            <span class="mod-knob-title">Swing</span>
-            <div class="mod-knob-swing-image" mod-role="input-control-port" mod-port-symbol="swing"></div>
+        <div class="mod-knob wider insensitive" mod-role="bpm-display">
+            <div class="mod-knob-image host-sync"></div>
+            <span class="mod-knob-right-title">BPM</span>
+            <div class="mod-knob-value" mod-role="bpm-value"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-pushbutton" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="sync"></div>
+            <span class="mod-knob-title">Sync</span>
         </div>
         <div class="mod-knob">
             <div class="mod-pushbutton off" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="panic"></div>

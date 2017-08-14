@@ -17,7 +17,7 @@
         modgui:screenshot <modgui/screenshot-stepseq.png> ;
         modgui:thumbnail <modgui/thumbnail-stepseq.png> ;
         modgui:javascript <modgui/script-stepseq.js> ;
-        modgui:monitoredOutputs [ lv2:symbol "pos" ] ;
+        modgui:monitoredOutputs [ lv2:symbol "pos" ] , [ lv2:symbol "hostbpm" ] ;
         modgui:brand "x42";
         modgui:label "Step Seq. 8x4";
     ] .

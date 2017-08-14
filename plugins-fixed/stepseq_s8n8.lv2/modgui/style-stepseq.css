@@ -95,9 +95,9 @@
 }
 
 .x42-stepseq{{{cns}}} .hidden-ctrl {
-	display:none;
-	height:0px;
-	width:0px;
+    display:none;
+    height:0px;
+    width:0px;
 }
 
 /* = Display Radio
@@ -148,7 +148,7 @@
 
 .x42-stepseq{{{cns}}} .bottom-group {
     margin:10px auto 0 auto;
-    width:280px;
+    width:328px;
     position:absolute;
     bottom:36px;
     left:64px;
@@ -228,6 +228,15 @@
     margin:0 auto;
     margin:4px auto 0 auto;
 }
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob-image.host-sync {
+    background-image:url(/resources/sync.png{{{ns}}});
+}
+
+.x42-stepseq{{{cns}}} .mod-control-group .mod-knob.insensitive {
+    display:none;
+}
+
 
 .x42-stepseq{{{cns}}} .mod-control-group .mod-knob-m16-image {
     background-image:url(/resources/m16.png{{{ns}}});

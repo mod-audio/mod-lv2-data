@@ -30,7 +30,7 @@
 A simple step sequencer. It allows to trigger MIDI note events placed on a time/note grid.
 The Step-duration is configurable to musical time and can optionally be modulated for a swing-time effect.
 This plugin version contains 16 notes and 8 steps.""";
-	lv2:microVersion 0 ;lv2:minorVersion 0 ;
+	lv2:microVersion 5 ;lv2:minorVersion 777 ;
   
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
@@ -59,9 +59,9 @@ This plugin version contains 16 notes and 8 steps.""";
 		lv2:minimum 0;
 		lv2:default 0;
 		lv2:maximum 1;
-		lv2:portProperty lv2:integer, lv2:enumeration;
-		lv2:scalePoint [ rdfs:label  "Control Port"; rdf:value 0 ; ] ;
-		lv2:scalePoint [ rdfs:label  "Plugin Host (if available)"; rdf:value 1 ; ] ;
+		lv2:portProperty lv2:integer, lv2:enumeration, lv2:toggled;
+		lv2:scalePoint [ rdfs:label "Free Running"; rdf:value 0 ; ] ;
+		lv2:scalePoint [ rdfs:label "Host Sync (if available)"; rdf:value 1 ; ] ;
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 3;
@@ -70,6 +70,7 @@ This plugin version contains 16 notes and 8 steps.""";
 		lv2:minimum  40.0;
 		lv2:default 120.0;
 		lv2:maximum 208.0;
+		units:unit units:bpm;
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 4;
@@ -142,9 +143,12 @@ This plugin version contains 16 notes and 8 steps.""";
 		lv2:index 10;
 		lv2:symbol "hostbpm";
 		lv2:name "Host BPM";
-		lv2:minimum 40;
+		lv2:minimum -1;
 		lv2:maximum 208;
+		lv2:scalePoint [ rdfs:label "N/A"; rdf:value -1 ; ] ;
+		lv2:scalePoint [ rdfs:label "No Sync"; rdf:value 0 ; ] ;
 		lv2:portProperty pprop:notOnGUI ;
+		units:unit units:bpm;
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 11;

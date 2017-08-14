@@ -43,12 +43,31 @@ function (event, funcs) {
 		event.icon.find("[mod-role=input-control-port][grid-col="+step+"]").each(function () { $(this).addClass("highlight"); });
 	}
 
+	function format_bpm (value) {
+		return value.toFixed (2);
+	}
+
+	function set_hostbpm (hostbpm) {
+		if (isNaN (hostbpm)) { return; }
+		if (hostbpm <= 0) {
+			event.icon.find("[mod-role=bpm-display]").each(function () { $(this).addClass("insensitive"); });
+			event.icon.find("[mod-role=bpm-control]").each(function () { $(this).removeClass("insensitive"); });
+		} else {
+			event.icon.find("[mod-role=bpm-control]").each(function () { $(this).addClass("insensitive"); });
+			event.icon.find("[mod-role=bpm-display]").each(function () { $(this).removeClass("insensitive"); });
+			event.icon.find("[mod-role=bpm-value]").text (format_bpm (hostbpm));
+		}
+	}
+
 	if (event.type == 'change') {
 		if (event.symbol == "drummode") {
 			update_drummode_display (event.value, false);
 		}
 		else if (event.symbol == "pos") {
 			set_current_step (Math.round (event.value));
+		}
+		else if (event.symbol == "hostbpm") {
+			set_hostbpm (parseFloat(event.value));
 		}
 	}
 
@@ -119,7 +138,10 @@ function (event, funcs) {
 				update_drummode_display (ports[p].value, true);
 				break;
 			case 'pos':
-				set_current_step (Math.round (event.value));
+				set_current_step (Math.round (ports[p].value));
+				break;
+			case 'hostbpm':
+				set_hostbpm (parseFloat(ports[p].value));
 				break;
 			default:
 				break;
