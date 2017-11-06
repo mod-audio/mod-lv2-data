@@ -48,7 +48,7 @@ lv2:port
     lv2:default 300.0;
     lv2:minimum 0.0;
     lv2:maximum 2000.0;
-    lv2:designation  time:beatsPerMinute;
+
     units:unit units:ms ;
 ],
 [
@@ -69,7 +69,7 @@ lv2:port
     lv2:default 300.0;
     lv2:minimum 0.0;
     lv2:maximum 2000.0;
-    lv2:designation  time:beatsPerMinute;
+
     units:unit units:ms ;
 ],
 [

@@ -33,7 +33,7 @@ lv2:port
     lv2:name "BPM";
     lv2:portProperty mod:tapTempo;
     lv2:symbol "bpm";
-    lv2:designation time:beatsPerMinute;
+    
     units:unit units:bpm;
 ],
 [
