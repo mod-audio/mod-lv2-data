@@ -30,7 +30,7 @@ mod:label "Stereo Echo";
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 lv2:optionalFeature lv2:hardRTCapable;
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 3;
 
 rdfs:comment """
 This plugin supports conventional mono and stereo delays, ping-pong delays and the Haas effect (also known as Cross Delay Stereo). A relatively simple yet quite effective plugin.

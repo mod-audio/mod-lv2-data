@@ -31,7 +31,7 @@ mod:label "Rotary Speaker";
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 lv2:optionalFeature lv2:hardRTCapable;
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 3;
 
 rdfs:comment """
 This plugin simulates the sound of rotating speakers. Two pairs of rotating speakers are simulated, each pair fixed on a vertical axis, with their horns spreading the sound in opposite directions. The two pairs of speakers are rotating with different revolutions (frequencies). The incoming sound is split into a low and a high part (with a low-pass and a high-pass filter, using a crossover frequency of 1 kHz). The low part is fed into the "Rotor" pair of speakers, and the high part into the "Horn" pair. A pair of horizontally aligned microphones is used to pick up the resulting sound. The distance of the microphones (the width of the stereo image of the effect) is adjustable.
