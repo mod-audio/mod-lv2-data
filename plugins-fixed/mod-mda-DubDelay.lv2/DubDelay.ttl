@@ -73,7 +73,7 @@ Delay with feedback saturation and time/pitch modulation
         lv2:default 1835.25 ;
         lv2:minimum 0.0 ;
         lv2:maximum 7341.0 ;
-
+        lv2:designation time:beatsPerMinute;
         units:unit units:ms ;
         rdfs:comment "Delay time (delay is mono for authenticity!)"
     ] , [
