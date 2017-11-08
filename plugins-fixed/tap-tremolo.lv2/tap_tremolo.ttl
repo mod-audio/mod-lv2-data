@@ -33,7 +33,7 @@ lv2:optionalFeature lv2:hardRTCapable;
 
 
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 3;
 
 rdfs:comment """
 The tremolo effect is probably one of the most ancient effects, originated in the earliest days of the history of studio recording. It lost some of its popularity over time (and with the emerge of more exciting digital effects), but you still hear this effect on newer recordings from time to time.
@@ -52,7 +52,7 @@ lv2:port
     lv2:default 5.0;
     lv2:minimum 0.0;
     lv2:maximum 20.0;
-    lv2:designation  time:beatsPerMinute;
+
     units:unit units:hz ;
     
 ],
