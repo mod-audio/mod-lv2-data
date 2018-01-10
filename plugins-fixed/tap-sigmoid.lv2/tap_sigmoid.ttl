@@ -45,7 +45,7 @@ lv2:port
     lv2:name "Pregain";
     units:unit units:db ;
     lv2:default 0.0;
-    lv2:minimum -90.0;
+    lv2:minimum -12.0;
     lv2:maximum 20.0;
 ],
 [
@@ -55,7 +55,7 @@ lv2:port
     lv2:name "Postgain";
     units:unit units:db ;
     lv2:default 0.0;
-    lv2:minimum -90.0;
+    lv2:minimum -12.0;
     lv2:maximum 20.0;
 ],
 [
