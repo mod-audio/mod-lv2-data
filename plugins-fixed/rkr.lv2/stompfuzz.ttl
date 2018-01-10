@@ -18,9 +18,9 @@
 
 <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz>
         a lv2:Plugin, lv2:DistortionPlugin ;
-        doap:name "rkr StompBox:Fuzz" ;
+        doap:name "Fuzz" ;
         mod:brand "Rakarrack";
-        mod:label "Stompbox:Fuzz";
+        mod:label "Fuzz";
         doap:description "Fuzz Pedal Emulator";
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;

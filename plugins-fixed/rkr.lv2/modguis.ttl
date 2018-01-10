@@ -1797,7 +1797,7 @@
         modgui:screenshot <modgui/screenshot-rkr-stompboxfuzz.png> ;
         modgui:thumbnail <modgui/thumbnail-rkr-stompboxfuzz.png> ;
         modgui:brand "Rakarrack" ;
-        modgui:label "StompBox:Fuzz" ;
+        modgui:label "Fuzz" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
         modgui:color "flowerpower" ;
