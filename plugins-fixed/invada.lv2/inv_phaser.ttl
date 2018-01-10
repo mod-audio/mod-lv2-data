@@ -31,7 +31,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 0 ;
 	lv2:symbol "bypass" ;
 	lv2:name "Bypass" ;
-	lv2:portProperty lv2:toggled ;
+	lv2:portProperty pprops:notOnGUI ;
 	lv2:default 0.0 ;
 	lv2:minimum 0.0 ;
 	lv2:maximum 1.0 ;
@@ -41,9 +41,9 @@ Subtle phaser with a very large LFO range
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
 	lv2:portProperty mod:tapTempo;
-	lv2:default 25.0 ;
+	lv2:default 6.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500.0 ;
+	lv2:maximum 20.0 ;
 	units:unit units:s ;
       lv2:portProperty pprops:logarithmic ;
     ] , [
@@ -183,7 +183,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 0 ;
 	lv2:symbol "bypass" ;
 	lv2:name "Bypass" ;
-	lv2:portProperty lv2:toggled ;
+	lv2:portProperty pprops:notOnGUI ;
 	lv2:default 0.0 ;
 	lv2:minimum 0.0 ;
 	lv2:maximum 1.0 ;
@@ -193,9 +193,9 @@ Subtle phaser with a very large LFO range
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
 	lv2:portProperty mod:tapTempo;
-	lv2:default 25.0 ;
+	lv2:default 6.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500.0 ;
+	lv2:maximum 20.0 ;
 	units:unit units:s ;
         lv2:portProperty pprops:logarithmic ;
     ] , [
@@ -354,7 +354,7 @@ Subtle phaser with a very large LFO range
 	lv2:index 0 ;
 	lv2:symbol "bypass" ;
 	lv2:name "Bypass" ;
-	lv2:portProperty lv2:toggled ;
+	lv2:portProperty pprops:notOnGUI ;
 	lv2:default 0.0 ;
 	lv2:minimum 0.0 ;
 	lv2:maximum 1.0 ;
@@ -364,9 +364,9 @@ Subtle phaser with a very large LFO range
 	lv2:symbol "cycle" ;
 	lv2:name "Period" ;
 	lv2:portProperty mod:tapTempo;
-	lv2:default 25.0 ;
+	lv2:default 6.0 ;
 	lv2:minimum 0.5 ;
-	lv2:maximum 500.0 ;
+	lv2:maximum 20.0 ;
 	units:unit units:s ;
         lv2:portProperty pprops:logarithmic ;
     ] , [
