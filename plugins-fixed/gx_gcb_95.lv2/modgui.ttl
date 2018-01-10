@@ -9,7 +9,7 @@
         modgui:screenshot <modgui/screenshot-gxgcb95.png> ;
         modgui:thumbnail <modgui/thumbnail-gxgcb95.png> ;
         modgui:brand "Guitarix" ;
-        modgui:label "GCB95 Crybaby" ;
+        modgui:label "Crybaby" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
         modgui:color "warning" ;
