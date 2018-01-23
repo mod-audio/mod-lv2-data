@@ -12,7 +12,7 @@
         modgui:label "Hog's Foot" ;
         modgui:model "boxy" ;
         modgui:panel "2-knobs" ;
-        modgui:color "zinc" ;
+        modgui:color "darkblue" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;

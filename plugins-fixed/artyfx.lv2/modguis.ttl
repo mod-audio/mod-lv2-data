@@ -168,7 +168,7 @@
         modgui:brand "OpenAV" ;
         modgui:label "Kuiza" ;
         modgui:model "japanese" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "darkblue" ;
         modgui:knob "orange" ;
         modgui:port [
@@ -187,10 +187,6 @@
             lv2:index 3 ;
             lv2:symbol "High" ;
             lv2:name "High" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "Level" ;
-            lv2:name "Gain" ;
         ] ;
     ] .
     

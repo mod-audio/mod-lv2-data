@@ -13,3 +13,4 @@
     <http://lv2plug.in/ns/lv2core#appliesTo> <http://hippie.lt/lv2/gate> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
+<http://hippie.lt/lv2/gate> rdfs:seeAlso <modgui.ttl> .
