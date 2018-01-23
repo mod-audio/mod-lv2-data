@@ -13,7 +13,7 @@
 		lv2:FilterPlugin ;
 	doap:name "Auto-wah" ;
 	mod:brand "FOMP" ;
-	mod:label "Auto-Wah" ;
+	mod:label "Wah" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
 	

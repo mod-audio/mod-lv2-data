@@ -82,7 +82,7 @@
         modgui:screenshot <modgui/screenshot-auto-wah.png> ;
         modgui:thumbnail <modgui/thumbnail-auto-wah.png> ;
         modgui:brand "FOMP" ;
-        modgui:label "Auto-Wah" ;
+        modgui:label "Wah" ;
         modgui:model "boxy" ;
         modgui:panel "5-knobs" ;
         modgui:color "yellow" ;
