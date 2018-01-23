@@ -8,45 +8,43 @@
         modgui:stylesheet <modgui/stylesheet-mverb.css> ;
         modgui:screenshot <modgui/screenshot-mverb.png> ;
         modgui:thumbnail <modgui/thumbnail-mverb.png> ;
-        modgui:brand "Martin Eastwood" ;
+        modgui:brand "DISTRHO" ;
         modgui:label "MVerb" ;
-        modgui:model "combo-model-001" ;
-        modgui:panel "0930" ;
+        modgui:model "japanese" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "petrol" ;
+        modgui:knob "yellow" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "mix" ;
-            lv2:name "MIX" ;
+            lv2:symbol "predelay" ;
+            lv2:name "Predelay" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "predelay" ;
-            lv2:name "PRE" ;
+            lv2:symbol "density" ;
+            lv2:name "Density" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "earlymix" ;
-            lv2:name "EL/MIX" ;
+            lv2:symbol "bandwidth" ;
+            lv2:name "Bandwidth" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "size" ;
-            lv2:name "SIZE" ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "density" ;
-            lv2:name "DENSITY" ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
         ] , [
             lv2:index 5 ;
-            lv2:symbol "bandwidth" ;
-            lv2:name "BAND" ;
+            lv2:symbol "size" ;
+            lv2:name "Size" ;
         ] , [
             lv2:index 6 ;
-            lv2:symbol "decay" ;
-            lv2:name "DECAY" ;
+            lv2:symbol "gain" ;
+            lv2:name "Level" ;
         ] , [
             lv2:index 7 ;
-            lv2:symbol "damping" ;
-            lv2:name "DAMP" ;
-        ] , [
-            lv2:index 8 ;
-            lv2:symbol "gain" ;
-            lv2:name "GAIN" ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
         ] ;
     ] .
