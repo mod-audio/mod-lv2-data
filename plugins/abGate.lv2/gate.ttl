@@ -50,7 +50,7 @@
 	    	lv2:maximum 1;
 	    	lv2:default 0;
 		lv2:portProperty pprops:hasStrictBounds;
-		lv2:PortProperty lv2:toggled;
+        lv2:portProperty pprops:notOnGUI ;
 	],
 
 	[
