@@ -126,29 +126,25 @@
         modgui:brand "FOMP" ;
         modgui:label "CS Chorus 1" ;
         modgui:model "boxy" ;
-        modgui:panel "5-knobs" ;
+        modgui:panel "4-knobs" ;
         modgui:color "darkblue" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "mod_amp_1" ;
-            lv2:name "Depth1" ;
-        ] , [
-            lv2:index 1 ;
             lv2:symbol "mod_freq_1" ;
             lv2:name "Rate1" ;
         ] , [
+            lv2:index 1 ;
+            lv2:symbol "mod_amp_1" ;
+            lv2:name "Depth1" ;
+        ] , [
             lv2:index 2 ;
-            lv2:symbol "delay" ;
-            lv2:name "Delay" ;
+            lv2:symbol "mod_freq_2" ;
+            lv2:name "Rate2" ;
         ] , [
             lv2:index 3 ;
             lv2:symbol "mod_amp_2" ;
             lv2:name "Depth2" ;
-        ] , [
-            lv2:index 4 ;
-            lv2:symbol "mod_freq_2" ;
-            lv2:name "Rate2" ;
         ] ;
     ] .
     
