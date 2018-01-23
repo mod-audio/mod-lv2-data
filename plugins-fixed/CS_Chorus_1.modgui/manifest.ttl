@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://drobilla.net/plugins/fomp/cs_chorus1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cs-chorus-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-cs-chorus-1.css> ;
+        modgui:screenshot <modgui/screenshot-cs-chorus-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-cs-chorus-1.png> ;
+        modgui:brand "FOMP" ;
+        modgui:label "CS Chorus 1" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mod_freq_1" ;
+            lv2:name "Rate 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mod_amp_1" ;
+            lv2:name "Depth 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "mod_freq_2" ;
+            lv2:name "Rate 2" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "mod_amp_2" ;
+            lv2:name "Depth 2" ;
+        ] ;
+    ] .
