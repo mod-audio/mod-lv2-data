@@ -3,12 +3,12 @@
 ================================================ */
 .mod-generator{{{cns}}} {
     position:absolute;
-    min-width:190px;
+    min-width:200px;
     border-radius: 21px;
 }
 
 .mod-generator{{{cns}}}.dark {
-    color: #484848 !important
+    color: #666 !important
 }
 
 .mod-generator{{{cns}}}.light {
@@ -40,10 +40,9 @@
 }
 
 .mod-generator{{{cns}}} .case-face {
-    background-image: url(/resources/bg/generator-bg-brownwood.png{{{ns}}});
+    background-image: url(/resources/bg/generator-bg-darkgray.png{{{ns}}});
     background-repeat: repeat;
-    padding: 20px;
-    min-height: 220px
+    padding: 20px
 }
 .mod-generator{{{cns}}} .case-shadow {
     position: absolute;
@@ -72,7 +71,7 @@
 
 .mod-generator{{{cns}}}.mod-pedal-input,
 .mod-generator{{{cns}}} .mod-pedal-output {
-    top: 10px;
+    top: 66px;
 }
 
 /* = PLUGIN'S AUTHOR
@@ -128,7 +127,7 @@
 }
 
 .mod-generator{{{cns}}} .generator-icon.icon-drums{
-    background-image:url(/resources/utils/icon-gen-b3.png{{{ns}}});
+    background-image:url(/resources/utils/icon-gen-synth.png{{{ns}}});
 }
 
 /* = LIGHT ON/OFF
@@ -174,7 +173,7 @@
 ================================================ */
 .mod-generator{{{cns}}} .mod-control-group {
     border-radius: 8px;
-    padding: 10px;
+    padding: 5px;
     position:relative;
     text-align:center;
     z-index:30;
@@ -186,14 +185,28 @@
     border: 3px solid #eee;
 }
 
+.mod-generator{{{cns}}} .mod-control-group .group-2 .mod-knob,
+.mod-generator{{{cns}}} .mod-control-group .group-3 .mod-knob {
+    display: inline-block !important;
+
+}
+
+.mod-generator{{{cns}}} .mod-control-group .group-3 {
+    white-space: nowrap;
+}
+
+
+/* KNOB */
 
 .mod-generator{{{cns}}} .mod-control-group .mod-knob {
     overflow:hidden;
     position:relative;
-    padding: 5px 0
+    padding: 5px
+}
+.mod-generator{{{cns}}} .mod-control-group .group-2 .mod-knob {
+    display: inline-block !important;
 }
 
-/* KNOB */
 .mod-generator{{{cns}}} .mod-control-group .mod-knob .mod-knob-image {
     background-image:url(/resources/knobs/light-knob.png{{{ns}}});
     cursor: pointer;
@@ -203,12 +216,29 @@
     width:80px;
     margin:0 auto;
 }
+
+.mod-generator{{{cns}}} .mod-control-group .mod-knob.knob-small .mod-knob-image {
+    background-image:url(/resources/knobs/light-knob-s.png{{{ns}}});
+    cursor: pointer;
+    background-repeat:no-repeat;
+    margin:0 auto;
+    background-size: auto 60px;
+    height:60px;
+    width:60px;
+}
+
+
 .mod-generator{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
     margin-top: 5px;
     display: block;
     text-transform: uppercase;
     font-size:15px;
     height:15px;
+}
+
+.mod-generator{{{cns}}} .mod-control-group .mod-knob.knob-small  > span.mod-knob-title{
+    width: 60px;
+    font-size: 13px
 }
 
 /* = ENUMERATED LIST
@@ -219,15 +249,6 @@
     position:relative;
     width:190px;
     z-index:35;
-}
-
-.mod-generator{{{cns}}}.mod-three-knobs .mod-enumerated-group,
-.mod-generator{{{cns}}}.mod-four-knobs .mod-enumerated-group {
-    margin-bottom:5px !important;
-}
-
-.mod-generator{{{cns}}}.mod-four-knobs .mod-enumerated-group {
-    width:250px;
 }
 
 .mod-generator{{{cns}}} .mod-enumerated {
@@ -287,39 +308,30 @@
 }
 
 .mod-generator{{{cns}}} .mod-slider {
-    color:black;
-    float:left;
     font-size:11px;
-    height:140px;
+    text-transform: uppercase;
     margin-bottom:2px;
     margin-right:2px;
-    overflow:hidden;
     position:relative;
     text-align:center;
-    width:33px;
+    display: inline-block;
+    width:50px;
 }
-
+.mod-generator{{{cns}}} .mod-slider .mod-slider-image {
+    background-image:url(/resources/knobs/light-slider.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size: auto 160px;
+    height:160px;
+    margin:0 auto;
+    width:50px;
+    cursor:pointer;
+}
 
 .mod-generator{{{cns}}} .mod-slider .mod-slider-title {
     display:block;
-    font-size:11px;
-    font-weight:bold;
-    line-height:1;
+    font-size:11px !important;
     margin-bottom:3px;
     overflow:hidden;
     padding:7px 0 5px;
     position:relative;
-}
-
-.mod-generator{{{cns}}} .mod-slider .mod-slider-image {
-    background-image:url(/resources/pedals/slider.png{{{ns}}});
-    background-repeat:no-repeat;
-    background-size:auto 110px;
-    height:110px;
-    margin:0 auto;
-    width:44px;
-}
-
-.mod-generator{{{cns}}} .mod-slider .mod-slider-image:hover {
-    cursor:pointer;
 }
