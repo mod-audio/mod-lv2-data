@@ -67,19 +67,6 @@ modgui:gui [
 ###############################################################################
 
 ###############################################################################
-## START http://calf.sourceforge.net/plugins/Flanger
-<http://calf.sourceforge.net/plugins/Flanger>
-modgui:gui [
-    modgui:resourcesDirectory <modgui>;
-    modgui:stylesheet <modgui/Flanger/icon-calf-flanger.css>;
-    modgui:iconTemplate <modgui/Flanger/icon-calf-flanger.html>;
-    modgui:screenshot <modgui/Flanger/screenshot-calf-flanger.png>;
-    modgui:thumbnail <modgui/Flanger/thumb-calf-flanger.png>;
-] .
-## END http://calf.sourceforge.net/plugins/Flanger
-###############################################################################
-
-###############################################################################
 ## START http://calf.sourceforge.net/plugins/Monosynth
 <http://calf.sourceforge.net/plugins/Monosynth>
 modgui:gui [
@@ -90,19 +77,6 @@ modgui:gui [
     modgui:thumbnail <modgui/Monosynth/thumb-calf-monosynth.png>;
 ] .
 ## END http://calf.sourceforge.net/plugins/Monosynth
-###############################################################################
-
-###############################################################################
-## START http://calf.sourceforge.net/plugins/Phaser
-<http://calf.sourceforge.net/plugins/Phaser>
-modgui:gui [
-    modgui:resourcesDirectory <modgui>;
-    modgui:stylesheet <modgui/Phaser/icon-calf-phaser.css>;
-    modgui:iconTemplate <modgui/Phaser/icon-calf-phaser.html>;
-    modgui:screenshot <modgui/Phaser/screenshot-calf-phaser.png>;
-    modgui:thumbnail <modgui/Phaser/thumb-calf-phaser.png>;
-] .
-## END http://calf.sourceforge.net/plugins/Phaser
 ###############################################################################
 
 ###############################################################################

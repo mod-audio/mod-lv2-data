@@ -1,0 +1,325 @@
+
+/* = CONTAINER
+================================================ */
+.mod-generator{{{cns}}} {
+    position:absolute;
+    min-width:190px;
+    border-radius: 21px;
+}
+
+.mod-generator{{{cns}}}.dark {
+    color: #484848 !important
+}
+
+.mod-generator{{{cns}}}.light {
+    color: #eee !important
+}
+
+.mod-generator{{{cns}}} .case-sides {
+    display: block;
+    position: absolute;
+    border-top: 4px solid #363636;
+    border-bottom: 4px solid #363636;
+    height: 104%;
+    width: 7px;
+    background-color: #363636;
+    z-index: 20;
+    top: -2%;
+}
+
+.mod-generator{{{cns}}} .case-sides.side-left {
+    left: 0;
+    -webkit-box-shadow: 5px 2px 15px 0px #000000;
+    box-shadow: 5px 2px 15px 0px #000000;
+}
+
+.mod-generator{{{cns}}} .case-sides.side-right {
+    right: 0;
+    -webkit-box-shadow: -5px 2px 15px 0px #000000;
+    box-shadow: -5px 2px 15px 0px #000000;
+}
+
+.mod-generator{{{cns}}} .case-face {
+    background-image: url(/resources/bg/generator-bg-brownwood.png{{{ns}}});
+    background-repeat: repeat;
+    padding: 20px;
+    min-height: 220px
+}
+.mod-generator{{{cns}}} .case-shadow {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    z-index: 10;
+}
+.mod-generator{{{cns}}} .case-shadow.shadow-top {
+    top: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 13%, rgba(0,0,0,0) 68%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 13%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 13%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.mod-generator{{{cns}}} .case-shadow.shadow-bottom {
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 32%, rgba(0,0,0,0.7) 87%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 32%,rgba(0,0,0,0.7) 87%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 32%,rgba(0,0,0,0.7) 87%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+}
+/* PORTS
+================================================ */
+
+.mod-generator{{{cns}}}.mod-pedal-input,
+.mod-generator{{{cns}}} .mod-pedal-output {
+    top: 10px;
+}
+
+/* = PLUGIN'S AUTHOR
+================================================ */
+.mod-generator{{{cns}}} .mod-plugin-brand {
+
+}
+
+.mod-generator{{{cns}}} .mod-plugin-brand h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0
+}
+
+/* = PLUGIN'S NAME
+================================================ */
+.mod-generator{{{cns}}} .mod-plugin-name {
+}
+
+.mod-generator{{{cns}}} .mod-plugin-name h1 {
+    margin-top: -14px;
+    margin-bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 19px
+}
+
+
+/* = ICONS
+================================================ */
+.mod-generator{{{cns}}} .mod-icons {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    z-index: 60;
+    height: 60px;
+}
+
+.mod-generator{{{cns}}} .generator-icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    position: absolute;
+    z-index: 60;
+    background-size: 35px 35px;
+    background-position: center;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: 12px;;
+}
+
+.mod-generator{{{cns}}} .generator-icon.icon-drums{
+    background-image:url(/resources/utils/icon-gen-b3.png{{{ns}}});
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.mod-generator{{{cns}}} .mod-light {
+    background-image:url(/resources/utils/yellow-led.png{{{ns}}}) !important;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    height:32px;
+    width:32px;
+    left: 20px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.mod-generator{{{cns}}} .mod-light.on {
+    background-position:left center;
+}
+.mod-generator{{{cns}}} .mod-light.off {
+    background-position:right center;
+}
+
+/* = FOOTSWITCH
+================================================ */
+.mod-generator{{{cns}}} .mod-footswitch {
+    background-image:url(/resources/switches/switch-key.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    right: 5px;
+    cursor:pointer;
+    height:66px;
+    width: 66px;
+    margin: auto;
+    position:absolute !important;
+}
+.mod-generator{{{cns}}} .mod-footswitch.on {
+    background-position-y: top !important
+}
+
+
+/* = KNOBS
+================================================ */
+.mod-generator{{{cns}}} .mod-control-group {
+    border-radius: 8px;
+    padding: 10px;
+    position:relative;
+    text-align:center;
+    z-index:30;
+}
+.mod-generator{{{cns}}}.dark .mod-control-group {
+    border: 3px solid #444;
+}
+.mod-generator{{{cns}}}.light .mod-control-group {
+    border: 3px solid #eee;
+}
+
+
+.mod-generator{{{cns}}} .mod-control-group .mod-knob {
+    overflow:hidden;
+    position:relative;
+    padding: 5px 0
+}
+
+/* KNOB */
+.mod-generator{{{cns}}} .mod-control-group .mod-knob .mod-knob-image {
+    background-image:url(/resources/knobs/light-knob.png{{{ns}}});
+    cursor: pointer;
+    background-repeat:no-repeat;
+    background-size: auto 80px;
+    height:80px;
+    width:80px;
+    margin:0 auto;
+}
+.mod-generator{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
+    margin-top: 5px;
+    display: block;
+    text-transform: uppercase;
+    font-size:15px;
+    height:15px;
+}
+
+/* = ENUMERATED LIST
+================================================ */
+.mod-generator{{{cns}}} .mod-enumerated-group {
+    height:31px;
+    margin:20px auto 0 !important;
+    position:relative;
+    width:190px;
+    z-index:35;
+}
+
+.mod-generator{{{cns}}}.mod-three-knobs .mod-enumerated-group,
+.mod-generator{{{cns}}}.mod-four-knobs .mod-enumerated-group {
+    margin-bottom:5px !important;
+}
+
+.mod-generator{{{cns}}}.mod-four-knobs .mod-enumerated-group {
+    width:250px;
+}
+
+.mod-generator{{{cns}}} .mod-enumerated {
+    background-position:right center;
+    background-repeat:no-repeat;
+    font-size:11px;
+    font-weight:bold;
+    left:0;
+    line-height:2;
+    overflow:hidden;
+    right:0;
+    text-align:left;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 5px
+}
+
+.mod-generator{{{cns}}} .mod-enumerated .mod-enumerated-selected {
+    border-top: 1px solid #555;
+    border-radius: 0px;
+    border-right: 2px solid #777;
+    background-color: #d2ee6f;
+    background-image:url(/resources/utils/dropdown-arrow-black.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: black;
+    font-weight: bold;
+    border-left: 2px solid #f1f1f1;
+    padding: 0 9px;
+}
+
+.mod-generator{{{cns}}} .mod-enumerated .mod-enumerated-list {
+    display:none;
+    position:absolute;
+    z-index: 20;
+    color:#fff;
+    width: 100%;
+    height:115px;
+    overflow:auto;
+    border-right: 21px solid transparent;
+
+}
+.mod-generator{{{cns}}} .mod-enumerated .mod-enumerated-list > div {
+    background-color: rgba(0,0,0,.9);
+    padding:3px 9px;
+}
+
+.mod-generator{{{cns}}} .mod-enumerated .mod-enumerated-list > div:hover {
+    background-color:rgba(100,100,100,0.9);
+    cursor:pointer;
+}
+
+/* SLIDER
+================================================ */
+.mod-generator{{{cns}}} .mod-slider:first-child {
+    margin-left:8px;
+}
+
+.mod-generator{{{cns}}} .mod-slider {
+    color:black;
+    float:left;
+    font-size:11px;
+    height:140px;
+    margin-bottom:2px;
+    margin-right:2px;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    width:33px;
+}
+
+
+.mod-generator{{{cns}}} .mod-slider .mod-slider-title {
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    line-height:1;
+    margin-bottom:3px;
+    overflow:hidden;
+    padding:7px 0 5px;
+    position:relative;
+}
+
+.mod-generator{{{cns}}} .mod-slider .mod-slider-image {
+    background-image:url(/resources/pedals/slider.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 110px;
+    height:110px;
+    margin:0 auto;
+    width:44px;
+}
+
+.mod-generator{{{cns}}} .mod-slider .mod-slider-image:hover {
+    cursor:pointer;
+}

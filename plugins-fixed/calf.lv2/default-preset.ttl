@@ -46,7 +46,68 @@
 		pset:value 3000.0
 	] .
 
-# <default-preset_1>
+<default-preset_1>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Flanger> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "min_delay" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mod_rate" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 90.0
+	] .
+
+<default-preset_2>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Phaser> ;
+	lv2:port [
+		lv2:symbol "amount" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "base_freq" ;
+		pset:value 1000.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "feedback" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "mod_depth" ;
+		pset:value 4000.0
+	] , [
+		lv2:symbol "mod_rate" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "reset" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "stages" ;
+		pset:value 6
+	] , [
+		lv2:symbol "stereo" ;
+		pset:value 180.0
+	] .
+
+# <default-preset_3>
 # 	a pset:Preset ;
 # 	lv2:appliesTo <http://calf.sourceforge.net/plugins/Compressor> ;
 # 	lv2:port [
