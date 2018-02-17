@@ -1,9 +1,28 @@
-<div class="mod-pedal mod-pedal-boxy{{{cns}}} mod-boxy50 mod-one-footswitch mod-{{color}} {{color}}">
+<div class="mod-pedal mod-generator{{{cns}}} light">
     <div mod-role="drag-handle" class="mod-drag-handle"></div>
-    <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
-    <div class="mod-plugin-name"><h1>{{label}}</h1></div>
-    <div class="mod-light on" mod-role="bypass-light"></div>
-    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="case-sides side-left"></div>
+    <div class="case-sides side-right"></div>
+    <div class="case-face">
+        <span class="case-shadow shadow-top"></span>
+        <div class="mod-control-group clearfix">
+            {{#controls.0}}
+            <div class="mod-switch" title="{{comment}}">
+                <b class="mod-switch-value">off</b>
+                <div class="mod-switch-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                <b class="mod-switch-value">on</b>
+                <span class="mod-switch-title">{{name}}</span>
+            </div>
+            {{/controls.0}}
+        </div>
+        <div class="mod-icons">
+            <div class="mod-light on" mod-role="bypass-light"></div>
+            <span class="generator-icon icon-drums"></span>
+            <div class="mod-footswitch" mod-role="bypass"></div>
+        </div>
+        <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
+        <div class="mod-plugin-name"><h1>{{label}}</h1></div>
+        <span class="case-shadow shadow-bottom"></span>
+    </div>
     <div class="mod-pedal-input">
         {{#effect.ports.audio.input}}
         <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">

@@ -1,180 +1,164 @@
 /* SKINS */
-.mod-head-model-001{{{cns}}} {
-    border-radius: 20px;
-}
-.mod-head-model-001-0550{{{cns}}} {
-    background-image: url(/resources/heads/model-001/model-0550.png{{{ns}}});
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: Helvetica,Arial,Sans-serif;
-    height: 259px;
+.mod-cabinet{{{cns}}} {
+    font-family: 'Cooper Hewitt', Helvetica,Arial,Sans-serif;
+    height: auto;
     position: relative;
-    width: 550px;
+    width: auto;
 }
 
-.mod-head-model-001-0700{{{cns}}} {
-    background-image: url(/resources/heads/model-001/model-0700.png{{{ns}}});
+/* CABINET FACE */
+.mod-cabinet{{{cns}}} .mod-cabinet-face {
     background-position: center center;
     background-repeat: no-repeat;
-    font-family: Helvetica,Arial,Sans-serif;
-    height: 260px;
+    width: 374px;
+    height: 374px;
     position: relative;
-    width: 700px;
-    border-radius: 18px;
 }
 
-.mod-head-model-001-0800{{{cns}}} {
-    background-image: url(/resources/heads/model-001/model-0800.png{{{ns}}});
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: Helvetica,Arial,Sans-serif;
-    height: 260px;
-    position: relative;
-    width: 800px;
+.mod-cabinet{{{cns}}}.mod-cabinet-model-1 .mod-cabinet-face {
+    background-image: url(/resources/bg/cabinet-face-gold.png{{{ns}}});
+}
+.mod-cabinet{{{cns}}}.mod-cabinet-model-2 .mod-cabinet-face {
+    background-image: url(/resources/bg/cabinet-face-silver.png{{{ns}}});
 }
 
-.mod-head-model-001-0950{{{cns}}} {
-    background-image: url(/resources/heads/model-001/model-0950.png{{{ns}}});
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: Helvetica,Arial,Sans-serif;
-    height: 260px;
-    position: relative;
-    width: 950px;
+.mod-cabinet{{{cns}}} .mod-cabinet-info {
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%
 }
+/* AUTHOR'S NAME */
+.mod-cabinet{{{cns}}} .mod-plugin-brand {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mod-cabinet{{{cns}}} .mod-plugin-brand h1{
+    background: #2b2422;
 
-/* THE AUTHOR */
-.mod-head-model-001{{{cns}}} .mod-plugin-brand h1 {
-    bottom: 90px;
-    color: #fff;
-    font-size: 14px;
-    left: 54px;
-    line-height: 1;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 2px 5px;
+    border-radius: 7px;
     margin: 0;
-    position: absolute;
+    line-height: 33px;
+    -webkit-box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.64);
+    box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.64);
+}
+.mod-cabinet{{{cns}}}.mod-cabinet-model-1 .mod-plugin-brand h1{
+    color: #aba375;
+    border: 2px solid #aba375;
+}
+
+.mod-cabinet{{{cns}}}.mod-cabinet-model-2 .mod-plugin-brand h1{
+    color: #bcbcbc;
+    border: 2px solid #bcbcbc;
 }
 
 /* PLUGIN'S NAME */
-.mod-head-model-001{{{cns}}} .mod-plugin-name h1 {
-    bottom: 60px;
-    color: #fff;
-    font-size: 18px;
-    left: 54px;
-    line-height: 1;
-    margin: 0;
-    position: absolute;
+.mod-cabinet{{{cns}}} .mod-plugin-name {
+    display: table-row;
+    text-align: right
+}
+.mod-cabinet{{{cns}}} .mod-plugin-name h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block;
+    text-align: right;
+    padding: 15px 30px;
+    margin-top: -30px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.78);
+}
+
+.mod-cabinet{{{cns}}}.mod-cabinet-model-1 .mod-plugin-name h1{
+    color: #aba375;
+}
+.mod-cabinet{{{cns}}}.mod-cabinet-model-2 .mod-plugin-name h1{
+    color: #bcbcbc;
 }
 
 /* CONTROLS */
-.mod-head-model-001{{{cns}}} .mod-control-group {
-    bottom: 149px;
-    color: #000;
-    font-size: 10px;
-    height: 73px;
-    left: 34px;
+.mod-cabinet{{{cns}}} .mod-cabinet-controls {
     position: absolute;
-    right: 34px;
-    top: 37px;
+}
+.mod-cabinet{{{cns}}} .mod-cabinet-controls header {
+    background-image: url(/resources/bg/cabinet-back-top.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 374px;
+    display: block
+}
+.mod-cabinet{{{cns}}} .mod-cabinet-controls footer {
+    background-image: url(/resources/bg/cabinet-back-bottom.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 374px;
+    display: block
 }
 
-.mod-head-model-001{{{cns}}} .mod-control-group > div {
-    margin-right: 2px;
+.mod-cabinet{{{cns}}} .mod-cabinet-controls main {
+    background-image: url(/resources/bg/cabinet-back-middle.png{{{ns}}});
+    background-position: center center;
+    background-repeat: repeat-y;
+    width: 374px;
+    display: block;
+    padding: 10px 30px;
+}
+
+.mod-cabinet{{{cns}}} .mod-control-group.group1{
+    width: 110px;
+    display: inline-block;
+    padding: 16px;
+    vertical-align: top
+}
+
+.mod-cabinet{{{cns}}} .mod-control-group.group2{
+    width: 200px;
+    display: inline-block;
 }
 
 /* SWITCH ON/OFF GENERAL */
-.mod-head-model-001{{{cns}}} .mod-switch {
+.mod-cabinet{{{cns}}} .mod-cabinet-controls .mod-switch {
     cursor: pointer;
     float: left;
-    height: 73px;
-    position: relative;
-    width: 90px;
+    height: 70px;
+    width: 70px;
+    z-index: 100000000
 }
 
-.mod-head-model-001{{{cns}}} .mod-switch-image {
-    background-image: url(/resources/switches/switch-001.png{{{ns}}});
-    background-position: -9px 0px;
+.mod-cabinet{{{cns}}} .mod-cabinet-controls .mod-switch .mod-switch-image {
+    background-image: url(/resources/switches/switch-cabinet.png{{{ns}}});
     background-repeat: no-repeat;
-    background-size: auto 73px;
-    height: 73px;
-    width: 73px;
+    background-size: auto 100%;
+    height: 70px;
+    width: 70px;
 }
 
-.mod-head-model-001{{{cns}}} .mod-switch-image.on {
-    background-position: -82px 0px;
+.mod-cabinet{{{cns}}} .mod-cabinet-controls .mod-switch-image.on {
+    background-position: 100% 0;
 }
 
-.mod-head-model-001{{{cns}}} .mod-switch-image.off {
-    background-position: -9px 0px;
-}
-
-/* SWITCH ON/OFF - 0550 */
-.mod-head-model-001-0550{{{cns}}} .mod-switch {
-    width: 145px;
-}
-
-/* SWITCH ON/OFF - 0700 */
-.mod-head-model-001-0700{{{cns}}} .mod-switch {
-    width: 160px;
-}
-
-/* SWITCH ON/OFF - 0800 */
-.mod-head-model-001-0800{{{cns}}} .mod-switch {
-    width: 150px;
-}
-
-/* SWITCH ON/OFF - 0950 */
-.mod-head-model-001-0950{{{cns}}} .mod-switch {
-    width: 130px;
-}
-
-
-/* CHICKEN HEAD */
-.mod-head-model-001{{{cns}}} .mod-chicken-head {
-    float: left;
-    height: 73px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 80px;
-}
-
-.mod-head-model-001{{{cns}}} .mod-chicken-head .mod-chicken-head-image {
-    background-image: url(/resources/knobs/chicken-head/_strip.png{{{ns}}});
-    background-position: left 0px;
-    background-repeat: no-repeat;
-    background-size: auto 80px;
-    height: 73px;
-    margin-top: 3px;
-    position: relative;
-    width: 80px;
-    z-index: 2;
-}
-
-.mod-head-model-001{{{cns}}} .mod-chicken-head .mod-chicken-head-title {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-transform: uppercase;
-    top: 0;
-    z-index: 1;
+.mod-cabinet{{{cns}}} .mod-cabinet-controls .mod-switch-image.off {
+    background-position: 0 0;
 }
 
 /* ENUMERATED LIST */
-.mod-head-model-001{{{cns}}} .mod-enumerated {
+.mod-cabinet{{{cns}}} .mod-enumerated {
     color: #000;
     display: inline-block;
-    margin-top: 40px;
     overflow: hidden;
-    position: absolute;
-    right: 3px;
-    top: 80px;
-    width: 250px;
+    width: 100%;
+    cursor: pointer
 }
 
-.mod-head-model-001{{{cns}}} .mod-enumerated .mod-enumerated-selected {
+.mod-cabinet{{{cns}}} .mod-enumerated .mod-enumerated-selected {
     background: rgba(255,255,255,.85);
     border-radius: 4px;
     box-shadow:inset 1px 1px 10px #000;
@@ -187,37 +171,67 @@
 }
 
 /* WHEN IS HOVER */
-.mod-head-model-001{{{cns}}} .mod-enumerated:hover .mod-enumerated-selected {
+.mod-cabinet{{{cns}}} .mod-enumerated:hover .mod-enumerated-selected {
     border-radius: 4px 4px 0 0;
 }
 
 /* THE LIST OF OPTIONS */
-.mod-head-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list {
+.mod-cabinet{{{cns}}} .mod-enumerated .mod-enumerated-list {
     background: rgba(255,255,255,.85);
     display: none;
     font-weight: bold;
     height: 69px;
     overflow: auto;
     position: relative;
-    width: 242px;
+    position: absolute;
+    width: 200px;
     z-index: 3;
 }
 
-.mod-head-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list > div {
+.mod-cabinet{{{cns}}} .mod-enumerated .mod-enumerated-list > div {
     padding: 3px 9px;
 }
 
-.mod-head-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list > div:hover {
+.mod-cabinet{{{cns}}} .mod-enumerated .mod-enumerated-list > div:hover {
     background: rgba(0,0,0,.35);
     cursor: pointer;
 }
 
-/* SEPARATOR */
-.mod-head-model-001{{{cns}}} .mod-separator {
-    background: #000;
-    display: inline-block;
-    float: left;
-    height: 69px;
-    margin-top: 2px;
-    width: 1px;
+/* INPUT / OUTPUT  */
+
+.mod-cabinet{{{cns}}} .mod-pedal-input , .mod-cabinet{{{cns}}} .mod-pedal-output {
+    top: 40%;
 }
+
+/* KNOB */
+.mod-cabinet{{{cns}}} .mod-knob {
+    float: left;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 55px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.mod-cabinet{{{cns}}} .mod-knob .mod-knob-image {
+    background-image: url(/resources/knobs/knob.png{{{ns}}});
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    background-size: auto 55px;
+    height: 55px;
+    margin-top: 3px;
+    position: relative;
+    width: 55px;
+    z-index: 2;
+}
+
+.mod-cabinet{{{cns}}} .mod-knob .mod-knob-title {
+    font-family: "Cooper Hewitt";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
+

@@ -1,17 +1,68 @@
-<div class="mod-pedal mod-pedal-boxy{{{cns}}} mod-seven-knobs mod-boxy75 mod-{{color}} {{color}}">
+<div class="mod-pedal mod-generator{{{cns}}} light">
     <div mod-role="drag-handle" class="mod-drag-handle"></div>
-    <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
-    <div class="mod-plugin-name"><h1>{{label}}</h1></div>
-    <div class="mod-light on" mod-role="bypass-light"></div>
-    <div class="mod-control-group mod-{{knob}} clearfix">
-        {{#controls}}
-        <div class="mod-knob">
-            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
-            <span class="mod-knob-title">{{name}}</span>
+    <div class="case-sides side-left"></div>
+    <div class="case-sides side-right"></div>
+    <div class="case-face">
+        <span class="case-shadow shadow-top"></span>
+        <div class="mod-control-group clearfix">
+            <div class="group-2">
+                {{#controls.0}}
+                <div class="mod-knob" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.0}}
+                {{#controls.1}}
+                <div class="mod-knob" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.1}}
+            </div>
+            <div class="group-3">
+                {{#controls.2}}
+                <div class="mod-knob" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.2}}
+                {{#controls.4}}
+                <div class="mod-knob" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.4}}
+            </div>
+            <div class="group-3">
+                {{#controls.3}}
+                <div class="mod-knob knob-small" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.3}}
+                {{#controls.5}}
+                <div class="mod-knob knob-small" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.5}}
+                {{#controls.6}}
+                <div class="mod-knob knob-small" title="{{comment}}">
+                    <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+                    <span class="mod-knob-title">{{name}}</span>
+                </div>
+                {{/controls.6}}
+            </div>
         </div>
-        {{/controls}}
+        <div class="mod-icons">
+            <div class="mod-light on" mod-role="bypass-light"></div>
+            <span class="generator-icon icon-drums"></span>
+            <div class="mod-footswitch" mod-role="bypass"></div>
+        </div>
+        <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
+        <div class="mod-plugin-name"><h1>{{label}}</h1></div>
+        <span class="case-shadow shadow-bottom"></span>
     </div>
-    <div class="mod-footswitch" mod-role="bypass"></div>
     <div class="mod-pedal-input">
         {{#effect.ports.audio.input}}
         <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
