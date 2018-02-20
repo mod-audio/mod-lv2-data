@@ -7,27 +7,27 @@
 	lv2:appliesTo <http://moddevices.com/plugins/caps/AutoFilter> ;
 	lv2:port [
 		lv2:symbol "Q" ;
-		pset:value 0.25
+		pset:value 0.27
 	] , [
 		lv2:symbol "depth" ;
-		pset:value 1.0
+		pset:value 0.81
 	] , [
 		lv2:symbol "filter" ;
 		pset:value 1.0
 	] , [
 		lv2:symbol "frequency" ;
-		pset:value 2555.0
+		pset:value 2500.0
 	] , [
 		lv2:symbol "lfoenv" ;
-		pset:value 0.25
+		pset:value 0.16
 	] , [
 		lv2:symbol "mode" ;
-		pset:value 1.0
+		pset:value 0.0
 	] , [
 		lv2:symbol "rate" ;
-		pset:value 0.25
+		pset:value 0.26
 	] , [
 		lv2:symbol "x_z" ;
-		pset:value 1.0
+		pset:value 0.35
 	] .
 
