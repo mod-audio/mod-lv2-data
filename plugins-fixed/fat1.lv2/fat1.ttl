@@ -25,13 +25,13 @@
 	doap:license <http://usefulinc.com/doap/licenses/gpl>;
 	doap:maintainer <http://gareus.org/rgareus#me>;
 	doap:name "Autotune";
-	rdfs:comment "AT1 is an 'autotuner', normally used to correct the pitch of a voice singing (slightly) out of tune. The 'expected' pitch can be controlled by MIDI, or be a fixed set of notes. AT1 can probably be used on some instruments as well, but is primarily designed to cover the vocal range.";
+	rdfs:comment "Autotune (formerly AT1) is an 'autotuner', normally used to correct the pitch of a voice singing (slightly) out of tune. The 'expected' pitch can be controlled by MIDI, or be a fixed set of notes. This plugin can probably be used on some instruments as well, but is primarily designed to cover the vocal range.";
 	lv2:microVersion 0 ;lv2:minorVersion 516 ;
   
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
 	mod:brand "x42";
-	mod:label "AT1";
+	mod:label "Autotune";
 	
 
 	lv2:port [

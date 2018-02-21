@@ -52,7 +52,7 @@
     lv2:microVersion 3;
 
     mod:brand "Guitarix" ;
-    mod:label "Crybaby" ;
+    mod:label "GxCrybaby" ;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_gcb_95_gui#_gcb_95_>;
     
