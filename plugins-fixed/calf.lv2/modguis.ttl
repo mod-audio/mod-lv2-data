@@ -81,4 +81,15 @@ modgui:gui [
 ## END http://calf.sourceforge.net/plugins/Phaser
 ###############################################################################
 
-
+###############################################################################
+## START http://calf.sourceforge.net/plugins/Saturator
+<http://calf.sourceforge.net/plugins/Saturator>
+modgui:gui [
+    modgui:resourcesDirectory <modgui>;
+    modgui:stylesheet <modgui/Saturator/icon-calf-saturator.css>;
+    modgui:iconTemplate <modgui/Saturator/icon-calf-saturator.html>;
+    modgui:screenshot <modgui/Saturator/screenshot-calf-saturator.png>;
+    modgui:thumbnail <modgui/Saturator/thumb-calf-saturator.png>;
+] .
+## END http://calf.sourceforge.net/plugins/Saturator
+###############################################################################

@@ -1974,50 +1974,6 @@
 
 <default-preset_29>
 	a pset:Preset ;
-	lv2:appliesTo <http://calf.sourceforge.net/plugins/Saturator> ;
-	lv2:port [
-		lv2:symbol "blend" ;
-		pset:value 10.0
-	] , [
-		lv2:symbol "bypass" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "drive" ;
-		pset:value 5.0
-	] , [
-		lv2:symbol "hp_post_freq" ;
-		pset:value 10.0
-	] , [
-		lv2:symbol "hp_pre_freq" ;
-		pset:value 10.0
-	] , [
-		lv2:symbol "level_in" ;
-		pset:value 1.0
-	] , [
-		lv2:symbol "level_out" ;
-		pset:value 1.0
-	] , [
-		lv2:symbol "lp_post_freq" ;
-		pset:value 20000.0
-	] , [
-		lv2:symbol "lp_pre_freq" ;
-		pset:value 20000.0
-	] , [
-		lv2:symbol "mix" ;
-		pset:value 1.0
-	] , [
-		lv2:symbol "p_freq" ;
-		pset:value 2000.0
-	] , [
-		lv2:symbol "p_level" ;
-		pset:value 1.0
-	] , [
-		lv2:symbol "p_q" ;
-		pset:value 1.0
-	] .
-
-<default-preset_30>
-	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainCompressor> ;
 	lv2:port [
 		lv2:symbol "attack" ;
@@ -2078,7 +2034,7 @@
 		pset:value 0.125
 	] .
 
-<default-preset_31>
+<default-preset_30>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainGate> ;
 	lv2:port [
@@ -2140,7 +2096,7 @@
 		pset:value 0.125
 	] .
 
-<default-preset_32>
+<default-preset_31>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/SidechainLimiter> ;
 	lv2:port [
@@ -2235,7 +2191,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_33>
+<default-preset_32>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/StereoTools> ;
 	lv2:port [
@@ -2297,7 +2253,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_34>
+<default-preset_33>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/TapeSimulator> ;
 	lv2:port [
@@ -2332,7 +2288,7 @@
 		pset:value 1.0
 	] .
 
-<default-preset_35>
+<default-preset_34>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/TransientDesigner> ;
 	lv2:port [
@@ -2391,7 +2347,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_36>
+<default-preset_35>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/VintageDelay> ;
 	lv2:port [
@@ -2432,7 +2388,7 @@
 		pset:value 1.0
 	] .
 
-<default-preset_37>
+<default-preset_36>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/Vocoder> ;
 	lv2:port [
@@ -2962,7 +2918,7 @@
 		pset:value 1.0
 	] .
 
-<default-preset_38>
+<default-preset_37>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver2Band> ;
 	lv2:port [
@@ -3000,7 +2956,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_39>
+<default-preset_38>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver3Band> ;
 	lv2:port [
@@ -3053,7 +3009,7 @@
 		pset:value 0.0
 	] .
 
-<default-preset_40>
+<default-preset_39>
 	a pset:Preset ;
 	lv2:appliesTo <http://calf.sourceforge.net/plugins/XOver4Band> ;
 	lv2:port [

@@ -107,7 +107,51 @@
 		pset:value 180.0
 	] .
 
-# <default-preset_3>
+<default-preset_3>
+	a pset:Preset ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Saturator> ;
+	lv2:port [
+		lv2:symbol "blend" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "bypass" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "drive" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "hp_post_freq" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "hp_pre_freq" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "lp_post_freq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "lp_pre_freq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "mix" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p_freq" ;
+		pset:value 2000.0
+	] , [
+		lv2:symbol "p_level" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "p_q" ;
+		pset:value 1.0
+	] .
+
+# <default-preset_4>
 # 	a pset:Preset ;
 # 	lv2:appliesTo <http://calf.sourceforge.net/plugins/Compressor> ;
 # 	lv2:port [
