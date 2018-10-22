@@ -58,13 +58,18 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_hogsfoot_gui#_hogsfoot_>;
 
 rdfs:comment """
-Emulation of the Electro-Harmonix Hog's Foot bass booster (*)
+The Gx Hogs Foot is modelled after the Electro-Harmonix Hog’s Foot bass booster (*)
+
+The Electro-Harmonix Hog’s Foot bass booster was first released in the 1968. The pedal boosts the low frequencies giving more bass to your sound! Very useful for players with modern, trebly basses wanting to get more of a sixties “thud” sound. 
+
+The beauty of this model is that there is no “popping” footswitch or cracking potentiometer, like with the original pedal.
+
+Features:
+Modeled by the Guitarix team
+Based on the classic Electro-Harmonix Hog’s Foot Bass Booster(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Electro-Harmonix Hog's Foot is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+Electro-Harmonix Hog’s Foot is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 
 """;
 

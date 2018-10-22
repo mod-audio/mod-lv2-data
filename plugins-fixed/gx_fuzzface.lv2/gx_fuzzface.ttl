@@ -55,13 +55,16 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzzface_gui#_fuzzface_>;
      mod:brand "Guitarix" ;
 rdfs:comment """
-Analog distortion emulation of the classic Dunlop Fuzz Face JH-2 (*)
+The Fuzz Face is modeled after the Dunlop Fuzz Face(*).
+
+The Dunlop Fuzz Face(*) sits among the icons. Its uncanny ability to add harmonic richness and subtle drive on lower settings, associated with a satisfying full-on roar when turned up makes it a spicy little red box. With a roster of power users that includes guitar legends and modern heroes from David Gilmour and Jimi Hendrix to Eric Johnson and Joe Bonamassa, the Fuzz Face(*) has a unique, unmistakable sound no matter the player. 
+
+Features:
+Modeled by the Guitarix team
+Based on the Dunlop Fuzz Face(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Dunlop Fuzz Face is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+The Dunlop Fuzz Face is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 
 """;
 

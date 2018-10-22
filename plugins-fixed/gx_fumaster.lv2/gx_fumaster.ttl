@@ -56,13 +56,16 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fumaster_gui#_fumaster_>;
     mod:brand "Guitarix";
 rdfs:comment """
-Analog distortion emulation of the Vintage Fuzz Master (*)
+The Fuzz Master is modeled after the Vintage Fuzz Master(*).
+
+The Vintage Fuzz Master(*) is a really wild fuzz that gives back to the fuzz sound that was heard in the most insane Jimi Hendrix performances, or psychedelic noise freak outs of the 60’s and 70’s. Most of these sounds were created by combining multiple fuzz faces and/or tone benders with a high gain stack. The Vintage Fuzz master puts all of this in one tiny package. All the madness of a vintage fuzz without the hassle of carrying a stack with you. 
+
+Features:
+Modeled by the Guitarix team
+Based on the Vintage Fuzz Master(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Vintage Fuzz Master is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+The Vintage Fuzz Master is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 
 """;
 

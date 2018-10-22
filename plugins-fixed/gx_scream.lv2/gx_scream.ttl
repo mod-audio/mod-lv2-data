@@ -58,13 +58,20 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_scream_gui#_scream_>;
 
 rdfs:comment """
-Emulation of the Electro-Harmonix Screaming Bird treble booster (*)
+The Gx Screaming Bird is modeled after the Electro-Harmonix Screaming Bird treble booster (*)
+
+Do your solos get lost in the mix? Boost your way to the top! Rather then turning up the volume, the ScreamingBird might be just what you need. The ScreamingBird treble booster is meant for boosting the high frequencies of your guitar signal while also adding a tiny bit of distortion to the sound. 
+
+It became most popular in the 1960’s when mostly used to overdrive the dark sounding British tube amps. Since then, it has been used by a variety of musicians such as Eric Claption, Tony Iommi, Ritchie Blackmore, Brian May and Marc Bolan. 
+
+A really straightforward pedal with only one knob. Simply set it to the desired amount of boost and you are good to go.
+
+Features:
+Modeled by the Guitarix team
+Based on the classic Electro-Harmonix Screaming Bird(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Electro-Harmonix Screaming Bird is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+Electro-Harmonix Screaming Bird is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 
 """;
 
