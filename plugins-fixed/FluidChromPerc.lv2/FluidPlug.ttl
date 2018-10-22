@@ -84,8 +84,14 @@
         foaf:homepage <https://github.com/falkTX/FluidPlug> ;
     ] ;
 
-    rdfs:comment """This plugin contains the 'Chromatic Percussion' section of the Fluid GM soundfont.
-The Fluid GM soundfont was constructed in part from edited/cleaned/remixed/programmed samples found in the public domain and recordings made by Frank Wen.""" ;
+    rdfs:comment """
+Fluid chrome percussion contains 8 sample based sounds. As every sampled instrument in this generator has such a unique origin, they also have very different sounds. So if you want to explore and look for some different acoustic generated sounds check this generator out! 
+This generator features the chrome percussion section of the FluidGM SoundFont.
+
+Features:
+Modeled by MOD Devices.
+The FluidGM SoundFont was constructed from edited/cleaned/remixed samples found in the public domain and recordings made by Frank Wen.  
+""" ;
 
     lv2:minorVersion 2 ;
     lv2:microVersion 0 .

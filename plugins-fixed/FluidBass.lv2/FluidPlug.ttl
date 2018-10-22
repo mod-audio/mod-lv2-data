@@ -84,8 +84,14 @@
         foaf:homepage <https://github.com/falkTX/FluidPlug> ;
     ] ;
 
-    rdfs:comment """This plugin contains the 'Bass' section of the Fluid GM soundfont.
-The Fluid GM soundfont was constructed in part from edited/cleaned/remixed/programmed samples found in the public domain and recordings made by Frank Wen.""" ;
+    rdfs:comment """
+Fluid Bass features 8 sample based bass sounds. It includes the classic bass sounds (slapping, picking etc.) as well as two synth based basses.
+This generator features the bass section of the FluidGM SoundFont. 
+
+Features:
+Modeled by MOD Devices
+The FluidGM SoundFont was constructed from edited/cleaned/remixed samples found in the public domain and recordings made by Frank Wen.  
+    """ ;
 
     lv2:minorVersion 2 ;
     lv2:microVersion 0 .

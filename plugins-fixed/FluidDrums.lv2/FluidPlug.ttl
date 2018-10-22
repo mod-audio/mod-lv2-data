@@ -153,8 +153,16 @@
         foaf:homepage <https://github.com/falkTX/FluidPlug> ;
     ] ;
 
-    rdfs:comment """This plugin contains the 'Drums' section of the Fluid GM soundfont.
-The Fluid GM soundfont was constructed in part from edited/cleaned/remixed/programmed samples found in the public domain and recordings made by Frank Wen.""" ;
+    rdfs:comment """
+
+Fluid Drums contains 32 sample based drum sounds which makes it suitable for many different applications. From creating a jazz backing track to some electronic sounds, this sound generator will have you grooving. 
+This generator contains the Drums section of the Fluid GM SoundFont. 
+
+Features:
+Modeled by MOD Devices.
+The Fluid GM SoundFont was constructed from edited/cleaned/remixed samples found in the public domain and recordings made by Frank Wen.
+
+    """ ;
 
     lv2:minorVersion 2 ;
     lv2:microVersion 0 .
