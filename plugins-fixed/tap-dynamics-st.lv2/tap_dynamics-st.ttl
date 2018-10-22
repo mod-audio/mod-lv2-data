@@ -31,11 +31,14 @@ lv2:minorVersion 7;
 lv2:microVersion 2;
 
 rdfs:comment """
-TAP Dynamics is a versatile tool for changing the dynamic content of your tracks. Currently it supports 15 dynamics transfer functions, among which there are compressors, limiters, expanders and noise gates. However, the plugin itself supports arbitrary dynamics transfer functions, so you may add your own functions as well, without any actual programming.
+TAP Stereo Dynamics is a very versatile tool for compressing your sound! It currently supports 15 selectable functions, from compressors, limiters, expanders and noise gates, meaning it is useful in many different cases.
+To tweak the pedal perfectly, the ‘Attack’ controls how quickly the compressor starts to act. The ‘Release’ is the period when the compressor gradually stops acting. Use the make-up gain to get an optimum output level.
 
 The plugin comes in two versions: Mono (M) and Stereo (St). This is needed because independent processing of two channels is not always desirable in the case of stereo material. The stereo version has an additional control to set the appropriate mode for stereo processing (you may still choose to process the two channels independently, although the same effect is achieved by using the mono version).
 
-source: http://tap-plugins.sourceforge.net/ladspa/dynamics.html
+Features:
+Modeled by TAP
+
 """;
 
 lv2:port

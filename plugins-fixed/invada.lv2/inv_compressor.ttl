@@ -17,7 +17,15 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-An easy to use high-quality compressor.
+The Invada Compressor is a very easy to use, high-quality relaxed compressor that features 6 knobs and a high level of controllability. 
+
+A compressor reduces the level of an audio signal if its amplitude exceeds the set threshold. The gain reduction is determined by the ratio: a ratio of 4:1 means that if the input level is 4dB over the threshold, the output signal is 1dB over the threshold. 
+
+The ‘Attack’ controls how quickly the compressor starts to act. the ‘Release’ is the period when the compressor gradually stops acting. The Knee controls whether the bend in the response curve between below threshold and above threshold is abrupt (hard) or graduated (soft).  
+
+Features:
+Modeled by Invada
+
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -163,7 +171,15 @@ An easy to use high-quality compressor.
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-An easy to use high-quality compressor. 
+The Invada Compressor is a very easy to use, high-quality relaxed compressor that features 6 knobs and a high level of controllability. 
+
+A compressor reduces the level of an audio signal if its amplitude exceeds the set threshold. The gain reduction is determined by the ratio: a ratio of 4:1 means that if the input level is 4dB over the threshold, the output signal is 1dB over the threshold. 
+
+The ‘Attack’ controls how quickly the compressor starts to act. the ‘Release’ is the period when the compressor gradually stops acting. The Knee controls whether the bend in the response curve between below threshold and above threshold is abrupt (hard) or graduated (soft).  
+
+Features:
+Modeled by Invada
+
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;

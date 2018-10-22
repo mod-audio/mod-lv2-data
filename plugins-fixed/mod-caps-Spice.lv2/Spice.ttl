@@ -15,13 +15,16 @@ mod:brand "CAPS";
 mod:label "Spice";
 
 rdfs:comment """
-This effect plugin is useful when more bass register definition or more treble presence is called for and generic equalisation does not work without noticeably raising the signal or noise level. A common application is refreshing of material that has been subjected to low-quality analog transmission.
+The C* Spice is useful when more bass or more treble presence is called for and generic equalization does not work without raising the signal or noise level. 
 
-Bass and treble portions of the signal are isolated using two 24 dB/octave Linkwitz-Riley crossover networks[lr76] to ensure a flat frequency response at zero effect intensity (controlled through the .gain settings). After compression, a polynomial waveshaper synthesises the first three overtones of the bass register. This enhances the perception of the fundamental frequency, being the difference tone of these harmonics. Treble band processing applies analog-style saturation with only simplistic antialiasing. Synthesised harmonic content is shaped through bandpass and highpass filters and mixed back into the crossover sum signal.
+This pedal is mostly used to refresh the signal that has been subjected to low-quality analog equipment. 
+This pedal features individual control over the low and high frequencies. Both have 3 knobs, one for the desired frequency on which the pedal should operate, one for the overall compression and one for the output gain of the frequency range.  
 
 A stereo version is available as SpiceX2.
 
-source: http://quitte.de/dsp/caps.html#Spice
+Features:
+Modeled by CAPS
+
 """;
 
 lv2:port
