@@ -34,11 +34,18 @@ mod:label "DS1";
 doap:license "GPL";
 
 rdfs:comment """
-Analog distortion emulation of the classic Boss DS-1 (*)
+The DS1 is modeled after the legendary BOSS DS-1(*), a distortion pedal mainly used for guitar.
+
+Simply put, the DS1 distortion pedal is a modern classic. It was first produced in 1978 and is still widely popular. No wonder it was part of pedalboards from great names such as Kurt Cobain, Joe Satriani, Steve Vai and Josh Klinghoffer.
+
+The DS1 features three knobs which can take the sound in a variety of different directions. By cranking up its tone levels and distortion knobs, you can pull out a range of different tones, from subtle bite to rich crunch to all-out fuzz. The midrange on the DS1 is scooped, giving it a distinct tonal flavor, which many players prefer. Want sonic reference? Give Nirvana's "Smells Like Teen Spirit" a listen - all that crunch came courtesy of a DS1.
+
+Features:
+Modeled by MOD Devices
+Based on the classic BOSS DS-1(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Boss DS-1 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+BOSS DS-1 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 
 """;
 
