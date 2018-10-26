@@ -65,7 +65,11 @@
     ] ;
 
     rdfs:comment """
-Ping Pong Panning.
+The Ping Pong Pan fades the sound from left to right. 
+It features 2 knobs. ‘Frequency’ controls how fast the directional change happens and ‘Width’ tells the amount of signal that gets faded. When the knob is set to 100%, audio on the left is muted when audio on the right is at full volume.
+
+Features:
+Modeled by FalkTX
 """ ;
 
     mod:brand "DISTRHO" ;

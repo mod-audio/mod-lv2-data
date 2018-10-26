@@ -13,13 +13,15 @@ mod:brand "CAPS";
 mod:label "Wider";
 
 rdfs:comment """
-In addition to provoding a basic panorama control, a perception of stereo width is created using complementary filters on the two output channels.
+The wider plug-in increases the width of a signal.
+In addition to providing a basic panorama control, a perception of stereo width is created using complementary filters on the two outputs.
 
-The output channels always sum to a flat frequency response.
+Features:
+Modeled by MOD Devices
+Based on the Orban 245F Stereo Synthesizer*
 
-The design of this plugin owes to the Orban 245F Stereo Synthesizer.
-
-source: http://quitte.de/dsp/caps.html#Wider
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+The Orban 245F Stereo Synthesizer is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 """;
 
 lv2:port
