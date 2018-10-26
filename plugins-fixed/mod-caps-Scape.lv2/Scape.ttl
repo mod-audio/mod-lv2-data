@@ -16,11 +16,12 @@ mod:brand "CAPS";
 mod:label "Scape";
 
 rdfs:comment """
-A stereo delay with resonant filters and fractally modulated panning.
+The Scape delay looks like a straightforward delay pedal but there is more than meets the eye.
+The Eighth, Triplet and Sixteenth settings from the drop down menu create a dotted sounding rhythm. 
+The delayed sounds can be re-tuned with the Tune knob in the settings session. Set it to your standard tuning of 440Hz and hear a normal rhythmical sounding delay. Or use it to achieve some interesting modulated sounds. Each note will be slightly different, further increasing the uniqueness of this effect.
 
-The delay times are set through the bpm control and the divider adjustment. Triplet and sixteenth settings create a dotted rhythm. With every beat, the filter resonance frequencies are retuned to random steps on an equal-tempered chromatic scale, to the reference set through the tune control.
-
-source: http://quitte.de/dsp/caps.html#Scape
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

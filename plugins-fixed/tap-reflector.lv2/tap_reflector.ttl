@@ -34,9 +34,11 @@ lv2:minorVersion 7;
 lv2:microVersion 3;
 
 rdfs:comment """
-This plugin creates a psychedelic reverse audio effect. Overlapping time intervals of incoming samples are treated as blocks called 'fragments'. Each fragment is reversed in time, and faded in and out while played back to the output, hence creating a nearly constant signal level with the mixture resembling a normal reverse-played track -- with the difference that the audio actually progresses forward, only pieces of it are reversed.
+The Reflector creates a psychedelic effect.
+It achieves this effect by reversing parts of the audio signal and leaving the rest unaffected. Set the Length knob to minimum to achieve a subtle effect or to maximum and enjoy the 60’s psychedelic feel. The dry and wet controls let you control the intensity of the effect and find the sweet spot for your sound.
 
-source: http://tap-plugins.sourceforge.net/ladspa/reflector.html
+Features:
+Modeled by TAP
 """;
 
 lv2:port
