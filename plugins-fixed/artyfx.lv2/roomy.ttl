@@ -35,7 +35,14 @@
   doap:name "Roomy";
   doap:description "Spacious Reverb";
   lv2:optionalFeature lv2:hardRTCapable ;
-  rdfs:comment "A spacious open algorithmic reverb.";
+  rdfs:comment """
+Our most easy to use reverb is the roomy reverb. It doesn't get more straightforward than this!
+With 3 simple controls, it takes just a blink to get the roomy pedal to sound good. The Decay knob allows you to set the duration of the reverb, the Damping knob allows you to control the high frequencies in the reverb tail, producing a warmer sound with less “edge”, and finally the Mix knob selects the amount of dry and wet signal. 
+Room reverbs add a natural color and liveliness to the sound. When you’re going for a natural, in-person kind of sound (a pretty common goal in acoustic styles of music), the roomy reverb is a good choice. 
+
+Features:
+Modeled by OpenAV
+""";
   lv2:minorVersion 2; lv2:microVersion 0;
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
