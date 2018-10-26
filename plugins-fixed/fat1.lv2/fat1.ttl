@@ -25,7 +25,16 @@
 	doap:license <http://usefulinc.com/doap/licenses/gpl>;
 	doap:maintainer <http://gareus.org/rgareus#me>;
 	doap:name "Autotune";
-	rdfs:comment "Autotune (formerly AT1) is an 'autotuner', normally used to correct the pitch of a voice singing (slightly) out of tune. The 'expected' pitch can be controlled by MIDI, or be a fixed set of notes. This plugin can probably be used on some instruments as well, but is primarily designed to cover the vocal range.";
+	rdfs:comment """
+Autotune is used to correct pitch. The x42 Autotune is used to correct pitch within the vocal range. 
+
+The original Auto-Tune was used on vocals to correct some off-key inaccuracies that occurred while the singer was performing. This piece of software made it possible for vocal tracks to be perfectly tuned. 
+
+The AT-1 can be used in a few different modes. The first one is the Auto mode - with this mode, the pitch will automatically be bent to the nearest true exact semitone. When selecting the MIDI mode, the pitch will be bent to the incoming midi note. The last mode is the manual mode, in which the keyboard on the pedalboard can be used.
+
+Features:
+Modeled by Robin Gareus
+""";
 	lv2:microVersion 0 ;lv2:minorVersion 516 ;
   
 	lv2:optionalFeature lv2:hardRTCapable;

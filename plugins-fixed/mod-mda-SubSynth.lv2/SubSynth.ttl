@@ -51,7 +51,16 @@ mda:SubSynth
     lv2:optionalFeature lv2:hardRTCapable ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
-    rdfs:comment """More bass than you could ever need! Be aware that you may be adding low frequency content outside the range of your monitor speakers.  To avoid clipping, follow with a limiter plug-in (this can also give some giant hip-hop drum sounds!).""" ;
+    rdfs:comment """
+All the bass you could ever want! 
+With the MDA SubSynth you’ll produce/filter harmonics, flip phase, add a smooth sub-octave, use it as an octave divider and more!
+For a full description of the MDA SubSynth and its controls Check out the developer's website: http://mda.smartelectronix.com/vst/help/subsynth.htm
+
+Be aware that you may be adding low frequency content outside of the range of your monitor speakers. To avoid clipping, follow up with a limiter plug-in (this can also create some fat sounding hip-hop drum sounds!).
+
+Features:
+Modeled by MDA
+""" ;
     lv2:minorVersion 0;
     lv2:microVersion 3;
     mod:brand "MDA" ;
