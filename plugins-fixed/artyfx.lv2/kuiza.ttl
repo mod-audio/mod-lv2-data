@@ -38,7 +38,13 @@
   doap:description "4-band Fixed Parameteric EQ";
   lv2:optionalFeature lv2:hardRTCapable ;
 
-  rdfs:comment "A 4 band equalizer with preset bands.";
+  rdfs:comment """
+Need a simple and straightforward equalizer?
+The Kuiza is a four-band EQ with low, low-mid, hi-mid, high and an overall gain control.
+
+Features:
+Modeled by openAV
+""";
   lv2:minorVersion 2; lv2:microVersion 0;
   mod:brand "OpenAV";
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;

@@ -57,14 +57,15 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_gcb_95_gui#_gcb_95_>;
     
 rdfs:comment """
-Analog wah emulation of the classic Dunlop GCB95 Crybaby (*), in a auto-wah version.
+The GXCrybaby is an auto-wah pedal inspired by the Dunlop Cry Baby GCB95.
+This is a classic amongst the classics. Name any great guitarist and he will have used it.
+This has the highest frequency range of all famous Dunlop(*) wahs. This makes it especially suitable for clean and distorted sounds, such as the legendary rhythm tool that some generations still remember from the Shaft soundtrack, or the title tune of “The Streets of San Francisco”. 
 
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Dunlop GCB95 Crybaby is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+Features:
+Modeled by guitarix
+Based on the Dunlop Cry Baby GCB95
 
-*Unofficial documentation
-
+(*)'Other product names modeled in the software trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD. Dunlop GCB95 Crybaby is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of the product. All other trademarks are the property of their respective holders.'
 """;
 
     lv2:port  [
