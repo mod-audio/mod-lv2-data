@@ -49,9 +49,12 @@ mda:RingMod
     lv2:optionalFeature lv2:hardRTCapable ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
-    rdfs:comment """Simple ring modulator with sine-wave oscillator.
+    rdfs:comment """
+The Ringmod is a ring modulator with frequency, fine tune and feedback controls.
 
-Can be used as a high-frequency enhancer for drum sounds (when mixed with the original), adding dissonance to pitched material, and severe tremolo (at low frequency settings).""" ;
+Features:
+Modeled by MOD Devices
+""";
     lv2:minorVersion 0;
     lv2:microVersion 2;
     mod:brand "MDA" ;

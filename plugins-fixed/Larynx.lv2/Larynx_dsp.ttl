@@ -67,7 +67,10 @@
     ] ;
 
     rdfs:comment """
-Larynx is a simple vibrato with a tone control.
+The Larynx is a simple, great sounding vibrato effect with a tone control. The Depth knob controls the intensity of the modulation effect and Rate changes the modulation frequency.
+
+Features:
+Modeled by SHIRO
 """ ;
 
     mod:brand "SHIRO" ;

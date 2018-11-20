@@ -36,9 +36,10 @@ lv2:minorVersion 7;
 lv2:microVersion 3;
 
 rdfs:comment """
-The tremolo effect is probably one of the most ancient effects, originated in the earliest days of the history of studio recording. It lost some of its popularity over time (and with the emerge of more exciting digital effects), but you still hear this effect on newer recordings from time to time.
+The Tremolo effect is one of the oldest effects for guitar. It was created around the 1940s when the effect was added to tube amplifiers. This is a great straightforward tremolo with easy controls, suitable for use with any instrument. 
 
-source: http://tap-plugins.sourceforge.net/ladspa/tremolo.html
+Features:
+Modeled by TAP
 """;
 
 lv2:port
