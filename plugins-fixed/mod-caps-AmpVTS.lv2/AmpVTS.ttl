@@ -14,13 +14,10 @@ mod:brand "CAPS";
 mod:label "AmpVTS";
 
 rdfs:comment """
-Tracing the stages of a typical tube amplifier circuit, this plugin aims to recreate those features of traditional guitar amplification electronics that have proved musically useful, and to provide them with the most musical rather than the most authentic ranges of adjustment and character.  CabinetIV provides matching recreations of loudspeaker cabinets.
+The CAPS ampVTS is a digital guitar amplifier that is designed to feel and respond like a real tube amplifier. The tonestack is switchable and offers a more versatile amplifier. The tonestacks are based on classic tube amplifiers.  
 
-The processor consists – with some interconnections – of a configurable lowcut input filter, a ToneStack circuit of the procedural variant, a saturating 'preamp' stage with adjustable gain and variable distortion asymmetry followed by the bright filter, compression characteristics determined by the attack and squash controls and finally a 'power amp' stage with the amount of saturation depending on both gain and power settings.
-
-Sound quality and computational load can be balanced with the over control affording a choice of 2x or 4x oversampling with 32-tap filters, or 8x with 64 taps.  Lower quality settings will sound slightly grittier and less transparent, and at high gain aliasing may become audible.
-
-source: http://quitte.de/dsp/caps.html#AmpVTS
+Features:
+Modeled by CAPS
 """;
 
 lv2:port
