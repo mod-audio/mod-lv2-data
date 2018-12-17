@@ -58,7 +58,11 @@ mda:DubDelay
     mod:brand "MDA" ;
     mod:label "DubDelay" ;
     rdfs:comment """
-Delay with feedback saturation and time/pitch modulation
+The DubDelay is the go-to pedal for musicians who look for a delay pedal that adds something special to their sound.
+The unique features of the DubDelay are its LFO and Pitch effect, and the modulation it creates. Perfect for clean sounds where you would want to add a vibrato-like effect to the mix. Or change the Pitch to create sounds you have never heard before. 
+
+Features:
+Modeled by MDA
 """;
 
 

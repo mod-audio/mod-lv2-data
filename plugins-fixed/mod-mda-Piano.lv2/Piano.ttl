@@ -33,6 +33,15 @@ mda:Piano
     mod:brand "MDA" ;
     mod:label "Piano" ;
 
+rdfs:comment """
+The MDA Piano generates a variety of piano sounds.
+It was designed for a very low CPU usage. Tweak the sound to fit to your personal needs, or check out the presets. There is a bunch of cool stuff in there.
+
+Features:
+Modeled by MDA
+
+""";
+
     lv2:port [
         a lv2:InputPort ,
             lv2:ControlPort ;

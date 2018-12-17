@@ -34,11 +34,19 @@ lv2:microVersion 0;
 doap:license "GPL";
 
 rdfs:comment """
-Analog distortion emulation of the classic Electro-Harmonix Big Muff Pi (*)
+The MOD Big Muff is inspired by the classic Electro-Harmonix Big Muff Pi(*).
+This massive pedal has defined the sound of rock guitar!
+
+Throughout the late 1960s and early 1970s the fuzz revolution took place spicing up rock and roll music. The Electro-Harmonix Big Muff Pi* was one of its greatest representatives. 
+
+Its rich tone and creamy, violin-like sustain made its name among legends of all times and styles - from Hendrix and Pink Floyd, to Sonic Youth and the White Stripes.
+
+Features:
+Modeled by MOD Devices
+Based on the classic Electro-Harmonix Big Muff Pi*
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Electro-Harmonix Big Muff Pi is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+Electro-Harmonix Big Muff Pi is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
 
 """;
 

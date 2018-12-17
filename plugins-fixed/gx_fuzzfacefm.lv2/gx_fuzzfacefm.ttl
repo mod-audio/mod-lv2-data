@@ -55,13 +55,18 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_fuzzfacefm_gui#_fuzzfacefm_>;
     mod:brand "Guitarix";
 rdfs:comment """
-Analog distortion emulation of the classic Dunlop Fuzz Face (Fuller Mods) (*)
+The Gx FuzzFace FullerMod is modeled after the classic Fuzz Face pedal(*), but with the Fuller Mods. 
 
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Dunlop Fuzz Face is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+The classical Fuzz Face originated in 1966. Back then, the pedal did not get that much attention as it lacked the very popular tube sound. Nowadays, it is considered a classic thanks to Jimi Hendrix using it extensively.
 
-*Unofficial documentation
+The classic Fuzz Face has two controls: Volume and Fuzz. Now, with the Fuller mods 2, further controls are introduced. The input and drive knobs are used in order to  “clean” up the distortion that the Fuzz Face produces, crafting more subtle shades of softer distortion. 
+
+Features:
+Modeled by the Guitarix team
+Based on the classic Dunlop Fuzz Face(*)
+
+(*) 'Other product names modelled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Dunlop Fuzz Face is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
 
 """;
 

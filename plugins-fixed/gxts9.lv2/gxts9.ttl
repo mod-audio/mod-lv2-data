@@ -55,13 +55,18 @@
 		mod:brand "Guitarix" ;
 
 rdfs:comment """
-Analog distortion emulation of the classic Ibanez TS-9 (*)
+The Gx Tube Screamer is an analog distortion emulation of the classic Ibanez TS-9(*)
+
+First released in 1982 this is a real classic among all musicians. The pedal mimics the sound of a vintage tube amplifier, and has a characteristic mid-boosted tone which is popular amongst blues and rock players. The legendary Tube Screamer has been used by countless guitarists to create their signature sound, and is one of the most successful, widely copied and "modded" overdrive pedals in the history of the electric guitar. 
+
+It has a drive knob, a tone knob, and a level knob. The drive knob adjusts gain, the tone knob adjusts treble and the level knob adjusts the output volume of the pedal.
+
+Features:
+Modeled by the Guitarix team
+Based on the classic Ibanez TS-9(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Ibanez TS-9 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+Ibanez TS-9 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
 
 """;
 

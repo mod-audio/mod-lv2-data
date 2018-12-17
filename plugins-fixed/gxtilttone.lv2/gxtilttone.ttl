@@ -56,13 +56,15 @@
     mod:label "GxTiltTone" ;
 
 rdfs:comment """
-A simple Tilt Tone control (*)
+The Gx Tilt Tone is a very simple and effective Tilt Tone control
 
-(*) The Tilt control imposes a shelving function, which attenuates half of frequency band and augments the other half. In other words, it is special type of a tone control that, unlike the typical tone control that boosts or cuts just the highs or mids or lows, shifts both highs and lows at once.
+A Tilt Tone control is a kind of tone control that is quite rare to come across and most people only know it from the Quad 34 HI-Fi pre-amp. Unlike the typical tone control that boosts or cuts only the highs, mids or lows, a Tilt Tone shifts both highs and lows at once. Meaning that turning the Tone knob to the left will boost your bass but also cut your treble. 
 
-*Unofficial documentation
+The Drive is used to set the pre-gain, and when set high enough, it will start to distort. The level control is used for the overall volume of the pedal. 
 
-source: http://www.tubecad.com/2013/06/blog0266.htm
+Features:
+Modeled by the Guitarix team
+
 """;
 
     lv2:port [

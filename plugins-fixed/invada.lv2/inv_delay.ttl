@@ -21,7 +21,12 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-A wet only delay with munged delays, the pitch can be modulated by a lfo.
+The Delay Munge is a unique delay pedal that is great for ambient sounds. 
+The Munge effect sets this pedal apart from the rest of the delay pedal family. It alters the shape and feel of each repetition caused by the delay effect. This can be controlled by changing the values of the LFO and Munge knobs and offers a lot of authenticity and dynamics to the sound.
+The Delay munge has vast soundscapes to offer.
+
+Features:
+Modeled by Invada
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -234,7 +239,13 @@ A wet only delay with munged delays, the pitch can be modulated by a lfo.
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-A wet only delay with munged delays, the pitch can be modulated by a lfo.
+This is the stereo version of the Delay Munge.
+The Delay Munge is a unique delay pedal that is great for ambient sounds. 
+The Munge effect sets this pedal apart from the rest of the delay pedal family. It alters the shape and feel of each repetition caused by the delay effect. This can be controlled by changing the values of the LFO and Munge knobs and offers a lot of authenticity and dynamics to a sound.
+The Delay munge has vast soundscapes to offer.
+
+Features:
+Modeled by Invada
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;

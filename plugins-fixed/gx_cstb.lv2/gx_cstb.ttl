@@ -58,13 +58,18 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_cstb_gui#_cstb_>;
 
 rdfs:comment """
-Analog distortion emulation of the classic Colorsound Tonebender (*)
+The ToneBender  is modeled after the Colorsound ToneBender(*).
+
+The Colorsound ToneBender is a highly sought-after four transistor fuzz based on the original schematic of the Big Muff Pi. Nonetheless, it has its own unique sound which is often brighter. 
+
+With its own bank of notable users such as Jack White, Jimmy Page and Pete Townshend, this pedal became an icon of its own. 
+
+Features:
+Modeled by the Guitarix team
+Based on the Colorsound Tone Bender(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Colorsound Tonebender is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
+The Colorsound Tone Bender is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
 
 """;
 
