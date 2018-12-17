@@ -45,7 +45,11 @@ Modeled by MOD Devices
 Based on the classic BOSS DS-1(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+<<<<<<< HEAD
 BOSS DS-1 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
+=======
+BOSS DS-1 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 
 """;
 

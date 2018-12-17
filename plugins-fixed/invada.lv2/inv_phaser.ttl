@@ -21,7 +21,10 @@
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Subtle phaser with a very large LFO range
+The Sphaser features unique controls such as Phase Offset and a very long oscillation which makes it a go-to pedal for authentic phase effects.
+
+Features:
+Modeled by Invada
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -173,7 +176,11 @@ Subtle phaser with a very large LFO range
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Subtle phaser with a very large LFO range
+This is the stereo version of the Sphaser effect.
+The Sphaser features unique controls such as Phase Offset and a very long oscillation which makes it a go-to pedal for authentic phase effects.
+
+Features:
+Modeled by Invada
 """;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
@@ -343,7 +350,11 @@ Subtle phaser with a very large LFO range
     lv2:minorVersion 2;
     lv2:microVersion 1;
     rdfs:comment """
-Subtle phaser with a very large LFO range
+This version of the Sphaser effect pedal sums up the two inputs.
+The Sphaser features unique controls such as Phase Offset and a very long oscillation which makes it a go-to pedal for authentic phase effects.
+
+Features:
+Modeled by Invada
 """;
 
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;

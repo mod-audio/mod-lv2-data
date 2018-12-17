@@ -14,11 +14,11 @@ mod:brand "CAPS";
 mod:label "PhaserII";
 
 rdfs:comment """
-This take on the classic effect features two modulation choices, traditional sine-based periodicity or smoothened fractal oscillation.
+The Phaser II is a modern take on this classic, well-loved effect. 
+Thanks to its two modulation options, you will be able to customize your sound using either a traditional sine-based periodicity or the smoothened fractal oscillation. 
 
-Very high resonance settings can cause self-oscillation peaking in excess of 0 dB.
-
-source: http://quitte.de/dsp/caps.html#PhaserII
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

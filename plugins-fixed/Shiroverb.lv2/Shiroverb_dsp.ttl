@@ -123,7 +123,10 @@
     ] ;
 
     rdfs:comment """
-Shiroverb is a shimmer-reverb based on the "Gigaverb"-genpatch, ported from the implementation by Juhana Sadeharju, and the "Pitch-Shift"-genpatch, both in Max MSP.
+This shimmery reverb is based on the "Gigaverb"-genpatch and the "Pitch-Shift"-genpatch from Max MSP. 
+
+Features:
+Modeled by Shiro
 """ ;
 
     mod:brand "SHIRO" ;

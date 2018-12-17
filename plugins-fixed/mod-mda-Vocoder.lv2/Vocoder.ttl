@@ -52,9 +52,17 @@ mda:Vocoder
     lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
-    rdfs:comment """16-band vocoder for applying the spectrum of one sound (the modulator, usually a voice or rhythm part) to the waveform of another (the carrier, usually a synth pad or sawtooth wave).
+    rdfs:comment """
+This 16-band vocoder applies the spectrum of your voice to the waveform of an instrument. 
+Plug your voice signal into the Modulator input and the instrument into the Carrier input.
 
-Note that both carrier and modulator signals are taken from one input channel, which therefore must be stereo for normal operation. This is different to some other vocoder plug-ins where one of the input signals is taken from another plug-in in a different channel.""" ;
+The modulator and carrier inputs will be split into a series of frequency-bands that are modifiable with the vocoder. After that, each carrier band will be modulated and added at the end. This vocoder also features an adjustable envelope and output level. 
+
+For a full description of the MDA Vocoder and its controls Check out the developer's website: http://mda.smartelectronix.com/vst/help/vocoder.htm
+
+Features:
+Modeled by MDA
+""" ;
     lv2:minorVersion 0;
     lv2:microVersion 3;
     mod:brand "MDA" ;

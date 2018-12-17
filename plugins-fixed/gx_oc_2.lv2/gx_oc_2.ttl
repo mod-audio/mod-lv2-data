@@ -56,18 +56,16 @@
 
 mod:brand "Guitarix";
 rdfs:comment """
+The Gx OC-2 is an octaver pedal which drops the sound one and two octaves down to create an extra fat tone.
+The Gx OC-2 is partially inspired by the Boss OC-2(*), a classic that has been around for quite some time. With very simple controls, the knobs set the volume of the sound that is either one or two octaves down. The direct sound is used to set the volume of your normal input sound. 
+Pro-tip: you can cop a cool synth sound if you crank the Octave 1 knob up while keeping the other two knobs turned down. 
 
-A plugin that drops the original sound 1 and 2 octaves down to create an
-extra fat sound
-
-Partial emulation of the classic Boss OC-2 (*)
+Features:
+Modeled by the Guitarix team
+Based on the Boss OC-2 (*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Boss OC-2 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
-
-*Unofficial documentation
-
+The Boss OC-2 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
 """;
 
     lv2:port  [

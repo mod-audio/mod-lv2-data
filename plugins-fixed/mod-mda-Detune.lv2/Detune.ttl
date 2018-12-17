@@ -19,7 +19,12 @@ mda:Detune
     lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
+<<<<<<< HEAD
     rdfs:comment """ The Detune is a low-quality stereo pitch shifter. It can be used for the sort of detune effects found on multi-effects. It will create a widening effect but wont ‘swoosh’ like a chorus. 
+=======
+    rdfs:comment """
+The Detune is a low-quality stereo pitch shifter. It can be used for the sort of detune effects found on multi-effects. It will create a widening effect but wont ‘swoosh’ like a chorus. 
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 This effect was very popular in the 80’s with bands such as Boston and Judas Priest, but Ozzy Osbourne is also known for using detuning on his vocals. 
 
 Features:

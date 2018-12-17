@@ -135,7 +135,12 @@
     ] ;
 
     rdfs:comment """
+<<<<<<< HEAD
 The Nekobi generator is based after the legendary Roland TB-303 
+=======
+
+The Nekobi generator is based on the legendary Roland TB-303 
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 This polemic bass-synthesizer got quite some critiques in its early days. Soon the public realised its incredible fit to trance, house and EDM music like no other device at the time. It didn’t take very long before the hype started and the demand began to rise. 
 Loyal to its inspiration, the Nekobi is a monophonic synthesizer, which means only one note can be played at a time.
 
@@ -144,7 +149,11 @@ Modeled by FalkTX & Sean Bolton
 Based on the Roland TB-303*
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+<<<<<<< HEAD
 The Roland TB-303 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.
+=======
+The Roland TB-303 is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 
 """ ;
 

@@ -50,10 +50,14 @@
         foaf:homepage <https://github.com/falkTX/FluidPlug> ;
     ] ;
 
-    rdfs:comment """This plugin contains the 'Drumkits Percussion' section of the AVL Drumkits series.
-These kits are intended to bring an authentic acoustic, organic drum sound to your arrangements and preserve real-world characteristics such as tom ringing and overtones,
-unlike many General MIDI kits that sound sterile.
-AVL Drumkits feature 5 sample layers per kit piece. The shell samples provide both center and edge hits to emulate right and left hands and the cymbals are quite realistic without truncated samples.""" ;
+    rdfs:comment """
+The Black Pearl 5 features the ‘Drumkits Percussion’ section of the AVL Drumkits series. 
+
+These kits are intended to bring an authentic acoustic, organic drum sound to your arrangements and preserve real-world characteristics such as tom ringing and overtones, unlike many known MIDI kits which sound sterile. AVL Drumkits feature 5 sample layers per kit piece. The shell samples provide both center and edge hits to emulate right and left hands.
+
+Features:
+Modeled by FalkTX
+""" ;
 
     lv2:minorVersion 2 ;
     lv2:microVersion 0 .

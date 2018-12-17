@@ -412,7 +412,13 @@ fil4:mono
 		lv2:symbol "out" ;
 		lv2:name "Out"
 	] ;
-	rdfs:comment "Mono 4 Band Parametric Filter with High + Low Shelf, DC-offset/High Pass and Low Pass filter."
+	rdfs:comment """
+A very complete EQ with visual response.
+Featuring 4 bands, highpass and lowpass filters, you can now use your stomp box in order to tweak each edge of your sound as you like it.
+
+Features:
+Modeled by Robin Gareus
+	"""
 	.
 
 fil4:stereo
@@ -818,5 +824,10 @@ fil4:stereo
 		lv2:symbol "outR" ;
 		lv2:name "Out Right"
 	] ;
-	rdfs:comment "Stereo 4 Band Parametric Filter with High + Low Shelf, DC-offset/High Pass and Low Pass filter."
-	.
+	rdfs:comment """
+A very complete stereo EQ with visual response.
+Featuring 4 bands, highpass and lowpass filters, you can now use your stomp box in order to tweak each edge of your sound as you like it.
+
+Features:
+Modeled by Robin Gareus
+""".

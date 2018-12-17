@@ -36,7 +36,13 @@
 
   doap:name "Filta";
   doap:description "Lowpass/Highpass Filter";
-  rdfs:comment "Highpass lowpass filter combination.";
+  rdfs:comment """
+A highpass and lowpass filter combined in a single knob!
+The simplest way of limiting your frequency range or sweeping your sound around.
+
+Features:
+Modeled by OpenAV
+""";
   lv2:minorVersion 2; lv2:microVersion 0;
   mod:brand "OpenAV";
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;

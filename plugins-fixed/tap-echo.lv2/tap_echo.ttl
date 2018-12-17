@@ -34,7 +34,11 @@ lv2:microVersion 3;
 
 rdfs:comment """
 Looking for a delay pedal with that will get any job done?
+<<<<<<< HEAD
 The Stereo Echo is what you’re looking for. With basic controls such as delay time, feedback, dry and wet levels, you can create solid mono, stereo or even ping-pong delay sounds.
+=======
+The Stereo Echo Tap is what you’re looking for. With basic controls such as delay time, feedback, dry and wet levels, you can create solid mono, stereo or even ping-pong like delay sounds.
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 Things will get interesting once you start playing with the Cross effect. Playing with this knob will give a wide, open and spacious effect, resulting in a more realistic sense of depth in your sound. For the audio-junkies out there, it’s the magic of the Haas effect. 
 
 Features:

@@ -95,12 +95,21 @@
     lv2:minorVersion 1 ;
     mod:brand "Dowell";
     rdfs:comment """
+<<<<<<< HEAD
     The AmSynth is a very big synth that might look quite difficult at first. However it is a synth with a classic subtractive synthesizer topology. It features Dual oscillators, a resonant filter, a dual ADSR and a LFO. A full description of the controls can be found on the developer's website:  https://amsynth.github.io/ . 
 
     If you’re not into turning a bunch of fancy knobs and just want to plug and play, give the presets of this synth a go, it has a broad variety of sounds including some classic synths and some funky noises! 
 
     Features:
     Modeled by Nick Dowell
+=======
+The AmSynth is a very big synth that might look quite difficult at first. However it is a synth with a classic subtractive synthesizer topology. It features Dual oscillators, a resonant filter, a dual ADSR and a LFO. A full description of the controls can be found on the developer's website:  https://amsynth.github.io/ . 
+
+If you’re not into turning a bunch of fancy knobs and just want to plug and play, give the presets of this synth a go, it has a broad variety of sounds including some classic synths and some funky noises! 
+
+Features:
+Modeled by Nick Dowell
+>>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e
 
     """;
     lv2:optionalFeature lv2:hardRTCapable;
