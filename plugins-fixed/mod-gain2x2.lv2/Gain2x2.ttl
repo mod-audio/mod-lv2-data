@@ -30,7 +30,8 @@ mod:label "Gain 2x2";
 doap:license "GPL";
 
 rdfs:comment """
-Stereo version of the simple volume gain plugin without "zipping" noise while messing with the gain parameter.
+A simple stereo volume gain plugin without "zipping" noise when messing around with the gain parameter.
+Also available in a mono version. 
 """;
 
 lv2:port

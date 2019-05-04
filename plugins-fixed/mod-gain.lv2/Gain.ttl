@@ -30,7 +30,8 @@ mod:label "Gain";
 doap:license "GPL";
 
 rdfs:comment """
-Simple volume gain plugin without "zipping" noise while messing with the gain parameter.
+Simple mono volume gain plugin without "zipping" noise when messing around with the gain parameter.
+Also available in a stereo version.
 """;
 
 lv2:port
