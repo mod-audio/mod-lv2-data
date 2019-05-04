@@ -69,7 +69,9 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_cabinet#gui>;
 
 rdfs:comment """
+The GxCabinet is based on emulations of famous cabinet models ranging from more classic vintage sounding to modern, cleaner tones.Features:
 
+Modeled by Guitarix
 """;
 
     lv2:port  [
