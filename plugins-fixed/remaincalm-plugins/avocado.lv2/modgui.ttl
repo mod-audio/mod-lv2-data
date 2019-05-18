@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://remaincalm.org/plugins/avocado>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-avocado.html> ;
+        modgui:stylesheet <modgui/stylesheet-avocado.css> ;
+        modgui:screenshot <modgui/screenshot-avocado.png> ;
+        modgui:thumbnail <modgui/thumbnail-avocado.png> ;
+        modgui:brand "remaincalm" ;
+        modgui:label "avocado stutter/glitch" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "avocado" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "bufsiz" ;
+            lv2:name "Time" ;
+        ];
+    ] .

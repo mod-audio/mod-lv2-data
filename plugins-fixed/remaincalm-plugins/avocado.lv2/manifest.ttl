@@ -1,0 +1,20 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/avocado>
+    a lv2:Plugin ;
+    lv2:binary <avocado_dsp.so> ;
+    rdfs:seeAlso <avocado_dsp.ttl> ,
+                 <modgui.ttl> .
+
+<http://remaincalm.org/plugins/avocado#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/avocado> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
+
+<http://remaincalm.org/plugins/avocado> <http://moddevices.com/ns/mod#releaseNumber> 3 .
+<http://remaincalm.org/plugins/avocado> <http://moddevices.com/ns/mod#builderVersion> 1 .
