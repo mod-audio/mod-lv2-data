@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://remaincalm.org/plugins/mud>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mud.html> ;
+        modgui:stylesheet <modgui/stylesheet-mud.css> ;
+        modgui:screenshot <modgui/screenshot-mud.png> ;
+        modgui:thumbnail <modgui/thumbnail-mud.png> ;
+        modgui:brand "remaincalm" ;
+        modgui:label "mud modulation/filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "mud" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "filter" ;
+            lv2:name "Filter" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "lfo" ;
+            lv2:name "LFO" ;
+        ] ;
+    ] .

@@ -1,0 +1,88 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/mud#preset001>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 50.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 50.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value 0.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/mud#preset002>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 90.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 87.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value 20.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/mud#preset003>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 70.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 90.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value -13.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/mud#preset004>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 65.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 80.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value 100.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/mud#preset005>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 100.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 15.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value -40.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/mud#preset006>
+    lv2:port [
+        lv2:symbol "mix" ;
+        pset:value 100.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 67.000000 ;
+    ] ,
+    [
+        lv2:symbol "lfo" ;
+        pset:value 0.000000 ;
+    ] .
+
+

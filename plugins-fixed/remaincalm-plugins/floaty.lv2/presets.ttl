@@ -1,0 +1,160 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/floaty#preset001>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 280.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 42.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 20.000000 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 60.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 19.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value 1.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/floaty#preset002>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 350.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 25.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 15.000001 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 35.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 53.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value -1.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/floaty#preset003>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 430.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 25.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 17.000000 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 40.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 90.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value 1.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/floaty#preset004>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 600.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 13.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 10.000000 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 35.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 70.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value -2.000000 ;
+    ] .
+
+<http://remaincalm.org/plugins/floaty#preset005>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 260.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 13.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 5.000000 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 15.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 60.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value 1.500000 ;
+    ] .
+
+<http://remaincalm.org/plugins/floaty#preset006>
+    lv2:port [
+        lv2:symbol "delay" ;
+        pset:value 90.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix" ;
+        pset:value 45.000000 ;
+    ] ,
+    [
+        lv2:symbol "feedback" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "warp" ;
+        pset:value 45.000000 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 60.000000 ;
+    ] ,
+    [
+        lv2:symbol "rate" ;
+        pset:value 1.000000 ;
+    ] .
+
+
