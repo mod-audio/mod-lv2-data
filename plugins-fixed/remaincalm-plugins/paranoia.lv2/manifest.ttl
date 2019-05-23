@@ -1,0 +1,53 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/paranoia>
+    a lv2:Plugin ;
+    lv2:binary <paranoia_dsp.so> ;
+    rdfs:seeAlso <paranoia_dsp.ttl> ,
+                 <modgui.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "grit" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "more grit" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "gated fuzz" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "lofi" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "invert" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/paranoia#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
+    rdfs:label "lupine" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
+
+<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#releaseNumber> 3 .
+<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#builderVersion> 1 .
+
+<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#releaseNumber> 4 .
+<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#builderVersion> 1 .

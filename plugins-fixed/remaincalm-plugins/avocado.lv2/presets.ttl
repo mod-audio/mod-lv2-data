@@ -1,0 +1,10 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/avocado#preset001>
+    lv2:port [
+        lv2:symbol "bufsiz" ;
+        pset:value 70.000000 ;
+    ] .
+
+

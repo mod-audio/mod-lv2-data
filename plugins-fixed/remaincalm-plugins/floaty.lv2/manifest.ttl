@@ -1,0 +1,53 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/floaty>
+    a lv2:Plugin ;
+    lv2:binary <floaty_dsp.so> ;
+    rdfs:seeAlso <floaty_dsp.ttl> ,
+                 <modgui.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Dream" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Dub" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Octave" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Melt" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/floaty#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
+    rdfs:label "Slap" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
+
+<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#releaseNumber> 7 .
+<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#builderVersion> 1 .
+
+<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#releaseNumber> 8 .
+<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#builderVersion> 1 .

@@ -1,0 +1,53 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+
+<http://remaincalm.org/plugins/mud>
+    a lv2:Plugin ;
+    lv2:binary <mud_dsp.so> ;
+    rdfs:seeAlso <mud_dsp.ttl> ,
+                 <modgui.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "beef" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "sweep" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "sweep 2" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "vibe" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "megavibe" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<http://remaincalm.org/plugins/mud#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
+    rdfs:label "honk" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
+
+<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#releaseNumber> 6 .
+<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#builderVersion> 1 .
+
+<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#releaseNumber> 7 .
+<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#builderVersion> 1 .
