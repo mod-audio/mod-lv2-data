@@ -33,6 +33,7 @@
         lv2:portProperty mod:tapTempo ; 
         lv2:designation  time:beatsPerMinute ;
         units:unit units:bpm ;
+        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -49,15 +50,11 @@
         lv2:index 2 ;
         lv2:symbol "tempo_mode" ;
         lv2:name "Tempo Mode" ;
-        lv2:default 0 ;
-        lv2:minimum 0 ;
+        lv2:default 1 ;
+        lv2:minimum 1 ;
         lv2:maximum 2 ;
         lv2:portProperty lv2:enumeration, lv2:integer;
         lv2:scalePoint [
-            rdf:value 0 ;
-            rdfs:label "MOD/Host" ;
-            rdfs:comment "Tempo set by MOD/Host" ;
-        ], [
             rdf:value 1 ;
             rdfs:label "User" ;
             rdfs:comment "Tempo set by user" ;

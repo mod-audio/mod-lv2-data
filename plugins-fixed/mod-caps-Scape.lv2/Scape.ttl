@@ -36,6 +36,7 @@ lv2:port
     lv2:symbol "bpm";
     lv2:designation time:beatsPerMinute;
     units:unit units:bpm;
+    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
