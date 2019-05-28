@@ -79,6 +79,7 @@ Modeled by MDA
         lv2:maximum 7341.0 ;
         
         units:unit units:ms ;
+        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
         rdfs:comment "Delay time (delay is mono for authenticity!)"
     ] , [
         a lv2:InputPort ,
