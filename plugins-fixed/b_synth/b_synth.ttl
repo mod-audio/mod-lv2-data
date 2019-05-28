@@ -69,16 +69,8 @@
 	mod:brand "x42";
 	mod:label "setBfree";
 	rdfs:comment """
-<<<<<<< HEAD
-	The setBfree is a MIDI-controlled software synthesizer designed to imitate the sound and properties of the electromechanical organs and sound modification devices that brought worldwide fame to the names and products of Laurens Hammond and Don Leslie. 
-
-	Features:
-	Modeled by Robin Gareus
-	""".
-=======
 The setBfree is a MIDI-controlled software synthesizer designed to imitate the sound and properties of the electromechanical organs and sound modification devices that brought worldwide fame to the names and products of Laurens Hammond and Don Leslie. 
 
 Features:
 Modeled by Robin Gareus
 """.
->>>>>>> 115799a6fb3f7fec831ec5793ed08ef46b16c09e

@@ -55,7 +55,6 @@ lv2:port
     lv2:maximum 20.0;
 
     units:unit units:hz ;
-    
 ],
 [
     a lv2:InputPort, lv2:ControlPort;
