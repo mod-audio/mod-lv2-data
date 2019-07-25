@@ -7,7 +7,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 blop:quantiser_50
-	a lv2:Plugin ;
+	a lv2:Plugin ,
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "quantiser_50" ;
 	lv2:microVersion 0 ;

@@ -5,7 +5,8 @@
 @prefix mod: <http://moddevices.com/ns/mod#> .
 
 blop:sequencer_16
-	a lv2:Plugin ;
+	a lv2:Plugin ,
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "sequencer_16" ;
 	lv2:microVersion 0 ;
