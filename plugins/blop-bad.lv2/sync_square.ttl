@@ -10,7 +10,7 @@
 
 blop:sync_square
 	a lv2:Plugin ,
-		lv2:OscillatorPlugin ;
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "sync_square" ;
 	lv2:microVersion 0 ;
