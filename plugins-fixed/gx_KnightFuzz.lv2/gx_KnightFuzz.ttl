@@ -53,7 +53,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_KnightFuzz_gui#_KnightFuzz_>;
     
 rdfs:comment """
-The GxKnightFuzz is a distortion plugin based on the vintage Knight Fuzz KG-389 which was originally sold as a DIY kit in the mid 60s. This rarity was originally advertised as “The wildest sound you’ve ever heard” to an audience of young guitar geeks. And it delivers, to say the least! Its minimalistic interface allow you to achieve that rough, gritty fuzz while keeping the bottom-end fluid and not too muddy. The GxKnightFuzz is the perfect compromise between simplicity and versatility.\n
+The GxKnightFuzz is a distortion plugin based on the vintage Knight Fuzz KG-389 which was originally sold as a DIY kit in the mid 60s. This rarity was originally advertised as “The wildest sound you’ve ever heard” to an audience of young guitar geeks. And it delivers, to say the least! Its minimalistic interface allows you to achieve that rough, gritty fuzz while keeping the bottom-end fluid and not too muddy. The GxKnightFuzz is the perfect compromise between simplicity and versatility.\n
 Features:\n
 Modeled by Guitarix
 """;
