@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_KnightFuzz_#_KnightFuzz_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxknightfuzz.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxknightfuzz.css> ;
+        modgui:screenshot <modgui/screenshot-gxknightfuzz.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxknightfuzz.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxKnightFuzz" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "knightfuzz" ;
+        modgui:knob "cairo" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INPUT" ;
+            lv2:name "INPUT" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "VOLUME" ;
+        ] ;
+    ] .
