@@ -52,7 +52,6 @@ lv2:port
     lv2:default 1000.0;
     lv2:minimum 100.0;
     lv2:maximum 1600.0;
-
     units:unit units:ms ;
     lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
 ],
