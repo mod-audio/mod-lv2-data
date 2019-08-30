@@ -33,7 +33,6 @@
         lv2:portProperty mod:tapTempo ; 
         lv2:designation  time:beatsPerMinute ;
         units:unit units:bpm ;
-        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -50,11 +49,15 @@
         lv2:index 2 ;
         lv2:symbol "tempo_mode" ;
         lv2:name "Tempo Mode" ;
-        lv2:default 1 ;
-        lv2:minimum 1 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
         lv2:maximum 2 ;
         lv2:portProperty lv2:enumeration, lv2:integer;
         lv2:scalePoint [
+            rdf:value 0 ;
+            rdfs:label "MOD/Host" ;
+            rdfs:comment "Tempo set by MOD/Host" ;
+        ], [
             rdf:value 1 ;
             rdfs:label "User" ;
             rdfs:comment "Tempo set by user" ;
@@ -267,5 +270,9 @@
         lv2:maximum 1000 ;
         units:unit units:bpm ;
     ] ;
-    rdfs:comment '''This stereo tempo delay features high pass and low pass filters as well as host tempo. When using it with the MOD Duo on software version >1.2.0, then please assign a footswitch to Host/MOD-Tempo. Otherwise you can assign the tap button to a foot switch. Always make sure to set the correct tempo mode. 
-    Enjoy! :-) And feedback is always welcome.''' .
+    rdfs:comment '''
+The Bollie Delay is a stereo tempo delay featuring high pass and low pass filter as well as a host tempo function, granting more control over your delay settings. This powerful delay is perfect for experimenting with your vocals or your guitar. 
+
+Features:
+Modeled by Bollie
+    ''' .
