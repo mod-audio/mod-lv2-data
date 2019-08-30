@@ -8183,11 +8183,3 @@
     pset:bank <http://zynaddsubfx.sourceforge.net#bank_the_mysterious_bank_4> ;
     rdfs:label "the_mysterious_bank_4: 0039-jazz_guitar.xiz" ;
     rdfs:seeAlso <the_mysterious_bank_4.ttl> .
-
-
-
-<default-preset>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://zynaddsubfx.sourceforge.net> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

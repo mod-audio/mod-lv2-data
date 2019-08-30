@@ -9,8 +9,8 @@
 
 <?xml version="1.0f" encoding="UTF-8"?>
 <!DOCTYPE ZynAddSubFX-data>
-<ZynAddSubFX-data version-major="2" version-minor="5"
-version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
+<ZynAddSubFX-data version-major="3" version-minor="0"
+version-revision="5" ZynAddSubFX-author="Nasca Octavian Paul">
 <INFORMATION />
 <BASE_PARAMETERS>
 <par name="max_midi_parts" value="16" />
@@ -21,7 +21,7 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <par name="max_addsynth_voices" value="8" />
 </BASE_PARAMETERS>
 <MASTER>
-<par name="volume" value="80" />
+<par_real name="volume" value="-6.66667" exact_value="0xC0D55556" />
 <par name="key_shift" value="64" />
 <par_bool name="nrpn_receive" value="yes" />
 <MICROTONAL>
@@ -34,9 +34,12 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <par name="a_note" value="69" />
 <par_real name="a_freq" value="440" exact_value="0x43DC0000" />
 </MICROTONAL>
+<automation>
+<mgr-info nslots="16" nautomations="4" ncontrol="8" />
+</automation>
 <PART id="0">
 <par_bool name="enabled" value="yes" />
-<par name="volume" value="96" />
+<par_real name="volume" value="0" exact_value="0x00000000" />
 <par name="panning" value="64" />
 <par name="min_key" value="0" />
 <par name="max_key" value="127" />
@@ -69,7 +72,7 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <ADD_SYNTH_PARAMETERS>
 <par_bool name="stereo" value="yes" />
 <AMPLITUDE_PARAMETERS>
-<par name="volume" value="90" />
+<par_real name="volume" value="-3.75" exact_value="0xC0700000" />
 <par name="panning" value="64" />
 <par name="velocity_sensing" value="64" />
 <par name="fadein_adjustment" value="20" />
@@ -94,13 +97,13 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <par name="R_val" value="64" />
 </AMPLITUDE_ENVELOPE>
 <AMPLITUDE_LFO>
-<par_real name="freq" value="0.629921" exact_value="0x3F214285" />
+<par_real name="freq" value="6.49" exact_value="0x40CFAE14" />
 <par name="intensity" value="0" />
 <par name="start_phase" value="64" />
 <par name="lfo_type" value="0" />
 <par name="randomness_amplitude" value="0" />
 <par name="randomness_frequency" value="0" />
-<par name="delay" value="0" />
+<par_real name="delay" value="0" exact_value="0x00000000" />
 <par name="stretch" value="64" />
 <par_bool name="continous" value="no" />
 </AMPLITUDE_LFO>
@@ -126,28 +129,28 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <par name="R_val" value="64" />
 </FREQUENCY_ENVELOPE>
 <FREQUENCY_LFO>
-<par_real name="freq" value="0.551181" exact_value="0x3F0D1A34" />
+<par_real name="freq" value="3.71" exact_value="0x406D70A4" />
 <par name="intensity" value="0" />
 <par name="start_phase" value="64" />
 <par name="lfo_type" value="0" />
 <par name="randomness_amplitude" value="0" />
 <par name="randomness_frequency" value="0" />
-<par name="delay" value="0" />
+<par_real name="delay" value="0" exact_value="0x00000000" />
 <par name="stretch" value="64" />
 <par_bool name="continous" value="no" />
 </FREQUENCY_LFO>
 </FREQUENCY_PARAMETERS>
 <FILTER_PARAMETERS>
-<par name="velocity_sensing_amplitude" value="64" />
+<par name="velocity_sensing_amplitude" value="0" />
 <par name="velocity_sensing" value="64" />
 <FILTER>
 <par name="category" value="0" />
 <par name="type" value="2" />
-<par name="freq" value="94" />
-<par name="q" value="40" />
+<par_real name="basefreq" value="30313.2" exact_value="0x46ECD26C" />
+<par_real name="baseq" value="1.08427" exact_value="0x3F8AC956" />
 <par name="stages" value="0" />
-<par name="freq_track" value="64" />
-<par name="gain" value="64" />
+<par_real name="freq_tracking" value="0" exact_value="0x00000000" />
+<par_real name="gain" value="0" exact_value="0x00000000" />
 </FILTER>
 <FILTER_ENVELOPE>
 <par_bool name="free_mode" value="no" />
@@ -165,13 +168,13 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 <par name="R_val" value="64" />
 </FILTER_ENVELOPE>
 <FILTER_LFO>
-<par_real name="freq" value="0.629921" exact_value="0x3F214285" />
+<par_real name="freq" value="6.49" exact_value="0x40CFAE14" />
 <par name="intensity" value="0" />
 <par name="start_phase" value="64" />
 <par name="lfo_type" value="0" />
 <par name="randomness_amplitude" value="0" />
 <par name="randomness_frequency" value="0" />
-<par name="delay" value="0" />
+<par_real name="delay" value="0" exact_value="0x00000000" />
 <par name="stretch" value="64" />
 <par_bool name="continous" value="no" />
 </FILTER_LFO>
@@ -236,7 +239,7 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 </OSCIL>
 <AMPLITUDE_PARAMETERS>
 <par name="panning" value="64" />
-<par name="volume" value="100" />
+<par_real name="volume" value="-12.7559" exact_value="0xC14C1832" />
 <par_bool name="volume_minus" value="no" />
 <par name="velocity_sensing" value="127" />
 <par_bool name="amp_envelope_enabled" value="no" />
@@ -707,6 +710,75 @@ version-revision="2" ZynAddSubFX-author="Nasca Octavian Paul">
 </ZynAddSubFX-data>
 
 """ ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "slot1" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot2" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot3" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot4" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot5" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot6" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot7" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot8" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot9" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot10" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot11" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot12" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot13" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot14" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot15" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "slot16" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "osc_port" ;
+        pset:value 14849.000000 ;
     ] .
 
 
