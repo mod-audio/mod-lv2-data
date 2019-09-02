@@ -50,12 +50,11 @@
         lv2:index 4 ;
         lv2:name "rate" ;
         lv2:symbol "rate" ;
-        lv2:portProperty mod:tapTempo;
-        lv2:portProperty epp:logarithmic ;
         lv2:default 4.000000 ;
         lv2:minimum 0.100000 ;
         lv2:maximum 20.000000 ;
         units:unit units:hz ;
+        lv2:portProperty epp:logarithmic mod:tempoRelatedDynamicScalePoints ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
