@@ -100,6 +100,7 @@ Modeled by Invada
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
 	units:unit units:s ;
+    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
         lv2:portProperty pprops:logarithmic ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
@@ -138,6 +139,7 @@ Modeled by Invada
 	lv2:minimum 0.02 ;
 	lv2:maximum 2.0 ;
 	units:unit units:s ;
+    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
         lv2:portProperty pprops:logarithmic ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;

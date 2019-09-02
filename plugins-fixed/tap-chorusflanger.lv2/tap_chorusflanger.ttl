@@ -50,7 +50,6 @@ lv2:port
     lv2:minimum 0.0;
     lv2:maximum 5.0;
     units:unit units:hz;
-    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:InputPort, lv2:ControlPort;
@@ -81,7 +80,6 @@ lv2:port
     lv2:minimum 0.0;
     lv2:maximum 100.0;
     units:unit units:ms;
-    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:InputPort, lv2:ControlPort;
