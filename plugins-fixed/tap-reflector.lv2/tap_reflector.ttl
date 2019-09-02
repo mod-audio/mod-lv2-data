@@ -35,7 +35,6 @@ lv2:microVersion 3;
 
 rdfs:comment """
 The Reflector creates a psychedelic effect.
-
 It achieves this effect by reversing parts of the audio signal and leaving the rest unaffected. Set the Length knob to minimum to achieve a subtle effect or to maximum and enjoy the 60’s psychedelic feel. The dry and wet controls let you control the intensity of the effect and find the sweet spot for your sound.
 
 Features:

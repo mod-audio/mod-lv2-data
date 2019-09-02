@@ -29,7 +29,7 @@ mod:brand "TAP";
 mod:label "Equalizer/B";
 
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
-lv2:minorVersion 8;
+lv2:minorVersion 7;
 lv2:microVersion 2;
 
 rdfs:comment """
