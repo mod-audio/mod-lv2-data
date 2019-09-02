@@ -270,5 +270,9 @@
         lv2:maximum 1000 ;
         units:unit units:bpm ;
     ] ;
-    rdfs:comment '''This stereo tempo delay features high pass and low pass filters as well as host tempo. When using it with the MOD Duo on software version >1.2.0, then please assign a footswitch to Host/MOD-Tempo. Otherwise you can assign the tap button to a foot switch. Always make sure to set the correct tempo mode. 
-    Enjoy! :-) And feedback is always welcome.''' .
+    rdfs:comment '''
+The Bollie Delay is a stereo tempo delay featuring high pass and low pass filter as well as a host tempo function, granting more control over your delay settings. This powerful delay is perfect for experimenting with your vocals or your guitar. 
+
+Features:
+Modeled by Bollie
+    ''' .

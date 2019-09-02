@@ -43,8 +43,3 @@
     lv2:appliesTo <http://remaincalm.org/plugins/mud> ;
     rdfs:label "honk" ;
     rdfs:seeAlso <presets.ttl> .
-
-
-
-<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#releaseNumber> 6 .
-<http://remaincalm.org/plugins/mud> <http://moddevices.com/ns/mod#builderVersion> 1 .

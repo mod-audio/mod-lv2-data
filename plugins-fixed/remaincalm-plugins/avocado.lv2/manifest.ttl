@@ -13,8 +13,3 @@
     lv2:appliesTo <http://remaincalm.org/plugins/avocado> ;
     rdfs:label "Default" ;
     rdfs:seeAlso <presets.ttl> .
-
-
-
-<http://remaincalm.org/plugins/avocado> <http://moddevices.com/ns/mod#releaseNumber> 3 .
-<http://remaincalm.org/plugins/avocado> <http://moddevices.com/ns/mod#builderVersion> 1 .

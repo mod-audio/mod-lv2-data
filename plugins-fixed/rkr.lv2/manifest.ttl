@@ -33,10 +33,10 @@
 #         lv2:binary <rkrlv2.so> ;
 #         rdfs:seeAlso <echo.ttl> , <modguis.ttl> .
 # # 4
-# <http://rakarrack.sourceforge.net/effects.html#chor>
-#         a lv2:Plugin, lv2:ChorusPlugin ;
-#         lv2:binary <rkrlv2.so> ;
-#         rdfs:seeAlso <chorus.ttl> , <modguis.ttl> .
+ <http://rakarrack.sourceforge.net/effects.html#chor>
+         a lv2:Plugin, lv2:ChorusPlugin ;
+         lv2:binary <rkrlv2.so> ;
+         rdfs:seeAlso <chorus.ttl> , <modguis.ttl> .
 # # 5
 # <http://rakarrack.sourceforge.net/effects.html#aphas>
 #         a lv2:Plugin, lv2:PhaserPlugin ;
