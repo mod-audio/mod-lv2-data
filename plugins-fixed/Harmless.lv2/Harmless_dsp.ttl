@@ -54,7 +54,7 @@
         lv2:minimum 0.100000 ;
         lv2:maximum 20.000000 ;
         units:unit units:hz ;
-        lv2:portProperty epp:logarithmic mod:tempoRelatedDynamicScalePoints ;
+        lv2:portProperty epp:logarithmic , mod:tapTempo , mod:tempoRelatedDynamicScalePoints ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
