@@ -49,7 +49,7 @@ lv2:port
     lv2:maximum 30.0;
     mod:default 3.75 ;
     units:unit units:hz
-    lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
+    lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:InputPort, lv2:ControlPort;

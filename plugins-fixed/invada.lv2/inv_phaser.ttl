@@ -47,7 +47,7 @@ Modeled by Invada
 	lv2:minimum 0.5 ;
 	lv2:maximum 20.0 ;
 	units:unit units:s ;
-    lv2:portProperty pprops:logarithmic , mod:tempoRelatedDynamicScalePoints ;
+    lv2:portProperty pprops:logarithmic , mod:tapTempo , mod:tempoRelatedDynamicScalePoints ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
@@ -202,7 +202,7 @@ Modeled by Invada
 	lv2:minimum 0.5 ;
 	lv2:maximum 20.0 ;
 	units:unit units:s ;
-    lv2:portProperty pprops:logarithmic , mod:tempoRelatedDynamicScalePoints ;
+    lv2:portProperty pprops:logarithmic , mod:tapTempo , mod:tempoRelatedDynamicScalePoints ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
@@ -376,7 +376,7 @@ Modeled by Invada
 	lv2:minimum 0.5 ;
 	lv2:maximum 20.0 ;
 	units:unit units:s ;
-    lv2:portProperty pprops:logarithmic , mod:tempoRelatedDynamicScalePoints ;
+    lv2:portProperty pprops:logarithmic , mod:tapTempo , mod:tempoRelatedDynamicScalePoints ;
     ] , [
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;

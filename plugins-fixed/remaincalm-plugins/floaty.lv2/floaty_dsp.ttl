@@ -46,7 +46,7 @@
         lv2:minimum 10.000000 ;
         lv2:maximum 653.061218 ;
         unit:unit unit:ms ;
-        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
+        lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;

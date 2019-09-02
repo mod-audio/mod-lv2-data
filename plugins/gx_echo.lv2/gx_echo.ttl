@@ -93,7 +93,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
         lv2:minimum 1.0 ;
         lv2:maximum 2000.0 ;
         units:unit units:ms ;
-        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
+        lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;
@@ -113,7 +113,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
         lv2:minimum 1.0 ;
         lv2:maximum 2000.0 ;
         units:unit units:ms ;
-        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
+        lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
     ] , [
         a lv2:InputPort ,
             lv2:ControlPort ;

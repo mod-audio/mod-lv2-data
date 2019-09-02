@@ -122,7 +122,7 @@ The switching controlled by envelope follower
         lv2:minimum 1.0 ;
         lv2:maximum 2e+03 ;
         units:unit units:ms ;
-        lv2:portProperty  mod:tempoRelatedDynamicScalePoints;
+        lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
     ].
 
 <http://guitarix.sourceforge.net/plugins/gx_duck_delay_#gui>
