@@ -9,7 +9,8 @@
 @prefix urid: <http://lv2plug.in/ns/ext/urid#> .
 
 blop:tracker
-	a lv2:Plugin ;
+	a lv2:Plugin ,
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "tracker" ;
 	lv2:microVersion 0 ;

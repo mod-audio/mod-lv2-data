@@ -3,8 +3,8 @@
     "color": "white", 
     "controls": [
         {
-            "name": "bpm", 
-            "symbol": "bpm"
+            "name": "Tune", 
+            "symbol": "tune"
         }, 
         {
             "name": "divider", 

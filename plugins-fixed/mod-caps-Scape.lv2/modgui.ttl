@@ -20,8 +20,8 @@
             lv2:name "Divider" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "bpm" ;
-            lv2:name "BPM" ;
+            lv2:name "Tune";
+            lv2:symbol "tune";
         ] , [
             lv2:index 2 ;
             lv2:symbol "feedback" ;

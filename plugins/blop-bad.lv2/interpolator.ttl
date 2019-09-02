@@ -6,7 +6,7 @@
 
 blop:interpolator
 	a lv2:Plugin ,
-		lv2:UtilityPlugin ;
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "interpolator" ;
 	lv2:microVersion 0 ;

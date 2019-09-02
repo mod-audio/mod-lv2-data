@@ -34,7 +34,7 @@
 
 <stereo_mod_2.ttl>
 	a pset:Preset ;
-	rdfs:label "stereo_mod_2";
+	rdfs:label "stereo mod 2";
 	rdfs:seeAlso <stereo_mod_2.ttl> ;
 	lv2:appliesTo <http://nickbailey.co.nr/triceratops> .
 

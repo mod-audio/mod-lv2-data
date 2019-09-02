@@ -43,11 +43,3 @@
     lv2:appliesTo <http://remaincalm.org/plugins/paranoia> ;
     rdfs:label "lupine" ;
     rdfs:seeAlso <presets.ttl> .
-
-
-
-<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#releaseNumber> 3 .
-<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#builderVersion> 1 .
-
-<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#releaseNumber> 4 .
-<http://remaincalm.org/plugins/paranoia> <http://moddevices.com/ns/mod#builderVersion> 1 .

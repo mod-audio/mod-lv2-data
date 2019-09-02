@@ -2,8 +2,6 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#>.
 
 <http://distrho.sf.net/plugins/PingPongPan>
-    mod:brand "DISTRHO";
-    mod:label "PingPongPan";
     modgui:gui [
         modgui:resourcesDirectory <modgui>;
         modgui:iconTemplate <modgui/icon-ppp.html>;

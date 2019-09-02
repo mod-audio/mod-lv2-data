@@ -43,11 +43,3 @@
     lv2:appliesTo <http://remaincalm.org/plugins/floaty> ;
     rdfs:label "Slap" ;
     rdfs:seeAlso <presets.ttl> .
-
-
-
-<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#releaseNumber> 7 .
-<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#builderVersion> 1 .
-
-<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#releaseNumber> 8 .
-<http://remaincalm.org/plugins/floaty> <http://moddevices.com/ns/mod#builderVersion> 1 .

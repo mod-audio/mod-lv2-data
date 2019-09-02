@@ -9,7 +9,7 @@
 
 blop:lp4pole
 	a lv2:Plugin ,
-		lv2:LowpassPlugin ;
+		mod:ControlVoltagePlugin ;
 	lv2:project blop: ;
 	lv2:symbol "lp4pole" ;
 	lv2:microVersion 0 ;
