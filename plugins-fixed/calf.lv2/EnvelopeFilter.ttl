@@ -41,7 +41,10 @@
     lv2:minorVersion 60;
     lv2:microVersion 0;
     rdfs:comment """
-      The louder you play, the higher the filter
+The Calf Envelope Filter is an envelope filter which increases with volume, meaning the louder you play, the higher the filter.
+
+Features:
+Modeled by Calf
     """;
 
     pg:mainInput :in ;

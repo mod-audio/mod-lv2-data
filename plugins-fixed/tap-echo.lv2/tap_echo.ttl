@@ -48,12 +48,12 @@ lv2:port
     lv2:index 0;
     lv2:symbol "ldelay";
     lv2:name "L Delay";
-    lv2:portProperty mod:tapTempo;
     lv2:default 300.0;
     lv2:minimum 0.0;
     lv2:maximum 2000.0;
 
     units:unit units:ms ;
+    lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:InputPort, lv2:ControlPort;
@@ -69,12 +69,12 @@ lv2:port
     lv2:index 2;
     lv2:symbol "rhaasdelay";
     lv2:name "Right Haas Delay";
-    lv2:portProperty mod:tapTempo;
     lv2:default 300.0;
     lv2:minimum 0.0;
     lv2:maximum 2000.0;
 
     units:unit units:ms ;
+    lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
 ],
 [
     a lv2:InputPort, lv2:ControlPort;
