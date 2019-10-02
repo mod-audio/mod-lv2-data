@@ -231,7 +231,7 @@
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 13 ;
                 lv2:symbol "LVOL" ;
-                lv2:name "Low Gain"
+                lv2:name "Low Gain" ;
                 lv2:default 50 ;
                 lv2:minimum 0 ;
                 lv2:maximum 100 ;
@@ -240,7 +240,7 @@
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 14 ;
                 lv2:symbol "MVOL" ;
-                lv2:name "Mid Gain"
+                lv2:name "Mid Gain" ;
                 lv2:default 14 ;
                 lv2:minimum 0 ;
                 lv2:maximum 100 ;
@@ -249,7 +249,7 @@
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 15 ;
                 lv2:symbol "HVOL" ;
-                lv2:name "High Gain"
+                lv2:name "High Gain" ;
                 lv2:default 35 ;
                 lv2:minimum 0 ;
                 lv2:maximum 100 ;
