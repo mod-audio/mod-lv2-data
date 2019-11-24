@@ -1,0 +1,42 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://kxstudio.sf.net/carla/plugins/audiogain>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-audio-gain-mono.html> ;
+        modgui:stylesheet <modgui/stylesheet-audio-gain-mono.css> ;
+        modgui:screenshot <modgui/screenshot-audio-gain-mono.png> ;
+        modgui:thumbnail <modgui/thumbnail-audio-gain-mono.png> ;
+        modgui:brand "falkTX" ;
+        modgui:label "Audio Gain Mono" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "black" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
+
+<http://kxstudio.sf.net/carla/plugins/audiogain_s>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-audio-gain-stereo.html> ;
+        modgui:stylesheet <modgui/stylesheet-audio-gain-stereo.css> ;
+        modgui:screenshot <modgui/screenshot-audio-gain-stereo.png> ;
+        modgui:thumbnail <modgui/thumbnail-audio-gain-stereo.png> ;
+        modgui:brand "falkTX" ;
+        modgui:label "Audio Gain Stereo" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "black" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .
