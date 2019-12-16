@@ -7,6 +7,11 @@
 	lv2:appliesTo <http://distrho.sf.net/plugins/Kars> ;
 	lv2:port [
 		lv2:symbol "sustain" ;
-		pset:value 0.0
+		pset:value 0.0 ;
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.01 ;
+	] , [
+		lv2:symbol "volume" ;
+		pset:value 75.0 ;
 	] .
-
