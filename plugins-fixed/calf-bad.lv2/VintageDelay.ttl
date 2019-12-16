@@ -40,7 +40,10 @@
     lv2:minorVersion 60;
     lv2:microVersion 0;
     rdfs:comment """
-    DELAY DELay delay
+The Calf Vintage Delay offers an old school, gritty take on your classic delay. Based on bpm-oriented delay time settings, the signal is processed through a filter to give that typical old tape machine feel. Experiment with its stereo distribution to achieve a wider range of sounds.
+
+Features:
+Modeled by Calf
     """;
 
     pg:mainInput :in ;
