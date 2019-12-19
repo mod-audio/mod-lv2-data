@@ -19,8 +19,8 @@
                 foaf:homepage <http://ssj71.github.io/infamousPlugins> ;
                 foaf:mbox <mailto:ssjackson71@gmail.com> ;
         ] ;
-        mod:brand "infamous";        
-        mod:label "ewham"; 
+        mod:brand "infamous";
+        mod:label "ewham";
         modgui:gui [
             modgui:resourcesDirectory <modgui> ;
             modgui:iconTemplate <modgui/icon-the-infamous-ewham.html> ;
@@ -49,7 +49,12 @@
         ] ;
         lv2:minorVersion 0 ;
         lv2:microVersion 1 ;
-        rdfs:comment "This shifter works well for monophonic sounds, allowing an easy control to change the shifting interval. Any interval between 2 octaves down and 3 octaves up is available. It also has controls that will slide to the nearest semitone after being adjusted, or to jump directly from semitone to semitone. It also provides a dry mix for chorus effects." ;
+        rdfs:comment """
+This shifter works well for monophonic sounds, allowing an easy control to change the shifting interval. Any interval between 2 octaves down and 3 octaves up is available. It also has controls that will slide to the nearest semitone after being adjusted, or to jump directly from semitone to semitone. It also provides a dry mix for chorus effects.
+
+Features:
+Modeled by Infamous
+""" ;
         lv2:optionalFeature lv2:hardRTCapable ;
 
 

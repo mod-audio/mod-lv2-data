@@ -27,8 +27,8 @@
                 foaf:homepage <http://ssj71.github.io/infamousPlugins> ;
                 foaf:mbox <mailto:ssjackson71@gmail.com> ;
         ] ;
-        mod:brand "infamous";        
-        mod:label "mindi"; 
+        mod:brand "infamous";
+        mod:label "mindi";
         modgui:gui [
             modgui:resourcesDirectory <modgui> ;
             modgui:iconTemplate <modgui/mindi.html> ;
@@ -40,7 +40,12 @@
         ] ;
         lv2:minorVersion 0 ;
         lv2:microVersion 1 ;
-        rdfs:comment "This is a simple midi message generator that sends a message when you change its message value. It usually requires the host automating it to really be useful." ;
+        rdfs:comment """
+This is a simple midi message generator that sends a message when you change its message value. It usually requires the host automating it to really be useful.
+
+Features:
+Modeled by Infamous
+""" ;
         lv2:requiredFeature <http://lv2plug.in/ns/ext/urid#map> ;
         lv2:optionalFeature lv2:hardRTCapable ;
 
