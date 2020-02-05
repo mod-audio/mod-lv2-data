@@ -13,7 +13,7 @@
 <http://moddevices.com/plugins/mod-devel/mod-volume-2x2>
 a lv2:Plugin, mod:UtilityPlugin;
 
-doap:name "Volume Stereo";
+doap:name "Volume 2x2";
 doap:license "GPL v2+";
 doap:developer [
     foaf:name "Bram Giesen";
