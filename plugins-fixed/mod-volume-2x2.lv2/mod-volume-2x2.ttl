@@ -1,0 +1,111 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+@prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix urid: <http://lv2plug.in/ns/ext/urid#> .
+
+<http://moddevices.com/plugins/mod-devel/mod-volume-2x2>
+a lv2:Plugin, mod:UtilityPlugin;
+
+doap:name "Volume 2x2";
+doap:license "GPL v2+";
+doap:developer [
+    foaf:name "Bram Giesen";
+    foaf:homepage <>;
+    foaf:mbox <mailto:bram@moddevices.com>;
+    ];
+
+doap:maintainer [
+    foaf:name "MOD";
+    foaf:homepage <http://moddevices.com>;
+    foaf:mbox <mailto:bram@moddevices.com>;
+    ];
+
+    lv2:minorVersion 1;
+    lv2:microVersion 0;
+
+rdfs:comment """
+The MOD Volume 2X2 plugin is a very simple, but effective plugin that works exactly like a passive stereo volume knob.
+
+This plugin is also available as a mono version called the MOD Volume.
+
+The “Mode” parameter sets the volume curve. A linear curve is useful for controlling the volume before overdrives or distortions, giving fine control over the amount of distortion that you will get. The logarithmic curve matches the curve of human ears and is recommended for situations where you want to control the perceived volume.
+
+Features:
+Modeled by MOD Devices
+""";
+
+lv2:port
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 0;
+    lv2:symbol "AudioIn1";
+    lv2:name "Audio In 1";
+],
+[
+    a lv2:InputPort, lv2:AudioPort;
+    lv2:index 1;
+    lv2:symbol "AudioIn2";
+    lv2:name "Audio In 2";
+],
+[
+    a lv2:OutputPort, lv2:AudioPort;
+    lv2:index 2;
+    lv2:symbol "AudioOut1";
+    lv2:name "Audio Out 1";
+],
+[
+    a lv2:OutputPort, lv2:AudioPort;
+    lv2:index 3;
+    lv2:symbol "AudioOut2";
+    lv2:name "Audio Out 2";
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 4;
+    lv2:symbol "Mode";
+    lv2:name "Mode";
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 1;
+    lv2:portProperty lv2:integer;
+    lv2:portProperty lv2:enumeration ;
+    lv2:scalePoint
+    [
+        rdfs:label "Logarithmic";
+        rdf:value 0
+    ],
+    [
+        rdfs:label "Linear";
+        rdf:value 1
+    ]
+],
+[
+    a lv2:InputPort ,
+    lv2:ControlPort ;
+    lv2:index 5 ;
+    lv2:symbol "Volume" ;
+    lv2:name "Volume";
+    lv2:default 1.0 ;
+    lv2:minimum 0.0 ;
+    lv2:maximum 1.0 ;
+],
+[
+     a lv2:InputPort ,
+     lv2:ControlPort ;
+     lv2:index 6 ;
+     lv2:symbol "PluginEnabled" ;
+     lv2:name "PluginEnabled" ;
+     lv2:default 1.0 ;
+     lv2:minimum 0.0 ;
+     lv2:maximum 1.0 ;
+     lv2:designation lv2:enabled;
+     lv2:portProperty lv2:toggled;
+]
+.

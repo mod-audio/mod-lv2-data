@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://moddevices.com/plugins/mod-devel/mod-volume>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mod-volume.html> ;
+        modgui:stylesheet <modgui/stylesheet-mod-volume.css> ;
+        modgui:screenshot <modgui/screenshot-mod-volume.png> ;
+        modgui:thumbnail <modgui/thumbnail-mod-volume.png> ;
+        modgui:brand "MOD" ;
+        modgui:label "Volume" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "wood2" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Mode" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Volume" ;
+            lv2:name "Volume" ;
+        ] ;
+    ] .
