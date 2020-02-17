@@ -1,0 +1,55 @@
+<div class="mod-pedal mod-sooperlooper">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    
+    <div class="mod-control-group top">
+        <div class="mod-control">
+            <div class="mod-control-image" id="reset" mod-role="input-control-port" mod-port-symbol="reset" mod-widget="switch"></div>
+        </div>
+    
+        <div class="mod-footswitch" mod-role="bypass"></div>
+        <div class="mod-light on" mod-role="bypass-light"></div>
+    </div>
+    
+    <div class="mod-controls">
+        
+        <div class="mod-control-group left">
+            <div class="mod-control">
+                <div class="mod-control-image" id="rec" mod-role="input-control-port" mod-port-symbol="record" mod-widget="switch"></div>
+            </div><div class="mod-control">
+                <div class="mod-control-image" id="play" mod-role="input-control-port" mod-port-symbol="play_pause" mod-widget="switch"></div>
+            </div>
+        </div><div class="mod-control-group right">
+            <div class="mod-control">
+                <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="undo" id="undo" mod-widget="switch"></div>
+            </div><div class="mod-control">
+                <div class="mod-control-image" mod-role="input-control-port" mod-port-symbol="redo" id="redo" mod-widget="switch"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+    </div>
+</div>
