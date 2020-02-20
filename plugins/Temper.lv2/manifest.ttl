@@ -1,0 +1,40 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/creativeintent/temper>
+    a lv2:Plugin ;
+    lv2:binary <Temper.so> ;
+    rdfs:seeAlso <Temper.ttl> .
+
+<https://github.com/creativeintent/temper#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/creativeintent/temper> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/creativeintent/temper#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/creativeintent/temper> ;
+    rdfs:label "Stubbed Toe" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/creativeintent/temper#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/creativeintent/temper> ;
+    rdfs:label "Bee Sting" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/creativeintent/temper#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/creativeintent/temper> ;
+    rdfs:label "Morning at the DMV" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/creativeintent/temper#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/creativeintent/temper> ;
+    rdfs:label "Flying United" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
