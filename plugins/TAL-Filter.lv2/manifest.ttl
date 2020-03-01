@@ -6,7 +6,7 @@
 <urn:juce:TalFilter>
     a lv2:Plugin ;
     lv2:binary <TAL-Filter.so> ;
-    rdfs:seeAlso <TAL-Filter.ttl> .
+    rdfs:seeAlso <TAL-Filter.ttl> , <modgui.ttl> .
 
 <urn:juce:TalFilter#preset001>
     a pset:Preset ;

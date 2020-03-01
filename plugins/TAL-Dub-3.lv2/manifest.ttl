@@ -6,7 +6,7 @@
 <urn:juce:TalDub3>
     a lv2:Plugin ;
     lv2:binary <TAL-Dub-3.so> ;
-    rdfs:seeAlso <TAL-Dub-3.ttl> .
+    rdfs:seeAlso <TAL-Dub-3.ttl> , <modgui.ttl> .
 
 <urn:juce:TalDub3#preset001>
     a pset:Preset ;
