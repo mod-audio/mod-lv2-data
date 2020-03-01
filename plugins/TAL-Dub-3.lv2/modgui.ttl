@@ -1,0 +1,46 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:juce:TalDub3>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tal-dub-3.html> ;
+        modgui:stylesheet <modgui/stylesheet-tal-dub-3.css> ;
+        modgui:screenshot <modgui/screenshot-tal-dub-3.png> ;
+        modgui:thumbnail <modgui/thumbnail-tal-dub-3.png> ;
+        modgui:brand "TAL" ;
+        modgui:label "Dub-3" ;
+        modgui:model "boxy" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "inputdrive" ;
+            lv2:name "drive" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delaytime" ;
+            lv2:name "time" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "feedback" ;
+            lv2:name "feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "highcut" ;
+            lv2:name "highcut" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "cutoff" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "dry" ;
+            lv2:name "dry" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "wet" ;
+            lv2:name "wet" ;
+        ] ;
+    ] .
