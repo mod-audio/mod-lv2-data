@@ -107,7 +107,10 @@
     ] ;
 
     rdfs:comment """
-Modulay is a delay with variable types of modulation based on the setting of the Morph-knob.
+The Modulay is a delay with various types of modulation. Experiment by playing around with the Morph knob to get unprecedented results.
+
+Features:
+Modeled by Shiro
 """ ;
 
     mod:brand "SHIRO" ;

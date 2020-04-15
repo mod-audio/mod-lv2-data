@@ -26,7 +26,12 @@
 	lv2:microVersion 0;
 	mod:brand "LV2" ;
 	mod:label "Metronome" ;
-	rdfs:comment "Simple metronome plugin that clicks on every beat.";
+	rdfs:comment """
+Simple metronome plugin that clicks on every beat.
+
+Features:
+Modeled by David Robillard
+""";
 	lv2:port [
 		a lv2:InputPort ,
 			atom:AtomPort ;

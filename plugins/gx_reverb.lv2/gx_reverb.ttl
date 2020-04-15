@@ -44,20 +44,17 @@
     doap:license <http://opensource.org/licenses/isc> ;
     lv2:project <http://guitarix.sourceforge.net/plugins/gx_reverb_stereo> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    
+
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_reverb_stereo#gui>;
-  
+
     lv2:minorVersion 28;
     lv2:microVersion 3;
-    
+
 rdfs:comment """
+The GxReverb-Stereo is a simple, straight-forward reverb featuring LFO and MODE controls. 
 
-"A Reverb simulates the component of sound that results from reflections from surrounding walls or objects. It is in effect a room simulator. Some people think it's just a delay effect with some filters, but it's way more complex than that."
-
-*Unofficial documentation
-
-source: http://audacity.sourceforge.net/manual-1.2/effects_reverb.html
-
+Features:
+Modeled by Guitarix
 """;
 
     lv2:port  [

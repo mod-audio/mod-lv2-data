@@ -14,10 +14,10 @@ mod:brand "CAPS";
 mod:label "Click";
 
 rdfs:comment """
-A sample-accurate metronome. Two simplistic modal synthesis models are available for the click: box is a small wooden box struck with a soft wooden mallet, stick a scratchy stick hit. In addition, there's also a very synthetic beep, and finally dirac, a very nasty single-sample pulse of 0 dB amplitude and little immediate musical use.
-All click sounds are synthesised once when the plugin is loaded and then played back from memory.
+A sample-accurate metronome featuring a variety of click sounds, ranging from a wooden box struck with a mallet to a synthetic beep. All click sounds are synthesised once when the plugin is loaded and then played back from memory.
 
-source: http://quitte.de/dsp/caps.html#Click
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

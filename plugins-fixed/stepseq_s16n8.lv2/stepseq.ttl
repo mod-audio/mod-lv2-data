@@ -29,14 +29,18 @@
 	rdfs:comment """
 A simple step sequencer. It allows to trigger MIDI note events placed on a time/note grid.
 The Step-duration is configurable to musical time and can optionally be modulated for a swing-time effect.
-This plugin version contains 16 notes and 8 steps.""";
+This plugin version contains 16 notes and 8 steps.
+
+Features:
+Modeled by x42
+""";
 	lv2:microVersion 0 ;lv2:minorVersion 0 ;
-  
+
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
 	mod:brand "x42";
 	mod:label "Step Seq. 16x8";
-	
+
 	lv2:port [
 		a atom:AtomPort, lv2:InputPort;
 		atom:bufferType atom:Sequence;

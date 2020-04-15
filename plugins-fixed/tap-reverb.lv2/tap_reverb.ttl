@@ -33,13 +33,10 @@ lv2:minorVersion 7;
 lv2:microVersion 2;
 
 rdfs:comment """
-TAP Reverberator is unique among reverberators freely available on the Linux platform. It supports creating no less than 43 reverberation effects, but its design permits this to be extended even further by the user, without doing any actual programming. Please take a look at TAP Reverb Editor, a separate JACK application for more information about this.
+The Reverberator is based on the comb/allpass filter model. Comb filters create early reflections and allpass filters add to this by creating a dense reverberation effect. The resulting band-limited reverberation is very similar to the natural reverberation that occurs in acoustic rooms.
 
-The design is based on the comb/allpass filter model. Comb filters create early reflections and allpass filters add to this by creating a dense reverberation effect. The output of the set of comb and allpass filters (also called the reverberator chamber) is processed further by sending it through a bandpass filter. The resulting band-limited reverberation is very similar to the natural reverberation that occurs in acoustic rooms. To achieve an even more natural-sounding effect, all comb filters have high-frequency compensation in their feedback loop. This is to model that the reflection ratio of acoustic surfaces is the function of frequency: higher frequencies are attenuated more, and thus decay time of higher frequency components is significantly shorter.
-
-To enhance the reverberation sound even further, a special option called Enhanced Stereo is provided. When turned on (which is the default), it results in an added spatial spread of the reverb sound. This feature is most noticeable when applying the plugin to mono tracks: the sound of these tracks will "open up" in space.
-
-source: http://tap-plugins.sourceforge.net/ladspa/reverb.html
+Features:
+Modeled by TAP
 """;
 
 lv2:port

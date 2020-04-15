@@ -32,8 +32,10 @@ mod:label "HighPassFilter";
 doap:license "GPL";
 
 rdfs:comment """
-A simple high pass filter, "Freq" determines its cutoff frequency and "Order" the filter order (or how fast frequencies above the cutoff frequency will decay. Higher the order, faster the decay).
+A simple high pass filter, "Freq" determines its cutoff frequency and "Order" the filter order, or how fast frequencies above the cutoff frequency will decay. Higher the order, faster the decay.
 
+Features:
+Modeled by MOD Devices
 """;
 
 mod:brand "MOD";

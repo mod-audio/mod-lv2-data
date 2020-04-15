@@ -15,9 +15,13 @@ fomp:reverb
 	mod:brand "FOMP" ;
 	mod:label "Reverb" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+	rdfs:comment """
+Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+This is a stereo reverb plugin based on the well-known G Reverb. One might think that this reverb was designed for the guitar - but it does wonders used on vocals.
 
-	This is a stereo reverb plugin based on the well-known greverb.""" ;
+Features:
+Modeled by FOMP
+""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

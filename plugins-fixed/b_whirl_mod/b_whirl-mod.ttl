@@ -441,5 +441,10 @@
 	];
 	mod:brand "x42";
 	mod:label "Whirl Speaker";
-	rdfs:comment "A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie" ;
+	rdfs:comment """
+A rotating loudspeaker emulator designed to imitate the sound of device that brought world-wide fame to the name of Don Leslie.
+
+Features:
+Modeled by x42
+""" ;
 	.

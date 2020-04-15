@@ -59,17 +59,13 @@ mda:EPiano
     mod:label "ePiano" ;
 
     rdfs:comment """
-The ePiano is based around 12 carefully sampled and mastered Rhodes Piano(*) samples. 
-Rhodes Pianos are electrical instruments that were designed in the 40’s but only became popular in the 70’s. Instead of using strings to produce sound, it uses tin metal tines which are then amplified through an electrical pickup. 
-
-One of the most notable users of Rhodes pianos was Ray Manzarek of The Doors. He  played a full-size Rhodes on studio recordings, such as "Riders on the Storm". Manzarek  said, "If Mr. Rhodes hadn’t created the keyboard bass, the Doors would never have existed."
+The ePiano is based around 12 carefully sampled and mastered Rhodes© Piano (*) samples.
+Rhodes© Pianos are electrical instruments that were designed in the 40’s but only became popular in the 70’s. Instead of using strings to produce sound, it uses tin metal tines which are then amplified through an electrical pickup.
 
 Features:
 Modeled by MDA
-Based on Rhodes Pianos*
-
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Rhodes Pianos are a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
+(*) “Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Rhodes© Pianos are a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.”
     """ ;
     lv2:port[
         a lv2:InputPort ,

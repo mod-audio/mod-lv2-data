@@ -58,18 +58,16 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_rangem_gui#_rangem_>;
 
 rdfs:comment """
-The RangeMaster is modeled after the The Dallas RangeMaster Treble Booster(*).
+The RangeMaster is modeled after the The Dallas RangeMaster Treble Booster© (*).
 
-The Dallas RangeMaster Treble Booster(*) was an effect unit made for guitarists in the 1960’s. It was originally made for two things: to increase the signal strength of the guitar going into the amplifier, and to boost the higher notes. 
+The Dallas RangeMaster Treble Booster© (*) was an effect unit made for guitarists in the 1960’s. It was originally made for two things: to increase the signal strength of the guitar going into the amplifier, and to boost the higher notes.
 
-With the original pedal only having one knob to set the amount of boost, this pedal also has a mix knob to set the dry/wet mix. 
+With the original pedal only having one knob to set the amount of boost, this pedal also has a mix knob to set the dry/wet mix.
 
 Features:
-Modeled by the Guitarix team
-Based on the The Dallas RangeMaster Treble Booster(*)
-
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-The Dallas RangeMaster Treble Booster  is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
+Modeled by Guitarix
+(*) “Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+The Dallas RangeMaster Treble Booster©  is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.”
 """;
 
     lv2:port  [

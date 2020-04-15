@@ -10,12 +10,6 @@
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 @prefix mod:   <http://moddevices.com/ns/mod#>.
 
-# <http://rakarrack.sourceforge.net/effects.html#eqp_ui>
-# 	a ui:X11UI ;
-# 	ui:binary <rkrlv2_ui.so> ;
-# 	lv2:extensionData ui:idleInterface;
-# 	.
-
 <http://rakarrack.sourceforge.net/effects.html#eqp:group:low>
     a param:ControlGroup ;
     lv2:index 0 ;
@@ -41,7 +35,12 @@
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
-        rdfs:comment "3 band parametric peak-filter equalizer." ;
+        rdfs:comment """
+The Parametric EQ is a straight-forward 3 band parametric peak-filter equalizer.
+
+Features:
+Modeled by Rakarrack
+        """ ;
         lv2:optionalFeature lv2:hardRTCapable ;
 #        ui:ui  <http://rakarrack.sourceforge.net/effects.html#eqp_ui> ;
 

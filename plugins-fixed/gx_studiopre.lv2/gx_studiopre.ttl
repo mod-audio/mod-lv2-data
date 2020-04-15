@@ -58,14 +58,14 @@
 		mod:brand "Guitarix";
 
 rdfs:comment """
-The Alembic is inspired by the Alembic F-2B studio preamp. (*)
+The Alembic is inspired by the Alembic F-2B© studio preamp (*).
 
-The Alembic appeared in the late 60’s and was inspired by the circuit on the Fender Dual Showman amps, which were known for their deep and clean powerful tone. This legend featured a 12AX7 tube in each section and was widely used for both bass and guitar.
-
-(*) ”Other product names modeled in the software trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD. Alembic F-2B preamp and Fender Dual Showman are a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of the product. All other trademarks are the property of their respective holders.”
+The Alembic appeared in the late 60’s and was inspired by the circuit on the Fender Dual Showman© (*) amps, which were known for their deep and clean powerful tone. This legend featured a 12AX7 tube in each section and was widely used for both bass and guitar.
 
 Features:
 Modeled by Guitarix
+
+(*) ”Other product names modeled in the software trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD. Alembic F-2B© preamp and Fender Dual Showman© are a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of the product. All other trademarks are the property of their respective holders.”
 """;
 
     lv2:port [

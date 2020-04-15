@@ -25,11 +25,16 @@
 	lv2:microVersion 0 ;lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
-	rdfs:comment "A MIDI clock generator with optional host transport synchronization.";
+	rdfs:comment """
+A MIDI clock generator with optional host transport synchronization.
+
+Features:
+Modeled by x42
+ """;
 
 	mod:brand "x42";
 	mod:label "MIDI Clock";
-	
+
 
 	lv2:port [
 		a atom:AtomPort, lv2:InputPort;

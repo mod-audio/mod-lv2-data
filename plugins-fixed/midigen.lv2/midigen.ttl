@@ -66,5 +66,10 @@
 		lv2:maximum 100.0;
 		units:unit units:pc ;
 	];
-	rdfs:comment "A MIDI generator that plays fixed, predefined sequences.";
+	rdfs:comment """
+A MIDI generator that plays fixed, predefined sequences. Select your key and play around with the BPM.
+
+Features:
+Modeled by x42
+""";
 	.

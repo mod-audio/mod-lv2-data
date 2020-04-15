@@ -57,7 +57,10 @@ mda:Ambience
     mod:brand "MDA" ;
     mod:label "Ambience" ;
     rdfs:comment """
-A plugin that simulates a room.
+The Ambience aims to emulate the sonic properties of a room. By tweaking the damping or roomsize controls, add some texture and reverb to your sound.
+
+Features:
+Modeled by MDA
 """;
 
     lv2:port [

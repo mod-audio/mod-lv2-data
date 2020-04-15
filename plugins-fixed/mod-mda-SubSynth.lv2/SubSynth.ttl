@@ -26,7 +26,7 @@ mda:
         foaf:name "Paul Kellett" ;
         foaf:mbox <mailto:paul@mda-vst.com>
     ] .
-        
+
 mda:mainIn
     a pg:StereoGroup ,
         pg:InputGroup ;
@@ -52,11 +52,9 @@ mda:SubSynth
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """
-All the bass you could ever want! 
-With the MDA SubSynth you’ll produce/filter harmonics, flip phase, add a smooth sub-octave, use it as an octave divider and more!
-For a full description of the MDA SubSynth and its controls Check out the developer's website: http://mda.smartelectronix.com/vst/help/subsynth.htm
-
-Be aware that you may be adding low frequency content outside of the range of your monitor speakers. To avoid clipping, follow up with a limiter plug-in (this can also create some fat sounding hip-hop drum sounds!).
+All the bass you could ever want!
+With the MDA SubSynth you’ll produce/filter harmonics, flip phase, add a smooth sub-octave, use it as an octave divider and more.
+Be aware that you may be adding low frequency content outside of the range of your monitor speakers. To avoid clipping, follow up with a limiter plug-in.
 
 Features:
 Modeled by MDA

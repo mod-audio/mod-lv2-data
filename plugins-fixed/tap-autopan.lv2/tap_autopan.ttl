@@ -33,8 +33,10 @@ lv2:minorVersion 7;
 lv2:microVersion 2;
 
 rdfs:comment """
-The AutoPanner is a very well-known effect; its hardware incarnation originates in the age of voltage controlled synthesizers.
-Its main use is to liven up synth tracks in the mix.
+The AutoPanner is a very well-known effect; its hardware incarnation originates in the age of voltage controlled synthesizers. Its main use is to liven up synth tracks in the mix.
+
+Features:
+Modeled by TAP
 """;
 
 lv2:port

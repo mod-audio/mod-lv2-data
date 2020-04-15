@@ -57,12 +57,8 @@ mda:RePsycho
     lv2:microVersion 1;
     mod:brand "MDA" ;
     mod:label "RePsycho" ;
-    rdfs:comment """ 
-The RePsycho is an event-based pitch shifter. 
-
-It chops audio into individual beats and shifts each beat upwards in pitch. Only allowing downwards pitch shifting helps to keep the timing very tight, and depending on the complexity, whole rhythm sections can be shifted. 
-
-Alternative uses include a triggered flanger or sub octave doubler (both with mix set to 50% or less) and a swing quantizer (with a high threshold so that all of the beats don't trigger)
+    rdfs:comment """
+The RePsycho is an event-based pitch shifter. It chops audio into individual beats and shifts each beat upwards in pitch. Only allowing downwards pitch shifting helps to keep the timing very tight, and depending on the complexity, whole rhythm sections can be shifted.
 
 Features:
 Modeled by MDA

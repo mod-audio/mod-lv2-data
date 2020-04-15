@@ -29,7 +29,11 @@ mod:label "SooperLooper 2x2";
 lv2:minorVersion 0;
 lv2:microVersion 9;
 rdfs:comment """
-Stereo version of SooperLooper plugin
+This is a stereo version of the SooperLooper.
+A simple, straightforward looping station. Use it to layer some vocal or guitar harmonies.
+
+Features:
+Modeled by MOD Devices
 """;
 
 lv2:port [

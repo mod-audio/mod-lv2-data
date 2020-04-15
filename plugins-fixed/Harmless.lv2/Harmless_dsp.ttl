@@ -102,6 +102,9 @@
 
     rdfs:comment """
 Harmless is a waveshapeable harmonic tremolo with a stereo phase control.
+
+Features:
+Modeled by SHIRO
 """ ;
 
     mod:brand "SHIRO" ;

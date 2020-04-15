@@ -182,7 +182,11 @@
     ] ;
 
     rdfs:comment """
-Stereo version of ZamComp with knee slew control.
+This stereo compressor strip will make your kick or your snare sound out of this world! 
+Play around with the settings and find out how you can give life and punch to your sound.
+
+Features:
+Modeled by Zamaudio
 """ ;
 
     mod:brand "ZamAudio" ;
