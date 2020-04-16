@@ -1136,8 +1136,7 @@ Modeled by x42
  rdf:value 16 ] ;
  lv2:portProperty lv2:integer;
  lv2:portProperty lv2:enumeration;
- rdfs:comment "MIDI Channel (1..16) on which the filter is active;
- 0: any). Data on other channels is passed though unmodified." ]
+ rdfs:comment "MIDI Channel (1..16) on which the filter is active; 0: any). Data on other channels is passed though unmodified." ]
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "scale" ;
