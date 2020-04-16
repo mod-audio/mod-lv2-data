@@ -21,7 +21,8 @@ The mode control chooses from a selection of clipping functions of varying chara
 
 The plugin is 8x oversampled with 64-tap polyphase filters, effectively suppressing aliasing noise for most musical applications. Changes to the bias control induce short-lived energy at DC in the output. In order to reduce the computational load incurred when evaluating transcendental functions at eight times the nominal sample rate, these are approximated roughly, using Chebyshev polynomials whose coefficients depend on the amplitude's floating point representation exponent.
 
-source: http://quitte.de/dsp/caps.html#Saturate
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

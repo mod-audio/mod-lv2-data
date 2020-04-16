@@ -17,7 +17,8 @@ mod:label "Sin";
 rdfs:comment """
 The old friend, indispensable for testing and tuning.
 
-source: http://quitte.de/dsp/caps.html#Sin
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

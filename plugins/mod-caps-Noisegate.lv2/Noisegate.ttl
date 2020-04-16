@@ -21,7 +21,8 @@ When the signal's instantaneous amplitude exceeds the opening threshold, the gat
 
 To cope with powerline hum as often present in signals from electric guitars, a notch filter can be activated by setting the mains frequency control to a non-zero value.  The filter will prevent this frequency from contributing to the signal power measurement. This allows a low closing threshold setting without mains hum keeping the gate open unduly.  The default mains setting is 50 Hz.
 
-source: http://quitte.de/dsp/caps.html#Noisegate
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

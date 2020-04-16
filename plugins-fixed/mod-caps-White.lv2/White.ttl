@@ -15,7 +15,8 @@ mod:label "White";
 rdfs:comment """
 Mostly white pseudonoise, mixed and filtered from the output of two Dattorro multibit generators.
 
-source: http://quitte.de/dsp/caps.html#White
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

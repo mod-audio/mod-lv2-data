@@ -14,7 +14,7 @@ mod:brand "CAPS";
 mod:label "AmpVTS";
 
 rdfs:comment """
-The CAPS ampVTS is a digital guitar amplifier that is designed to feel and respond like a real tube amplifier. The tonestack is switchable and offers a more versatile amplifier. The tonestacks are based on classic tube amplifiers.  
+The CAPS ampVTS is a digital guitar amplifier that is designed to feel and respond like a real tube amplifier. The tonestack is switchable and offers a more versatile amplifier. The tonestacks are based on classic tube amplifiers.
 
 Features:
 Modeled by CAPS

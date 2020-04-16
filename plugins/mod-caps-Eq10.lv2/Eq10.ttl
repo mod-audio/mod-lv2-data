@@ -17,7 +17,8 @@ A classic octave-band biquad-filter design, basically a direct digital translati
 
 Frequency bands centered above Nyquist are automatically disabled.
 
-source: http://quitte.de/dsp/caps.html#Eq10
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

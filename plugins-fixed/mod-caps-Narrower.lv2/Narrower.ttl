@@ -18,7 +18,8 @@ This plugin reduces the width of a stereophonic signal. Its primary use is for
 
 Mid/side processing tends to sound more transparent for moderate strength settings.  However, it will more strongly attenuate signals that are panned to the far sides of the stereo image (rarely encountered in contemporary music production anymore but quite common, for example, on early Beatles recordings or others from that time).
 
-source: http://quitte.de/dsp/caps.html#Narrower
+Features:
+Modeled by CAPS
 """;
 
 lv2:port
