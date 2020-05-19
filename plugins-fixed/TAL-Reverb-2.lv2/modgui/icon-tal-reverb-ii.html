@@ -1,0 +1,117 @@
+<div class="mod-pedal tal-reverb-2{{{cns}}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <!--<div class="mod-light on" mod-role="bypass-light"></div>-->
+    <div class="mod-control-group mod-{{knob}} clearfix">
+        <!-- Knobs -->
+        {{#controls.0}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.0}}
+        {{#controls.1}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.1}}
+        {{#controls.2}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.2}}
+        {{#controls.3}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.3}}
+        {{#controls.4}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.4}}
+        {{#controls.5}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.5}}
+        {{#controls.6}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.6}}
+        {{#controls.7}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.7}}
+        {{#controls.8}}
+        <div class="mod-knob tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.8}}
+
+        <!-- Button -->
+        {{#controls.9}}
+        <div class="mod-reverb-button tal-reverb-2-{{symbol}}" title="{{comment}}">
+            <div class="mod-button-image" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.9}}
+
+        <!-- Sliders -->
+        {{#controls.10}}
+        <div class="mod-slider tal-reverb-2-{{symbol}}" mod-role="icon-button" mod-button-type="slider" title="{{comment}}">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.10}}
+        {{#controls.11}}
+        <div class="mod-slider tal-reverb-2-{{symbol}}" mod-role="icon-button" mod-button-type="slider" title="{{comment}}">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <div class="mod-knob-value" mod-role="input-control-value" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.11}}
+    </div>
+    <!--<div class="mod-footswitch" mod-role="bypass"></div>-->
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+        {{#effect.ports.cv.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.cv.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+        {{#effect.ports.cv.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.cv.output}}
+    </div>
+</div>
