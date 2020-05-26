@@ -53,12 +53,9 @@ mda:Vocoder
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """
-This 16-band vocoder applies the spectrum of your voice to the waveform of an instrument. 
+This 16-band vocoder applies the spectrum of your voice to the waveform of an instrument.
 Plug your voice signal into the Modulator input and the instrument into the Carrier input.
-
-The modulator and carrier inputs will be split into a series of frequency-bands that are modifiable with the vocoder. After that, each carrier band will be modulated and added at the end. This vocoder also features an adjustable envelope and output level. 
-
-For a full description of the MDA Vocoder and its controls Check out the developer's website: http://mda.smartelectronix.com/vst/help/vocoder.htm
+The modulator and carrier inputs will be split into a series of frequency-bands that are modifiable with the vocoder. After that, each carrier band will be modulated and added at the end. This vocoder also features an adjustable envelope and output level.
 
 Features:
 Modeled by MDA

@@ -24,7 +24,12 @@
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
-        rdfs:comment "Adapted from the ZynAddSubFX Reverb" ;
+        rdfs:comment """
+A rather straightforward reverb adapted from the ZynAddSubFX open source reverb.
+
+Features:
+Modeled by Rakarrack
+""" ;
         lv2:optionalFeature lv2:hardRTCapable,
             <http://lv2plug.in/ns/ext/urid#map>,
             <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength>;

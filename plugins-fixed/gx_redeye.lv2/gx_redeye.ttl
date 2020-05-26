@@ -64,9 +64,11 @@
     mod:label "Redeye Vibro" ;
 
     rdfs:comment """
-The Vibro Chump is a guitar-amp simulator, sounding a lot like a vintage amplifier whose brandname starts with an F.
-In similar fashion to the original amplifiers from that brand and era, the Vibro Chump sports a "Vibrato" control, which does not actually pitch-shift the sound, but instead, sounds like a really warm tremolo.
+The Vibro Chump is a guitar-amp simulator, inspired by vintage Fender amplifiers. In similar fashion to the original amplifiers from that brand and era, the Vibro Chump sports a "Vibrato" control, which does not actually pitch-shift the sound, but instead, sounds like a really warm tremolo.
 Does not include cabinet simulation, best used in conjunction with the GxCabinet plugin.
+
+Features:
+Modeled by Guitarix
 """;
 
     lv2:port [

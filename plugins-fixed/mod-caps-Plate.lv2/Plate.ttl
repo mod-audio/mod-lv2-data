@@ -13,14 +13,12 @@ mod:brand "CAPS";
 mod:label "Plate";
 
 rdfs:comment """
-One of the most breathtaking reverb sounds of them all, a plate of sheet metal hanging in a box. 
-This Pedal is based around the sound of a plate reverb. Normally, a plate reverb works because the speed of sound is much faster in metal than air, as the plate has a higher ‘echo’ density.  These two factors give to plates their signature “smooth” reverb tails as well as the effect of higher frequencies gathering in the front of the reverb tail.  
-This Reverb is crafted specially for a soft attack and smooth ambiance.
-The 'bandwidth' control reduces high-frequency content before it enters the ‘tank’, while 'damping' controls how quickly the reverb tail darkens. 
-This all makes this plate reverb useful for a wide variety of sounds. It tends to get along very nicely with other reverbs or even drum kits!
+One of the most breathtaking reverb sounds of them all, a plate of sheet metal hanging in a box. The Plate plugin is based around the sound of a plate reverb, with its signature “smooth” reverb tail, and was crafted especially for a soft attack and smooth ambiance.
+The Plate reverb is useful for a wide variety of sounds. It tends to get along very nicely with other reverbs or even drum kits!
+Available in a stereo version.
 
 Features:
-Modeled by MOD Devices
+Modeled by CAPS
 """;
 
 lv2:port

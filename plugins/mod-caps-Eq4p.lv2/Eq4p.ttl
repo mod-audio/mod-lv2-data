@@ -24,7 +24,8 @@ Parallelisation of the serial filter topology causes its response to lag by thre
 
 Control response is smoothened by crossfading between two filter banks.
 
-source: http://quitte.de/dsp/caps.html#Eq4p
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

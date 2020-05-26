@@ -26,7 +26,8 @@ The attractor state variables are scaled and translated to stay mostly within th
 
 The output signal varies with the sample rate.
 
-source: http://quitte.de/dsp/caps.html#Fractals
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

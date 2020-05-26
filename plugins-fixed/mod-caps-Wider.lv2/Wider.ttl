@@ -13,15 +13,15 @@ mod:brand "CAPS";
 mod:label "Wider";
 
 rdfs:comment """
-The wider plug-in increases the width of a signal.
+Wider increases the width of a signal.
 In addition to providing a basic panorama control, a perception of stereo width is created using complementary filters on the two outputs.
 
 Features:
-Modeled by MOD Devices
-Based on the Orban 245F Stereo Synthesizer*
+Modeled by CAPS
+Based on the Orban 245F Stereo Synthesizer© (*)
 
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-The Orban 245F Stereo Synthesizer is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.'
+(*) “Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+The Orban 245F Stereo Synthesizer© is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.”
 """;
 
 lv2:port

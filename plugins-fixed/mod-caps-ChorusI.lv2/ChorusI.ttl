@@ -19,7 +19,8 @@ A standard mono chorus with optional feedback. The parameter range suits subtle 
 
 Modifying the delay time t when feedback is active will cause audible 'zipper' noise.
 
-source: http://quitte.de/dsp/caps.html#ChorusI
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

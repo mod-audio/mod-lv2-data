@@ -24,10 +24,13 @@
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
         lv2:microVersion 0 ;
-        rdfs:comment """Adapted from the ZynAddSubFX Distortion
-        
-This is a waveshaper, and not particularly an amp or stompbox modeling effect. This must be used judiciously with EQ's as well as the LPF and HPF settings (Low Pass Filter, High Pass Filter)
+        rdfs:comment """
+This distortion effect was adapted from the ZynAddSubFX Distortion, the open-source synthesizer.
 
+This waveshaper adds some distortion to your sound, but watch out! It is recommended to add some EQs as well as the LPF and HPF settings (Low Pass Filter, High Pass Filter). This one can get pretty gritty!
+
+Features:
+Modeled by Rakarrack
 """ ;
         lv2:optionalFeature lv2:hardRTCapable,
             <http://lv2plug.in/ns/ext/urid#map>,

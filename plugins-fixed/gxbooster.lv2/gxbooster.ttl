@@ -54,11 +54,10 @@
     mod:label "GxBooster" ;
 
 rdfs:comment """
+A 2 band boost plugin which allows you to boost the high and the low frequencies independently.
 
-A 2 band boost plugin. With this plugin you can boost the high and the low frequencies independently.
-
-*Unofficial documentation
-
+Features:
+Modeled by Guitarix
 """;
 
     lv2:port [

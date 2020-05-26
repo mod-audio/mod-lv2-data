@@ -35,8 +35,10 @@ mod:brand "MOD";
 doap:license "GPL";
 
 rdfs:comment """
-This switch box receives an audio input and channel it by one of it's two outputs.
+The SwitchBox allows you to route your signal to either output 1 or output 2 of this plugin. Switch the routing on the fly by mapping the channel control.
 
+Features:
+Modeled by MOD Devices
 """;
 
 lv2:port

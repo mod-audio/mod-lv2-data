@@ -15,7 +15,8 @@ mod:label "Eq10X2";
 rdfs:comment """
 The controls of this stereo version of Eq apply to both channels.
 
-source: http://quitte.de/dsp/caps.html#Eq10
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

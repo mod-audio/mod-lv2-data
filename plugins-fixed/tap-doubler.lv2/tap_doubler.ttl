@@ -32,17 +32,12 @@ lv2:minorVersion 7;
 lv2:microVersion 2;
 
 rdfs:comment """
-A vocal doubler finally right on hand!
-You don’t need specific effect-boxes for tweaking your vocals anymore.
-Everything is right here!
-Doubling vocals can be traced back to the 1950s and is a very common recording technique today.
-Nevertheless, bringing this vocal effect to a live setting was never a practical thing. The Fractal Doubler gives you full control over your doubling.
+Fractal Doubler is a vocal doubler which gives you full control over your doubling.
 Choose your presets for great results or tweak the controls to find your sound signature.
 It also produces interesting results with acoustic/electric guitars, bass and just about any other instrument.
 
 Features:
-Modeled by the TAP.
-For in-depth information on how the TAP Factal Double works check out the developer’s website: http://tap-plugins.sourceforge.net/ladspa/doubler.html
+Modeled by TAP
 """;
 
 lv2:port

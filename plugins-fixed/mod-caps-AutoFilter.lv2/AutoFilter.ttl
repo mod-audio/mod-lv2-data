@@ -16,15 +16,10 @@ mod:brand "CAPS";
 mod:label "AutoFilter";
 
 rdfs:comment """
-A versatile selection of filters of varying character in band and lowpass configuration. The cutoff frequency can be modulated by both the input signal envelope and by a fractal oscillator. The default settings provide some sort of an automatic wah effect.
+A versatile selection of filters of varying character in band and lowpass configuration. The cutoff frequency can be modulated by both the input signal envelope and by a fractal oscillator. The default settings provide some sort of an automatic wah effect.
 
-The extent of filter modulation is set through the range parameter. The shape of the modulation is mixed from the attractor and the envelope according to the lfo/env balance.
-
-Filter stage gain can be used to add inter-stage saturation. To prevent this from causing audible aliasing, the plugin can be run in oversampled mode, at ratios selectable through the over control.
-
-At very high Q and f combined, the filter stability may become compromised. Computational load varies greatly with the over and filter settings.
-
-source: http://quitte.de/dsp/caps.html#AutoFilter
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

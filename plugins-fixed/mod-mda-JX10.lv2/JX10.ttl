@@ -64,15 +64,11 @@ mda:JX10
 	pg:mainInput mda:mainIn ;
 	pg:mainOutput mda:mainOut ;
 	rdfs:comment """
-
-The JX10 is a polyphonic synthesizer with high-quality output and lot of options to modulate the filter. This can be done with both the envelope and/or the LFO. 
+The JX10 is a polyphonic synthesizer with high-quality output and lot of options to modulate the filter. This can be done with both the envelope and/or the LFO.
 Due to all its controls, this synthesizer gives you flexibility to create a vast variety of sounds. Or just to find some kick-ass tones among the presets.
-
-For a full description of the JX-10 and its controls check out the developer’s website: http://mda.smartelectronix.com/vst/help/jx10.htm
 
 Features:
 Modeled by MDA
-
     """ ;
 	lv2:minorVersion 0;
 	lv2:microVersion 1;

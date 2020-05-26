@@ -56,12 +56,14 @@
     mod:label "GxSlowGear" ;
     
 rdfs:comment """
-GxSlowGear is inspired by the classic Boss Slow Gear guitar pedal (*), which provides you with volume swells, based on your playing dynamics.
-Although originally intended for use with a guitar, the pedal was also widely used with synthesizers, electric piano's, and many other instruments!
+GxSlowGear is inspired by the classic Boss Slow Gear guitar pedal© (*), which provides you with volume swells, based on your playing dynamics.
+Although originally intended for use with a guitar, the pedal was also widely used with synthesizers, electric pianos, and many other instruments.
 
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Boss Slow Gear is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+Features:
+Modeled by Guitarix
+(*) “Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Boss Slow Gear© is trademark or trade name of other manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.”
 """;
 
     lv2:port  [

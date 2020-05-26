@@ -17,7 +17,8 @@ mod:label "CompressX2";
 rdfs:comment """
 This stereo version of Compress applies uniform compression to both channels in proportion to their combined power.
 
-source: http://quitte.de/dsp/caps.html#Compress
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

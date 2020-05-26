@@ -116,5 +116,10 @@
 		lv2:name "Out Right" ;
 		lv2:designation pg:right ;
 	] ;
-	rdfs:comment "A stereo crossfade plugin"
-	.
+	rdfs:comment """
+The Stereo X-Fade lets you crossfade two stereo tracks. Use the two controls to adjust the amount of each channel and shape your sound.
+
+Features:
+Modeled by x42
+""";
+.

@@ -85,11 +85,12 @@
     ] ;
 
     rdfs:comment """
-Fluid Strings features seven sample based string sounds. It features single instruments as well as a full section. 
+Fluid Strings features seven sample based string sounds. It features single instruments as well as a full section.
 This generator features the strings section of the FluidGM SoundFont.
 
 Features:
-Modeled by MOD Devices. The FluidGM SoundFont was constructed from edited/cleaned/remixed samples found in the public domain and recordings made by Frank Wen.  
+Modeled by MOD Devices.
+The FluidGM SoundFont was constructed from edited/cleaned/remixed samples found in the public domain and recordings made by Frank Wen.
 """ ;
 
     lv2:minorVersion 2 ;

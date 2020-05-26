@@ -25,7 +25,10 @@ doap:maintainer [
     ];
 
 rdfs:comment """
-This toggled switch enables the output depending on the button state.
+The ToggleSwitch enables the output depending on the button state.
+
+Features:
+Modeled by MOD Devices
 """;
 
 doap:license "GPL";

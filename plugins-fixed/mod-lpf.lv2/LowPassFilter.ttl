@@ -36,8 +36,10 @@ mod:brand "MOD";
 doap:license "GPL";
 
 rdfs:comment """
-A simple low pass filter, "Freq" determines its cutoff frequency and "Order" the filter order (or how fast frequencies below the cutoff frequency will decay. Higher the order, faster the decay).
+A simple low pass filter, "Freq" determines its cutoff frequency and "Order" the filter order, or how fast frequencies above the cutoff frequency will decay. Higher the order, faster the decay.
 
+Features:
+Modeled by MOD Devices
 """;
 
 lv2:port

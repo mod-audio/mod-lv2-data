@@ -15,9 +15,8 @@ mod:label "CEO";
 rdfs:comment """
 The Chief Executive Oscillator forever calls for more profit.
 
-Sound data created with the flite[flite] application.
-
-source: http://quitte.de/dsp/caps.html#CEO
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

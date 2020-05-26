@@ -54,11 +54,16 @@
 
     mod:brand "Guitarix" ;
     mod:label "GxVintageFuzz" ;
-    
+
 rdfs:comment """
-An analogue simulation of the Vintage Fuzz Master (Devi Ever).
-This one comes with a bass/bright switch and is a bit modified to produce less volume then the original pedal.
-With "intensity" down it will blow up the low end, but turn it up and it produce the well known and loved octave up artifacts.
+The GxVintageFuzz is an analogue simulation of the Vintage Fuzz Master© (Devi Ever) (*).
+This one comes with a bass/bright switch and is slightly modified to produce less volume then the original pedal.
+Tweak the "intensity" knob down to blow up the low end, and up to produce the well known and loved octave up artifacts.
+
+Features:
+Modeled by Guitarix
+(*) “Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Vintage Fuzz Master© is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product. All other trademarks are the property of their respective holders.”
 """;
 
     lv2:port  [

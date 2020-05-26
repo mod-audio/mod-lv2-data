@@ -23,7 +23,8 @@ The measure control select which indicator of loudness to base calculations on: 
 
 Compression amount is controlled through the strength knob, from 0 effectively disabling the effect, up to a maximum ratio of 16:1. The attack and release controls map higher values to slower reactions.
 
-source: http://quitte.de/dsp/caps.html#Compress
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

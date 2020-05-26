@@ -17,7 +17,8 @@ mod:label "EqFA4p";
 rdfs:comment """
 Four Mitra-Regalia peaking equaliser filters in series; a vector arithmetic re-implementation of Fons Adriaensens "Parametric1" equaliser with minor differences.
 
-source: http://quitte.de/dsp/caps.html#EqFA4p
+Features:
+Modeled by CAPS
 """;
 
 lv2:port

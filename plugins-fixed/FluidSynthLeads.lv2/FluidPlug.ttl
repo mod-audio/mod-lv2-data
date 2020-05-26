@@ -84,8 +84,14 @@
         foaf:homepage <https://github.com/falkTX/FluidPlug> ;
     ] ;
 
-    rdfs:comment """This plugin contains the 'Synth Leads' section of the Fluid GM soundfont.
-The Fluid GM soundfont was constructed in part from edited/cleaned/remixed/programmed samples found in the public domain and recordings made by Frank Wen.""" ;
+    rdfs:comment """
+Fluid Synthleads is a generator offering a variety of sample based synth sounds. Perfect for exploring and getting familiar with different synth tones.
+This plugin contains the 'Synth Leads' section of the Fluid GM soundfont.
+
+Features:
+Modeled by MOD Devices.
+The Fluid GM soundfont was constructed in part from edited/cleaned/remixed/programmed samples found in the public domain and recordings made by Frank Wen.
+""" ;
 
     lv2:minorVersion 2 ;
     lv2:microVersion 0 .

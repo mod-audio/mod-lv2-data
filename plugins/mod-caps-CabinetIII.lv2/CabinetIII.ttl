@@ -20,7 +20,8 @@ A loudspeaker cabinet emulation far less demanding than the recommended CabinetI
 
 The appropriate filter set is selected at runtime.  The alt switch allows the selection of the same fiter model for the alternative sample rate; at 48 kHz the alternative will sound slightly darker, at 44.1 slightly brighter.  At other sample rates, the plugin will not sound very much like a guitar speaker cabinet.
 
-source: http://quitte.de/dsp/caps.html#CabinetIII
+Features:
+Modeled by CAPS
 """;
 
 lv2:port
