@@ -50,7 +50,13 @@
     ] ;
 
     rdfs:comment """
-Avocado glitcher.
+Avocado is an easy to use, ingenious stutter/glitch effect. It works well on any instrument, but the effect is more noticeable when the input signal has snappy attacks, and sudden silences.
+You can think of the Avocado as multiple delays running in parallel, where the signal randomly gets fed to one of the delay inputs, and is randomly played back from one of the delay outputs.
+
+Avocado sports a single control: TIME. Change the value to change the duration of the effect. For more predictable glitching it is recommended to sync the TIME parameter to a musical subdivision of the tempo, especially for rhythmic parts.
+
+Features:
+Plugin by remaincalm
 """ ;
 
     doap:name "avocado" ;

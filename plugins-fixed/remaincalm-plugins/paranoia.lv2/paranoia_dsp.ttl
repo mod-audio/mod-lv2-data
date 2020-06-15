@@ -75,12 +75,16 @@
     ] ;
 
     rdfs:comment """
-Paranoia digital distortion/mangler.
+Paranoia is a digital distortion/mangler effect. It works particularly well for gnarly destructive fuzz sounds or for adding glassy aliasing to your sound.
 
-Level: post-saturation gain
-Crush: left 300Hz-30kHz 6-bit, right 300Hz-30kHz 10-bit, far-right 48kHz 10-bit
-Mangle: Sweep through bit flip/mute patterns (interactive w/ crush)
-Filter: 0-80 bandpass, 80-99 highpass, 100 raw
+The LEVEL parameter sets the post-saturation gain. FILTER sweeps between bandpass, highpass and bypass. The CRUSH parameter sweeps between bit depths and sampling rates. MANGLE sweeps through bit-flip/mute patterns, and is interactive with CRUSH.
+
+For those interested in the inner workings:
+The FILTER parameter functions as a band pass filter between 0 and 80, as a high pass filter between 80 and 99 and when set to 100 the filter is completely bypassed. 
+CRUSH goes from 300Hz-30kHz 6 bit on the left side, to 300Hz-30kHz 10 bit on the right side, with 48kHz 10 bit on the far right position.
+
+Features:
+Plugin by remaincalm
 """ ;
 
     doap:name "paranoia" ;
