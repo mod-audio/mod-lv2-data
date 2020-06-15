@@ -40,7 +40,7 @@
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 2 ;
-        lv2:name "Delay" ;
+        lv2:name "Time" ;
         lv2:symbol "delay" ;
         lv2:default 280.000000 ;
         lv2:minimum 10.000000 ;
@@ -80,7 +80,7 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
-        lv2:name "Filter" ;
+        lv2:name "Tone" ;
         lv2:symbol "filter" ;
         lv2:default 19.000000 ;
         lv2:minimum 0.000000 ;
@@ -102,14 +102,13 @@
     ] ;
 
     rdfs:comment """
-Floaty modulation/delay
+Floaty is a wild modulation/delay effect that is reminiscent of a tape delay. One of the key features is the variable playback speed, allowing for repeats that ascend/descend in pitch.
 
-Time: delay time
-Mix: direct/processed mix
-Feedback: feedback (can go into oscillation!)
-Warp: modulation - left side is mellow, right side is fast
-Filter: bandpass frequency/resonance
-Rate: playback speed, cycles from -200% to 200% speed (unity in middle)
+There are six controls available to tame the beast: three common delay parameters (TIME, MIX and FEEDBACK) and three more special ones. WARP sets the amount of modulation with the left side being mellow and the right side being fast. TONE sets a combination of bandpass filter frequency and resonance. RATE sets the playback speed anywhere between -200% and +200%.
+Disclaimer: the delay buffer is cleared whenever the TIME parameter gets a new value.
+
+Features:
+Plugin by remaincalm
 """ ;
 
     doap:name "floaty" ;

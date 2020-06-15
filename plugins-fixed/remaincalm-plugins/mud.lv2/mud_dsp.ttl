@@ -66,11 +66,12 @@
     ] ;
 
     rdfs:comment """
-Mud modulation/filter
+Mud is a dark and dirty modulation/filter effect. It is particularly useful to fans of grittier, more lo-fi sounds, but it is capable of interesting univibe-style modulation too.
 
-Mix: direct/processed mix
-Filter: bandpass frequency/resonance
-LFO: speed/depth - left side is deep, right side is mellow
+MIX blends between the dry and processed signal, FILTER sets a combination of bandpass filter frequency and resonance and LFO sets a combination of speed and depth for the effect, with the left side being deep and the right side being mellow.
+
+Features:
+Plugin by remaincalm
 """ ;
 
     doap:name "mud" ;
