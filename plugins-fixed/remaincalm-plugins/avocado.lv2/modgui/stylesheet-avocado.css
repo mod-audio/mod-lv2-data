@@ -54,7 +54,7 @@
     text-transform: lowercase;
     top: 340px;
     opacity: 0.4;
-    filter: blur(2px);
+    filter: blur(0.5px);
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-plugin-brand h1 {
