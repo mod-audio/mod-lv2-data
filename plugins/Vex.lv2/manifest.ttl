@@ -8,4 +8,62 @@
     lv2:binary <Vex.so> ;
     rdfs:seeAlso <Vex.ttl> .
 
+<urn:juce:Vex#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "NightWalks" ;
+    rdfs:seeAlso <presets.ttl> .
 
+<urn:juce:Vex#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "Strawberry" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "Sublime2" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "Sublime3" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "VEX_GhostChoir" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "VEX_OldTheater" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset007>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "VEXSublime" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset008>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "WildStraberry" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset009>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "WildStrawberry" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:juce:Vex#preset010>
+    a pset:Preset ;
+    lv2:appliesTo <urn:juce:Vex> ;
+    rdfs:label "WoodFalls" ;
+    rdfs:seeAlso <presets.ttl> .
