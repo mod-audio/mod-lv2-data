@@ -1,0 +1,2978 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:juce:Vex#preset001>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "NightWalks" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.74000001
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.87199998
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.32800001
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.77600002
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.472
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.164
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.75599998
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.02000001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.68000007
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyIS8AAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJncmluZF8yIiBXYXZlMz0ic2luZSIvPgA="""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset002>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "Strawberry" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.77600002
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.164
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.75599998
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.09200001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.86400002
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset003>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "Sublime2" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.192
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.252
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.204
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.208
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.84799999
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.09200001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.86400002
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset004>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "Sublime3" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.192
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.77600002
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.18000001
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.77999997
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.09200001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.86400002
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset005>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "VEX-GhostChoir" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.53600001
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.81599998
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.43199998
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.72799999
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.38
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.08
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.91599995
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.51200002
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.83200002
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.90400004
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.54799998
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.064
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.38799998
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.15600003
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.56399995
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 0.93199998
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.07999998
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.484
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.54799998
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.11600003
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.71200001
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.85600001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITYAAAA8
+VkVYIFdhdmUxPSJnaG9zdF8xIiBXYXZlMj0iZ2hvc3RfMiIgV2F2ZTM9Imdob3N0XzMiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset006>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "VEX-OldTheater" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.53600001
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.81599998
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.43199998
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.72799999
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.38
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.08
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.91599995
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.51200002
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.676
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.85200006
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.54799998
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.064
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.38799998
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.43600002
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.88799995
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 0.62
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.26399997
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.10000001
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.096
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.47999999
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.484
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.80800003
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.54799998
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.11600003
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.57200003
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.97999996
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.04799999
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.85600001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.084
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.49200001
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.75999999
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.824
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyIUAAAAA8
+VkVYIFdhdmUxPSJtb3JlX3N0cmluZ3MiIFdhdmUyPSJtb3JlX3N0cmluZ3MiIFdhdmUzPSJnaG9z
+dF8zIi8+AA=="""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset007>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "VEXSublime" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.192
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.204
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.84799999
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.09200001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.86400002
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset008>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "WildStraberry" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.74000001
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.87199998
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.32800001
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.77600002
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.472
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.164
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.75599998
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.02000001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.58800006
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset009>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "WildStrawberry" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.19599998
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.91600001
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.26400003
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.77600002
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.01200003
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.55199999
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.164
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.396
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.75599998
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.09200001
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.04
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.50400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.86400002
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITAAAAA8
+VkVYIFdhdmUxPSJzYXciIFdhdmUyPSJhc3ltX3NhdyIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
+
+<urn:juce:Vex#preset010>
+	a pset:Preset ;
+	lv2:appliesTo <urn:juce:Vex> ;
+	rdfs:label "WoodFalls" ;
+	lv2:port [
+		lv2:symbol "chorus_depth" ;
+		pset:value 0.56
+	] , [
+		lv2:symbol "chorus_level" ;
+		pset:value 0.148
+	] , [
+		lv2:symbol "chorus_rate" ;
+		pset:value 0.296
+	] , [
+		lv2:symbol "delay_feedback" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "delay_level" ;
+		pset:value 0.36000001
+	] , [
+		lv2:symbol "delay_time" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "lv2_freewheel" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "master" ;
+		pset:value 0.36799997
+	] , [
+		lv2:symbol "part1_amp_env_atk" ;
+		pset:value 0.068
+	] , [
+		lv2:symbol "part1_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part1_amp_env_rel" ;
+		pset:value 0.228
+	] , [
+		lv2:symbol "part1_amp_env_sus" ;
+		pset:value 0.484
+	] , [
+		lv2:symbol "part1_amp_env_vel" ;
+		pset:value 0.352
+	] , [
+		lv2:symbol "part1_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_chorus" ;
+		pset:value 0.588
+	] , [
+		lv2:symbol "part1_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_cut" ;
+		pset:value 0.85999995
+	] , [
+		lv2:symbol "part1_filter_env" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part1_filter_env_atk" ;
+		pset:value 0.18799999
+	] , [
+		lv2:symbol "part1_filter_env_dec" ;
+		pset:value 0.30400002
+	] , [
+		lv2:symbol "part1_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_filter_env_sus" ;
+		pset:value 0.34799999
+	] , [
+		lv2:symbol "part1_filter_env_vel" ;
+		pset:value 0.25600004
+	] , [
+		lv2:symbol "part1_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_filter_res" ;
+		pset:value 0.82000005
+	] , [
+		lv2:symbol "part1_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part1_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part1_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part1_volume" ;
+		pset:value 0.53200001
+	] , [
+		lv2:symbol "part2_amp_env_atk" ;
+		pset:value 0.076
+	] , [
+		lv2:symbol "part2_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part2_amp_env_rel" ;
+		pset:value 0.27600002
+	] , [
+		lv2:symbol "part2_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part2_amp_env_vel" ;
+		pset:value 0.40800002
+	] , [
+		lv2:symbol "part2_cent" ;
+		pset:value 0.50799996
+	] , [
+		lv2:symbol "part2_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_cut" ;
+		pset:value 0.77999997
+	] , [
+		lv2:symbol "part2_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_atk" ;
+		pset:value 0.072
+	] , [
+		lv2:symbol "part2_filter_env_dec" ;
+		pset:value 0.048
+	] , [
+		lv2:symbol "part2_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_filter_env_sus" ;
+		pset:value 0.73199999
+	] , [
+		lv2:symbol "part2_filter_env_vel" ;
+		pset:value 0.36399999
+	] , [
+		lv2:symbol "part2_filter_hp_lp" ;
+		pset:value 0.12
+	] , [
+		lv2:symbol "part2_filter_res" ;
+		pset:value 0.29199997
+	] , [
+		lv2:symbol "part2_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_lfo_flt" ;
+		pset:value 0.03999999
+	] , [
+		lv2:symbol "part2_lfo_rate" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part2_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_on_off" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part2_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_phase" ;
+		pset:value 0.51599997
+	] , [
+		lv2:symbol "part2_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part2_tune" ;
+		pset:value 0.56400001
+	] , [
+		lv2:symbol "part2_volume" ;
+		pset:value 0.32800001
+	] , [
+		lv2:symbol "part3_amp_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_amp_env_dec" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "part3_amp_env_rel" ;
+		pset:value 0.1
+	] , [
+		lv2:symbol "part3_amp_env_sus" ;
+		pset:value 0.69999999
+	] , [
+		lv2:symbol "part3_amp_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_cent" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_chorus" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_delay" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_cut" ;
+		pset:value 0.89999998
+	] , [
+		lv2:symbol "part3_filter_env" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_atk" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_dec" ;
+		pset:value 0.2
+	] , [
+		lv2:symbol "part3_filter_env_rel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_env_sus" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_filter_env_vel" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_filter_hp_lp" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "part3_filter_res" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_amp" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_flt" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_lfo_rate" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_oct" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_on_off" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "part3_panning" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_phase" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_reverb" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_tune" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "part3_volume" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "reverb_damp" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_level" ;
+		pset:value 0.44
+	] , [
+		lv2:symbol "reverb_size" ;
+		pset:value 0.60000002
+	] , [
+		lv2:symbol "reverb_width" ;
+		pset:value 0.69999999
+	] ;
+	state:state [
+		<urn:juce:stateBinary> """CAAAAAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8A
+AAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWwuCAAA
+AAIAAAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/
+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ29sCAAAAAIA
+AAABAAAAAQAAAAEAAAAAAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAA
+PwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXN0VkMyITMAAAA8
+VkVYIFdhdmUxPSJiYXNzX3RvbmUiIFdhdmUyPSJwdWxzZSIgV2F2ZTM9InNpbmUiLz4A"""^^xsd:base64Binary
+	] .
