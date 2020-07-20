@@ -4,6 +4,7 @@
 @prefix units: <http://lv2plug.in/ns/extension/units#>.
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 <http://hippie.lt/lv2/gate>
@@ -18,7 +19,7 @@
 		foaf:homepage <http://www.hippie.lt>;
 		foaf:mbox <mailto:antanas@unlimited.lt>;
     	];
-	
+
 	doap:maintainer [
 		foaf:name "Antanas Bruzas" ;
 		foaf:homepage <http://www.hippie.lt>;
@@ -27,6 +28,12 @@
 
   	doap:license <http://usefulinc.com/doap/licenses/lgpl>;
 
+    rdfs:comment """
+The abGate is a simple and straight-forward noise gate plugin. It helps to reduce noise and prevent feedback, this is especially useful when using overdrive or distortion effects.
+
+Features:
+Plugin by Antanas Bruzas
+    """ ;
 	lv2:port [
 	    	a lv2:AudioPort, lv2:OutputPort;
 	    	lv2:index 0;
