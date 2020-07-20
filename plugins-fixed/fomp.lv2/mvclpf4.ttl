@@ -12,9 +12,14 @@ fomp:mvclpf4
 	mod:brand "FOMP" ;
 	mod:label "Moog Low-Pass 4" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
-	
-	The same as variant 3, but adds a selection of 0, 6, 12, 18 or 24 db/oct output.""" ;
+	rdfs:comment """
+Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
+
+The same as variant 3, but adds a selection of 0, 6, 12, 18 or 24 db/oct output.
+
+Features:
+Modeled by FOMP
+""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

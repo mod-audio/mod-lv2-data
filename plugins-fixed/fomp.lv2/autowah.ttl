@@ -16,8 +16,8 @@
 	mod:label "Wah" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
 	rdfs:comment """
-The auto-wah is a combination of an envelope follower and a resonant low pass filter. 
-For increasing sound levels, both the frequency and the bandwidth of the filter will increase. The intensity is controlled by 'Drive'. 
+The auto-wah is a combination of an envelope follower and a resonant low pass filter.
+For increasing sound levels, both the frequency and the bandwidth of the filter will increase. The intensity is controlled by 'Drive'.
 For a normal wah, use an expression pedal to control 'Frequency' and set 'Drive' to zero.
 
 Features:

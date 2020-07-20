@@ -12,9 +12,15 @@ fomp:cs_chorus1
 	mod:brand "FOMP" ;
 	mod:label "CS Chorus 1" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+	rdfs:comment """
+Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen.
 
-	Based on a CSound orchestra file by Sean Costello. There are two low frequency oscillators, each having three outputs that are 120 degrees apart in phase. The summed outputs modulate three delay lines. Make sure the static delay (first parameter) is at least equal to the sum of the two modulation depths.""" ;
+Based on a CSound orchestra file by Sean Costello. There are two low frequency oscillators, each having three outputs that are 120 degrees apart in phase. The summed outputs modulate three delay lines.
+Make sure the static delay (first parameter) is at least equal to the sum of the two modulation depths.
+
+Features:
+Modeled by FOMP
+""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;

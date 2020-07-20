@@ -12,9 +12,14 @@ fomp:mvclpf3
 	mod:brand "FOMP" ;
 	mod:label "Moog Low-Pass 3" ;
 	doap:license <http://opensource.org/licenses/gpl-2.0> ;
-	rdfs:comment """Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
-	
-	Based on variant 2, with two differences. It uses the the technique described by Stilson and Smith to extend the constant-Q range, and the internal sample frequency is doubled, giving a better approximation to the non-linear behaviour at high freqencies. This variant has high Q over the entire frequency range and will oscillate up to above 10 kHz, while the two others show a decreasing Q at high frequencies. This filter is reasonably well tuned, and can be 'played' as a VCO up to at least 5 kHz.""" ;
+	rdfs:comment """
+Fomp is an LV2 port of the MCP, VCO, FIL, and WAH plugins by Fons Adriaensen. 
+
+Based on variant 2, with two differences. It uses the the technique described by Stilson and Smith to extend the constant-Q range, and the internal sample frequency is doubled, giving a better approximation to the non-linear behaviour at high freqencies. This variant has high Q over the entire frequency range and will oscillate up to above 10 kHz, while the two others show a decreasing Q at high frequencies. This filter is reasonably well tuned, and can be 'played' as a VCO up to at least 5 kHz.
+
+Features:
+Modeled by FOMP
+""" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
