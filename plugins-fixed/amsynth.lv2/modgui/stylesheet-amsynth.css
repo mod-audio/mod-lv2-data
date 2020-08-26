@@ -128,6 +128,7 @@
 
 .mod-generator{{{cns}}} .generator-icon.icon-drums{
     background-image:url(/resources/utils/icon-gen-synth.png{{{ns}}});
+    z-index: 0;
 }
 
 /* = LIGHT ON/OFF
