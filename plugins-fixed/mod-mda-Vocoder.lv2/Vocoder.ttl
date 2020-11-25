@@ -61,7 +61,7 @@ Features:
 Modeled by MDA
 """ ;
     lv2:minorVersion 0;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     mod:brand "MDA" ;
     mod:label "Vocoder" ;
 

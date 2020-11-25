@@ -67,7 +67,7 @@ Modeled by MDA
 (*) “Other product names modeled in the software trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD. Yamaha DX© is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of the product. All other trademarks are the property of their respective holders.”
     """ ;
     lv2:minorVersion 0;
-    lv2:microVersion 2;
+    lv2:microVersion 3;
     mod:brand "MDA" ;
     mod:label "DX10" ;
 

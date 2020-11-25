@@ -54,7 +54,7 @@ mda:EPiano
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     lv2:minorVersion 0;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     mod:brand "MDA" ;
     mod:label "ePiano" ;
 
