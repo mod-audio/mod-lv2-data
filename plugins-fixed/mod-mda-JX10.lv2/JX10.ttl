@@ -315,7 +315,6 @@ Modeled by MDA
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		units:unit units:oct ;
 		rdfs:comment "Master tuning in octaves"
 	] , [
 		a lv2:InputPort ,

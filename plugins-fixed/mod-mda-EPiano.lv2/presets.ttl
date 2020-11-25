@@ -28,7 +28,7 @@
 	] ;
 	lv2:port [
 		lv2:symbol "lfo_rate" ;
-		pset:value 24.055 ;
+		pset:value 4.0 ;
 	] ;
 	lv2:port [
 		lv2:symbol "vel_sense" ;
@@ -81,7 +81,7 @@
 	] ;
 	lv2:port [
 		lv2:symbol "lfo_rate" ;
-		pset:value 24.055 ;
+		pset:value 4.0 ;
 	] ;
 	lv2:port [
 		lv2:symbol "vel_sense" ;
@@ -134,7 +134,7 @@
 	] ;
 	lv2:port [
 		lv2:symbol "lfo_rate" ;
-		pset:value 24.055 ;
+		pset:value 4.0 ;
 	] ;
 	lv2:port [
 		lv2:symbol "vel_sense" ;
@@ -187,7 +187,7 @@
 	] ;
 	lv2:port [
 		lv2:symbol "lfo_rate" ;
-		pset:value 24.055 ;
+		pset:value 4.0 ;
 	] ;
 	lv2:port [
 		lv2:symbol "vel_sense" ;
@@ -240,7 +240,7 @@
 	] ;
 	lv2:port [
 		lv2:symbol "lfo_rate" ;
-		pset:value 24.055 ;
+		pset:value 4.0 ;
 	] ;
 	lv2:port [
 		lv2:symbol "vel_sense" ;

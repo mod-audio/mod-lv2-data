@@ -7,7 +7,7 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mda/DubDelay> ;
 	lv2:port [
 		lv2:symbol "delay" ;
-		pset:value 1835.25
+		pset:value 375.02
 	] , [
 		lv2:symbol "fb_tone" ;
 		pset:value 0.0
