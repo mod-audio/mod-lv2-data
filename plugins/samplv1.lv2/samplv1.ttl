@@ -32,6 +32,12 @@
 		foaf:mbox <mailto:rncbc@rncbc.org> ;
 	] ;
 
+rdfs:comment """
+Samplv1 is an old-school all-digital polyphonic sampler synthesizer with stereo fx.
+
+Features:
+Plugin by Rui Nuno Capela
+""";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	lv2:minorVersion 0 ;
 	lv2:microVersion 2 ;
