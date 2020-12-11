@@ -1,6 +1,5 @@
 function (event) {
     function handle_event (symbol, value) {
-        console.log("handle_event", symbol, value);
         switch (symbol) {
             case 'osc_port':
                 event.icon.find ('[mod-role=osc_port]').text (value.toFixed(0));
