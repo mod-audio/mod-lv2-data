@@ -105,7 +105,12 @@
 
 .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > div {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
+}
+@supports (display: grid) {
+    .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > div {
+        justify-content:space-evenly;
+    }
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > div > span.mod-knob-title {
