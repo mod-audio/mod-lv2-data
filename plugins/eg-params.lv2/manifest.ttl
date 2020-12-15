@@ -1,0 +1,23 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://lv2plug.in/plugins/eg-params>
+    a lv2:Plugin ;
+    lv2:binary <params.so> ;
+    rdfs:seeAlso <params.ttl> .
+
+<http://lv2plug.in/plugins/eg-params>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-eg-params.html> ;
+        modgui:stylesheet <modgui/stylesheet-eg-params.css> ;
+        modgui:screenshot <modgui/screenshot-eg-params.png> ;
+        modgui:thumbnail <modgui/thumbnail-eg-params.png> ;
+        modgui:brand "DROBILLA" ;
+        modgui:label "Parameters" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+    ] .
