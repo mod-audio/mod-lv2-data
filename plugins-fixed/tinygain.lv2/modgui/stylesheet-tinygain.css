@@ -106,8 +106,11 @@
     line-height:1.5em;
     z-index:60;
     bottom:1px;
-    width:40px;
-    left:10px;
+    width:36px;
+    left:12px;
+    height:16px;
+    text-overflow:clip;
+    overflow:hidden;
     color:white;
     box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
 }
