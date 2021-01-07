@@ -51,9 +51,9 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 1;
-    lv2:default 63.0;
-    lv2:maximum 240.0;
-    lv2:minimum 4.0;
+    lv2:default 120.0;
+    lv2:maximum 280.0;
+    lv2:minimum 20.0;
     lv2:name "BPM";
     lv2:symbol "bpm";
 ],

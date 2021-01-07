@@ -7,7 +7,7 @@
 	lv2:appliesTo <http://moddevices.com/plugins/caps/Click> ;
 	lv2:port [
 		lv2:symbol "bpm" ;
-		pset:value 63.0
+		pset:value 120.0
 	] , [
 		lv2:symbol "damping" ;
 		pset:value 0.75
