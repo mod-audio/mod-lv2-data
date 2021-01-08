@@ -99,7 +99,7 @@
 }
 
 .tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-room_size,
-.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo {
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo_width {
   left: 293px;
 }
 
@@ -108,7 +108,7 @@
   top: 161px;
 }
 
-.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo {
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo_width {
   top: 160px;
 }
 

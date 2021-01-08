@@ -1,57 +1,47 @@
-function (event, icon) {
-  var preDelay = event.icon.find('.tal-reverb-2-pre_delay .mod-knob-value');
-  var highShelfFrequency = event.icon.find('.tal-reverb-2-high_shelf_frequency .mod-knob-value');
-  var highShelfGain = event.icon.find('.tal-reverb-2-high_shelf_gain .mod-knob-value');
-  var lowShelfFrequency = event.icon.find('.tal-reverb-2-low_shelf_frequency .mod-knob-value');
-  var lowShelfGain = event.icon.find('.tal-reverb-2-low_shelf_gain .mod-knob-value');
-  var peakFrequency = event.icon.find('.tal-reverb-2-peak_frequency .mod-knob-value');
-  var peakGain = event.icon.find('.tal-reverb-2-peak_gain .mod-knob-value');
-  var dry = event.icon.find('.tal-reverb-2-dry .mod-knob-value');
-  var wet = event.icon.find('.tal-reverb-2-wet .mod-knob-value');
+function(event) {
 
-  if (event.type === 'start') {
-    preDelay.append('<span>ms</span>');
-    highShelfFrequency.append('<span>Hz</span>');
-    lowShelfFrequency.append('<span>Hz</span>');
-    peakFrequency.append('<span>Hz</span>');
-    highShelfGain.append('<span>dB</span>');
-    lowShelfGain.append('<span>dB</span>');
-    peakGain.append('<span>dB</span>');
-    dry.append('<span>dB</span>');
-    wet.append('<span>dB</span>');
-  }
+	function handle_event (symbol, value) {
+		switch (symbol) {
+			case 'pre_delay':
+				var preDelay = value;
+				preDelay = preDelay.toFixed(0);
+				preDelay = preDelay.toString();
+				preDelay += ' ms';
+				event.icon.find('[mod-role=input-control-value][mod-port-symbol=pre_delay]').text(preDelay);
+				break;
+			case 'low_shelf_frequency':
+				var lowShelfFreq = value;
+				lowShelfFreq = lowShelfFreq.toFixed(0);
+				lowShelfFreq = lowShelfFreq.toString();
+				lowShelfFreq += ' Hz';
+				event.icon.find('[mod-role=input-control-value][mod-port-symbol=low_shelf_frequency]').text(lowShelfFreq);
+				break;
+			case 'high_shelf_frequency':
+				var highShelfFreq = value;
+				highShelfFreq = highShelfFreq.toFixed(0);
+				highShelfFreq = highShelfFreq.toString();
+				highShelfFreq += ' Hz';
+				event.icon.find('[mod-role=input-control-value][mod-port-symbol=high_shelf_frequency]').text(highShelfFreq);
+				break;
+			case 'peak_frequency':
+				var peakFreq = value;
+				peakFreq = peakFreq.toFixed(0);
+				peakFreq = peakFreq.toString();
+				peakFreq += ' Hz';
+				event.icon.find('[mod-role=input-control-value][mod-port-symbol=peak_frequency]').text(peakFreq);
+				break;
+			default:
+				break;
+		}
+	}
 
-  if (event.type === 'change') {
-    switch (event.symbol) {
-      case 'pre_delay':
-        preDelay.append('<span>ms</span>');
-        break;
-      case 'high_shelf_frequency':
-        highShelfFrequency.append('<span>Hz</span>');
-        break;
-      case 'low_shelf_frequency':
-        lowShelfFrequency.append('<span>Hz</span>');
-        break;
-      case 'peak_frequency':
-        peakFrequency.append('<span>Hz</span>');
-        break;
-      case 'high_shelf_gain':
-        highShelfGain.append('<span>dB</span>');
-        break;
-      case 'low_shelf_gain':
-        lowShelfGain.append('<span>dB</span>');
-        break;
-      case 'peak_gain':
-        peakGain.append('<span>dB</span>');
-        break;
-      case 'wet':
-        wet.append('<span>dB</span>');
-        break;
-      case 'dry':
-        dry.append('<span>dB</span>');
-        break;
-      default:
-        break;
-    }
-  }
+	if (event.type == 'start') {
+		var ports = event.ports;
+		for (var p in ports) {
+			handle_event (ports[p].symbol, ports[p].value);
+		}
+	}
+	else if (event.type == 'change') {
+		handle_event (event.symbol, event.value);
+	}
 }
