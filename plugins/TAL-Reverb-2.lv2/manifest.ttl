@@ -8,64 +8,62 @@
     lv2:binary <TAL-Reverb-2.so> ;
     rdfs:seeAlso <TAL-Reverb-2.ttl> , <modgui.ttl> .
 
-<urn:juce:TalReverb2#preset001>
+<Gentle_Drum_Ambience.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Gentle Drum Ambience" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Gentle_Drum_Ambience.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset002>
+<80s_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "80's Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <80s_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset003>
+<Big_Wet_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Big Wet Plate (no EQ)" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Big_Wet_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset004>
+<Small_Drum_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Small Drum Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Small_Drum_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset005>
+<Dull_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Dull Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Dull_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset006>
+<Need_some_Air.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Need some Air" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Need_some_Air.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset007>
+<Mid_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Mid Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Mid_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset008>
+<Airy_Mono_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Airy Mono Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <Airy_Mono_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset009>
+<1100Hz_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "1100Hz Plate" ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:seeAlso <1100Hz_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
 
-<urn:juce:TalReverb2#preset010>
+<Short_Plate.ttl>
     a pset:Preset ;
-    lv2:appliesTo <urn:juce:TalReverb2> ;
     rdfs:label "Short Plate" ;
-    rdfs:seeAlso <presets.ttl> .
-
-
+    rdfs:seeAlso <Short_Plate.ttl> ;
+    lv2:appliesTo <urn:juce:TalReverb2> .
