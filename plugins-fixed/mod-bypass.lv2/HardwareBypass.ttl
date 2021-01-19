@@ -31,11 +31,10 @@ mod:label "Hardware Bypass";
 doap:license "GPL";
 
 rdfs:comment """
-Hardware Bypass changes the MOD's True-Bypass switch.
-By having the switch as a plugin control, it can be addressed to a footswitch or MIDI controller.
+Plugin for changing the MOD's True-Bypass switch.
+By having the switch as a plugin control, you address it to a footswitch or MIDI controller.
 
-Features:
-Modeled by MOD Devices
+PlEASE NOTE! The MOD Dwarf doesn't have True-Bypass, therefore this plugin will not work on this device.
 """;
 
 lv2:port [
