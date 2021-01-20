@@ -1,0 +1,74 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<http://moddevices.com/plugins/mod-devel/mixer#preset001>
+    lv2:port [
+        lv2:symbol "Volume1" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "Panning1" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Solo1" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Mute1" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Volume2" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "Panning2" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Solo2" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Mute2" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Volume3" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "Panning3" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Solo3" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Mute3" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Volume4" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "Panning4" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Solo4" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "Mute4" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "MasterVolume" ;
+        pset:value 0.500000 ;
+    ] .
+
+

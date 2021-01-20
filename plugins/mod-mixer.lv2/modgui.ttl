@@ -1,0 +1,14 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix ui:     <http://lv2plug.in/ns/extensions/ui#> .
+
+<http://moddevices.com/plugins/mod-devel/mixer>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mod-mixer.html> ;
+        modgui:stylesheet <modgui/stylesheet-mod-mixer.css> ;
+        modgui:screenshot <modgui/mod-mixer_ss.png> ;
+        modgui:thumbnail <modgui/mod-mixer_tn.png> ;
+        modgui:brand "MOD" ;
+        modgui:label "Mixer" ;
+    ] .
