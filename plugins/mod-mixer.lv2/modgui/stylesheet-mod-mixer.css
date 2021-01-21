@@ -1,12 +1,12 @@
-/* MOD MIXER */
+/* MOD EQUALIZER */
 .mod-mixer{{{cns}}} {
     background-image: url(/resources/mod-mixer_bg.png{{{ns}}});
     background-position: center center;
     background-repeat: no-repeat;
     color: black;
-    height: 392px;
+    height: 447px;
     padding: 0;
-    width: 459px;
+    width: 445px;
     border-radius: 21px;
     position: absolute;
 }
@@ -35,21 +35,58 @@
     z-index: 20;
 }
 
+.mod-mixer{{{cns}}} .mod-control-group {
+    margin:2px 15px 0 !important;
+    position:relative;
+    text-align:center;
+    /*z-index:500 !important;*/
+}
+
+.mod-mixer{{{cns}}} .mod-display-group {
+    background-color: #aacc66;
+    margin: 0px 5px 0 0px !important;
+    position: relative;
+    text-align: center;
+    color: black;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+}
+
+.mod-mixer{{{cns}}} .mod-display-group div {
+    padding:0;
+    line-height:1.25em;
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.mod-mixer{{{cns}}} .mod-display-group .db {
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    z-index: 100;
+    margin: 0px 0 0px 0;
+}
+
+
 .mod-mixer{{{cns}}} .mod-pedal-input {
-    top:35px; */
+    top:37px; */
 }
 .mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(2){
-    top:12px;
+    top:26px;
 }
 .mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(3){
-    top:20px;
+    top:52px;
 }
 .mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(4){
-    top:37px;
+    top:77px;
 }
 
 .mod-mixer{{{cns}}} .mod-pedal-output {
-    top:35px;
+    top:63px;
 }
 .mod-mixer{{{cns}}} .mod-pedal-output .mod-output:nth-child(2) {
     top: -5px;
@@ -63,14 +100,14 @@
 
 /* SLIDERS */
 .mod-mixer{{{cns}}} .mod-control-group-1 {
-    left: 63px;
+    left: 54px;
     position: absolute;
-    right: 56px;
+    right: 21px;
     top: 23px;
     z-index: 30;
 }
 .mod-mixer{{{cns}}} .mod-control-group .mod-slider {
-    height: 180px;
+    height: 157px;
     margin-right: 8px;
     position: relative;
     width: 60px;
@@ -88,6 +125,9 @@
     z-index: 40;
     box-sizing: content-box;
 }
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-title.alternative {
+    border-radius: 0;
+}
 .mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-image-wrapper {
     background-color: rgb(235,199,38);
     border-radius: 0;
@@ -95,11 +135,15 @@
     position: relative;
     z-index: 30;
 }
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-image-wrapper.grey {
+    background-color: grey;
+}
+
 /* KNOBS */
 .mod-mixer{{{cns}}} .mod-control-group-2 {
-    left: 63px;
+    left: 54px;
     position: absolute;
-    top: 181px;
+    top: 211px;
     z-index: 30;
 }
 .mod-mixer{{{cns}}} .mod-control-group .mod-knob {
@@ -133,6 +177,24 @@
     margin-top: 1px;
     text-align: center;
 }
+
+/* DISPLAY group */
+.mod-mixer{{{cns}}} .mod-control-group-5 {
+    left: 33px;
+    position: absolute;
+    right: 2px;
+    top: 180px;
+    height: 45px;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group-6 {
+    left: 326px;
+    position: absolute;
+    right: 28px;
+    top: 210px;
+    height: 45px;
+}
+
 /* FOOTSWITCH */
 .mod-mixer{{{cns}}} .mod-footswitch {
     background-image:url(/resources/footswitch.png{{{ns}}});
@@ -209,15 +271,15 @@
 }
 
 .mod-mixer{{{cns}}} .mod-control-group-3 {
-    left: 55px;
+    left: 44px;
     position: absolute;
-    top: 260px;
+    top: 298px;
 }
 
 .mod-mixer{{{cns}}} .mod-control-group-4 {
-    left: 55px;
+    left: 44px;
     position: absolute;
-    top: 303px;
+    top: 353px;
 }
 
 /* = BUTTONS

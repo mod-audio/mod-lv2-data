@@ -9,6 +9,26 @@
         modgui:stylesheet <modgui/stylesheet-mod-mixer.css> ;
         modgui:screenshot <modgui/mod-mixer_ss.png> ;
         modgui:thumbnail <modgui/mod-mixer_tn.png> ;
+        modgui:javascript <modgui/script-mod-mixer.js> ;
+        modgui:monitoredOutputs
+            [
+                lv2:symbol "PostFader1Level"
+            ],
+            [
+                lv2:symbol "PostFader2Level"
+            ],
+            [
+                lv2:symbol "PostFader3Level"
+            ],
+            [
+                lv2:symbol "PostFader4Level"
+            ],
+            [
+                lv2:symbol "MasterMonitorLevel"
+            ],
+            [
+                lv2:symbol "AltMonitorLevel"
+            ] ;
         modgui:brand "MOD" ;
         modgui:label "Mixer" ;
     ] .
