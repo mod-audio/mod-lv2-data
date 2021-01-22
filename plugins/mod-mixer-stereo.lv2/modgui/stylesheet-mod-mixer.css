@@ -68,7 +68,7 @@
     display: inline-block;
     text-align: center;
     z-index: 100;
-    margin: 0px 0 0px 0;
+    margin: -1px 0 0px 0;
 }
 
 
@@ -285,15 +285,20 @@
 .mod-mixer{{{cns}}} .mod-control-group-3 {
     left: 44px;
     position: absolute;
-    top: 342px;
+    top: 332px;
 }
 
 .mod-mixer{{{cns}}} .mod-control-group-4 {
     left: 44px;
     position: absolute;
-    top: 396px;
+    top: 367px;
 }
 
+.mod-mixer{{{cns}}} .mod-control-group-7 {
+    left: 44px;
+    position: absolute;
+    top: 401px;
+}
 /* = BUTTONS
 ================================================ */
 
@@ -311,15 +316,15 @@
 }
 
 .mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.on {
-    background-position: center left !important;
-}
-
-.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.off {
     background-position: center right !important;
 }
 
-.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.selected {
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.off {
     background-position: center left !important;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.selected {
+    background-position: center right !important;
 }
 
 .mod-mixer{{{cns}}} .mod-switch {

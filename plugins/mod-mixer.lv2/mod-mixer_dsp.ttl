@@ -114,6 +114,16 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
+        lv2:name """Alt1""" ;
+        lv2:symbol "Alt1" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        lv2:portProperty lv2:toggled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 13 ;
         lv2:name """Volume2""" ;
         lv2:symbol "Volume2" ;
         lv2:default 0.500000 ;
@@ -122,7 +132,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 13 ;
+        lv2:index 14 ;
         lv2:name """Panning2""" ;
         lv2:symbol "Panning2" ;
         lv2:default 0.000000 ;
@@ -131,17 +141,17 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 14 ;
+        lv2:index 15 ;
         lv2:name """Solo2""" ;
         lv2:symbol "Solo2" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
-        lv2:portProperty lv2:toggled;
+        lv2:portProperty lv2:toggled ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 15 ;
+        lv2:index 16 ;
         lv2:name """Mute2""" ;
         lv2:symbol "Mute2" ;
         lv2:default 0.000000 ;
@@ -151,7 +161,17 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 16 ;
+        lv2:index 17 ;
+        lv2:name """Alt2""" ;
+        lv2:symbol "Alt2" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        lv2:portProperty lv2:toggled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 18 ;
         lv2:name """Volume3""" ;
         lv2:symbol "Volume3" ;
         lv2:default 0.500000 ;
@@ -160,7 +180,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 17 ;
+        lv2:index 19 ;
         lv2:name """Panning3""" ;
         lv2:symbol "Panning3" ;
         lv2:default 0.000000 ;
@@ -169,7 +189,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 18 ;
+        lv2:index 20 ;
         lv2:name """Solo3""" ;
         lv2:symbol "Solo3" ;
         lv2:default 0.000000 ;
@@ -179,7 +199,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 19 ;
+        lv2:index 21 ;
         lv2:name """Mute3""" ;
         lv2:symbol "Mute3" ;
         lv2:default 0.000000 ;
@@ -189,7 +209,17 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 20 ;
+        lv2:index 22 ;
+        lv2:name """Alt3""" ;
+        lv2:symbol "Alt3" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        lv2:portProperty lv2:toggled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 23 ;
         lv2:name """Volume4""" ;
         lv2:symbol "Volume4" ;
         lv2:default 0.500000 ;
@@ -198,7 +228,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 21 ;
+        lv2:index 24 ;
         lv2:name """Panning4""" ;
         lv2:symbol "Panning4" ;
         lv2:default 0.000000 ;
@@ -207,7 +237,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 22 ;
+        lv2:index 25 ;
         lv2:name """Solo4""" ;
         lv2:symbol "Solo4" ;
         lv2:default 0.000000 ;
@@ -217,7 +247,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 23 ;
+        lv2:index 26 ;
         lv2:name """Mute4""" ;
         lv2:symbol "Mute4" ;
         lv2:default 0.000000 ;
@@ -227,7 +257,17 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 24 ;
+        lv2:index 27 ;
+        lv2:name """Alt4""" ;
+        lv2:symbol "Alt4" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        lv2:portProperty lv2:toggled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 28 ;
         lv2:name """MasterVolume""" ;
         lv2:symbol "MasterVolume" ;
         lv2:default 0.500000 ;
@@ -236,7 +276,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 25 ;
+        lv2:index 29 ;
         lv2:name """Alt Volume""" ;
         lv2:symbol "AltVolume" ;
         lv2:default 0.500000 ;
@@ -245,16 +285,18 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 26 ;
+        lv2:index 30 ;
         lv2:name """PluginEnabled""" ;
         lv2:symbol "PluginEnabled" ;
         lv2:default 1.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
+        lv2:designation lv2:enabled;
+        lv2:portProperty lv2:toggled;
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 27 ;
+        lv2:index 31 ;
         lv2:name """PostFader1Level""" ;
         lv2:symbol "PostFader1Level" ;
         lv2:minimum 0.000000 ;
@@ -262,7 +304,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 28 ;
+        lv2:index 32 ;
         lv2:name """PostFader2Level""" ;
         lv2:symbol "PostFader2Level" ;
         lv2:minimum 0.000000 ;
@@ -270,7 +312,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 29 ;
+        lv2:index 33 ;
         lv2:name """PostFader3Level""" ;
         lv2:symbol "PostFader3Level" ;
         lv2:minimum 0.000000 ;
@@ -278,7 +320,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 30 ;
+        lv2:index 34 ;
         lv2:name """PostFader4Level""" ;
         lv2:symbol "PostFader4Level" ;
         lv2:minimum 0.000000 ;
@@ -286,7 +328,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 31 ;
+        lv2:index 35 ;
         lv2:name """MasterMonitorLevel""" ;
         lv2:symbol "MasterMonitorLevel" ;
         lv2:minimum 0.000000 ;
@@ -294,7 +336,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 32 ;
+        lv2:index 36 ;
         lv2:name """AltMonitorLevel""" ;
         lv2:symbol "AltMonitorLevel" ;
         lv2:minimum 0.000000 ;
