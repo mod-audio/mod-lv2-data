@@ -375,9 +375,9 @@
     ] ;
 
     mod:brand "MOD" ;
-    mod:label "Mixer" ;
+    mod:label "Mixer Stereo" ;
 
-    doap:name """Mixer""" ;
+    doap:name """Mixer Stereo""" ;
     doap:license """Custom""" ;
 
     doap:maintainer [
