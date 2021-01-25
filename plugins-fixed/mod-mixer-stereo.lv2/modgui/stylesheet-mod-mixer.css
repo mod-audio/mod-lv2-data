@@ -1,0 +1,350 @@
+/* MOD EQUALIZER */
+.mod-mixer{{{cns}}} {
+    background-image: url(/resources/mod-mixer_bg.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    height: 524px;
+    padding: 0;
+    width: 445px;
+    border-radius: 21px;
+    position: absolute;
+}
+/* BRAND */
+.mod-mixer{{{cns}}} .mod-mixer-brand {
+    background: rgba(0,0,0,0.9);
+    border-radius: 8px;
+    bottom: 44px;
+    color: white;
+    left: 335px;
+    padding: -3px 0px;
+    position: absolute;
+    top: 182px;
+    right: 64px;
+    text-align: center;
+}
+.mod-mixer{{{cns}}} .mod-plugin-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+.mod-mixer{{{cns}}} .mod-plugin-name {
+    margin-right: 10px;
+}
+/* DRAG */
+.mod-mixer{{{cns}}} .mod-drag-handle {
+    z-index: 20;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group {
+    margin:2px 15px 0 !important;
+    position:relative;
+    text-align:center;
+    /*z-index:500 !important;*/
+}
+
+.mod-mixer{{{cns}}} .mod-display-group {
+    background-color: #aacc66;
+    margin: 0px 5px 0 0px !important;
+    position: relative;
+    text-align: center;
+    color: black;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+}
+
+.mod-mixer{{{cns}}} .mod-display-group div {
+    padding:0;
+    line-height:1.25em;
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.mod-mixer{{{cns}}} .mod-display-group .db {
+    font-size: 19px;
+    line-height: 1.5em;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    z-index: 100;
+    margin: -1px 0 0px 0;
+}
+
+
+.mod-mixer{{{cns}}} .mod-pedal-input {
+    top:20px; */
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(2){
+    top:-15px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(3){
+    top:-15px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(4){
+    top:-30px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(5){
+    top:-35px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(6){
+    top:-50px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(7){
+    top:-55px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-input .mod-input:nth-child(8){
+    top:-70px;
+}
+
+.mod-mixer{{{cns}}} .mod-pedal-output {
+    top:95px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-output .mod-output:nth-child(2) {
+    top: -5px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-output .mod-output:nth-child(3) {
+    top: 65px;
+}
+.mod-mixer{{{cns}}} .mod-pedal-output .mod-output:nth-child(4) {
+    top: 60px;
+}
+
+/* SLIDERS */
+.mod-mixer{{{cns}}} .mod-control-group-1 {
+    left: 54px;
+    position: absolute;
+    right: 21px;
+    top: 62px;
+    z-index: 30;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider {
+    height: 157px;
+    margin-right: 8px;
+    position: relative;
+    width: 60px;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider:first-child {
+    margin-left: 0px;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-title {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    font-size: 14px;
+    height: 14px;
+    margin-bottom: 1px;
+    z-index: 40;
+    box-sizing: content-box;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-title.alternative {
+    border-radius: 0;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-image-wrapper {
+    background-color: rgb(235,199,38);
+    border-radius: 0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 30;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-slider .mod-slider-image-wrapper.grey {
+    background-color: grey;
+}
+
+/* KNOBS */
+.mod-mixer{{{cns}}} .mod-control-group-2 {
+    left: 54px;
+    position: absolute;
+    top: 254px;
+    z-index: 30;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-knob {
+    display:inline-block;
+    float: left;
+    height:60px;
+    margin-right: 8px;
+    position:relative;
+    width:60px;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-knob .mod-knob-image-wrapper {
+    background-color: rgb(235,199,38);
+    padding: 5px;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-knob .mod-knob-image {
+    background-image: url(/resources/mod-mixer-knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+}
+.mod-mixer{{{cns}}} .mod-control-group .mod-knob .mod-knob-value {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1px;
+    text-align: center;
+}
+
+/* DISPLAY group */
+.mod-mixer{{{cns}}} .mod-control-group-5 {
+    left: 33px;
+    position: absolute;
+    right: 2px;
+    top: 219px;
+    height: 45px;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group-6 {
+    left: 326px;
+    position: absolute;
+    right: 28px;
+    top: 253px;
+    height: 45px;
+}
+
+/* FOOTSWITCH */
+.mod-mixer{{{cns}}} .mod-footswitch {
+    background-image:url(/resources/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    bottom: 46px;
+    left: 255px;
+    right: -16px;
+    cursor: pointer;
+    height: 66px;
+    width: 69px;
+    margin: auto;
+    position: absolute !important;
+}
+.mod-mixer{{{cns}}} .mod-footswitch.on {
+    background-position-y: top !important
+}
+/* LIGHT */
+.mod-mixer{{{cns}}} .mod-light {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    margin-top: 10px;
+    margin-right: 0px;
+    vertical-align: middle;
+    width: 32px;
+    z-index: 40;
+}
+.mod-mixer{{{cns}}} .mod-light.off {
+    background-image: url(/resources/red-light-off.png{{{ns}}});
+}
+.mod-mixer{{{cns}}} .mod-light.on {
+    background-image: url(/resources/red-light-on.png{{{ns}}});
+}
+/* SLIDER */
+.mod-mixer{{{cns}}} .mod-slider:first-child {
+    margin-left:8px;
+}
+.mod-mixer{{{cns}}} .mod-slider {
+    color:black;
+    float:left;
+    font-size:11px;
+    height:140px;
+    margin-bottom:2px;
+    margin-right:2px;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    width:33px;
+}
+.mod-mixer{{{cns}}} .mod-slider .mod-slider-title {
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:7px;
+    line-height:1;
+    margin-bottom:3px;
+    overflow:hidden;
+    padding:7px 0 5px;
+    position:relative;
+}
+.mod-mixer{{{cns}}} .mod-slider .mod-slider-image {
+    background-image:url(/resources/slider.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 110px;
+    height:110px;
+    margin:0 auto;
+    width:44px;
+}
+.mod-mixer{{{cns}}} .mod-slider .mod-slider-image:hover {
+    cursor:pointer;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group-3 {
+    left: 44px;
+    position: absolute;
+    top: 332px;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group-4 {
+    left: 44px;
+    position: absolute;
+    top: 367px;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group-7 {
+    left: 44px;
+    position: absolute;
+    top: 401px;
+}
+/* = BUTTONS
+================================================ */
+
+.mod-mixer{{{cns}}} .mod-control-group .button {
+    position: relative;
+    background: none;
+    box-shadow: none;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image {
+    background-image: url(/resources/mod-mixer-button.png{{{ns}}});
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 50px;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.on {
+    background-position: center right !important;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.off {
+    background-position: center left !important;
+}
+
+.mod-mixer{{{cns}}} .mod-control-group .button .mod-button-image.selected {
+    background-position: center right !important;
+}
+
+.mod-mixer{{{cns}}} .mod-switch {
+    background-image: url(/resources/samplv1_sprite_sheets/buttons/button_on_off.png{{{ns}}});
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    left: 38px;
+    top: 79px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 30;
+}
+
+.mod-mixer{{{cns}}} .mod-switch.on {
+    background-position: center left;
+}
+
+.mod-mixer{{{cns}}} .mod-switch.off {
+    background-position: center right;
+}
