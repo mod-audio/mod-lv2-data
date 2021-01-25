@@ -6,11 +6,3 @@
     a lv2:Plugin ;
     lv2:binary <mod-mixer_dsp.so> ;
     rdfs:seeAlso <mod-mixer_dsp.ttl>, <modgui.ttl> .
-
-<http://moddevices.com/plugins/mod-devel/mixer#preset001>
-    a pset:Preset ;
-    lv2:appliesTo <http://moddevices.com/plugins/mod-devel/mixer> ;
-    rdfs:label "Default" ;
-    rdfs:seeAlso <presets.ttl> .
-
-
