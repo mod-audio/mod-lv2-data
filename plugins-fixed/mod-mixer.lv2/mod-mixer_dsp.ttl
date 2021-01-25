@@ -347,7 +347,14 @@
     mod:label "Mixer" ;
 
     doap:name """Mixer""" ;
-    doap:license """Custom""" ;
+    doap:license """GPLv3.0""" ;
+
+    rdfs:comment """
+4 channel mixer.
+
+Features:
+Plugin by MOD Devices
+""" ;
 
     doap:maintainer [
         foaf:name """MOD""" ;
