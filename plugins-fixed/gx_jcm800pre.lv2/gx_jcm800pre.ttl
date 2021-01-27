@@ -33,7 +33,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
 	foaf:homepage <http://www.guitarix.org/> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
