@@ -48,8 +48,6 @@
 
   lv2:optionalFeature lv2:hardRTCapable ;
 
-  ui:ui <http://www.openavproductions.com/artyfx#bitta/gui>;
-
   lv2:requiredFeature <http://lv2plug.in/ns/ext/urid#map> ;
 
   lv2:port [
