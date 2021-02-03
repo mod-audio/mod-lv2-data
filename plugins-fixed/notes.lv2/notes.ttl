@@ -1,0 +1,129 @@
+# Copyright (c) 2019-2020 Hanspeter Portner (dev@open-music-kontrollers.ch)
+#
+# This is free software: you can redistribute it and/or modify
+# it under the terms of the Artistic License 2.0 as published by
+# The Perl Foundation.
+#
+# This source is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# Artistic License 2.0 for more details.
+#
+# You should have received a copy of the Artistic License 2.0
+# along the source as a COPYING file. If not, obtain it from
+# http://www.perlfoundation.org/artistic_license_2_0.
+
+@prefix xsd:			<http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:			<http://xmlns.com/foaf/0.1/> .
+@prefix doap:			<http://usefulinc.com/ns/doap#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:			<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lv2:			<http://lv2plug.in/ns/lv2core#> .
+@prefix atom:			<http://lv2plug.in/ns/ext/atom#> .
+@prefix urid:			<http://lv2plug.in/ns/ext/urid#> .
+@prefix units:		<http://lv2plug.in/ns/extensions/units#> .
+@prefix state:		<http://lv2plug.in/ns/ext/state#> .
+@prefix rsz:      <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix patch:		<http://lv2plug.in/ns/ext/patch#> .
+@prefix log:			<http://lv2plug.in/ns/ext/log#> .
+
+@prefix lic:			<http://opensource.org/licenses/> .
+@prefix omk:			<http://open-music-kontrollers.ch/ventosus#> .
+@prefix proj:			<http://open-music-kontrollers.ch/lv2/> .
+@prefix notes:		<http://open-music-kontrollers.ch/lv2/notes#> .
+
+# Maintainer
+omk:me
+	a foaf:Person ;
+	foaf:name "Hanspeter Portner" ;
+	foaf:mbox <mailto:dev@open-music-kontrollers.ch> ;
+	foaf:homepage <http://open-music-kontrollers.ch> .
+
+# Project
+proj:notes
+	a doap:Project ;
+	doap:maintainer omk:me ;
+	doap:name "Notes Bundle" .
+
+# Units
+notes:px
+	a units:Unit ;
+	rdfs:label "pixels" ;
+	units:render "%f px" ;
+	units:symbol "px" .
+
+notes:Item
+	a rdfs:Class ;
+	rdfs:subClassOf atom:Object ;
+	rdfs:label "Item class" .
+notes:itemTxt
+	a rdf:Property ;
+	rdfs:range atom:String ;
+	rdfs:label "Item Text" .
+notes:itemImg
+	a rdf:Property ;
+	rdfs:range atom:Path ;
+	rdfs:label "Item Image" .
+
+# Params
+notes:text
+	a lv2:Parameter ;
+	rdfs:range atom:String ;
+	rdfs:label "Notes text" ;
+	rdfs:comment "get/set notes text" .
+notes:fontHeight
+	a lv2:Parameter ;
+	rdfs:range atom:Int ;
+	rdfs:label "Font height" ;
+	rdfs:comment "get/set font height in px" ;
+	lv2:minimum 20 ;
+	lv2:maximum 48 ;
+	units:unit notes:px .
+
+notes:notes
+	a lv2:Plugin ,
+		lv2:UtilityPlugin ;
+	doap:name "Notes" ;
+	doap:license lic:Artistic-2.0 ;
+	lv2:project proj:notes ;
+	lv2:requiredFeature urid:map, state:loadDefaultState ;
+	lv2:optionalFeature lv2:isLive, lv2:hardRTCapable, state:threadSafeRestore, log:log ;
+	lv2:extensionData	state:interface ;
+
+	lv2:port [
+	  a lv2:InputPort ,
+			atom:AtomPort ;
+		atom:bufferType atom:Sequence ;
+		atom:supports patch:Message ;
+		lv2:index 0 ;
+		lv2:symbol "control" ;
+		lv2:name "Control" ;
+		rsz:minimumSize 262144 ;
+		lv2:designation lv2:control ;
+	] , [
+	  a lv2:OutputPort ,
+			atom:AtomPort ;
+		atom:bufferType atom:Sequence ;
+		atom:supports patch:Message ;
+		lv2:index 1 ;
+		lv2:symbol "notify" ;
+		lv2:name "Notify" ;
+		rsz:minimumSize 262144 ;
+		lv2:designation lv2:control ;
+	] ;
+
+	patch:writable
+		notes:text ,
+		notes:fontHeight ;
+
+    rdfs:comment """
+Notes is a plugin to store arbitrary notes.
+
+Features:
+Modeled by Open Music Kontrollers
+""";
+
+	state:state [
+		notes:text "# Notes" ;
+		notes:fontHeight "24"^^xsd:int ;
+	] .

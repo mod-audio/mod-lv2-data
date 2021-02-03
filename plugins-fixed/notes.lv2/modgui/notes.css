@@ -1,0 +1,93 @@
+
+.omk-notes.mod-pedal {
+    background-color: #d5d95c;
+    color: black;
+    font-size: 25px;
+    width: 400px;
+    height: 400px;
+}
+
+.omk-notes.mod-pedal .mod-control-group {
+    margin: 20px 10px 10px 10px;
+    height: calc(100% - 30px);
+    width: calc(100% - 20px);
+    position: absolute;
+    z-index: 1;
+}
+
+.omk-notes.mod-pedal .mod-drag-handle.bounds {
+    z-index: 0;
+}
+
+.omk-notes.mod-pedal .mod-string,
+.omk-notes.mod-pedal .mod-string-value {
+    width: 100%;
+    height: 100%;
+}
+
+.omk-notes.mod-pedal .mod-string-value {
+    display: block;
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+    resize: none;
+}
+
+.omk-notes.mod-pedal textarea::selection {
+    background-color: #7b7b7b;
+}
+
+/* the following code was based on http://creative-punch.net/2014/02/create-css3-post-it-note/ */
+.omk-notes.mod-pedal .mod-drag-handle.pin {
+    background-color: #aaa;
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    left: 50%;
+    top: -16px;
+    z-index: 2;
+    -webkit-transform: rotate(1.5deg);
+    -ms-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
+}
+.omk-notes.mod-pedal .mod-drag-handle.pin:after {
+    background-color: #A31;
+    background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px hsla(0,0%,0%,.1),
+                inset 5px 5px 5px hsla(0,0%,100%,.2),
+                inset -5px -5px 5px hsla(0,0%,0%,.2),
+                27px 17px 3px hsla(0,0%,0%,.15);
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: -8px;
+    top: -15px;
+}
+.omk-notes.mod-pedal .mod-drag-handle.pin:before {
+    background-color: hsla(0,0%,0%,0.1);
+    box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 2px;
+    left: 0;
+    top: 8px;
+
+    -webkit-transform: rotate(57.5deg);
+    -ms-transform: rotate(57.5deg);
+    transform: rotate(57.5deg);
+
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+/* for taking a screenshot */
+/*
+.omk-notes.mod-pedal {
+    margin-top: 40px;
+}
+*/

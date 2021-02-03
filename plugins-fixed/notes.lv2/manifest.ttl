@@ -1,0 +1,28 @@
+# Copyright (c) 2019-2020 Hanspeter Portner (dev@open-music-kontrollers.ch)
+#
+# This is free software: you can redistribute it and/or modify
+# it under the terms of the Artistic License 2.0 as published by
+# The Perl Foundation.
+#
+# This source is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# Artistic License 2.0 for more details.
+#
+# You should have received a copy of the Artistic License 2.0
+# along the source as a COPYING file. If not, obtain it from
+# http://www.perlfoundation.org/artistic_license_2_0.
+
+@prefix lv2:      <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:       <http://lv2plug.in/ns/extensions/ui#> .
+
+@prefix notes:		<http://open-music-kontrollers.ch/lv2/notes#> .
+
+# Notes
+notes:notes
+	a lv2:Plugin ;
+	lv2:minorVersion 2 ;
+	lv2:microVersion 0 ;
+	lv2:binary <notes.so> ;
+	rdfs:seeAlso <notes.ttl> , <modgui.ttl> .

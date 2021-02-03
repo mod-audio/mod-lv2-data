@@ -1,0 +1,13 @@
+@prefix mod:    <http://moddevices.com/ns/mod#>.
+@prefix modgui: <http://moddevices.com/ns/modgui#>.
+
+<http://open-music-kontrollers.ch/lv2/notes#notes>
+    mod:brand "OMK" ;
+    mod:label "Notes" ;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/notes.html> ;
+        modgui:stylesheet <modgui/notes.css> ;
+        modgui:screenshot <modgui/screenshot.png> ;
+        modgui:thumbnail <modgui/thumbnail.png> ;
+    ] .

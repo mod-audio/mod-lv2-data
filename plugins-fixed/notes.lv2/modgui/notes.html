@@ -1,0 +1,14 @@
+<div class="omk-notes mod-pedal">
+    <div class="mod-drag-handle pin" mod-role="drag-handle"></div>
+    <div class="mod-drag-handle bounds" mod-role="drag-handle"></div>
+    <div class="mod-control-group mod-enumerated-group bottom clearfix">
+        {{#effect.parameters}}
+        {{#string}}
+        <div class="mod-string" mod-role="input-parameter" mod-parameter-uri="{{uri}}" mod-widget="string">
+            <textarea autocomplete=off spellcheck=false class="mod-string-value" mod-role="input-parameter-value" mod-parameter-uri="{{uri}}">
+            </textarea>
+        </div>
+        {{/string}}
+        {{/effect.parameters}}
+    </div>
+</div>
