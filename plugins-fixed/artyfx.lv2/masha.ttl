@@ -45,8 +45,6 @@
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
 
-  ui:ui <http://www.openavproductions.com/artyfx#masha/gui>;
-
   lv2:port [
     a lv2:AudioPort ,
       lv2:InputPort ;

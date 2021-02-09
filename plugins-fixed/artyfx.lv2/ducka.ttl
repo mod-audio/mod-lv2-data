@@ -44,10 +44,6 @@
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
-
-
-  ui:ui <http://www.openavproductions.com/artyfx#ducka/gui>;
-
   lv2:port [
     a lv2:AudioPort ,
       lv2:InputPort ;

@@ -50,8 +50,6 @@ Modeled by OpenAV
 
   lv2:optionalFeature lv2:hardRTCapable;
 
-  ui:ui <http://www.openavproductions.com/artyfx#filta/gui>;
-
   lv2:port [
     a lv2:AudioPort ,
       lv2:InputPort ;

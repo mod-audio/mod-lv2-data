@@ -45,9 +45,6 @@
   doap:license <http://usefulinc.com/doap/licenses/gpl> ;
   lv2:project <http://www.openavproductions.com/artyfx> ;
 
-
-  ui:ui <http://www.openavproductions.com/artyfx#panda/gui>;
-
   lv2:requiredFeature <http://lv2plug.in/ns/ext/urid#map> ;
 
   lv2:port [
