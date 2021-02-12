@@ -382,7 +382,11 @@
     doap:license """GPLv3.0""" ;
 
     rdfs:comment """
-4 channel stereo mixer.
+The MOD Mixer Stereo is an audio mixer with 4 stereo channels. Each channel has a Volume, Pan, Mute and Alt parameter.
+
+In addition to the main output pair there is also an alternative output pair. When the Alt parameter is enabled on a channel, that channel is no longer sent to the main outputs, but instead is sent to the alternative outputs.
+
+When the True Panning parameter is enabled the Pan parameters won't work as a balance between the L en R channel but as a direction control (e.g., when the pan parameter is turned to the left both the L and R channel are on the left speaker).
 
 Features:
 Plugin by MOD Devices
@@ -390,7 +394,7 @@ Plugin by MOD Devices
 
     doap:maintainer [
         foaf:name """MOD""" ;
-        foaf:homepage <http://> ;
+        foaf:homepage <https://www.moddevices.com> ;
     ] ;
 
     lv2:microVersion 0 ;

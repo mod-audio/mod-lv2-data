@@ -350,7 +350,9 @@
     doap:license """GPLv3.0""" ;
 
     rdfs:comment """
-4 channel mixer.
+The MOD Mixer is an audio mixer with 4 mono channels. Each channel has a Volume, Pan, Mute and Alt parameter.
+
+In addition to the main output pair there is also an alternative output pair. When the Alt parameter is enabled on a channel, that channel is no longer sent to the main outputs, but instead is sent to the alternative outputs.
 
 Features:
 Plugin by MOD Devices
@@ -358,7 +360,7 @@ Plugin by MOD Devices
 
     doap:maintainer [
         foaf:name """MOD""" ;
-        foaf:homepage <http://> ;
+        foaf:homepage <https://www.moddevices.com> ;
     ] ;
 
     lv2:microVersion 0 ;
