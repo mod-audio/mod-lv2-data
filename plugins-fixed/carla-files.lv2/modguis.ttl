@@ -1,0 +1,32 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+<http://kxstudio.sf.net/carla/plugins/audiofile>
+    mod:brand "falkTX" ;
+    mod:label "Audio File" ;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-audio.html> ;
+        modgui:javascript <modgui/javascript-audio.js> ;
+        modgui:stylesheet <modgui/stylesheet-audio.css> ;
+        modgui:screenshot <modgui/screenshot-audio.png> ;
+        modgui:thumbnail <modgui/thumbnail-audio.png> ;
+        modgui:monitoredOutputs [
+             lv2:symbol "num_channels"
+         ] , [
+             lv2:symbol "bit_rate"
+         ] , [
+             lv2:symbol "bit_depth"
+         ] , [
+             lv2:symbol "sample_rate"
+         ] , [
+             lv2:symbol "length"
+         ] , [
+             lv2:symbol "position"
+         ] ;
+    ] .
