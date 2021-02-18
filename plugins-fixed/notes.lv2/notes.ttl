@@ -125,5 +125,5 @@ Modeled by Open Music Kontrollers
 
 	state:state [
 		notes:text "# Notes" ;
-		notes:fontHeight "24"^^xsd:int ;
+		notes:fontHeight "25"^^xsd:int ;
 	] .
