@@ -119,11 +119,16 @@ notes:notes
     rdfs:comment """
 Notes is a plugin to store arbitrary notes.
 
+A few notes about Notes:
+- For entering newlines, use Shift+Enter
+- Font-height is configurable in the plugin settings
+- There is a limit on how much you can write (around 450 characters at the moment)
+
 Features:
 Modeled by Open Music Kontrollers
 """;
 
 	state:state [
 		notes:text "# Notes" ;
-		notes:fontHeight "24"^^xsd:int ;
+		notes:fontHeight "25"^^xsd:int ;
 	] .
