@@ -167,6 +167,10 @@
     border-radius:4px;
     padding:3px 9px;
     min-height:28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-selected {

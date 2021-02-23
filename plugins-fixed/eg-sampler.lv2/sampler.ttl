@@ -26,7 +26,7 @@
 	rdfs:range atom:Path .
 
 <http://lv2plug.in/plugins/eg-sampler>
-	a lv2:Plugin ;
+    a lv2:InstrumentPlugin, lv2:Plugin ;
 	doap:maintainer <http://drobilla.net/drobilla#me> ;
 	doap:name "Exampler" ;
 	doap:license <http://opensource.org/licenses/isc> ;
