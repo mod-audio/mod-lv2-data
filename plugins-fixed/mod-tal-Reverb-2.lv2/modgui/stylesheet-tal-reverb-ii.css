@@ -1,0 +1,199 @@
+/* = CONTAINER
+================================================ */
+.tal-reverb-2{{{cns}}} {
+    background-image:url(/resources/background-tal-reverb-ii.png{{{ns}}});
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: 693px 285px;
+    height:285px;
+    width: 693px;
+}
+
+/* PORTS
+================================================ */
+
+.tal-reverb-2{{{cns}}} .mod-pedal-input,
+.tal-reverb-2{{{cns}}} .mod-pedal-output {
+    top: 66px;
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.tal-reverb-2{{{cns}}} .mod-light {
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:32px;
+    left:10px;
+    position:absolute;
+    right:10px;
+    top:235px;
+}
+
+
+/* = FOOTSWITCH
+================================================ */
+.tal-reverb-2{{{cns}}} .mod-footswitch {
+    background-image:url(/resources/pedals/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    bottom: 95px;
+    left: 13px;
+    right: 13px;
+    cursor:pointer;
+    height:66px;
+    width: 66px;
+    margin: auto;
+    position:absolute !important;
+}
+.tal-reverb-2{{{cns}}} .mod-footswitch.on {
+    background-position-y: top !important
+}
+
+/* = KNOBS
+================================================ */
+.tal-reverb-2{{{cns}}} .mod-control-group {
+    margin:20px !important;
+    position:relative;
+    text-align:center;
+    z-index:30;
+}
+/*
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-high_shelf_gain::after {
+  content: 'dB';
+} */
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob {
+  position: absolute;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-high_shelf_frequency,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-high_shelf_gain {
+  top: 13px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-peak_frequency,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-peak_gain {
+  top: 87px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-high_shelf_frequency,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-low_shelf_frequency,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-peak_frequency {
+  left: 133px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-high_shelf_gain,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-low_shelf_gain,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-peak_gain {
+  left: 204px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-pre_delay,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-room_size {
+  top: 48px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-pre_delay {
+  left: 366px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-room_size,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo_width {
+  left: 293px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-low_shelf_frequency,
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-low_shelf_gain {
+  top: 161px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob.tal-reverb-2-stereo_width {
+  top: 160px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob-value {
+    font-size:9px;
+    line-height:13px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob > .mod-knob-value {
+    margin-top: 7px;
+    width: 55px;
+    margin-left: -5px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-slider > .mod-knob-value {
+    margin-top: -12px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-knob .mod-knob-image {
+    background-image:url(/resources/sprites/knobs.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 45px;
+    height:45px;
+    width:45px;
+}
+
+/* BUTTON
+================================================ */
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-reverb-button {
+    position: absolute;
+    top: 149px;
+    right: 227px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-reverb-button:hover {
+  cursor: pointer;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-reverb-button .mod-button-image {
+    background-image: url(/resources/sprites/stereo-input.png{{{ns}}});
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 71px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-reverb-button .mod-button-image.on {
+  background-position: center right !important;
+}
+
+.tal-reverb-2{{{cns}}} .mod-control-group .mod-reverb-button .mod-button-image.off {
+  background-position: center left !important;
+}
+
+/* SLIDERS
+================================================ */
+
+.tal-reverb-2{{{cns}}} .mod-slider {
+    position: absolute;
+    top: 54px;
+}
+
+.tal-reverb-2{{{cns}}} .tal-reverb-2-wet.mod-slider {
+  right: 71px;
+}
+
+.tal-reverb-2{{{cns}}} .tal-reverb-2-dry.mod-slider {
+  right: 141px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-slider .mod-slider-image {
+    background-image:url(/resources/sprites/slider.png{{{ns}}});
+    background-repeat:no-repeat;
+    /* background-size:auto 110px; */
+    height:171px;
+    width:83px;
+}
+
+.tal-reverb-2{{{cns}}} .mod-slider .mod-slider-image:hover {
+    cursor:pointer;
+}
