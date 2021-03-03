@@ -30,7 +30,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
 	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
@@ -61,7 +61,7 @@ The Gx OC-2 is partially inspired by the Boss OC-2(*), a classic that has been a
 Pro-tip: you can cop a cool synth sound if you crank the Octave 1 knob up while keeping the other two knobs turned down. 
 
 Features:
-Modeled by the Guitarix team
+Modeled by the Guitarix
 Based on the Boss OC-2 (*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.

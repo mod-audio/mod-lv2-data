@@ -31,7 +31,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
 	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
@@ -62,7 +62,7 @@ Analog distortion emulation of the classic Vox Tone Bender(*)
 The Vox Suppa Tonebender(*), or as it is also known, the MKIII ToneBender, was the first in a series of tonebenders that offered a tone control. While the pedal still featured a very similar schematic to the Big Muff Pi, the change in internal components gave it its unique sound. The original pedal was first released in 1969 and was discontinued in 1976 due to the decrease of popularity of the germanium components. 
 
 Features:
-Modeled by the Guitarix team
+Modeled by the Guitarix
 Based on the Vox Suppa ToneBender(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.

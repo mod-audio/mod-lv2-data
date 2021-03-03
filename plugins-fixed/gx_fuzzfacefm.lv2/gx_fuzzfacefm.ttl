@@ -30,7 +30,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
 	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
@@ -62,7 +62,7 @@ The classical Fuzz Face originated in 1966. Back then, the pedal did not get tha
 The classic Fuzz Face has two controls: Volume and Fuzz. Now, with the Fuller mods 2, further controls are introduced. The input and drive knobs are used in order to  “clean” up the distortion that the Fuzz Face produces, crafting more subtle shades of softer distortion. 
 
 Features:
-Modeled by the Guitarix team
+Modeled by the Guitarix
 Based on the classic Dunlop Fuzz Face(*)
 
 (*) 'Other product names modelled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.

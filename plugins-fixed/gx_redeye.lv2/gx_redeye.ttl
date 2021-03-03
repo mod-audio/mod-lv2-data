@@ -34,7 +34,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:brummer@web.de> ;
 	foaf:homepage <http://guitarix.sourceforge.net> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .

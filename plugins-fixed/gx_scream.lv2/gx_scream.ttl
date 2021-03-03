@@ -30,7 +30,7 @@
 
 <http://guitarix.sourceforge.net#me>
 	a foaf:Person ;
-	foaf:name "Guitarix team" ;
+	foaf:name "Guitarix" ;
 	foaf:mbox <mailto:guitarix-developer@lists.sourceforge.net> ;
 	foaf:homepage <http://www.guitarix.org/> ;
 	rdfs:seeAlso <http://guitarix.sourceforge.net> .
@@ -67,7 +67,7 @@ It became most popular in the 1960’s when mostly used to overdrive the dark so
 A really straightforward pedal with only one knob. Simply set it to the desired amount of boost and you are good to go.
 
 Features:
-Modeled by the Guitarix team
+Modeled by the Guitarix
 Based on the classic Electro-Harmonix Screaming Bird(*)
 
 (*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
