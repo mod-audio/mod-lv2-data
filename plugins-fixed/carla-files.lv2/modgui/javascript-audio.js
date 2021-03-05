@@ -1,24 +1,38 @@
 function (event, funcs)
 {
     /* constants */
-    var svg_width = 300;
-    var svg_height = 150;
-    var svg_half_height = svg_height / 2;
+    var svg_width = 432;
+    var svg_height = 80;
 
-    function draw_audio(svg, values) {
+    function draw_audio(svg, values, uniqueId) {
         svg.clear();
 
-        var svgdata = [[0,svg_half_height]]
+        var svgdata = [];
+        var val;
         for (var x = 0; x < values.length; ++x) {
-            svgdata.push([x, (values[x] * svg_half_height) + svg_half_height]);
+            val = (1.0 - values[x]) * svg_height;
+            svgdata.push([x*4, svg_height])
+            svgdata.push([x*4, val])
+            svgdata.push([x*4+3, val])
+            svgdata.push([x*4+3, svg_height])
         }
-        svgdata.push([svg_width,svg_half_height]);
 
-        var defs = svg.defs();
-        svg.linearGradient(defs, 'fadeBg', [[0, '#2e5033'], [1, '#1a2d1d']]);
+        var defs = svg.defs(uniqueId);
+        svg.linearGradient(defs, 'fillBg-'+uniqueId, [
+            [0, '#d67516'],
+            [0, '#d67516'],
+            [0, 'white'],
+            [1, 'white']
+        ]);
 
-        var g = svg.group({stroke: '#009515', strokeWidth: 1.0, fill: 'url(#fadeBg)'});
+        var g = svg.group({fill: 'url(#fillBg-'+uniqueId+')'});
         svg.polyline(g, svgdata);
+    }
+
+    function update_audio_position(svg, position, uniqueId) {
+        // this align to a 4px grid
+        var offset = Math.round((position*svg_width/100)/4)*4/svg_width;
+        $(svg.getElementById(uniqueId)).find('stop:nth-child(2n+1)').attr('offset', offset.toString());
     }
 
     function prepare_loading_status_change(eventdata, icon, funcs) {
@@ -47,6 +61,7 @@ function (event, funcs)
 
     if (event.type == 'start')
     {
+        var svgElem = event.icon.find('.file-info-svg');
         var values = event.data.values = {
             'loop_mode': 1,
             'num_channels': 0,
@@ -57,6 +72,7 @@ function (event, funcs)
         };
         event.data.lastPosition = null;
         event.data.loadingTimeoutHandle = null;
+        event.data.uniqueId = svgElem.uniqueId().attr('id');
         event.icon.find('.falktx-audio-file-mode-option').click(function() {
             var self = $(this);
             var filetype = self.attr('filetype');
@@ -76,7 +92,8 @@ function (event, funcs)
         setTimeout(function() {
             event.icon.find('.falktx-audio-file-mode-option:first-child').click();
         }, 1);
-        var svg = event.icon.find('.file-info-svg').svg().svg('get');
+        // setup svg
+        var svg = svgElem.svg().svg('get');
         svg.configure({width: '' + svg_width + 'px'}, false);
         svg.configure({height: '' + svg_height + 'px'}, false);
     }
@@ -98,57 +115,11 @@ function (event, funcs)
             prepare_loading_status_change(event.data, event.icon, funcs);
             return;
         case 'position':
-            if (event.data.lastPosition != event.value) {
+            if (event.data.lastPosition !== event.value) {
                 var diff, cursor = event.icon.find('.file-info-cursor');
-                if (event.data.lastPosition === null) {
                     event.data.lastPosition = event.value;
-                    cursor.css({ left: Math.round(event.value / 100 * svg_width) });
-                    return;
-                }
-                // simulate playback
-                if (event.value > event.data.lastPosition) {
-                    diff = event.value - event.data.lastPosition;
-                } else {
-                    diff = 100 - (event.data.lastPosition - event.value);
-                }
-                if (event.value + diff > 100) {
-                    if (event.data.values['loop_mode']) {
-                        // animate until end and go roll back again
-                        cursor.animate({
-                            left: svg_width
-                        }, {
-                            duration: 25,
-                            complete: function() {
-                                cursor.animate({
-                                    left: 0
-                                },{
-                                    duration: 0,
-                                    complete: function() {
-                                        cursor.animate({
-                                            left: Math.round((event.value + diff - 100) / 100 * svg_width)
-                                        },{
-                                            duration: 25
-                                        });
-                                    }
-                                });
-                            }
-                        });
-                    } else {
-                        // animate until end and stop
-                        var anim = cursor.animate({
-                            left: svg_width
-                        }, {
-                            duration: 25
-                        });
-                    }
-                } else {
-                    cursor.animate({
-                        left: Math.round((event.value + diff) / 100 * svg_width)
-                    }, {
-                        duration: 50
-                    });
-                }
-                event.data.lastPosition = event.value;
+                    update_audio_position(event.icon.find('.file-info-svg').svg('get'),
+                                          event.value, event.data.uniqueId);
             }
             return;
         }
@@ -157,7 +128,8 @@ function (event, funcs)
         }
         if (event.uri === "http://kxstudio.sf.net/carla/preview") {
             event.data.hasPreview = true;
-            draw_audio(event.icon.find('.file-info-svg').svg('get'), event.value);
+            draw_audio(event.icon.find('.file-info-svg').svg('get'),
+                       event.value, event.data.uniqueId);
             return;
         }
     }

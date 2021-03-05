@@ -3,20 +3,22 @@
     background-color: #333;
     color: white;
     width: 458px;
-    height: 550px;
+    height: 580px;
     font-size: 20px;
     margin: 0;
     padding: 0;
 }
 
-.falktx-audio-file.mod-pedal .mod-control-group,
-.falktx-audio-file-mode-option {
+.falktx-audio-file-mode-option,
+.falktx-audio-file.mod-pedal .mod-control-group {
     position: relative;
     z-index: 35;
 }
 
 .falktx-audio-file-mode {
-    display: inline;
+    display: inline-block;
+    height: 49px;
+    border-bottom: 1px #020202 solid;
 }
 
 .falktx-audio-file-mode-option {
@@ -31,66 +33,56 @@
     font-weight: bold;
 }
 .falktx-audio-file-mode-option.selected {
-    background: orange;
+    background: #d67516;
 }
 
 .falktx-audio-file.mod-pedal .mod-enumerated {
     font-size: 20px;
-    font-weight: bold;
-    line-height: 2;
+    font-weight: 400;
+/*     line-height: 2; */
+    line-height: 1.75;
 }
 .falktx-audio-file.mod-pedal .mod-enumerated .mod-enumerated-list {
     display: block !important;
-    background-color: rgba(0,0,0,.9);
+    background-color: #020202;
     height: 300px;
     overflow: auto;
 }
 .falktx-audio-file.mod-pedal .mod-enumerated .mod-enumerated-list > div {
     padding: 0px 10px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .falktx-audio-file.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected {
-    background-color: green;
-    border-left: 10px orange solid;
+    background-color: #6b1602;
+    border-left: 10px #d67516 solid;
+    font-weight: bold;
 }
 
 .falktx-audio-file.mod-pedal .mod-enumerated .mod-enumerated-list > div:hover {
     background-color: rgba(255,255,255,.2);
     cursor: pointer;
 }
-
+.falktx-audio-file.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected:hover {
+    background-color: #af2500;
+}
 .falktx-audio-file-content-bottom {
-    display: flex;
     margin: 10px;
     height: calc(100% - 48px - 300px - 20px);
 }
 
 .falktx-audio-file-info {
-    border: 2px orange dotted;
-    border-radius: 10px;
-    flex: 1;
-    margin-right: 10px;
-}
-.falktx-audio-file-info .file-info-title {
-    position: relative;
-    float: left;
-    background-color: #333;
-    font-weight: bold;
-    top: -12px;
-    left: 20px;
-    padding: 0px 8px;
+    border: 2px #d67516 solid;
+    border-radius: 4px;
+    background-color: #751700;
 }
 .falktx-audio-file-info .file-info-svg {
-    padding-left: 4px;
-    height: 150px;
+    width: 432px;
+    height: 80px;
 }
 .falktx-audio-file-info .file-info-svg > svg {
-    position: absolute;
-    left: 14px;
-    bottom: 36px;
-    border-radius: 10px 10px 0px 0px;
+    margin: 0px 1px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#131313+0,1c1c1c+9,2b2b2b+24,111111+40,000000+49,2c2c2c+50,474747+61,666666+75,595959+88,4c4c4c+100&0.1+0,0.1+100 */
     background: -moz-linear-gradient(-45deg,  rgba(19,19,19,0.1) 0%, rgba(28,28,28,0.1) 9%, rgba(43,43,43,0.1) 24%, rgba(17,17,17,0.1) 40%, rgba(0,0,0,0.1) 49%, rgba(44,44,44,0.1) 50%, rgba(71,71,71,0.1) 61%, rgba(102,102,102,0.1) 75%, rgba(89,89,89,0.1) 88%, rgba(76,76,76,0.1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(19,19,19,0.1) 0%,rgba(28,28,28,0.1) 9%,rgba(43,43,43,0.1) 24%,rgba(17,17,17,0.1) 40%,rgba(0,0,0,0.1) 49%,rgba(44,44,44,0.1) 50%,rgba(71,71,71,0.1) 61%,rgba(102,102,102,0.1) 75%,rgba(89,89,89,0.1) 88%,rgba(76,76,76,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -99,46 +91,54 @@
 }
 .falktx-audio-file-info .file-info-details {
     font-size: 16px;
-    position: absolute;
-    bottom: 16px;
-    left: 20px;
-}
-.falktx-audio-file-info .file-info-cursor {
-    position: absolute;
-    width: 2px;
-    height: 140px;
-    background: gray;
-    bottom: 35px;
-    left: 0px;
-    margin-left: 13px;
+    margin-left: 4px;
 }
 
-.falktx-audio-file-controls .mod-switch {
+.falktx-audio-file-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.falktx-audio-file-controls > div {
     display: block;
     height: 50%;
     text-align: center;
     padding: 8px;
 }
-.falktx-audio-file-controls .mod-switch:first-child {
+.falktx-audio-file-controls > div:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.5);
     border: 5px;
     border-radius: 10px;
 }
-.falktx-audio-file-controls .mod-switch:last-child {
-/*     background-color: pink; */
-}
-.falktx-audio-file.mod-pedal .mod-switch-title {
+.falktx-audio-file.mod-pedal .title {
     font-size: 16px;
     font-weight: bold;
 }
+.falktx-audio-file.mod-pedal .mod-knob-image {
+    background-image:url(/resources/orange-knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    font-weight: bold;
+    height: 52px;
+    width: 52px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 .falktx-audio-file.mod-pedal .mod-switch-image {
-    background-image: url(/img/switch.png);
+    background-image: url(/resources/switch.png{{{ns}}});
     background-position: left center;
     background-repeat: no-repeat;
     background-size: auto 50px;
+    font-weight: bold;
     width: 100px;
     height: 50px;
     cursor: pointer;
+}
+.falktx-audio-file.mod-pedal .mod-switch-image.transport {
+    background-image: url(/resources/switch-transport.png{{{ns}}});
 }
 .falktx-audio-file.mod-pedal .mod-switch-image.off {
     background-position: right center !important;
