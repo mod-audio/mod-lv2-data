@@ -84,8 +84,36 @@
         lv2:maximum 1 ;
         lv2:portProperty lv2:integer, lv2:toggled ;
     ] , [
-        a lv2:OutputPort, lv2:ControlPort ;
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
+        lv2:symbol "host_sync" ;
+        lv2:name "Host Sync" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:portProperty lv2:integer, lv2:toggled ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 7 ;
+        lv2:symbol "volume" ;
+        lv2:name "Volume" ;
+        lv2:default 100.0 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 127.0 ;
+        unit:unit unit:pc ;
+    ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 8 ;
+        lv2:symbol "enabled" ;
+        lv2:name "Enabled" ;
+        lv2:default 1 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:portProperty lv2:integer, lv2:toggled ;
+        lv2:designation lv2:enabled ;
+    ] , [
+        a lv2:OutputPort, lv2:ControlPort ;
+        lv2:index 9 ;
         lv2:symbol "num_channels" ;
         lv2:name "Num Channels" ;
         lv2:minimum 0 ;
@@ -93,7 +121,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 10 ;
         lv2:symbol "bit_rate" ;
         lv2:name "Bit Rate" ;
         lv2:minimum -1 ;
@@ -101,7 +129,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 11 ;
         lv2:symbol "bit_depth" ;
         lv2:name "Bit Depth" ;
         lv2:minimum 0 ;
@@ -109,7 +137,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 12 ;
         lv2:symbol "sample_rate" ;
         lv2:name "Sample Rate" ;
         lv2:minimum 0 ;
@@ -117,7 +145,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 10 ;
+        lv2:index 13 ;
         lv2:symbol "length" ;
         lv2:name "Length" ;
         lv2:minimum 0.0 ;
@@ -125,7 +153,7 @@
         unit:unit unit:s ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 11 ;
+        lv2:index 14 ;
         lv2:symbol "position" ;
         lv2:name "Position" ;
         lv2:minimum 0.0 ;
@@ -133,11 +161,11 @@
         unit:unit unit:pc ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 12 ;
+        lv2:index 15 ;
         lv2:symbol "pool_fill" ;
         lv2:name "Pool Fill" ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 100.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 100.0 ;
         unit:unit unit:pc ;
     ] ;
 
@@ -147,5 +175,5 @@
     doap:maintainer [ foaf:name "falkTX" ] ;
 
     lv2:microVersion 22 ;
-    lv2:minorVersion 146 ;
+    lv2:minorVersion 149 ;
     lv2:symbol "audiofile" .
