@@ -49,13 +49,13 @@ function (event, funcs)
                                values['bit_depth'],
                                values['sample_rate'] / 1000,
                                Math.floor(values['length'] / 60), Math.round(values['length'] % 60));
+                // if we reach this point but still do not have preview data, ask for it
+                if (! eventdata.hasPreview) {
+                    eventdata.hasPreview = true;
+                    funcs.patch_get("http://kxstudio.sf.net/carla/preview")
+                }
             }
             icon.find('.file-info-details').text(text)
-            // if we reach this point but still do not have preview data, ask for it
-            if (! eventdata.hasPreview) {
-                eventdata.hasPreview = true;
-                funcs.patch_get("http://kxstudio.sf.net/carla/preview")
-            }
         }, 50)
     }
 
@@ -104,7 +104,6 @@ function (event, funcs)
         case 'loop_mode':
             event.data.values[event.symbol] = event.value;
             event.data.lastPosition = null;
-            console.log(event.value);
             return;
         case 'num_channels':
         case 'bit_rate':
@@ -116,10 +115,9 @@ function (event, funcs)
             return;
         case 'position':
             if (event.data.lastPosition !== event.value) {
-                var diff, cursor = event.icon.find('.file-info-cursor');
-                    event.data.lastPosition = event.value;
-                    update_audio_position(event.icon.find('.file-info-svg').svg('get'),
-                                          event.value, event.data.uniqueId);
+                event.data.lastPosition = event.value;
+                update_audio_position(event.icon.find('.file-info-svg').svg('get'),
+                                      event.value, event.data.uniqueId);
             }
             return;
         }
