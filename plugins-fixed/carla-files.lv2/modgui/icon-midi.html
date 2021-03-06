@@ -1,0 +1,70 @@
+<div class="falktx-midi-file mod-pedal">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="mod-control-group mod-enumerated-group clearfix">
+        {{#effect.parameters}}
+        {{#path}}
+        <div class="mod-enumerated" mod-role="input-parameter" mod-parameter-uri="{{uri}}" mod-widget="custom-select-path">
+            <div class="mod-enumerated-list">
+                {{#files}}
+                <div mod-role="enumeration-option" mod-parameter-value="{{fullname}}">{{basename}}</div>
+                {{/files}}
+            </div>
+        </div>
+        {{/path}}
+        {{/effect.parameters}}
+    </div>
+    <div class="falktx-midi-file-content-bottom">
+        <div class="falktx-midi-file-info">
+            <div class="file-info-details">&nbsp;</div>
+            <div class="file-info-position"></div>
+        </div>
+        <div class="falktx-midi-file-controls">
+            <div class="mod-switch">
+                <span class="title">HOST SYNC</span>
+                <div class="mod-control-group mod-switch-image mod-port" mod-role="input-control-port" mod-port-symbol="host_sync" mod-widget="film"></div>
+            </div>
+            <div class="mod-switch">
+                <span class="title">REPEAT MODE</span>
+                <div class="mod-control-group mod-switch-image mod-port" mod-role="input-control-port" mod-port-symbol="repeat_mode" mod-widget="film"></div>
+            </div>
+            <div class="mod-switch">
+                <span class="title">ON/OFF</span>
+                <div class="mod-control-group mod-switch-image mod-port transport" mod-role="bypass" mod-widget="film"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+        {{#effect.ports.cv.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.cv.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+        {{#effect.ports.cv.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.cv.output}}
+    </div>
+</div>

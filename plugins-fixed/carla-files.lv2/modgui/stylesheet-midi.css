@@ -1,0 +1,123 @@
+
+.falktx-midi-file.mod-pedal {
+    background-color: #333;
+    color: white;
+    width: 372px;
+    height: 458px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.falktx-midi-file.mod-pedal .mod-control-group {
+    position: relative;
+    z-index: 35;
+}
+
+.falktx-midi-file.mod-pedal .mod-enumerated-group {
+    margin: 1px;
+    border: 1px #191919 solid;
+}
+
+.falktx-midi-file.mod-pedal .mod-enumerated {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.falktx-midi-file.mod-pedal .mod-enumerated .mod-enumerated-list {
+    display: block !important;
+    background-color: #020202;
+    height: 300px;
+    overflow: auto;
+}
+.falktx-midi-file.mod-pedal .mod-enumerated .mod-enumerated-list > div {
+    padding: 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.falktx-midi-file.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected {
+    background-color: #6b1602;
+    border-left: 10px #d67516 solid;
+    font-weight: bold;
+}
+
+.falktx-midi-file.mod-pedal .mod-enumerated .mod-enumerated-list > div:hover {
+    background-color: rgba(255,255,255,.2);
+    cursor: pointer;
+}
+.falktx-midi-file.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected:hover {
+    background-color: #af2500;
+}
+.falktx-midi-file-content-bottom {
+    margin: 10px;
+}
+
+.falktx-midi-file-info {
+    border: 2px #d67516 solid;
+    border-radius: 4px;
+    background-color: #751700;
+}
+.falktx-midi-file-info .file-info-details {
+    font-size: 16px;
+    margin-left: 4px;
+}
+.falktx-midi-file-info .file-info-position {
+    width: calc(100% - 8px);
+    height: 2px;
+    margin: 0px 4px 4px 4px;
+    background: white;
+}
+
+.falktx-midi-file-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.falktx-midi-file-controls > div {
+    display: block;
+    height: 50%;
+    text-align: center;
+    padding: 8px;
+}
+.falktx-midi-file-controls > div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px;
+    border-radius: 10px;
+}
+.falktx-midi-file.mod-pedal .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.falktx-midi-file.mod-pedal .mod-knob-image {
+    background-image:url(/resources/orange-knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    font-weight: bold;
+    height: 52px;
+    width: 52px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.falktx-midi-file.mod-pedal .mod-switch-image {
+    background-image: url(/resources/switch.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.falktx-midi-file.mod-pedal .mod-switch-image.transport {
+    background-image: url(/resources/switch-transport.png{{{ns}}});
+}
+.falktx-midi-file.mod-pedal .mod-switch-image.off {
+    background-position: right center !important;
+}
+.falktx-midi-file.mod-pedal .mod-switch-image.on {
+    background-position: left center !important;
+}

@@ -3,7 +3,7 @@
     background-color: #333;
     color: white;
     width: 458px;
-    height: 580px;
+    height: 581px;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -18,7 +18,6 @@
 .falktx-audio-file-mode {
     display: inline-block;
     height: 49px;
-    border-bottom: 1px #020202 solid;
 }
 
 .falktx-audio-file-mode-option {
@@ -34,6 +33,11 @@
 }
 .falktx-audio-file-mode-option.selected {
     background: #d67516;
+}
+
+.falktx-audio-file.mod-pedal .mod-enumerated-group {
+    margin: 1px;
+    border: 1px #191919 solid;
 }
 
 .falktx-audio-file.mod-pedal .mod-enumerated {
@@ -69,7 +73,6 @@
 }
 .falktx-audio-file-content-bottom {
     margin: 10px;
-    height: calc(100% - 48px - 300px - 20px);
 }
 
 .falktx-audio-file-info {

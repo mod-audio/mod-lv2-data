@@ -30,3 +30,22 @@
              lv2:symbol "position"
          ] ;
     ] .
+
+<http://kxstudio.sf.net/carla/plugins/midifile>
+    mod:brand "falkTX" ;
+    mod:label "MIDI File" ;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-midi.html> ;
+        modgui:javascript <modgui/javascript-midi.js> ;
+        modgui:stylesheet <modgui/stylesheet-midi.css> ;
+        modgui:screenshot <modgui/screenshot-midi.png> ;
+        modgui:thumbnail <modgui/thumbnail-midi.png> ;
+        modgui:monitoredOutputs [
+             lv2:symbol "num_tracks"
+         ] , [
+             lv2:symbol "length"
+         ] , [
+             lv2:symbol "position"
+         ] ;
+    ] .
