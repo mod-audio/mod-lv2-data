@@ -4,6 +4,7 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix opts:  <http://lv2plug.in/ns/ext/options#> .
 @prefix patch: <http://lv2plug.in/ns/ext/patch#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
 <http://kxstudio.sf.net/carla/plugins/midifile>
@@ -13,6 +14,7 @@
     lv2:optionalFeature <http://lv2plug.in/ns/ext/state#threadSafeRestore> ;
 
     lv2:requiredFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
+                        <http://lv2plug.in/ns/ext/worker#schedule> ,
                         <http://lv2plug.in/ns/ext/options#options> ,
                         <http://lv2plug.in/ns/ext/urid#map> ;
 
@@ -118,6 +120,22 @@
     doap:name "MIDI File" ;
     doap:developer [ foaf:name "falkTX" ] ;
     doap:maintainer [ foaf:name "falkTX" ] ;
+
+    rdfs:comment """
+This is a simple MIDI file player plugin.
+
+Just upload some files in the MOD file manager section (specifically MIDI songs) and load up the plugin.
+Transport is rolling as long as the plugin is enabled and a file is selected.
+You can also sync to host transport, so the player follows host start/stop controls.
+When repeat mode is enabled, the player will restart playback from the beginning after playing the last MIDI event on the file.
+
+Note that MIDI time is converted to wall-clock time, not beats or ticks.
+This means the file is played exactly as it was made (as if in "song mode").
+This ignores host BPM, as the plugin is intended to play full MIDI songs and not MIDI clips.
+
+Features:
+Modeled by falkTX
+    """;
 
     lv2:microVersion 22 ;
     lv2:minorVersion 146 ;

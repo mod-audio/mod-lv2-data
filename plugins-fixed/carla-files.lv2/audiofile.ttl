@@ -174,6 +174,23 @@
     doap:developer [ foaf:name "falkTX" ] ;
     doap:maintainer [ foaf:name "falkTX" ] ;
 
+    rdfs:comment """
+This is a simple audio file player plugin.
+
+Just upload some files in the MOD file manager section (either loops, recordings or tracks) and load up the plugin.
+Transport is rolling as long as the plugin is enabled and a file is selected.
+You can also sync to host transport, which will play in frame-perfect sync, useful if you need a few loops playing together.
+
+Files are streamed from disk if longer than 30 seconds in length, otherwise loaded entirely on RAM.
+
+Even though this player plugin can loop files, it is not an audio looper.
+Audio can loop back to the beginning if enabled, but it does not resample or pitch-shift to fit the host BPM.
+The audio files are played back as-is, with resampling only done when needed to match the host sample rate.
+
+Features:
+Modeled by falkTX
+    """;
+
     lv2:microVersion 22 ;
     lv2:minorVersion 149 ;
     lv2:symbol "audiofile" .
