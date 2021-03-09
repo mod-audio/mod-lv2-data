@@ -132,9 +132,6 @@ When repeat mode is enabled, the player will restart playback from the beginning
 Note that MIDI time is converted to wall-clock time, not beats or ticks.
 This means the file is played exactly as it was made (as if in "song mode").
 This ignores host BPM, as the plugin is intended to play full MIDI songs and not MIDI clips.
-
-Features:
-Modeled by falkTX
     """;
 
     lv2:microVersion 22 ;
