@@ -192,5 +192,5 @@ Modeled by falkTX
     """;
 
     lv2:microVersion 22 ;
-    lv2:minorVersion 149 ;
+    lv2:minorVersion 150 ;
     lv2:symbol "audiofile" .
