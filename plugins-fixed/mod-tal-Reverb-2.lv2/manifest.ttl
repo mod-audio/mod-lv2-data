@@ -1,143 +1,69 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
-
 @prefix pset: <http://lv2plug.in/ns/ext/presets#> .
-
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
-
-
 <http://moddevices.com/plugins/tal-reverb-2>
-
     a lv2:Plugin ;
-
     lv2:binary <TAL-Reverb-2.so> ;
-
     rdfs:seeAlso <TAL-Reverb-2.ttl> , <modgui.ttl> .
 
-
-
 <Gentle_Drum_Ambience.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Gentle Drum Ambience" ;
-
     rdfs:seeAlso <Gentle_Drum_Ambience.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <80s_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "80's Plate" ;
-
     rdfs:seeAlso <80s_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Big_Wet_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Big Wet Plate (no EQ)" ;
-
     rdfs:seeAlso <Big_Wet_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Small_Drum_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Small Drum Plate" ;
-
     rdfs:seeAlso <Small_Drum_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Dull_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Dull Plate" ;
-
     rdfs:seeAlso <Dull_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Need_some_Air.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Need some Air" ;
-
     rdfs:seeAlso <Need_some_Air.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Mid_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Mid Plate" ;
-
     rdfs:seeAlso <Mid_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Airy_Mono_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Airy Mono Plate" ;
-
     rdfs:seeAlso <Airy_Mono_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <1100Hz_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "1100Hz Plate" ;
-
     rdfs:seeAlso <1100Hz_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
 
 <Short_Plate.ttl>
-
     a pset:Preset ;
-
     rdfs:label "Short Plate" ;
-
     rdfs:seeAlso <Short_Plate.ttl> ;
-
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> .
-
-
-<http://moddevices.com/plugins/tal-reverb-2> <http://moddevices.com/ns/mod#releaseNumber> 1 .
-<http://moddevices.com/plugins/tal-reverb-2> <http://moddevices.com/ns/mod#builderVersion> 0 .
-<http://moddevices.com/plugins/tal-reverb-2> <http://moddevices.com/ns/mod#buildId> 514 .
-<http://moddevices.com/plugins/tal-reverb-2> <http://moddevices.com/ns/mod#buildEnvironment> "dev" .
