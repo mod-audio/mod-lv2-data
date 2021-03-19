@@ -175,6 +175,15 @@
         lv2:portProperty lv2:toggled ;
     ] ;
 
-    doap:name "TAL-Reverb-II" ;
-    doap:maintainer [ foaf:name "TAL-Togu Audio Line" ] .
+    rdfs:comment """
+TAL-Reverb-II is a super diffuse and lush reverb effect with a fast build up time. Ideal for ambient reverb sounds.
 
+This is a direct port of the TAL-Reverb-II desktop plugin.
+
+Features:
+Modeled by TAL-Togu Audio Line
+(*) "Other product names modeled in the software trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD. TAL-Reverb-II is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of the product. All other trademarks are the property of their respective holders."
+""";
+
+    doap:name "TAL-Reverb-II" ;
+    doap:maintainer [ foaf:name "TAL" ] .
