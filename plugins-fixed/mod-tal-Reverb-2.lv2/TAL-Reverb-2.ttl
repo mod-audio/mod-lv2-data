@@ -178,7 +178,7 @@
     rdfs:comment """
 TAL-Reverb-II is a super diffuse and lush reverb effect with a fast build up time. Ideal for ambient reverb sounds.
 
-This is a direct port of the TAL-Reverb-II desktop plugin.
+This is a direct port of the desktop plugin.
 
 Features:
 Modeled by TAL-Togu Audio Line
