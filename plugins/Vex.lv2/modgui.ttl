@@ -1,0 +1,11 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:juce:Vex>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-vex.html> ;
+        modgui:stylesheet <modgui/stylesheet-vex.css> ;
+        modgui:screenshot <modgui/screenshot-vex.png> ;
+        modgui:thumbnail <modgui/thumbnail-vex.png> ;
+    ] .

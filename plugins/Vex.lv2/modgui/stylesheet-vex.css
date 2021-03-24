@@ -1,0 +1,10 @@
+
+.distrho-ports-vex.mod-pedal {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(/resources/background-vex.png{{ns}});
+    width: 800px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}

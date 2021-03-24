@@ -6,7 +6,7 @@
 <urn:juce:Vex>
     a lv2:Plugin ;
     lv2:binary <Vex.so> ;
-    rdfs:seeAlso <Vex.ttl> .
+    rdfs:seeAlso <Vex.ttl> , <modgui.ttl> .
 
 <urn:juce:Vex#preset001>
     a pset:Preset ;

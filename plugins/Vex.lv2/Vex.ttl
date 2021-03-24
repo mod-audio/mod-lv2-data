@@ -4,7 +4,6 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
 <urn:juce:Vex>
     a lv2:InstrumentPlugin, lv2:Plugin ;
@@ -1286,6 +1285,15 @@
             rdf:value 40 ;
         ] ;
     ] ;
+
+    rdfs:comment """
+3-oscillator wavesample/subtractive synthesizer that provides a nice variety of waves for intial tones.
+
+Each of the 3 oscillators is completely autonomous (the red button activates the respective oscillator).
+Each oscillator has its own octave/fine detuning, phase adjustment, filter section with traditional ADSR layout, low-pass-to-high-pass filter capability, amplitude ADSR envelope, LFO sections, effects channeling controls.
+Chorus, reverb and delay are included in the effects section, as well as individual amplitude level and panning controls.
+
+""";
 
     doap:name "Vex" ;
     doap:maintainer [ foaf:name "RockHardbuns" ] .
