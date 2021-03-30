@@ -11,16 +11,12 @@
     rdfs:label "Mid Plate" ;
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
     lv2:port [
-        lv2:symbol "unused" ;
-        pset:value 0.000000 ;
-    ] ,
-    [
         lv2:symbol "dry" ;
-        pset:value 0.500000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "wet" ;
-        pset:value 0.371000 ;
+        pset:value -7.3 ;
     ] ,
     [
         lv2:symbol "room_size" ;
@@ -28,34 +24,34 @@
     ] ,
     [
         lv2:symbol "pre_delay" ;
-        pset:value 0.208000 ;
+        pset:value 45.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_frequency" ;
-        pset:value 0.324000 ;
+        pset:value 954.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_frequency" ;
-        pset:value 0.272000 ;
+        pset:value 755.0 ;
     ] ,
     [
         lv2:symbol "peak_frequency" ;
-        pset:value 0.576000 ;
+        pset:value 2504.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_gain" ;
-        pset:value 0.764000 ;
+        pset:value -1.7 ;
     ] ,
     [
         lv2:symbol "high_shelf_gain" ;
-        pset:value 0.000000 ;
+        pset:value -18.0 ;
     ] ,
     [
         lv2:symbol "peak_gain" ;
-        pset:value 0.112000 ;
+        pset:value -8.4 ;
     ] ,
     [
-        lv2:symbol "stereo" ;
+        lv2:symbol "stereo_width" ;
         pset:value 1.000000 ;
     ] ,
     [

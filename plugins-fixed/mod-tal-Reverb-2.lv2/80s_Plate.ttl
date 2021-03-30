@@ -11,16 +11,12 @@
     rdfs:label "80's Plate" ;
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
     lv2:port [
-        lv2:symbol "unused" ;
-        pset:value 0.000000 ;
-    ] ,
-    [
         lv2:symbol "dry" ;
-        pset:value 0.500000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "wet" ;
-        pset:value 0.209000 ;
+        pset:value -17.6 ;
     ] ,
     [
         lv2:symbol "room_size" ;
@@ -28,37 +24,37 @@
     ] ,
     [
         lv2:symbol "pre_delay" ;
-        pset:value 0.060000 ;
+        pset:value 10.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_frequency" ;
-        pset:value 0.500000 ;
+        pset:value 1909.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_frequency" ;
-        pset:value 0.424000 ;
+        pset:value 1434.0 ;
     ] ,
     [
         lv2:symbol "peak_frequency" ;
-        pset:value 0.368000 ;
+        pset:value 1148.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_gain" ;
-        pset:value 1.000000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_gain" ;
-        pset:value 0.788000 ;
+        pset:value -1.5 ;
     ] ,
     [
         lv2:symbol "peak_gain" ;
-        pset:value 0.368000 ;
+        pset:value -4.9 ;
     ] ,
     [
-        lv2:symbol "stereo" ;
-        pset:value 1.000000 ;
+        lv2:symbol "stereo_width" ;
+        pset:value 1.0 ;
     ] ,
     [
         lv2:symbol "stereo_input" ;
-        pset:value 0.000000 ;
+        pset:value 0.0 ;
     ] .

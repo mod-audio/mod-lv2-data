@@ -10,17 +10,14 @@
 	a pset:Preset ;
     rdfs:label "Airy Mono Plate" ;
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
+
     lv2:port [
-        lv2:symbol "unused" ;
-        pset:value 0.000000 ;
-    ] ,
-    [
         lv2:symbol "dry" ;
-        pset:value 0.500000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "wet" ;
-        pset:value 0.441000 ;
+        pset:value -3.3 ;
     ] ,
     [
         lv2:symbol "room_size" ;
@@ -28,34 +25,34 @@
     ] ,
     [
         lv2:symbol "pre_delay" ;
-        pset:value 0.072000 ;
+        pset:value 12.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_frequency" ;
-        pset:value 0.180000 ;
+        pset:value 472.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_frequency" ;
-        pset:value 0.428000 ;
+        pset:value 1457.0 ;
     ] ,
     [
         lv2:symbol "peak_frequency" ;
-        pset:value 0.320000 ;
+        pset:value 937.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_gain" ;
-        pset:value 0.356000 ;
+        pset:value -5.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_gain" ;
-        pset:value 0.380000 ;
+        pset:value -4.8 ;
     ] ,
     [
         lv2:symbol "peak_gain" ;
-        pset:value 0.000000 ;
+        pset:value -18.0 ;
     ] ,
     [
-        lv2:symbol "stereo" ;
+        lv2:symbol "stereo_width" ;
         pset:value 0.000000 ;
     ] ,
     [

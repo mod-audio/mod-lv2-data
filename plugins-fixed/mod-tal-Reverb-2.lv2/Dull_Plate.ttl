@@ -11,16 +11,12 @@
     rdfs:label "Dull Plate" ;
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
     lv2:port [
-        lv2:symbol "unused" ;
+        lv2:symbol "dry" ;
         pset:value 0.000000 ;
     ] ,
     [
-        lv2:symbol "dry" ;
-        pset:value 0.500000 ;
-    ] ,
-    [
         lv2:symbol "wet" ;
-        pset:value 0.242000 ;
+        pset:value -15.3 ;
     ] ,
     [
         lv2:symbol "room_size" ;
@@ -28,34 +24,34 @@
     ] ,
     [
         lv2:symbol "pre_delay" ;
-        pset:value 0.160000 ;
+        pset:value 32.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_frequency" ;
-        pset:value 0.328000 ;
+        pset:value 970.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_frequency" ;
-        pset:value 0.720000 ;
+        pset:value 4083.0 ;
     ] ,
     [
         lv2:symbol "peak_frequency" ;
-        pset:value 0.568000 ;
+        pset:value 2435.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_gain" ;
-        pset:value 1.000000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_gain" ;
-        pset:value 0.216000 ;
+        pset:value -6.6 ;
     ] ,
     [
         lv2:symbol "peak_gain" ;
-        pset:value 0.360000 ;
+        pset:value -5.0 ;
     ] ,
     [
-        lv2:symbol "stereo" ;
+        lv2:symbol "stereo_width" ;
         pset:value 1.000000 ;
     ] ,
     [

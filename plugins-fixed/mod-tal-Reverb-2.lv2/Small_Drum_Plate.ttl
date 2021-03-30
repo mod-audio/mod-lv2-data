@@ -11,51 +11,47 @@
     rdfs:label "Small Drum Plate" ;
     lv2:appliesTo <http://moddevices.com/plugins/tal-reverb-2> ;
     lv2:port [
-        lv2:symbol "unused" ;
-        pset:value 0.000000 ;
-    ] ,
-    [
         lv2:symbol "dry" ;
-        pset:value 0.500000 ;
+        pset:value 0.0 ;
     ] ,
     [
         lv2:symbol "wet" ;
-        pset:value 0.335000 ;
+        pset:value -9.4 ;
     ] ,
     [
         lv2:symbol "room_size" ;
-        pset:value 0.308000 ;
+        pset:value 0.308 ;
     ] ,
     [
         lv2:symbol "pre_delay" ;
-        pset:value 0.120000 ;
+        pset:value 22.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_frequency" ;
-        pset:value 0.176000 ;
+        pset:value 461.0 ;
     ] ,
     [
         lv2:symbol "high_shelf_frequency" ;
-        pset:value 0.444000 ;
+        pset:value 1549.0 ;
     ] ,
     [
         lv2:symbol "peak_frequency" ;
-        pset:value 0.300000 ;
+        pset:value 858.0 ;
     ] ,
     [
         lv2:symbol "low_shelf_gain" ;
-        pset:value 0.724000 ;
+        pset:value -1.9 ;
     ] ,
     [
         lv2:symbol "high_shelf_gain" ;
-        pset:value 0.488000 ;
+        pset:value -3.8 ;
     ] ,
     [
         lv2:symbol "peak_gain" ;
-        pset:value 0.000000 ;
+        pset:value -18.0 ;
     ] ,
     [
-        lv2:symbol "stereo" ;
+        lv2:symbol "stereo_width" ;
         pset:value 1.000000 ;
     ] ,
     [
