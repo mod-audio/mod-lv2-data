@@ -55,7 +55,7 @@
         lv2:index 4 ;
         lv2:symbol "master" ;
         lv2:name "Master" ;
-        lv2:default 1.000000 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -64,7 +64,7 @@
         lv2:index 5 ;
         lv2:symbol "part1_oct" ;
         lv2:name "Part1 Oct" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -73,7 +73,7 @@
         lv2:index 6 ;
         lv2:symbol "part1_cent" ;
         lv2:name "Part1 Cent" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -82,7 +82,7 @@
         lv2:index 7 ;
         lv2:symbol "part1_phase" ;
         lv2:name "Part1 Phase" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -91,7 +91,7 @@
         lv2:index 8 ;
         lv2:symbol "part1_tune" ;
         lv2:name "Part1 Tune" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -100,7 +100,7 @@
         lv2:index 9 ;
         lv2:symbol "part1_filter_cut" ;
         lv2:name "Part1 Filter Cut" ;
-        lv2:default 0.900000 ;
+        lv2:default 0.9 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -109,7 +109,7 @@
         lv2:index 10 ;
         lv2:symbol "part1_filter_res" ;
         lv2:name "Part1 Filter Res" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -118,7 +118,7 @@
         lv2:index 11 ;
         lv2:symbol "part1_filter_hp_lp" ;
         lv2:name "Part1 Filter HP/LP" ;
-        lv2:default 1.000000 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -127,7 +127,7 @@
         lv2:index 12 ;
         lv2:symbol "part1_filter_env" ;
         lv2:name "Part1 Filter Env" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -136,7 +136,7 @@
         lv2:index 13 ;
         lv2:symbol "part1_filter_env_atk" ;
         lv2:name "Part1 Filter Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -145,7 +145,7 @@
         lv2:index 14 ;
         lv2:symbol "part1_filter_env_dec" ;
         lv2:name "Part1 Filter Env Dec" ;
-        lv2:default 0.200000 ;
+        lv2:default 0.2 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -154,7 +154,7 @@
         lv2:index 15 ;
         lv2:symbol "part1_filter_env_sus" ;
         lv2:name "Part1 Filter Env Sus" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -163,7 +163,7 @@
         lv2:index 16 ;
         lv2:symbol "part1_filter_env_rel" ;
         lv2:name "Part1 Filter Env Rel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -172,7 +172,7 @@
         lv2:index 17 ;
         lv2:symbol "part1_filter_env_vel" ;
         lv2:name "Part1 Filter Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -181,7 +181,7 @@
         lv2:index 18 ;
         lv2:symbol "part1_amp_env_atk" ;
         lv2:name "Part1 Amp Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -190,7 +190,7 @@
         lv2:index 19 ;
         lv2:symbol "part1_amp_env_dec" ;
         lv2:name "Part1 Amp Env Dec" ;
-        lv2:default 0.300000 ;
+        lv2:default 0.3 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -199,7 +199,7 @@
         lv2:index 20 ;
         lv2:symbol "part1_amp_env_sus" ;
         lv2:name "Part1 Amp Env Sus" ;
-        lv2:default 0.700000 ;
+        lv2:default 0.7 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -208,7 +208,7 @@
         lv2:index 21 ;
         lv2:symbol "part1_amp_env_rel" ;
         lv2:name "Part1 Amp Env Rel" ;
-        lv2:default 0.100000 ;
+        lv2:default 0.1 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -217,7 +217,7 @@
         lv2:index 22 ;
         lv2:symbol "part1_amp_env_vel" ;
         lv2:name "Part1 Amp Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -226,7 +226,7 @@
         lv2:index 23 ;
         lv2:symbol "part1_lfo_rate" ;
         lv2:name "Part1 LFO Rate" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -235,7 +235,7 @@
         lv2:index 24 ;
         lv2:symbol "part1_lfo_amp" ;
         lv2:name "Part1 LFO Amp" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -244,7 +244,7 @@
         lv2:index 25 ;
         lv2:symbol "part1_lfo_flt" ;
         lv2:name "Part1 LFO Flt" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -253,7 +253,7 @@
         lv2:index 26 ;
         lv2:symbol "part1_delay" ;
         lv2:name "Part1 Delay" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -262,7 +262,7 @@
         lv2:index 27 ;
         lv2:symbol "part1_chorus" ;
         lv2:name "Part1 Chorus" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -271,7 +271,7 @@
         lv2:index 28 ;
         lv2:symbol "part1_reverb" ;
         lv2:name "Part1 Reverb" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -280,7 +280,7 @@
         lv2:index 29 ;
         lv2:symbol "part2_oct" ;
         lv2:name "Part2 Oct" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -289,7 +289,7 @@
         lv2:index 30 ;
         lv2:symbol "part2_cent" ;
         lv2:name "Part2 Cent" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -298,7 +298,7 @@
         lv2:index 31 ;
         lv2:symbol "part2_phase" ;
         lv2:name "Part2 Phase" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -307,7 +307,7 @@
         lv2:index 32 ;
         lv2:symbol "part2_tune" ;
         lv2:name "Part2 Tune" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -316,7 +316,7 @@
         lv2:index 33 ;
         lv2:symbol "part2_filter_cut" ;
         lv2:name "Part2 Filter Cut" ;
-        lv2:default 0.900000 ;
+        lv2:default 0.9 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -325,7 +325,7 @@
         lv2:index 34 ;
         lv2:symbol "part2_filter_res" ;
         lv2:name "Part2 Filter Res" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -334,7 +334,7 @@
         lv2:index 35 ;
         lv2:symbol "part2_filter_hp_lp" ;
         lv2:name "Part2 Filter HP/LP" ;
-        lv2:default 1.000000 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -343,7 +343,7 @@
         lv2:index 36 ;
         lv2:symbol "part2_filter_env" ;
         lv2:name "Part2 Filter Env" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -352,7 +352,7 @@
         lv2:index 37 ;
         lv2:symbol "part2_filter_env_atk" ;
         lv2:name "Part2 Filter Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -361,7 +361,7 @@
         lv2:index 38 ;
         lv2:symbol "part2_filter_env_dec" ;
         lv2:name "Part2 Filter Env Dec" ;
-        lv2:default 0.200000 ;
+        lv2:default 0.2 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -370,7 +370,7 @@
         lv2:index 39 ;
         lv2:symbol "part2_filter_env_sus" ;
         lv2:name "Part2 Filter Env Sus" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -379,7 +379,7 @@
         lv2:index 40 ;
         lv2:symbol "part2_filter_env_rel" ;
         lv2:name "Part2 Filter Env Rel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -388,7 +388,7 @@
         lv2:index 41 ;
         lv2:symbol "part2_filter_env_vel" ;
         lv2:name "Part2 Filter Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -397,7 +397,7 @@
         lv2:index 42 ;
         lv2:symbol "part2_amp_env_atk" ;
         lv2:name "Part2 Amp Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -406,7 +406,7 @@
         lv2:index 43 ;
         lv2:symbol "part2_amp_env_dec" ;
         lv2:name "Part2 Amp Env Dec" ;
-        lv2:default 0.300000 ;
+        lv2:default 0.3 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -415,7 +415,7 @@
         lv2:index 44 ;
         lv2:symbol "part2_amp_env_sus" ;
         lv2:name "Part2 Amp Env Sus" ;
-        lv2:default 0.700000 ;
+        lv2:default 0.7 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -424,7 +424,7 @@
         lv2:index 45 ;
         lv2:symbol "part2_amp_env_rel" ;
         lv2:name "Part2 Amp Env Rel" ;
-        lv2:default 0.100000 ;
+        lv2:default 0.1 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -433,7 +433,7 @@
         lv2:index 46 ;
         lv2:symbol "part2_amp_env_vel" ;
         lv2:name "Part2 Amp Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -442,7 +442,7 @@
         lv2:index 47 ;
         lv2:symbol "part2_lfo_rate" ;
         lv2:name "Part2 LFO Rate" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -451,7 +451,7 @@
         lv2:index 48 ;
         lv2:symbol "part2_lfo_amp" ;
         lv2:name "Part2 LFO Amp" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -460,7 +460,7 @@
         lv2:index 49 ;
         lv2:symbol "part2_lfo_flt" ;
         lv2:name "Part2 LFO Flt" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -469,7 +469,7 @@
         lv2:index 50 ;
         lv2:symbol "part2_delay" ;
         lv2:name "Part2 Delay" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -478,7 +478,7 @@
         lv2:index 51 ;
         lv2:symbol "part2_chorus" ;
         lv2:name "Part2 Chorus" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -487,7 +487,7 @@
         lv2:index 52 ;
         lv2:symbol "part2_reverb" ;
         lv2:name "Part2 Reverb" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -496,7 +496,7 @@
         lv2:index 53 ;
         lv2:symbol "part3_oct" ;
         lv2:name "Part3 Oct" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -505,7 +505,7 @@
         lv2:index 54 ;
         lv2:symbol "part3_cent" ;
         lv2:name "Part3 Cent" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -514,7 +514,7 @@
         lv2:index 55 ;
         lv2:symbol "part3_phase" ;
         lv2:name "Part3 Phase" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -523,7 +523,7 @@
         lv2:index 56 ;
         lv2:symbol "part3_tune" ;
         lv2:name "Part3 Tune" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -532,7 +532,7 @@
         lv2:index 57 ;
         lv2:symbol "part3_filter_cut" ;
         lv2:name "Part3 Filter Cut" ;
-        lv2:default 0.900000 ;
+        lv2:default 0.9 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -541,7 +541,7 @@
         lv2:index 58 ;
         lv2:symbol "part3_filter_res" ;
         lv2:name "Part3 Filter Res" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -550,7 +550,7 @@
         lv2:index 59 ;
         lv2:symbol "part3_filter_hp_lp" ;
         lv2:name "Part3 Filter HP/LP" ;
-        lv2:default 1.000000 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -559,7 +559,7 @@
         lv2:index 60 ;
         lv2:symbol "part3_filter_env" ;
         lv2:name "Part3 Filter Env" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -568,7 +568,7 @@
         lv2:index 61 ;
         lv2:symbol "part3_filter_env_atk" ;
         lv2:name "Part3 Filter Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -577,7 +577,7 @@
         lv2:index 62 ;
         lv2:symbol "part3_filter_env_dec" ;
         lv2:name "Part3 Filter Env Dec" ;
-        lv2:default 0.200000 ;
+        lv2:default 0.2 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -586,7 +586,7 @@
         lv2:index 63 ;
         lv2:symbol "part3_filter_env_sus" ;
         lv2:name "Part3 Filter Env Sus" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -595,7 +595,7 @@
         lv2:index 64 ;
         lv2:symbol "part3_filter_env_rel" ;
         lv2:name "Part3 Filter Env Rel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -604,7 +604,7 @@
         lv2:index 65 ;
         lv2:symbol "part3_filter_env_vel" ;
         lv2:name "Part3 Filter Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -613,7 +613,7 @@
         lv2:index 66 ;
         lv2:symbol "part3_amp_env_atk" ;
         lv2:name "Part3 Amp Env Atk" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -622,7 +622,7 @@
         lv2:index 67 ;
         lv2:symbol "part3_amp_env_dec" ;
         lv2:name "Part3 Amp Env Dec" ;
-        lv2:default 0.300000 ;
+        lv2:default 0.3 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -631,7 +631,7 @@
         lv2:index 68 ;
         lv2:symbol "part3_amp_env_sus" ;
         lv2:name "Part3 Amp Env Sus" ;
-        lv2:default 0.700000 ;
+        lv2:default 0.7 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -640,7 +640,7 @@
         lv2:index 69 ;
         lv2:symbol "part3_amp_env_rel" ;
         lv2:name "Part3 Amp Env Rel" ;
-        lv2:default 0.100000 ;
+        lv2:default 0.1 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -649,7 +649,7 @@
         lv2:index 70 ;
         lv2:symbol "part3_amp_env_vel" ;
         lv2:name "Part3 Amp Env Vel" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -658,7 +658,7 @@
         lv2:index 71 ;
         lv2:symbol "part3_lfo_rate" ;
         lv2:name "Part3 LFO Rate" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -667,7 +667,7 @@
         lv2:index 72 ;
         lv2:symbol "part3_lfo_amp" ;
         lv2:name "Part3 LFO Amp" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -676,7 +676,7 @@
         lv2:index 73 ;
         lv2:symbol "part3_lfo_flt" ;
         lv2:name "Part3 LFO Flt" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -685,7 +685,7 @@
         lv2:index 74 ;
         lv2:symbol "part3_delay" ;
         lv2:name "Part3 Delay" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -694,7 +694,7 @@
         lv2:index 75 ;
         lv2:symbol "part3_chorus" ;
         lv2:name "Part3 Chorus" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -703,7 +703,7 @@
         lv2:index 76 ;
         lv2:symbol "part3_reverb" ;
         lv2:name "Part3 Reverb" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -712,7 +712,7 @@
         lv2:index 77 ;
         lv2:symbol "delay_time" ;
         lv2:name "Delay Time" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -721,7 +721,7 @@
         lv2:index 78 ;
         lv2:symbol "delay_feedback" ;
         lv2:name "Delay Feedback" ;
-        lv2:default 0.400000 ;
+        lv2:default 0.4 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -730,7 +730,7 @@
         lv2:index 79 ;
         lv2:symbol "delay_level" ;
         lv2:name "Delay Level" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -739,7 +739,7 @@
         lv2:index 80 ;
         lv2:symbol "chorus_rate" ;
         lv2:name "Chorus Rate" ;
-        lv2:default 0.300000 ;
+        lv2:default 0.3 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -748,7 +748,7 @@
         lv2:index 81 ;
         lv2:symbol "chorus_depth" ;
         lv2:name "Chorus Depth" ;
-        lv2:default 0.600000 ;
+        lv2:default 0.6 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -757,7 +757,7 @@
         lv2:index 82 ;
         lv2:symbol "chorus_level" ;
         lv2:name "Chorus Level" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -766,7 +766,7 @@
         lv2:index 83 ;
         lv2:symbol "reverb_size" ;
         lv2:name "Reverb Size" ;
-        lv2:default 0.600000 ;
+        lv2:default 0.6 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -775,7 +775,7 @@
         lv2:index 84 ;
         lv2:symbol "reverb_width" ;
         lv2:name "Reverb Width" ;
-        lv2:default 0.700000 ;
+        lv2:default 0.7 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -784,7 +784,7 @@
         lv2:index 85 ;
         lv2:symbol "reverb_damp" ;
         lv2:name "Reverb Damp" ;
-        lv2:default 0.600000 ;
+        lv2:default 0.6 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -793,7 +793,7 @@
         lv2:index 86 ;
         lv2:symbol "reverb_level" ;
         lv2:name "Reverb Level" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -802,7 +802,7 @@
         lv2:index 87 ;
         lv2:symbol "part1_panning" ;
         lv2:name "Part1 Panning" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -811,7 +811,7 @@
         lv2:index 88 ;
         lv2:symbol "part2_panning" ;
         lv2:name "Part2 Panning" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -820,7 +820,7 @@
         lv2:index 89 ;
         lv2:symbol "part3_panning" ;
         lv2:name "Part3 Panning" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -829,7 +829,7 @@
         lv2:index 90 ;
         lv2:symbol "part1_volume" ;
         lv2:name "Part1 Volume" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -838,7 +838,7 @@
         lv2:index 91 ;
         lv2:symbol "part2_volume" ;
         lv2:name "Part2 Volume" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -847,7 +847,7 @@
         lv2:index 92 ;
         lv2:symbol "part3_volume" ;
         lv2:name "Part3 Volume" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
