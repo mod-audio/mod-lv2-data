@@ -39,16 +39,29 @@
 		lv2:name "Select Sequence";
 		lv2:minimum 0;
 		lv2:default 0;
-		lv2:maximum 7;
+		lv2:maximum 15;
 		lv2:portProperty lv2:integer, lv2:enumeration;
-		lv2:scalePoint [ rdf:value 0; rdfs:label "C-4 major (chan 1)"; ];
-		lv2:scalePoint [ rdf:value 1; rdfs:label "Cj7 chord (iterate channels)"; ];
-		lv2:scalePoint [ rdf:value 2; rdfs:label "All note sweep (chan 1)"; ];
-		lv2:scalePoint [ rdf:value 3; rdfs:label "Velocity sweep (chan 1)"; ];
-		lv2:scalePoint [ rdf:value 4; rdfs:label "Sustain Pedal Test"; ];
-		lv2:scalePoint [ rdf:value 5; rdfs:label "Rudi"; ];
-		lv2:scalePoint [ rdf:value 6; rdfs:label "BWV 846"; ];
-		lv2:scalePoint [ rdf:value 7; rdfs:label "The Cat"; ];
+		lv2:scalePoint [ rdf:value  0; rdfs:label "C-4 Sequence (Channel 1)"; ];
+		lv2:scalePoint [ rdf:value  1; rdfs:label "Cj7 Arpeggio (Iterate Channels)"; ];
+
+		lv2:scalePoint [ rdf:value  2; rdfs:label "Sweep Velocity (C4, C#4, Chn 1)"; ];
+		lv2:scalePoint [ rdf:value  3; rdfs:label "Sweep All Notes (Channel 1)"; ];
+		lv2:scalePoint [ rdf:value  4; rdfs:label "Sweep C1 -> C7 (Channel 1)"; ];
+		lv2:scalePoint [ rdf:value  5; rdfs:label "Sweep Drums Hits (Channel 10)"; ];
+
+		lv2:scalePoint [ rdf:value  6; rdfs:label "Sustain Pedal Test"; ];
+		lv2:scalePoint [ rdf:value  7; rdfs:label "Legato to Staccatto"; ];
+
+		lv2:scalePoint [ rdf:value  8; rdfs:label "Slam All Notes (Channel 1)"; ];
+		lv2:scalePoint [ rdf:value  9; rdfs:label "Slam 16 Notes * 16 Channels"; ];
+		lv2:scalePoint [ rdf:value 10; rdfs:label "Black MIDI - Tetris"; ];
+
+		lv2:scalePoint [ rdf:value 11; rdfs:label "Performance - Bach, BWV 846"; ];
+		lv2:scalePoint [ rdf:value 12; rdfs:label "Performance - Beethoven, Symphony 5"; ];
+		lv2:scalePoint [ rdf:value 13; rdfs:label "Performance - Rudolph The Red Nosed Reindeer"; ];
+		lv2:scalePoint [ rdf:value 14; rdfs:label "Performance - The Cat (J. Smith, Hammond)"; ];
+		lv2:scalePoint [ rdf:value 15; rdfs:label "Performance - Amen Break (Drum Pattern)"; ];
+		lv2:scalePoint [ rdf:value 16; rdfs:label "Performance - Rock Beat (Drum Pattern)"; ];
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 2;
