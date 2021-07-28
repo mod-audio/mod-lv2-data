@@ -1,0 +1,106 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel>
+    a lv2:Plugin ;
+    lv2:binary <CHOWTapeModel.so> ;
+    rdfs:seeAlso <CHOWTapeModel.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "TC-260" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Woozy Chorus" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "LoFi" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Old Tape" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Underbiased" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset007>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Bass Pusher I" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset008>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Chorus II" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset009>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Chorus III" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset010>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Chorus IV" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset011>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Clean Fat" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset012>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Fat II" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset013>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Gritty" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset014>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Gritty II" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset015>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_LoFi" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset016>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/AnalogTapeModel> ;
+    rdfs:label "Sink_Slightly Wobbly" ;
+    rdfs:seeAlso <presets.ttl> .
+
+

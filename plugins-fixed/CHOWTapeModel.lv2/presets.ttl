@@ -1,0 +1,2848 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:juce:stateBinary>
+    a owl:DatatypeProperty ;
+    rdfs:label "Plugin state as base64-encoded string" ;
+    rdfs:domain state:State ;
+    rdfs:range xsd:base64Binary .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset001> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "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"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.748101 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset002> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAARMFMC4xOTk5OTk5ODgwNzkwNzEAAFBBUkFNAAECaWQAAQcFZHJpdmUAdmFsdWUAARQFMC42NTk5OTk5NjY2MjEzOTg5AABQQVJBTQABAmlkAAEIBWRyeXdldAB2YWx1ZQABBwUxMDAuMAAAUEFSQU0AAQJpZAABBQVnYXAAdmFsdWUAAQkEAAAAgJmZ+T8AUEFSQU0AAQJpZAABCAVoX2Jhc3MAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCAVpbmdhaW4AdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBW1vZGUAdmFsdWUAAQMFMgAAUEFSQU0AAQJpZAABBAVvcwB2YWx1ZQABAwUyAABQQVJBTQABAmlkAAEJBW91dGdhaW4AdmFsdWUAAQYFLTIuMAAAUEFSQU0AAQJpZAABBgVyYXRlAHZhbHVlAAETBTAuMTk5OTk5OTg4MDc5MDcxAABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABBgUwLjc1AABQQVJBTQABAmlkAAEJBXNwYWNpbmcAdmFsdWUAAQkEAAAAYAO50T8AUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABEwUxNS4wMDAwMDA5NTM2NzQzMgAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABCQQAAABgJ/4SQABQQVJBTQABAmlkAAEHBXdpZHRoAHZhbHVlAAEUBTAuMzU5OTk5OTg0NTAyNzkyNAAAUEFSQU0AAQJpZAABCwV3b3dfZGVwdGgAdmFsdWUAAQkEAAAAgJmZyT8AUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABCQQAAACAmZnJPwBQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwUxAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABCwVtaXhfZ3JvdXAAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.466667 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.001001 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.660000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.360000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.400000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.009198 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.256356 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.165161 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset003> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABCwVjaGV3X2ZyZXEAdmFsdWUAARQFMC41OTk5OTk5NjQyMzcyMTMxAABQQVJBTQABAmlkAAEKBWNoZXdfdmFyAHZhbHVlAAEJBAAAACAzM9M/AFBBUkFNAAECaWQAAQkFZGVnX2FtdAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQsFZGVnX2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCQVkZWdfdmFyAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBwVkZXB0aAB2YWx1ZQABFAUwLjc5OTk5OTk1MjMxNjI4NDIAAFBBUkFNAAECaWQAAQcFZHJpdmUAdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEIBWRyeXdldAB2YWx1ZQABBgU2NS4wAABQQVJBTQABAmlkAAEFBWdhcAB2YWx1ZQABCQQAAAAAAADwPwBQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFaF90cmVibGUAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFbW9kZQB2YWx1ZQABAwUwAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEDBTEAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFcmF0ZQB2YWx1ZQABFAUwLjQzOTk5OTk5NzYxNTgxNDIAAFBBUkFNAAECaWQAAQUFc2F0AHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABCQVzcGFjaW5nAHZhbHVlAAEJBAAAAKCZmbk/AFBBUkFNAAECaWQAAQcFc3BlZWQAdmFsdWUAARMFMTUuMDAwMDAwOTUzNjc0MzIAAFBBUkFNAAECaWQAAQcFdGhpY2sAdmFsdWUAAQkEAAAAoJmZuT8AUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEJBAAAAICZmek/AFBBUkFNAAECaWQAAQoFd293X3JhdGUAdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwUyAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABCwVtaXhfZ3JvdXAAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.002002 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.440000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset004> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCAVkcnl3ZXQAdmFsdWUAAQcFMTAwLjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFaF90cmVibGUAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFbW9kZQB2YWx1ZQABAwUyAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEDBTIAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBgUtMy41AABQQVJBTQABAmlkAAEGBXJhdGUAdmFsdWUAARQFMC4yOTk5OTk5ODIxMTg2MDY2AABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABBQUxLjAAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABCQQAAABg//8HQABQQVJBTQABAmlkAAEHBXNwZWVkAHZhbHVlAAEJBAAAAAAAAB5AAFBBUkFNAAECaWQAAQcFdGhpY2sAdmFsdWUAAQkEAAAAoP7/E0AAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABFAUwLjU5OTk5OTk2NDIzNzIxMzEAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABBgUwLjI1AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwUzAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABCwVtaXhfZ3JvdXAAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.441667 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.003003 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.400000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.327042 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.147768 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.264230 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset005> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAARQFMC4xNDk5OTk5OTEwNTkzMDMzAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABEwUwLjE5OTk5OTk4ODA3OTA3MQAAUEFSQU0AAQJpZAABCQVkZWdfdmFyAHZhbHVlAAEGBTAuMjUAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABCAVkcnl3ZXQAdmFsdWUAAQcFMTAwLjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFaF90cmVibGUAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFbW9kZQB2YWx1ZQABAwUwAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEDBTEAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFcmF0ZQB2YWx1ZQABFAUwLjI5OTk5OTk4MjExODYwNjYAAFBBUkFNAAECaWQAAQUFc2F0AHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABCQVzcGFjaW5nAHZhbHVlAAEJBAAAAKCZmbk/AFBBUkFNAAECaWQAAQcFc3BlZWQAdmFsdWUAARMFMTUuMDAwMDAwOTUzNjc0MzIAAFBBUkFNAAECaWQAAQcFdGhpY2sAdmFsdWUAAQkEAAAAoJmZuT8AUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABBgUwLjI1AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwU0AABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABCwVtaXhfZ3JvdXAAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.004004 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset006> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEGBTAuMjUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEHBTEwMC4wAABQQVJBTQABAmlkAAEFBWdhcAB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABCAVoX2Jhc3MAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCAVpbmdhaW4AdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBW1vZGUAdmFsdWUAAQMFMAAAUEFSQU0AAQJpZAABBAVvcwB2YWx1ZQABAwUxAABQQVJBTQABAmlkAAEJBW91dGdhaW4AdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBXJhdGUAdmFsdWUAARQFMC4yOTk5OTk5ODIxMTg2MDY2AABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABEwUwLjY5OTk5OTk4ODA3OTA3MQAAUEFSQU0AAQJpZAABCQVzcGFjaW5nAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXNwZWVkAHZhbHVlAAETBTE1LjAwMDAwMDk1MzY3NDMyAABQQVJBTQABAmlkAAEHBXRoaWNrAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXdpZHRoAHZhbHVlAAEVBTAuMDQ5OTk5OTk3MDE5NzY3NzYAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABBgUwLjI1AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwU1AABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABCwVtaXhfZ3JvdXAAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.005005 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.700000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.050000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset007> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEGBTAuNzUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEHBTEwMC4wAABQQVJBTQABAmlkAAEFBWdhcAB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABCAVoX2Jhc3MAdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAEVBS0wLjE1MDAwMDAzNTc2Mjc4NjkAAFBBUkFNAAECaWQAAQgFaW5nYWluAHZhbHVlAAEFBTIuMAAAUEFSQU0AAQJpZAABCwVtaXhfZ3JvdXAAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBW1vZGUAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCQVvdXRnYWluAHZhbHVlAAEGBS0yLjAAAFBBUkFNAAECaWQAAQYFcmF0ZQB2YWx1ZQABFAUwLjI5OTk5OTk4MjExODYwNjYAAFBBUkFNAAECaWQAAQUFc2F0AHZhbHVlAAEGBTAuNzUAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABEwUzLjc1MDAwMDQ3NjgzNzE1OAAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABFAUwLjU5OTk5OTk2NDIzNzIxMzEAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABFAUwLjE0OTk5OTk5MTA1OTMwMzMAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTYAAFBBUkFNAAEBaWQAAQkFaF90ZnJlcQAAUEFSQU0AAQFpZAABCQVhemltdXRoAABQQVJBTQABAWlkAAEMBWNoZXdfb25vZmYAAFBBUkFNAAEBaWQAAQkFZGVnX2VudgAAUEFSQU0AAQFpZAABCwVkZWdfb25vZmYAAFBBUkFNAAEBaWQAAQ0FZGVnX3BvaW50MXgAAFBBUkFNAAEBaWQAAQ8FZmx1dHRlcl9vbm9mZgAAUEFSQU0AAQFpZAABDAVoeXN0X29ub2ZmAABQQVJBTQABAWlkAAEMBWlmaWx0X2hpZ2gAAFBBUkFNAAEBaWQAAQsFaWZpbHRfbG93AABQQVJBTQABAWlkAAEOBWlmaWx0X21ha2V1cAAAUEFSQU0AAQFpZAABDQVpZmlsdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVsb3NzX29ub2ZmAABQQVJBTQABAWlkAAEMBXRvbmVfb25vZmYAAFBBUkFNAAEBaWQAAQsFd293X2RyaWZ0AABQQVJBTQABAWlkAAEJBXdvd192YXIAAA=="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.888889 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.466667 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.006006 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.425000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.203191 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset008> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABCwVjaGV3X2ZyZXEAdmFsdWUAARQFMC41OTk5OTk5NjQyMzcyMTMxAABQQVJBTQABAmlkAAEKBWNoZXdfdmFyAHZhbHVlAAEUBTAuMjk5OTk5OTgyMTE4NjA2NgAAUEFSQU0AAQJpZAABCQVkZWdfYW10AHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCwVkZWdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRlcHRoAHZhbHVlAAEUBTAuNzk5OTk5OTUyMzE2Mjg0MgAAUEFSQU0AAQJpZAABBwVkcml2ZQB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEGBTY1LjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABFQUtMC4yMTAwMDAwMzgxNDY5NzI3AABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAETBS0wLjE0MDAwMDA0NTI5OTUzAABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFbW9kZQB2YWx1ZQABAwUwAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEDBTEAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFcmF0ZQB2YWx1ZQABFAUwLjMxOTk5OTk5Mjg0NzQ0MjYAAFBBUkFNAAECaWQAAQUFc2F0AHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABCQVzcGFjaW5nAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXNwZWVkAHZhbHVlAAEJBAAAAAAAAB5AAFBBUkFNAAECaWQAAQcFdGhpY2sAdmFsdWUAARYFOS45OTk5OTk5NzQ3NTI0MjdlLTcAAFBBUkFNAAECaWQAAQcFd2lkdGgAdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAELBXdvd19kZXB0aAB2YWx1ZQABFAUwLjc5OTk5OTk1MjMxNjI4NDIAAFBBUkFNAAECaWQAAQoFd293X3JhdGUAdmFsdWUAARQFMC4yNTk5OTk5OTA0NjMyNTY4AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwU3AABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQsFbWl4X2dyb3VwAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEMBWh5c3Rfb25vZmYAAFBBUkFNAAEBaWQAAQwFaWZpbHRfaGlnaAAAUEFSQU0AAQFpZAABCwVpZmlsdF9sb3cAAFBBUkFNAAEBaWQAAQ4FaWZpbHRfbWFrZXVwAABQQVJBTQABAWlkAAENBWlmaWx0X29ub2ZmAABQQVJBTQABAWlkAAEMBWxvc3Nfb25vZmYAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.007007 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.395000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.430000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.327042 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.320000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.260000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset009> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABCwVjaGV3X2ZyZXEAdmFsdWUAARQFMC41OTk5OTk5NjQyMzcyMTMxAABQQVJBTQABAmlkAAEKBWNoZXdfdmFyAHZhbHVlAAEUBTAuMjk5OTk5OTgyMTE4NjA2NgAAUEFSQU0AAQJpZAABCQVkZWdfYW10AHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCwVkZWdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRlcHRoAHZhbHVlAAEUBTAuMjgwMDAwMDAxMTkyMDkyOQAAUEFSQU0AAQJpZAABBwVkcml2ZQB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEGBTU1LjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABFgUtMC4wNjk5OTk5OTI4NDc0NDI2MwAAUEFSQU0AAQJpZAABCgVoX3RyZWJsZQB2YWx1ZQABFAUwLjIyMDAwMDAyODYxMDIyOTUAAFBBUkFNAAECaWQAAQgFaW5nYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVtb2RlAHZhbHVlAAEDBTAAAFBBUkFNAAECaWQAAQQFb3MAdmFsdWUAAQMFMQAAUEFSQU0AAQJpZAABCQVvdXRnYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVyYXRlAHZhbHVlAAETBTAuMTE5OTk5OTk3MzE3NzkxAABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABEwU3LjUwMDAwMDQ3NjgzNzE1OAAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEUBTAuNzk5OTk5OTUyMzE2Mjg0MgAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABFAUwLjE3OTk5OTk5MjI1MTM5NjIAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTgAAFBBUkFNAAEBaWQAAQkFaF90ZnJlcQAAUEFSQU0AAQJpZAABCwVtaXhfZ3JvdXAAdmFsdWUAAQUFMC4wAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEMBWh5c3Rfb25vZmYAAFBBUkFNAAEBaWQAAQwFaWZpbHRfaGlnaAAAUEFSQU0AAQFpZAABCwVpZmlsdF9sb3cAAFBBUkFNAAEBaWQAAQ4FaWZpbHRfbWFrZXVwAABQQVJBTQABAWlkAAENBWlmaWx0X29ub2ZmAABQQVJBTQABAWlkAAEMBWxvc3Nfb25vZmYAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.550000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.008008 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.465000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.610000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.327042 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.120000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.280000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.180000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset010> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABCwVjaGV3X2ZyZXEAdmFsdWUAARQFMC41OTk5OTk5NjQyMzcyMTMxAABQQVJBTQABAmlkAAEKBWNoZXdfdmFyAHZhbHVlAAEUBTAuMjk5OTk5OTgyMTE4NjA2NgAAUEFSQU0AAQJpZAABCQVkZWdfYW10AHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCwVkZWdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRlcHRoAHZhbHVlAAEUBTAuNzk5OTk5OTUyMzE2Mjg0MgAAUEFSQU0AAQJpZAABBwVkcml2ZQB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEGBTU1LjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABFgUtMC4wNjk5OTk5OTI4NDc0NDI2MwAAUEFSQU0AAQJpZAABCgVoX3RyZWJsZQB2YWx1ZQABFAUwLjIyMDAwMDAyODYxMDIyOTUAAFBBUkFNAAECaWQAAQgFaW5nYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVtb2RlAHZhbHVlAAEDBTAAAFBBUkFNAAECaWQAAQQFb3MAdmFsdWUAAQMFMQAAUEFSQU0AAQJpZAABCQVvdXRnYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVyYXRlAHZhbHVlAAEVBTAuMDcwMDAwMDAwMjk4MDIzMjIAAFBBUkFNAAECaWQAAQUFc2F0AHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABCQVzcGFjaW5nAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXNwZWVkAHZhbHVlAAETBTMuNzUwMDAwNDc2ODM3MTU4AABQQVJBTQABAmlkAAEHBXRoaWNrAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXdpZHRoAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCwV3b3dfZGVwdGgAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAEKBXdvd19yYXRlAHZhbHVlAAEVBTAuMDU5OTk5OTk4NjU4ODk1NDkAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTkAAFBBUkFNAAEBaWQAAQkFaF90ZnJlcQAAUEFSQU0AAQJpZAABCwVtaXhfZ3JvdXAAdmFsdWUAAQUFMC4wAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEMBWh5c3Rfb25vZmYAAFBBUkFNAAEBaWQAAQwFaWZpbHRfaGlnaAAAUEFSQU0AAQFpZAABCwVpZmlsdF9sb3cAAFBBUkFNAAEBaWQAAQ4FaWZpbHRfbWFrZXVwAABQQVJBTQABAWlkAAENBWlmaWx0X29ub2ZmAABQQVJBTQABAWlkAAEMBWxvc3Nfb25vZmYAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.550000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.009009 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.465000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.610000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.203191 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.070000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.060000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset011> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEUBTAuNjQ5OTk5OTc2MTU4MTQyMQAAUEFSQU0AAQJpZAABCAVkcnl3ZXQAdmFsdWUAAQcFMTAwLjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABBgUtMC41AABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAEGBS0wLjUAAFBBUkFNAAECaWQAAQgFaW5nYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCwVtaXhfZ3JvdXAAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBW1vZGUAdmFsdWUAAQUFMy4wAABQQVJBTQABAmlkAAEEBW9zAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCQVvdXRnYWluAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVyYXRlAHZhbHVlAAEUBTAuMjk5OTk5OTgyMTE4NjA2NgAAUEFSQU0AAQJpZAABBQVzYXQAdmFsdWUAARQFMC42NDk5OTk5NzYxNTgxNDIxAABQQVJBTQABAmlkAAEJBXNwYWNpbmcAdmFsdWUAARYFOS45OTk5OTk5NzQ3NTI0MjdlLTcAAFBBUkFNAAECaWQAAQcFc3BlZWQAdmFsdWUAAQkEAAAAoP//PUAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABBgUwLjc1AABQQVJBTQABAmlkAAELBXdvd19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFd293X3JhdGUAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABCAVwcmVzZXQAdmFsdWUAAQQFMTAAAFBBUkFNAAEBaWQAAQkFYXppbXV0aAAAUEFSQU0AAQFpZAABDAVjaGV3X29ub2ZmAABQQVJBTQABAWlkAAEJBWRlZ19lbnYAAFBBUkFNAAEBaWQAAQsFZGVnX29ub2ZmAABQQVJBTQABAWlkAAENBWRlZ19wb2ludDF4AABQQVJBTQABAWlkAAEPBWZsdXR0ZXJfb25vZmYAAFBBUkFNAAEBaWQAAQkFaF90ZnJlcQAAUEFSQU0AAQFpZAABDAVoeXN0X29ub2ZmAABQQVJBTQABAWlkAAEMBWlmaWx0X2hpZ2gAAFBBUkFNAAEBaWQAAQsFaWZpbHRfbG93AABQQVJBTQABAWlkAAEOBWlmaWx0X21ha2V1cAAAUEFSQU0AAQFpZAABDQVpZmlsdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVsb3NzX29ub2ZmAABQQVJBTQABAWlkAAEMBXRvbmVfb25vZmYAAFBBUkFNAAEBaWQAAQsFd293X2RyaWZ0AABQQVJBTQABAWlkAAEJBXdvd192YXIAAA=="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.010010 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.748101 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset012> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEGBTAuNzUAAFBBUkFNAAECaWQAAQgFZHJ5d2V0AHZhbHVlAAEHBTEwMC4wAABQQVJBTQABAmlkAAEFBWdhcAB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABCAVoX2Jhc3MAdmFsdWUAARQFLTAuMzAwMDAwMDExOTIwOTI5AABQQVJBTQABAmlkAAEKBWhfdHJlYmxlAHZhbHVlAAEUBS0wLjMwMDAwMDAxMTkyMDkyOQAAUEFSQU0AAQJpZAABCAVpbmdhaW4AdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBW1peF9ncm91cAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQYFbW9kZQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQQFb3MAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAEJBW91dGdhaW4AdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEGBXJhdGUAdmFsdWUAARQFMC4yOTk5OTk5ODIxMTg2MDY2AABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABFAUwLjY0OTk5OTk3NjE1ODE0MjEAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABCQQAAAAAAAAeQABQQVJBTQABAmlkAAEHBXRoaWNrAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEHBXdpZHRoAHZhbHVlAAEGBTAuNzUAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABBgUwLjI1AABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABBAUxMQAAUEFSQU0AAQFpZAABCQVhemltdXRoAABQQVJBTQABAWlkAAEMBWNoZXdfb25vZmYAAFBBUkFNAAEBaWQAAQkFZGVnX2VudgAAUEFSQU0AAQFpZAABCwVkZWdfb25vZmYAAFBBUkFNAAEBaWQAAQ0FZGVnX3BvaW50MXgAAFBBUkFNAAEBaWQAAQ8FZmx1dHRlcl9vbm9mZgAAUEFSQU0AAQFpZAABCQVoX3RmcmVxAABQQVJBTQABAWlkAAEMBWh5c3Rfb25vZmYAAFBBUkFNAAEBaWQAAQwFaWZpbHRfaGlnaAAAUEFSQU0AAQFpZAABCwVpZmlsdF9sb3cAAFBBUkFNAAEBaWQAAQ4FaWZpbHRfbWFrZXVwAABQQVJBTQABAWlkAAENBWlmaWx0X29ub2ZmAABQQVJBTQABAWlkAAEMBWxvc3Nfb25vZmYAAFBBUkFNAAEBaWQAAQwFdG9uZV9vbm9mZgAAUEFSQU0AAQFpZAABCwV3b3dfZHJpZnQAAFBBUkFNAAEBaWQAAQkFd293X3ZhcgAA"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.011011 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.350000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.350000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.327042 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset013> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCAVkcnl3ZXQAdmFsdWUAAQcFMTAwLjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABFAUwLjE0OTk5OTk3NjE1ODE0MjEAAFBBUkFNAAECaWQAAQoFaF90cmVibGUAdmFsdWUAARQFMC4yOTk5OTk5NTIzMTYyODQyAABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUyLjAAAFBBUkFNAAECaWQAAQsFbWl4X2dyb3VwAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVtb2RlAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBAVvcwB2YWx1ZQABBQUxLjAAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBgUtMi4wAABQQVJBTQABAmlkAAEGBXJhdGUAdmFsdWUAARQFMC4yOTk5OTk5ODIxMTg2MDY2AABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABEwUzLjQ5OTk5OTc2MTU4MTQyMQAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABFAUwLjY0OTk5OTk3NjE1ODE0MjEAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABFAUwLjE0OTk5OTk5MTA1OTMwMzMAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEEBTEyAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABDAV0b25lX29ub2ZmAABQQVJBTQABAWlkAAELBXdvd19kcmlmdAAAUEFSQU0AAQFpZAABCQV3b3dfdmFyAAA="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.888889 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.466667 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.012012 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.575000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.192753 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset014> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAASpQQVJBTQABAmlkAAEMBWNoZXdfZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWNoZXdfZnJlcQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFY2hld192YXIAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEJBWRlZ19hbXQAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAELBWRlZ19kZXB0aAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQkFZGVnX3ZhcgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQcFZGVwdGgAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEHBWRyaXZlAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCAVkcnl3ZXQAdmFsdWUAAQcFMTAwLjAAAFBBUkFNAAECaWQAAQUFZ2FwAHZhbHVlAAEWBTkuOTk5OTk5OTc0NzUyNDI3ZS03AABQQVJBTQABAmlkAAEIBWhfYmFzcwB2YWx1ZQABBwUtMC4yNQAAUEFSQU0AAQJpZAABCgVoX3RyZWJsZQB2YWx1ZQABBgUwLjI1AABQQVJBTQABAmlkAAEIBWluZ2FpbgB2YWx1ZQABBQUyLjAAAFBBUkFNAAECaWQAAQsFbWl4X2dyb3VwAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBgVtb2RlAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABBAVvcwB2YWx1ZQABBQUxLjAAAFBBUkFNAAECaWQAAQkFb3V0Z2FpbgB2YWx1ZQABBgUtMi4wAABQQVJBTQABAmlkAAEGBXJhdGUAdmFsdWUAARQFMC4yOTk5OTk5ODIxMTg2MDY2AABQQVJBTQABAmlkAAEFBXNhdAB2YWx1ZQABFAUwLjU5OTk5OTk2NDIzNzIxMzEAAFBBUkFNAAECaWQAAQkFc3BhY2luZwB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwVzcGVlZAB2YWx1ZQABEwUzLjQ5OTk5OTc2MTU4MTQyMQAAUEFSQU0AAQJpZAABBwV0aGljawB2YWx1ZQABFgU5Ljk5OTk5OTk3NDc1MjQyN2UtNwAAUEFSQU0AAQJpZAABBwV3aWR0aAB2YWx1ZQABFAUwLjM0OTk5OTk5NDAzOTUzNTUAAFBBUkFNAAECaWQAAQsFd293X2RlcHRoAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABCgV3b3dfcmF0ZQB2YWx1ZQABFAUwLjE0OTk5OTk5MTA1OTMwMzMAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEEBTEzAABQQVJBTQABAWlkAAEJBWF6aW11dGgAAFBBUkFNAAEBaWQAAQwFY2hld19vbm9mZgAAUEFSQU0AAQFpZAABCQVkZWdfZW52AABQQVJBTQABAWlkAAELBWRlZ19vbm9mZgAAUEFSQU0AAQFpZAABDQVkZWdfcG9pbnQxeAAAUEFSQU0AAQFpZAABDwVmbHV0dGVyX29ub2ZmAABQQVJBTQABAWlkAAEJBWhfdGZyZXEAAFBBUkFNAAEBaWQAAQwFaHlzdF9vbm9mZgAAUEFSQU0AAQFpZAABDAVpZmlsdF9oaWdoAABQQVJBTQABAWlkAAELBWlmaWx0X2xvdwAAUEFSQU0AAQFpZAABDgVpZmlsdF9tYWtldXAAAFBBUkFNAAEBaWQAAQ0FaWZpbHRfb25vZmYAAFBBUkFNAAEBaWQAAQwFbG9zc19vbm9mZgAAUEFSQU0AAQFpZAABDAV0b25lX29ub2ZmAABQQVJBTQABAWlkAAELBXdvd19kcmlmdAAAUEFSQU0AAQFpZAABCQV3b3dfdmFyAAA="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.888889 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.466667 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.013013 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.375000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.625000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.350000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.192753 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset015> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "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"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.861111 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.475000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.014014 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.625000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.450000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.650000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.450000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.099014 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.150000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.400000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/jatinchowdhury18/AnalogTapeModel#preset016> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "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"^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "input_gain" ;
+        pset:value 0.833333 ;
+    ] ,
+    [
+        lv2:symbol "output_gain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.015015 ;
+    ] ,
+    [
+        lv2:symbol "input_filters_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_low_cut" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_high_cut" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "input_cut_makeup" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone_bass" ;
+        pset:value 0.430000 ;
+    ] ,
+    [
+        lv2:symbol "tone_treble" ;
+        pset:value 0.610000 ;
+    ] ,
+    [
+        lv2:symbol "tone_transition_frequency" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_drive" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_saturation" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_bias" ;
+        pset:value 0.540000 ;
+    ] ,
+    [
+        lv2:symbol "tape_mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "oversampling" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "loss_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_speed" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tape_spacing" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tape_thickness" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "playhead_gap" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "azimuth" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "wow_flutter_on_off" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_rate" ;
+        pset:value 0.260000 ;
+    ] ,
+    [
+        lv2:symbol "flutter_depth" ;
+        pset:value 0.660000 ;
+    ] ,
+    [
+        lv2:symbol "wow_rate" ;
+        pset:value 0.210000 ;
+    ] ,
+    [
+        lv2:symbol "wow_depth" ;
+        pset:value 0.610000 ;
+    ] ,
+    [
+        lv2:symbol "wow_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "wow_drift" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_point1x" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_depth" ;
+        pset:value 0.210000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_amount" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_variance" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "degrade_envelope" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_on_off" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "chew_depth" ;
+        pset:value 0.050000 ;
+    ] ,
+    [
+        lv2:symbol "chew_freq" ;
+        pset:value 0.070000 ;
+    ] ,
+    [
+        lv2:symbol "chew_variance" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "mix_group" ;
+        pset:value 0.000000 ;
+    ] .
+
+
