@@ -1,0 +1,16 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/jatinchowdhury18/KlonCentaur>
+    a lv2:Plugin ;
+    lv2:binary <ChowCentaur.so> ;
+    rdfs:seeAlso <ChowCentaur.ttl> .
+
+<https://github.com/jatinchowdhury18/KlonCentaur#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/jatinchowdhury18/KlonCentaur> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
