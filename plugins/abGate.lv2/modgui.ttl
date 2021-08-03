@@ -8,15 +8,25 @@
         modgui:stylesheet <modgui/stylesheet-abgate.css> ;
         modgui:screenshot <modgui/screenshot-abgate.png> ;
         modgui:thumbnail <modgui/thumbnail-abgate.png> ;
-        modgui:brand "Antanas" ;
-        modgui:label "abGate" ;
-        modgui:model "boxy" ;
-        modgui:panel "1-knob" ;
-        modgui:color "wood3" ;
-        modgui:knob "gold" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "threshold" ;
             lv2:name "Threshold" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "hold" ;
+            lv2:name "Hold" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "gaterange" ;
+            lv2:name "Range" ;
         ] ;
     ] .
