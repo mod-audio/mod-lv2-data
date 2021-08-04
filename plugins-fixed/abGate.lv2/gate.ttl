@@ -26,8 +26,8 @@
 	];
 
 	mod:brand "A. Bruzas";
-	lv2:minorVersion 1;
-	lv2:microVersion 2;
+	lv2:minorVersion 2;
+	lv2:microVersion 0;
 
 	doap:license <http://usefulinc.com/doap/licenses/lgpl>;
 
