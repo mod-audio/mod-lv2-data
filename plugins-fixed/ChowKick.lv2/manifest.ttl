@@ -1,0 +1,55 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+<https://github.com/Chowdhury-DSP/ChowKick>
+    a lv2:Plugin ;
+    lv2:binary <ChowKick.so> ;
+    rdfs:seeAlso <ChowKick.ttl> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#ExternalUI>
+    a <http://kxstudio.sf.net/ns/lv2ext/external-ui#Widget> ;
+    ui:binary <ChowKick.so> ;
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/instance-access> ;
+    lv2:optionalFeature ui:touch ;
+    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#UIInterface> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#ParentUI>
+    a ui:X11UI ;
+    ui:binary <ChowKick.so> ;
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/instance-access> ;
+    lv2:optionalFeature ui:idleInterface, ui:noUserResize, ui:touch ;
+    lv2:extensionData ui:idleInterface, <http://kxstudio.sf.net/ns/lv2ext/programs#UIInterface> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Chowdhury-DSP/ChowKick> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Chowdhury-DSP/ChowKick> ;
+    rdfs:label "Bouncy" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Chowdhury-DSP/ChowKick> ;
+    rdfs:label "Tight" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Chowdhury-DSP/ChowKick> ;
+    rdfs:label "Tonal" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Chowdhury-DSP/ChowKick> ;
+    rdfs:label "Wonky Synth" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
