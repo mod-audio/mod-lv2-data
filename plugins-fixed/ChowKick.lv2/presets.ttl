@@ -1,0 +1,361 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:juce:stateBinary>
+    a owl:DatatypeProperty ;
+    rdfs:label "Plugin state as base64-encoded string" ;
+    rdfs:domain state:State ;
+    rdfs:range xsd:base64Binary .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset001> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAAQ9QQVJBTQABAmlkAAELBW91dF9sZXZlbAB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEKBW91dF90b25lAHZhbHVlAAEJBAAAAAAAAIlAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQ0FcHVsc2VfZGVjYXkAdmFsdWUAAQkEAAAAAAAA4D8AUEFSQU0AAQJpZAABDwVwdWxzZV9zdXN0YWluAHZhbHVlAAEJBAAAAAAAAOA/AFBBUkFNAAECaWQAAQwFcmVzX2JvdW5jZQB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEKBXJlc19kYW1wAHZhbHVlAAEJBAAAAAAAAOA/AFBBUkFNAAECaWQAAQoFcmVzX2ZyZXEAdmFsdWUAAQkEAAAA4P//U0AAUEFSQU0AAQJpZAABCgVyZXNfbGluawB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEKBXJlc19tb2RlAHZhbHVlAAEJBAAAAAAAAPA/AFBBUkFNAAECaWQAAQcFcmVzX3EAdmFsdWUAAQkEAAAAIAAA4D8AUEFSQU0AAQJpZAABCwVyZXNfdGlnaHQAdmFsdWUAAQkEAAAAAAAA4D8AUEFSQU0AAQJpZAABCgV0cmlnX2FtcAB2YWx1ZQABCQQAAAAAAADwPwBQQVJBTQABAmlkAAENBXRyaWdfdm9pY2VzAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQwFdHJpZ193aWR0aAB2YWx1ZQABCQQAAADg///vPwA="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "pulse_width__ms_" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "pulse_amp" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "voices" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "sustain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "decay" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "frequency" ;
+        pset:value 0.442363 ;
+    ] ,
+    [
+        lv2:symbol "q" ;
+        pset:value 0.388043 ;
+    ] ,
+    [
+        lv2:symbol "damping" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tight" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "bounce" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "link" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "res__mode" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "level" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.000000 ;
+    ] .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset002> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAARFQQVJBTQABAmlkAAELBW91dF9sZXZlbAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFb3V0X3RvbmUAdmFsdWUAAQcFNDUwLjAAAFBBUkFNAAECaWQAAQ0FcHVsc2VfZGVjYXkAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAEPBXB1bHNlX3N1c3RhaW4AdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEMBXJlc19ib3VuY2UAdmFsdWUAARQFMC42MDAwMDAwMjM4NDE4NTc5AABQQVJBTQABAmlkAAEKBXJlc19kYW1wAHZhbHVlAAETBTAuNTUwMDAwMDExOTIwOTI5AABQQVJBTQABAmlkAAEKBXJlc19mcmVxAHZhbHVlAAEJBAAAAOD//1NAAFBBUkFNAAECaWQAAQoFcmVzX2xpbmsAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEQBXJlc19wb3J0YW1lbnRvAHZhbHVlAAEFBTAuNQAAUEFSQU0AAQJpZAABBwVyZXNfcQB2YWx1ZQABBQUxLjAAAFBBUkFNAAECaWQAAQsFcmVzX3RpZ2h0AHZhbHVlAAEUBTAuMjAwMDAwMDAyOTgwMjMyMgAAUEFSQU0AAQJpZAABCgV0cmlnX2FtcAB2YWx1ZQABBQUxLjAAAFBBUkFNAAECaWQAAQ0FdHJpZ192b2ljZXMAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEMBXRyaWdfd2lkdGgAdmFsdWUAARIFMS40OTk5OTk4ODA3OTA3MQAAUEFSQU0AAQJpZAABCAVwcmVzZXQAdmFsdWUAAQMFMgAAUEFSQU0AAQJpZAABCgVyZXNfbW9kZQB2YWx1ZQABBQUyLjAAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTEAAA=="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "pulse_width__ms_" ;
+        pset:value 0.680370 ;
+    ] ,
+    [
+        lv2:symbol "pulse_amp" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "voices" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "sustain" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "decay" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "frequency" ;
+        pset:value 0.442363 ;
+    ] ,
+    [
+        lv2:symbol "q" ;
+        pset:value 0.635106 ;
+    ] ,
+    [
+        lv2:symbol "damping" ;
+        pset:value 0.550000 ;
+    ] ,
+    [
+        lv2:symbol "tight" ;
+        pset:value 0.200000 ;
+    ] ,
+    [
+        lv2:symbol "bounce" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "link" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "res__mode" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.362509 ;
+    ] ,
+    [
+        lv2:symbol "level" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.001001 ;
+    ] .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset003> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAARFQQVJBTQABAmlkAAELBW91dF9sZXZlbAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFb3V0X3RvbmUAdmFsdWUAAQcFMzMwLjAAAFBBUkFNAAECaWQAAQ0FcHVsc2VfZGVjYXkAdmFsdWUAAQYFMC4yNQAAUEFSQU0AAQJpZAABDwVwdWxzZV9zdXN0YWluAHZhbHVlAAEVBTAuMDUwMDAwMDAwNzQ1MDU4MDYAAFBBUkFNAAECaWQAAQwFcmVzX2JvdW5jZQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFcmVzX2RhbXAAdmFsdWUAAQYFMC43NQAAUEFSQU0AAQJpZAABCgVyZXNfZnJlcQB2YWx1ZQABEwU2MC4wMDAwMDM4MTQ2OTcyNwAAUEFSQU0AAQJpZAABCgVyZXNfbGluawB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAARAFcmVzX3BvcnRhbWVudG8AdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEHBXJlc19xAHZhbHVlAAETBTEuMzk5OTk5OTc2MTU4MTQyAABQQVJBTQABAmlkAAELBXJlc190aWdodAB2YWx1ZQABBQUwLjUAAFBBUkFNAAECaWQAAQoFdHJpZ19hbXAAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAENBXRyaWdfdm9pY2VzAHZhbHVlAAEFBTAuMAAAUEFSQU0AAQJpZAABDAV0cmlnX3dpZHRoAHZhbHVlAAEFBTIuNQAAUEFSQU0AAQJpZAABCAVwcmVzZXQAdmFsdWUAAQMFMgAAUEFSQU0AAQJpZAABCgVyZXNfbW9kZQB2YWx1ZQABBQUyLjAAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTIAAA=="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "pulse_width__ms_" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "pulse_amp" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "voices" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "sustain" ;
+        pset:value 0.050000 ;
+    ] ,
+    [
+        lv2:symbol "decay" ;
+        pset:value 0.250000 ;
+    ] ,
+    [
+        lv2:symbol "frequency" ;
+        pset:value 0.367304 ;
+    ] ,
+    [
+        lv2:symbol "q" ;
+        pset:value 0.794092 ;
+    ] ,
+    [
+        lv2:symbol "damping" ;
+        pset:value 0.750000 ;
+    ] ,
+    [
+        lv2:symbol "tight" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "bounce" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "link" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "res__mode" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.235850 ;
+    ] ,
+    [
+        lv2:symbol "level" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.002002 ;
+    ] .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset004> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAARFQQVJBTQABAmlkAAELBW91dF9sZXZlbAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFb3V0X3RvbmUAdmFsdWUAAQcFODAwLjAAAFBBUkFNAAECaWQAAQ0FcHVsc2VfZGVjYXkAdmFsdWUAARMFMC44MDAwMDAwMTE5MjA5MjkAAFBBUkFNAAECaWQAAQ8FcHVsc2Vfc3VzdGFpbgB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQwFcmVzX2JvdW5jZQB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFcmVzX2RhbXAAdmFsdWUAARMFMC4zMDAwMDAwMTE5MjA5MjkAAFBBUkFNAAECaWQAAQoFcmVzX2ZyZXEAdmFsdWUAAQkEAAAA4P//U0AAUEFSQU0AAQJpZAABCgVyZXNfbGluawB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAARAFcmVzX3BvcnRhbWVudG8AdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEHBXJlc19xAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABCwVyZXNfdGlnaHQAdmFsdWUAAQUFMC41AABQQVJBTQABAmlkAAEKBXRyaWdfYW1wAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABDQV0cmlnX3ZvaWNlcwB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQwFdHJpZ193aWR0aAB2YWx1ZQABFAUwLjk5OTk5OTk0MDM5NTM1NTIAAFBBUkFNAAECaWQAAQgFcHJlc2V0AHZhbHVlAAEDBTIAAFBBUkFNAAECaWQAAQoFcmVzX21vZGUAdmFsdWUAAQUFMC4wAABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwUzAAA="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "pulse_width__ms_" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "pulse_amp" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "voices" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "sustain" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "decay" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "frequency" ;
+        pset:value 0.442363 ;
+    ] ,
+    [
+        lv2:symbol "q" ;
+        pset:value 0.635106 ;
+    ] ,
+    [
+        lv2:symbol "damping" ;
+        pset:value 0.300000 ;
+    ] ,
+    [
+        lv2:symbol "tight" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "bounce" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "link" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "res__mode" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "level" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.003003 ;
+    ] .
+
+<https://github.com/Chowdhury-DSP/ChowKick#preset005> a pset:Preset ;
+    state:state [
+        <urn:juce:stateBinary> [
+            a atom:Chunk ;
+            rdf:value "UGFyYW1ldGVycwAAAQ9QQVJBTQABAmlkAAELBW91dF9sZXZlbAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFb3V0X3RvbmUAdmFsdWUAAQcFODAwLjAAAFBBUkFNAAECaWQAAQ0FcHVsc2VfZGVjYXkAdmFsdWUAAQUFMC44AABQQVJBTQABAmlkAAEPBXB1bHNlX3N1c3RhaW4AdmFsdWUAAQUFMC42AABQQVJBTQABAmlkAAEMBXJlc19ib3VuY2UAdmFsdWUAAQYFMC4zNgAAUEFSQU0AAQJpZAABCgVyZXNfZGFtcAB2YWx1ZQABBwUwLjE0NQAAUEFSQU0AAQJpZAABCgVyZXNfZnJlcQB2YWx1ZQABBgU4MC4wAABQQVJBTQABAmlkAAEKBXJlc19saW5rAHZhbHVlAAEFBTEuMAAAUEFSQU0AAQJpZAABBwVyZXNfcQB2YWx1ZQABCQQAAAAAXI/2PwBQQVJBTQABAmlkAAELBXJlc190aWdodAB2YWx1ZQABBQUwLjAAAFBBUkFNAAECaWQAAQoFdHJpZ19hbXAAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAENBXRyaWdfdm9pY2VzAHZhbHVlAAEFBTMuMAAAUEFSQU0AAQJpZAABDAV0cmlnX3dpZHRoAHZhbHVlAAEJBAAAAOD//88/AFBBUkFNAAECaWQAAQoFcmVzX21vZGUAdmFsdWUAAQUFMS4wAABQQVJBTQABAmlkAAEIBXByZXNldAB2YWx1ZQABAwU0AAA="^^xsd:base64Binary ;
+        ] ;
+    ] ;
+
+    lv2:port [
+        lv2:symbol "pulse_width__ms_" ;
+        pset:value 0.167930 ;
+    ] ,
+    [
+        lv2:symbol "pulse_amp" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "voices" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "sustain" ;
+        pset:value 0.600000 ;
+    ] ,
+    [
+        lv2:symbol "decay" ;
+        pset:value 0.800000 ;
+    ] ,
+    [
+        lv2:symbol "frequency" ;
+        pset:value 0.442363 ;
+    ] ,
+    [
+        lv2:symbol "q" ;
+        pset:value 0.797798 ;
+    ] ,
+    [
+        lv2:symbol "damping" ;
+        pset:value 0.145000 ;
+    ] ,
+    [
+        lv2:symbol "tight" ;
+        pset:value 0.000000 ;
+    ] ,
+    [
+        lv2:symbol "bounce" ;
+        pset:value 0.360000 ;
+    ] ,
+    [
+        lv2:symbol "link" ;
+        pset:value 1.000000 ;
+    ] ,
+    [
+        lv2:symbol "res__mode" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "level" ;
+        pset:value 0.500000 ;
+    ] ,
+    [
+        lv2:symbol "preset" ;
+        pset:value 0.004004 ;
+    ] .
+
+
