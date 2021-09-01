@@ -9,26 +9,14 @@
     lv2:requiredFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
                         <http://lv2plug.in/ns/ext/urid#map> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
-                      <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
 
     lv2:microVersion 8 ;
-    lv2:minorVersion 2 ;
-
-    lv2:port [
-        a lv2:InputPort, atom:AtomPort ;
-        atom:bufferType atom:Sequence ;
-        atom:supports <http://lv2plug.in/ns/ext/time#Position> ;
-        lv2:index 0 ;
-        lv2:symbol "lv2_events_in" ;
-        lv2:name "Events Input" ;
-        lv2:designation lv2:control ;
-        lv2:portProperty lv2:connectionOptional ;
-    ] ;
+    lv2:minorVersion 3 ;
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 1 ;
+        lv2:index 0 ;
         lv2:symbol "lv2_freewheel" ;
         lv2:name "Freewheel" ;
         lv2:default 0.0 ;
@@ -39,43 +27,34 @@
     ] ;
 
     lv2:port [
-        a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 2 ;
-        lv2:symbol "lv2_latency" ;
-        lv2:name "Latency" ;
-        lv2:designation <http://lv2plug.in/ns/lv2core#latency> ;
-        lv2:portProperty lv2:reportsLatency, lv2:integer ;
-    ] ;
-
-    lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
-        lv2:index 3 ;
+        lv2:index 1 ;
         lv2:symbol "lv2_audio_in_1" ;
         lv2:name "Audio Input 1" ;
     ] ,
     [
         a lv2:InputPort, lv2:AudioPort ;
-        lv2:index 4 ;
+        lv2:index 2 ;
         lv2:symbol "lv2_audio_in_2" ;
         lv2:name "Audio Input 2" ;
     ] ;
 
     lv2:port [
         a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 5 ;
+        lv2:index 3 ;
         lv2:symbol "lv2_audio_out_1" ;
         lv2:name "Audio Output 1" ;
     ] ,
     [
         a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 6 ;
+        lv2:index 4 ;
         lv2:symbol "lv2_audio_out_2" ;
         lv2:name "Audio Output 2" ;
     ] ;
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 5 ;
         lv2:symbol "input_gain" ;
         lv2:name "Input Gain" ;
         lv2:default 0.833333 ;
@@ -84,7 +63,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 6 ;
         lv2:symbol "output_gain" ;
         lv2:name "Output Gain" ;
         lv2:default 0.500000 ;
@@ -93,7 +72,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 7 ;
         lv2:symbol "dry_wet" ;
         lv2:name "Dry/Wet" ;
         lv2:default 1.000000 ;
@@ -102,7 +81,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 10 ;
+        lv2:index 8 ;
         lv2:symbol "preset" ;
         lv2:name "Preset" ;
         lv2:default 0.000000 ;
@@ -111,7 +90,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 11 ;
+        lv2:index 9 ;
         lv2:symbol "input_filters_on_off" ;
         lv2:name "Input Filters On/Off" ;
         lv2:default 0.000000 ;
@@ -120,7 +99,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 12 ;
+        lv2:index 10 ;
         lv2:symbol "input_low_cut" ;
         lv2:name "Input Low Cut" ;
         lv2:default 0.000000 ;
@@ -129,7 +108,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 13 ;
+        lv2:index 11 ;
         lv2:symbol "input_high_cut" ;
         lv2:name "Input High Cut" ;
         lv2:default 1.000000 ;
@@ -138,7 +117,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 14 ;
+        lv2:index 12 ;
         lv2:symbol "input_cut_makeup" ;
         lv2:name "Input Cut Makeup" ;
         lv2:default 0.000000 ;
@@ -147,7 +126,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 15 ;
+        lv2:index 13 ;
         lv2:symbol "tone_on_off" ;
         lv2:name "Tone On/Off" ;
         lv2:default 1.000000 ;
@@ -156,7 +135,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 16 ;
+        lv2:index 14 ;
         lv2:symbol "tone_bass" ;
         lv2:name "Tone Bass" ;
         lv2:default 0.500000 ;
@@ -165,7 +144,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 17 ;
+        lv2:index 15 ;
         lv2:symbol "tone_treble" ;
         lv2:name "Tone Treble" ;
         lv2:default 0.500000 ;
@@ -174,7 +153,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 18 ;
+        lv2:index 16 ;
         lv2:symbol "tone_transition_frequency" ;
         lv2:name "Tone Transition Frequency" ;
         lv2:default 0.500000 ;
@@ -183,7 +162,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 19 ;
+        lv2:index 17 ;
         lv2:symbol "tape_on_off" ;
         lv2:name "Tape On/Off" ;
         lv2:default 1.000000 ;
@@ -192,7 +171,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 20 ;
+        lv2:index 18 ;
         lv2:symbol "tape_drive" ;
         lv2:name "Tape Drive" ;
         lv2:default 0.500000 ;
@@ -201,7 +180,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 21 ;
+        lv2:index 19 ;
         lv2:symbol "tape_saturation" ;
         lv2:name "Tape Saturation" ;
         lv2:default 0.500000 ;
@@ -210,7 +189,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 22 ;
+        lv2:index 20 ;
         lv2:symbol "tape_bias" ;
         lv2:name "Tape Bias" ;
         lv2:default 0.500000 ;
@@ -219,7 +198,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 23 ;
+        lv2:index 21 ;
         lv2:symbol "tape_mode" ;
         lv2:name "Tape Mode" ;
         lv2:default 0.000000 ;
@@ -228,7 +207,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 24 ;
+        lv2:index 22 ;
         lv2:symbol "oversampling" ;
         lv2:name "Oversampling" ;
         lv2:default 0.250000 ;
@@ -237,7 +216,43 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 23 ;
+        lv2:symbol "oversampling_mode" ;
+        lv2:name "Oversampling Mode" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 24 ;
+        lv2:symbol "oversampling__render_" ;
+        lv2:name "Oversampling (render)" ;
+        lv2:default 0.250000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 25 ;
+        lv2:symbol "oversampling_mode__render_" ;
+        lv2:name "Oversampling Mode (render)" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 26 ;
+        lv2:symbol "oversampling__render_like_real_time_" ;
+        lv2:name "Oversampling (render like real-time)" ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 27 ;
         lv2:symbol "loss_on_off" ;
         lv2:name "Loss On/Off" ;
         lv2:default 1.000000 ;
@@ -246,7 +261,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 26 ;
+        lv2:index 28 ;
         lv2:symbol "tape_speed" ;
         lv2:name "Tape Speed" ;
         lv2:default 0.748101 ;
@@ -255,7 +270,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 27 ;
+        lv2:index 29 ;
         lv2:symbol "tape_spacing" ;
         lv2:name "Tape Spacing" ;
         lv2:default 0.000000 ;
@@ -264,7 +279,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 28 ;
+        lv2:index 30 ;
         lv2:symbol "tape_thickness" ;
         lv2:name "Tape Thickness" ;
         lv2:default 0.000000 ;
@@ -273,7 +288,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 29 ;
+        lv2:index 31 ;
         lv2:symbol "playhead_gap" ;
         lv2:name "Playhead Gap" ;
         lv2:default 0.000000 ;
@@ -282,7 +297,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 30 ;
+        lv2:index 32 ;
         lv2:symbol "azimuth" ;
         lv2:name "Azimuth" ;
         lv2:default 0.500000 ;
@@ -291,7 +306,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 31 ;
+        lv2:index 33 ;
         lv2:symbol "wow_flutter_on_off" ;
         lv2:name "Wow/Flutter On/Off" ;
         lv2:default 1.000000 ;
@@ -300,7 +315,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 32 ;
+        lv2:index 34 ;
         lv2:symbol "flutter_rate" ;
         lv2:name "Flutter Rate" ;
         lv2:default 0.300000 ;
@@ -309,7 +324,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 33 ;
+        lv2:index 35 ;
         lv2:symbol "flutter_depth" ;
         lv2:name "Flutter Depth" ;
         lv2:default 0.000000 ;
@@ -318,7 +333,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 34 ;
+        lv2:index 36 ;
         lv2:symbol "wow_rate" ;
         lv2:name "Wow Rate" ;
         lv2:default 0.250000 ;
@@ -327,7 +342,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 35 ;
+        lv2:index 37 ;
         lv2:symbol "wow_depth" ;
         lv2:name "Wow Depth" ;
         lv2:default 0.000000 ;
@@ -336,7 +351,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 36 ;
+        lv2:index 38 ;
         lv2:symbol "wow_variance" ;
         lv2:name "Wow Variance" ;
         lv2:default 0.000000 ;
@@ -345,7 +360,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 37 ;
+        lv2:index 39 ;
         lv2:symbol "wow_drift" ;
         lv2:name "Wow Drift" ;
         lv2:default 0.000000 ;
@@ -354,7 +369,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 38 ;
+        lv2:index 40 ;
         lv2:symbol "degrade_point1x" ;
         lv2:name "Degrade Point1x" ;
         lv2:default 0.000000 ;
@@ -363,7 +378,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 39 ;
+        lv2:index 41 ;
         lv2:symbol "degrade_on_off" ;
         lv2:name "Degrade On/Off" ;
         lv2:default 0.000000 ;
@@ -372,7 +387,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 40 ;
+        lv2:index 42 ;
         lv2:symbol "degrade_depth" ;
         lv2:name "Degrade Depth" ;
         lv2:default 0.000000 ;
@@ -381,7 +396,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 41 ;
+        lv2:index 43 ;
         lv2:symbol "degrade_amount" ;
         lv2:name "Degrade Amount" ;
         lv2:default 0.000000 ;
@@ -390,7 +405,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 42 ;
+        lv2:index 44 ;
         lv2:symbol "degrade_variance" ;
         lv2:name "Degrade Variance" ;
         lv2:default 0.000000 ;
@@ -399,7 +414,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 43 ;
+        lv2:index 45 ;
         lv2:symbol "degrade_envelope" ;
         lv2:name "Degrade Envelope" ;
         lv2:default 0.000000 ;
@@ -408,7 +423,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 44 ;
+        lv2:index 46 ;
         lv2:symbol "chew_on_off" ;
         lv2:name "Chew On/Off" ;
         lv2:default 0.000000 ;
@@ -417,7 +432,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 45 ;
+        lv2:index 47 ;
         lv2:symbol "chew_depth" ;
         lv2:name "Chew Depth" ;
         lv2:default 0.000000 ;
@@ -426,7 +441,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 46 ;
+        lv2:index 48 ;
         lv2:symbol "chew_freq" ;
         lv2:name "Chew Freq" ;
         lv2:default 0.000000 ;
@@ -435,7 +450,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 47 ;
+        lv2:index 49 ;
         lv2:symbol "chew_variance" ;
         lv2:name "Chew Variance" ;
         lv2:default 0.000000 ;
@@ -444,7 +459,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 48 ;
+        lv2:index 50 ;
         lv2:symbol "mix_group" ;
         lv2:name "Mix Group" ;
         lv2:default 0.000000 ;
