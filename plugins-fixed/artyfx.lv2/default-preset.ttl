@@ -1,42 +1,46 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
-@prefix state: <http://lv2plug.in/ns/ext/state#> .
 
-<default-preset>
+<default-preset_bitta>
+	a pset:Preset ;
+	lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
+	lv2:port [
+		lv2:symbol "crush" ;
+		pset:value 0.25
+	] , [
+		lv2:symbol "drywet" ;
+		pset:value 1.0
+	] .
+
+<default-preset_filta>
 	a pset:Preset ;
 	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
 	lv2:port [
-		lv2:symbol "active" ;
-		pset:value 1.0
-	] , [
 		lv2:symbol "frequency_control" ;
 		pset:value 0.5
 	] .
 
-<default-preset_1>
+<default-preset_kuiza>
 	a pset:Preset ;
 	lv2:appliesTo <http://www.openavproductions.com/artyfx#kuiza> ;
 	lv2:port [
-		lv2:symbol "Hi_Mid" ;
+		lv2:symbol "Level" ; # Gain, gain
 		pset:value 0.5
 	] , [
-		lv2:symbol "High" ;
+		lv2:symbol "Low" ; # Low Gain, gain_1
 		pset:value 0.5
 	] , [
-		lv2:symbol "Level" ;
+		lv2:symbol "Lo_Mid" ; # LoMid Gain, gain_2
 		pset:value 0.5
 	] , [
-		lv2:symbol "Lo_Mid" ;
+		lv2:symbol "Hi_Mid" ; # HiMid Gain, gain_3
 		pset:value 0.5
 	] , [
-		lv2:symbol "Low" ;
+		lv2:symbol "High" ; # High Gain, gain_4
 		pset:value 0.5
-	] , [
-		lv2:symbol "active" ;
-		pset:value 1.0
 	] .
 
-<default-preset_2>
+<default-preset_roomy>
 	a pset:Preset ;
 	lv2:appliesTo <http://www.openavproductions.com/artyfx#roomy> ;
 	lv2:port [
@@ -49,4 +53,3 @@
 		lv2:symbol "time" ;
 		pset:value 0.5
 	] .
-
