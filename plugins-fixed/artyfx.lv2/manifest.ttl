@@ -32,7 +32,7 @@
 
 <default-preset_bitta>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
+    lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
     rdfs:label "Default" ;
     rdfs:seeAlso <default-preset.ttl> .
 
