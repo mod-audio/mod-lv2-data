@@ -5,17 +5,13 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://www.openavproductions.com/artyfx>
-  a doap:Project;
+<http://www.openavproductions.com/artyfx> a doap:Project ;
+  doap:name "ArtyFX" ;
   doap:maintainer [
-      foaf:homepage <http://openavproductions.com>; 
-      foaf:mbox <mailto:harryhaaren@gmail.com>;
-      foaf:name "OpenAV"
-  ].
-
-<http://www.openavproductions.com/artyfx#bitta> a lv2:Plugin ;
-  lv2:binary <artyfx.so> ;
-  rdfs:seeAlso <bitta.ttl> , <modguis.ttl> .
+    foaf:homepage <http://openavproductions.com/artyfx/> ;
+    foaf:mbox <mailto:harryhaaren@gmail.com> ;
+    foaf:name "OpenAV" ;
+  ] .
 
 <http://www.openavproductions.com/artyfx#della> a lv2:Plugin ;
   lv2:binary <artyfx.so> ;
@@ -44,12 +40,6 @@
 <http://www.openavproductions.com/artyfx#whaaa> a lv2:Plugin ;
   lv2:binary <artyfx.so> ;
   rdfs:seeAlso <whaaa.ttl> , <modguis.ttl> .
-
-<default-preset>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://www.openavproductions.com/artyfx#bitta> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
 
 <default-preset_1>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
