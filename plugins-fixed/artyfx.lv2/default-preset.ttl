@@ -1,17 +1,6 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
 
-<default-preset_bitta>
-	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
-	lv2:port [
-		lv2:symbol "crush" ;
-		pset:value 0.25
-	] , [
-		lv2:symbol "drywet" ;
-		pset:value 1.0
-	] .
-
 <default-preset_filta>
 	a pset:Preset ;
 	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;

@@ -1,6 +1,3 @@
-
-# The manifest file for all OpenAV ArtyFX plugins
-
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
@@ -14,10 +11,6 @@
     foaf:name "OpenAV" ;
   ] .
 
-<http://www.openavproductions.com/artyfx#bitta> a lv2:Plugin ;
-  lv2:binary <artyfx.so> ;
-  rdfs:seeAlso <bitta.ttl> , <modguis.ttl> .
-
 <http://www.openavproductions.com/artyfx#filta> a lv2:Plugin ;
   lv2:binary <artyfx.so> ;
   rdfs:seeAlso <filta.ttl> , <modguis.ttl> .
@@ -29,12 +22,6 @@
 <http://www.openavproductions.com/artyfx#roomy> a lv2:Plugin ;
   lv2:binary <artyfx.so> ;
   rdfs:seeAlso <roomy.ttl> , <modguis.ttl> .
-
-<default-preset_bitta>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
-    rdfs:label "Default" ;
-    rdfs:seeAlso <default-preset.ttl> .
 
 <default-preset_filta>
     a <http://lv2plug.in/ns/ext/presets#Preset> ;
