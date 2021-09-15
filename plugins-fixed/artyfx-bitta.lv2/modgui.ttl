@@ -10,10 +10,6 @@
         modgui:thumbnail <modgui/thumbnail-bitta.png> ;
         modgui:brand "OpenAV" ;
         modgui:label "Bitta" ;
-        modgui:model "japanese" ;
-        modgui:panel "4-knobs" ;
-        modgui:color "darkblue" ;
-        modgui:knob "orange" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "crush" ;
