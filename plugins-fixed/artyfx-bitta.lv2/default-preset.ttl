@@ -6,7 +6,7 @@
 	lv2:appliesTo <http://www.openavproductions.com/artyfx#bitta> ;
 	lv2:port [
 		lv2:symbol "crush" ;
-		pset:value 0.25
+		pset:value 16
 	] , [
 		lv2:symbol "drywet" ;
 		pset:value 1.0

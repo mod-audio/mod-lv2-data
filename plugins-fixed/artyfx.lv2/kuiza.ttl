@@ -31,8 +31,7 @@
   lv2:optionalFeature lv2:hardRTCapable ;
 
   rdfs:comment """
-Need a simple and straightforward equalizer?
-The Kuiza is a four-band EQ with low, low-mid, hi-mid, high and an overall gain control.
+OpenAV Kuiza is a four-band EQ with low, low-mid, hi-mid, high and an overall gain control.
 
 Features:
 Modeled by openAV
