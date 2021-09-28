@@ -69,6 +69,7 @@
 }
 
 .mod-pedal-artyfx-bitta .mod-plugin-name h1 {
+    color: #ddd;
     font-family:"Questrial";
     font-family:"artyfx-bitta-uranium" !important;
     font-size:32px;
