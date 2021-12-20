@@ -7,7 +7,7 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mda/Detune> ;
 	lv2:port [
 		lv2:symbol "detune" ;
-		pset:value 120.0
+		pset:value 19.2
 	] , [
 		lv2:symbol "latency" ;
 		pset:value 92.90000153
@@ -18,4 +18,3 @@
 		lv2:symbol "output" ;
 		pset:value 0.0
 	] .
-
