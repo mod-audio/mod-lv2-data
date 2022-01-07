@@ -50,12 +50,12 @@ mda:ThruZero
     doap:shortdesc "Classic tape-flanging simulation" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """Tape flanger and ADT
 
-This plug simulates tape-flanging, where two copies of a signal cancel out completely as the tapes pass each other. It can also be used for other "modulated delay" effects such as phasing and simple chorusing.""" ;
+This plug simulates tape-flanging, where two copies of a signal cancel out completely as the tapes pass each other.
+It can also be used for other "modulated delay" effects such as phasing and simple chorusing.""" ;
     lv2:minorVersion 0;
     lv2:microVersion 3;
     mod:brand "MDA" ;
@@ -77,7 +77,6 @@ This plug simulates tape-flanging, where two copies of a signal cancel out compl
             rdf:value 100
         ];
         units:unit units:hz ;
-
         rdfs:comment "Modulation rate (sine wave) - set to minimum for static comb filtering"
     ] , [
         a lv2:InputPort ,
