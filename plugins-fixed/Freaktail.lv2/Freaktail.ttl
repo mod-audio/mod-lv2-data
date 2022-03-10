@@ -22,7 +22,7 @@ a doap:Project ;
       foaf:mbox <mailto:ploplolma@gmail.com>;
   ] .
 <http://faust-lv2.googlecode.com/Freaktail>
-       a lv2:Plugin ;
+       a lv2:ReverbPlugin , lv2:Plugin ;
        doap:name "Freaktail" ;
        lv2:binary <Freaktail.so> ;
        lv2:optionalFeature epp:supportsStrictBounds ;
