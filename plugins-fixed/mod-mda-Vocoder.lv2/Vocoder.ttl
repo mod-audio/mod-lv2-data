@@ -9,23 +9,6 @@
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-#mda:
-#    a doap:Project ;
-#    lv2:symbol "mda" ;
-#    doap:name "MDA LV2" ;
-#    doap:shortdesc "An LV2 port of the MDA plugins." ;
-#    doap:homepage <http://drobilla.net/software/mda-lv2> ;
-#    doap:maintainer [
-#        foaf:name "MOD Team";
-#        foaf:homepage <http://moddevices.com>;
-#        foaf:mbox <mailto:devel@moddevices.com>;
-#    ] ;
-#    doap:developer [
-#        a foaf:Person ;
-#        foaf:name "Paul Kellett" ;
-#        foaf:mbox <mailto:paul@mda-vst.com>
-#    ] .
-
 mda:mainIn
     a pg:StereoGroup ,
         pg:InputGroup ;
@@ -39,7 +22,6 @@ mda:mainOut
     lv2:name "Output" ;
     lv2:symbol "out" .
 
-
 mda:Vocoder
     a lv2:Plugin ,
         lv2:SpectralPlugin ;
@@ -49,13 +31,13 @@ mda:Vocoder
     doap:shortdesc "Switchable 8 or 16 band vocoder" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """
 This 16-band vocoder applies the spectrum of your voice to the waveform of an instrument.
 Plug your voice signal into the Modulator input and the instrument into the Carrier input.
-The modulator and carrier inputs will be split into a series of frequency-bands that are modifiable with the vocoder. After that, each carrier band will be modulated and added at the end. This vocoder also features an adjustable envelope and output level.
+The modulator and carrier inputs will be split into a series of frequency-bands that are modifiable with the vocoder.
+After that, each carrier band will be modulated and added at the end. This vocoder also features an adjustable envelope and output level.
 
 Features:
 Modeled by MDA
@@ -94,7 +76,6 @@ Modeled by MDA
         lv2:minimum -20.0 ;
         lv2:maximum 20.0 ;
         units:unit units:db ;
-
         rdfs:comment "Level trim"
     ] , [
         a lv2:InputPort ,
@@ -118,7 +99,6 @@ Modeled by MDA
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
         units:unit units:pc ;
-
         rdfs:comment "Level of high frequency vocoder band - may be unpleasant for some carrier signals"
     ] , [
         a lv2:InputPort ,
@@ -130,11 +110,11 @@ Modeled by MDA
         lv2:minimum 14.0 ;
         lv2:maximum 10000.0 ;
         units:unit units:ms ;
+        lv2:portProperty epp:logarithmic;
         lv2:scalePoint [
             rdf:value 14.0 ;
             rdfs:label "FREEZE" ;
         ];
-
         rdfs:comment "Envelope tracking speed - set to minimum to freeze filter shape"
     ] , [
         a lv2:InputPort ,
@@ -178,7 +158,6 @@ Modeled by MDA
             rdf:value 1.0 ;
             rdfs:label "16 BAND" ;
         ] ;
-
         rdfs:comment "Select 16-band operation, or 8-band for thinner sound and reduced processor usage" ;
     ] , [
         a lv2:InputPort ,

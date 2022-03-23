@@ -10,23 +10,6 @@
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-#mda:
-#    a doap:Project ;
-#    lv2:symbol "mda" ;
-#    doap:name "MDA LV2" ;
-#    doap:shortdesc "An LV2 port of the MDA plugins." ;
-#    doap:homepage <http://drobilla.net/software/mda-lv2> ;
-#    doap:maintainer [
-#        foaf:name "MOD Team";
-#        foaf:homepage <http://moddevices.com>;
-#        foaf:mbox <mailto:devel@moddevices.com>;
-#    ] ;
-#    doap:developer [
-#        a foaf:Person ;
-#        foaf:name "Paul Kellett" ;
-#        foaf:mbox <mailto:paul@mda-vst.com>
-#    ] .
-
 mda:mainIn
     a pg:StereoGroup ,
         pg:InputGroup ;
@@ -39,8 +22,6 @@ mda:mainOut
     pg:source mda:mainIn ;
     lv2:name "Output" ;
     lv2:symbol "out" .
-
-
 
 mda:DubDelay
     a lv2:Plugin ,
@@ -73,10 +54,10 @@ Modeled by MDA
         lv2:name "Delay" ;
         lv2:shortName "Time" ;
         lv2:symbol "delay" ;
-        lv2:default 1835.25 ;
+        lv2:default 460 ;
         lv2:minimum 0.0 ;
-        lv2:maximum 7341.0 ;
-        
+        lv2:maximum 7500.0 ;
+        lv2:portProperty epp:logarithmic ;
         units:unit units:ms ;
         lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
         rdfs:comment "Delay time (delay is mono for authenticity!)"
@@ -101,11 +82,7 @@ Modeled by MDA
         lv2:default 0.0 ;
         lv2:minimum -100.0 ;
         lv2:maximum 100.0 ;
-        units:unit [
-            rdfs:label   "Low/High" ;
-            units:symbol "Lo <> Hi" ;
-            units:render "%f";
-        ];
+        units:unit units:pc ;
         rdfs:comment "Feedback filtering - low-pass to left, high-pass to right"
     ] , [
         a lv2:InputPort ,
@@ -114,7 +91,7 @@ Modeled by MDA
         lv2:name "LFO Depth" ;
         lv2:shortName "Depth" ;
         lv2:symbol "lfo_depth" ;
-        lv2:default 50.0 ;
+        lv2:default 30.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
         units:unit units:pc;
@@ -127,10 +104,10 @@ Modeled by MDA
         lv2:shortName "Rate" ;
         lv2:portProperty mod:tapTempo;
         lv2:symbol "lfo_rate" ;
-        lv2:default 50.0 ;
-        lv2:minimum 0.10 ;
-        lv2:maximum 100.0 ;
-        units:unit units:pc;
+        lv2:default 0.05 ;
+        lv2:minimum 0.01 ;
+        lv2:maximum 10.0 ;
+        units:unit units:hz ;
         rdfs:comment "Modulation rate"
     ] , [
         a lv2:InputPort ,
@@ -148,16 +125,15 @@ Modeled by MDA
         a lv2:InputPort ,
             lv2:ControlPort ;
         lv2:index 6 ;
-        lv2:name "Output" ;
-        lv2:shortName "Level" ;
+        lv2:name "Level" ;
         lv2:symbol "output" ;
         lv2:default 0.0 ;
-        lv2:minimum -34.0 ;
+        lv2:minimum -12.0 ;
         lv2:maximum 6.0 ;
-        lv2:scalePoint [
-            rdfs:label "OFF" ;
-            rdf:value -34.0
-        ];
+        #lv2:scalePoint [
+        #    rdfs:label "OFF" ;
+        #    rdf:value -34.0
+        #];
         units:unit units:db;
         rdfs:comment "Level trim"
     ] , [

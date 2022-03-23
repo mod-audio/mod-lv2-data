@@ -24,44 +24,27 @@ mda:
         foaf:mbox <mailto:paul@mda-vst.com>
     ] .
 
-mda:mainIn
-    a pg:StereoGroup ,
-        pg:InputGroup ;
-    lv2:name "Input" ;
-    lv2:symbol "in" .
-
-mda:mainOut
-    a pg:StereoGroup ,
-        pg:OutputGroup ;
-    pg:source mda:mainIn ;
-    lv2:name "Output" ;
-    lv2:symbol "out" .
-
 mda:Leslie
     a lv2:Plugin ;
     rdfs:seeAlso <Leslie.ttl> ,
         <modgui.ttl> ;
     lv2:binary <Leslie.so> .
 
-mdap:Leslie-leslie-simulator
+<default-preset>
     a pset:Preset ;
     lv2:appliesTo mda:Leslie ;
-    rdfs:seeAlso <presets.ttl> .
+    rdfs:label "Default" ;
+    rdfs:seeAlso <default-preset.ttl> .
 
 mdap:Leslie-slow
     a pset:Preset ;
     lv2:appliesTo mda:Leslie ;
+    rdfs:label "Slow" ;
     rdfs:seeAlso <presets.ttl> .
 
 mdap:Leslie-fast
     a pset:Preset ;
     lv2:appliesTo mda:Leslie ;
+    rdfs:label "Fast" ;
     rdfs:seeAlso <presets.ttl> .
 
-
-
-<default-preset>
-    a <http://lv2plug.in/ns/ext/presets#Preset> ;
-    <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/mda/Leslie> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
-    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

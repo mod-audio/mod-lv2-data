@@ -7,39 +7,49 @@
 	lv2:appliesTo <http://moddevices.com/plugins/mda/EPiano> ;
 	lv2:port [
 		lv2:symbol "env_decay" ;
-		pset:value 50.0
-	] , [
+		pset:value 8.5 ;
+	] ;
+	lv2:port [
 		lv2:symbol "env_release" ;
-		pset:value 50.0
-	] , [
-		lv2:symbol "fine_tuning" ;
-		pset:value 0.0
-	] , [
+		pset:value 0.12 ;
+	] ;
+	lv2:port [
 		lv2:symbol "hardness" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "lfo_rate" ;
-		pset:value 23.28499985
-	] , [
-		lv2:symbol "modulation" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "overdrive" ;
-		pset:value 0.0
-	] , [
-		lv2:symbol "polyphonic" ;
-		pset:value 1.0
-	] , [
-		lv2:symbol "random_tuning" ;
-		pset:value 7.30000019
-	] , [
-		lv2:symbol "stereo_width" ;
-		pset:value 100.0
-	] , [
+		pset:value 0 ;
+	] ;
+	lv2:port [
 		lv2:symbol "treble_boost" ;
-		pset:value 0.0
-	] , [
+		pset:value 0 ;
+	] ;
+	lv2:port [
+		lv2:symbol "modulation" ;
+		pset:value 0 ;
+	] ;
+	lv2:port [
+		lv2:symbol "lfo_rate" ;
+		pset:value 4.0 ;
+	] ;
+	lv2:port [
 		lv2:symbol "vel_sense" ;
-		pset:value 0.0
+		pset:value 25 ;
+	] ;
+	lv2:port [
+		lv2:symbol "stereo_width" ;
+		pset:value 100 ;
+	] ;
+	lv2:port [
+		lv2:symbol "polyphonic" ;
+		pset:value 1 ;
+	] ;
+	lv2:port [
+		lv2:symbol "fine_tuning" ;
+		pset:value 0 ;
+	] ;
+	lv2:port [
+		lv2:symbol "random_tuning" ;
+		pset:value 7.3 ;
+	] ;
+	lv2:port [
+		lv2:symbol "overdrive" ;
+		pset:value 0 ;
 	] .
-

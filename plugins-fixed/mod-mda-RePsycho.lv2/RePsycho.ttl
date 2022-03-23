@@ -40,8 +40,6 @@ mda:mainOut
     lv2:name "Output" ;
     lv2:symbol "out" .
 
-
-
 mda:RePsycho
     a lv2:Plugin ,
         lv2:PitchPlugin ;
@@ -74,6 +72,7 @@ Modeled by MDA
         lv2:minimum -24.0 ;
         lv2:maximum 0.0 ;
         mod:default -12.0;
+        lv2:portProperty lv2:integer ;
         units:unit units:semitone12TET ;
         rdfs:comment "Coarse tune (semitones)"
     ] , [
@@ -83,7 +82,7 @@ Modeled by MDA
         lv2:name "Fine" ;
         lv2:symbol "fine" ;
         lv2:default 0.0 ;
-        lv2:minimum -99.0 ;
+        lv2:minimum -100.0 ;
         lv2:maximum 0.0 ;
         units:unit units:cent ;
         rdfs:comment "Fine tune (cents)"

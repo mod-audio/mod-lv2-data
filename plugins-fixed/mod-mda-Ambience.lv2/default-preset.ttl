@@ -18,4 +18,3 @@
 		lv2:symbol "size" ;
 		pset:value 7.0
 	] .
-

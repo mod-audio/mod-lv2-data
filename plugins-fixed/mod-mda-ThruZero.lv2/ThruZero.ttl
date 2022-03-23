@@ -50,12 +50,12 @@ mda:ThruZero
     doap:shortdesc "Classic tape-flanging simulation" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
-    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """Tape flanger and ADT
 
-This plug simulates tape-flanging, where two copies of a signal cancel out completely as the tapes pass each other. It can also be used for other "modulated delay" effects such as phasing and simple chorusing.""" ;
+This plug simulates tape-flanging, where two copies of a signal cancel out completely as the tapes pass each other.
+It can also be used for other "modulated delay" effects such as phasing and simple chorusing.""" ;
     lv2:minorVersion 0;
     lv2:microVersion 3;
     mod:brand "MDA" ;
@@ -68,15 +68,15 @@ This plug simulates tape-flanging, where two copies of a signal cancel out compl
         lv2:name "Rate" ;
         lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
         lv2:symbol "rate" ;
-        lv2:default 20.00 ;
-        lv2:minimum 0.10 ;
-        lv2:maximum 93.34 ;
+        lv2:default 0.08 ;
+        lv2:minimum 0.01 ;
+        lv2:maximum 10.0 ;
+        lv2:portProperty epp:logarithmic;
         lv2:scalePoint [
             rdfs:label "-" ;
-            rdf:value 93.34
+            rdf:value 0.01
         ];
-        units:unit units:s ;
-
+        units:unit units:hz ;
         rdfs:comment "Modulation rate (sine wave) - set to minimum for static comb filtering"
     ] , [
         a lv2:InputPort ,
@@ -86,7 +86,7 @@ This plug simulates tape-flanging, where two copies of a signal cancel out compl
         lv2:symbol "depth" ;
         lv2:default 20.0 ;
         lv2:minimum 0.0 ;
-        lv2:maximum 45.35 ;
+        lv2:maximum 42.00 ;
         units:unit units:ms ;
         rdfs:comment "Maximum modulation depth"
     ] , [
