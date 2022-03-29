@@ -16,6 +16,7 @@ mda:Image
     lv2:symbol "Image" ;
     doap:name "MDA Image" ;
     doap:shortdesc "Stereo image adjustment and M-S matrix" ;
+    rdfs:comment "Stereo image adjustment and M-S" ;
     doap:license <http://usefulinc.com/doap/licenses/gpl> ;
     lv2:optionalFeature lv2:hardRTCapable ;
     pg:mainInput mda:mainIn ;
