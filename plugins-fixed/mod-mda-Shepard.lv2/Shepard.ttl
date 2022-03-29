@@ -21,7 +21,8 @@ mda:Shepard
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     rdfs:comment """
-The MDA Shepard is a risset-tone generator.Use it to generate an endlessly rising or falling tone and build tension like never before.
+The MDA Shepard is a risset-tone generator.
+Use it to generate an endlessly rising or falling tone and build tension like never before.
 The Mode parameter has options for just hearing the tone, ring modulating the input with the tone, or mixing the input with the tone.
 
 Features:
