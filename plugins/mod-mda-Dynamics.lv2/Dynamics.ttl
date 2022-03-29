@@ -47,6 +47,7 @@ mda:Dynamics
         units:unit [
             rdfs:label   "ratio" ;
             units:symbol ":1" ;
+            units:render "%f" ;
         ];
         rdfs:comment """Very wide range allows "overcompression" where output gets quieter as input gets louder"""
     ] , [
