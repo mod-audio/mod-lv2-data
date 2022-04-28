@@ -46,6 +46,18 @@ conv:CfgMono
 	patch:writable conv:ir;
 	mod:brand "x42";
 	mod:label "IR Convolver";
+	rdfs:comment """
+Plugin to convolve audio signals, allowing you to load so-called Reverb Impulse Responses.
+This is the mono variant, with a single input and output. A stereo variant is also available.
+
+This plugin uses background processing and is suitable to process long impulse-responses.
+Configurations up to true-stereo (4 channels) are supported.
+
+The option to buffer the signal introduces one cycle of latency for increased reliability (and lower DSP load). It is enabled by default, but can be disabled for reduced latency.
+
+Features:
+Modeled by x42
+""";
 	lv2:port [
 		a atom:AtomPort, lv2:InputPort;
 		atom:bufferType atom:Sequence;
@@ -130,6 +142,18 @@ conv:CfgStereo
 	patch:writable conv:ir;
 	mod:brand "x42";
 	mod:label "IR Convolver ST";
+	rdfs:comment """
+Plugin to convolve audio signals, allowing you to load so-called Reverb Impulse Responses.
+This is the stereo variant, with a dual input and output. A mono variant is also available.
+
+This plugin uses background processing and is suitable to process long impulse-responses.
+Configurations up to true-stereo (4 channels) are supported.
+
+The option to buffer the signal introduces one cycle of latency for increased reliability (and lower DSP load). It is enabled by default, but can be disabled for reduced latency.
+
+Features:
+Modeled by x42
+""";
 	lv2:port [
 		a atom:AtomPort, lv2:InputPort;
 		atom:bufferType atom:Sequence;
