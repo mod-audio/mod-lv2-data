@@ -1,0 +1,44 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#>.
+@prefix units: <http://lv2plug.in/ns/extensions/units#>.
+@prefix zcpset: <http://gareus.org/oss/lv2/zeroconvolv/pset#> .
+
+@prefix conv:  <http://gareus.org/oss/lv2/zeroconvolv#>.
+
+conv:CfgMono
+	a lv2:Plugin;
+	lv2:binary <zeroconvolv.so>;
+	rdfs:seeAlso <zeroconvolv.ttl>.
+
+conv:CfgStereo
+	a lv2:Plugin;
+	lv2:binary <zeroconvolv.so>;
+	rdfs:seeAlso <zeroconvolv.ttl>.
+
+conv:ir
+	a lv2:Parameter;
+	mod:fileTypes "ir" ;
+	rdfs:label "Impulse Response";
+	rdfs:range atom:Path.
+
+zcpset:default
+	a pset:Preset;
+	lv2:appliesTo conv:CfgMono, conv:CfgStereo;
+	rdfs:label "Default (medium hall)";
+	lv2:port [
+		lv2:symbol "buffered" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "dry" ;
+		pset:value -60.0
+	] , [
+		lv2:symbol "wet" ;
+		pset:value -30.0
+	] ;
+		state:state [
+		conv:ir <hall1-medium.flac>;
+	] .
