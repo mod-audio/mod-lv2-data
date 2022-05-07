@@ -12,12 +12,12 @@
 conv:CfgMono
 	a lv2:Plugin;
 	lv2:binary <zeroconvolv.so>;
-	rdfs:seeAlso <zeroconvolv.ttl>.
+	rdfs:seeAlso <zeroconvolv.ttl>, <modguis.ttl>.
 
 conv:CfgStereo
 	a lv2:Plugin;
 	lv2:binary <zeroconvolv.so>;
-	rdfs:seeAlso <zeroconvolv.ttl>.
+	rdfs:seeAlso <zeroconvolv.ttl>, <modguis.ttl>.
 
 conv:ir
 	a lv2:Parameter;

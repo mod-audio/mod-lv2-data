@@ -1,0 +1,142 @@
+
+.x42-zeroconvo.mod-pedal {
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    color: white;
+    width: 458px;
+    height: 498px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.x42-zeroconvo.mod-pedal .x42-zeroconvo-branding {
+    height: 38px;
+    text-align: center;
+}
+
+.x42-zeroconvo.mod-pedal .x42-zeroconvo-branding span {
+    border: 2px solid transparent;
+    border-bottom-color: #ccc;
+    border-style: ridge;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 0px 12px;
+    vertical-align: bottom;
+}
+
+.x42-zeroconvo.mod-pedal .mod-control-group {
+    position: relative;
+    z-index: 35;
+}
+
+.x42-zeroconvo.mod-pedal .mod-enumerated-group {
+    margin: 2px;
+    border: 2px #000 solid;
+}
+
+.x42-zeroconvo.mod-pedal .mod-enumerated {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.x42-zeroconvo.mod-pedal .mod-enumerated .mod-enumerated-list {
+    display: block !important;
+    background-color: #2e2e2e;
+    color: #e6e6e6;
+    height: 300px;
+    overflow: auto;
+}
+.x42-zeroconvo.mod-pedal .mod-enumerated .mod-enumerated-list > div {
+    padding: 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.x42-zeroconvo.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected {
+    background-color: #939393;
+    border-left: 10px #565656 solid;
+    color: #070707;
+    font-weight: bold;
+}
+
+.x42-zeroconvo.mod-pedal .mod-enumerated .mod-enumerated-list > div:hover {
+    background-color: #424242;
+    cursor: pointer;
+}
+.x42-zeroconvo.mod-pedal .mod-enumerated .mod-enumerated-list > div.selected:hover {
+    background-color: #9e9e9e;
+}
+.x42-zeroconvo-content-bottom {
+    margin: 4px;
+    margin-bottom: 0px;
+}
+
+.x42-zeroconvo-info {
+    border: 2px #565656 solid;
+    border-radius: 6px;
+    background-color: #000;
+}
+.x42-zeroconvo-info .file-info-details {
+    font-size: 22px;
+    margin-left: 4px;
+    padding: 2px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.x42-zeroconvo-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 4px;
+}
+
+.x42-zeroconvo-controls > div {
+    display: block;
+    height: 50%;
+    text-align: center;
+    padding: 8px;
+}
+.x42-zeroconvo-controls > div:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px;
+    border-radius: 10px;
+}
+.x42-zeroconvo-controls > div.mod-knob {
+    padding: 8px 20px;
+}
+
+.x42-zeroconvo.mod-pedal .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.x42-zeroconvo.mod-pedal .mod-knob-image {
+    background-image:url(/resources/orange-knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    font-weight: bold;
+    height: 52px;
+    width: 52px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.x42-zeroconvo.mod-pedal .mod-switch-image {
+    background-image: url(/resources/switch.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.x42-zeroconvo.mod-pedal .mod-switch-image.off {
+    background-position: right center !important;
+}
+.x42-zeroconvo.mod-pedal .mod-switch-image.on {
+    background-position: left center !important;
+}

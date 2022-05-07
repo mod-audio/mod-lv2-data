@@ -1,0 +1,31 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+@prefix conv:  <http://gareus.org/oss/lv2/zeroconvolv#>.
+
+conv:CfgMono
+    modgui:gui [
+        modgui:label "x42 IR Convolver (Mono)" ;
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon.html> ;
+        modgui:javascript <modgui/javascript.js> ;
+        modgui:stylesheet <modgui/stylesheet.css> ;
+        modgui:screenshot <modgui/screenshot-mono.png> ;
+        modgui:thumbnail <modgui/thumbnail-mono.png> ;
+    ] .
+
+conv:CfgStereo
+    modgui:gui [
+        modgui:label "x42 IR Convolver (Stereo)" ;
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon.html> ;
+        modgui:javascript <modgui/javascript.js> ;
+        modgui:stylesheet <modgui/stylesheet.css> ;
+        modgui:screenshot <modgui/screenshot-stereo.png> ;
+        modgui:thumbnail <modgui/thumbnail-stereo.png> ;
+    ] .
