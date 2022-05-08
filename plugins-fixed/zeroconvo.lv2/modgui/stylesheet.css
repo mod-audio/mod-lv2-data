@@ -3,8 +3,8 @@
     background-color: #3d3d3d;
     border-radius: 10px;
     color: white;
-    width: 458px;
-    height: 498px;
+    width: 479px;
+    height: 500px;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -89,23 +89,33 @@
 .x42-zeroconvo-controls {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 2px;
     padding-top: 4px;
 }
 
 .x42-zeroconvo-controls > div {
     display: block;
-    height: 50%;
+    padding: 0px;
     text-align: center;
-    padding: 8px;
+}
+.x42-zeroconvo-controls > div.mod-knob {
+    width: 110px;
+}
+.x42-zeroconvo-controls > div.mod-switch {
+    position: relative;
+    top: 3px;
+    padding: 8px 8px;
+    height: 50%;
 }
 .x42-zeroconvo-controls > div:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.5);
     border: 5px;
     border-radius: 10px;
 }
-.x42-zeroconvo-controls > div.mod-knob {
-    padding: 8px 20px;
+.x42-zeroconvo-controls > div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 5px;
+    border-radius: 10px;
 }
 
 .x42-zeroconvo.mod-pedal .title {
@@ -113,13 +123,13 @@
     font-weight: bold;
 }
 .x42-zeroconvo.mod-pedal .mod-knob-image {
-    background-image:url(/resources/orange-knob.png{{{ns}}});
+    background-image:url(/resources/knob.png{{{ns}}});
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: auto 52px;
+    background-size: auto 44px;
     font-weight: bold;
-    height: 52px;
-    width: 52px;
+    height: 44px;
+    width: 44px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -133,6 +143,10 @@
     width: 100px;
     height: 50px;
     cursor: pointer;
+}
+.x42-zeroconvo.mod-pedal .mod-knob-current-value {
+    font-size: 16px;
+    white-space: nowrap;
 }
 .x42-zeroconvo.mod-pedal .mod-switch-image.off {
     background-position: right center !important;
