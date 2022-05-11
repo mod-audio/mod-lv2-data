@@ -88,7 +88,8 @@
 
 .x42-zeroconvo-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* old browsers compat */
+    justify-content: space-evenly;
     padding: 2px;
     padding-top: 4px;
 }
