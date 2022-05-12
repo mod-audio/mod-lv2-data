@@ -1,0 +1,15 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+<https://github.com/vitling/crypt>
+    a lv2:Plugin ;
+    lv2:binary <Crypt.so> ;
+    rdfs:seeAlso <Crypt.ttl> .
+
+<https://github.com/vitling/crypt#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/vitling/crypt> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
