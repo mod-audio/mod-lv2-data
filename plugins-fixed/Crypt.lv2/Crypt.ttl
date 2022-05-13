@@ -132,6 +132,15 @@
         lv2:maximum 1.0 ;
     ] ;
 
-    doap:name "Crypt" ;
-    doap:maintainer [ foaf:name "Vitling" ] .
+    rdfs:comment """Crypt is a software synthesiser plugin designed for creating spacious cold hyper-unisoned synth sounds.
+It features unison oscillation of up to 64 detuned oscillators, and parameters to create dirt and space in the sound.
 
+Features:
+Modeled by David Whiting
+""" ;
+
+    doap:name "Crypt" ;
+    doap:maintainer [ 
+        foaf:name "Vitling" ;
+        foaf:homepage <https://github.com/vitling/crypt> ;
+    ] .

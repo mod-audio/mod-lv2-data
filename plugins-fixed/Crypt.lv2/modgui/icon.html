@@ -1,0 +1,58 @@
+<div class="mod-pedal mod-pedal-crypt">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="mod-control-group crypt-group-top clearfix">
+        <div class="mod-slider" mod-role="icon-button" mod-button-type="slider">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="shape"></div>
+            <span class="mod-slider-current-value" mod-role="input-control-value" mod-port-symbol="shape"></span>
+        </div>
+        <div class="mod-slider" mod-role="icon-button" mod-button-type="slider">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="spread"></div>
+            <span class="mod-slider-current-value" mod-role="input-control-value" mod-port-symbol="spread"></span>
+        </div>
+        <div class="mod-slider" mod-role="icon-button" mod-button-type="slider">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="dirt"></div>
+            <span class="mod-slider-current-value" mod-role="input-control-value" mod-port-symbol="dirt"></span>
+        </div>
+        <div class="mod-slider" mod-role="icon-button" mod-button-type="slider">
+            <div class="mod-slider-image" mod-role="input-control-port" mod-port-symbol="space"></div>
+            <span class="mod-slider-current-value" mod-role="input-control-value" mod-port-symbol="space"></span>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image crypt-big-knob" mod-role="input-control-port" mod-port-symbol="attack"></div>
+            <span class="mod-knob-current-value" mod-role="input-control-value" mod-port-symbol="attack"></span>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image crypt-big-knob" mod-role="input-control-port" mod-port-symbol="release"></div>
+            <span class="mod-knob-current-value" mod-role="input-control-value" mod-port-symbol="release"></span>
+        </div>
+    </div>
+    <div class="mod-control-group crypt-group-bottom-left clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="tone"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="unison"></div>
+        </div>
+    </div>
+    <div class="mod-control-group crypt-group-bottom-right clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="master"></div>
+        </div>
+    </div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="mod-pedal-input">
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+    </div>
+</div>

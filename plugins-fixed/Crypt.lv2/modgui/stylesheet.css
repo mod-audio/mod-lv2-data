@@ -1,0 +1,160 @@
+/* abGate */
+
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+/* = CONTAINER
+================================================ */
+.mod-pedal-crypt {
+    background-image: url(/resources/ui.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.mod-pedal-crypt .mod-footswitch {
+    background-image: url(/resources/switch.png{{{ns}}});
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 60px;
+    position: absolute;
+    top: 338px;
+    left: 248px;
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.mod-pedal-crypt .mod-footswitch.off {
+    background-position: center right;
+}
+
+.mod-pedal-crypt .mod-control-group {
+    position: relative;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    z-index: 30;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-top {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 500px;
+    height: 200px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-bottom-left {
+    position: absolute;
+    top: 330px;
+    left: 22px;
+    width: 150px;
+    height: 48px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-bottom-right {
+    position: absolute;
+    top: 330px;
+    right: 22px;
+    width: 48px;
+    height: 48px;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-slider,
+.mod-pedal-crypt .mod-control-group .mod-knob {
+    position: absolute;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-knob .mod-knob-current-value,
+.mod-pedal-crypt .mod-control-group .mod-slider .mod-slider-current-value {
+    display: block;
+    border: 2px ridge #484848;
+    color: white;
+    width: 60px;
+    text-align: center;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-slider .mod-slider-current-value {
+    margin-top: 10px;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-slider {
+    width: 60px;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-slider .mod-slider-image {
+    background-image: url(/resources/slider.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: auto 125px;
+    height: 125px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-slider .mod-slider-image:hover {
+    cursor: pointer;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-knob {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.mod-pedal-crypt .mod-control-group .mod-knob .mod-knob-image {
+    background-image: url(/resources/knob.png{{{ns}}});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 48px;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+.mod-pedal-crypt .mod-control-group .mod-knob .mod-knob-image.crypt-big-knob {
+    background-size: auto 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-slider:nth-child(1) {
+    top: 20px;
+    left: 22px;
+}
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-slider:nth-child(2) {
+    top: 20px;
+    left: 122px;
+}
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-slider:nth-child(3) {
+    top: 20px;
+    left: 324px;
+}
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-slider:nth-child(4) {
+    top: 20px;
+    left: 424px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-knob:nth-child(5) {
+    top: 0px;
+    left: 225px;
+}
+.mod-pedal-crypt .mod-control-group.crypt-group-top > .mod-knob:nth-child(6) {
+    top: 110px;
+    left: 225px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-bottom-left > .mod-knob:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+.mod-pedal-crypt .mod-control-group.crypt-group-bottom-left > .mod-knob:nth-child(2) {
+    top: 0px;
+    left: 102px;
+}
+
+.mod-pedal-crypt .mod-control-group.crypt-group-bottom-right > .mod-knob {
+    top: 0px;
+    left: 0px;
+}
