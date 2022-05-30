@@ -5,4 +5,4 @@
 <https://github.com/michaelwillis/dragonfly-reverb>
     a lv2:Plugin ;
     lv2:binary <DragonflyHallReverb_dsp.so> ;
-    rdfs:seeAlso <DragonflyHallReverb_dsp.ttl> .
+    rdfs:seeAlso <DragonflyHallReverb_dsp.ttl> , <modgui.ttl> .

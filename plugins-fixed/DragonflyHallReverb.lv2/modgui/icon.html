@@ -1,0 +1,89 @@
+<div class="mod-pedal mod-pedal-dragonfly-hallreverb">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="mod-control-group dragonfly-hallreverb-group-levels clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="early_level"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="early_send"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="late_level"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-highs clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="high_cut"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="high_xo"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="high_mult"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-lows clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="low_cut"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="low_xo"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="low_mult"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-character-1 clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="size"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="diffuse"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="width"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-character-2 clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="modulation"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="spin"></div>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image small" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="wander"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-dry clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="dry_level"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-decay clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="decay"></div>
+        </div>
+    </div>
+    <div class="mod-control-group dragonfly-hallreverb-group-predelay clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image large" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="delay"></div>
+        </div>
+    </div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+    </div>
+</div>
