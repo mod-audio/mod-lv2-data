@@ -37,21 +37,21 @@
 
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-levels {
     left: 402px;
-    top: 44px;
+    top: 42px;
     width: 212px;
     height: 62px;
 }
 
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-highs {
     left: 358px;
-    top: 200px;
+    top: 198px;
     width: 238px;
     height: 62px;
 }
 
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-lows {
     left: 358px;
-    top: 346px;
+    top: 344px;
     width: 238px;
     height: 62px;
 }
@@ -116,7 +116,7 @@
 }
 
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-levels > .mod-knob:nth-child(2) {
-    top: 12px;
+    top: 10px;
     left: 82px;
 }
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-levels > .mod-knob:nth-child(3) {
@@ -130,12 +130,12 @@
 
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-highs > .mod-knob:nth-child(2),
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-lows > .mod-knob:nth-child(2) {
-    top: 12px;
+    top: 10px;
     left: 98px;
 }
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-highs > .mod-knob:nth-child(3),
 .mod-pedal-dragonfly-hallreverb .mod-control-group.dragonfly-hallreverb-group-lows > .mod-knob:nth-child(3) {
-    top: 12px;
+    top: 10px;
     left: 190px;
 }
 
