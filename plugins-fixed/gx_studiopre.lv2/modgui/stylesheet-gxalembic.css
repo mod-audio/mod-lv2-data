@@ -1,241 +1,96 @@
-/* SKINS */
-.mod-rack-model-001{{{cns}}} {
-    background-image:url(/resources/racks/model-001/model-001.png{{{ns}}});
-    background-position:center center;
-    background-repeat:no-repeat;
-    font-family:Helvetica,Arial,Sans-serif;
-    height:150px;
-    position:relative;
-    width:639px;
+.mod-pedal{{{cns}}} {
+    background-image: url(/resources/gx_alembic_mono_bg.png{{{ns}}});
+    width: 729px;
+    height: 161px;
 }
 
-/* THE AUTHOR */
-.mod-rack-model-001{{{cns}}} .mod-plugin-brand h1 {
-    color:#fff;
-    font-size:14px;
-    left:50px;
-    line-height:1;
-    margin:0;
-    position:absolute;
-    top:20px;
-}
-
-/* PLUGIN'S NAME */
-.mod-rack-model-001{{{cns}}} .mod-plugin-name h1 {
-    color:#fff;
-    font-size:18px;
-    left:50px;
-    line-height:1;
-    margin:0;
-    position:absolute;
-    top:40px;
-}
-
-/* INPUT/OUTPUT */
-.mod-rack-model-001{{{cns}}} .mod-pedal-input {
-    top:25px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-pedal-output {
-    top:25px;
-}
-
-/* CONTROLS */
-.mod-rack-model-001{{{cns}}} .mod-control-group {
-    bottom:15px;
-    color:#fff;
-    font-size:10px;
-    height:73px;
-    left:42px;
-    position:absolute;
-    right:42px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-control-group > div {
-    margin-right:4px;
-}
-
-/* SWITCH ON/OFF GENERAL */
-.mod-rack-model-001{{{cns}}} .mod-switch {
-    cursor:pointer;
-    float:left;
-    height:73px;
-    position:relative;
-    width:118px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-switch-image {
-    background-image:url(/resources/switches/switch-001.png{{{ns}}});
-    background-position:-9px 0px;
-    background-repeat:no-repeat;
-    background-size:auto 73px;
-    height:73px;
-    width:73px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-switch-image.on {
-    background-position:-82px 0px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-switch-image.off {
-    background-position:-9px 0px;
-}
-
-/* = Toggle
+/* PORTS
 ================================================ */
 
-.mod-rack-model-001{{{cns}}} .mod-toggle {
-    float:left;
-    position:relative;
-    text-align:center;
-    background-image:url(/resources/switches/toggle.png{{{ns}}});
-    background-position:top center;
-    background-repeat:no-repeat;
-    background-size:auto 120px;
-    cursor:pointer;
-    height: 60px;
-    width: 50px;
-    margin: 4px auto 0 auto;
-    z-index:2;
+.mod-pedal{{{cns}}} .mod-pedal-input,
+.mod-pedal{{{cns}}} .mod-pedal-output
+{
+    top: 54px;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-toggle.on {
-    background-position: bottom center !important;
+.mod-pedal{{{cns}}} .mod-switch {
+    background-image: url(/resources/assets/gx_alambic_power_switch.png{{{ns}}});
+    bottom: 46px;
+    left: 600px;
+    height: 62px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 41px;
+    z-index: 21;
+    cursor: pointer;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-toggle .mod-toggle-title {
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:10px;
-    font-weight:bold;
-    height:16px;
-    left:0;
-    overflow:hidden;
-    position:absolute;
-    right:0;
-    text-transform:uppercase;
-    top:-5px;
-    z-index:1;
+.mod-pedal{{{cns}}} .mod-switch.off {
+    background-position: right;
 }
 
-
-/* CHICKEN HEAD */
-.mod-rack-model-001{{{cns}}} .mod-chicken-head {
-    float:left;
-    height:73px;
-    overflow:hidden;
-    position:relative;
-    text-align:center;
-    width:80px;
+.mod-pedal{{{cns}}} .mod-switch.on {
+    background-position: left;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-chicken-head .mod-chicken-head-image {
-    background-image:url(/resources/knobs/chicken-head/_strip.png{{{ns}}});
-    background-position:left 0px;
-    background-repeat:no-repeat;
-    background-size:auto 80px;
-    height:73px;
-    margin-top:3px;
-    position:relative;
-    width:80px;
-    z-index:2;
+.mod-pedal{{{cns}}} .alembic-bass {
+    bottom: 35px;
+    left: 207px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 21;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-chicken-head .mod-chicken-head-title {
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:10px;
-    font-weight:bold;
-    height:16px;
-    left:0;
-    overflow:hidden;
-    position:absolute;
-    right:0;
-    text-transform:uppercase;
-    top:0;
-    z-index:1;
+.mod-pedal{{{cns}}} .alembic-mid {
+    bottom: 35px;
+    left: 285px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 21;
 }
 
-/* ENUMERATED LIST */
-.mod-rack-model-001{{{cns}}} .mod-enumerated {
-    display:inline-block;
-    overflow:hidden;
-    position:absolute;
-    top:-42px;
+.mod-pedal{{{cns}}} .alembic-treble {
+    bottom: 35px;
+    left: 363px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 21;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-1 {
-    left:135px;
-    width:326px;
+.mod-pedal{{{cns}}} .alembic-volume {
+    bottom: 35px;
+    left: 441px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 21;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-2 {
-    left:476px;
-    width:326px;
+.mod-pedal{{{cns}}} .alembic-knob {
+    background-image: url(/resources/assets/gx_alambic_knob.png{{{ns}}});
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    background-size: auto 66px;
+    height: 66px;
+    position: relative;
+    width: 66px;
+    z-index: 10;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-3 {
-    left:820px;
-    width:98px;
+.mod-pedal{{{cns}}} .alembic-bright-switch {
+    background-image: url(/resources/assets/switch_toggle.png{{{ns}}});
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 28px 77px;
+    bottom: 47px;
+    left: 525px;
+    height: 42px;
+    width: 33px;
+    position: absolute;
+    z-index: 30;
 }
 
-.mod-rack-model-001{{{cns}}} .mod-enumerated .mod-enumerated-selected {
-    background-color:rgba(255,255,255,.2);
-    background-image:url(/resources/utils/dropdown-arrow-white.png{{{ns}}});
-    background-position:right center;
-    background-repeat:no-repeat;
-    border-radius:4px;
-    box-shadow:inset 1px 1px 5px #000;
-    color:#fff;
-    font-size:14px;
-    height:34px;
-    line-height:2.5;
-    margin-right:8px;
-    overflow:hidden;
-    padding:0 9px;
-}
-
-/* WHEN IS HOVER */
-.mod-rack-model-001{{{cns}}} .mod-enumerated:hover .mod-enumerated-selected {
-    border-radius:4px 4px 0 0;
-}
-
-/* THE LIST OF OPTIONS */
-.mod-rack-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list {
-    display:none;
-    background:rgba(0,0,0,.9);
-    height:85px;
-    overflow:auto;
-    position:relative;
-    z-index:3;
-    font-weight:bold;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list > div {
-    padding:3px 9px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-enumerated .mod-enumerated-list > div:hover {
-    background:rgba(255,255,255,.2);
-    cursor:pointer;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-1:hover .mod-enumerated-list,
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-2:hover .mod-enumerated-list {
-    width:318px;
-}
-
-.mod-rack-model-001{{{cns}}} .mod-enumerated.mod-enumerated-3:hover .mod-enumerated-list {
-    width:90px;
-}
-
-/* SEPARATOR */
-.mod-rack-model-001{{{cns}}} .mod-separator {
-    background:#bbb;
-    border-color:#000;
-    border-style:solid;
-    border-width:0 1px 0 0;
-    display:inline-block;
-    float:left;
-    height:69px;
-    margin-top:2px;
-    width:1px;
+.mod-pedal{{{cns}}} .alembic-bright-switch.on {
+    background-position: left center;
+    bottom: 43px;
 }
