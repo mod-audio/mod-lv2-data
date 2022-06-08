@@ -1,0 +1,56 @@
+<div class="airwindows-starchild mod-pedal">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+    <div class="airwindows-starchild border"></div>
+    <div class="airwindows-starchild name"><h1>StarChild</h1></div>
+    <div class="airwindows-starchild brand"><h1>airwindows</h1></div>
+    <div class="mod-light on" mod-role="bypass-light"></div>
+    <div class="mod-control-group clearfix">
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="sustain"></div>
+            <span class="mod-knob-title">Sustain</span>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="grain"></div>
+            <span class="mod-knob-title">Grain</span>
+        </div>
+        <div class="mod-knob">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-widget-rotation="270" mod-port-symbol="drywet"></div>
+            <span class="mod-knob-title">Dry/Wet</span>
+        </div>
+    </div>
+    <div class="mod-footswitch" mod-role="bypass"></div>
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+        {{#effect.ports.midi.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.midi.input}}
+        {{#effect.ports.cv.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.cv.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+        {{#effect.ports.midi.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-midi-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.midi.output}}
+        {{#effect.ports.cv.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-cv-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.cv.output}}
+    </div>
+</div>

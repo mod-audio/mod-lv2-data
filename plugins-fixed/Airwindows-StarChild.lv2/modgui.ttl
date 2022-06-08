@@ -1,0 +1,14 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix state:  <http://lv2plug.in/ns/ext/state#> .
+
+<https://hannesbraun.net/ns/lv2/airwindows/starchild>
+    mod:brand "Airwindows" ;
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-starchild.html> ;
+        modgui:stylesheet <modgui/stylesheet-starchild.css> ;
+        modgui:screenshot <modgui/screenshot-starchild.png> ;
+        modgui:thumbnail <modgui/thumbnail-starchild.png> ;
+    ] .

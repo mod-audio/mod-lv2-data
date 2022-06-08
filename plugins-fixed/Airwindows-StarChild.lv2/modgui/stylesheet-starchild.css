@@ -1,0 +1,99 @@
+/* main pedal */
+.airwindows-starchild.mod-pedal {
+    background: #36454a;
+    border-radius: 24px;
+    color: white;
+    width: 200px;
+    height: 400px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.airwindows-starchild.mod-pedal .border {
+    border: 2px solid #5b6365;
+    border-radius: 25px;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+}
+
+.airwindows-starchild.mod-pedal .brand {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.airwindows-starchild.mod-pedal .brand h1 {
+    font-size: 18px;
+}
+
+.airwindows-starchild.mod-pedal .name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    text-align: center;
+}
+.airwindows-starchild.mod-pedal .name h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.airwindows-starchild .mod-light {
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 32px;
+    left: 0px;
+    right: 0px;
+    bottom: 90px;
+}
+
+.airwindows-starchild .mod-footswitch {
+    background-image: url(/resources/components/rw_CKSS_0.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 21px 30px;
+    cursor: pointer;
+    width: 21px;
+    height: 30px;
+    position: absolute !important;
+    left: 0px;
+    right: 0px;
+    bottom: 60px;
+    margin: auto;
+}
+.airwindows-starchild .mod-footswitch.off {
+    background-image: url(/resources/components/rw_CKSS_1.svg{{{ns}}});
+}
+
+/* rw_knob_large_dark.svg */
+.airwindows-starchild .mod-control-group {
+    position: relative;
+    top: 58px;
+    text-align: center;
+    z-index: 30;
+}
+
+.airwindows-starchild .mod-control-group .mod-knob {
+    display: inline-block;
+    padding: 16px 8px 0px 8px;
+    background-image: url(/resources/components/rw_knob_bg.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
+}
+
+.airwindows-starchild .mod-control-group .mod-knob .mod-knob-image {
+    background-image: url(/resources/components/rw_knob_large_dark.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    height: 64px;
+    width: 64px;
+}
+
+.airwindows-starchild .mod-control-group .mod-knob > span.mod-knob-title {
+    font-size: 13px;
+}
