@@ -5,4 +5,4 @@
 <urn:dragonfly:plate>
     a lv2:Plugin ;
     lv2:binary <DragonflyPlateReverb_dsp.so> ;
-    rdfs:seeAlso <DragonflyPlateReverb_dsp.ttl> .
+    rdfs:seeAlso <DragonflyPlateReverb_dsp.ttl> , <modgui.ttl> .

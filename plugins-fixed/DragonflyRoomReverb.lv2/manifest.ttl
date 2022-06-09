@@ -5,4 +5,4 @@
 <urn:dragonfly:room>
     a lv2:Plugin ;
     lv2:binary <DragonflyRoomReverb_dsp.so> ;
-    rdfs:seeAlso <DragonflyRoomReverb_dsp.ttl> .
+    rdfs:seeAlso <DragonflyRoomReverb_dsp.ttl> , <modgui.ttl> .

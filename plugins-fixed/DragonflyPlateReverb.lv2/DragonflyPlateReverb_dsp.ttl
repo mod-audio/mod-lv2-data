@@ -102,9 +102,21 @@
         lv2:index 8 ;
         lv2:name "Algorithm" ;
         lv2:symbol "algorithm" ;
-        lv2:default 1 ;
+        lv2:portProperty lv2:enumeration , lv2:integer ;
+        lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 2 ;
+        lv2:scalePoint
+        [
+            rdfs:label "Simple" ;
+            rdf:value 0
+        ] , [
+            rdfs:label "Nested" ;
+            rdf:value 1
+        ] , [
+            rdfs:label "Tank" ;
+            rdf:value 2
+        ]
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
