@@ -1,0 +1,98 @@
+/* = CONTAINER
+================================================ */
+.mod-pedal-dragonfly-plate{
+    background-image: url(/resources/background.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 538 482px;
+    width: 538px;
+    height: 482px;
+    border-radius: 10px;
+}
+
+.mod-pedal-dragonfly-plate .mod-footswitch {
+    background-image: url(/resources/switch.png{{{ns}}});
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: auto 56px;
+    position: absolute;
+    left: 368px;
+    top: 425px;
+    width: 56px;
+    height: 28px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.mod-pedal-dragonfly-plate .mod-footswitch.off {
+    background-position: top left;
+}
+
+
+.mod-pedal-dragonfly-plate .mod-control-group {
+    position: absolute;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    z-index: 30;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-top {
+    left: 69px;
+    top: 26px;
+    width: 212px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-shape {
+    left: 114px;
+    top: 163px;
+    width: 212px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group .mod-knob {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group .mod-knob .mod-knob-image {
+    background-position: left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group .mod-knob .mod-knob-image.large {
+    background-image: url(/resources/knob-large.png{{{ns}}});
+    background-size: 62px 62px;
+    height: 62px;
+    width: 62px;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group .mod-knob .mod-knob-image.small {
+    background-image: url(/resources/knob-small.png{{{ns}}});
+    background-size: 47px 47px;
+    height: 47px;
+    width: 47px;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-top > .mod-knob:nth-child(2) {
+    left: 112px;
+}
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-top > .mod-knob:nth-child(3) {
+    left: 224px;
+}
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-top > .mod-knob:nth-child(4) {
+    left: 336px;
+}
+
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-shape > .mod-knob:nth-child(2) {
+    left: 100px;
+}
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-shape > .mod-knob:nth-child(3) {
+    left: 200px;
+}
+.mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-shape > .mod-knob:nth-child(4) {
+    left: 300px;
+}

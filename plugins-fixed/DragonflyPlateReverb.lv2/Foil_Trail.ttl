@@ -1,0 +1,35 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	rdfs:label "Foil Trail" ;
+	lv2:port [
+		lv2:symbol "algorithm" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "early_damp" ;
+		pset:value 13000.0
+	] , [
+		lv2:symbol "high_cut" ;
+		pset:value 16000.0
+	] , [
+		lv2:symbol "low_cut" ;
+		pset:value 200.0
+	] , [
+		lv2:symbol "predelay" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 50.0
+	] .
+

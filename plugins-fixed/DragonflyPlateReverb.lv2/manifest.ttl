@@ -1,8 +1,48 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
 <urn:dragonfly:plate>
     a lv2:Plugin ;
     lv2:binary <DragonflyPlateReverb_dsp.so> ;
-    rdfs:seeAlso <DragonflyPlateReverb_dsp.ttl> .
+    rdfs:seeAlso <DragonflyPlateReverb_dsp.ttl> , <modgui.ttl> .
+
+<Abrupt_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Abrupt_Plate.ttl> .
+
+<Bright_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Bright_Plate.ttl> .
+
+<Clear_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Clear_Plate.ttl> .
+
+<Dark_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Dark_Plate.ttl> .
+
+<Foil_Trail.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Foil_Trail.ttl> .
+
+<Metal_Roof.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Metal_Roof.ttl> .
+
+<Narrow_Tank.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Narrow_Tank.ttl> .
+
+<Phat_Tank.ttl>
+	lv2:appliesTo <urn:dragonfly:plate> ;
+	a pset:Preset ;
+	rdfs:seeAlso <Phat_Tank.ttl> .

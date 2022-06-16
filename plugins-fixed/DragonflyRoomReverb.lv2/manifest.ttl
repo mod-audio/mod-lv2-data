@@ -1,8 +1,133 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
 <urn:dragonfly:room>
     a lv2:Plugin ;
     lv2:binary <DragonflyRoomReverb_dsp.so> ;
-    rdfs:seeAlso <DragonflyRoomReverb_dsp.ttl> .
+    rdfs:seeAlso <DragonflyRoomReverb_dsp.ttl> , <modgui.ttl> .
+
+<p01_Small_Bright_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p01_Small_Bright_Room.ttl> .
+
+<p02_Small_Clear_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p02_Small_Clear_Room.ttl> .
+
+<p03_Small_Dark_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p03_Small_Dark_Room.ttl> .
+
+<p04_Small_Drum_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p04_Small_Drum_Room.ttl> .
+
+<p05_Small_Vocal_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p05_Small_Vocal_Room.ttl> .
+
+<p11_Medium_Bright_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p11_Medium_Bright_Room.ttl> .
+
+<p12_Medium_Clear_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p12_Medium_Clear_Room.ttl> .
+
+<p13_Medium_Dark_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p13_Medium_Dark_Room.ttl> .
+
+<p14_Medium_Drum_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p14_Medium_Drum_Room.ttl> .
+
+<p15_Medium_Vocal_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p15_Medium_Vocal_Room.ttl> .
+
+<p21_Large_Bright_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p21_Large_Bright_Room.ttl> .
+
+<p22_Large_Clear_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p22_Large_Clear_Room.ttl> .
+
+<p23_Large_Dark_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p23_Large_Dark_Room.ttl> .
+
+<p24_Large_Drum_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p24_Large_Drum_Room.ttl> .
+
+<p25_Large_Vocal_Room.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p25_Large_Vocal_Room.ttl> .
+
+<p31_Bright_Hall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p31_Bright_Hall.ttl> .
+
+<p32_Clear_Hall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p32_Clear_Hall.ttl> .
+
+<p33_Dark_Hall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p33_Dark_Hall.ttl> .
+
+<p34_Percussion_Hall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p34_Percussion_Hall.ttl> .
+
+<p35_Vocal_Hall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p35_Vocal_Hall.ttl> .
+
+<p41_Bright_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p41_Bright_Plate.ttl> .
+
+<p42_Dark_Plate.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p42_Dark_Plate.ttl> .
+
+<p43_Brick_Wall.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p43_Brick_Wall.ttl> .
+
+<p44_Echo_Chamber.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p44_Echo_Chamber.ttl> .
+
+<p45_Long_Tunnel.ttl>
+	lv2:appliesTo <urn:dragonfly:room> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p45_Long_Tunnel.ttl> .

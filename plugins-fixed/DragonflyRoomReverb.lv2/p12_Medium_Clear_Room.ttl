@@ -1,0 +1,53 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <urn:dragonfly:room> ;
+	rdfs:label "Medium Clear Room" ;
+	lv2:port [
+		lv2:symbol "boost_freq" ;
+		pset:value 600.0
+	] , [
+		lv2:symbol "decay" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "diffuse" ;
+		pset:value 70.0
+	] , [
+		lv2:symbol "early_damp" ;
+		pset:value 10000.0
+	] , [
+		lv2:symbol "in_high_cut" ;
+		pset:value 16000.0
+	] , [
+		lv2:symbol "in_low_cut" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "late_damp" ;
+		pset:value 9400.0
+	] , [
+		lv2:symbol "low_boost" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "predelay" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "size" ;
+		pset:value 12.0
+	] , [
+		lv2:symbol "spin" ;
+		pset:value 0.80000001
+	] , [
+		lv2:symbol "wander" ;
+		pset:value 40.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 100.0
+	] .
+

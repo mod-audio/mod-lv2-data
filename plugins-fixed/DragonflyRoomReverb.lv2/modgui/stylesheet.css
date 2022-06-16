@@ -1,0 +1,149 @@
+/* = CONTAINER
+================================================ */
+.mod-pedal-dragonfly-roomreverb {
+    background-image: url(/resources/background.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 780px 482px;
+    width: 780px;
+    height: 482px;
+    border-radius: 10px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-footswitch {
+    background-image: url(/resources/switch.png{{{ns}}});
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: auto 56px;
+    position: absolute;
+    left: 662px;
+    top: 395px;
+    width: 56px;
+    height: 28px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.mod-pedal-dragonfly-roomreverb .mod-footswitch.off {
+    background-position: top left;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group {
+    position: absolute;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    z-index: 30;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-levels {
+    left: 402px;
+    top: 42px;
+    width: 212px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-highs {
+    left: 358px;
+    top: 198px;
+    width: 238px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-lows {
+    left: 358px;
+    top: 344px;
+    width: 238px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-character {
+    left: 67px;
+    top: 261px;
+    width: 193px;
+    height: 47px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-dry {
+    left: 653px;
+    top: 43px;
+    width: 62px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-decay {
+    left: 657px;
+    top: 174px;
+    width: 62px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-predelay {
+    left: 657px;
+    top: 280px;
+    width: 62px;
+    height: 62px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group .mod-knob {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group .mod-knob .mod-knob-image {
+    background-position: left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group .mod-knob .mod-knob-image.large {
+    background-image: url(/resources/knob-large.png{{{ns}}});
+    background-size: 62px 62px;
+    height: 62px;
+    width: 62px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group .mod-knob .mod-knob-image.small {
+    background-image: url(/resources/knob-small.png{{{ns}}});
+    background-size: 47px 47px;
+    height: 47px;
+    width: 47px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-levels > .mod-knob:nth-child(2) {
+    top: 10px;
+    left: 82px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-levels > .mod-knob:nth-child(3) {
+    top: 0px;
+    left: 151px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-levels > .mod-knob:nth-child(4) {
+    top: 0px;
+    left: calc(212px - 62px);
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-highs > .mod-knob:nth-child(2),
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-lows > .mod-knob:nth-child(2) {
+    top: -8px;
+    left: 98px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-highs > .mod-knob:nth-child(3),
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-lows > .mod-knob:nth-child(3) {
+    top: -8px;
+    left: 190px;
+}
+
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-character > .mod-knob:nth-child(2) {
+    top: 100px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-character > .mod-knob:nth-child(3) {
+    top: 50px;
+    left: 73px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-character > .mod-knob:nth-child(4) {
+    left: 146px;
+}
+.mod-pedal-dragonfly-roomreverb .mod-control-group.dragonfly-roomreverb-group-character > .mod-knob:nth-child(5) {
+    top: 100px;
+    left: 147px;
+}
+

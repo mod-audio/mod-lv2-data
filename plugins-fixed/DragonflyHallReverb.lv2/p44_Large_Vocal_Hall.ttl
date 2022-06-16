@@ -1,0 +1,56 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	rdfs:label "Large Vocal Hall" ;
+	lv2:port [
+		lv2:symbol "decay" ;
+		pset:value 2.4000001
+	] , [
+		lv2:symbol "delay" ;
+		pset:value 12.0
+	] , [
+		lv2:symbol "diffuse" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "high_cut" ;
+		pset:value 6250.0
+	] , [
+		lv2:symbol "high_mult" ;
+		pset:value 0.30000001
+	] , [
+		lv2:symbol "high_xo" ;
+		pset:value 4600.0
+	] , [
+		lv2:symbol "low_cut" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "low_mult" ;
+		pset:value 2.25
+	] , [
+		lv2:symbol "low_xo" ;
+		pset:value 700.0
+	] , [
+		lv2:symbol "modulation" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "size" ;
+		pset:value 40.0
+	] , [
+		lv2:symbol "spin" ;
+		pset:value 2.0999999
+	] , [
+		lv2:symbol "wander" ;
+		pset:value 17.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 80.0
+	] .
+

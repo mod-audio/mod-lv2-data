@@ -1,8 +1,133 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
 <https://github.com/michaelwillis/dragonfly-reverb>
     a lv2:Plugin ;
     lv2:binary <DragonflyHallReverb_dsp.so> ;
     rdfs:seeAlso <DragonflyHallReverb_dsp.ttl> , <modgui.ttl> .
+
+<p01_Bright_Room.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p01_Bright_Room.ttl> .
+
+<p02_Clear_Room.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p02_Clear_Room.ttl> .
+
+<p03_Dark_Room.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p03_Dark_Room.ttl> .
+
+<p04_Small_Chamber.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p04_Small_Chamber.ttl> .
+
+<p05_Large_Chamber.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p05_Large_Chamber.ttl> .
+
+<p11_Acoustic_Studio.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p11_Acoustic_Studio.ttl> .
+
+<p12_Electric_Studio.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p12_Electric_Studio.ttl> .
+
+<p13_Percussion_Studio.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p13_Percussion_Studio.ttl> .
+
+<p14_Piano_Studio.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p14_Piano_Studio.ttl> .
+
+<p15_Vocal_Studio.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p15_Vocal_Studio.ttl> .
+
+<p21_Small_Bright_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p21_Small_Bright_Hall.ttl> .
+
+<p22_Small_Clear_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p22_Small_Clear_Hall.ttl> .
+
+<p23_Small_Dark_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p23_Small_Dark_Hall.ttl> .
+
+<p24_Small_Percussion_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p24_Small_Percussion_Hall.ttl> .
+
+<p25_Small_Vocal_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p25_Small_Vocal_Hall.ttl> .
+
+<p31_Medium_Bright_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p31_Medium_Bright_Hall.ttl> .
+
+<p32_Medium_Clear_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p32_Medium_Clear_Hall.ttl> .
+
+<p33_Medium_Dark_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p33_Medium_Dark_Hall.ttl> .
+
+<p34_Medium_Percussion_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p34_Medium_Percussion_Hall.ttl> .
+
+<p35_Medium_Vocal_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p35_Medium_Vocal_Hall.ttl> .
+
+<p41_Large_Bright_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p41_Large_Bright_Hall.ttl> .
+
+<p42_Large_Clear_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p42_Large_Clear_Hall.ttl> .
+
+<p43_Large_Dark_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p43_Large_Dark_Hall.ttl> .
+
+<p44_Large_Vocal_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p44_Large_Vocal_Hall.ttl> .
+
+<p45_Great_Hall.ttl>
+	lv2:appliesTo <https://github.com/michaelwillis/dragonfly-reverb> ;
+	a pset:Preset ;
+	rdfs:seeAlso <p45_Great_Hall.ttl> .
