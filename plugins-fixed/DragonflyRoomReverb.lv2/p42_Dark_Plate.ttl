@@ -8,26 +8,44 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <urn:dragonfly:plate> ;
-	rdfs:label "Bright Plate" ;
+	lv2:appliesTo <urn:dragonfly:room> ;
+	rdfs:label "Dark Plate" ;
 	lv2:port [
-		lv2:symbol "algorithm" ;
-		pset:value 1.0
+		lv2:symbol "boost_freq" ;
+		pset:value 500.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.40000001
+		pset:value 2.0
+	] , [
+		lv2:symbol "diffuse" ;
+		pset:value 78.0
 	] , [
 		lv2:symbol "early_damp" ;
-		pset:value 13000.0
+		pset:value 5200.0
 	] , [
-		lv2:symbol "high_cut" ;
+		lv2:symbol "in_high_cut" ;
 		pset:value 16000.0
 	] , [
-		lv2:symbol "low_cut" ;
-		pset:value 200.0
+		lv2:symbol "in_low_cut" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "late_damp" ;
+		pset:value 4000.0
+	] , [
+		lv2:symbol "low_boost" ;
+		pset:value 40.0
 	] , [
 		lv2:symbol "predelay" ;
 		pset:value 0.0
+	] , [
+		lv2:symbol "size" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "spin" ;
+		pset:value 0.40000001
+	] , [
+		lv2:symbol "wander" ;
+		pset:value 20.0
 	] , [
 		lv2:symbol "width" ;
 		pset:value 100.0

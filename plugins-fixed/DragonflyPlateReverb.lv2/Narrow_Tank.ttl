@@ -17,14 +17,8 @@
 		lv2:symbol "decay" ;
 		pset:value 0.60000002
 	] , [
-		lv2:symbol "dry_level" ;
-		pset:value 80.0
-	] , [
 		lv2:symbol "early_damp" ;
 		pset:value 7000.0
-	] , [
-		lv2:symbol "early_level" ;
-		pset:value 20.0
 	] , [
 		lv2:symbol "high_cut" ;
 		pset:value 10000.0
@@ -37,8 +31,5 @@
 	] , [
 		lv2:symbol "width" ;
 		pset:value 60.0
-	] ;
-	state:state [
-		<urn:distrho:preset> "Narrow Tank"
 	] .
 
