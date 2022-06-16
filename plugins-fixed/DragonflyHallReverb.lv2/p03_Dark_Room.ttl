@@ -52,8 +52,5 @@
 	] , [
 		lv2:symbol "width" ;
 		pset:value 90.0
-	] ;
-	state:state [
-		<urn:distrho:preset> "Dark Room"
 	] .
 

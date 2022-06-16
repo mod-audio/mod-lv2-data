@@ -52,8 +52,5 @@
 	] , [
 		lv2:symbol "width" ;
 		pset:value 80.0
-	] ;
-	state:state [
-		<urn:distrho:preset> "Small Percussion Hall"
 	] .
 

@@ -52,8 +52,5 @@
 	] , [
 		lv2:symbol "width" ;
 		pset:value 100.0
-	] ;
-	state:state [
-		<urn:distrho:preset> "Large Bright Hall"
 	] .
 
