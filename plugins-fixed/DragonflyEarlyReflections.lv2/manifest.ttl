@@ -1,4 +1,5 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
@@ -6,3 +7,9 @@
     a lv2:Plugin ;
     lv2:binary <DragonflyEarlyReflections_dsp.so> ;
     rdfs:seeAlso <DragonflyEarlyReflections_dsp.ttl> , <modgui.ttl> .
+
+<default-preset>
+    a pset:Preset ;
+    lv2:appliesTo <urn:dragonfly:early> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <default-preset.ttl> .

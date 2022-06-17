@@ -1,0 +1,31 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<default-preset>
+	a pset:Preset ;
+	lv2:appliesTo <urn:dragonfly:early> ;
+	lv2:port [
+		lv2:symbol "dry_level" ;
+		pset:value 80.0
+	] , [
+		lv2:symbol "early_level" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "high_cut" ;
+		pset:value 10000.0
+	] , [
+		lv2:symbol "low_cut" ;
+		pset:value 50.0
+	] , [
+		lv2:symbol "program" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "size" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "width" ;
+		pset:value 100.0
+	] .
+
+
