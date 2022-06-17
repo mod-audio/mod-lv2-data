@@ -36,6 +36,29 @@
     z-index: 30;
 }
 
+.mod-pedal-dragonfly-early .mod-control-group.mod-enumerated-group {
+    left: 97px;
+    top: 35px;
+    width: 180px;
+    height: 205px;
+}
+
+.mod-pedal-dragonfly-early .mod-enumerated .mod-enumerated-list {
+    display: block !important;
+    line-height: 26px;
+    line-height: 25.75px;
+    color: transparent;
+}
+.mod-pedal-dragonfly-early .mod-enumerated .mod-enumerated-list > div.selected {
+    background-image: url(/resources/led_on.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    font-weight: bold;
+}
+.mod-pedal-dragonfly-early .mod-enumerated .mod-enumerated-list > div:hover {
+    cursor: pointer;
+}
+
 .mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-levels {
     left: 326px;
     top: 26px;
@@ -54,7 +77,7 @@
     left: 334px;
     top: 282px;
     width: 212px;
-    height: 62px;
+    height: 47px;
 }
 
 .mod-pedal-dragonfly-early .mod-control-group .mod-knob {
@@ -83,16 +106,8 @@
     width: 47px;
 }
 
-.mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-levels > .mod-knob:nth-child(2) {
-    top: 0px;
-    left: 95px;
-}
-
-.mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-room > .mod-knob:nth-child(2) {
-    top: 0px;
-    left: 95px;
-}
-
+.mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-levels > .mod-knob:nth-child(2),
+.mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-room > .mod-knob:nth-child(2),
 .mod-pedal-dragonfly-early .mod-control-group.dragonfly-early-group-filter > .mod-knob:nth-child(2) {
     top: 0px;
     left: 95px;

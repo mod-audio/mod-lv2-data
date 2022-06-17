@@ -37,6 +37,28 @@
     z-index: 30;
 }
 
+.mod-pedal-dragonfly-plate .mod-control-group.mod-enumerated-group {
+    left: 374px;
+    top: 295px;
+    width: 100px;
+    height: 92px;
+}
+
+.mod-pedal-dragonfly-plate .mod-enumerated .mod-enumerated-list {
+    display: block !important;
+    line-height: 33px;
+    color: transparent;
+}
+.mod-pedal-dragonfly-plate .mod-enumerated .mod-enumerated-list > div.selected {
+    background-image: url(/resources/led_on.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    font-weight: bold;
+}
+.mod-pedal-dragonfly-plate .mod-enumerated .mod-enumerated-list > div:hover {
+    cursor: pointer;
+}
+
 .mod-pedal-dragonfly-plate .mod-control-group.dragonfly-plate-group-top {
     left: 69px;
     top: 26px;
