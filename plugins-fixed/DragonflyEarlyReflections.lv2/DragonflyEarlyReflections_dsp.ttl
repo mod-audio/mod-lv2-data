@@ -161,7 +161,19 @@
         unit:unit unit:hz ;
     ] ;
 
-    rdfs:comment "An early reflection reverb based on Freeverb3" ;
+    rdfs:comment """
+Dragonfly Early Reflections is a reverb effect based on Moorer's early reflection model.
+This is the same algorithm used in Dragonfly Hall and Dragonfly Room, but without any late reverberation algorithm.
+
+There are eight Reflection types to pick from; The names are primarily meant to be memorable, and are only vaguely related to how each reflection type sounds.
+
+The plugin has controls to set the Wet Level, Dry Level, Size and Width. It also comes with post-reverb Low cut and High cut parameters.
+
+Features:
+Plugin by Michael Willis
+Based on Freeverb3 VST
+GUI by FistfulOfStars
+""" ;
 
     mod:brand "Dragonfly" ;
     mod:label "Early Reflections" ;

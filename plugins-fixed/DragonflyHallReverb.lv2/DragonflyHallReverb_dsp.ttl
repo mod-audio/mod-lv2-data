@@ -273,7 +273,23 @@
         unit:unit unit:pc ;
     ] ;
 
-    rdfs:comment "A hall-style reverb" ;
+    rdfs:comment """
+Dragonfly Hall Reverb is a high fidelity reverb effect.
+It is primarily intended for use as a concert hall reverb.
+It also has numerous smaller presets representing rooms, studios, and chambers. 
+
+Please note that the Dry Level, Early Level, Early Send and Late Level controls are decoupled from the preset.
+This allows you to set the levels and explore the different presets without the levels changing.
+
+The plugin has basic controls to set the Size, Width, Predelay and Decay.
+There are also more advanced controls to further tweak the reverb: Diffuse, Modulation, Spin and Wander.
+Finally, there are two filter sections (High and Low) with Cut, Cross and Mult controls.
+
+Features:
+Plugin by Michael Willis
+Based on Hibiki Reverb from Freeverb3 VST
+GUI by FistfulOfStars
+""" ;
 
     mod:brand "Dragonfly" ;
     mod:label "Hall Reverb" ;

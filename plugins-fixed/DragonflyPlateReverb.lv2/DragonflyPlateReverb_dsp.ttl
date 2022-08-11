@@ -181,7 +181,26 @@
         unit:unit unit:hz ;
     ] ;
 
-    rdfs:comment "A plate reverb based on Freeverb3 STRev" ;
+    rdfs:comment """
+Dragonfly Plate is an easy to use, high fidelity plate reverb plugin.
+
+It comes with a variety of plate and tank presets for you to explore.
+Please note that Wet level and Dry level controls are decoupled from the preset.
+This allows you to set the levels and explore the different presets without the levels changing.
+
+There are three different Reverb types available:
+- Simple, a thin plate algorithm with a sparse tail and some slight early reflections
+- Nested, a thick plate algorithm with a dense tail and no early reflections
+- Tank, a tank algorithm based on Jon Dattorro's Effect Design paper
+
+The plugin has controls to set the Width, Predelay and Decay.
+It also comes with pre-reverb Low cut and High cut parameters, and a Dampen control which controls a low pass filter applied to the reverb algorithm's internal feedback loop.
+
+Features:
+Plugin by Michael Willis
+Based on Nverb and STRev from Freeverb3 VST
+GUI by FistfulOfStars
+""" ;
 
     mod:brand "Dragonfly" ;
     mod:label "Plate Reverb" ;

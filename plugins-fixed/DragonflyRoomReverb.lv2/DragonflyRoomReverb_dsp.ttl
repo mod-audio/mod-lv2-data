@@ -253,7 +253,22 @@
         unit:unit unit:hz ;
     ] ;
 
-    rdfs:comment "A room reverb based on Freeverb3 ProG" ;
+    rdfs:comment """
+Dragonfly Room Reverb is a high fidelity reverb effect.
+It has several different room presets, as well as a small number of hall presets and effect presets.
+
+Please note that the Dry Level, Early Level, Early Send and Late Level controls are decoupled from the preset.
+This allows you to set the levels and explore the different presets without the levels changing.
+
+The plugin has basic controls to set the Size, Width, Predelay and Decay.
+There are also more advanced controls to further tweak the reverb: Diffuse, Spin and Wander.
+Finally, there are two filter sections with controls for: High Cut, Early Damp, Late Damp, Low Cut, Low Boost and Boost Freq.
+
+Features:
+Plugin by Michael Willis
+Based on ProG Reverb from Freeverb3VST
+GUI by FistfulOfStars
+""" ;
 
     mod:brand "Dragonfly" ;
     mod:label "Room Reverb" ;
