@@ -2,7 +2,10 @@ function (event, funcs)
 {
     function update_filename(icon, filename)
     {
-        icon.find('.file-info-details').text(filename.slice(filename.indexOf("/Reverb IRs/")+12));
+        filename = filename.slice(filename.indexOf("/Reverb IRs/")+12);
+        if (filename.indexOf("OK-ConvolutionReverb.lv2/") === 0)
+            filename = filename.slice(25);
+        icon.find('.file-info-details').text(filename);
     }
 
     if (event.type == 'start')
