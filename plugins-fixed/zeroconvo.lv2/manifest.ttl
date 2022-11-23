@@ -39,6 +39,6 @@ zcpset:default
 		lv2:symbol "wet" ;
 		pset:value -30.0
 	] ;
-		state:state [
+	state:state [
 		conv:ir <hall1-medium.flac>;
 	] .
