@@ -165,7 +165,7 @@
 
     rdfs:comment """
 Plugin to convolve audio signals, allowing you to load so-called Reverb Impulse Responses.
-This plugin uses 2-stage processing, where the initial convolution is done in realtime and everything else with background processing.
+This plugin uses 2-stage processing, where the initial convolution is done in realtime and a 2nd stage with background processing.
 
 Only flac and wav files are supported.
 It can load multi-channel files, but will always process in stereo mode.
