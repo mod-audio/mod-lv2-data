@@ -104,11 +104,14 @@
     position: absolute;
     bottom: 12px;
 }
+.mod-convolution-reverb.mod-pedal .mod-knob.mod-convolution-reverb-hpf {
+    left: 40px;
+}
 .mod-convolution-reverb.mod-pedal .mod-knob.mod-convolution-reverb-drylevel {
-    left: 50px;
+    left: 130px;
 }
 .mod-convolution-reverb.mod-pedal .mod-knob.mod-convolution-reverb-wetlevel {
-    left: 170px;
+    left: 220px;
 }
 .mod-convolution-reverb.mod-pedal .mod-knob-image {
     background-image:url(/resources/knob.png{{{ns}}});
@@ -137,7 +140,7 @@
     cursor: pointer;
     position: absolute !important;
     bottom: 22px;
-    right: 45px;
+    right: 25px;
 }
 .mod-convolution-reverb.mod-pedal .mod-footswitch.off {
     background-position: bottom center;
@@ -152,7 +155,7 @@
     width: 32px;
     position: absolute !important;
     bottom: 90px;
-    right: 64px;
+    right: 44px;
 }
 .mod-convolution-reverb.mod-pedal .mod-light.off {
     background-image: url(/resources/red-light-off.png{{{ns}}});

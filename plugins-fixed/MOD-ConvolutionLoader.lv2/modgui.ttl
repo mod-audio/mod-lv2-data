@@ -5,9 +5,9 @@
 @prefix opts: <http://lv2plug.in/ns/ext/options#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://mod.audio/plugins/ConvolutionReverb>
+<https://mod.audio/plugins/ConvolutionLoader>
     modgui:gui [
-        modgui:label "MOD Convolution Reverb" ;
+        modgui:label "MOD Convolution Loader" ;
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon.html> ;
         modgui:javascript <modgui/javascript.js> ;

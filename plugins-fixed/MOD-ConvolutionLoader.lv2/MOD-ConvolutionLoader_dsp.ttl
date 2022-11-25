@@ -14,7 +14,7 @@
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
-<https://mod.audio/plugins/ConvolutionReverb>
+<https://mod.audio/plugins/ConvolutionLoader>
     a lv2:ReverbPlugin, lv2:Plugin, doap:Project ;
 
     lv2:extensionData opts:interface ,
@@ -34,7 +34,7 @@
                          <http://lv2plug.in/ns/ext/buf-size#maxBlockLength> ,
                          <http://lv2plug.in/ns/ext/parameters#sampleRate> ;
 
-    patch:writable <https://mod.audio/plugins/ConvolutionReverb#irfile> ;
+    patch:writable <https://mod.audio/plugins/ConvolutionLoader#irfile> ;
 
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
@@ -117,7 +117,7 @@
         lv2:symbol "hpf" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
-        lv2:maximum 300 ;
+        lv2:maximum 500 ;
         lv2:scalePoint [
             rdfs:label  "Off" ;
             rdf:value 0 ;
@@ -148,14 +148,14 @@
     ] ;
 
     mod:brand "MOD" ;
-    mod:label "Convolution Reverb" ;
+    mod:label "Convolution Loader" ;
 
-    doap:name "Convolution Reverb" ;
+    doap:name "Convolution Loader" ;
     doap:license <http://spdx.org/licenses/ISC.html> ;
 
     doap:developer [
         foaf:name "DISTRHO" ;
-        foaf:homepage <https://mod.audio/plugins/ConvolutionReverb> ;
+        foaf:homepage <https://mod.audio/plugins/ConvolutionLoader> ;
     ] ;
 
     doap:maintainer [
@@ -179,5 +179,5 @@ Plugin by MOD Audio & DISTRHO, based on HiFi-LoFi FFTConvolver engine.
     lv2:minorVersion 2 ;
 
     state:state [
-        <https://mod.audio/plugins/ConvolutionReverb#irfile> <hall1-medium.flac>;
+        <https://mod.audio/plugins/ConvolutionLoader#irfile> <hall1-medium.flac>;
     ] .
