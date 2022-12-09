@@ -20,9 +20,6 @@
 		lv2:symbol "diffuse" ;
 		pset:value 50.0
 	] , [
-		lv2:symbol "dry_level" ;
-		pset:value 80.0
-	] , [
 		lv2:symbol "high_mult" ;
 		pset:value 0.34999999
 	] , [
