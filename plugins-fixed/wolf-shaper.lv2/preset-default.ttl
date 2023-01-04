@@ -1,0 +1,40 @@
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<>
+	a pset:Preset ;
+	lv2:port [
+		lv2:symbol "bipolarmode" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "oversample" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "postgain" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "pregain" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "removedc" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "vwarpamount" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "vwarptype" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "warpamount" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "warptype" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "wet" ;
+		pset:value 1.0
+	] ;
+	state:state [
+		<https://github.com/pdesaulniers/wolf-shaper#graph> "0x0p+0,0x0p+0,0x0p+0,0;0x1p+0,0x1p+0,0x0p+0,0;"
+	] .

@@ -1,0 +1,17 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+<https://github.com/pdesaulniers/wolf-shaper>
+    modgui:gui [
+        modgui:brand "Wolf Plugins" ;
+        modgui:label "Wolf Shaper" ;
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon.html> ;
+        modgui:javascript <modgui/javascript.js> ;
+        modgui:stylesheet <modgui/stylesheet.css> ;
+        modgui:screenshot <modgui/screenshot.png> ;
+        modgui:thumbnail <modgui/thumbnail.png> ;
+        modgui:monitoredOutputs [
+            lv2:symbol "out" ;
+        ] ;
+    ] .

@@ -1,0 +1,71 @@
+.wolf_plugins_wolf_shaper.mod-pedal{
+ padding:0;
+ margin:0;
+ width:611px;
+ height:600px;
+ background:#2a2e32;
+ border-radius:20px 20px 0 0;
+ color:#fff;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .canvas_wrapper{
+ --device-pixel-ratio:1;
+ /*image-rendering:pixelated;*/
+ /*image-rendering:crisp-edges;*/
+ background:#000;
+ position:absolute;
+ top:50px;
+ transform-origin:0 0 0;
+ transform:scale(calc(1/var(--device-pixel-ratio)));
+ width:611px;
+ height:550px;
+ text-align:center;
+ z-index:21;
+}
+/*
+.wolf_plugins_wolf_shaper.mod-pedal .canvas_wrapper:focus-within{
+ z-index:21;
+}
+*/
+.wolf_plugins_wolf_shaper.mod-pedal .mod-plugin-title{
+ position:absolute;
+ text-align:center;
+ width:100%;
+}
+.wolf_plugins_wolf_shaper.mod-pedal h1{
+ font-size:20px;
+ font-weight:bold;
+ line-height:50px;
+ margin:0;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-control-group{
+ position:absolute;
+ left:5px;
+ z-index:35;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-pedal-input,
+.wolf_plugins_wolf_shaper.mod-pedal .mod-pedal-output{
+ top:75px;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-audio-input,
+.wolf_plugins_wolf_shaper.mod-pedal .mod-audio-output{
+ margin-bottom:25px;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .jack-disconnected{
+ top:0px!important;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-switch-image{
+ background-image: url(/img/switch.png);
+ background-position: left center;
+ background-repeat: no-repeat;
+ background-size: auto 50px;
+ font-weight: bold;
+ width: 100px;
+ height: 50px;
+ cursor: pointer;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-switch-image.off{
+ background-position: right center !important;
+}
+.wolf_plugins_wolf_shaper.mod-pedal .mod-switch-image.on{
+ background-position: left center !important;
+}
