@@ -11,6 +11,7 @@
         modgui:stylesheet <modgui/stylesheet.css> ;
         modgui:screenshot <modgui/screenshot.png> ;
         modgui:thumbnail <modgui/thumbnail.png> ;
+        modgui:discussionURL <https://forum.mod.audio/t/wolf-plugins-wolf-shaper/8945> ;
         modgui:monitoredOutputs [
             lv2:symbol "out" ;
         ] ;
