@@ -13,6 +13,11 @@
 @prefix spdx:  <http://spdx.org/rdf/terms#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
+<https://github.com/pdesaulniers/wolf-shaper#graph>
+    a lv2:Parameter ;
+    rdfs:label "Graph" ;
+    rdfs:range atom:String .
+
 <https://github.com/pdesaulniers/wolf-shaper>
     a lv2:WaveshaperPlugin, lv2:Plugin, doap:Project ;
 
@@ -29,6 +34,8 @@
     opts:supportedOption <http://lv2plug.in/ns/ext/buf-size#nominalBlockLength> ,
                          <http://lv2plug.in/ns/ext/buf-size#maxBlockLength> ,
                          <http://lv2plug.in/ns/ext/parameters#sampleRate> ;
+
+    patch:readable <https://github.com/pdesaulniers/wolf-shaper#graph> ;
 
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
@@ -63,7 +70,8 @@
         lv2:symbol "lv2_events_in" ;
         rsz:minimumSize 2048 ;
         atom:bufferType atom:Sequence ;
-        atom:supports atom:String ;
+        atom:supports <http://lv2plug.in/ns/ext/patch#Message> ;
+        lv2:designation lv2:control ;
     ] ;
 
     lv2:port [
@@ -73,7 +81,8 @@
         lv2:symbol "lv2_events_out" ;
         rsz:minimumSize 2048 ;
         atom:bufferType atom:Sequence ;
-        atom:supports atom:String ;
+        atom:supports <http://lv2plug.in/ns/ext/patch#Message> ;
+        lv2:designation lv2:control ;
     ] ;
 
     lv2:port [
