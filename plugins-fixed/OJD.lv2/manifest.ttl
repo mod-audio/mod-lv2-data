@@ -1,0 +1,15 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+<https://github.com/JanosGit/Schrammel_OJD>
+    a lv2:Plugin ;
+    lv2:binary <OJD.so> ;
+    rdfs:seeAlso <OJD.ttl> .
+
+<https://github.com/JanosGit/Schrammel_OJD#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/JanosGit/Schrammel_OJD> ;
+    rdfs:label "Default" ;
+    rdfs:seeAlso <presets.ttl> .
