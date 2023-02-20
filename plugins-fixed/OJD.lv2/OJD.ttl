@@ -2,11 +2,12 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
 <https://github.com/JanosGit/Schrammel_OJD>
-    a lv2:Plugin ;
+    a lv2:Plugin , lv2:DistortionPlugin ;
     lv2:requiredFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
                         <http://lv2plug.in/ns/ext/urid#map> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
@@ -58,7 +59,7 @@
         lv2:index 5 ;
         lv2:symbol "drive" ;
         lv2:name "Drive" ;
-        lv2:default 0.165000 ;
+        lv2:default 0.165 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -67,7 +68,7 @@
         lv2:index 6 ;
         lv2:symbol "tone" ;
         lv2:name "Tone" ;
-        lv2:default 0.500000 ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -76,7 +77,7 @@
         lv2:index 7 ;
         lv2:symbol "volume" ;
         lv2:name "Volume" ;
-        lv2:default 0.835000 ;
+        lv2:default 0.835 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
     ] ,
@@ -85,20 +86,39 @@
         lv2:index 8 ;
         lv2:symbol "hp_lp" ;
         lv2:name "HP / LP" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled , lv2:integer , lv2:enumeration ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "HP"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "LP" ] ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:symbol "bypass" ;
         lv2:name "Bypass" ;
-        lv2:default 0.000000 ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled ;
     ] ;
 
-    doap:name "OJD" ;
-    doap:maintainer [ foaf:name "Schrammel" ] .
+    mod:brand "Schrammel" ;
+    mod:label "OJD" ;
 
+rdfs:comment """
+The Schrammel OJD is heavily inspired by the schematics of a modern classic analog pedal.
+
+For best sounding results put this somewhere before your guitar amp (plugin) and before reverb, delay and modulation plugins, just as you would place a real pedal on your pedal board.
+Being creative and using it somewhere else in your chain is possible too but be prepared that this will cause a lot of sharp high frequencies.
+
+There are two basic sound characteristics you can select with the upper mid slide switch.
+The LP mode gives you a warmer tone with slightly less gain, the HP mode boost some higher frequencies, leading to a more aggressive distortion with some more gain.
+
+Features:
+Modeled by Janos Buttgereit
+""";
+
+    doap:name "Schrammel OJD" ;
+    doap:maintainer [ foaf:name "Janos Buttgereit" ] .
