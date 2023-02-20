@@ -5,7 +5,7 @@
 <https://github.com/jatinchowdhury18/KlonCentaur>
     a lv2:Plugin ;
     lv2:binary <ChowCentaur.so> ;
-    rdfs:seeAlso <ChowCentaur.ttl> .
+    rdfs:seeAlso <ChowCentaur.ttl> , <modgui.ttl> .
 
 <https://github.com/jatinchowdhury18/KlonCentaur#preset001>
     a pset:Preset ;

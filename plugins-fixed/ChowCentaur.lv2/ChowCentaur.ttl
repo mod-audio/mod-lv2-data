@@ -2,11 +2,12 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://github.com/jatinchowdhury18/KlonCentaur>
-    a lv2:Plugin ;
+    a lv2:Plugin , lv2:DistortionPlugin ;
     lv2:requiredFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
                         <http://lv2plug.in/ns/ext/urid#map> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
@@ -107,12 +108,30 @@
         lv2:index 10 ;
         lv2:symbol "mono" ;
         lv2:name "Mono" ;
-        lv2:default 0.0 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
-        lv2:portProperty lv2:toggled ;
+        lv2:portProperty lv2:toggled , <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
     ] ;
 
+    mod:brand "chowdsp" ;
+    mod:label "ChowCentaur" ;
+
+rdfs:comment """
+Chow Centaur is a digital emulation of the Klon Centaur guitar pedal (*)
+
+The plugin contains two modes:
+- "Traditional" uses traditional circuit modelling techniques
+- "Neural" uses a recurrent neural network to model the gain stage from the original Klon circuit (*)
+
+Features:
+Modeled by Jatin Chowdhury
+
+(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
+Klon Centaur is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
+All other trademarks are the property of their respective holders.'
+""";
+
     doap:name "ChowCentaur" ;
-    doap:maintainer [ foaf:name "chowdsp" ] .
+    doap:maintainer [ foaf:name "Jatin Chowdhury" ] .
 

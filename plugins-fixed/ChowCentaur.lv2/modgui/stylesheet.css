@@ -1,0 +1,164 @@
+.chowCentaur {
+  /* background: url("/resources/knobs/bd.svg{{{ns}}}") no-repeat center; */
+  background: linear-gradient(
+    140deg,
+    #e9ae4c 0%,
+    #e9ae4c 100%
+  );
+  background-repeat: no-repeats;
+  width: 220px;
+  height: 430px;
+  border-radius: 24px;
+  color: #604B45;
+  font-size: 20px;
+  /* padding: 20px 15px; */
+}
+
+.chowCentaur .chowCentaur-container {
+  position: relative;
+  align-content: center;
+  text-align: center;
+}
+
+.chowCentaur .mod-control-group .mod-knob {
+  background-repeat: no-repeat;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.chowCentaur .mod-control-group .mod-knob-image {
+  background-image: url(/resources/knobs/knob-trad.svg{{{ns}}});
+  background-repeat: no-repeat;
+  /* background-size: auto 50px; */
+  background-position: center center;
+  background-size: cover;
+  height: 64px;
+  width: 64px;
+  margin: 0 auto;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25))
+          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2))
+          drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15))
+          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1))
+          drop-shadow(0 16px 16px rgba(0, 0, 0, 0.05));
+}
+
+.chowCentaur .brand-name h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #4c0000;
+  margin-top: 0px;
+}
+
+.chowCentaur .label-name h2 {
+  font-size: 30px;
+  color: #4c0000;
+}
+
+.chowCentaur .mod-knob-title img {
+  height: 13px;
+  margin: 0px auto;
+  color: #4c0000;
+  /* display: block; */
+}
+
+.chowCentaur .mod-knob-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  color: #4c0000;
+  font-weight: bold;
+}
+
+/* .chowCentaur .mod-audio-output
+{
+  left: 30px;
+
+} */
+
+/* GRID */
+.chowCentaur .chowCentaur-container {
+  /* margin: 0px 5px; */
+  border-radius: 24px;
+  border: #4c0000 1px solid;
+  background-image: url(/resources/knobs/Centaur2.svg{{{ns}}});
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-color: rgba(185, 168, 10, 0.25);
+  background-position: -50px 15px;
+  padding: 20px 15px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-areas:
+    "chowcentaur-knobs"
+    "chowcentaur-optns"
+    "chowcentaur-brand";
+}
+
+.chowCentaur .gap-15 {
+  gap: 15px 0;
+}
+
+/* ONE ************************/
+.chowCentaur .knobs {
+  display: grid;
+  gap: 15px 0;
+  grid-template-columns: 64px 64px;
+  /* grid-template-rows: 1fr 1fr 3fr; */
+  justify-content: space-around;
+  grid-area: chowcentaur-knobs;
+}
+
+.chowCentaur .optns {
+  display: grid;
+  column-gap: 64px;
+  grid-template-columns: 1fr;
+  align-self: center;
+  grid-area: chowcentaur-optns;
+}
+
+.chowCentaur .brand {
+  display: grid;
+  gap: 15px 0;
+  grid-template-columns: 1fr;
+  grid-area: chowcentaur-brand;
+}
+
+.chowCentaur .label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.chowCentaur .mod-light {
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 128px;
+  left: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  margin: auto;
+}
+
+.chowCentaur .mod-footswitch {
+  background-image: url(/resources/footswitch.png{{{ns}}});
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto 132px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  height: 66px;
+  width: 66px;
+  margin: auto;
+  position: absolute !important;
+}
+.chowCentaur .mod-footswitch.on {
+  background-position: left top !important;
+}
