@@ -1,0 +1,154 @@
+/* main pedal */
+.schrammel-ojd.mod-pedal {
+    border-radius: 25px;
+    background-image: url(/resources/Graphics/pedalHousing.svg{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 270px 500px;
+    width: 243px;
+    height: 488px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.schrammel-ojd.mod-pedal .schrammel-ojd-overlay {
+    background-image: url(/resources/Graphics/shadowOverlay.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 270px 500px;
+    width: 244px;
+    height: 488px;
+    position: absolute;
+}
+
+.schrammel-ojd .mod-light {
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 99px;
+}
+.schrammel-ojd .mod-light.off {
+    background-image: url(/resources/Graphics/ledOff.svg{{{ns}}});
+    top: 15px;
+}
+.schrammel-ojd .mod-light.on {
+    background-image: url(/resources/Graphics/ledOn.svg{{{ns}}});
+    top: 13px;
+}
+
+.schrammel-ojd .mod-knob {
+    width: 74px;
+    height: 76px;
+}
+
+.schrammel-ojd .mod-knob.mod-knob-image {
+    background-image: url(/resources/Graphics/knob.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 74px 76px;
+}
+
+.schrammel-ojd .schrammel-ojd-switch {
+    background-image: url(/resources/Graphics/slideKnob.svg{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.schrammel-ojd .on .schrammel-ojd-switch {
+    left: -4px;
+}
+.schrammel-ojd .off .schrammel-ojd-switch {
+    left: 14px;
+}
+/* inverted for bypass */
+.schrammel-ojd .mod-footswitch.on .schrammel-ojd-switch {
+    left: 14px;
+}
+.schrammel-ojd .mod-footswitch.off .schrammel-ojd-switch {
+    left: -4px;
+}
+
+.schrammel-ojd .mod-control-group {
+    position: absolute;
+    z-index: 30;
+}
+
+.schrammel-ojd .mod-control-group.schrammel-ojd-volume {
+    top: 60px;
+    left: 34px;
+}
+
+.schrammel-ojd .mod-control-group.schrammel-ojd-drive {
+    left: 139px;
+    top: 60px;
+}
+
+.schrammel-ojd .mod-control-group.schrammel-ojd-tone {
+    top: 170px;
+    left: 86px;
+}
+
+.schrammel-ojd .mod-control-group.schrammel-ojd-hp_lp {
+    top: 135px;
+    left: 98px;
+}
+
+.schrammel-ojd .mod-switch {
+}
+
+.schrammel-ojd .mod-footswitch {
+    position: absolute !important;
+    left: 120px;
+    bottom: 54px;
+}
+
+.schrammel-ojd .mod-switch,
+.schrammel-ojd .mod-footswitch {
+    background-image: url(/resources/Graphics/slideSwitchShadow.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    width: 44px;
+    height: 32px;
+}
+
+.schrammel-ojd .mod-switch .schrammel-ojd-hp_lp-bg {
+    background-image: url(/resources/Graphics/hpLpBackground.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 36px 15px;
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 11px;
+}
+.schrammel-ojd .mod-switch.off .schrammel-ojd-hp_lp-bg {
+    background-position: top left;
+    left: 5px;
+}
+.schrammel-ojd .mod-switch.on .schrammel-ojd-hp_lp-bg {
+    background-position: top right;
+    left: 21px;
+}
+
+.schrammel-ojd .mod-footswitch .schrammel-ojd-bypass-bg {
+    background-image: url(/resources/Graphics/bypassBackground.svg{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    left: 19px;
+}
+.schrammel-ojd .mod-footswitch.on .schrammel-ojd-bypass-bg {
+    display: none;
+}
+
+.schrammel-ojd .mod-pedal-input,
+.schrammel-ojd .mod-pedal-output {
+    top: 314px;
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="113" viewBox="0 0 110 113">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.552" gradientTransform="translate(0 0)" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#393939"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#676767"/>
+    </linearGradient>
+    <filter id="Schnittmenge_1" x="37.5" y="0" width="41" height="113" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.46" gradientTransform="translate(0 0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#232323"/>
+      <stop offset="1" stop-color="#2f2f2f"/>
+    </radialGradient>
+    <filter id="Schnittmenge_2" x="33.5" y="0" width="41" height="113" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.02"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Poti_Tone" transform="translate(-4.465 -2.899)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="53.5" cy="53.5" r="53.5" transform="translate(5.965 5.899)" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 4.46, 2.9)" filter="url(#Schnittmenge_1)">
+      <path id="Schnittmenge_1-2" data-name="Schnittmenge 1" d="M0,104.462V2.538a54.02,54.02,0,0,1,35,.777V103.684a54.02,54.02,0,0,1-35,.777Z" transform="translate(38.5 3)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 4.46, 2.9)" filter="url(#Schnittmenge_2)">
+      <path id="Schnittmenge_2-2" data-name="Schnittmenge 2" d="M0,104.462V2.538a54.02,54.02,0,0,1,35,.777V103.684a54.02,54.02,0,0,1-35,.777Z" transform="translate(38.5 3)" fill="url(#radial-gradient-2)"/>
+    </g>
+    <line id="Linie_1" data-name="Linie 1" y2="30.548" transform="translate(60.531 17.537)" fill="none" stroke="#fffde5" stroke-linecap="round" stroke-width="3"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="53.5" cy="53.5" r="53.5" transform="translate(5.965 5.899)" fill="none" stroke="#777" stroke-width="3"/>
+  </g>
+</svg>

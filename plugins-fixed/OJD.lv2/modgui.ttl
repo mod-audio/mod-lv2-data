@@ -1,0 +1,12 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+<https://github.com/JanosGit/Schrammel_OJD>
+    modgui:gui [
+        modgui:brand "Schrammel" ;
+        modgui:label "OJD" ;
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ojd.html> ;
+        modgui:stylesheet <modgui/stylesheet-ojd.css> ;
+        modgui:screenshot <modgui/screenshot-ojd.png> ;
+        modgui:thumbnail <modgui/thumbnail-ojd.png> ;
+    ] .

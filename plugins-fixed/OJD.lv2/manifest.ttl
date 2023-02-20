@@ -6,10 +6,29 @@
 <https://github.com/JanosGit/Schrammel_OJD>
     a lv2:Plugin ;
     lv2:binary <OJD.so> ;
-    rdfs:seeAlso <OJD.ttl> .
+    rdfs:seeAlso <OJD.ttl> , <modgui.ttl> .
 
-<https://github.com/JanosGit/Schrammel_OJD#preset001>
+<https://github.com/JanosGit/Schrammel_OJD#default>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/JanosGit/Schrammel_OJD> ;
-    rdfs:label "Default" ;
-    rdfs:seeAlso <presets.ttl> .
+    lv2:port [
+        lv2:symbol "drive" ;
+        pset:value 0.165 ;
+    ] ,
+    [
+        lv2:symbol "tone" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "volume" ;
+        pset:value 0.835 ;
+    ] ,
+    [
+        lv2:symbol "hp_lp" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "bypass" ;
+        pset:value 0.0 ;
+    ] ;
+    rdfs:label "Default" .

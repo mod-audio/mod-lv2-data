@@ -31,32 +31,20 @@
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
         lv2:index 1 ;
-        lv2:symbol "lv2_audio_in_1" ;
-        lv2:name "Audio Input 1" ;
-    ] ,
-    [
-        a lv2:InputPort, lv2:AudioPort ;
-        lv2:index 2 ;
-        lv2:symbol "lv2_audio_in_2" ;
-        lv2:name "Audio Input 2" ;
+        lv2:symbol "lv2_audio_in" ;
+        lv2:name "Audio Input" ;
     ] ;
 
     lv2:port [
         a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 3 ;
-        lv2:symbol "lv2_audio_out_1" ;
-        lv2:name "Audio Output 1" ;
-    ] ,
-    [
-        a lv2:OutputPort, lv2:AudioPort ;
-        lv2:index 4 ;
-        lv2:symbol "lv2_audio_out_2" ;
-        lv2:name "Audio Output 2" ;
+        lv2:index 2 ;
+        lv2:symbol "lv2_audio_out" ;
+        lv2:name "Audio Output" ;
     ] ;
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 5 ;
+        lv2:index 3 ;
         lv2:symbol "drive" ;
         lv2:name "Drive" ;
         lv2:default 0.165 ;
@@ -65,7 +53,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 6 ;
+        lv2:index 4 ;
         lv2:symbol "tone" ;
         lv2:name "Tone" ;
         lv2:default 0.5 ;
@@ -74,7 +62,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 5 ;
         lv2:symbol "volume" ;
         lv2:name "Volume" ;
         lv2:default 0.835 ;
@@ -83,7 +71,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 6 ;
         lv2:symbol "hp_lp" ;
         lv2:name "HP / LP" ;
         lv2:default 0.0 ;
@@ -95,7 +83,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 7 ;
         lv2:symbol "bypass" ;
         lv2:name "Bypass" ;
         lv2:default 0.0 ;
