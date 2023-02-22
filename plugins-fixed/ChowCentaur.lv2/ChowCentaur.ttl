@@ -74,9 +74,9 @@
         lv2:index 6 ;
         lv2:symbol "mode" ;
         lv2:name "Mode" ;
-        lv2:default 0.0 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
         lv2:scalePoint [ rdf:value 0 ; rdfs:label "Traditional"] ;
         lv2:scalePoint [ rdf:value 1 ; rdfs:label "Neural" ] ;
@@ -84,11 +84,12 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
-        lv2:symbol "bypass" ;
-        lv2:name "Bypass" ;
-        lv2:default 0.0 ;
+        lv2:symbol "lv2_enabled" ;
+        lv2:name "Enabled" ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:default 1.0 ;
+        lv2:designation lv2:enabled ;
         lv2:portProperty lv2:toggled ;
     ] ,
     [
@@ -121,5 +122,8 @@ All other trademarks are the property of their respective holders.'
 """;
 
     doap:name "ChowCentaur" ;
-    doap:maintainer [ foaf:name "Jatin Chowdhury" ] .
-
+    doap:maintainer [
+        foaf:name "Jatin Chowdhury" ;
+        foaf:homepage <https://chowdsp.com/products.html#centaur> ;
+        foaf:mbox <mailto:chowdsp@gmail.com> ;
+    ] .
