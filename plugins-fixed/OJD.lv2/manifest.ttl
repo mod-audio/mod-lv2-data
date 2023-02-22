@@ -26,9 +26,5 @@
     [
         lv2:symbol "hp_lp" ;
         pset:value 0.0 ;
-    ] ,
-    [
-        lv2:symbol "bypass" ;
-        pset:value 0.0 ;
     ] ;
     rdfs:label "Default" .
