@@ -111,14 +111,12 @@ Chow Centaur is a digital emulation of the Klon Centaur guitar pedal (*)
 
 The plugin contains two modes:
 - "Traditional" uses traditional circuit modelling techniques
-- "Neural" uses a recurrent neural network to model the gain stage from the original Klon circuit (*)
+- "Neural" uses a recurrent neural network to model the gain stage from the original circuit
 
 Features:
 Modeled by Jatin Chowdhury
 
-(*) 'Other product names modeled in this software are trademarks of their respective companies that do not endorse and are not associated or affiliated with MOD.
-Klon Centaur is a trademark or trade name of another manufacturer and was used merely to identify the product whose sound was reviewed in the creation of this product.
-All other trademarks are the property of their respective holders.'
+(*) 'Product names and trademarks are the property of their respective holders that do not endorse and are not associated or affiliated with MOD Audio or Klon Centaur; they were used merely to identify the product whose sound was incorporated in the creation of this plugin.'
 """;
 
     doap:name "ChowCentaur" ;
