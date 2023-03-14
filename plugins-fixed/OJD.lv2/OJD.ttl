@@ -111,6 +111,6 @@ Modeled by Janos Buttgereit
 
     doap:name "Schrammel OJD" ;
     doap:maintainer [
-        foaf:name "Janos Buttgereit"
+        foaf:name "Janos Buttgereit" ;
         foaf:homepage <https://schrammel.io/> ;
     ] .
