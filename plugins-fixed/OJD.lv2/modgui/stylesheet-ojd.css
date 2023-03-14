@@ -5,7 +5,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 270px 500px;
-    width: 243px;
+    width: 242px;
     height: 488px;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 270px 500px;
-    width: 244px;
+    width: 243px;
     height: 488px;
     position: absolute;
 }
@@ -56,20 +56,21 @@
     background-size: 30px 30px;
     width: 30px;
     height: 30px;
+    top: -9px;
     position: relative;
 }
 .schrammel-ojd .on .schrammel-ojd-switch {
-    left: -4px;
+    left: -7px;
 }
 .schrammel-ojd .off .schrammel-ojd-switch {
-    left: 14px;
+    left: 9px;
 }
 /* inverted for bypass */
 .schrammel-ojd .mod-footswitch.on .schrammel-ojd-switch {
-    left: 14px;
+    left: 8px;
 }
 .schrammel-ojd .mod-footswitch.off .schrammel-ojd-switch {
-    left: -4px;
+    left: -8px;
 }
 
 .schrammel-ojd .mod-control-group {
@@ -94,7 +95,7 @@
 
 .schrammel-ojd .mod-control-group.schrammel-ojd-hp_lp {
     top: 135px;
-    left: 98px;
+    left: 105px;
 }
 
 .schrammel-ojd .mod-switch {
@@ -103,35 +104,38 @@
 .schrammel-ojd .mod-footswitch {
     position: absolute !important;
     left: 120px;
-    bottom: 54px;
+    bottom: 57px;
 }
 
 .schrammel-ojd .mod-switch,
 .schrammel-ojd .mod-footswitch {
     background-image: url(/resources/Graphics/slideSwitchShadow.png{{{ns}}});
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    border: 2px solid #ccc;
+    border-radius: 14px;
     cursor: pointer;
-    width: 44px;
-    height: 32px;
+    width: 38px;
+    height: 20px;
 }
 
 .schrammel-ojd .mod-switch .schrammel-ojd-hp_lp-bg {
     background-image: url(/resources/Graphics/hpLpBackground.svg{{{ns}}});
     background-repeat: no-repeat;
     background-size: 36px 15px;
+    image-rendering: crisp-edges;
     width: 18px;
     height: 15px;
     position: absolute;
-    top: 11px;
+    top: 3px;
 }
 .schrammel-ojd .mod-switch.off .schrammel-ojd-hp_lp-bg {
     background-position: top left;
-    left: 5px;
+    left: 1px;
 }
 .schrammel-ojd .mod-switch.on .schrammel-ojd-hp_lp-bg {
     background-position: top right;
-    left: 21px;
+    left: 19px;
 }
 
 .schrammel-ojd .mod-footswitch .schrammel-ojd-bypass-bg {
@@ -141,8 +145,8 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 8px;
-    left: 19px;
+    top: -2px;
+    left: 16px;
 }
 .schrammel-ojd .mod-footswitch.on .schrammel-ojd-bypass-bg {
     display: none;

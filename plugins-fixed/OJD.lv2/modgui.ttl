@@ -9,4 +9,5 @@
         modgui:stylesheet <modgui/stylesheet-ojd.css> ;
         modgui:screenshot <modgui/screenshot-ojd.png> ;
         modgui:thumbnail <modgui/thumbnail-ojd.png> ;
+        modgui:discussionURL <https://forum.mod.audio/t/schrammel-ojd-model-of-the-fulltone-ocd/9193> ;
     ] .
