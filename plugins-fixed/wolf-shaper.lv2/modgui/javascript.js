@@ -16,11 +16,11 @@ if(err.length!==0){e.icon.find('.canvas_wrapper').html('<h2>'+err.join('<br>')+'
 
 var s=document.createElement('script');
 s.setAttribute('async',true);
-s.setAttribute('src','/resources/module.js?uri='+escape("https://github.com/pdesaulniers/wolf-shaper")+'&r='+VERSION/*f.get_custom_resource_filename('module.js')*/);
+s.setAttribute('src',e.api_version>=3?f.get_custom_resource_filename('module.js'):('/resources/module.js?uri='+escape("https://github.com/pdesaulniers/wolf-shaper")+'&r='+VERSION));
 s.setAttribute('type','text/javascript');
 s.onload=function(){
  Module_wolf_plugins_wolf_shaper({
- locateFile: function(p,_){return '/resources/'+p+'?uri='+escape("https://github.com/pdesaulniers/wolf-shaper")+'&r='+VERSION/*return f.get_custom_resource_filename(p);*/},
+ locateFile: function(p,_){return e.api_version>=3?f.get_custom_resource_filename(p):('/resources/'+p+'?uri='+escape("https://github.com/pdesaulniers/wolf-shaper")+'&r='+VERSION)},
  postRun:function(m){
  var cn=e.icon.attr('mod-instance').replaceAll('/','_');
  var cnl=m.lengthBytesUTF8(cn) + 1;
@@ -66,6 +66,14 @@ if(e.data.h && e.data.m){
 }else{
  if(e.symbol===':bypass')return;
  if(e.uri){e.data.p.p[e.uri]=e.value;}else{e.data.p.c[e.symbol]=e.value;}
+}
+
+}else if(e.type==='end'){
+ if(e.data.h && e.data.m){
+  var h = e.data.h;
+  var m = e.data.m;
+  e.data.h = e.data.m = null;
+  m._modgui_cleanup(h);
 }
 
 }
