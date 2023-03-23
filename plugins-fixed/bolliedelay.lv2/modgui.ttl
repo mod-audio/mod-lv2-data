@@ -11,6 +11,7 @@
         modgui:thumbnail <modgui/thumbnail-bollie-delay.png> ;
         modgui:brand "Bollie" ;
         modgui:label "Delay" ;
+        modgui:discussionURL <https://forum.mod.audio/t/bollie-delay/865> ;
         modgui:monitoredOutputs [
             lv2:symbol "tempo_out" ;
         ] ; 
