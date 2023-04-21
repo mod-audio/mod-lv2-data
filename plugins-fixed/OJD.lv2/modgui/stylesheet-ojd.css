@@ -60,10 +60,10 @@
     position: relative;
 }
 .schrammel-ojd .on .schrammel-ojd-switch {
-    left: -7px;
+    left: 9px;
 }
 .schrammel-ojd .off .schrammel-ojd-switch {
-    left: 9px;
+    left: -7px;
 }
 /* inverted for bypass */
 .schrammel-ojd .mod-footswitch.on .schrammel-ojd-switch {
@@ -130,12 +130,12 @@
     top: 3px;
 }
 .schrammel-ojd .mod-switch.off .schrammel-ojd-hp_lp-bg {
-    background-position: top left;
-    left: 1px;
-}
-.schrammel-ojd .mod-switch.on .schrammel-ojd-hp_lp-bg {
     background-position: top right;
     left: 19px;
+}
+.schrammel-ojd .mod-switch.on .schrammel-ojd-hp_lp-bg {
+    background-position: top left;
+    left: 1px;
 }
 
 .schrammel-ojd .mod-footswitch .schrammel-ojd-bypass-bg {
