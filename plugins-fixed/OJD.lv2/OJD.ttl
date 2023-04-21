@@ -78,8 +78,8 @@
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
         lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:scalePoint [ rdf:value 0 ; rdfs:label "HP"] ;
-        lv2:scalePoint [ rdf:value 1 ; rdfs:label "LP" ] ;
+        lv2:scalePoint [ rdf:value 0 ; rdfs:label "LP"] ;
+        lv2:scalePoint [ rdf:value 1 ; rdfs:label "HP" ] ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
