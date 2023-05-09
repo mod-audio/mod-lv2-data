@@ -145,6 +145,17 @@
         lv2:maximum 1 ;
         lv2:portProperty lv2:toggled , lv2:integer ;
         lv2:designation lv2:enabled ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 11 ;
+        lv2:name "Buffered" ;
+        lv2:symbol "buffered" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:portProperty lv2:toggled ;
+        lv2:portProperty lv2:integer ;
     ] ;
 
     mod:brand "MOD" ;
