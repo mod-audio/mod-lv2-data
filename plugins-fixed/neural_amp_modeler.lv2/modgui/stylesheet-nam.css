@@ -66,11 +66,11 @@
     display:inline-block;
 }
 
-.mod-pedal-nam .mod-control-group .mod-knob:first-of-type {
+.mod-pedal-nam .mod-control-group .mod-knob:first-child {
     margin-left: 0px;
 }
 
-.mod-pedal-nam .mod-control-group .mod-knob {
+.mod-pedal-nam .mod-control-group .mod-knob:last-child {
     margin-left: 315px;
 }
 
@@ -82,22 +82,6 @@
     height:100px;
     width:100px;
     cursor:pointer;
-}
-
-.mod-pedal-nam .mod-control-group .mod-knob:nth-child(2) {
-    left: -2px;
-}
-
-.mod-pedal-nam .mod-control-group .mod-knob:nth-child(3) {
-    left: -4px;
-}
-
-.mod-pedal-nam .mod-control-group .mod-knob:nth-child(4) {
-    left: -6px;
-}
-
-.mod-pedal-nam .mod-control-group .mod-knob:nth-child(5) {
-    left: -10px;
 }
 
 .mod-pedal-nam .mod-enumerated {
@@ -121,11 +105,27 @@
 .mod-pedal-nam .mod-enumerated .mod-enumerated-list {
     background: black;
     display: none;
-    height: 219px;
     overflow: auto;
-    position: relative;
     position: absolute;
-    padding:5px;
+    padding: 0;
     width: 405px;
-    z-index: 3;
+    height: 220px;
+    border: 2px solid #333;
 }
+
+.mod-pedal-nam .mod-enumerated .mod-enumerated-list > div {
+    padding: 3px 5px;
+}
+
+.mod-pedal-nam .mod-enumerated .mod-enumerated-list > div.selected {
+    background: #333;
+}
+
+.mod-pedal-nam .mod-enumerated .mod-enumerated-list > div:hover {
+    background: #222;
+}
+
+.mod-pedal-nam .mod-enumerated .mod-enumerated-list > div.selected:hover {
+    background: #555;
+}
+

@@ -34,7 +34,7 @@
 	];
 
 	lv2:requiredFeature urid:map, work:schedule;
-	lv2:optionalFeature lv2:hardRTCapable, opts:options, state:threadSafeRestore;
+	lv2:optionalFeature lv2:hardRTCapable, opts:options, state:loadDefaultState, state:threadSafeRestore;
 	lv2:extensionData work:interface, state:interface, opts:interface;
 	opts:supportedOption <http://lv2plug.in/ns/ext/buf-size#maxBlockLength>;
 
@@ -99,4 +99,9 @@ A large collection of .nam files is available at https://tonehunt.org/
 		lv2:minimum -20.0;
 		lv2:maximum 20.0;
 		units:unit units:db;
+	];
+
+	# Default state
+	state:state [
+		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Light%20Brown%20Crunchy.nam>
 	].
