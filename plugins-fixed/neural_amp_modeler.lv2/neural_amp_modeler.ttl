@@ -23,6 +23,7 @@
 <http://github.com/mikeoliphant/neural-amp-modeler-lv2>
 	a lv2:Plugin, lv2:SimulatorPlugin, doap:Project;
 	doap:name "Neural Amp Modeler";
+	mod:label "Neural Amp Modeler";
 	lv2:project <http://github.com/mikeoliphant/neural-amp-modeler-lv2>;
 	lv2:minorVersion 1;
 	lv2:microVersion 0;
@@ -34,16 +35,20 @@
 	];
 
 	lv2:requiredFeature urid:map, work:schedule;
-	lv2:optionalFeature lv2:hardRTCapable, opts:options, state:loadDefaultState, state:threadSafeRestore;
+	lv2:optionalFeature lv2:hardRTCapable, opts:options, state:threadSafeRestore;
 	lv2:extensionData work:interface, state:interface, opts:interface;
 	opts:supportedOption <http://lv2plug.in/ns/ext/buf-size#maxBlockLength>;
 
 	rdfs:comment """
-An LV2 implementation of Neural Amp Modeler.
+The Neural Amp Modeler (NAM) is an open-source guitar software plugin that creates realistic simulations of analog gear, especially guitar amplifiers.
+The plugin utilizes neural amp modeling technology, which employs neural networks and machine learning algorithms to replicate the behavior and characteristics of real amplifiers.
 
-NAM accepts Neural Amp Modeler .nam files.
+NAM loads *.nam files, enabling users to access a vast collection of meticulously crafted amp and pedal models.
 
-A large collection of .nam files is available at https://tonehunt.org/
+You can discover a wide range of authentic tones, from vintage classics to modern designs at https://tonehunt.org/?tags=nano-mdl with their extensive library of nam models.
+For MOD units search for the models with the #nano-mdl tag, as heavier models might not work.
+
+NAM was created by Steven Ack and the LV2 version is maintained by Mike Oliphant.
 """;
 
 	patch:writable <http://github.com/mikeoliphant/neural-amp-modeler-lv2#model>;
@@ -99,9 +104,4 @@ A large collection of .nam files is available at https://tonehunt.org/
 		lv2:minimum -20.0;
 		lv2:maximum 20.0;
 		units:unit units:db;
-	];
-
-	# Default state
-	state:state [
-		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Light%20Brown%20Crunchy.nam>
 	].
