@@ -1,0 +1,32 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+
+<https://mod.audio/plugins/CabinetLoader>
+    a lv2:Plugin ;
+    lv2:binary <MOD-CabinetLoader_dsp.so> ;
+    rdfs:seeAlso <MOD-CabinetLoader_dsp.ttl> .
+
+<https://mod.audio/plugins/CabinetLoader#irfile>
+    a lv2:Parameter ;
+    rdfs:label "IR File" ;
+    mod:fileTypes "cabsim" ;
+    rdfs:range <http://lv2plug.in/ns/ext/atom#Path> .
+
+<https://mod.audio/plugins/ConvolutionLoader#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <https://mod.audio/plugins/ConvolutionLoader> ;
+    rdfs:label "Default (FA-AliceInBones)";
+    lv2:port [
+        lv2:symbol "level" ;
+        pset:value -12 ;
+    ] ,
+    [
+        lv2:symbol "lv2_enabled" ;
+        pset:value 1 ;
+    ] ;
+    state:state [
+        <https://mod.audio/plugins/CabinetLoader#irfile> <forward-audio_AliceInBones.wav>;
+    ] .

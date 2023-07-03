@@ -19,8 +19,7 @@
 
     lv2:extensionData opts:interface ,
                       state:interface ,
-                      <http://lv2plug.in/ns/ext/worker#interface> ,
-                      <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
+                      <http://lv2plug.in/ns/ext/worker#interface> ;
 
     lv2:optionalFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
                         state:loadDefaultState ,
