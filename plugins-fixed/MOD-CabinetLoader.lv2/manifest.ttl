@@ -17,7 +17,7 @@
 
 <https://mod.audio/plugins/ConvolutionLoader#preset001>
     a pset:Preset ;
-    lv2:appliesTo <https://mod.audio/plugins/ConvolutionLoader> ;
+    lv2:appliesTo <https://mod.audio/plugins/CabinetLoader> ;
     rdfs:label "Default (FA-AliceInBones)";
     lv2:port [
         lv2:symbol "level" ;

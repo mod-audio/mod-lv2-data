@@ -97,8 +97,6 @@
         lv2:designation lv2:enabled ;
     ] ;
 
-    rdfs:comment "" ;
-
     rdfs:comment """
 The MOD Cabinet Loader enables you to easily create custom cabinet simulations and other effects using impulse responses (IRs).
 
