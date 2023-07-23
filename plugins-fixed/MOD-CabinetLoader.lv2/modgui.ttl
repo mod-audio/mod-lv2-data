@@ -1,0 +1,17 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:    <http://moddevices.com/ns/mod#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://mod.audio/plugins/CabinetLoader>
+    modgui:gui [
+        modgui:label "MOD Cabinet Loader" ;
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon.html> ;
+        modgui:javascript <modgui/javascript.js> ;
+        modgui:stylesheet <modgui/stylesheet.css> ;
+        modgui:screenshot <modgui/screenshot.png> ;
+        modgui:thumbnail <modgui/thumbnail.png> ;
+    ] .

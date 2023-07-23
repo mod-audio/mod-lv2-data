@@ -7,7 +7,7 @@
 <https://mod.audio/plugins/CabinetLoader>
     a lv2:Plugin ;
     lv2:binary <MOD-CabinetLoader_dsp.so> ;
-    rdfs:seeAlso <MOD-CabinetLoader_dsp.ttl> .
+    rdfs:seeAlso <MOD-CabinetLoader_dsp.ttl> , <modgui.ttl> .
 
 <https://mod.audio/plugins/CabinetLoader#irfile>
     a lv2:Parameter ;
