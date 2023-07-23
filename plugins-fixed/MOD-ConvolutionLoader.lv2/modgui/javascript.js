@@ -2,9 +2,14 @@ function (event, funcs)
 {
     function update_filename(icon, filename)
     {
-        filename = filename.slice(filename.indexOf("/Reverb IRs/")+12);
-        if (filename.indexOf("MOD-ConvolutionLoader.lv2/") === 0)
-            filename = filename.slice(26);
+        var index = filename.indexOf("/Reverb IRs/");
+        if (index !== -1)
+            filename = filename.slice(index+12);
+
+        index = filename.indexOf("/MOD-ConvolutionLoader.lv2/");
+        if (index !== -1)
+            filename = filename.slice(index+27);
+
         icon.find('.file-info-details').text(filename);
     }
 
