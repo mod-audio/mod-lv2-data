@@ -8,6 +8,7 @@
 <https://mod.audio/plugins/ConvolutionLoader>
     modgui:gui [
         modgui:label "MOD Convolution Loader" ;
+        modgui:discussionURL <https://forum.mod.audio/t/mod-convolution-loader/8754> ;
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon.html> ;
         modgui:javascript <modgui/javascript.js> ;

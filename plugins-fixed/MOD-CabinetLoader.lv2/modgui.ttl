@@ -8,6 +8,7 @@
 <https://mod.audio/plugins/CabinetLoader>
     modgui:gui [
         modgui:label "MOD Cabinet Loader" ;
+        modgui:discussionURL <https://forum.mod.audio/t/mod-cabinet-loader/10144> ;
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon.html> ;
         modgui:javascript <modgui/javascript.js> ;
