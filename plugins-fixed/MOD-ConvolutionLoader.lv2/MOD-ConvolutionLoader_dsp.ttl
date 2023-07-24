@@ -178,8 +178,8 @@ The MOD Convolution Loader enables you to easily create custom reverb and other 
 
 Using a very resource effective processing, it allows IRs with a length of up to 15s on the MOD Dwarf and MOD Duo X, less on the MOD Duo.
 
-IRs can be uploaded using the file manager in the WAV and FLAC format.
-Multi-channel files are supported, but processed always in stereo mode.
+IRs can be uploaded using the file manager in either WAV and FLAC format.
+Multi-channel files are supported but always processed in stereo mode.
 For faster loading it is recommended to use WAV format files with 48kHz and 24 bit.
 
 The plugin is very easy to use: Simply select the IR file, set the levels as desired, optionally filter out some low end with the built-in high pass filter, and off you go.

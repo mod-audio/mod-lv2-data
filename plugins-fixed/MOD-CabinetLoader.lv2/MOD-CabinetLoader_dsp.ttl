@@ -102,8 +102,8 @@ The MOD Cabinet Loader enables you to easily create custom cabinet simulations a
 
 Using multi-threaded processing, it allows to load IRs with less aparent CPU usage compared to conventional methods.
 
-IRs can be uploaded using the file manager in the WAV and FLAC format.
-Multi-channel files are supported, but processed always in mono mode using the first channel.
+IRs can be uploaded using the file manager in either WAV and FLAC format.
+Multi-channel files are supported but always processed in mono mode using the first channel.
 For faster loading it is recommended to use WAV format files with 48kHz and 24 bit.
 
 The plugin is very easy to use: Simply select the IR file, set the level as desired and off you go.
