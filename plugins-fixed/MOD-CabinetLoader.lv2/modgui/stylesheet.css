@@ -23,10 +23,10 @@
 
 .mod-cabinet-loader.mod-pedal .mod-cabinet-loader-shadow1 {
     position: absolute;
-    top: 5px;
-    left: 3px;
-    width: 404px;
-    height: 410px;
+    top: 7px;
+    left: 4px;
+    width: 400px;
+    height: 408px;
     border-radius: 12px;
     box-shadow: 2px 8px 7px rgba(0,0,0,0.2),
                 4px 16px 7px rgba(0,0,0,0.2),
@@ -41,8 +41,8 @@
 .mod-cabinet-loader.mod-pedal .mod-cabinet-loader-shadow2 {
     position: absolute;
     bottom: 1px;
-    left: 3px;
-    width: 400px;
+    left: 4px;
+    width: 398px;
     height: 40px;
     border-radius: 12px;
     box-shadow: 2px 8px 7px rgba(0,0,0,0.2),
@@ -152,4 +152,11 @@
 }
 .mod-cabinet-loader.mod-pedal .mod-footswitch.off {
     background-position: top right;
+}
+
+.mod-cabinet-loader.mod-pedal .mod-audio-input {
+    left: 2px;
+}
+.mod-cabinet-loader.mod-pedal .mod-audio-output {
+    left: -2px;
 }
