@@ -55,6 +55,25 @@
     z-index: -1;
 }
 
+.mod-cabinet-loader.mod-pedal .mod-cabinet-loader-branding {
+    height: 38px;
+    text-align: center;
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    top: 31px;
+    background-color: rgba(46, 46, 46, 0.3);
+}
+
+.mod-cabinet-loader.mod-pedal .mod-cabinet-loader-branding span {
+    border: 2px solid transparent;
+    border-bottom-color: #ccc;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 0px 12px;
+    vertical-align: bottom;
+}
+
 .mod-cabinet-loader.mod-pedal .mod-control-group {
     position: relative;
     z-index: 35;
@@ -65,15 +84,15 @@
     border: 6px rgba(0,0,0,0.5) solid;
 }
 .mod-cabinet-loader.mod-pedal .mod-enumerated {
-    font-size: 20px;
     font-weight: 400;
     line-height: 1.75;
+    margin-top: 38px;
 }
 .mod-cabinet-loader.mod-pedal .mod-enumerated .mod-enumerated-list {
     display: block !important;
-    background-color: rgba(46, 46, 46, 0.5);
+    background-color: rgba(46, 46, 46, 0.2);
     color: #e6e6e6;
-    height: 353px;
+    height: 315px;
     overflow: auto;
 }
 .mod-cabinet-loader.mod-pedal .mod-enumerated .mod-enumerated-list > div {
