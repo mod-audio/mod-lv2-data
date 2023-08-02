@@ -10,7 +10,7 @@ function (event, funcs)
         if (index !== -1)
             filename = filename.slice(index+23);
 
-        icon.find('.file-info-details').text(filename);
+        icon.find('.file-info-details').html(filename || '&nbsp;');
     }
 
     if (event.type == 'start')
