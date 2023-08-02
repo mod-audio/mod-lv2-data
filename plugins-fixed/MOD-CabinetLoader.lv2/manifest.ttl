@@ -14,19 +14,3 @@
     rdfs:label "IR File" ;
     mod:fileTypes "cabsim" ;
     rdfs:range <http://lv2plug.in/ns/ext/atom#Path> .
-
-<https://mod.audio/plugins/ConvolutionLoader#preset001>
-    a pset:Preset ;
-    lv2:appliesTo <https://mod.audio/plugins/CabinetLoader> ;
-    rdfs:label "Default (FA-AliceInBones)";
-    lv2:port [
-        lv2:symbol "level" ;
-        pset:value -12 ;
-    ] ,
-    [
-        lv2:symbol "lv2_enabled" ;
-        pset:value 1 ;
-    ] ;
-    state:state [
-        <https://mod.audio/plugins/CabinetLoader#irfile> <forward-audio_AliceInBones.wav>;
-    ] .

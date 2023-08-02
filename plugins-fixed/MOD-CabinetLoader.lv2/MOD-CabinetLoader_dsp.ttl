@@ -22,7 +22,6 @@
                       <http://lv2plug.in/ns/ext/worker#interface> ;
 
     lv2:optionalFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
-                        state:loadDefaultState ,
                         state:threadSafeRestore ;
 
     lv2:requiredFeature opts:options ,
@@ -127,8 +126,4 @@ Plugin by MOD Audio & DISTRHO, based on HiFi-LoFi FFTConvolver engine.
     ] ;
 
     lv2:microVersion 0 ;
-    lv2:minorVersion 2 ;
-
-    state:state [
-        <https://mod.audio/plugins/CabinetLoader#irfile> <forward-audio_AliceInBones.wav>;
-    ] .
+    lv2:minorVersion 2 .
