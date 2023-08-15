@@ -134,7 +134,9 @@
         lv2:scalePoint [ rdfs:label "Channels 1 + 2" ;
                          rdf:value  0 ] ,
                        [ rdfs:label "Channels 3 + 4" ;
-                         rdf:value  1 ] ;
+                         rdf:value  1 ] ,
+                       [ rdfs:label "Channels 1&2 + 3&4" ;
+                         rdf:value  2 ] ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
         lv2:index 11 ;
