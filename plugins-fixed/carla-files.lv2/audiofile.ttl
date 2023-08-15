@@ -5,6 +5,7 @@
 @prefix mod:   <http://moddevices.com/ns/mod#> .
 @prefix opts:  <http://lv2plug.in/ns/ext/options#> .
 @prefix patch: <http://lv2plug.in/ns/ext/patch#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
@@ -206,11 +207,14 @@ You can also sync to host transport, which will play in frame-perfect sync, usef
 
 Files are streamed from disk if longer than 30 seconds in length, otherwise loaded entirely on RAM.
 
+This plugin supports mono, stereo and quad files.
+For quad files use the "Quad Channels" parameter to select which 2 outputs to use.
+
+A CV output port is available, used to report the current play status as a CV signal, 0 when paused and 10v when playing.
+
 Even though this player plugin can loop files, it is not an audio looper.
 Audio can loop back to the beginning if enabled, but it does not resample or pitch-shift to fit the host BPM.
 The audio files are played back as-is, with resampling only done when needed to match the host sample rate.
-
-This plugin supports mono, stereo and quad files.
     """;
 
     lv2:microVersion 0 ;

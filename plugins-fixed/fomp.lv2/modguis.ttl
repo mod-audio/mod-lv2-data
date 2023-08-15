@@ -673,38 +673,30 @@
         modgui:thumbnail <modgui/thumbnail-reverb.png> ;
         modgui:brand "FOMP" ;
         modgui:label "Reverb" ;
-        modgui:model "boxy" ;
-        modgui:panel "7-knobs" ;
-        modgui:color "blue" ;
+        modgui:model "japanese" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "black" ;
         modgui:knob "black" ;
         modgui:port [
             lv2:index 0 ;
-            lv2:symbol "rt_low" ;
-            lv2:name "Decay L" ;
+            lv2:symbol "delay" ;
+            lv2:name "Size" ;
         ] , [
             lv2:index 1 ;
-            lv2:symbol "rt_mid" ;
-            lv2:name "Decay M" ;
+            lv2:symbol "rt_low" ;
+            lv2:name "RT-low" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "damping" ;
-            lv2:name "Damping" ;
+            lv2:symbol "rt_mid" ;
+            lv2:name "RT-mid" ;
         ] , [
             lv2:index 3 ;
-            lv2:symbol "out_mix" ;
-            lv2:name "Mix" ;
+            lv2:symbol "damping" ;
+            lv2:name "HF Damp" ;
         ] , [
             lv2:index 4 ;
-            lv2:symbol "f1_freq" ;
-            lv2:name "Freq1" ;
-        ] , [
-            lv2:index 5 ;
-            lv2:symbol "f2_freq" ;
-            lv2:name "Freq2" ;
-        ] , [
-            lv2:index 6 ;
-            lv2:symbol "xover" ;
-            lv2:name "Xover" ;
+            lv2:symbol "out_mix" ;
+            lv2:name "Mix" ;
         ] ;
     ] .
     
