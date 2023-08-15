@@ -2,6 +2,7 @@
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:   <http://moddevices.com/ns/mod#> .
 @prefix opts:  <http://lv2plug.in/ns/ext/options#> .
 @prefix patch: <http://lv2plug.in/ns/ext/patch#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -72,11 +73,19 @@
         lv2:index 4 ;
         lv2:symbol "lv2_audio_out_2" ;
         lv2:name "Audio Output 2" ;
+    ] , [
+        a lv2:OutputPort, lv2:CVPort, mod:CVPort ;
+        lv2:index 5 ;
+        lv2:symbol "lv2_cv_out_1" ;
+        lv2:name "Play status" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 10 ;
     ] ;
 
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 5 ;
+        lv2:index 6 ;
         lv2:symbol "loop_mode" ;
         lv2:name "Loop Mode" ;
         lv2:default 1 ;
@@ -85,7 +94,7 @@
         lv2:portProperty lv2:integer, lv2:toggled ;
     ] , [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 6 ;
+        lv2:index 7 ;
         lv2:symbol "host_sync" ;
         lv2:name "Host Sync" ;
         lv2:default 0 ;
@@ -94,7 +103,7 @@
         lv2:portProperty lv2:integer, lv2:toggled ;
     ] , [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 8 ;
         lv2:symbol "volume" ;
         lv2:name "Volume" ;
         lv2:default 100.0 ;
@@ -103,7 +112,7 @@
         unit:unit unit:pc ;
     ] , [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 9 ;
         lv2:symbol "enabled" ;
         lv2:name "Enabled" ;
         lv2:default 1 ;
@@ -112,8 +121,22 @@
         lv2:portProperty lv2:integer, lv2:toggled ;
         lv2:designation lv2:enabled ;
     ] , [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 10 ;
+        lv2:symbol "quad_channels" ;
+        lv2:name "Quad Channels" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+        lv2:portProperty lv2:integer ;
+        lv2:portProperty lv2:enumeration ;
+        lv2:scalePoint [ rdfs:label "Channels 1 + 2" ;
+                         rdf:value  0 ] ,
+                       [ rdfs:label "Channels 3 + 4" ;
+                         rdf:value  1 ] ;
+    ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 11 ;
         lv2:symbol "num_channels" ;
         lv2:name "Num Channels" ;
         lv2:minimum 0 ;
@@ -121,7 +144,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 10 ;
+        lv2:index 12 ;
         lv2:symbol "bit_rate" ;
         lv2:name "Bit Rate" ;
         lv2:minimum -1 ;
@@ -129,7 +152,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 11 ;
+        lv2:index 13 ;
         lv2:symbol "bit_depth" ;
         lv2:name "Bit Depth" ;
         lv2:minimum 0 ;
@@ -137,7 +160,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 12 ;
+        lv2:index 14 ;
         lv2:symbol "sample_rate" ;
         lv2:name "Sample Rate" ;
         lv2:minimum 0 ;
@@ -145,7 +168,7 @@
         lv2:portProperty lv2:integer ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 13 ;
+        lv2:index 15 ;
         lv2:symbol "length" ;
         lv2:name "Length" ;
         lv2:minimum 0.0 ;
@@ -153,7 +176,7 @@
         unit:unit unit:s ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 14 ;
+        lv2:index 16 ;
         lv2:symbol "position" ;
         lv2:name "Position" ;
         lv2:minimum 0.0 ;
@@ -161,7 +184,7 @@
         unit:unit unit:pc ;
     ] , [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 15 ;
+        lv2:index 17 ;
         lv2:symbol "pool_fill" ;
         lv2:name "Pool Fill" ;
         lv2:minimum 0.0 ;
@@ -186,8 +209,10 @@ Files are streamed from disk if longer than 30 seconds in length, otherwise load
 Even though this player plugin can loop files, it is not an audio looper.
 Audio can loop back to the beginning if enabled, but it does not resample or pitch-shift to fit the host BPM.
 The audio files are played back as-is, with resampling only done when needed to match the host sample rate.
+
+This plugin supports mono, stereo and quad files.
     """;
 
-    lv2:microVersion 22 ;
-    lv2:minorVersion 150 ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 160 ;
     lv2:symbol "audiofile" .
