@@ -104,4 +104,13 @@ NAM was created by Steven Ack and the LV2 version is maintained by Mike Oliphant
 		lv2:minimum -20.0;
 		lv2:maximum 20.0;
 		units:unit units:db;
+	], [
+		a lv2:ControlPort, lv2:InputPort;
+		lv2:index 6;
+		lv2:symbol "buffered";
+		lv2:name "Buffered";
+		lv2:default 0;
+		lv2:minimum 0;
+		lv2:maximum 1;
+		lv2:portProperty lv2:integer, lv2:toggled;
 	].
