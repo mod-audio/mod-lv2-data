@@ -22,7 +22,9 @@
                       <http://lv2plug.in/ns/ext/worker#interface> ;
 
     lv2:optionalFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ,
+                        state:freePath ,
                         state:loadDefaultState ,
+                        state:mapPath ,
                         state:threadSafeRestore ;
 
     lv2:requiredFeature opts:options ,
