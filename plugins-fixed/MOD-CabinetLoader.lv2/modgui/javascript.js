@@ -2,13 +2,9 @@ function (event, funcs)
 {
     function update_filename(icon, filename)
     {
-        var index = filename.indexOf("/Speaker Cabinets IRs/");
+        var index = filename.lastIndexOf("/");
         if (index !== -1)
-            filename = filename.slice(index+22);
-
-        index = filename.indexOf("/MOD-CabinetLoader.lv2/");
-        if (index !== -1)
-            filename = filename.slice(index+23);
+            filename = filename.slice(index+1);
 
         icon.find('.file-info-details').html(filename || '&nbsp;');
     }
