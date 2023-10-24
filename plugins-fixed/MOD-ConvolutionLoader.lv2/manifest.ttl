@@ -9,12 +9,6 @@
     lv2:binary <MOD-ConvolutionLoader_dsp.so> ;
     rdfs:seeAlso <MOD-ConvolutionLoader_dsp.ttl> , <modgui.ttl> .
 
-<https://mod.audio/plugins/ConvolutionLoader#irfile>
-    a lv2:Parameter ;
-    rdfs:label "IR File" ;
-    mod:fileTypes "ir" ; 
-    rdfs:range <http://lv2plug.in/ns/ext/atom#Path> .
-
 <https://mod.audio/plugins/ConvolutionLoader#preset001>
     a pset:Preset ;
     lv2:appliesTo <https://mod.audio/plugins/ConvolutionLoader> ;

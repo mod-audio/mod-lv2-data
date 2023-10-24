@@ -14,6 +14,12 @@
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
+<https://mod.audio/plugins/ConvolutionLoader#irfile>
+    a lv2:Parameter ;
+    rdfs:label "IR File" ;
+    mod:fileTypes "ir" ;
+    rdfs:range atom:Path .
+
 <https://mod.audio/plugins/ConvolutionLoader>
     a lv2:ReverbPlugin, lv2:Plugin, doap:Project ;
 
@@ -159,22 +165,6 @@
         lv2:portProperty lv2:integer ;
     ] ;
 
-    mod:brand "MOD" ;
-    mod:label "Convolution Loader" ;
-
-    doap:name "Convolution Loader" ;
-    doap:license <http://spdx.org/licenses/ISC.html> ;
-
-    doap:developer [
-        foaf:name "DISTRHO" ;
-        foaf:homepage <https://mod.audio/plugins/ConvolutionLoader> ;
-    ] ;
-
-    doap:maintainer [
-        foaf:name "MOD" ;
-        foaf:homepage <https://mod.audio/> ;
-    ] ;
-
     rdfs:comment """
 The MOD Convolution Loader enables you to easily create custom reverb and other effects using impulse responses (IRs).
 
@@ -191,7 +181,23 @@ when enabled the reverb tail peacefully decays when you bypass the plugin, disab
 
 Features:
 Plugin by MOD Audio & DISTRHO, based on HiFi-LoFi FFTConvolver engine.
-""";
+""" ;
+
+    mod:brand "MOD" ;
+    mod:label "Convolution Loader" ;
+
+    doap:name "Convolution Loader" ;
+    doap:license <http://spdx.org/licenses/ISC.html> ;
+
+    doap:developer [
+        foaf:name "DISTRHO" ;
+        foaf:homepage <https://mod.audio/plugins/ConvolutionLoader> ;
+    ] ;
+
+    doap:maintainer [
+        foaf:name "MOD" ;
+        foaf:homepage <https://mod.audio/> ;
+    ] ;
 
     lv2:microVersion 0 ;
     lv2:minorVersion 2 ;

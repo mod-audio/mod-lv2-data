@@ -14,6 +14,12 @@
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 
+<https://mod.audio/plugins/CabinetLoader#irfile>
+    a lv2:Parameter ;
+    rdfs:label "IR File" ;
+    mod:fileTypes "cabsim" ;
+    rdfs:range atom:Path .
+
 <https://mod.audio/plugins/CabinetLoader>
     a lv2:SimulatorPlugin, lv2:Plugin, doap:Project ;
 
@@ -109,7 +115,7 @@ For faster loading it is recommended to use WAV format files with 48kHz and 24 b
 
 Features:
 Plugin by MOD Audio & DISTRHO, based on HiFi-LoFi FFTConvolver engine.
-""";
+""" ;
 
     mod:brand "MOD" ;
     mod:label "Cabinet Loader" ;
