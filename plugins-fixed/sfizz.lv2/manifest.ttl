@@ -5,3 +5,8 @@
   a lv2:Plugin ;
   lv2:binary <Contents/Binary/sfizz.so> ;
   rdfs:seeAlso <sfizz.ttl> .
+
+<http://sfztools.github.io/sfizz-multi>
+  a lv2:Plugin ;
+  lv2:binary <Contents/Binary/sfizz.so> ;
+  rdfs:seeAlso <sfizz.ttl> .
