@@ -15,7 +15,7 @@
 	foaf:homepage <http://gareus.org/> .
 
 <http://gareus.org/oss/lv2/b_whirl#mod>
-	a doap:Project, lv2:Plugin, lv2:SimulatorPlugin;
+	a doap:Project, lv2:Plugin, lv2:ModulatorPlugin;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree Whirl Speaker";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
