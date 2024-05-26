@@ -1,0 +1,71 @@
+.master_me.mod-pedal{
+ padding:0;
+ margin:0;
+ width:1030px;
+ height:647px;
+ background:#2a2e32;
+ border-radius:20px 20px 0 0;
+ color:#fff;
+}
+.master_me.mod-pedal .canvas_wrapper{
+ --device-pixel-ratio:1;
+ /*image-rendering:pixelated;*/
+ /*image-rendering:crisp-edges;*/
+ background:#000;
+ position:absolute;
+ top:50px;
+ transform-origin:0 0 0;
+ transform:scale(calc(1/var(--device-pixel-ratio)));
+ width:1030px;
+ height:597px;
+ text-align:center;
+ z-index:21;
+}
+/*
+.master_me.mod-pedal .canvas_wrapper:focus-within{
+ z-index:21;
+}
+*/
+.master_me.mod-pedal .mod-plugin-title{
+ position:absolute;
+ text-align:center;
+ width:100%;
+}
+.master_me.mod-pedal h1{
+ font-size:20px;
+ font-weight:bold;
+ line-height:50px;
+ margin:0;
+}
+.master_me.mod-pedal .mod-control-group{
+ position:absolute;
+ left:5px;
+ z-index:35;
+}
+.master_me.mod-pedal .mod-pedal-input,
+.master_me.mod-pedal .mod-pedal-output{
+ top:75px;
+}
+.master_me.mod-pedal .mod-audio-input,
+.master_me.mod-pedal .mod-audio-output{
+ margin-bottom:25px;
+}
+.master_me.mod-pedal .jack-disconnected{
+ top:0px!important;
+}
+.master_me.mod-pedal .mod-switch-image{
+ background-image: url(/img/switch.png);
+ background-position: left center;
+ background-repeat: no-repeat;
+ background-size: auto 50px;
+ font-weight: bold;
+ width: 100px;
+ height: 50px;
+ cursor: pointer;
+}
+.master_me.mod-pedal .mod-switch-image.off{
+ background-position: right center !important;
+}
+.master_me.mod-pedal .mod-switch-image.on{
+ background-position: left center !important;
+}
