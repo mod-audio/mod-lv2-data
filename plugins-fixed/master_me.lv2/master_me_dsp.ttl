@@ -1146,7 +1146,7 @@ GUI, Plugin: Filipe Coelho (falkTX)
 Logo, Artwork: Peter Schlossnikel
 
 More contributions from: Julius Smith, Dario Sanfilippo, Stéphane Letz, Romain Michon, Yann Orlarey, the Faust community.
-" ;
+""" ;
 
     doap:name "master_me" ;
     doap:license <http://spdx.org/licenses/GPL-3.0-or-later.html> ;
