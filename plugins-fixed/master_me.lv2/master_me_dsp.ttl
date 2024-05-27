@@ -1015,7 +1015,138 @@
         lv2:portProperty lv2:integer ;
     ] ;
 
-    rdfs:comment "Automatic audio mastering plugin for live-streaming, podcasting and internet radio stations" ;
+    rdfs:comment """
+master_me is an automatic audio mastering plugin for live-streaming, podcasting and internet radio stations.
+Introducing no latency, it takes care of master levels and ‘polishes’ the sound with a chain of effects, closely modeled after the audio chain of Klaus Scheuermann’s mastering studio in Berlin, Germany.
+
+The main concept of master_me is the combination of a leveler and a chain of dynamics processors.
+The leveler can be seen as a big volume knob which you would grab, when the sound is too low or too high for your taste.
+
+Signal Flow:
+
+ - Pre-processing
+ - Gate
+ - EQ
+ - Leveler
+ - Knee Compressor
+ - Multiband Mid-Side Compressor
+ - Limiter
+ - Brickwall
+
+
+Module: pre-processing
+
+The ‘pre-processing’ module contains:
+
+ - a gain-slider to apply gain to the incoming signal before it hits master_me.
+ - a ‘mono’ switch
+ - phase switches for both left and right channels
+ - ‘stereo-correct’ switch (custom designed process, see 'stereo-correct')
+
+Module: gate
+
+A simple noise gate with the following parameters:
+
+ - threshold
+ - attack
+ - release
+
+Module: EQ
+
+The EQ offers some simple tools for frequency spectrum manipulation. The parameters are:
+
+ - highpass frequency: the cutoff frequency of a soft highpass filter
+ - tilt-gain: gain of a 'tilt' equalizer, which will bend the frequency spectrum either to the higher frequencies or the lower frequencies.
+ - side-eq gain: gain parameter of the 'side-eq' which boosts a certain frequency range in the side signal in order to make the sound 'wider'.
+ - side-eq frequency: center frequency of the side-eq
+ - side-eq bandwidth: width of the side-eq
+
+Module: leveler
+
+The leveler is the most critical part of master_me. It will listen to the incoming signal and adjust it's volume to meet the target loudness. In order to make this as smooth and natural as possible, a complex algorithm was designed. The following parameters can be set:
+
+ - target loudness: in lufs, a slider also available in 'easy' mode, next to the input meters on the left). Typical target loudness values are -18lufs for video streaming, -14lufs for podcasting, -23lufs for EBU broadcast standard.
+ - brake threshold: this parameter is used by the leveler to detect silence. When silence is detected, the leveler 'freezes' and waits for incoming audio before it continues to adjust the loudness.
+ - max +: determines the maximum amount of positive gain the leveler can apply to the incoming signal
+ - max -: determines the maximum amount of negative gain the leveler can apply to the incoming signal
+ - the brake-meter shows silence detection.
+
+Module: knee compressor
+
+The knee compressor is a slow and soft mid-side compression module. It functions as a subtile, swinging compressor. Typical equivalents in the analog domain would be a Manley Stereo VARIABLE MU® compressor or a Vertigo VSC-2. The following parameters can be set:
+
+ - strength: correlating to the ratio of compression. 0% equals a ratio of 1:1, 100% equals a ratio of 1:infinity
+ - tar-thresh: offsets the compressors threshold, dependent on the target loudness.
+ - attack: compressor's attack time in milliseconds
+ - release: compressor's release time in milliseconds
+ - knee: compressor's knee in dB
+ - link: amount of gain reduction linking between mid and side channels
+ - ff-fb: feedforward-feedback determines, where the compressor receives it's side-chain signal from. feedforward is the input of the compressor, feedback is the output of the 'brickwall' module.
+ - make-up: simple gain makeup after compression
+ - dry-wet: fades between the input signal and the compressed signal
+ - the meters show the amount of compression on each channels
+
+Module: multiband mid/side compressor
+
+Being perhaps the most complicated module of master_me, this module works like this:
+
+The audio is first converted from stereo to mid-side and then split into 8 frequency bands.
+The parameters apply to the lowest band (low) and the highest band (high).
+For the 6 bands in between, the parameters are interpolated between 'low' and 'high'.
+
+The parameters for the lowest and highest band are:
+
+ - strength: correlating to the ratio of compression. 0% equals a ratio of 1:1, 100% equals a ratio of 1:infinity
+ - tar-thresh: offsets the band's threshold, dependent on the target loudness.
+ - attack: band's attack time in milliseconds
+ - release: band's release time in milliseconds
+ - knee: band's knee in dB
+ - link: amount of gain reduction linking between mid and side channels
+ - crossover: the lowest and highest crossover frequencies can be set here. All crossovers in between will be interpolated.
+ - the upper row of meters shows the gain reduction for all eight mid channels
+ - the lower row of meters shows the gain reduction for all eight side channels
+
+Module: limiter
+
+The 'limiter' it is rather a sound-shaping limiter than a clip-protection limiter.
+It's equivalents in the analog domain would typically be a Chandler TG-1 or a UREI 1178.
+Although the limiter can apply high compression ratios, it will not prevent from digital overshoots higher than threshold (which the brickwall module will take care of).
+The parameters are:
+
+ - strength: correlating to the ratio of compression. 0% equals a ratio of 1:1, 100% equals a ratio of 1:infinity
+ - tar-thresh: offsets the limiter's threshold, dependent on the target loudness.
+ - attack: limiter's attack time in milliseconds
+ - release: limiter's release time in milliseconds
+ - knee: limiter's knee in dB
+ - ff-fb: feedforward-feedback determines, where the limiter receives it's side-chain signal from. feedforward is the input of the limiter, feedback is the output of the limiter.
+ - make-up: simple gain makeup after limiting.
+ - gain reduction meter: shows gain reduction applied to the signal.
+
+Module: brickwall
+
+The 'brickwall' module is the last process in master_me's chain of modules.
+It is a fast brickwall limiter which will not allow any peaks above the desired 'ceiling'.
+The 'brickwall' process is a protection limiter and will not sound nice, if it needs to work a lot.
+
+
+Custom module: stereo correct
+
+This process was custom developed for the Chaos Computer Club's VOC (video operation center).
+It constantly checks the phase of an incoming signal.
+
+If phase == 1, all audio is made mono.
+If phase == -1, one channel is phase switched and the audio is monofied.
+
+This helps detect and fix broken audio signals and unwanted panning
+
+
+Concept and idea: Klaus Scheuermann
+DSP: Klaus Scheuermann (trummerschlunk), Bart Brouns (magnetophon), Robin Gareus (x42), Jakob Dübel (jkbd)
+GUI, Plugin: Filipe Coelho (falkTX)
+Logo, Artwork: Peter Schlossnikel
+
+More contributions from: Julius Smith, Dario Sanfilippo, Stéphane Letz, Romain Michon, Yann Orlarey, the Faust community.
+" ;
 
     doap:name "master_me" ;
     doap:license <http://spdx.org/licenses/GPL-3.0-or-later.html> ;
