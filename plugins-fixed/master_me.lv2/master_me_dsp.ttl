@@ -1013,6 +1013,26 @@
             unit:render "%d frames" ;
         ] ;
         lv2:portProperty lv2:integer ;
+    ] ,
+    [
+        a lv2:OutputPort, lv2:ControlPort ;
+        lv2:index 97 ;
+        lv2:name "Histogram Value In" ;
+        lv2:symbol "histogram_value_in" ;
+        lv2:shortName """HistValIn""" ;
+        lv2:minimum -70 ;
+        lv2:maximum 0 ;
+        unit:unit unit:db ;
+    ] ,
+    [
+        a lv2:OutputPort, lv2:ControlPort ;
+        lv2:index 98 ;
+        lv2:name "Histogram Value Out" ;
+        lv2:symbol "histogram_value_out" ;
+        lv2:shortName """HistValOut""" ;
+        lv2:minimum -70 ;
+        lv2:maximum 0 ;
+        unit:unit unit:db ;
     ] ;
 
     rdfs:comment """

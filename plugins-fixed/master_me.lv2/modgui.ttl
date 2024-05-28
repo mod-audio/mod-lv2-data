@@ -70,5 +70,9 @@
             lv2:symbol "brickwall_limit" ;
         ] , [
             lv2:symbol "histogram_buffer_size" ;
+        ] , [
+            lv2:symbol "histogram_value_in" ;
+        ] , [
+            lv2:symbol "histogram_value_out" ;
         ] ;
     ] .
