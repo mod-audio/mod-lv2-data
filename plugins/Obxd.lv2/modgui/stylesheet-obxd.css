@@ -1,0 +1,476 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/resources/fonts/RobotoCondensed-Regular.ttf);
+  /* font-weight: bold; */
+  /* font-style: normal; */
+}
+
+:root {
+  --main-bg-color: brown;
+  --gap-15: 15px 0;
+  --gap-8: 8px 0px;
+  --padding-sections: 0 10px;
+  --btn-text-size: 12px;
+  --shadow-default: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25))
+    drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2))
+    drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 16px 16px rgba(0, 0, 0, 0.05));
+}
+/* main pedal */
+
+.obxd{{{cns}}}{
+  background: #303030 no-repeat center;
+  background-color: linear-gradient(140deg, rgb(31, 31, 31) 0%, rgb(14, 18, 24) 90%);
+  border-radius: 5px;
+  /* background-image: url("background.png"); */
+  background-repeat: no-repeats;
+  /* background-size: contain; */
+  color: white;
+  width: 1250px;
+  height: 600px;
+  padding: 20px 0px;
+  /* background-color: #ffffff; */
+  /* Two of the same svg in a list */
+  background-image: url("/resources/knobs/wood-handle.svg{{{ns}}}"), url("/resources/knobs/wood-handle.svg{{{ns}}}");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23000000' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  background-repeat: repeat-y;
+  /* The first svg goes on the left and the second svg goes on the right */
+  background-position: left, right;
+}
+
+.obxd{{{cns}}} .mod-control-group {
+  margin: 0 15px;
+  position: relative;
+  align-content: center;
+  text-align: center;
+  z-index: 30;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-knob {
+  background-repeat: no-repeat;
+  align-content: center;
+  text-transform: uppercase;
+  filter: var(--shadow-default);
+  font-size: var(--btn-text-size);
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-knob-dot {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: top;
+  align-content: center;
+  width: 4px;
+  height: 4px;
+  background-color: rgb(215, 215, 200);
+  border-radius: 2px;
+  padding: 1px;
+  text-transform: uppercase;
+  filter: var(--shadow-default);
+  font-size: var(--btn-text-size);
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-knob-image {
+  /* padding: 8px; */
+  /* background-image: url(/resources/knobs/knob_flat_sprite.png{{{ns}}}); */
+  background-image: url(/resources/knobs/knob_flat_dark.svg{{{ns}}});
+  /* background-image: url(/resources/knobs/knob_flat_dark.svg{{{ns}}}); */
+  background-repeat: no-repeat;
+  /* background-size: auto 50px; */
+  background-position: center center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.obxd{{{cns}}} .mod-control-group .mod-button {
+  /* padding: 16px 8px 0px 8px; */
+  background: none;
+  margin: 0;
+  background-repeat: no-repeat;
+  align-content: center;
+  text-transform: uppercase;
+  filter: var(--shadow-default);
+  font-size: var(--btn-text-size);
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-button-image {
+  /* padding: 8px; */
+  background-image: url(/resources/knobs/button_flat_dark.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod.mod-button-small .mod-button-image {
+  background-image: url(/resources/knobs/button_flat_dark.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-button-small .mod-button-image {
+  /* padding: 8px; */
+  background-image: url(/resources/knobs/button_flat_dark.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 40px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-button-image.off {
+  background-image: url(/resources/knobs/button_flat_dark_off.svg{{{ns}}});
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-buttongr {
+  /* padding: 16px 8px 0px 8px; */
+  background: none;
+  margin: 0;
+  background-repeat: no-repeat;
+  align-content: center;
+  text-transform: uppercase;
+  filter: var(--shadow-default);
+  font-size: var(--btn-text-size);
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-buttongr-image {
+  /* padding: 8px; */
+  background-image: url(/resources/knobs/button_flat_green_on.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod.mod-buttongr-small .mod-buttongr-image {
+  background-image: url(/resources/knobs/button_flat_green_on.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-buttongr-small .mod-buttongr-image {
+  /* padding: 8px; */
+  background-image: url(/resources/knobs/button_flat_green_on.svg{{{ns}}});
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 40px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.obxd{{{cns}}} .mod-control-group .mod-buttongr-image.off {
+  background-image: url(/resources/knobs/button_flat_green_off.svg{{{ns}}});
+}
+
+.obxd-title h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  color: rgb(215, 215, 200);
+}
+
+.obxd-title h5 {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 2px auto;
+  color: rgb(215, 215, 200);
+}
+.obxd{{{cns}}} .mod-knob-title img {
+  height: 10px;
+  margin: 0px auto;
+  /* display: block; */
+}
+
+.obxd{{{cns}}} .mod-knob-title {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 11px;
+  padding: 8px 0px 0px 0px;
+  color: rgb(215, 215, 200);
+}
+
+
+
+/* GRID */
+.obxd-container {
+  margin: 0px 5px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 4fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "one two three four"
+    "one two three four";
+}
+
+.obxd-name {
+  grid-area: obxd-name;
+  text-align: center;
+  align-items: center;
+  text-transform: none;
+}
+
+.obxd-name h1 {
+  font-size: 60px;
+  /* padding: 20px 10px;
+  font-weight: 600; */
+  margin: auto auto;
+  color: rgb(
+    31,
+    31,
+    31
+  ); /*linear-gradient(140deg, rgb(96, 15, 65) 0%, rgb(24, 14, 18) 90%); */
+  text-shadow: -1px -1px 0 rgba(215, 215, 215, 0.632),
+    1px -1px 0 rgb(197, 197, 197), -1px 1px 0 rgb(142, 143, 148),
+    1px 1px 0 rgb(247, 247, 248);
+}
+
+.obxd-name h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.obxd{{{cns}}} .header {
+  grid-area: header;
+  align-content: center;
+  border-top: 3px solid #0265d6;
+  border-bottom: 1px solid #0463d0;
+}
+
+.controls-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.controls-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  /* grid-template-rows: 1fr; */
+  /* align-content: space-evenly; */
+}
+
+.controls-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: 1fr; */
+  align-content: space-evenly;
+  align-content: center;
+}
+
+.controls-5-align {
+  display: grid;
+  grid-template-columns: 4fr 2fr 4fr;
+}
+
+.controls-2-align {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.obxd{{{cns}}} .no-lines {
+  border: none;
+}
+
+.gap-15 {
+  gap: var(--gap-15);
+}
+
+.grip{
+  display: grid;
+  grid-column: 10px;
+grid-area: grip;
+}
+
+/* ONE ************************/
+.one {
+  display: grid;
+  gap: var(--gap-15);
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-areas:
+    "brand"
+    "master"
+    "global";
+  grid-area: one;
+}
+
+/* sections one */
+.brand {
+  display: grid;
+  gap: var(--gap-15);
+  align-self: center;
+  grid-template-areas:
+    "header"
+    "bypass";
+  grid-area: brand;
+  padding: var(--padding-sections);
+}
+
+.brand img {
+  width: 200px;
+  
+  }
+
+.master {
+  display: grid;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  align-items: start;
+  grid-template-areas:
+    "header header header"
+    "volume fine coarse";
+  grid-area: master;
+  padding: var(--padding-sections);
+}
+
+.global {
+  display: grid;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  align-self: start;
+  grid-template-areas:
+    "header header header"
+    "spread unison glide";
+  grid-area: global;
+  padding: var(--padding-sections);
+}
+
+/* TWO ************************/
+.two {
+  display: grid;
+  gap: var(--gap-15);
+  /* grid-template-columns: min-content; */
+  grid-template-areas:
+    "osc mixer"
+    "osc mixer"
+    "control control";
+  grid-area: two;
+  border-left: #515253 solid 1px;
+  
+}
+
+/* sections */
+.osc {
+  display: grid;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  align-items: start;
+  grid-template-areas: "header";
+  grid-area: osc;
+  border-right: #515253 solid 1px;
+  padding: 0 25px 0 10px;
+}
+
+.mixer {
+  display: grid;
+  gap: var(--gap-15);
+  grid-template-columns: max-content;
+  /*align-items: start;*/
+  align-self: start;
+  grid-template-areas: "header";
+  grid-area: mixer;
+  padding: 0 25px;
+}
+
+.control {
+  display: grid;
+  gap: var(--gap-15);
+  align-items: start;
+  grid-template-areas: "header";
+  grid-area: control;
+  padding: var(--padding-sections);
+}
+
+.three {
+  display: grid;
+  gap: var(--gap-15);
+  align-content: space-center;
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "filter"
+    "modulation ";
+  grid-area: three;
+  border-left: #515253 solid 1px;
+}
+
+.obxd{{{cns}}} .filter {
+  display: grid;
+  gap: var(--gap-15);
+  align-items: start;
+  grid-template-areas: "header";
+  grid-area: filter;
+  padding: var(--padding-sections);
+}
+
+.modulation {
+  display: grid;
+  gap: var(--gap-8);
+  align-items: start;
+  grid-template-areas:
+    "header"
+    "controls-5-align"
+    "controls-3"
+    "controls-3"
+    "controls-3";
+  grid-area: modulation;
+  padding: var(--padding-sections);
+}
+
+.four {
+  display: grid;
+  grid-area: four;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "filter-env"
+    "amp-env "
+    "voice ";
+  border-left: #3f4143 solid 1px;
+}
+
+.filter-env {
+  display: grid;
+  grid-area: filter-env;
+  grid-template-rows: min-content;
+  gap: var(--gap-15);
+  grid-template-areas: "header";
+  padding: var(--padding-sections);
+}
+
+.amp-env {
+  display: grid;
+  grid-area: amp-env;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  grid-template-areas: "header";
+  padding: var(--padding-sections);
+}
+
+.voice {
+  display: grid;
+  grid-area: voice;
+  gap: var(--gap-15);
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "header"
+    "control-4";
+    padding: var(--padding-sections);
+}

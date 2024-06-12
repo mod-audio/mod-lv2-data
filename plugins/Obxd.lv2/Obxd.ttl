@@ -1,9 +1,12 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epp:   <http://lv2plug.in/ns/ext/port-props/#>.
 @prefix atom: <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
 
 <https://obxd.wordpress.com>
     a lv2:InstrumentPlugin, lv2:Plugin ;
@@ -11,6 +14,12 @@
                         <http://lv2plug.in/ns/ext/urid#map> ;
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
+
+    lv2:microVersion 0 ;
+    lv2:minorVersion 2 ;
+
+    ui:ui <https://obxd.wordpress.com#ExternalUI> ,
+          <https://obxd.wordpress.com#ParentUI> ;
 
     lv2:port [
         a lv2:InputPort, atom:AtomPort ;
@@ -50,20 +59,22 @@
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
-        lv2:symbol "unused" ;
-        lv2:name "unused" ;
+        lv2:symbol "lv2_port_1" ;
+        lv2:name "Port 1" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled, <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
-        lv2:symbol "unused2" ;
-        lv2:name "unused2" ;
+        lv2:symbol "unused_1" ;
+        lv2:name "Unused 1" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled, <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -78,235 +89,332 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
         lv2:symbol "voicecount" ;
-        lv2:name "VoiceCount" ;
-        lv2:default 1.000000 ;
+        lv2:name "Voices / Poly" ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:enumeration;
+        lv2:scalePoint [ rdfs:label "1"; rdf:value 0.0 ],
+        [ rdfs:label "2"; rdf:value 0,0322581 ],
+        [ rdfs:label "3"; rdf:value 0,0645161 ],
+        [ rdfs:label "4"; rdf:value 0.0967741 ],
+        [ rdfs:label "5"; rdf:value 0,1290322 ],
+        [ rdfs:label "6"; rdf:value 0.1612905 ],
+        [ rdfs:label "7"; rdf:value 0.1935486 ],
+        [ rdfs:label "8"; rdf:value 0.2258067 ],
+        [ rdfs:label "9"; rdf:value 0.2580648 ],
+        [ rdfs:label "10"; rdf:value 0.290323 ],
+        [ rdfs:label "11"; rdf:value 0.322581 ],
+        [ rdfs:label "12"; rdf:value 0.354839 ],
+        [ rdfs:label "13"; rdf:value 0.387097 ],
+        [ rdfs:label "14"; rdf:value 0.419355 ],
+        [ rdfs:label "15"; rdf:value 0.451613 ],
+        [ rdfs:label "16"; rdf:value 0.483872 ],
+        [ rdfs:label "17"; rdf:value 0.516129 ],
+        [ rdfs:label "18"; rdf:value 0.548387 ],
+        [ rdfs:label "19"; rdf:value 0.580645 ],
+        [ rdfs:label "20"; rdf:value 0.612903 ],
+        [ rdfs:label "21"; rdf:value 0.645162 ],
+        [ rdfs:label "22"; rdf:value 0.677420 ],
+        [ rdfs:label "23"; rdf:value 0.709678 ],
+        [ rdfs:label "24"; rdf:value 0.741936 ],
+        [ rdfs:label "25"; rdf:value 0.774194 ],
+        [ rdfs:label "26"; rdf:value 0.806452 ],
+        [ rdfs:label "27"; rdf:value 0.838710 ],
+        [ rdfs:label "28"; rdf:value 0.870968 ],
+        [ rdfs:label "29"; rdf:value 0.903226 ],
+        [ rdfs:label "30"; rdf:value 0.935484 ],
+        [ rdfs:label "31"; rdf:value 0.96774 ],
+        [ rdfs:label "32"; rdf:value 1.0 ] ;
+        rdfs:comment "The number of active voices (notes). This can be a CPU saving measure as much as it can be a creative choice." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
         lv2:symbol "tune" ;
-        lv2:name "Tune" ;
+        lv2:name "Fine Tune" ;
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Fine tuning the pitch of the overall sound" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:symbol "octave" ;
-        lv2:name "Octave" ;
-        lv2:default 0.500000 ;
+        lv2:name "Coarse tune" ;
+        lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:enumeration;
+        lv2:scalePoint [ rdfs:label "-2"; rdf:value 0.0 ] ;
+        lv2:scalePoint [ rdfs:label "-1"; rdf:value 0.25 ] ;
+        lv2:scalePoint [ rdfs:label "0"; rdf:value 0.5 ] ;
+        lv2:scalePoint [ rdfs:label "1"; rdf:value 0.75 ] ;
+        lv2:scalePoint [ rdfs:label "2"; rdf:value 1.0 ] ;
+        rdfs:comment "Adjusts the pitch by octaves, for quick shifts in pitch range. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:symbol "bendrange" ;
-        lv2:name "BendRange" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Bend Range" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Switches the bend from a tone/whole-step (default) to an octave" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:symbol "bendosc2only" ;
-        lv2:name "BendOsc2Only" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Bend Osc2 Only" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Applies the pitch bend only to OSC2. This can create some interesting dissonant effects" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:symbol "legatomode" ;
-        lv2:name "LegatoMode" ;
-        lv2:default 0.000000 ;
+        lv2:name "Legato Modus" ;
+        lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:enumeration;
+        lv2:scalePoint [ rdfs:label "Keep All"; rdf:value 0.0 ],
+        [ rdfs:label "Keep Filter Envelope"; rdf:value 0.33333333 ],
+        [ rdfs:label "Keep Amplifier Envelope"; rdf:value 0.66666666 ],
+        [ rdfs:label "Retrigger"; rdf:value 1.0 ] ;
+        rdfs:comment "Keep all: This mode keeps playing notes at their sustain envelope levels. Keep fenv: This mode will keep held notes at the Filter envelope sustain level. Keep Amplifier Envelope:Same as “Keep fenv” but the Filter envelope is re-triggered while the Ampenvelope is not. Retrigger:Same as “fenv” and “aenv” but now both envelopes are re-triggered on new notes." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 13 ;
         lv2:symbol "vibratorate" ;
-        lv2:name "VibratoRate" ;
+        lv2:name "Vibrato Rate" ;
         lv2:default 0.600000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Vibrato Depth is tied to the Modulation wheel as well as(CC#1). In order to allow assignment of the Modulation wheel to other parameters without turning on vibrato, turning the Vibrato control to the complete left effectively turns off the vibrato" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 14 ;
         lv2:symbol "vfltfactor" ;
-        lv2:name "VFltFactor" ;
+        lv2:name "Filter env Vel" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Note velocity alters the envelope depth of the Filter Envelope. Note that altering the filter envelope by velocity will also cause variations in the Pitch when modulating OSC2 (P ENV) from the Filter envelope." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 15 ;
         lv2:symbol "vampfactor" ;
-        lv2:name "VAmpFactor" ;
+        lv2:name "Amp env Vel" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Note velocity alters the envelope depth of the Amplifier envelope" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 16 ;
         lv2:symbol "asplayedallocation" ;
-        lv2:name "AsPlayedAllocation" ;
+        lv2:name "VAM" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Voice allocation mode. Switches the priority of voice allocation from the default low-note priority to last-note priority." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 17 ;
         lv2:symbol "portamento" ;
-        lv2:name "Portamento" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "glide" ;
+        lv2:default 0;
+        lv2:minimum 0.0;
+        lv2:maximum 1.0;
+        rdfs:comment "Adjusts the portamento (glide) effect, creating a smooth pitch transition from one note to another." ;
+
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 18 ;
         lv2:symbol "unison" ;
         lv2:name "Unison" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "a single-note mode that stacks all the voices available. Spread and Voice Panning are assets in this mode" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 19 ;
         lv2:symbol "voicedetune" ;
-        lv2:name "VoiceDetune" ;
-        lv2:default 0.000000 ;
+        lv2:name "Spread" ;
+        lv2:default 0.200000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "This control detunes the oscillators relative to each other to thicken the sound and add stereo width." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 20 ;
         lv2:symbol "oscillator2detune" ;
-        lv2:name "Oscillator2detune" ;
+        lv2:name "Osc2 detune" ;
         lv2:default 0.400000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment " OSC2 Detune control solely allows for upward pitch adjustments from the base pitch, offering a different range and character of detuning effects" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 21 ;
         lv2:symbol "lfofrequency" ;
-        lv2:name "LfoFrequency" ;
+        lv2:name "Lfo Frequency" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "LFO Rate / speed / frequency" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 22 ;
         lv2:symbol "lfosinewave" ;
-        lv2:name "LfoSineWave" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo SineWave" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO sine wave switch" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 23 ;
         lv2:symbol "lfosquarewave" ;
-        lv2:name "LfoSquareWave" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo SquareWave" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO square wave switch" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 24 ;
         lv2:symbol "lfosampleholdwave" ;
-        lv2:name "LfoSampleHoldWave" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo SampleHold " ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO wave Sample & Hold switch" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 25 ;
         lv2:symbol "lfoamount1" ;
-        lv2:name "LfoAmount1" ;
+        lv2:name "Lfo Freq amount" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Depth knob that controls how much the LFO modulates the oscillators’ Frequency parameters" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 26 ;
         lv2:symbol "lfoamount2" ;
-        lv2:name "LfoAmount2" ;
+        lv2:name "Lfo PWM amount" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "knob for pulse width modulation depth for the lfo" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 27 ;
         lv2:symbol "lfoosc1" ;
-        lv2:name "LfoOsc1" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo Osc1" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO Frequency modulation on/off for Osc 1" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 28 ;
         lv2:symbol "lfoosc2" ;
-        lv2:name "LfoOsc2" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo Osc2" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO Frequency modulation on/off for Osc 2" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 29 ;
         lv2:symbol "lfofilter" ;
-        lv2:name "LfoFilter" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo Filter" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "The Filter switch applies the Frequency modulation to the filter’s Cutoff knob" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 30 ;
         lv2:symbol "lfopw1" ;
-        lv2:name "LfoPw1" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo Pw1" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO pulse width modulation on/off for Osc 1" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 31 ;
         lv2:symbol "lfopw2" ;
-        lv2:name "LfoPw2" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Lfo Pw2" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "LFO pulse width modulation on/off for Osc 2" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 32 ;
         lv2:symbol "osc2hardsync" ;
-        lv2:name "Osc2HardSync" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Sync" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Synchronises the +/- oscillations of both OSC1 and OSC2 resulting in a narrower, more precise tone" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -316,12 +424,13 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "cross modulation, with Oscillator 1 modulating Oscillator 2 (Frequency Modulation)" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 34 ;
         lv2:symbol "osc1pitch" ;
-        lv2:name "Osc1Pitch" ;
+        lv2:name "Osc1 Pitch" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -330,7 +439,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 35 ;
         lv2:symbol "osc2pitch" ;
-        lv2:name "Osc2Pitch" ;
+        lv2:name "Osc2 Pitch" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -339,46 +448,61 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 36 ;
         lv2:symbol "pitchquant" ;
-        lv2:name "PitchQuant" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Step Pitch Quant" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "enables precise tuning of the oscillators in semi-tone increments. When disengaged, the pitch control returns to a continuous adjustment mode, allowing for gradual, fine-tuning rather than locked semi-tone steps." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 37 ;
         lv2:symbol "osc1saw" ;
-        lv2:name "Osc1Saw" ;
-        lv2:default 1.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Osc1 Saw" ;
+        lv2:default 1;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Sawtooth wave button. A ramped pulse-wave is achieved by selecting both sawtooth and pulse options combined. When neither sawtooth or pulse is selected, the OSC produces a triangle wave." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 38 ;
         lv2:symbol "osc1pulse" ;
-        lv2:name "Osc1Pulse" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Osc1 Pulse" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Pulse Wave button (with adjustable pulse width - PW). A ramped pulse-wave is achieved by selecting both sawtooth and pulse options combined.  When neither sawtooth or pulse is selected, the OSC produces a triangle wave." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 39 ;
         lv2:symbol "osc2saw" ;
-        lv2:name "Osc2Saw" ;
-        lv2:default 1.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Osc2 Saw" ;
+        lv2:default 1;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Sawtooth wave button. A ramped pulse-wave is achieved by selecting both sawtooth and pulse options combined. When neither sawtooth or pulse is selected, the OSC produces a triangle wave." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 40 ;
         lv2:symbol "osc2pulse" ;
-        lv2:name "Osc2Pulse" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Osc2 Pulse" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Pulse Wave button (with adjustable pulse width - PW). A ramped pulse-wave is achieved by selecting both sawtooth and pulse options combined.  When neither sawtooth or pulse is selected, the OSC produces a triangle wave." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -388,6 +512,7 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Adjusts the pulse width of the selected pulse wave oscillators (OSC1 and or OSC2)" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -397,21 +522,23 @@
         lv2:default 1.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "The Brightness control adjusts the clarity of higher harmonics" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 43 ;
         lv2:symbol "envelopetopitch" ;
-        lv2:name "EnvelopeToPitch" ;
+        lv2:name "Env To Pitch" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "The amount of pitch detuning from OSC2 controlled by velocity. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 44 ;
         lv2:symbol "osc1mix" ;
-        lv2:name "Osc1Mix" ;
+        lv2:name "Osc1 Mix" ;
         lv2:default 1.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -420,7 +547,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 45 ;
         lv2:symbol "osc2mix" ;
-        lv2:name "Osc2Mix" ;
+        lv2:name "Osc2 Mix" ;
         lv2:default 1.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -429,7 +556,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 46 ;
         lv2:symbol "noisemix" ;
-        lv2:name "NoiseMix" ;
+        lv2:name "Noise Mix" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -438,19 +565,23 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 47 ;
         lv2:symbol "filterkeyfollow" ;
-        lv2:name "FilterKeyFollow" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Fltr Key Follow" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "Key-follow or keyboard-tracking, i.e. the filter is less intrusive on higher pitches" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 48 ;
         lv2:symbol "cutoff" ;
         lv2:name "Cutoff" ;
-        lv2:default 0.500000 ;
+        lv2:default 1.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "By default, the filter is a 12dB/octave low-pass-filter (LPF) with the usual controls of CUTOFF and RESONANCE." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -460,6 +591,7 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "By default, the filter is a 12dB/octave low-pass-filter (LPF) with the usual controls of CUTOFF and RESONANCE." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -469,48 +601,59 @@
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Allows you to morph the filter shape (as opposed to switch) between LPF (far left), Notch (centered) (default setting), and HPF (far right)" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 51 ;
         lv2:symbol "filter_warm" ;
-        lv2:name "Filter_Warm" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Filter warm / HQ" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "The HQ button on the filter turns on High Quality mode which results in better interpolation and smoother processing of higher frequency components at the expense of CPU consumption." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 52 ;
         lv2:symbol "bandpassblend" ;
-        lv2:name "BandpassBlend" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "Bandpass" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "The BP switch has no effect in 24dB mode. It turns on and off to give you something to play with on the GUI which doesn't affect the sound in any way. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 53 ;
         lv2:symbol "fourpole" ;
-        lv2:name "FourPole" ;
-        lv2:default 0.000000 ;
-        lv2:minimum 0.0 ;
-        lv2:maximum 1.0 ;
+        lv2:name "LP 24dB" ;
+        lv2:default 0;
+        lv2:minimum 0;
+        lv2:maximum 1;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "This mode is only low-pass, but the MULTI control now allows you to smoothly change the depth of the filter slope from 24dB/octave on the complete left, down to 6 dB/octave on the complete right." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 54 ;
         lv2:symbol "filterenvamount" ;
-        lv2:name "FilterEnvAmount" ;
+        lv2:name "Fltr Env Amount" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "The amount of opening/closing of the filter (ADSR filter envelope) " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 55 ;
         lv2:symbol "attack" ;
-        lv2:name "Attack" ;
+        lv2:name "Amp Attack" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -519,7 +662,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 56 ;
         lv2:symbol "decay" ;
-        lv2:name "Decay" ;
+        lv2:name "Amp Decay" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -528,7 +671,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 57 ;
         lv2:symbol "sustain" ;
-        lv2:name "Sustain" ;
+        lv2:name "Amp Sustain" ;
         lv2:default 1.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -537,7 +680,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 58 ;
         lv2:symbol "release" ;
-        lv2:name "Release" ;
+        lv2:name "Amp Release" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -546,7 +689,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 59 ;
         lv2:symbol "filterattack" ;
-        lv2:name "FilterAttack" ;
+        lv2:name "Filter Attack" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -555,7 +698,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 60 ;
         lv2:symbol "filterdecay" ;
-        lv2:name "FilterDecay" ;
+        lv2:name "Filter Decay" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -564,7 +707,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 61 ;
         lv2:symbol "filtersustain" ;
-        lv2:name "FilterSustain" ;
+        lv2:name "Filter Sustain" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -573,7 +716,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 62 ;
         lv2:symbol "filterrelease" ;
-        lv2:name "FilterRelease" ;
+        lv2:name "Filter Release" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -582,28 +725,31 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 63 ;
         lv2:symbol "envelopedetune" ;
-        lv2:name "EnvelopeDetune" ;
-        lv2:default 0.000000 ;
+        lv2:name "Amp Envel Depth" ;
+        lv2:default 0.300000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "How much velocity influences amplifier-envelope depth" ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 64 ;
         lv2:symbol "filterdetune" ;
-        lv2:name "FilterDetune" ;
-        lv2:default 0.000000 ;
+        lv2:name "Fltr Envel Depth" ;
+        lv2:default 0.300000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Altering the filter envelope depth with velocity can also cause pitch variations when the Filter envelope is assigned to modulate Oscillator 2's pitch (P ENV). " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 65 ;
         lv2:symbol "portamentodetune" ;
-        lv2:name "PortamentoDetune" ;
-        lv2:default 0.000000 ;
+        lv2:name "glide detune" ;
+        lv2:default 0.300000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "This control adjusts the variation in the glide or portamento effect, introducing more or less predictability to the slide between notes." ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -613,6 +759,7 @@
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Normal pan control (left is left, right is right, centred is equal in both left and right channels). Create stereo image with up to 8 voices. This means that you could play an 8-note chord with the notes spread widely across the stereo picture. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -622,6 +769,7 @@
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Normal pan control (left is left, right is right, centred is equal in both left and right channels). Create stereo image with up to 8 voices. This means that you could play an 8-note chord with the notes spread widely across the stereo picture. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -631,6 +779,7 @@
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Normal pan control (left is left, right is right, centred is equal in both left and right channels). Create stereo image with up to 8 voices. This means that you could play an 8-note chord with the notes spread widely across the stereo picture. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -640,6 +789,7 @@
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Normal pan control (left is left, right is right, centred is equal in both left and right channels). Create stereo image with up to 8 voices. This means that you could play an 8-note chord with the notes spread widely across the stereo picture. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -649,6 +799,7 @@
         lv2:default 0.500000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        rdfs:comment "Normal pan control (left is left, right is right, centred is equal in both left and right channels). Create stereo image with up to 8 voices. This means that you could play an 8-note chord with the notes spread widely across the stereo picture. " ;
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -680,11 +831,111 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 74 ;
-        lv2:symbol "unused3" ;
-        lv2:name "unused3" ;
+        lv2:symbol "unused_2" ;
+        lv2:name "Unused 2" ;
         lv2:default 0.000000 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled, <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 75 ;
+        lv2:symbol "economymode" ;
+        lv2:name "EconomyMode" ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        rdfs:comment "" ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 76 ;
+        lv2:symbol "lfosync" ;
+        lv2:name "LfoSync" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:portProperty lv2:toggled, <http://lv2plug.in/ns/ext/port-props#notOnGUI> ;
+        rdfs:comment "LFO Synchronization Ensures perfect timing by syncing the internal LFO with your DAW's / MIDI BPM." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 77 ;
+        lv2:symbol "pwenv" ;
+        lv2:name "Pw Env" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        rdfs:comment "Modulates Oscillator 2's pulse width with the Filter Envelope." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 78 ;
+        lv2:symbol "pwenvboth" ;
+        lv2:name "Pw Env Both" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "button allows the Filter Envelope modulation to affect both oscillators' pulse width." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 79 ;
+        lv2:symbol "envpitchboth" ;
+        lv2:name "Env Pitch Both" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "button allows the pitch Envelope modulation to affect both oscillators' pulse width." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 80 ;
+        lv2:symbol "fenvinvert" ;
+        lv2:name "Fltr env Invert" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "A new button for inverting the Filter Envelope output." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 81 ;
+        lv2:symbol "pwofs" ;
+        lv2:name "PwOfs" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        rdfs:comment "Adjusts the pulse width of Oscillator 2 with a unipolar knob based on the PW knob's setting." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 82 ;
+        lv2:symbol "leveldif" ;
+        lv2:name "Level Dif" ;
+        lv2:default 0.300000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        rdfs:comment "Level difference knob ensures consistent audio output during filter adjustments." ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 83 ;
+        lv2:symbol "selfoscpush" ;
+        lv2:name "Self Osc Push" ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 1.0 ;
+        lv2:portProperty lv2:integer;
+        lv2:portProperty lv2:toggled;
+        rdfs:comment "The 12dB filter now self-oscillates at high resonance levels." ;
     ] ;
 
     doap:name "Obxd" ;
