@@ -29,7 +29,7 @@ mod:brand "MOD";
 mod:label "Big Muff";
 
 lv2:minorVersion 0;
-lv2:microVersion 0;
+lv2:microVersion 2;
     
 doap:license "GPL";
 
