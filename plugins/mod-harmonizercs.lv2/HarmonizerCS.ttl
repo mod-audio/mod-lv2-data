@@ -32,9 +32,6 @@ doap:maintainer [
 mod:brand "MOD";
 mod:label "HarmonizerCS";
 
-lv2:minorVersion 0;
-lv2:microVersion 2;
-
 doap:license "GPL";
 
 rdfs:comment """
@@ -49,7 +46,9 @@ All plugins in the MOD-pitchshifter family have an option to set the fidelity of
 A hint for making the right decision: the more you shift the pitch up, the higher you will need to set the Fidelity to get a clear sound. 
 """;
 
-lv2:port
+lv2:minorVersion 0 ;
+    lv2:microVersion 2 ;
+    lv2:port
 [
     a lv2:AudioPort, lv2:InputPort;
     lv2:index 0;

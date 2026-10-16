@@ -31,7 +31,7 @@ doap:maintainer [
 
 mod:brand "MOD";
     lv2:minorVersion 0;
-    lv2:microVersion 2;
+    lv2:microVersion 0;
 
 doap:license "GPL";
 

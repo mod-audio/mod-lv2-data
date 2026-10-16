@@ -32,9 +32,6 @@ doap:maintainer [
 mod:brand "MOD";
 mod:label "Harmonizer2";
 
-lv2:minorVersion 0;
-lv2:microVersion 2;
-
 doap:license "GPL";
 
 rdfs:comment """
@@ -53,7 +50,9 @@ A hint for making the right decision: the more you shift the pitch up, the highe
 (*) The scale can be set by pressing the gear at the top-right corner of the plugin, in a future release, the interface will support doing this without entering the settings. 
 """;
 
-lv2:port
+lv2:minorVersion 0 ;
+    lv2:microVersion 2 ;
+    lv2:port
 [
     a lv2:AudioPort, lv2:InputPort;
     lv2:index 0;
