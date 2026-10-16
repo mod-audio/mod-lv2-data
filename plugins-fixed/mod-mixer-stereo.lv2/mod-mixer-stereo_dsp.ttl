@@ -398,6 +398,6 @@ Plugin by MOD Devices
         foaf:homepage <https://www.moddevices.com> ;
     ] ;
 
-    lv2:microVersion 0 ;
+    lv2:microVersion 2 ;
     lv2:minorVersion 2 .
 
