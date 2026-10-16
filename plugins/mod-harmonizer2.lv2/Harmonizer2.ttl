@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix bsize:  <http://lv2plug.in/ns/ext/buf-size#>.
 @prefix doap:   <http://usefulinc.com/ns/doap#>.
 @prefix epp:    <http://lv2plug.in/ns/ext/port-props/#>.
@@ -84,7 +85,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 4;
-    lv2:symbol "Tone";
+    lv2:symbol "Tone" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_key>;
     lv2:name "Tone";
     lv2:shortName "Tone";
     lv2:default 0;
@@ -107,7 +109,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 5;
-    lv2:symbol "Scale";
+    lv2:symbol "Scale" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_key>;
     lv2:name "Scale";
     lv2:shortName "Scale";
     lv2:default 0;
@@ -121,7 +124,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 6;
-    lv2:symbol "Interval_1";
+    lv2:symbol "Interval_1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_harmony>;
     lv2:name "Interval 1";
     lv2:shortName "Interval 1";
     lv2:default 0;
@@ -144,7 +148,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 7;
-    lv2:symbol "Interval_2";
+    lv2:symbol "Interval_2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_harmony>;
     lv2:name "Interval 2";
     lv2:shortName "Interval 2";
     lv2:default 2;
@@ -167,7 +172,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 8;
-    lv2:symbol "Mode";
+    lv2:symbol "Mode" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_harmony>;
     lv2:name "Mode";
     lv2:shortName "Mode";
     lv2:default 0;
@@ -181,7 +187,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 9;
-    lv2:symbol "LowestNoteToChangeThePitch";
+    lv2:symbol "LowestNoteToChangeThePitch" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_harmony>;
     lv2:name "Lowest note to change the pitch";
     lv2:shortName "Lowest Wet";
     lv2:default 0;
@@ -207,7 +214,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 10;
-    lv2:symbol "Gain_clean";
+    lv2:symbol "Gain_clean" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_mix>;
     lv2:name "Clean Gain";
     lv2:shortName "Clean Gain";
     lv2:default 0.0;
@@ -218,7 +226,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 11;
-    lv2:symbol "Gain1";
+    lv2:symbol "Gain1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_mix>;
     lv2:name "Gain 1";
     lv2:shortName "Gain 1";
     lv2:default 3.0;
@@ -229,7 +238,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 12;
-    lv2:symbol "Gain2";
+    lv2:symbol "Gain2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_mix>;
     lv2:name "Gain 2";
     lv2:shortName "Gain 2";
     lv2:default 3.0;
@@ -240,7 +250,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 13;
-    lv2:symbol "Fidelity";
+    lv2:symbol "Fidelity" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/Harmonizer2#group_mix>;
     lv2:name "Fidelity";
     lv2:shortName "Fidelity";
     lv2:default 1;
@@ -261,3 +272,21 @@ modgui:gui [
     modgui:thumbnail <modgui/thumb-harmonizer2.png>;
 ].
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mod-devel/Harmonizer2#group_key>
+    a pg:InputGroup ;
+    lv2:symbol "key" ;
+    lv2:name "Key" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mod-devel/Harmonizer2#group_harmony>
+    a pg:InputGroup ;
+    lv2:symbol "harmony" ;
+    lv2:name "Harmony" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mod-devel/Harmonizer2#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 2 .

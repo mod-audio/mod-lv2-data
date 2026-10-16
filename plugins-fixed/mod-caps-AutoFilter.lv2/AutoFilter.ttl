@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#>.
 @prefix epp:   <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf:  <http://xmlns.com/foaf/0.1/>.
@@ -9,7 +10,7 @@
 
 <http://moddevices.com/plugins/caps/AutoFilter>
 a lv2:FilterPlugin, lv2:Plugin;
-lv2:microVersion 24;
+lv2:microVersion 26;
 lv2:minorVersion 9;
 lv2:optionalFeature lv2:hardRTCapable;
 mod:brand "CAPS";
@@ -30,7 +31,8 @@ lv2:port
     lv2:maximum 1;
     lv2:minimum 0;
     lv2:name "Mode";
-    lv2:symbol "mode";
+    lv2:symbol "mode" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_filter>;
     lv2:portProperty lv2:enumeration, lv2:integer;
     lv2:scalePoint
     [
@@ -49,7 +51,8 @@ lv2:port
     lv2:maximum 1;
     lv2:minimum 0;
     lv2:name "Filter";
-    lv2:symbol "filter";
+    lv2:symbol "filter" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_filter>;
     lv2:portProperty lv2:enumeration, lv2:integer;
     lv2:scalePoint
     [
@@ -68,7 +71,8 @@ lv2:port
     lv2:maximum 3400.0;
     lv2:minimum 20.0;
     lv2:name "Frequency";
-    lv2:symbol "frequency";
+    lv2:symbol "frequency" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_filter>;
     lv2:portProperty epp:logarithmic;
     units:unit units:hz;
 ],
@@ -79,7 +83,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "Q";
-    lv2:symbol "Q";
+    lv2:symbol "Q" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_filter>;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -88,7 +93,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "Depth";
-    lv2:symbol "depth";
+    lv2:symbol "depth" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_modulation>;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -97,7 +103,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "LFO/Envelope";
-    lv2:symbol "lfoenv";
+    lv2:symbol "lfoenv" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_modulation>;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -106,7 +113,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "Rate";
-    lv2:symbol "rate";
+    lv2:symbol "rate" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_modulation>;
 ],
 [
     a lv2:ControlPort, lv2:InputPort;
@@ -115,7 +123,8 @@ lv2:port
     lv2:maximum 1.0;
     lv2:minimum 0.0;
     lv2:name "X/Z";
-    lv2:symbol "x_z";
+    lv2:symbol "x_z" ;
+        pg:group <http://moddevices.com/plugins/caps/AutoFilter#group_modulation>;
 ],
 [
     a lv2:AudioPort, lv2:InputPort;
@@ -145,3 +154,16 @@ doap:maintainer [
 ];
 
 doap:name "C* AutoFilter".
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/caps/AutoFilter#group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/caps/AutoFilter#group_modulation>
+    a pg:InputGroup ;
+    lv2:symbol "modulation" ;
+    lv2:name "Modulation" ;
+    lv2:index 1 .

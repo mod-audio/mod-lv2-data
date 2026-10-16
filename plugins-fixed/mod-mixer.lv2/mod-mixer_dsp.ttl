@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
@@ -78,6 +79,7 @@
         lv2:index 8 ;
         lv2:name """Volume1""" ;
         lv2:symbol "Volume1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel1> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -87,6 +89,7 @@
         lv2:index 9 ;
         lv2:name """Panning1""" ;
         lv2:symbol "Panning1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel1> ;
         lv2:default 0.000000 ;
         lv2:minimum -1.000000 ;
         lv2:maximum 1.000000 ;
@@ -96,6 +99,7 @@
         lv2:index 10 ;
         lv2:name """Solo1""" ;
         lv2:symbol "Solo1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel1> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -106,6 +110,7 @@
         lv2:index 11 ;
         lv2:name """Mute1""" ;
         lv2:symbol "Mute1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel1> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -116,6 +121,7 @@
         lv2:index 12 ;
         lv2:name """Alt1""" ;
         lv2:symbol "Alt1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel1> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -126,6 +132,7 @@
         lv2:index 13 ;
         lv2:name """Volume2""" ;
         lv2:symbol "Volume2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel2> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -135,6 +142,7 @@
         lv2:index 14 ;
         lv2:name """Panning2""" ;
         lv2:symbol "Panning2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel2> ;
         lv2:default 0.000000 ;
         lv2:minimum -1.000000 ;
         lv2:maximum 1.000000 ;
@@ -144,6 +152,7 @@
         lv2:index 15 ;
         lv2:name """Solo2""" ;
         lv2:symbol "Solo2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel2> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -154,6 +163,7 @@
         lv2:index 16 ;
         lv2:name """Mute2""" ;
         lv2:symbol "Mute2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel2> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -164,6 +174,7 @@
         lv2:index 17 ;
         lv2:name """Alt2""" ;
         lv2:symbol "Alt2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel2> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -174,6 +185,7 @@
         lv2:index 18 ;
         lv2:name """Volume3""" ;
         lv2:symbol "Volume3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel3> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -183,6 +195,7 @@
         lv2:index 19 ;
         lv2:name """Panning3""" ;
         lv2:symbol "Panning3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel3> ;
         lv2:default 0.000000 ;
         lv2:minimum -1.000000 ;
         lv2:maximum 1.000000 ;
@@ -192,6 +205,7 @@
         lv2:index 20 ;
         lv2:name """Solo3""" ;
         lv2:symbol "Solo3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel3> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -202,6 +216,7 @@
         lv2:index 21 ;
         lv2:name """Mute3""" ;
         lv2:symbol "Mute3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel3> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -212,6 +227,7 @@
         lv2:index 22 ;
         lv2:name """Alt3""" ;
         lv2:symbol "Alt3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel3> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -222,6 +238,7 @@
         lv2:index 23 ;
         lv2:name """Volume4""" ;
         lv2:symbol "Volume4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel4> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -231,6 +248,7 @@
         lv2:index 24 ;
         lv2:name """Panning4""" ;
         lv2:symbol "Panning4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel4> ;
         lv2:default 0.000000 ;
         lv2:minimum -1.000000 ;
         lv2:maximum 1.000000 ;
@@ -240,6 +258,7 @@
         lv2:index 25 ;
         lv2:name """Solo4""" ;
         lv2:symbol "Solo4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel4> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -250,6 +269,7 @@
         lv2:index 26 ;
         lv2:name """Mute4""" ;
         lv2:symbol "Mute4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel4> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -260,6 +280,7 @@
         lv2:index 27 ;
         lv2:name """Alt4""" ;
         lv2:symbol "Alt4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_channel4> ;
         lv2:default 0.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -270,6 +291,7 @@
         lv2:index 28 ;
         lv2:name """MasterVolume""" ;
         lv2:symbol "MasterVolume" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_master> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -279,6 +301,7 @@
         lv2:index 29 ;
         lv2:name """Alt Volume""" ;
         lv2:symbol "AltVolume" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/mixer#group_master> ;
         lv2:default 0.750000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 1.000000 ;
@@ -366,3 +389,33 @@ Plugin by MOD Devices
     lv2:microVersion 2 ;
     lv2:minorVersion 2 .
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mod-devel/mixer#group_channel1>
+    a pg:InputGroup ;
+    lv2:symbol "channel1" ;
+    lv2:name "Channel 1" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mod-devel/mixer#group_channel2>
+    a pg:InputGroup ;
+    lv2:symbol "channel2" ;
+    lv2:name "Channel 2" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mod-devel/mixer#group_channel3>
+    a pg:InputGroup ;
+    lv2:symbol "channel3" ;
+    lv2:name "Channel 3" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/mod-devel/mixer#group_channel4>
+    a pg:InputGroup ;
+    lv2:symbol "channel4" ;
+    lv2:name "Channel 4" ;
+    lv2:index 3 .
+
+<http://moddevices.com/plugins/mod-devel/mixer#group_master>
+    a pg:InputGroup ;
+    lv2:symbol "master" ;
+    lv2:name "Master" ;
+    lv2:index 4 .

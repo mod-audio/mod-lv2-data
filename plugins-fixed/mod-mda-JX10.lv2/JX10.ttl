@@ -15,18 +15,6 @@ mda:mainOut
     lv2:name "Output" ;
     lv2:symbol "out" .
 
-<http://moddevices.com/plugins/mda/JX10/filt_env>
-	a param:EnvelopeControls ,
-		pg:InputGroup ;
-	lv2:name "Filter Envelope" ;
-	lv2:symbol "filt_env" .
-
-<http://moddevices.com/plugins/mda/JX10/amp_env>
-	a param:EnvelopeControls ,
-		pg:InputGroup ;
-	lv2:name "Amp Envelope" ;
-	lv2:symbol "amp_env" .
-
 mda:JX10
 	a lv2:Plugin ,
 		lv2:InstrumentPlugin ;
@@ -45,7 +33,7 @@ Features:
 Modeled by MDA
     """ ;
 	lv2:minorVersion 0;
-	lv2:microVersion 2;
+	lv2:microVersion 4;
 	mod:brand "MDA" ;
 	mod:label "JX10" ;
 
@@ -55,6 +43,7 @@ Modeled by MDA
 		lv2:index 0 ;
 		lv2:name "OSC Mix" ;
 		lv2:symbol "osc_mix" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_osc> ;
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -66,6 +55,7 @@ Modeled by MDA
 		lv2:index 1 ;
 		lv2:name "OSC Tune" ;
 		lv2:symbol "osc_tune" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_osc> ;
 		lv2:default 0.37 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -78,6 +68,7 @@ Modeled by MDA
 		lv2:index 2 ;
 		lv2:name "OSC Fine" ;
 		lv2:symbol "osc_fine" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_osc> ;
 		lv2:default 0.25 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -89,6 +80,7 @@ Modeled by MDA
 		lv2:index 3 ;
 		lv2:name "Glide" ;
 		lv2:symbol "glide" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_glide> ;
 		lv2:default 0.3 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0
@@ -98,6 +90,7 @@ Modeled by MDA
 		lv2:index 4 ;
 		lv2:name "Gld Rate" ;
 		lv2:symbol "gld_rate" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_glide> ;
 		lv2:default 0.32 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -108,6 +101,7 @@ Modeled by MDA
 		lv2:index 5 ;
 		lv2:name "Gld Bend" ;
 		lv2:symbol "gld_bend" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_glide> ;
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -118,6 +112,7 @@ Modeled by MDA
 		lv2:index 6 ;
 		lv2:name "VCF Freq" ;
 		lv2:symbol "vcf_freq" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filter> ;
 		lv2:default 0.9 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -128,6 +123,7 @@ Modeled by MDA
 		lv2:index 7 ;
 		lv2:name "VCF Reso" ;
 		lv2:symbol "vcf_reso" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filter> ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -138,6 +134,7 @@ Modeled by MDA
 		lv2:index 8 ;
 		lv2:name "VCF Env" ;
 		lv2:symbol "vcf_env" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filter> ;
 		lv2:default 0.12 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -148,6 +145,7 @@ Modeled by MDA
 		lv2:index 9 ;
 		lv2:name "VCF LFO" ;
 		lv2:symbol "vcf_lfo" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filter> ;
 		lv2:default 0.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -158,6 +156,7 @@ Modeled by MDA
 		lv2:index 10 ;
 		lv2:name "VCF Vel" ;
 		lv2:symbol "vcf_vel" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filter> ;
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -168,94 +167,87 @@ Modeled by MDA
 		lv2:index 11 ;
 		lv2:name "VCF Att" ;
 		lv2:symbol "vcf_att" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filt_env> ;
 		lv2:default 0.9 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:attack ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/filt_env>
-	] , [
+		lv2:designation param:attack ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 12 ;
 		lv2:name "VCF Dec" ;
 		lv2:symbol "vcf_dec" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filt_env> ;
 		lv2:default 0.89 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:decay ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/filt_env>
-	] , [
+		lv2:designation param:decay ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 13 ;
 		lv2:name "VCF Sus" ;
 		lv2:symbol "vcf_sus" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filt_env> ;
 		lv2:default 0.9 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:sustain ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/filt_env>
-	] , [
+		lv2:designation param:sustain ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 14 ;
 		lv2:name "VCF Rel" ;
 		lv2:symbol "vcf_rel" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_filt_env> ;
 		lv2:default 0.73 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:release ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/filt_env>
-	] , [
+		lv2:designation param:release ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:name "ENV Att" ;
 		lv2:symbol "env_att" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_amp_env> ;
 		lv2:default 0.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:attack ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/amp_env>
-	] , [
+		lv2:designation param:attack ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:name "ENV Dec" ;
 		lv2:symbol "env_dec" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_amp_env> ;
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:decay ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/amp_env>
-	] , [
+		lv2:designation param:decay ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:name "ENV Sus" ;
 		lv2:symbol "env_sus" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_amp_env> ;
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:sustain ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/amp_env>
-	] , [
+		lv2:designation param:sustain ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:name "ENV Rel" ;
 		lv2:symbol "env_rel" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_amp_env> ;
 		lv2:default 0.71 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
-		lv2:designation param:release ;
-		pg:group <http://moddevices.com/plugins/mda/JX10/amp_env>
-	] , [
+		lv2:designation param:release ] , [
 		a lv2:InputPort ,
 			lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:name "LFO Rate" ;
 		lv2:symbol "lfo_rate" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_lfo> ;
 		lv2:default 0.81 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -266,6 +258,7 @@ Modeled by MDA
 		lv2:index 20 ;
 		lv2:name "Vibrato" ;
 		lv2:symbol "vibrato" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_lfo> ;
 		lv2:default 0.65 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -276,6 +269,7 @@ Modeled by MDA
 		lv2:index 21 ;
 		lv2:name "Noise" ;
 		lv2:symbol "noise" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_osc> ;
 		lv2:default 0.0 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -286,6 +280,7 @@ Modeled by MDA
 		lv2:index 22 ;
 		lv2:name "Octave" ;
 		lv2:symbol "octave" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_global> ;
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -296,6 +291,7 @@ Modeled by MDA
 		lv2:index 23 ;
 		lv2:name "Tuning" ;
 		lv2:symbol "tuning" ;
+        pg:group <http://moddevices.com/plugins/mda/JX10#group_global> ;
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
 		lv2:maximum 1.0 ;
@@ -326,3 +322,46 @@ Modeled by MDA
 		lv2:symbol "event_in" ;
 		lv2:name "Event In"
 	] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mda/JX10#group_osc>
+    a pg:InputGroup ;
+    lv2:symbol "osc" ;
+    lv2:name "Oscillator" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mda/JX10#group_glide>
+    a pg:InputGroup ;
+    lv2:symbol "glide" ;
+    lv2:name "Glide" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mda/JX10#group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/mda/JX10#group_filt_env>
+    a pg:InputGroup ;
+    lv2:symbol "filt_env" ;
+    lv2:name "Filter Env" ;
+    lv2:index 3 .
+
+<http://moddevices.com/plugins/mda/JX10#group_amp_env>
+    a pg:InputGroup ;
+    lv2:symbol "amp_env" ;
+    lv2:name "Amp Env" ;
+    lv2:index 4 .
+
+<http://moddevices.com/plugins/mda/JX10#group_lfo>
+    a pg:InputGroup ;
+    lv2:symbol "lfo" ;
+    lv2:name "LFO" ;
+    lv2:index 5 .
+
+<http://moddevices.com/plugins/mda/JX10#group_global>
+    a pg:InputGroup ;
+    lv2:symbol "global" ;
+    lv2:name "Global" ;
+    lv2:index 6 .

@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -23,7 +24,7 @@
         doap:description "Reverb";
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
-        lv2:microVersion 0 ;
+        lv2:microVersion 2 ;
         rdfs:comment """
 A rather straightforward reverb adapted from the ZynAddSubFX open source reverb.
 
@@ -74,6 +75,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 5 ;
                 lv2:symbol "WETDRY" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_mix> ;
                 lv2:name "Wet/Dry" ;
                 lv2:shortName "Mix" ;
                 lv2:default 80 ;
@@ -84,6 +86,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 6 ;
                 lv2:symbol "PAN" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_mix> ;
                 lv2:name "Panning" ;
                 lv2:default 0 ;
                 lv2:minimum -64 ;
@@ -93,6 +96,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 7 ;
                 lv2:symbol "TIME" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_reverb> ;
                 lv2:name "Time" ;
                 lv2:shortName "Decay" ;
                 lv2:default 63 ;
@@ -103,6 +107,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 8 ;
                 lv2:symbol "IDEL" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_predelay> ;
                 lv2:name "Initial Delay" ;
                 lv2:shortName "Predelay" ;
                 lv2:default 24 ;
@@ -113,6 +118,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 9 ;
                 lv2:symbol "IDELFB" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_predelay> ;
                 lv2:name "Initial Delay Feedback" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -122,6 +128,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 10 ;
                 lv2:symbol "LPF" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_filter> ;
                 lv2:name "Lowpass Filter" ;
                 lv2:default 4002 ;
                 lv2:minimum 20 ;
@@ -132,6 +139,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 11 ;
                 lv2:symbol "HPF" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_filter> ;
                 lv2:name "Highpass Filter" ;
                 lv2:default 27 ;
                 lv2:minimum 20 ;
@@ -142,6 +150,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 12 ;
                 lv2:symbol "DAMP" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_filter> ;
                 lv2:name "Damping" ;
                 lv2:default 83 ;
                 lv2:minimum 64 ;
@@ -151,6 +160,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 13 ;
                 lv2:symbol "TYPE" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_reverb> ;
                 lv2:name "Type" ;
                 lv2:default 1 ;
                 lv2:minimum 0 ;
@@ -163,6 +173,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 14 ;
                 lv2:symbol "RS" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#reve_group_reverb> ;
                 lv2:name "Room Size" ;
                 lv2:default 64 ;
                 lv2:minimum 1 ;
@@ -235,3 +246,28 @@ Modeled by Rakarrack
         a pset:Preset ;
         lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#reve> ;
         rdfs:seeAlso <reve_presets.ttl> .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://rakarrack.sourceforge.net/effects.html#reve_group_reverb>
+    a pg:InputGroup ;
+    lv2:symbol "reverb" ;
+    lv2:name "Reverb" ;
+    lv2:index 0 .
+
+<http://rakarrack.sourceforge.net/effects.html#reve_group_predelay>
+    a pg:InputGroup ;
+    lv2:symbol "predelay" ;
+    lv2:name "Pre-Delay" ;
+    lv2:index 1 .
+
+<http://rakarrack.sourceforge.net/effects.html#reve_group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 2 .
+
+<http://rakarrack.sourceforge.net/effects.html#reve_group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 3 .

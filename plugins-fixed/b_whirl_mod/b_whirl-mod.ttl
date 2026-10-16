@@ -19,7 +19,7 @@
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree Whirl Speaker";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-	lv2:microVersion 0 ;lv2:minorVersion 2058 ;
+	lv2:microVersion 2 ;lv2:minorVersion 2058 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:port
 	[
@@ -51,6 +51,7 @@
 			lv2:ControlPort ;
 		lv2:index 3 ;
 		lv2:symbol "rt_speed" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_main> ;
 		lv2:name "Motor";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -66,6 +67,7 @@
 			lv2:ControlPort ;
 		lv2:index 4 ;
 		lv2:symbol "hornlvl" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_main> ;
 		lv2:name "Horn Level";
 		lv2:default 0.0 ;
 		lv2:minimum -20.0;
@@ -78,6 +80,7 @@
 			lv2:ControlPort ;
 		lv2:index 5 ;
 		lv2:symbol "drumlvl" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_main> ;
 		lv2:name "Drum Level";
 		lv2:default 0.0 ;
 		lv2:minimum -20.0;
@@ -90,6 +93,7 @@
 			lv2:ControlPort ;
 		lv2:index 6 ;
 		lv2:symbol "drumwidth" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_main> ;
 		lv2:name "Drum Stereo Width";
 		lv2:default 1.0 ;
 		lv2:minimum 0.0;
@@ -111,6 +115,7 @@
 			lv2:ControlPort ;
 		lv2:index 7 ;
 		lv2:symbol "hornrpmslow" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor> ;
 		lv2:name "Horn Speed Slow";
 		lv2:default 40.32;
 		lv2:minimum   5.0 ;
@@ -123,6 +128,7 @@
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "hornrpmfast" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor> ;
 		lv2:name "Horn Speed Fast";
 		lv2:default 423.36;
 		lv2:minimum 100.0;
@@ -135,6 +141,7 @@
 			lv2:ControlPort ;
 		lv2:index 9 ;
 		lv2:symbol "hornaccel" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor> ;
 		lv2:name "Horn Acceleration";
 		lv2:default 0.161 ;
 		lv2:minimum 0.001 ;
@@ -147,6 +154,7 @@
 			lv2:ControlPort ;
 		lv2:index 10 ;
 		lv2:symbol "horndecel" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor> ;
 		lv2:name "Horn Deceleration";
 		lv2:default 0.321 ;
 		lv2:minimum 0.001 ;
@@ -159,6 +167,7 @@
 			lv2:ControlPort ;
 		lv2:index 11 ;
 		lv2:symbol "hornbrakepos" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor> ;
 		lv2:name "Horn Brake Position";
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
@@ -187,6 +196,7 @@
 			lv2:ControlPort ;
 		lv2:index 12 ;
 		lv2:symbol "filtatype" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter1> ;
 		lv2:name "Horn Flt-1 Type";
 		lv2:default 0;
 		lv2:minimum 0 ;
@@ -209,6 +219,7 @@
 			lv2:ControlPort ;
 		lv2:index 13 ;
 		lv2:symbol "filtafreq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter1> ;
 		lv2:name "Horn Flt-1 Frequency";
 		lv2:default 4500.0 ;
 		lv2:minimum 250.0 ;
@@ -221,6 +232,7 @@
 			lv2:ControlPort ;
 		lv2:index 14 ;
 		lv2:symbol "filtaq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter1> ;
 		lv2:name "Horn Flt-1 Quality";
 		lv2:default 2.7456 ;
 		lv2:minimum 0.01 ;
@@ -232,6 +244,7 @@
 			lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:symbol "filtagain" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter1> ;
 		lv2:name "Horn Flt-1 Gain";
 		lv2:default -30.0 ;
 		lv2:minimum -48.0 ;
@@ -243,6 +256,7 @@
 			lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:symbol "filtbtype" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter2> ;
 		lv2:name "Horn Flt-2 Type";
 		lv2:default 7;
 		lv2:minimum 0 ;
@@ -265,6 +279,7 @@
 			lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:symbol "filtbfreq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter2> ;
 		lv2:name "Horn Flt-2 Frequency";
 		lv2:default 300.0 ;
 		lv2:minimum 250.0 ;
@@ -277,6 +292,7 @@
 			lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:symbol "filtbq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter2> ;
 		lv2:name "Horn Flt-2 Quality";
 		lv2:default 1.0 ;
 		lv2:minimum 0.01 ;
@@ -288,6 +304,7 @@
 			lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:symbol "filtbgain" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter2> ;
 		lv2:name "Horn Flt-2 Gain";
 		lv2:default -30.0 ;
 		lv2:minimum -48.0 ;
@@ -300,6 +317,7 @@
 			lv2:ControlPort ;
 		lv2:index 20 ;
 		lv2:symbol "drumrpmslow" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor> ;
 		lv2:name "Drum Speed Slow";
 		lv2:default 36.0 ;
 		lv2:minimum 5.0 ;
@@ -312,6 +330,7 @@
 			lv2:ControlPort ;
 		lv2:index 21 ;
 		lv2:symbol "drumrpmfast" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor> ;
 		lv2:name "Drum Speed Fast";
 		lv2:default 357.3;
 		lv2:minimum 60.0;
@@ -324,6 +343,7 @@
 			lv2:ControlPort ;
 		lv2:index 22 ;
 		lv2:symbol "drumaccel" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor> ;
 		lv2:name "Drum Acceleration";
 		lv2:default 4.127 ;
 		lv2:minimum 0.01 ;
@@ -337,6 +357,7 @@
 			lv2:ControlPort ;
 		lv2:index 23 ;
 		lv2:symbol "drumdecel" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor> ;
 		lv2:name "Drum Deceleration";
 		lv2:default 1.371 ;
 		lv2:minimum 0.01 ;
@@ -349,6 +370,7 @@
 			lv2:ControlPort ;
 		lv2:index 24 ;
 		lv2:symbol "drumbrake" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor> ;
 		lv2:name "Drum Brake Position";
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
@@ -377,6 +399,7 @@
 			lv2:ControlPort ;
 		lv2:index 25 ;
 		lv2:symbol "filtdtype" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_filter> ;
 		lv2:name "Drum Filter Type";
 		lv2:default 8;
 		lv2:minimum 0 ;
@@ -399,6 +422,7 @@
 			lv2:ControlPort ;
 		lv2:index 26;
 		lv2:symbol "filtdfreq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_filter> ;
 		lv2:name "Drum Filter Frequency";
 		lv2:default 811.9695 ;
 		lv2:minimum 50.0 ;
@@ -411,6 +435,7 @@
 			lv2:ControlPort ;
 		lv2:index 27 ;
 		lv2:symbol "filtdq" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_filter> ;
 		lv2:name "Drum Filter Quality";
 		lv2:minimum 0.01 ;
 		lv2:default 1.6016 ;
@@ -422,6 +447,7 @@
 			lv2:ControlPort ;
 		lv2:index 28 ;
 		lv2:symbol "filtdgain" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_drum_filter> ;
 		lv2:name "Drum Filter Gain";
 		lv2:default -38.9291;
 		lv2:minimum -48.0 ;
@@ -433,6 +459,7 @@
 			lv2:ControlPort ;
 		lv2:index 29 ;
 		lv2:symbol "hornleak" ;
+        pg:group <http://gareus.org/oss/lv2/b_whirl#mod_group_main> ;
 		lv2:name "Horn Signal Leakage";
 		lv2:default -16.47;
 		lv2:minimum -80.0 ;
@@ -448,3 +475,40 @@ Features:
 Modeled by x42
 """ ;
 	.
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/b_whirl#mod_group_main>
+    a pg:InputGroup ;
+    lv2:symbol "main" ;
+    lv2:name "Main" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/b_whirl#mod_group_horn_rotor>
+    a pg:InputGroup ;
+    lv2:symbol "horn_rotor" ;
+    lv2:name "Horn Rotor" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter1>
+    a pg:InputGroup ;
+    lv2:symbol "horn_filter1" ;
+    lv2:name "Horn Filter 1" ;
+    lv2:index 2 .
+
+<http://gareus.org/oss/lv2/b_whirl#mod_group_horn_filter2>
+    a pg:InputGroup ;
+    lv2:symbol "horn_filter2" ;
+    lv2:name "Horn Filter 2" ;
+    lv2:index 3 .
+
+<http://gareus.org/oss/lv2/b_whirl#mod_group_drum_rotor>
+    a pg:InputGroup ;
+    lv2:symbol "drum_rotor" ;
+    lv2:name "Drum Rotor" ;
+    lv2:index 4 .
+
+<http://gareus.org/oss/lv2/b_whirl#mod_group_drum_filter>
+    a pg:InputGroup ;
+    lv2:symbol "drum_filter" ;
+    lv2:name "Drum Filter" ;
+    lv2:index 5 .

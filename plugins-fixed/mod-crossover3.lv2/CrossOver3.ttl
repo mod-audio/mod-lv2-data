@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
@@ -65,7 +66,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 4;
-    lv2:symbol "Freq_1";
+    lv2:symbol "Freq_1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_crossover>;
     lv2:name "Freq 1";
     lv2:portProperty epp:logarithmic;
     lv2:portProperty pprops:logarithmic ;
@@ -77,7 +79,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 5;
-    lv2:symbol "Freq_2";
+    lv2:symbol "Freq_2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_crossover>;
     lv2:name "Freq 2";
     lv2:portProperty epp:logarithmic;
     lv2:portProperty pprops:logarithmic ;
@@ -89,7 +92,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 6;
-    lv2:symbol "Gain_1";
+    lv2:symbol "Gain_1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_levels>;
     lv2:name "Gain 1";
     units:unit units:db ;
     lv2:default 3.0;
@@ -99,7 +103,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 7;
-    lv2:symbol "Gain_2";
+    lv2:symbol "Gain_2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_levels>;
     lv2:name "Gain 2";
     units:unit units:db ;
     lv2:default 3.0;
@@ -109,7 +114,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 8;
-    lv2:symbol "Gain_3";
+    lv2:symbol "Gain_3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_levels>;
     lv2:name "Gain 3";
     units:unit units:db ;
     lv2:default 3.0;
@@ -119,7 +125,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 9;
-    lv2:symbol "Order";
+    lv2:symbol "Order" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/CrossOver3#group_crossover>;
     lv2:name "Order";
     lv2:portProperty lv2:integer;
         lv2:portProperty lv2:enumeration ;
@@ -144,3 +151,16 @@ modgui:gui [
 mod:brand "MOD";
 lv2:minorVersion 1;
 lv2:microVersion 2 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mod-devel/CrossOver3#group_crossover>
+    a pg:InputGroup ;
+    lv2:symbol "crossover" ;
+    lv2:name "Crossover" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mod-devel/CrossOver3#group_levels>
+    a pg:InputGroup ;
+    lv2:symbol "levels" ;
+    lv2:name "Band Levels" ;
+    lv2:index 1 .

@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 #
 # Copyright (C) 2012 Hermann Meyer, Andreas Degert, Pete Shorthose, Steve Poskitt
 # 
@@ -51,7 +52,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#gui>;
   
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 5;
     
 rdfs:comment """
 
@@ -66,6 +67,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 0 ;
         lv2:symbol "mode" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_global> ;
         lv2:name "Mode";
         lv2:portProperty lv2:integer;
         lv2:portProperty lv2:enumeration ;
@@ -79,6 +81,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 1 ;
         lv2:symbol "level_r" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_right> ;
         lv2:name "R Level";
         lv2:default 30.0 ;
         lv2:minimum 0.0 ;
@@ -88,6 +91,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 2 ;
         lv2:symbol "timt_r" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_right> ;
         lv2:name "R Time";
         lv2:default 100.0 ;
         lv2:minimum 1.0 ;
@@ -99,6 +103,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 3 ;
         lv2:symbol "level_l" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_left> ;
         lv2:name "L Level";
         lv2:default 30.0 ;
         lv2:minimum 0.0 ;
@@ -108,6 +113,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "timt_l" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_left> ;
         lv2:name "L Time";
         lv2:default 100.0 ;
         lv2:minimum 1.0 ;
@@ -119,6 +125,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 5 ;
         lv2:symbol "lfo" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_global> ;
         lv2:name "LFO";
         lv2:default 0.2 ;
         lv2:minimum 0.2 ;
@@ -128,6 +135,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
             lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "link" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_global> ;
         lv2:name "Link (L+R)";
         lv2:default 0 ;
         lv2:minimum 0 ;
@@ -164,3 +172,22 @@ A stereo echo plugin with independent delay time and delay volume for each chann
   guiext:binary <gx_echo_gui.so>;
   guiext:requiredFeature guiext:makeResident .
   
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_left>
+    a pg:InputGroup ;
+    lv2:symbol "left" ;
+    lv2:name "Left" ;
+    lv2:index 0 .
+
+<http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_right>
+    a pg:InputGroup ;
+    lv2:symbol "right" ;
+    lv2:name "Right" ;
+    lv2:index 1 .
+
+<http://guitarix.sourceforge.net/plugins/gx_echo_stereo#_echo_stereo_group_global>
+    a pg:InputGroup ;
+    lv2:symbol "global" ;
+    lv2:name "Global" ;
+    lv2:index 2 .

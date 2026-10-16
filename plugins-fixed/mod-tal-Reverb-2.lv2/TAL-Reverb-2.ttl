@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom: <http://lv2plug.in/ns/ext/atom#> .
 @prefix epp:  <http://lv2plug.in/ns/ext/port-props#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
@@ -15,6 +16,9 @@
                       <http://lv2plug.in/ns/ext/state#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
 
+    lv2:minorVersion 0 ;
+    lv2:microVersion 2 ;
+    doap:license <http://spdx.org/licenses/GPL-2.0-only> ;
     lv2:port [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 0 ;
@@ -57,6 +61,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:symbol "dry" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_mix> ;
         lv2:name "dry" ;
         lv2:default 0.0 ;
         lv2:minimum -96.0 ;
@@ -67,6 +72,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "wet" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_mix> ;
         lv2:name "wet" ;
         lv2:default -24.1 ;
         lv2:minimum -96.0 ;
@@ -77,6 +83,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 7 ;
         lv2:symbol "room_size" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_reverb> ;
         lv2:name "room size" ;
         lv2:default 0.752000 ;
         lv2:minimum 0.0 ;
@@ -86,6 +93,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 8 ;
         lv2:symbol "pre_delay" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_reverb> ;
         lv2:name "pre delay" ;
         lv2:default 37.0 ;
         lv2:minimum 0.0 ;
@@ -96,6 +104,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 9 ;
         lv2:symbol "low_shelf_frequency" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_low_eq> ;
         lv2:name "low frequency" ;
         lv2:default 257.0 ;
         lv2:minimum 100.0 ;
@@ -107,6 +116,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 10 ;
         lv2:symbol "high_shelf_frequency" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_high_eq> ;
         lv2:name "high frequency" ;
         lv2:default 3039.0 ;
         lv2:minimum 100.0 ;
@@ -118,6 +128,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 11 ;
         lv2:symbol "peak_frequency" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_mid_eq> ;
         lv2:name "mid frequency" ;
         lv2:default 2237.0 ;
         lv2:minimum 100.0 ;
@@ -129,6 +140,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 12 ;
         lv2:symbol "low_shelf_gain" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_low_eq> ;
         lv2:name "low gain" ;
         lv2:default -0.4 ;
         lv2:minimum -18.0 ;
@@ -139,6 +151,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 13 ;
         lv2:symbol "high_shelf_gain" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_high_eq> ;
         lv2:name "high gain" ;
         lv2:default -1.2 ;
         lv2:minimum -18.0 ;
@@ -149,6 +162,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 14 ;
         lv2:symbol "peak_gain" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_mid_eq> ;
         lv2:name "mid gain" ;
         lv2:default -1.7 ;
         lv2:minimum -18.0 ;
@@ -159,6 +173,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 15 ;
         lv2:symbol "stereo_width" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_mix> ;
         lv2:name "stereo width" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
@@ -168,6 +183,7 @@
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 16 ;
         lv2:symbol "stereo_input" ;
+        pg:group <http://moddevices.com/plugins/tal-reverb-2#group_reverb> ;
         lv2:name "stereo input" ;
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
@@ -187,3 +203,34 @@ Modeled by TAL-Togu Audio Line
 
     doap:name "TAL-Reverb-II" ;
     doap:maintainer [ foaf:name "TAL" ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/tal-reverb-2#group_reverb>
+    a pg:InputGroup ;
+    lv2:symbol "reverb" ;
+    lv2:name "Reverb" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/tal-reverb-2#group_low_eq>
+    a pg:InputGroup ;
+    lv2:symbol "low_eq" ;
+    lv2:name "Low EQ" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/tal-reverb-2#group_mid_eq>
+    a pg:InputGroup ;
+    lv2:symbol "mid_eq" ;
+    lv2:name "Mid EQ" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/tal-reverb-2#group_high_eq>
+    a pg:InputGroup ;
+    lv2:symbol "high_eq" ;
+    lv2:name "High EQ" ;
+    lv2:index 3 .
+
+<http://moddevices.com/plugins/tal-reverb-2#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 4 .

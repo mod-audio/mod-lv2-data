@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom: <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -41,6 +42,7 @@
         lv2:index 2 ;
         lv2:name "Waveform" ;
         lv2:symbol "waveform" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_osc> ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -58,6 +60,7 @@
         lv2:index 3 ;
         lv2:name "Tuning" ;
         lv2:symbol "tuning" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_osc> ;
         lv2:default 0.000000 ;
         lv2:minimum -12.000000 ;
         lv2:maximum 12.000000 ;
@@ -67,6 +70,7 @@
         lv2:index 4 ;
         lv2:name "Cutoff" ;
         lv2:symbol "cutoff" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_filter> ;
         lv2:default 25.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -77,6 +81,7 @@
         lv2:index 5 ;
         lv2:name "VCF Resonance" ;
         lv2:symbol "resonance" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_filter> ;
         lv2:default 25.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 95.000000 ;
@@ -87,6 +92,7 @@
         lv2:index 6 ;
         lv2:name "Env Mod" ;
         lv2:symbol "env_mod" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_filter> ;
         lv2:default 50.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -97,6 +103,7 @@
         lv2:index 7 ;
         lv2:name "Decay" ;
         lv2:symbol "decay" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_filter> ;
         lv2:default 75.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -107,6 +114,7 @@
         lv2:index 8 ;
         lv2:name "Accent" ;
         lv2:symbol "accent" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_output> ;
         lv2:default 25.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -117,6 +125,7 @@
         lv2:index 9 ;
         lv2:name "Volume" ;
         lv2:symbol "volume" ;
+        pg:group <http://distrho.sf.net/plugins/Nekobi#group_output> ;
         lv2:default 75.000000 ;
         lv2:minimum 0.000000 ;
         lv2:maximum 100.000000 ;
@@ -156,6 +165,24 @@ The Roland TB-303© is a trademark or trade name of another manufacturer and was
         foaf:homepage <https://github.com/DISTRHO/Nekobi> ;
     ] ;
 
-    lv2:microVersion 1 ;
+    lv2:microVersion 3 ;
     lv2:minorVersion 2 .
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://distrho.sf.net/plugins/Nekobi#group_osc>
+    a pg:InputGroup ;
+    lv2:symbol "osc" ;
+    lv2:name "Osc" ;
+    lv2:index 0 .
+
+<http://distrho.sf.net/plugins/Nekobi#group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 1 .
+
+<http://distrho.sf.net/plugins/Nekobi#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 2 .

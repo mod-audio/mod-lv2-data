@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix fomp: <http://drobilla.net/plugins/fomp/> .
 @prefix lv2: <http://lv2plug.in/ns/lv2core#> .
@@ -21,7 +22,7 @@ Similar to CS Phaser 1, but the external modulation has been replaced by a built
 Features:
 Modeled by FOMP
 """ ;
-	lv2:microVersion 0 ;
+	lv2:microVersion 2 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:project fomp: ;
@@ -47,7 +48,8 @@ Modeled by FOMP
 		lv2:minimum -40.0 ;
 		mod:default -4.0;
 		lv2:name "Input gain" ;
-		lv2:symbol "in_gain"
+		lv2:symbol "in_gain" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_phaser>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -58,7 +60,8 @@ Modeled by FOMP
 		mod:default 7;
 		lv2:name "Sections" ;
 		lv2:portProperty lv2:integer ;
-		lv2:symbol "sections"
+		lv2:symbol "sections" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_phaser>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -68,7 +71,8 @@ Modeled by FOMP
 		lv2:minimum -6.0 ;
 		mod:default 5.6;
 		lv2:name "Frequency" ;
-		lv2:symbol "freq"
+		lv2:symbol "freq" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_phaser>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -82,6 +86,7 @@ Modeled by FOMP
         lv2:portProperty  mod:tapTempo , mod:tempoRelatedDynamicScalePoints;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
 		lv2:symbol "lfo_freq" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_lfo> ;
 		units:unit units:hz
 	] , [
 		a lv2:ControlPort ,
@@ -93,6 +98,7 @@ Modeled by FOMP
 		lv2:name "LFO waveform" ;
 		lv2:shortName "Wave" ;
 		lv2:symbol "lfo_waveform" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_lfo> ;
 		lv2:scalePoint [
 			rdfs:label "Falling Saw" ;
 			rdf:value -1.0
@@ -113,7 +119,8 @@ Modeled by FOMP
 		mod:default 7.66;
 		lv2:name "Modulation gain" ;
 		lv2:shortName "Depth" ;
-		lv2:symbol "mod_gain"
+		lv2:symbol "mod_gain" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_lfo>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -124,7 +131,8 @@ Modeled by FOMP
 		mod:default 0.13;
 		lv2:name "Feedback gain" ;
 		lv2:shortName "Feedback" ;
-		lv2:symbol "fb_gain"
+		lv2:symbol "fb_gain" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_mix>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -135,5 +143,25 @@ Modeled by FOMP
 		mod:default 0.22;
 		lv2:name "Output mix" ;
 		lv2:shortName "Mix" ;
-		lv2:symbol "out_mix"
+		lv2:symbol "out_mix" ;
+        pg:group <http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_mix>
 	] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_phaser>
+    a pg:InputGroup ;
+    lv2:symbol "phaser" ;
+    lv2:name "Phaser" ;
+    lv2:index 0 .
+
+<http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_lfo>
+    a pg:InputGroup ;
+    lv2:symbol "lfo" ;
+    lv2:name "LFO" ;
+    lv2:index 1 .
+
+<http://drobilla.net/plugins/fomp/cs_phaser1_lfo#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 2 .

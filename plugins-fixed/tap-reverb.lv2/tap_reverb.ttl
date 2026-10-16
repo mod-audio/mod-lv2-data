@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix epp: <http://lv2plug.in/ns/ext/port-props/#>.
@@ -30,7 +31,7 @@ mod:label "Reverberator";
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 4;
 
 rdfs:comment """
 The Reverberator is based on the comb/allpass filter model. Comb filters create early reflections and allpass filters add to this by creating a dense reverberation effect. The resulting band-limited reverberation is very similar to the natural reverberation that occurs in acoustic rooms.
@@ -43,7 +44,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 0;
-    lv2:symbol "decay";
+    lv2:symbol "decay" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_reverb>;
     lv2:name "Decay";
     lv2:default 2800.0;
     lv2:minimum 0.0;
@@ -53,7 +55,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 1;
-    lv2:symbol "drylevel";
+    lv2:symbol "drylevel" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_mix>;
     lv2:name "Dry Level";
     lv2:shortName "Dry" ;
     lv2:default -4.0;
@@ -65,7 +68,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 2;
-    lv2:symbol "wetlevel";
+    lv2:symbol "wetlevel" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_mix>;
     lv2:name "Wet Level";
     lv2:shortName "Wet" ;
     lv2:default -12.0;
@@ -77,7 +81,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 3;
-    lv2:symbol "combs_en";
+    lv2:symbol "combs_en" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_filters>;
     lv2:name "Comb Filters";
     lv2:shortName "Comb" ;
     lv2:default 1.0;
@@ -97,7 +102,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 4;
-    lv2:symbol "allps_en";
+    lv2:symbol "allps_en" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_filters>;
     lv2:name "Allpass Filters";
     lv2:shortName "Allpass" ;
     lv2:default 1.0;
@@ -117,7 +123,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 5;
-    lv2:symbol "bandpass_en";
+    lv2:symbol "bandpass_en" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_filters>;
     lv2:name "Bandpass Filter";
     lv2:shortName "Bandpass" ;
     lv2:default 1.0;
@@ -137,7 +144,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 6;
-    lv2:symbol "stereo_enh";
+    lv2:symbol "stereo_enh" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_filters>;
     lv2:name "Enhanced Stereo";
     lv2:shortName "Enhanced" ;
     lv2:default 1.0;
@@ -157,7 +165,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 7;
-    lv2:symbol "mode";
+    lv2:symbol "mode" ;
+        pg:group <http://moddevices.com/plugins/tap/reverb#group_reverb>;
     lv2:name "Reverb Type";
     lv2:shortName "Type" ;
     lv2:default 0.0;
@@ -363,3 +372,22 @@ lv2:port
     lv2:symbol "outputr";
     lv2:name "Output Right";
 ].
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/tap/reverb#group_reverb>
+    a pg:InputGroup ;
+    lv2:symbol "reverb" ;
+    lv2:name "Reverb" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/tap/reverb#group_filters>
+    a pg:InputGroup ;
+    lv2:symbol "filters" ;
+    lv2:name "Filters" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/tap/reverb#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 2 .

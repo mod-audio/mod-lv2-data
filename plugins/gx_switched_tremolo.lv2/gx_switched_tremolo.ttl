@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 #
 # Copyright (C) 2014 Guitarix project MOD project
 # 
@@ -48,7 +49,7 @@
     lv2:optionalFeature lv2:hardRTCapable ;
       
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 5;
     
 rdfs:comment """
 
@@ -74,6 +75,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 2 ;
         lv2:symbol "DEPTH" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_tremolo> ;
         lv2:name "DEPTH" ;
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
@@ -83,6 +85,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 3 ;
         lv2:symbol "FREQ0" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_step_rates> ;
         lv2:name "FREQ0" ;
         lv2:default 1.0 ;
         lv2:minimum 0.25 ;
@@ -92,6 +95,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "FREQ1" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_step_rates> ;
         lv2:name "FREQ1" ;
         lv2:default 1.0 ;
         lv2:minimum 0.25 ;
@@ -101,6 +105,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 5 ;
         lv2:symbol "FREQ2" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_step_rates> ;
         lv2:name "FREQ2" ;
         lv2:default 1.0 ;
         lv2:minimum 0.25 ;
@@ -110,6 +115,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "FREQ3" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_step_rates> ;
         lv2:name "FREQ3" ;
         lv2:default 1.0 ;
         lv2:minimum 0.25 ;
@@ -119,6 +125,7 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 7 ;
         lv2:symbol "STEPS" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_tremolo> ;
         lv2:name "STEPS" ;
         lv2:default 4.0 ;
         lv2:minimum 1.0 ;
@@ -128,8 +135,22 @@ rdfs:comment """
             lv2:ControlPort ;
         lv2:index 8 ;
         lv2:symbol "SWITCHFREQ" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_tremolo> ;
         lv2:name "SWITCHFREQ" ;
         lv2:default 1.0 ;
         lv2:minimum 0.25 ;
         lv2:maximum 5.0 ;
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_tremolo>
+    a pg:InputGroup ;
+    lv2:symbol "tremolo" ;
+    lv2:name "Tremolo" ;
+    lv2:index 0 .
+
+<http://guitarix.sourceforge.net/plugins/gx_switched_tremolo_#_switched_tremolo__group_step_rates>
+    a pg:InputGroup ;
+    lv2:symbol "step_rates" ;
+    lv2:name "Step Rates" ;
+    lv2:index 1 .

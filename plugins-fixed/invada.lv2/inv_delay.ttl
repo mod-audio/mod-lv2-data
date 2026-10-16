@@ -19,7 +19,7 @@
     mod:label "Delay Munge" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
-    lv2:microVersion 1;
+    lv2:microVersion 3;
     rdfs:comment """
 The Delay Munge is a unique delay pedal that is great for ambient sounds. 
 The Munge effect sets this pedal apart from the rest of the delay pedal family. It alters the shape and feel of each repetition caused by the delay effect. This can be controlled by changing the values of the LFO and Munge knobs and offers a lot of authenticity and dynamics to a sound.
@@ -34,6 +34,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 0 ;
 	lv2:symbol "bypass" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_global> ;
 	lv2:name "Bypass" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -43,6 +44,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 1 ;
 	lv2:symbol "mode" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_global> ;
 	lv2:name "Mode" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -52,6 +54,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
 	lv2:symbol "mungemode" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_munge> ;
 	lv2:name "Munge Mode" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -61,6 +64,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 3 ;
 	lv2:symbol "munge" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_munge> ;
 	lv2:name "Munge" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -70,6 +74,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 4 ;
 	lv2:symbol "LFOcycle" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_lfo> ;
 	lv2:name "LFO" ;
 	lv2:shortName "Rate" ;
 	lv2:default 20.0 ;
@@ -81,6 +86,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 5 ;
 	lv2:symbol "LFOdepth" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_lfo> ;
 	lv2:name "Depth" ;
 	lv2:default 0.0 ;
 	lv2:minimum 0.0 ;
@@ -90,6 +96,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 6 ;
 	lv2:symbol "delay1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay1> ;
 	lv2:name "Delay 1" ;
 	lv2:shortName "Time 1" ;
 	lv2:default 0.3 ;
@@ -101,6 +108,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 7 ;
 	lv2:symbol "fb1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay1> ;
 	lv2:name "Feedback 1" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -110,6 +118,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 8 ;
 	lv2:symbol "pan1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay1> ;
 	lv2:name "Pan 1" ;
 	lv2:default -0.7 ;
 	lv2:minimum -1.0 ;
@@ -118,6 +127,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 9 ;
 	lv2:symbol "vol1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay1> ;
 	lv2:name "Volume 1" ;
 	lv2:default 100.0 ;
 	lv2:minimum 0.0 ;
@@ -127,6 +137,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 10 ;
 	lv2:symbol "delay2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay2> ;
 	lv2:name "Delay 2" ;
 	lv2:shortName "Time 2" ;
 	lv2:default 0.2 ;
@@ -138,6 +149,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 11 ;
 	lv2:symbol "fb2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay2> ;
 	lv2:name "Feedback 2" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -147,6 +159,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 12 ;
 	lv2:symbol "pan2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay2> ;
 	lv2:name "Pan 2" ;
 	lv2:default 0.7 ;
 	lv2:minimum -1.0 ;
@@ -155,6 +168,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 13 ;
 	lv2:symbol "vol2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/mono#group_delay2> ;
 	lv2:name "Volume 2" ;
 	lv2:default 100.0 ;
 	lv2:minimum 0.0 ;
@@ -233,7 +247,7 @@ Modeled by Invada
     mod:label "Delay Munge ST" ;
     lv2:project <http://invadarecords.com/plugins/lv2/> ;
     lv2:minorVersion 2;
-    lv2:microVersion 1;
+    lv2:microVersion 3;
     rdfs:comment """
 The Delay Munge is a unique delay pedal that is great for ambient sounds. 
 The Munge effect sets this pedal apart from the rest of the delay pedal family. It alters the shape and feel of each repetition caused by the delay effect. This can be controlled by changing the values of the LFO and Munge knobs and offers a lot of authenticity and dynamics to a sound.
@@ -248,6 +262,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 0 ;
 	lv2:symbol "bypass" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_global> ;
 	lv2:name "Bypass" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -257,6 +272,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 1 ;
 	lv2:symbol "mode" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_global> ;
 	lv2:name "Mode" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -266,6 +282,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 2 ;
 	lv2:symbol "mungemode" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_munge> ;
 	lv2:name "Munge Mode" ;
 	lv2:portProperty lv2:toggled ;
 	lv2:default 0.0 ;
@@ -275,6 +292,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 3 ;
 	lv2:symbol "munge" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_munge> ;
 	lv2:name "Munge" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -284,6 +302,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 4 ;
 	lv2:symbol "LFOcycle" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_lfo> ;
 	lv2:name "LFO" ;
 	lv2:shortName "Rate" ;
 	lv2:default 20.0 ;
@@ -295,6 +314,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 5 ;
 	lv2:symbol "LFOdepth" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_lfo> ;
 	lv2:name "Depth" ;
 	lv2:default 0.0 ;
 	lv2:minimum 0.0 ;
@@ -304,6 +324,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 6 ;
 	lv2:symbol "delay1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay1> ;
 	lv2:name "Delay 1" ;
 	lv2:shortName "Time 1" ;
 	lv2:default 0.3 ;
@@ -315,6 +336,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 7 ;
 	lv2:symbol "fb1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay1> ;
 	lv2:name "Feedback 1" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -324,6 +346,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 8 ;
 	lv2:symbol "pan1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay1> ;
 	lv2:name "Pan 1" ;
 	lv2:default -0.7 ;
 	lv2:minimum -1.0 ;
@@ -332,6 +355,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 9 ;
 	lv2:symbol "vol1" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay1> ;
 	lv2:name "Volume 1" ;
 	lv2:default 100.0 ;
 	lv2:minimum 0.0 ;
@@ -341,6 +365,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 10 ;
 	lv2:symbol "delay2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay2> ;
 	lv2:name "Delay 2" ;
 	lv2:shortName "Time 2" ;
 	lv2:default 0.2 ;
@@ -352,6 +377,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 11 ;
 	lv2:symbol "fb2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay2> ;
 	lv2:name "Feedback 2" ;
 	lv2:default 50.0 ;
 	lv2:minimum 0.0 ;
@@ -361,6 +387,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 12 ;
 	lv2:symbol "pan2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay2> ;
 	lv2:name "Pan 2" ;
 	lv2:default 0.7 ;
 	lv2:minimum -1.0 ;
@@ -369,6 +396,7 @@ Modeled by Invada
 	a lv2:InputPort, lv2:ControlPort ;
 	lv2:index 13 ;
 	lv2:symbol "vol2" ;
+        pg:group <http://invadarecords.com/plugins/lv2/delay/sum#group_delay2> ;
 	lv2:name "Volume 2" ;
 	lv2:default 100.0 ;
 	lv2:minimum 0.0 ;
@@ -438,3 +466,65 @@ Modeled by Invada
 	pg:group <http://invadarecords.com/plugins/lv2/delay/sum#in> ;
 	lv2:designation pg:right ;
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://invadarecords.com/plugins/lv2/delay/mono#group_global>
+    a pg:InputGroup ;
+    lv2:symbol "global" ;
+    lv2:name "Global" ;
+    lv2:index 0 .
+
+<http://invadarecords.com/plugins/lv2/delay/mono#group_munge>
+    a pg:InputGroup ;
+    lv2:symbol "munge" ;
+    lv2:name "Munge" ;
+    lv2:index 1 .
+
+<http://invadarecords.com/plugins/lv2/delay/mono#group_lfo>
+    a pg:InputGroup ;
+    lv2:symbol "lfo" ;
+    lv2:name "LFO" ;
+    lv2:index 2 .
+
+<http://invadarecords.com/plugins/lv2/delay/mono#group_delay1>
+    a pg:InputGroup ;
+    lv2:symbol "delay1" ;
+    lv2:name "Delay 1" ;
+    lv2:index 3 .
+
+<http://invadarecords.com/plugins/lv2/delay/mono#group_delay2>
+    a pg:InputGroup ;
+    lv2:symbol "delay2" ;
+    lv2:name "Delay 2" ;
+    lv2:index 4 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://invadarecords.com/plugins/lv2/delay/sum#group_global>
+    a pg:InputGroup ;
+    lv2:symbol "global" ;
+    lv2:name "Global" ;
+    lv2:index 0 .
+
+<http://invadarecords.com/plugins/lv2/delay/sum#group_munge>
+    a pg:InputGroup ;
+    lv2:symbol "munge" ;
+    lv2:name "Munge" ;
+    lv2:index 1 .
+
+<http://invadarecords.com/plugins/lv2/delay/sum#group_lfo>
+    a pg:InputGroup ;
+    lv2:symbol "lfo" ;
+    lv2:name "LFO" ;
+    lv2:index 2 .
+
+<http://invadarecords.com/plugins/lv2/delay/sum#group_delay1>
+    a pg:InputGroup ;
+    lv2:symbol "delay1" ;
+    lv2:name "Delay 1" ;
+    lv2:index 3 .
+
+<http://invadarecords.com/plugins/lv2/delay/sum#group_delay2>
+    a pg:InputGroup ;
+    lv2:symbol "delay2" ;
+    lv2:name "Delay 2" ;
+    lv2:index 4 .

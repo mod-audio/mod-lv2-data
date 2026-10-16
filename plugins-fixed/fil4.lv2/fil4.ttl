@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -25,7 +26,7 @@ fil4:mono
 	a lv2:Plugin, doap:Project, lv2:ParaEQPlugin;
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
-	lv2:microVersion 1 ;lv2:minorVersion 1 ;
+	lv2:microVersion 3 ;lv2:minorVersion 1 ;
 	doap:name "x42-eq - Parametric Equalizer Mono";
 	lv2:requiredFeature urid:map ;
 	lv2:extensionData state:interface ;
@@ -68,6 +69,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 3 ;
 		lv2:symbol "gain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_master> ;
 		lv2:name "Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -87,6 +89,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 5 ;
 		lv2:symbol "peakreset" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_master> ;
 		lv2:name "Reset Peak Hold";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -98,6 +101,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 6 ;
 		lv2:symbol "HighPass" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_highpass> ;
 		lv2:name "Highpass";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -108,6 +112,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 7 ;
 		lv2:symbol "HPfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_highpass> ;
 		lv2:name "Highpass Frequency" ;
 		lv2:default 20.0 ;
 		lv2:minimum 5.0 ;
@@ -119,6 +124,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "HPQ" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_highpass> ;
 		lv2:name "HighPass Resonance" ;
 		lv2:default 0.7 ;
 		lv2:minimum 0.0 ;
@@ -131,6 +137,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 9 ;
 		lv2:symbol "LowPass" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_lowpass> ;
 		lv2:name "Lowpass";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -141,6 +148,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 10 ;
 		lv2:symbol "LPfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_lowpass> ;
 		lv2:name "Lowpass Frequency" ;
 		lv2:default 20000.0 ;
 		lv2:minimum 500.0 ;
@@ -152,6 +160,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 11 ;
 		lv2:symbol "LPQ" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_lowpass> ;
 		lv2:name "LowPass Resonance" ;
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
@@ -164,6 +173,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 12 ;
 		lv2:symbol "LSsec" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_low_shelf> ;
 		lv2:name "Lowshelf";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -174,6 +184,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 13 ;
 		lv2:symbol "LSfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_low_shelf> ;
 		lv2:name "Lowshelf Frequency" ;
 		lv2:default 80.0 ;
 		lv2:minimum 25.0 ;
@@ -185,6 +196,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 14 ;
 		lv2:symbol "LSq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_low_shelf> ;
 		lv2:name "Lowshelf Bandwidth" ;
 		lv2:default 1.0;
 		lv2:minimum 0.0625 ;
@@ -194,6 +206,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:symbol "LSgain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_low_shelf> ;
 		lv2:name "Lowshelf Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -204,6 +217,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:symbol "sec1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band1> ;
 		lv2:name "Section 1";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -214,6 +228,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:symbol "freq1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band1> ;
 		lv2:name "Frequency 1" ;
 		lv2:default 160.0 ;
 		lv2:minimum 20.0 ;
@@ -225,6 +240,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:symbol "q1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band1> ;
 		lv2:name "Bandwidth 1" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -234,6 +250,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:symbol "gain1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band1> ;
 		lv2:name "Gain 1" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -244,6 +261,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 20 ;
 		lv2:symbol "sec2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band2> ;
 		lv2:name "Section 2";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -254,6 +272,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 21 ;
 		lv2:symbol "freq2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band2> ;
 		lv2:name "Frequency 2" ;
 		lv2:default 397.0 ;
 		lv2:minimum 40.0 ;
@@ -265,6 +284,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 22 ;
 		lv2:symbol "q2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band2> ;
 		lv2:name "Bandwidth 2" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -274,6 +294,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 23 ;
 		lv2:symbol "gain2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band2> ;
 		lv2:name "Gain 2" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -284,6 +305,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 24 ;
 		lv2:symbol "sec3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band3> ;
 		lv2:name "Section 3";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -294,6 +316,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 25 ;
 		lv2:symbol "freq3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band3> ;
 		lv2:name "Frequency 3" ;
 		lv2:default 1250.0 ;
 		lv2:minimum 100.0 ;
@@ -305,6 +328,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 26 ;
 		lv2:symbol "q3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band3> ;
 		lv2:name "Bandwidth 3" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -314,6 +338,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 27 ;
 		lv2:symbol "gain3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band3> ;
 		lv2:name "Gain 3" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -324,6 +349,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 28 ;
 		lv2:symbol "sec4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band4> ;
 		lv2:name "Section 4";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -334,6 +360,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 29 ;
 		lv2:symbol "freq4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band4> ;
 		lv2:name "Frequency 4" ;
 		lv2:default 2500.0 ;
 		lv2:minimum 200.0 ;
@@ -345,6 +372,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 30 ;
 		lv2:symbol "q4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band4> ;
 		lv2:name "Bandwidth 4" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -354,6 +382,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 31 ;
 		lv2:symbol "gain4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_band4> ;
 		lv2:name "Gain 4" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -364,6 +393,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 32 ;
 		lv2:symbol "HSsec" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_high_shelf> ;
 		lv2:name "Highshelf";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -374,6 +404,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 33 ;
 		lv2:symbol "HSfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_high_shelf> ;
 		lv2:name "Highshelf Frequency" ;
 		lv2:default 8000.0 ;
 		lv2:minimum 1000.0 ;
@@ -385,6 +416,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 34 ;
 		lv2:symbol "HSq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_high_shelf> ;
 		lv2:name "Highshelf Bandwidth" ;
 		lv2:default 1.0;
 		lv2:minimum 0.0625;
@@ -394,6 +426,7 @@ fil4:mono
 			lv2:ControlPort ;
 		lv2:index 35 ;
 		lv2:symbol "HSgain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#mono_group_high_shelf> ;
 		lv2:name "Highshelf Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -425,7 +458,7 @@ fil4:stereo
 	a lv2:Plugin, doap:Project, lv2:ParaEQPlugin;
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 	doap:maintainer <http://gareus.org/rgareus#me> ;
-	lv2:microVersion 1 ;lv2:minorVersion 1 ;
+	lv2:microVersion 3 ;lv2:minorVersion 1 ;
 	doap:name "x42-eq - Parametric Equalizer Stereo";
 	lv2:requiredFeature urid:map ;
 	lv2:extensionData state:interface ;
@@ -468,6 +501,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 3 ;
 		lv2:symbol "gain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_master> ;
 		lv2:name "Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -487,6 +521,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 5 ;
 		lv2:symbol "peakreset" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_master> ;
 		lv2:name "Reset Peak Hold";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -498,6 +533,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 6 ;
 		lv2:symbol "HighPass" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_highpass> ;
 		lv2:name "Highpass";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -508,6 +544,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 7 ;
 		lv2:symbol "HPfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_highpass> ;
 		lv2:name "Highpass Frequency" ;
 		lv2:default 20.0 ;
 		lv2:minimum 5.0 ;
@@ -519,6 +556,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "HPQ" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_highpass> ;
 		lv2:name "HighPass Resonance" ;
 		lv2:default 0.7 ;
 		lv2:minimum 0.0 ;
@@ -531,6 +569,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 9 ;
 		lv2:symbol "LowPass" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_lowpass> ;
 		lv2:name "Lowpass";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -541,6 +580,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 10 ;
 		lv2:symbol "LPfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_lowpass> ;
 		lv2:name "Lowpass Frequency" ;
 		lv2:default 20000.0 ;
 		lv2:minimum 500.0 ;
@@ -552,6 +592,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 11 ;
 		lv2:symbol "LPQ" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_lowpass> ;
 		lv2:name "LowPass Resonance" ;
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
@@ -564,6 +605,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 12 ;
 		lv2:symbol "LSsec" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_low_shelf> ;
 		lv2:name "Lowshelf";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -574,6 +616,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 13 ;
 		lv2:symbol "LSfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_low_shelf> ;
 		lv2:name "Lowshelf Frequency" ;
 		lv2:default 80.0 ;
 		lv2:minimum 25.0 ;
@@ -585,6 +628,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 14 ;
 		lv2:symbol "LSq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_low_shelf> ;
 		lv2:name "Lowshelf Bandwidth" ;
 		lv2:default 1.0;
 		lv2:minimum 0.0625 ;
@@ -594,6 +638,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:symbol "LSgain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_low_shelf> ;
 		lv2:name "Lowshelf Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -604,6 +649,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:symbol "sec1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band1> ;
 		lv2:name "Section 1";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -614,6 +660,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:symbol "freq1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band1> ;
 		lv2:name "Frequency 1" ;
 		lv2:default 160.0 ;
 		lv2:minimum 20.0 ;
@@ -625,6 +672,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:symbol "q1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band1> ;
 		lv2:name "Bandwidth 1" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -634,6 +682,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:symbol "gain1" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band1> ;
 		lv2:name "Gain 1" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -644,6 +693,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 20 ;
 		lv2:symbol "sec2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band2> ;
 		lv2:name "Section 2";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -654,6 +704,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 21 ;
 		lv2:symbol "freq2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band2> ;
 		lv2:name "Frequency 2" ;
 		lv2:default 397.0 ;
 		lv2:minimum 40.0 ;
@@ -665,6 +716,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 22 ;
 		lv2:symbol "q2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band2> ;
 		lv2:name "Bandwidth 2" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -674,6 +726,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 23 ;
 		lv2:symbol "gain2" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band2> ;
 		lv2:name "Gain 2" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -684,6 +737,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 24 ;
 		lv2:symbol "sec3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band3> ;
 		lv2:name "Section 3";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -694,6 +748,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 25 ;
 		lv2:symbol "freq3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band3> ;
 		lv2:name "Frequency 3" ;
 		lv2:default 1250.0 ;
 		lv2:minimum 100.0 ;
@@ -705,6 +760,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 26 ;
 		lv2:symbol "q3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band3> ;
 		lv2:name "Bandwidth 3" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -714,6 +770,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 27 ;
 		lv2:symbol "gain3" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band3> ;
 		lv2:name "Gain 3" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -724,6 +781,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 28 ;
 		lv2:symbol "sec4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band4> ;
 		lv2:name "Section 4";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -734,6 +792,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 29 ;
 		lv2:symbol "freq4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band4> ;
 		lv2:name "Frequency 4" ;
 		lv2:default 2500.0 ;
 		lv2:minimum 200.0 ;
@@ -745,6 +804,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 30 ;
 		lv2:symbol "q4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band4> ;
 		lv2:name "Bandwidth 4" ;
 		lv2:default 0.6 ;
 		lv2:minimum 0.0625 ;
@@ -754,6 +814,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 31 ;
 		lv2:symbol "gain4" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_band4> ;
 		lv2:name "Gain 4" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -764,6 +825,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 32 ;
 		lv2:symbol "HSsec" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_high_shelf> ;
 		lv2:name "Highshelf";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -774,6 +836,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 33 ;
 		lv2:symbol "HSfreq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_high_shelf> ;
 		lv2:name "Highshelf Frequency" ;
 		lv2:default 8000.0 ;
 		lv2:minimum 1000.0 ;
@@ -785,6 +848,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 34 ;
 		lv2:symbol "HSq" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_high_shelf> ;
 		lv2:name "Highshelf Bandwidth" ;
 		lv2:default 1.0;
 		lv2:minimum 0.0625;
@@ -794,6 +858,7 @@ fil4:stereo
 			lv2:ControlPort ;
 		lv2:index 35 ;
 		lv2:symbol "HSgain" ;
+        pg:group <http://gareus.org/oss/lv2/fil4#stereo_group_high_shelf> ;
 		lv2:name "Highshelf Gain" ;
 		lv2:default 0.0 ;
 		lv2:minimum -18.0 ;
@@ -831,3 +896,113 @@ Featuring 4 bands, highpass and lowpass filters, you can now use your stomp box 
 Features:
 Modeled by Robin Gareus
 """.
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/fil4#mono_group_highpass>
+    a pg:InputGroup ;
+    lv2:symbol "highpass" ;
+    lv2:name "Highpass" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_low_shelf>
+    a pg:InputGroup ;
+    lv2:symbol "low_shelf" ;
+    lv2:name "Low Shelf" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_band1>
+    a pg:InputGroup ;
+    lv2:symbol "band1" ;
+    lv2:name "Band 1" ;
+    lv2:index 2 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_band2>
+    a pg:InputGroup ;
+    lv2:symbol "band2" ;
+    lv2:name "Band 2" ;
+    lv2:index 3 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_band3>
+    a pg:InputGroup ;
+    lv2:symbol "band3" ;
+    lv2:name "Band 3" ;
+    lv2:index 4 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_band4>
+    a pg:InputGroup ;
+    lv2:symbol "band4" ;
+    lv2:name "Band 4" ;
+    lv2:index 5 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_high_shelf>
+    a pg:InputGroup ;
+    lv2:symbol "high_shelf" ;
+    lv2:name "High Shelf" ;
+    lv2:index 6 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_lowpass>
+    a pg:InputGroup ;
+    lv2:symbol "lowpass" ;
+    lv2:name "Lowpass" ;
+    lv2:index 7 .
+
+<http://gareus.org/oss/lv2/fil4#mono_group_master>
+    a pg:InputGroup ;
+    lv2:symbol "master" ;
+    lv2:name "Master" ;
+    lv2:index 8 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/fil4#stereo_group_highpass>
+    a pg:InputGroup ;
+    lv2:symbol "highpass" ;
+    lv2:name "Highpass" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_low_shelf>
+    a pg:InputGroup ;
+    lv2:symbol "low_shelf" ;
+    lv2:name "Low Shelf" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_band1>
+    a pg:InputGroup ;
+    lv2:symbol "band1" ;
+    lv2:name "Band 1" ;
+    lv2:index 2 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_band2>
+    a pg:InputGroup ;
+    lv2:symbol "band2" ;
+    lv2:name "Band 2" ;
+    lv2:index 3 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_band3>
+    a pg:InputGroup ;
+    lv2:symbol "band3" ;
+    lv2:name "Band 3" ;
+    lv2:index 4 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_band4>
+    a pg:InputGroup ;
+    lv2:symbol "band4" ;
+    lv2:name "Band 4" ;
+    lv2:index 5 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_high_shelf>
+    a pg:InputGroup ;
+    lv2:symbol "high_shelf" ;
+    lv2:name "High Shelf" ;
+    lv2:index 6 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_lowpass>
+    a pg:InputGroup ;
+    lv2:symbol "lowpass" ;
+    lv2:name "Lowpass" ;
+    lv2:index 7 .
+
+<http://gareus.org/oss/lv2/fil4#stereo_group_master>
+    a pg:InputGroup ;
+    lv2:symbol "master" ;
+    lv2:name "Master" ;
+    lv2:index 8 .

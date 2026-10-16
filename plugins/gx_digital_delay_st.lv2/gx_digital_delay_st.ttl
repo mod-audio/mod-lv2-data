@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 #
 # Copyright (C) 2014 guitarix project MOD project
 # 
@@ -52,7 +53,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#gui>;
      
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 5;
     
 rdfs:comment """
 The increasing availability of cheap digital signal processing electronics in the 70s-80s resulted in the development of the first digital delays on the market. The first digital delay in pedal form was the Boss DD-2© (*) in 1984. 
@@ -97,6 +98,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "BPM" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_delay> ;
         lv2:name "BPM" ;
         lv2:default 120.0 ;
         lv2:minimum 24.0 ;
@@ -108,6 +110,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 5 ;
         lv2:symbol "FEEDBACK" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_delay> ;
         lv2:name "FEEDBACK" ;
         lv2:default 5e+01 ;
         lv2:minimum 1.0 ;
@@ -117,6 +120,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "GAIN" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_mix> ;
         lv2:name "GAIN" ;
         lv2:default 1e+02 ;
         lv2:minimum 0.0 ;
@@ -127,6 +131,7 @@ trademarks are the property of their respective holders.”
         lv2:index 7 ;
         lv2:portProperty log:logarithmic ;
         lv2:symbol "HIGHPASS" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_tone> ;
         lv2:name "HIGHPASS" ;
         lv2:default 1.2e+02 ;
         lv2:minimum 2e+01 ;
@@ -137,6 +142,7 @@ trademarks are the property of their respective holders.”
         lv2:index 8 ;
         lv2:portProperty log:logarithmic ;
         lv2:symbol "HOWPASS" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_tone> ;
         lv2:name "HOWPASS" ;
         lv2:default 1.2e+04 ;
         lv2:minimum 2e+01 ;
@@ -146,6 +152,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 9 ;
         lv2:symbol "LEVEL" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_mix> ;
         lv2:name "LEVEL" ;
         lv2:default 5e+01 ;
         lv2:minimum 1.0 ;
@@ -155,6 +162,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 10 ;
         lv2:symbol "MODE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_tone> ;
         lv2:name "MODE" ;
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
@@ -171,6 +179,7 @@ trademarks are the property of their respective holders.”
             lv2:ControlPort ;
         lv2:index 11 ;
         lv2:symbol "NOTES" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_delay> ;
         lv2:name "NOTES" ;
         lv2:default 5.0 ;
         lv2:minimum 1.0 ;
@@ -202,3 +211,22 @@ trademarks are the property of their respective holders.”
   a guiext:GtkUI;
   guiext:binary <gx_digital_delay_st_gui.so>;
   guiext:requiredFeature guiext:makeResident .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_delay>
+    a pg:InputGroup ;
+    lv2:symbol "delay" ;
+    lv2:name "Delay" ;
+    lv2:index 0 .
+
+<http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_tone>
+    a pg:InputGroup ;
+    lv2:symbol "tone" ;
+    lv2:name "Tone" ;
+    lv2:index 1 .
+
+<http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 2 .

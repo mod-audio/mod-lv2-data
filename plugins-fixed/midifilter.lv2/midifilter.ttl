@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -1068,7 +1069,7 @@ Modeled by x42
  doap:name "MIDI Chord" ;
  mod:label "MIDI Chord" ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -1096,6 +1097,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "channelf" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_key> ;
  lv2:name "Filter Channel";
  lv2:minimum 0 ;
  lv2:maximum 16 ;
@@ -1140,6 +1142,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "scale" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_key> ;
  lv2:name "Scale";
  lv2:minimum 0 ;
  lv2:maximum 11 ;
@@ -1174,6 +1177,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "c1" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "prime";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1183,6 +1187,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "c3" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "3rd";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1192,6 +1197,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "c5" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "5th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1201,6 +1207,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "c6" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "6th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1210,6 +1217,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 9 ;
  lv2:symbol "c7" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "7th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1219,6 +1227,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 10 ;
  lv2:symbol "c8" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "octave";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1228,6 +1237,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 11 ;
  lv2:symbol "c9" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "9th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1237,6 +1247,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 12 ;
  lv2:symbol "c11" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "11th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1246,6 +1257,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 13 ;
  lv2:symbol "c13" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "13th";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1255,6 +1267,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 14 ;
  lv2:symbol "_8" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midichord_group_chord> ;
  lv2:name "bass";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1406,7 +1419,7 @@ Modeled by x42
  doap:name "MIDI Event Filter" ;
  mod:label "MIDI Event Flt." ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -1434,6 +1447,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "blkcc" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Control Changes";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1443,6 +1457,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "blknote" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Notes";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1452,6 +1467,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "blkpc" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Program Changes";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1461,6 +1477,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "blkpp" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Polykey-Pressure";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1470,6 +1487,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "blkcp" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Channel-Pressure";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1479,6 +1497,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "blkpb" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Pitch Bend";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1488,6 +1507,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 9 ;
  lv2:symbol "blksx" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block Sysex/RT messages";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1497,6 +1517,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 10 ;
  lv2:symbol "blkcm" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_block> ;
  lv2:name "Block custom message";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -1506,6 +1527,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 11 ;
  lv2:symbol "cmt" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_custom> ;
  lv2:name "Custom Message Type";
  lv2:minimum 0 ;
  lv2:maximum 6 ;
@@ -1530,6 +1552,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 12 ;
  lv2:symbol "cmf" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_custom> ;
  lv2:name "Custom message Channel";
  lv2:minimum 0 ;
  lv2:maximum 16 ;
@@ -1574,6 +1597,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 13 ;
  lv2:symbol "cm1" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_custom> ;
  lv2:name "Custom message Data1";
  lv2:minimum -1 ;
  lv2:maximum 127 ;
@@ -1585,6 +1609,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 14 ;
  lv2:symbol "cm2" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#eventblocker_group_custom> ;
  lv2:name "Custom message Data2";
  lv2:minimum -1 ;
  lv2:maximum 127 ;
@@ -1724,7 +1749,7 @@ Modeled by x42
  doap:name "MIDI Keysplit" ;
  mod:label "MIDI Keysplit" ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -1752,6 +1777,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "channelf" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_split> ;
  lv2:name "Filter Channel";
  lv2:minimum 0 ;
  lv2:maximum 16 ;
@@ -1796,6 +1822,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "split" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_split> ;
  lv2:name "Splitpoint";
  lv2:minimum 0 ;
  lv2:maximum 127 ;
@@ -1806,6 +1833,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "channel0" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_lower> ;
  lv2:name "Channel Lower";
  lv2:minimum 1 ;
  lv2:maximum 16 ;
@@ -1848,6 +1876,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "transp0" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_lower> ;
  lv2:name "Transpose Lower";
  lv2:minimum -48 ;
  lv2:maximum 48 ;
@@ -1857,6 +1886,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "channel1" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_upper> ;
  lv2:name "Channel Upper";
  lv2:minimum 1 ;
  lv2:maximum 16 ;
@@ -1899,6 +1929,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "transp1" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#keysplit_group_upper> ;
  lv2:name "Transpose Upper";
  lv2:minimum -48 ;
  lv2:maximum 48 ;
@@ -3556,7 +3587,7 @@ Modeled by x42
  doap:name "MIDI Strum" ;
  mod:label "MIDI Strum" ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -3585,6 +3616,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "bpmsrc" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_tempo> ;
  lv2:name "BPM source";
  lv2:minimum 0 ;
  lv2:maximum 1 ;
@@ -3599,6 +3631,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "bpm" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_tempo> ;
  lv2:name "BPM";
  lv2:minimum 1.0 ;
  lv2:maximum 280.0 ;
@@ -3608,6 +3641,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "mode" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_strum> ;
  lv2:name "Strum Direction";
  lv2:minimum 0 ;
  lv2:maximum 4 ;
@@ -3628,6 +3662,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "collect" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_strum> ;
  lv2:name "Note Collect Timeout [ms]";
  lv2:minimum 0.0 ;
  lv2:maximum 300.0 ;
@@ -3636,6 +3671,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "duration" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_strum> ;
  lv2:name "Strum Duration in Beats";
  lv2:minimum 0.0 ;
  lv2:maximum 4.0 ;
@@ -3658,6 +3694,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "adjspeed" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_strum> ;
  lv2:name "Strum Acceleration";
  lv2:minimum -1.0 ;
  lv2:maximum 1.0 ;
@@ -3666,6 +3703,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 9 ;
  lv2:symbol "adjvelocity" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_strum> ;
  lv2:name "Velocity Change";
  lv2:minimum -112.0 ;
  lv2:maximum 112.0 ;
@@ -3674,6 +3712,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 10 ;
  lv2:symbol "randspeed" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_random> ;
  lv2:name "Randomize Acceleration";
  lv2:minimum 0.0 ;
  lv2:maximum 1.0 ;
@@ -3682,6 +3721,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 11 ;
  lv2:symbol "randvelocity" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#midistrum_group_random> ;
  lv2:name "Randomize Velocity";
  lv2:minimum 0.0 ;
  lv2:maximum 1.0 ;
@@ -4560,7 +4600,7 @@ Modeled by x42
  doap:name "MIDI Scale CC Value" ;
  mod:label "MIDI CC Scale" ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -4588,6 +4628,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "channelf" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_parameter> ;
  lv2:name "Filter Channel";
  lv2:minimum 0 ;
  lv2:maximum 16 ;
@@ -4632,6 +4673,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "lower" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_parameter> ;
  lv2:name "Parameter (Min)";
  lv2:minimum 0 ;
  lv2:maximum 127 ;
@@ -4641,6 +4683,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "upper" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_parameter> ;
  lv2:name "Parameter (Max)";
  lv2:minimum 0 ;
  lv2:maximum 127 ;
@@ -4650,6 +4693,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "pmode" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_parameter> ;
  lv2:name "Parameter Mode";
  lv2:minimum 0 ;
  lv2:maximum 2 ;
@@ -4666,6 +4710,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "valmul" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_value> ;
  lv2:name "Value Scale";
  lv2:minimum -10.0 ;
  lv2:maximum 10.0 ;
@@ -4674,6 +4719,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "valoff" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_value> ;
  lv2:name "Value Offset";
  lv2:minimum -64 ;
  lv2:maximum 64 ;
@@ -4683,6 +4729,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 9 ;
  lv2:symbol "vmode" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#scalecc_group_value> ;
  lv2:name "Value Mode";
  lv2:minimum 0 ;
  lv2:maximum 2 ;
@@ -5010,7 +5057,7 @@ Modeled by x42
  doap:name "MIDI Velocity Adjust" ;
  mod:label "MIDI Vel. Adjust" ;
  mod:brand "x42";
- lv2:microVersion 31 ;
+ lv2:microVersion 33 ;
  lv2:minorVersion 1033 ;
  doap:license <http://usefulinc.com/doap/licenses/gpl> ;
  lv2:project <http://gareus.org/oss/lv2/midifilter> ;
@@ -5038,6 +5085,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 3 ;
  lv2:symbol "channel" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_on> ;
  lv2:name "Channel";
  lv2:minimum 0 ;
  lv2:maximum 16 ;
@@ -5082,6 +5130,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 4 ;
  lv2:symbol "onmin" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_on> ;
  lv2:name "Note-on Min";
  lv2:minimum 1.0 ;
  lv2:maximum 127.0 ;
@@ -5090,6 +5139,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 5 ;
  lv2:symbol "onmax" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_on> ;
  lv2:name "Note-on Max";
  lv2:minimum 0.0 ;
  lv2:maximum 127.0 ;
@@ -5098,6 +5148,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 6 ;
  lv2:symbol "onoff" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_on> ;
  lv2:name "Note-on Offset";
  lv2:minimum -64.0 ;
  lv2:maximum 64.0 ;
@@ -5106,6 +5157,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 7 ;
  lv2:symbol "offmin" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_off> ;
  lv2:name "Note-off Min";
  lv2:minimum 0.0 ;
  lv2:maximum 127.0 ;
@@ -5114,6 +5166,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 8 ;
  lv2:symbol "offmax" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_off> ;
  lv2:name "Note-off Max";
  lv2:minimum 0.0 ;
  lv2:maximum 127.0 ;
@@ -5122,6 +5175,7 @@ Modeled by x42
  , [ a lv2:InputPort, lv2:ControlPort ;
  lv2:index 9 ;
  lv2:symbol "offoff" ;
+        pg:group <http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_off> ;
  lv2:name "Note-off Offset";
  lv2:minimum -64.0 ;
  lv2:maximum 64.0 ;
@@ -5134,3 +5188,93 @@ Features:
 Modeled by x42
 """;
 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#midichord_group_key>
+    a pg:InputGroup ;
+    lv2:symbol "key" ;
+    lv2:name "Key" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#midichord_group_chord>
+    a pg:InputGroup ;
+    lv2:symbol "chord" ;
+    lv2:name "Chord Notes" ;
+    lv2:index 1 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#eventblocker_group_block>
+    a pg:InputGroup ;
+    lv2:symbol "block" ;
+    lv2:name "Block" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#eventblocker_group_custom>
+    a pg:InputGroup ;
+    lv2:symbol "custom" ;
+    lv2:name "Custom Msg" ;
+    lv2:index 1 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#keysplit_group_split>
+    a pg:InputGroup ;
+    lv2:symbol "split" ;
+    lv2:name "Split" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#keysplit_group_lower>
+    a pg:InputGroup ;
+    lv2:symbol "lower" ;
+    lv2:name "Lower Zone" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/midifilter#keysplit_group_upper>
+    a pg:InputGroup ;
+    lv2:symbol "upper" ;
+    lv2:name "Upper Zone" ;
+    lv2:index 2 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#scalecc_group_parameter>
+    a pg:InputGroup ;
+    lv2:symbol "parameter" ;
+    lv2:name "Parameter" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#scalecc_group_value>
+    a pg:InputGroup ;
+    lv2:symbol "value" ;
+    lv2:name "Value" ;
+    lv2:index 1 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#midistrum_group_tempo>
+    a pg:InputGroup ;
+    lv2:symbol "tempo" ;
+    lv2:name "Tempo" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#midistrum_group_strum>
+    a pg:InputGroup ;
+    lv2:symbol "strum" ;
+    lv2:name "Strum" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/midifilter#midistrum_group_random>
+    a pg:InputGroup ;
+    lv2:symbol "random" ;
+    lv2:name "Random" ;
+    lv2:index 2 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_on>
+    a pg:InputGroup ;
+    lv2:symbol "note_on" ;
+    lv2:name "Note On" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/midifilter#velocityscale_group_note_off>
+    a pg:InputGroup ;
+    lv2:symbol "note_off" ;
+    lv2:name "Note Off" ;
+    lv2:index 1 .
