@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -31,7 +32,7 @@ The AT1 is used to correct pitch within the vocal range and features a few diffe
 Features:
 Modeled by x42
 """;
-	lv2:microVersion 0 ;lv2:minorVersion 516 ;
+	lv2:microVersion 2 ;lv2:minorVersion 516 ;
 
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
@@ -64,6 +65,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 3 ;
 		lv2:symbol "mode" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_setup> ;
 		lv2:name "Mode";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -77,6 +79,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 4 ;
 		lv2:symbol "channelf" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_setup> ;
 		lv2:name "Filter Channel";
 		lv2:minimum 0 ;
 		lv2:maximum 16 ;
@@ -105,6 +108,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 5 ;
 		lv2:symbol "tuning" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_setup> ;
 		lv2:name "Tuning";
 		lv2:default 440.0 ;
 		lv2:minimum 400.0 ;
@@ -117,6 +121,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 6 ;
 		lv2:symbol "bias" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_correction> ;
 		lv2:name "Bias";
 		lv2:default 0.5 ;
 		lv2:minimum 0.0 ;
@@ -128,6 +133,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 7 ;
 		lv2:symbol "filter" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_correction> ;
 		lv2:name "Filter";
 		lv2:default 0.1 ;
 		lv2:minimum 0.02 ;
@@ -143,6 +149,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "corr" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_correction> ;
 		lv2:name "Correction";
 		lv2:default 1.0 ;
 		lv2:minimum 0.0 ;
@@ -154,6 +161,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 9 ;
 		lv2:symbol "offset" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_correction> ;
 		lv2:name "Offset";
 		lv2:default 0.0 ;
 		lv2:minimum -2.0 ;
@@ -166,6 +174,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 10 ;
 		lv2:symbol "m00" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "C";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -176,6 +185,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 11 ;
 		lv2:symbol "m01" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "C#";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -186,6 +196,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 12 ;
 		lv2:symbol "m02" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "D";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -196,6 +207,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 13 ;
 		lv2:symbol "m03" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "D#";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -206,6 +218,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 14 ;
 		lv2:symbol "m04" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "E";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -216,6 +229,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:symbol "m05" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_low> ;
 		lv2:name "F";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -226,6 +240,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:symbol "m06" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "F#";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -236,6 +251,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:symbol "m07" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "G";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -246,6 +262,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:symbol "m08" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "G#";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -256,6 +273,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:symbol "m09" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "A";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -266,6 +284,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 20 ;
 		lv2:symbol "m10" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "A#";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -276,6 +295,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 21 ;
 		lv2:symbol "m11" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_scale_high> ;
 		lv2:name "B";
 		lv2:default 1 ;
 		lv2:minimum 0 ;
@@ -286,6 +306,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 22 ;
 		lv2:symbol "panic" ;
+        pg:group <http://gareus.org/oss/lv2/fat1#group_setup> ;
 		lv2:name "MIDI Panic";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -329,3 +350,28 @@ Modeled by x42
 		units:unit units:frame;
 	];
 	.
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/fat1#group_setup>
+    a pg:InputGroup ;
+    lv2:symbol "setup" ;
+    lv2:name "Setup" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/fat1#group_correction>
+    a pg:InputGroup ;
+    lv2:symbol "correction" ;
+    lv2:name "Correction" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/fat1#group_scale_low>
+    a pg:InputGroup ;
+    lv2:symbol "scale_low" ;
+    lv2:name "Scale C-F" ;
+    lv2:index 2 .
+
+<http://gareus.org/oss/lv2/fat1#group_scale_high>
+    a pg:InputGroup ;
+    lv2:symbol "scale_high" ;
+    lv2:name "Scale F#-B" ;
+    lv2:index 3 .

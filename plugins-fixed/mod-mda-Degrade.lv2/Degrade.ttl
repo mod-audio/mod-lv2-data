@@ -33,7 +33,7 @@ mda:Degrade
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     lv2:minorVersion 0;
-    lv2:microVersion 2;
+    lv2:microVersion 4;
     mod:brand "MDA" ;
     mod:label "Degrade" ;
     rdfs:comment """
@@ -52,6 +52,7 @@ Modeled by MDA
         lv2:index 0 ;
         lv2:name "Headroom" ;
         lv2:symbol "headroom" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_converter> ;
         lv2:default -6.0 ;
         lv2:minimum -30.0 ;
         lv2:maximum 0.0 ;
@@ -63,6 +64,7 @@ Modeled by MDA
         lv2:index 1 ;
         lv2:name "Quant" ;
         lv2:symbol "quant" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_converter> ;
         lv2:portProperty lv2:integer ;
         lv2:default 10 ;
         lv2:minimum 4 ;
@@ -79,6 +81,7 @@ Modeled by MDA
         lv2:index 2 ;
         lv2:name "Rate" ;
         lv2:symbol "rate" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_converter> ;
         lv2:portProperty lv2:integer ;
         lv2:portProperty epp:logarithmic ;
         lv2:default 48000 ;
@@ -96,6 +99,7 @@ Modeled by MDA
         lv2:index 3 ;
         lv2:name "Integrator" ;
         lv2:symbol "integrator_sr" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_converter> ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -113,6 +117,7 @@ Modeled by MDA
         lv2:index 4 ;
         lv2:name "Post Filter" ;
         lv2:symbol "post_filt" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_output> ;
         lv2:portProperty lv2:integer ;
         lv2:portProperty epp:logarithmic ;
         lv2:default 15000 ;
@@ -126,6 +131,7 @@ Modeled by MDA
         lv2:index 5 ;
         lv2:name "Non-Lin" ;
         lv2:symbol "non_lin" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_output> ;
         lv2:default 0.16 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -140,6 +146,7 @@ Modeled by MDA
         lv2:index 6 ;
         lv2:name "EvenOdd" ;
         lv2:symbol "even_odd" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_output> ;
         lv2:default 1 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -157,6 +164,7 @@ Modeled by MDA
         lv2:index 7 ;
         lv2:name "Output" ;
         lv2:symbol "output" ;
+        pg:group <http://moddevices.com/plugins/mda/Degrade#group_output> ;
 #        lv2:portProperty lv2:integer ;
         lv2:default 0.0 ;
         lv2:minimum -20.0 ;
@@ -194,3 +202,16 @@ Modeled by MDA
         lv2:designation pg:right ;
         pg:group mda:mainOut
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mda/Degrade#group_converter>
+    a pg:InputGroup ;
+    lv2:symbol "converter" ;
+    lv2:name "Converter" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mda/Degrade#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 1 .

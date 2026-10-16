@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 #
 # Copyright (C) 2014 Guitarix project MOD project
 #
@@ -64,7 +65,7 @@
 
 
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 5;
 
 		mod:brand "Guitarix";
 
@@ -95,6 +96,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 2 ;
         lv2:symbol "DETUNE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_pitch> ;
         lv2:name "DETUNE" ;
         lv2:default 0.0 ;
         lv2:minimum -0.25 ;
@@ -104,6 +106,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 3 ;
         lv2:symbol "OCTAVE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_pitch> ;
         lv2:name "OCTAVE" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
@@ -119,6 +122,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "COMPENSATE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_pitch> ;
         lv2:name "COMPENSATE" ;
         lv2:default 0 ;
         lv2:minimum 0 ;
@@ -149,6 +153,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "WET" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_mix> ;
         lv2:name "WET" ;
         lv2:default 50.0 ;
         lv2:minimum 0.0 ;
@@ -158,6 +163,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 7 ;
         lv2:symbol "DRY" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_mix> ;
         lv2:name "DRY" ;
         lv2:default 50.0 ;
         lv2:minimum 0.0 ;
@@ -167,6 +173,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 8 ;
         lv2:symbol "LOW" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_eq> ;
         lv2:name "LOW" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
@@ -176,6 +183,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 9 ;
         lv2:symbol "MIDDLELOW" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_eq> ;
         lv2:name "MIDDLELOW" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
@@ -185,6 +193,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 10 ;
         lv2:symbol "MIDDLETREBLE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_eq> ;
         lv2:name "MIDDLETREBLE" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
@@ -194,6 +203,7 @@ A detuner with an octave option
             lv2:ControlPort ;
         lv2:index 11 ;
         lv2:symbol "TREBLE" ;
+        pg:group <http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_eq> ;
         lv2:name "TREBLE" ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
@@ -212,3 +222,22 @@ A detuner with an octave option
 <http://guitarix.sourceforge.net/plugins/gx_detune_#gui>
   a guiext:GtkUI;
   guiext:binary <gx_detune_gui.so> .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_pitch>
+    a pg:InputGroup ;
+    lv2:symbol "pitch" ;
+    lv2:name "Pitch" ;
+    lv2:index 0 .
+
+<http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 1 .
+
+<http://guitarix.sourceforge.net/plugins/gx_detune_#_detune__group_eq>
+    a pg:InputGroup ;
+    lv2:symbol "eq" ;
+    lv2:name "EQ" ;
+    lv2:index 2 .

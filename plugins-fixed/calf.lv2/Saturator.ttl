@@ -40,7 +40,7 @@
     mod:brand "Calf";
     mod:label "Saturator";
     lv2:minorVersion 60;
-    lv2:microVersion 0;
+    lv2:microVersion 2;
     rdfs:comment """
 The Calf Saturator is a universal distortion tool that can act as a guitar distortion as well as a harmonics generator. You can achieve great flexibility in your sound thanks to some filtering before and after distortion as well as some gapless adjustment between 2nd and 3rd harmonics. 
 
@@ -89,6 +89,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "bypass" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_in_out> ;
         lv2:name "Bypass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:toggled ;
@@ -100,6 +101,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 5 ;
         lv2:symbol "level_in" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_in_out> ;
         lv2:name "Input Gain" ;
         lv2:default 1.00000 ;
         lv2:minimum 0.0156250 ;
@@ -109,6 +111,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "level_out" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_in_out> ;
         lv2:name "Output Gain" ;
         lv2:default 1.00000 ;
         lv2:minimum 0.0156250 ;
@@ -198,6 +201,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 15 ;
         lv2:symbol "mix" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_in_out> ;
         lv2:name "Mix" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 1.00000 ;
@@ -208,6 +212,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 16 ;
         lv2:symbol "drive" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_saturation> ;
         lv2:name "Saturation" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 5.00000 ;
@@ -219,6 +224,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 17 ;
         lv2:symbol "blend" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_saturation> ;
         lv2:name "Blend" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 10.0000 ;
@@ -230,6 +236,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 18 ;
         lv2:symbol "lp_pre_freq" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_pre_filter> ;
         lv2:name "Lowpass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -242,6 +249,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 19 ;
         lv2:symbol "hp_pre_freq" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_pre_filter> ;
         lv2:name "Highpass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -254,6 +262,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 20 ;
         lv2:symbol "lp_post_freq" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_post_filter> ;
         lv2:name "Lowpass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -266,6 +275,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 21 ;
         lv2:symbol "hp_post_freq" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_post_filter> ;
         lv2:name "Highpass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -278,6 +288,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 22 ;
         lv2:symbol "p_freq" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_tone> ;
         lv2:name "Tone" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -290,6 +301,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 23 ;
         lv2:symbol "p_level" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_tone> ;
         lv2:name "Amount" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 1.00000 ;
@@ -300,6 +312,7 @@ Modeled by Tom Szilagyi and Markus Schimdt
         a lv2:ControlPort ;
         lv2:index 24 ;
         lv2:symbol "p_q" ;
+        pg:group <http://calf.sourceforge.net/plugins/Saturator#group_tone> ;
         lv2:name "Gradient" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -310,4 +323,33 @@ Modeled by Tom Szilagyi and Markus Schimdt
     ]
 .
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://calf.sourceforge.net/plugins/Saturator#group_in_out>
+    a pg:InputGroup ;
+    lv2:symbol "in_out" ;
+    lv2:name "In / Out" ;
+    lv2:index 0 .
 
+<http://calf.sourceforge.net/plugins/Saturator#group_saturation>
+    a pg:InputGroup ;
+    lv2:symbol "saturation" ;
+    lv2:name "Saturation" ;
+    lv2:index 1 .
+
+<http://calf.sourceforge.net/plugins/Saturator#group_pre_filter>
+    a pg:InputGroup ;
+    lv2:symbol "pre_filter" ;
+    lv2:name "Pre Filter" ;
+    lv2:index 2 .
+
+<http://calf.sourceforge.net/plugins/Saturator#group_post_filter>
+    a pg:InputGroup ;
+    lv2:symbol "post_filter" ;
+    lv2:name "Post Filter" ;
+    lv2:index 3 .
+
+<http://calf.sourceforge.net/plugins/Saturator#group_tone>
+    a pg:InputGroup ;
+    lv2:symbol "tone" ;
+    lv2:name "Tone" ;
+    lv2:index 4 .

@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#>.
 @prefix epp:   <http://lv2plug.in/ns/ext/port-props#>.
 @prefix foaf:  <http://xmlns.com/foaf/0.1/>.
@@ -32,7 +33,7 @@ doap:wiki <http://tap-plugins.sourceforge.net/ladspa/chorusflanger.html>;
 lv2:optionalFeature lv2:hardRTCapable;
 
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 4;
 
 rdfs:comment """
 This plugin is an implementation capable of creating traditional Chorus and Flanger effects, spiced up a bit to make use of stereo processing.
@@ -43,7 +44,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 0;
-    lv2:symbol "Frequency";
+    lv2:symbol "Frequency" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_modulation>;
     lv2:name "Frequency";
     lv2:default 1.75;
     lv2:minimum 0.0;
@@ -54,7 +56,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 1;
-    lv2:symbol "LRPhaseShift";
+    lv2:symbol "LRPhaseShift" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_modulation>;
     lv2:name "L/R Phase Shift";
     lv2:default 90.0;
     lv2:minimum 0.0;
@@ -64,7 +67,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 2;
-    lv2:symbol "Depth";
+    lv2:symbol "Depth" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_modulation>;
     lv2:name "Depth";
     lv2:default 75.0;
     lv2:minimum 0.0;
@@ -74,7 +78,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 3;
-    lv2:symbol "Delay";
+    lv2:symbol "Delay" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_modulation>;
     lv2:name "Delay";
     lv2:default 25.0;
     lv2:minimum 0.0;
@@ -84,7 +89,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 4;
-    lv2:symbol "Contour";
+    lv2:symbol "Contour" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_modulation>;
     lv2:name "Contour";
     lv2:default 100.0;
     lv2:minimum 20.0;
@@ -95,7 +101,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 5;
-    lv2:symbol "DryLevel";
+    lv2:symbol "DryLevel" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_mix>;
     lv2:name "Dry Level";
     lv2:default -3.0;
     lv2:minimum -90.0;
@@ -105,7 +112,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 6;
-    lv2:symbol "WetLevel";
+    lv2:symbol "WetLevel" ;
+        pg:group <http://moddevices.com/plugins/tap/chorusflanger#group_mix>;
     lv2:name "Wet Level";
     lv2:default -3.0;
     lv2:minimum -90.0;
@@ -136,3 +144,16 @@ lv2:port
     lv2:symbol "OutputR";
     lv2:name "Output R";
 ].
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/tap/chorusflanger#group_modulation>
+    a pg:InputGroup ;
+    lv2:symbol "modulation" ;
+    lv2:name "Modulation" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/tap/chorusflanger#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 1 .

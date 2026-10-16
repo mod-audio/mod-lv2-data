@@ -40,7 +40,7 @@
     mod:brand "Calf";
     mod:label "Envelope filter";
     lv2:minorVersion 60;
-    lv2:microVersion 0;
+    lv2:microVersion 2;
     rdfs:comment """
 The Calf Envelope Filter is an envelope filter which increases with volume, meaning the louder you play, the higher the filter.
 
@@ -102,6 +102,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 6 ;
         lv2:symbol "bypass" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_in_out> ;
         lv2:name "Bypass" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:toggled ;
@@ -113,6 +114,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 7 ;
         lv2:symbol "level_in" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_in_out> ;
         lv2:name "Input" ;
         lv2:default 1.00000 ;
         lv2:minimum 0.0156250 ;
@@ -122,6 +124,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 8 ;
         lv2:symbol "level_out" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_in_out> ;
         lv2:name "Output" ;
         lv2:default 1.00000 ;
         lv2:minimum 0.0156250 ;
@@ -211,6 +214,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 17 ;
         lv2:symbol "mix" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_in_out> ;
         lv2:name "Mix" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 0.850000 ;
@@ -221,6 +225,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 18 ;
         lv2:symbol "res" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_filter> ;
         lv2:name "Resonance" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 2.00000 ;
@@ -231,6 +236,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 19 ;
         lv2:symbol "mode" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_filter> ;
         lv2:name "Mode" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer ;
@@ -255,6 +261,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 20 ;
         lv2:symbol "attack" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope> ;
         lv2:name "Attack" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -267,6 +274,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 21 ;
         lv2:symbol "release" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope> ;
         lv2:name "Release" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -279,6 +287,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 22 ;
         lv2:symbol "upper" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_filter> ;
         lv2:name "Upper" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -291,6 +300,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 23 ;
         lv2:symbol "lower" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_filter> ;
         lv2:name "Lower" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty epp:logarithmic ;
@@ -303,6 +313,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 24 ;
         lv2:symbol "gain" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope> ;
         lv2:name "Activation" ;
         lv2:default 1.00000 ;
         lv2:minimum 0.0156250 ;
@@ -312,6 +323,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 25 ;
         lv2:symbol "sidechain" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope> ;
         lv2:name "Sidechain" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:toggled ;
@@ -323,6 +335,7 @@ Modeled by Calf
         a lv2:ControlPort ;
         lv2:index 26 ;
         lv2:symbol "response" ;
+        pg:group <http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope> ;
         lv2:name "Response" ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:default 0.00000 ;
@@ -330,3 +343,22 @@ Modeled by Calf
         lv2:maximum 1.00000 ;
     ]
 .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://calf.sourceforge.net/plugins/EnvelopeFilter#group_in_out>
+    a pg:InputGroup ;
+    lv2:symbol "in_out" ;
+    lv2:name "In / Out" ;
+    lv2:index 0 .
+
+<http://calf.sourceforge.net/plugins/EnvelopeFilter#group_envelope>
+    a pg:InputGroup ;
+    lv2:symbol "envelope" ;
+    lv2:name "Envelope" ;
+    lv2:index 1 .
+
+<http://calf.sourceforge.net/plugins/EnvelopeFilter#group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 2 .

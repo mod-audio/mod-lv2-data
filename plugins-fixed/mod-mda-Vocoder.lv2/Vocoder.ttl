@@ -43,7 +43,7 @@ Features:
 Modeled by MDA
 """ ;
     lv2:minorVersion 0;
-    lv2:microVersion 4;
+    lv2:microVersion 6;
     mod:brand "MDA" ;
     mod:label "Vocoder" ;
 
@@ -53,6 +53,7 @@ Modeled by MDA
         lv2:index 0 ;
         lv2:name "Swap carrier-modulator" ;
         lv2:symbol "mod_in" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_setup> ;
         lv2:default 0.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -72,6 +73,7 @@ Modeled by MDA
         lv2:index 1 ;
         lv2:name "Output" ;
         lv2:symbol "output" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_output> ;
         lv2:default 0.0 ;
         lv2:minimum -20.0 ;
         lv2:maximum 20.0 ;
@@ -83,6 +85,7 @@ Modeled by MDA
         lv2:index 2 ;
         lv2:name "Hi Thru" ;
         lv2:symbol "hi_thru" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_output> ;
         lv2:default 40.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -95,6 +98,7 @@ Modeled by MDA
         lv2:index 3 ;
         lv2:name "Hi Band" ;
         lv2:symbol "hi_band" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_output> ;
         lv2:default 40.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -106,6 +110,7 @@ Modeled by MDA
         lv2:index 4 ;
         lv2:name "Envelope" ;
         lv2:symbol "envelope" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_bands> ;
         lv2:default 1602.24 ;
         lv2:minimum 14.0 ;
         lv2:maximum 10000.0 ;
@@ -122,6 +127,7 @@ Modeled by MDA
         lv2:index 5 ;
         lv2:name "Filter Q" ;
         lv2:symbol "filter_q" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_bands> ;
         lv2:default 55.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -134,6 +140,7 @@ Modeled by MDA
         lv2:index 6 ;
         lv2:name "Mid Freq" ;
         lv2:symbol "mid_freq" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_bands> ;
         lv2:portProperty epp:logarithmic;
         lv2:default 1000.0 ;
         lv2:minimum 200.0 ;
@@ -147,6 +154,7 @@ Modeled by MDA
         lv2:index 7 ;
         lv2:name "Quality" ;
         lv2:symbol "quality" ;
+        pg:group <http://moddevices.com/plugins/mda/Vocoder#group_setup> ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -192,3 +200,22 @@ Modeled by MDA
         lv2:designation pg:right ;
         pg:group mda:mainOut
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mda/Vocoder#group_setup>
+    a pg:InputGroup ;
+    lv2:symbol "setup" ;
+    lv2:name "Setup" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mda/Vocoder#group_bands>
+    a pg:InputGroup ;
+    lv2:symbol "bands" ;
+    lv2:name "Bands" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mda/Vocoder#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 2 .

@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
@@ -29,7 +30,7 @@ mod:label "Fractal Doubler";
 
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 4;
 
 rdfs:comment """
 Fractal Doubler is a vocal doubler which gives you full control over your doubling.
@@ -44,7 +45,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 0;
-    lv2:symbol "TimeTracking";
+    lv2:symbol "TimeTracking" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_tracking>;
     lv2:name "Time Tracking";
     lv2:default 0.50;
     lv2:minimum 0.0;
@@ -53,7 +55,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 1;
-    lv2:symbol "PitchTracking";
+    lv2:symbol "PitchTracking" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_tracking>;
     lv2:name "Pitch Tracking";
     lv2:default 0.50;
     lv2:minimum 0.0;
@@ -62,7 +65,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 2;
-    lv2:symbol "DryLevelDb";
+    lv2:symbol "DryLevelDb" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_dry>;
     lv2:name "Dry Level";
     lv2:default 0.0;
     lv2:minimum -90.0;
@@ -72,7 +76,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 3;
-    lv2:symbol "DryLeftPosition";
+    lv2:symbol "DryLeftPosition" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_dry>;
     lv2:name "Dry Left Position";
     lv2:default 0.0;
     lv2:minimum 0.0;
@@ -81,7 +86,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 4;
-    lv2:symbol "DryRightPosition";
+    lv2:symbol "DryRightPosition" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_dry>;
     lv2:name "Dry Right Position";
     lv2:default 1.0;
     lv2:minimum 0.0;
@@ -90,7 +96,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 5;
-    lv2:symbol "WetLevelDb";
+    lv2:symbol "WetLevelDb" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_wet>;
     lv2:name "Wet Level";
     lv2:default 0.0;
     lv2:minimum -90.0;
@@ -100,7 +107,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 6;
-    lv2:symbol "WetLeftPosition";
+    lv2:symbol "WetLeftPosition" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_wet>;
     lv2:name "Wet Left Position";
     lv2:default 0.0;
     lv2:minimum 0.0;
@@ -109,7 +117,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 7;
-    lv2:symbol "WetRightPosition";
+    lv2:symbol "WetRightPosition" ;
+        pg:group <http://moddevices.com/plugins/tap/doubler#group_wet>;
     lv2:name "Wet Right Position";
     lv2:default 1.0;
     lv2:minimum 0.0;
@@ -139,3 +148,22 @@ lv2:port
     lv2:symbol "Output_R";
     lv2:name "Output_R";
 ].
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/tap/doubler#group_tracking>
+    a pg:InputGroup ;
+    lv2:symbol "tracking" ;
+    lv2:name "Tracking" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/tap/doubler#group_dry>
+    a pg:InputGroup ;
+    lv2:symbol "dry" ;
+    lv2:name "Dry" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/tap/doubler#group_wet>
+    a pg:InputGroup ;
+    lv2:symbol "wet" ;
+    lv2:name "Wet" ;
+    lv2:index 2 .

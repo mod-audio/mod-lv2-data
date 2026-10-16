@@ -82,6 +82,7 @@
         lv2:index 6 ;
         lv2:name "Dry Level" ;
         lv2:symbol "dry_level" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_levels> ;
         lv2:default 80 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -92,6 +93,7 @@
         lv2:index 7 ;
         lv2:name "Early Level" ;
         lv2:symbol "early_level" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_levels> ;
         lv2:default 10 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -102,6 +104,7 @@
         lv2:index 8 ;
         lv2:name "Late Level" ;
         lv2:symbol "late_level" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_levels> ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -112,6 +115,7 @@
         lv2:index 9 ;
         lv2:name "Size" ;
         lv2:symbol "size" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_space> ;
         lv2:default 24 ;
         lv2:minimum 10 ;
         lv2:maximum 60 ;
@@ -127,6 +131,7 @@
         lv2:index 10 ;
         lv2:name "Width" ;
         lv2:symbol "width" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_space> ;
         lv2:default 100 ;
         lv2:minimum 50 ;
         lv2:maximum 150 ;
@@ -137,6 +142,7 @@
         lv2:index 11 ;
         lv2:name "Predelay" ;
         lv2:symbol "delay" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_space> ;
         lv2:default 4 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -147,6 +153,7 @@
         lv2:index 12 ;
         lv2:name "Diffuse" ;
         lv2:symbol "diffuse" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_space> ;
         lv2:default 90 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -157,6 +164,7 @@
         lv2:index 13 ;
         lv2:name "Low Cut" ;
         lv2:symbol "low_cut" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 4 ;
         lv2:minimum 0 ;
         lv2:maximum 200 ;
@@ -167,6 +175,7 @@
         lv2:index 14 ;
         lv2:name "Low Cross" ;
         lv2:symbol "low_xo" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 500 ;
         lv2:minimum 200 ;
         lv2:maximum 1200 ;
@@ -177,6 +186,7 @@
         lv2:index 15 ;
         lv2:name "Low Mult" ;
         lv2:symbol "low_mult" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 1.29999995232 ;
         lv2:minimum 0.5 ;
         lv2:maximum 2.5 ;
@@ -192,6 +202,7 @@
         lv2:index 16 ;
         lv2:name "High Cut" ;
         lv2:symbol "high_cut" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 7600 ;
         lv2:minimum 1000 ;
         lv2:maximum 16000 ;
@@ -202,6 +213,7 @@
         lv2:index 17 ;
         lv2:name "High Cross" ;
         lv2:symbol "high_xo" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 5500 ;
         lv2:minimum 1000 ;
         lv2:maximum 16000 ;
@@ -212,6 +224,7 @@
         lv2:index 18 ;
         lv2:name "High Mult" ;
         lv2:symbol "high_mult" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_eq> ;
         lv2:default 0.5 ;
         lv2:minimum 0.20000000298 ;
         lv2:maximum 1.20000004768 ;
@@ -227,6 +240,7 @@
         lv2:index 19 ;
         lv2:name "Spin" ;
         lv2:symbol "spin" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_decay> ;
         lv2:default 3.29999995232 ;
         lv2:minimum 0 ;
         lv2:maximum 10 ;
@@ -237,6 +251,7 @@
         lv2:index 20 ;
         lv2:name "Wander" ;
         lv2:symbol "wander" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_decay> ;
         lv2:default 15 ;
         lv2:minimum 0 ;
         lv2:maximum 40 ;
@@ -247,6 +262,7 @@
         lv2:index 21 ;
         lv2:name "Decay" ;
         lv2:symbol "decay" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_decay> ;
         lv2:default 1.29999995232 ;
         lv2:minimum 0.10000000149 ;
         lv2:maximum 10 ;
@@ -257,6 +273,7 @@
         lv2:index 22 ;
         lv2:name "Early Send" ;
         lv2:symbol "early_send" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_levels> ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -267,6 +284,7 @@
         lv2:index 23 ;
         lv2:name "Modulation" ;
         lv2:symbol "modulation" ;
+        pg:group <https://github.com/michaelwillis/dragonfly-reverb#group_decay> ;
         lv2:default 15 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -302,6 +320,30 @@ GUI by FistfulOfStars
         foaf:homepage <https://michaelwillis.github.io/dragonfly-reverb> ;
     ] ;
 
-    lv2:microVersion 6 ;
+    lv2:microVersion 8 ;
     lv2:minorVersion 4 .
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<https://github.com/michaelwillis/dragonfly-reverb#group_levels>
+    a pg:InputGroup ;
+    lv2:symbol "levels" ;
+    lv2:name "Levels" ;
+    lv2:index 0 .
+
+<https://github.com/michaelwillis/dragonfly-reverb#group_space>
+    a pg:InputGroup ;
+    lv2:symbol "space" ;
+    lv2:name "Space" ;
+    lv2:index 1 .
+
+<https://github.com/michaelwillis/dragonfly-reverb#group_decay>
+    a pg:InputGroup ;
+    lv2:symbol "decay" ;
+    lv2:name "Decay" ;
+    lv2:index 2 .
+
+<https://github.com/michaelwillis/dragonfly-reverb#group_eq>
+    a pg:InputGroup ;
+    lv2:symbol "eq" ;
+    lv2:name "EQ" ;
+    lv2:index 3 .

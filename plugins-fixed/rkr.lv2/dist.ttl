@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -23,7 +24,7 @@
         doap:description "Waveshaping Distortion";
         lv2:project <http://rakarrack.sourceforge.net/effects.html>;
         lv2:minorVersion 0 ;
-        lv2:microVersion 0 ;
+        lv2:microVersion 2 ;
         rdfs:comment """
 This distortion effect was adapted from the ZynAddSubFX Distortion, the open-source synthesizer.
 
@@ -76,6 +77,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 5 ;
                 lv2:symbol "WETDRY" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_mix> ;
                 lv2:name "Wet/Dry" ;
                 lv2:shortName "Mix" ;
                 lv2:default 84 ;
@@ -86,6 +88,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 6 ;
                 lv2:symbol "PAN" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_mix> ;
                 lv2:name "Panning" ;
                 lv2:default 0 ;
                 lv2:minimum -64 ;
@@ -95,6 +98,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 7 ;
                 lv2:symbol "LRCr" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_mix> ;
                 lv2:name "Left/Right Crossover" ;
                 lv2:default 87 ;
                 lv2:minimum 0 ;
@@ -104,6 +108,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 8 ;
                 lv2:symbol "DRIVE" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_drive> ;
                 lv2:name "Drive" ;
                 lv2:default 56 ;
                 lv2:minimum 0 ;
@@ -113,6 +118,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 9 ;
                 lv2:symbol "LEVEL" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_drive> ;
                 lv2:name "Level" ;
                 lv2:default 40 ;
                 lv2:minimum 0 ;
@@ -122,6 +128,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 10 ;
                 lv2:symbol "TYPE" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_drive> ;
                 lv2:name "Type" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -162,6 +169,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 11 ;
                 lv2:symbol "NEG" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_drive> ;
                 lv2:name "Negate (Polarity Switch)" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -172,6 +180,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 12 ;
                 lv2:symbol "LPF" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_filter> ;
                 lv2:name "Lowpass Filter" ;
                 lv2:default 6703 ;
                 lv2:minimum 20 ;
@@ -182,6 +191,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 13 ;
                 lv2:symbol "HPF" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_filter> ;
                 lv2:name "Highpass Filter" ;
                 lv2:default 21 ;
                 lv2:minimum 20 ;
@@ -192,6 +202,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 14 ;
                 lv2:symbol "STEREO" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_mix> ;
                 lv2:name "Stereo" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -202,6 +213,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 15 ;
                 lv2:symbol "PREFILTER" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_filter> ;
                 lv2:name "Prefilter" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -212,6 +224,7 @@ Modeled by Rakarrack
                 a lv2:InputPort, lv2:ControlPort ;
                 lv2:index 16 ;
                 lv2:symbol "OCT" ;
+        pg:group <http://rakarrack.sourceforge.net/effects.html#dist_group_drive> ;
                 lv2:name "Suboctave" ;
                 lv2:default 0 ;
                 lv2:minimum 0 ;
@@ -255,3 +268,22 @@ Modeled by Rakarrack
         lv2:appliesTo <http://rakarrack.sourceforge.net/effects.html#dist> ;
         rdfs:label "Guitar Amp" ;
         rdfs:seeAlso <dist_presets.ttl> .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://rakarrack.sourceforge.net/effects.html#dist_group_drive>
+    a pg:InputGroup ;
+    lv2:symbol "drive" ;
+    lv2:name "Drive" ;
+    lv2:index 0 .
+
+<http://rakarrack.sourceforge.net/effects.html#dist_group_filter>
+    a pg:InputGroup ;
+    lv2:symbol "filter" ;
+    lv2:name "Filter" ;
+    lv2:index 1 .
+
+<http://rakarrack.sourceforge.net/effects.html#dist_group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 2 .

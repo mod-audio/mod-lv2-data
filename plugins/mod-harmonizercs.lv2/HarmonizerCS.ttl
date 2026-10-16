@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix bsize:  <http://lv2plug.in/ns/ext/buf-size#>.
 @prefix doap:   <http://usefulinc.com/ns/doap#>.
 @prefix epp:    <http://lv2plug.in/ns/ext/port-props/#>.
@@ -45,7 +46,9 @@ All plugins in the MOD-pitchshifter family have an option to set the fidelity of
 A hint for making the right decision: the more you shift the pitch up, the higher you will need to set the Fidelity to get a clear sound. 
 """;
 
-lv2:port
+lv2:minorVersion 0 ;
+    lv2:microVersion 2 ;
+    lv2:port
 [
     a lv2:AudioPort, lv2:InputPort;
     lv2:index 0;
@@ -70,7 +73,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 3;
-    lv2:symbol "Tone";
+    lv2:symbol "Tone" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_key>;
     lv2:name "Tone";
     lv2:shortName "Tone";
     lv2:default 0;
@@ -93,7 +97,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 4;
-    lv2:symbol "Step_0";
+    lv2:symbol "Step_0" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Tonic";
     lv2:shortName "Tonic";
     lv2:default 0;
@@ -104,7 +109,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 5;
-    lv2:symbol "Step_1";
+    lv2:symbol "Step_1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Minor 2nd";
     lv2:shortName "Minor 2nd";
     lv2:default 0;
@@ -115,7 +121,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 6;
-    lv2:symbol "Step_2";
+    lv2:symbol "Step_2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Major 2nd";
     lv2:shortName "Major 2nd";
     lv2:default 0;
@@ -126,7 +133,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 7;
-    lv2:symbol "Step_3";
+    lv2:symbol "Step_3" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Minor 3rd";
     lv2:shortName "Minor 3rd";
     lv2:default 0;
@@ -137,7 +145,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 8;
-    lv2:symbol "Step_4";
+    lv2:symbol "Step_4" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Major 3rd";
     lv2:shortName "Major 3rd";
     lv2:default 0;
@@ -148,7 +157,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 9;
-    lv2:symbol "Step_5";
+    lv2:symbol "Step_5" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>;
     lv2:name "Perfect 4th";
     lv2:shortName "Perfect 4th";
     lv2:default 0;
@@ -159,7 +169,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 10;
-    lv2:symbol "Step_6";
+    lv2:symbol "Step_6" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Diminished 5th";
     lv2:shortName "Diminished 5th";
     lv2:default 0;
@@ -170,7 +181,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 11;
-    lv2:symbol "Step_7";
+    lv2:symbol "Step_7" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Perfect 5th";
     lv2:shortName "Perfect 5th";
     lv2:default 0;
@@ -181,7 +193,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 12;
-    lv2:symbol "Step_8";
+    lv2:symbol "Step_8" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Minor 6th";
     lv2:shortName "Minor 6th";
     lv2:default 0;
@@ -192,7 +205,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 13;
-    lv2:symbol "Step_9";
+    lv2:symbol "Step_9" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Major 6th";
     lv2:shortName "Major 6th";
     lv2:default 0;
@@ -203,7 +217,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 14;
-    lv2:symbol "Step_10";
+    lv2:symbol "Step_10" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Minor 7th";
     lv2:shortName "Minor 7th";
     lv2:default 0;
@@ -214,7 +229,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 15;
-    lv2:symbol "Step_11";
+    lv2:symbol "Step_11" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>;
     lv2:name "Major 7th";
     lv2:shortName "Major 7th";
     lv2:default 0;
@@ -225,7 +241,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 16;
-    lv2:symbol "LowestNoteToChangeThePitch";
+    lv2:symbol "LowestNoteToChangeThePitch" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_key>;
     lv2:name "Lowest note to change the pitch";
     lv2:shortName "Lowest Wet";
     lv2:default 0;
@@ -251,7 +268,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 17;
-    lv2:symbol "Gain1";
+    lv2:symbol "Gain1" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_mix>;
     lv2:name "Gain 1";
     lv2:shortName "Gain 1";
     lv2:default 0.0;
@@ -262,7 +280,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 18;
-    lv2:symbol "Gain2";
+    lv2:symbol "Gain2" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_mix>;
     lv2:name "Gain 2";
     lv2:shortName "Gain 2";
     lv2:default 3.0;
@@ -273,7 +292,8 @@ lv2:port
 [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 19;
-    lv2:symbol "Fidelity";
+    lv2:symbol "Fidelity" ;
+        pg:group <http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_mix>;
     lv2:name "Fidelity";
     lv2:shortName "Fidelity";
     lv2:default 1;
@@ -293,3 +313,28 @@ modgui:gui [
     modgui:screenshot <modgui/screenshot-harmonizercs.png>;
     modgui:thumbnail <modgui/thumb-harmonizercs.png>;
 ].
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_key>
+    a pg:InputGroup ;
+    lv2:symbol "key" ;
+    lv2:name "Key" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_lower_degrees>
+    a pg:InputGroup ;
+    lv2:symbol "lower_degrees" ;
+    lv2:name "Lower Degrees" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_upper_degrees>
+    a pg:InputGroup ;
+    lv2:symbol "upper_degrees" ;
+    lv2:name "Upper Degrees" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/mod-devel/HarmonizerCS#group_mix>
+    a pg:InputGroup ;
+    lv2:symbol "mix" ;
+    lv2:name "Mix" ;
+    lv2:index 3 .

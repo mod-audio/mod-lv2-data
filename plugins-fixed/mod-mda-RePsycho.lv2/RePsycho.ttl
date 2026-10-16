@@ -52,7 +52,7 @@ mda:RePsycho
     pg:mainInput mda:mainIn ;
     pg:mainOutput mda:mainOut ;
     lv2:minorVersion 0;
-    lv2:microVersion 1;
+    lv2:microVersion 3;
     mod:brand "MDA" ;
     mod:label "RePsycho" ;
     rdfs:comment """
@@ -68,6 +68,7 @@ Modeled by MDA
         lv2:index 0 ;
         lv2:name "Tune" ;
         lv2:symbol "tune" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_pitch> ;
         lv2:default 0.0 ;
         lv2:minimum -24.0 ;
         lv2:maximum 0.0 ;
@@ -81,6 +82,7 @@ Modeled by MDA
         lv2:index 1 ;
         lv2:name "Fine" ;
         lv2:symbol "fine" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_pitch> ;
         lv2:default 0.0 ;
         lv2:minimum -100.0 ;
         lv2:maximum 0.0 ;
@@ -92,6 +94,7 @@ Modeled by MDA
         lv2:index 2 ;
         lv2:name "Decay" ;
         lv2:symbol "decay" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_slice> ;
         lv2:default 0.0 ;
         lv2:minimum -50.0 ;
         lv2:maximum 50.0 ;
@@ -104,6 +107,7 @@ Modeled by MDA
         lv2:index 3 ;
         lv2:name "Thresh" ;
         lv2:symbol "thresh" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_slice> ;
         lv2:default -12.0 ;
         lv2:minimum -30.0 ;
         lv2:maximum 0.0 ;
@@ -116,6 +120,7 @@ Modeled by MDA
         lv2:index 4 ;
         lv2:name "Hold" ;
         lv2:symbol "hold" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_slice> ;
         lv2:default 122.5 ;
         lv2:minimum 10.0 ;
         lv2:maximum 260.0 ;
@@ -128,6 +133,7 @@ Modeled by MDA
         lv2:index 5 ;
         lv2:name "Mix" ;
         lv2:symbol "mix" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_output> ;
         lv2:default 100.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -140,6 +146,7 @@ Modeled by MDA
         lv2:index 6 ;
         lv2:name "Quality" ;
         lv2:symbol "quality" ;
+        pg:group <http://moddevices.com/plugins/mda/RePsycho#group_output> ;
         lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -185,3 +192,22 @@ Modeled by MDA
         lv2:designation pg:right ;
         pg:group mda:mainOut
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mda/RePsycho#group_pitch>
+    a pg:InputGroup ;
+    lv2:symbol "pitch" ;
+    lv2:name "Pitch" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mda/RePsycho#group_slice>
+    a pg:InputGroup ;
+    lv2:symbol "slice" ;
+    lv2:name "Slice" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mda/RePsycho#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 2 .

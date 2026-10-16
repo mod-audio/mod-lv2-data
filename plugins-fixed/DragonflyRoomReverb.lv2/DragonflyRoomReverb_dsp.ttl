@@ -82,6 +82,7 @@
         lv2:index 6 ;
         lv2:name "Dry Level" ;
         lv2:symbol "dry_level" ;
+        pg:group <urn:dragonfly:room#group_levels> ;
         lv2:default 80 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -92,6 +93,7 @@
         lv2:index 7 ;
         lv2:name "Early Level" ;
         lv2:symbol "early_level" ;
+        pg:group <urn:dragonfly:room#group_levels> ;
         lv2:default 10 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -102,6 +104,7 @@
         lv2:index 8 ;
         lv2:name "Early Send" ;
         lv2:symbol "early_send" ;
+        pg:group <urn:dragonfly:room#group_levels> ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -112,6 +115,7 @@
         lv2:index 9 ;
         lv2:name "Late Level" ;
         lv2:symbol "late_level" ;
+        pg:group <urn:dragonfly:room#group_levels> ;
         lv2:default 20 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -122,6 +126,7 @@
         lv2:index 10 ;
         lv2:name "Size" ;
         lv2:symbol "size" ;
+        pg:group <urn:dragonfly:room#group_space> ;
         lv2:default 12 ;
         lv2:minimum 8 ;
         lv2:maximum 32 ;
@@ -137,6 +142,7 @@
         lv2:index 11 ;
         lv2:name "Width" ;
         lv2:symbol "width" ;
+        pg:group <urn:dragonfly:room#group_space> ;
         lv2:default 100 ;
         lv2:minimum 50 ;
         lv2:maximum 150 ;
@@ -147,6 +153,7 @@
         lv2:index 12 ;
         lv2:name "Predelay" ;
         lv2:symbol "predelay" ;
+        pg:group <urn:dragonfly:room#group_space> ;
         lv2:default 8 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -157,6 +164,7 @@
         lv2:index 13 ;
         lv2:name "Decay" ;
         lv2:symbol "decay" ;
+        pg:group <urn:dragonfly:room#group_decay> ;
         lv2:default 0.40000000596 ;
         lv2:minimum 0.10000000149 ;
         lv2:maximum 10 ;
@@ -167,6 +175,7 @@
         lv2:index 14 ;
         lv2:name "Diffuse" ;
         lv2:symbol "diffuse" ;
+        pg:group <urn:dragonfly:room#group_space> ;
         lv2:default 70 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -177,6 +186,7 @@
         lv2:index 15 ;
         lv2:name "Spin" ;
         lv2:symbol "spin" ;
+        pg:group <urn:dragonfly:room#group_decay> ;
         lv2:default 0.800000011921 ;
         lv2:minimum 0 ;
         lv2:maximum 5 ;
@@ -187,6 +197,7 @@
         lv2:index 16 ;
         lv2:name "Wander" ;
         lv2:symbol "wander" ;
+        pg:group <urn:dragonfly:room#group_decay> ;
         lv2:default 40 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -197,6 +208,7 @@
         lv2:index 17 ;
         lv2:name "High Cut" ;
         lv2:symbol "in_high_cut" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 16000 ;
         lv2:minimum 1000 ;
         lv2:maximum 16000 ;
@@ -207,6 +219,7 @@
         lv2:index 18 ;
         lv2:name "Early Damp" ;
         lv2:symbol "early_damp" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 10000 ;
         lv2:minimum 1000 ;
         lv2:maximum 16000 ;
@@ -217,6 +230,7 @@
         lv2:index 19 ;
         lv2:name "Late Damp" ;
         lv2:symbol "late_damp" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 9400 ;
         lv2:minimum 1000 ;
         lv2:maximum 16000 ;
@@ -227,6 +241,7 @@
         lv2:index 20 ;
         lv2:name "Low Boost" ;
         lv2:symbol "low_boost" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 50 ;
         lv2:minimum 0 ;
         lv2:maximum 100 ;
@@ -237,6 +252,7 @@
         lv2:index 21 ;
         lv2:name "Boost Freq" ;
         lv2:symbol "boost_freq" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 600 ;
         lv2:minimum 50 ;
         lv2:maximum 1050 ;
@@ -247,6 +263,7 @@
         lv2:index 22 ;
         lv2:name "Low Cut" ;
         lv2:symbol "in_low_cut" ;
+        pg:group <urn:dragonfly:room#group_tone> ;
         lv2:default 4 ;
         lv2:minimum 0 ;
         lv2:maximum 200 ;
@@ -281,6 +298,30 @@ GUI by FistfulOfStars
         foaf:homepage <https://michaelwillis.github.io/dragonfly-reverb> ;
     ] ;
 
-    lv2:microVersion 6 ;
+    lv2:microVersion 8 ;
     lv2:minorVersion 4 .
 
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<urn:dragonfly:room#group_levels>
+    a pg:InputGroup ;
+    lv2:symbol "levels" ;
+    lv2:name "Levels" ;
+    lv2:index 0 .
+
+<urn:dragonfly:room#group_space>
+    a pg:InputGroup ;
+    lv2:symbol "space" ;
+    lv2:name "Space" ;
+    lv2:index 1 .
+
+<urn:dragonfly:room#group_decay>
+    a pg:InputGroup ;
+    lv2:symbol "decay" ;
+    lv2:name "Decay" ;
+    lv2:index 2 .
+
+<urn:dragonfly:room#group_tone>
+    a pg:InputGroup ;
+    lv2:symbol "tone" ;
+    lv2:name "Tone" ;
+    lv2:index 3 .

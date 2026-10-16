@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix fomp: <http://drobilla.net/plugins/fomp/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -22,7 +23,7 @@ This is a stereo reverb plugin based on the well-known G Reverb. One might think
 Features:
 Modeled by FOMP
 """ ;
-	lv2:microVersion 0 ;
+	lv2:microVersion 2 ;
 	lv2:minorVersion 0 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:requiredFeature lv2:isLive ;
@@ -59,7 +60,8 @@ Modeled by FOMP
 		lv2:maximum 0.1 ;
 		lv2:minimum 0.02 ;
 		lv2:name "Delay" ;
-		lv2:symbol "delay"
+		lv2:symbol "delay" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_reverb>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -69,7 +71,8 @@ Modeled by FOMP
 		lv2:minimum 50.0 ;
 		lv2:name "Xover" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
-		lv2:symbol "xover"
+		lv2:symbol "xover" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_reverb>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -79,7 +82,8 @@ Modeled by FOMP
 		lv2:minimum 1.0 ;
 		lv2:name "RT-low" ;
 		lv2:shortName "Decay Low" ;
-		lv2:symbol "rt_low"
+		lv2:symbol "rt_low" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_reverb>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -89,7 +93,8 @@ Modeled by FOMP
 		lv2:minimum 1.0 ;
 		lv2:name "RT-mid" ;
 		lv2:shortName "Decay Mid" ;
-		lv2:symbol "rt_mid"
+		lv2:symbol "rt_mid" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_reverb>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -99,7 +104,8 @@ Modeled by FOMP
 		lv2:minimum 1500.0 ;
 		lv2:name "Damping" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
-		lv2:symbol "damping"
+		lv2:symbol "damping" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_reverb>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -110,7 +116,8 @@ Modeled by FOMP
 		lv2:name "F1-freq" ;
 		lv2:shortName "Frequency 1" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
-		lv2:symbol "f1_freq"
+		lv2:symbol "f1_freq" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_output>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -119,7 +126,8 @@ Modeled by FOMP
 		lv2:maximum 20.0 ;
 		lv2:minimum -20.0 ;
 		lv2:name "F1-gain" ;
-		lv2:symbol "f1_gain"
+		lv2:symbol "f1_gain" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_output>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -130,7 +138,8 @@ Modeled by FOMP
 		lv2:name "F2-freq" ;
 		lv2:shortName "Frequency 2" ;
 		lv2:portProperty <http://lv2plug.in/ns/ext/port-props#logarithmic> ;
-		lv2:symbol "f2_freq"
+		lv2:symbol "f2_freq" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_output>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -139,7 +148,8 @@ Modeled by FOMP
 		lv2:maximum 20.0 ;
 		lv2:minimum -20.0 ;
 		lv2:name "F2-gain" ;
-		lv2:symbol "f2_gain"
+		lv2:symbol "f2_gain" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_output>
 	] , [
 		a lv2:ControlPort ,
 			lv2:InputPort ;
@@ -149,5 +159,19 @@ Modeled by FOMP
 		lv2:minimum 0.0 ;
 		lv2:name "Output mix" ;
 		lv2:shortName "Mix" ;
-		lv2:symbol "out_mix"
+		lv2:symbol "out_mix" ;
+        pg:group <http://drobilla.net/plugins/fomp/reverb#group_output>
 	] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://drobilla.net/plugins/fomp/reverb#group_reverb>
+    a pg:InputGroup ;
+    lv2:symbol "reverb" ;
+    lv2:name "Reverb" ;
+    lv2:index 0 .
+
+<http://drobilla.net/plugins/fomp/reverb#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 1 .

@@ -36,7 +36,7 @@ mda:Leslie
     pg:mainOutput mda:mainOut ;
     rdfs:comment "No overdrive or speaker cabinet simulation is added - you may want to combine this plug-in with Combo.  For a much thicker sound try combining two Leslie plug-ins in series!" ;
     lv2:minorVersion 0;
-    lv2:microVersion 3;
+    lv2:microVersion 5;
     mod:brand "MDA" ;
     mod:label "Leslie" ;
 
@@ -46,6 +46,7 @@ mda:Leslie
         lv2:index 0 ;
         lv2:name "Mode" ;
         lv2:symbol "mode" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_speed> ;
         lv2:default 0.5 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
@@ -67,6 +68,7 @@ mda:Leslie
         lv2:index 1 ;
         lv2:name "Lo Width" ;
         lv2:symbol "lo_width" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_low_rotor> ;
         lv2:default 50.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -78,6 +80,7 @@ mda:Leslie
         lv2:index 2 ;
         lv2:name "Lo Throb" ;
         lv2:symbol "lo_throb" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_low_rotor> ;
         lv2:default 60.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -89,6 +92,7 @@ mda:Leslie
         lv2:index 3 ;
         lv2:name "Hi Width" ;
         lv2:symbol "hi_width" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_high_rotor> ;
         lv2:default 70.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -100,6 +104,7 @@ mda:Leslie
         lv2:index 4 ;
         lv2:name "Hi Depth" ;
         lv2:symbol "hi_depth" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_high_rotor> ;
         lv2:default 70.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -111,6 +116,7 @@ mda:Leslie
         lv2:index 5 ;
         lv2:name "Hi Throb" ;
         lv2:symbol "hi_throb" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_high_rotor> ;
         lv2:default 70.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 100.0 ;
@@ -122,6 +128,7 @@ mda:Leslie
         lv2:index 6 ;
         lv2:name "X-Over" ;
         lv2:symbol "x_over" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_output> ;
         lv2:default 772.8 ;
         lv2:minimum 150.0 ;
         lv2:maximum 1510.0 ;
@@ -133,6 +140,7 @@ mda:Leslie
         lv2:index 7 ;
         lv2:name "Level" ;
         lv2:symbol "output" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_output> ;
         lv2:default 0.0 ;
         lv2:minimum -20.0 ;
         lv2:maximum 20.0 ;
@@ -144,6 +152,7 @@ mda:Leslie
         lv2:index 8 ;
         lv2:name "Rate" ;
         lv2:symbol "speed" ;
+        pg:group <http://moddevices.com/plugins/mda/Leslie#group_speed> ;
         lv2:default 100.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 200.0 ;
@@ -182,3 +191,28 @@ mda:Leslie
         lv2:designation pg:right ;
         pg:group mda:mainOut
     ] .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/mda/Leslie#group_speed>
+    a pg:InputGroup ;
+    lv2:symbol "speed" ;
+    lv2:name "Speed" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/mda/Leslie#group_low_rotor>
+    a pg:InputGroup ;
+    lv2:symbol "low_rotor" ;
+    lv2:name "Low Rotor" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/mda/Leslie#group_high_rotor>
+    a pg:InputGroup ;
+    lv2:symbol "high_rotor" ;
+    lv2:name "High Rotor" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/mda/Leslie#group_output>
+    a pg:InputGroup ;
+    lv2:symbol "output" ;
+    lv2:name "Output" ;
+    lv2:index 3 .

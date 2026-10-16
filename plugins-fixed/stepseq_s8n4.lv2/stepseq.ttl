@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -35,7 +36,7 @@ Also available in 8x8 and 8x4 versions.
 Features:
 Modeled by x42
 """;
-	lv2:microVersion 5 ;lv2:minorVersion 777 ;
+	lv2:microVersion 7 ;lv2:minorVersion 777 ;
 
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
@@ -59,7 +60,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 2;
-		lv2:symbol "sync";
+		lv2:symbol "sync" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "Sync";
 		lv2:minimum 0;
 		lv2:default 0;
@@ -70,7 +72,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 3;
-		lv2:symbol "bpm";
+		lv2:symbol "bpm" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "BPM";
 		lv2:minimum  40.0;
 		lv2:default 120.0;
@@ -79,7 +82,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 4;
-		lv2:symbol "div";
+		lv2:symbol "div" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "Step Duration (4/4)";
 		lv2:minimum 0;
 		lv2:maximum 9;
@@ -98,7 +102,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 5;
-		lv2:symbol "swing";
+		lv2:symbol "swing" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "Swing";
 		lv2:minimum 0.0;
 		lv2:default 0.0;
@@ -110,7 +115,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 6;
-		lv2:symbol "drummode";
+		lv2:symbol "drummode" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "Drum Mode";
 		lv2:minimum 0;
 		lv2:default 0;
@@ -119,7 +125,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort;
 		lv2:index 7;
-		lv2:symbol "chn";
+		lv2:symbol "chn" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>;
 		lv2:name "Midi Channel";
 		lv2:minimum 0;
 		lv2:default 0;
@@ -130,6 +137,7 @@ Modeled by x42
 			lv2:ControlPort ;
 		lv2:index 8 ;
 		lv2:symbol "panic" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_transport> ;
 		lv2:name "MIDI Panic";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -157,7 +165,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 11;
-		lv2:symbol "note1";
+		lv2:symbol "note1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1>;
 		lv2:name "Note 1";
 		lv2:default 69;
 		lv2:minimum 0;
@@ -166,7 +175,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 12;
-		lv2:symbol "note2";
+		lv2:symbol "note2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2>;
 		lv2:name "Note 2";
 		lv2:default 67;
 		lv2:minimum 0;
@@ -175,7 +185,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 13;
-		lv2:symbol "note3";
+		lv2:symbol "note3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3>;
 		lv2:name "Note 3";
 		lv2:default 65;
 		lv2:minimum 0;
@@ -184,7 +195,8 @@ Modeled by x42
 	] , [
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 14;
-		lv2:symbol "note4";
+		lv2:symbol "note4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4>;
 		lv2:name "Note 4";
 		lv2:default 64;
 		lv2:minimum 0;
@@ -194,6 +206,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 15 ;
 		lv2:symbol "grid_1_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 1 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -203,6 +216,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 16 ;
 		lv2:symbol "grid_2_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 2 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -212,6 +226,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 17 ;
 		lv2:symbol "grid_3_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 3 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -221,6 +236,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 18 ;
 		lv2:symbol "grid_4_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 4 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -230,6 +246,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 19 ;
 		lv2:symbol "grid_5_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 5 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -239,6 +256,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 20 ;
 		lv2:symbol "grid_6_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 6 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -248,6 +266,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 21 ;
 		lv2:symbol "grid_7_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 7 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -257,6 +276,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 22 ;
 		lv2:symbol "grid_8_1" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note1> ;
 		lv2:name "Grid S: 8 N: 1";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -266,6 +286,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 23 ;
 		lv2:symbol "grid_1_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 1 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -275,6 +296,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 24 ;
 		lv2:symbol "grid_2_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 2 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -284,6 +306,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 25 ;
 		lv2:symbol "grid_3_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 3 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -293,6 +316,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 26 ;
 		lv2:symbol "grid_4_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 4 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -302,6 +326,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 27 ;
 		lv2:symbol "grid_5_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 5 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -311,6 +336,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 28 ;
 		lv2:symbol "grid_6_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 6 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -320,6 +346,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 29 ;
 		lv2:symbol "grid_7_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 7 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -329,6 +356,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 30 ;
 		lv2:symbol "grid_8_2" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note2> ;
 		lv2:name "Grid S: 8 N: 2";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -338,6 +366,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 31 ;
 		lv2:symbol "grid_1_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 1 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -347,6 +376,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 32 ;
 		lv2:symbol "grid_2_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 2 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -356,6 +386,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 33 ;
 		lv2:symbol "grid_3_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 3 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -365,6 +396,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 34 ;
 		lv2:symbol "grid_4_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 4 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -374,6 +406,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 35 ;
 		lv2:symbol "grid_5_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 5 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -383,6 +416,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 36 ;
 		lv2:symbol "grid_6_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 6 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -392,6 +426,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 37 ;
 		lv2:symbol "grid_7_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 7 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -401,6 +436,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 38 ;
 		lv2:symbol "grid_8_3" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note3> ;
 		lv2:name "Grid S: 8 N: 3";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -410,6 +446,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 39 ;
 		lv2:symbol "grid_1_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 1 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -419,6 +456,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 40 ;
 		lv2:symbol "grid_2_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 2 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -428,6 +466,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 41 ;
 		lv2:symbol "grid_3_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 3 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -437,6 +476,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 42 ;
 		lv2:symbol "grid_4_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 4 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -446,6 +486,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 43 ;
 		lv2:symbol "grid_5_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 5 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -455,6 +496,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 44 ;
 		lv2:symbol "grid_6_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 6 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -464,6 +506,7 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 45 ;
 		lv2:symbol "grid_7_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 7 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
@@ -473,9 +516,41 @@ Modeled by x42
 		a lv2:InputPort, lv2:ControlPort ;
 		lv2:index 46 ;
 		lv2:symbol "grid_8_4" ;
+        pg:group <http://gareus.org/oss/lv2/stepseq#s8n4_group_note4> ;
 		lv2:name "Grid S: 8 N: 4";
 		lv2:default 0 ;
 		lv2:minimum 0 ;
 		lv2:maximum 127 ;
 		lv2:portProperty lv2:integer;
 ]; .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://gareus.org/oss/lv2/stepseq#s8n4_group_transport>
+    a pg:InputGroup ;
+    lv2:symbol "transport" ;
+    lv2:name "Transport" ;
+    lv2:index 0 .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4_group_note1>
+    a pg:InputGroup ;
+    lv2:symbol "note1" ;
+    lv2:name "Note 1" ;
+    lv2:index 1 .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4_group_note2>
+    a pg:InputGroup ;
+    lv2:symbol "note2" ;
+    lv2:name "Note 2" ;
+    lv2:index 2 .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4_group_note3>
+    a pg:InputGroup ;
+    lv2:symbol "note3" ;
+    lv2:name "Note 3" ;
+    lv2:index 3 .
+
+<http://gareus.org/oss/lv2/stepseq#s8n4_group_note4>
+    a pg:InputGroup ;
+    lv2:symbol "note4" ;
+    lv2:name "Note 4" ;
+    lv2:index 4 .

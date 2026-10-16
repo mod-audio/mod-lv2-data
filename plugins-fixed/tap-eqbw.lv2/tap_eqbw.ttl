@@ -1,3 +1,4 @@
+@prefix pg: <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
@@ -30,7 +31,7 @@ mod:label "Equalizer/B";
 
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 lv2:minorVersion 7;
-lv2:microVersion 2;
+lv2:microVersion 4;
 
 rdfs:comment """
 This plugin is an 8-band equalizer with adjustable band center frequencies. It allows you to make precise adjustments to the tonal coloration of your tracks. The design and code of this plugin is based on that of the DJ EQ plugin by Steve Harris, which can be downloaded (among lots of other useful plugins) from http://plugin.org.uk.
@@ -42,7 +43,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 0;
-    lv2:symbol "Band1GainDb";
+    lv2:symbol "Band1GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band1>;
     lv2:name "Band 1 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -51,7 +53,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 1;
-    lv2:symbol "Band2GainDb";
+    lv2:symbol "Band2GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band2>;
     lv2:name "Band 2 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -60,7 +63,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 2;
-    lv2:symbol "Band3GainDb";
+    lv2:symbol "Band3GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band3>;
     lv2:name "Band 3 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -69,7 +73,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 3;
-    lv2:symbol "Band4GainDb";
+    lv2:symbol "Band4GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band4>;
     lv2:name "Band 4 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -78,7 +83,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 4;
-    lv2:symbol "Band5GainDb";
+    lv2:symbol "Band5GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band5>;
     lv2:name "Band 5 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -87,7 +93,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 5;
-    lv2:symbol "Band6GainDb";
+    lv2:symbol "Band6GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band6>;
     lv2:name "Band 6 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -96,7 +103,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 6;
-    lv2:symbol "Band7GainDb";
+    lv2:symbol "Band7GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band7>;
     lv2:name "Band 7 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -105,7 +113,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 7;
-    lv2:symbol "Band8GainDb";
+    lv2:symbol "Band8GainDb" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band8>;
     lv2:name "Band 8 Gain [dB]";
     lv2:default 0.0;
     lv2:minimum -50.0;
@@ -114,7 +123,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 8;
-    lv2:symbol "Band1FreqHz";
+    lv2:symbol "Band1FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band1>;
     lv2:name "Band 1 Freq [Hz]";
     lv2:default 100.0;
     lv2:minimum 40.0;
@@ -123,7 +133,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 9;
-    lv2:symbol "Band2FreqHz";
+    lv2:symbol "Band2FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band2>;
     lv2:name "Band 2 Freq [Hz]";
     lv2:default 200.0;
     lv2:minimum 100.0;
@@ -132,7 +143,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 10;
-    lv2:symbol "Band3FreqHz";
+    lv2:symbol "Band3FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band3>;
     lv2:name "Band 3 Freq [Hz]";
     lv2:default 400.0;
     lv2:minimum 200.0;
@@ -141,7 +153,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 11;
-    lv2:symbol "Band4FreqHz";
+    lv2:symbol "Band4FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band4>;
     lv2:name "Band 4 Freq [Hz]";
     lv2:default 1000.0;
     lv2:minimum 400.0;
@@ -150,7 +163,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 12;
-    lv2:symbol "Band5FreqHz";
+    lv2:symbol "Band5FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band5>;
     lv2:name "Band 5 Freq [Hz]";
     lv2:default 3000.0;
     lv2:minimum 1000.0;
@@ -159,7 +173,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 13;
-    lv2:symbol "Band6FreqHz";
+    lv2:symbol "Band6FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band6>;
     lv2:name "Band 6 Freq [Hz]";
     lv2:default 6000.0;
     lv2:minimum 3000.0;
@@ -168,7 +183,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 14;
-    lv2:symbol "Band7FreqHz";
+    lv2:symbol "Band7FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band7>;
     lv2:name "Band 7 Freq [Hz]";
     lv2:default 12000.0;
     lv2:minimum 6000.0;
@@ -177,7 +193,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 15;
-    lv2:symbol "Band8FreqHz";
+    lv2:symbol "Band8FreqHz" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band8>;
     lv2:name "Band 8 Freq [Hz]";
     lv2:default 15000.0;
     lv2:minimum 10000.0;
@@ -186,7 +203,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 16;
-    lv2:symbol "Band1BandwidthOctaves";
+    lv2:symbol "Band1BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band1>;
     lv2:name "Band 1 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -195,7 +213,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 17;
-    lv2:symbol "Band2BandwidthOctaves";
+    lv2:symbol "Band2BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band2>;
     lv2:name "Band 2 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -204,7 +223,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 18;
-    lv2:symbol "Band3BandwidthOctaves";
+    lv2:symbol "Band3BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band3>;
     lv2:name "Band 3 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -213,7 +233,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 19;
-    lv2:symbol "Band4BandwidthOctaves";
+    lv2:symbol "Band4BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band4>;
     lv2:name "Band 4 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -222,7 +243,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 20;
-    lv2:symbol "Band5BandwidthOctaves";
+    lv2:symbol "Band5BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band5>;
     lv2:name "Band 5 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -231,7 +253,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 21;
-    lv2:symbol "Band6BandwidthOctaves";
+    lv2:symbol "Band6BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band6>;
     lv2:name "Band 6 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -240,7 +263,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 22;
-    lv2:symbol "Band7BandwidthOctaves";
+    lv2:symbol "Band7BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band7>;
     lv2:name "Band 7 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -249,7 +273,8 @@ lv2:port
 [
     a lv2:InputPort, lv2:ControlPort;
     lv2:index 23;
-    lv2:symbol "Band8BandwidthOctaves";
+    lv2:symbol "Band8BandwidthOctaves" ;
+        pg:group <http://moddevices.com/plugins/tap/eqbw#group_band8>;
     lv2:name "Band 8 Bandwidth [octaves]";
     lv2:default 1.0;
     lv2:minimum 0.10;
@@ -267,3 +292,52 @@ lv2:port
     lv2:symbol "Output";
     lv2:name "Output";
 ].
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<http://moddevices.com/plugins/tap/eqbw#group_band1>
+    a pg:InputGroup ;
+    lv2:symbol "band1" ;
+    lv2:name "Band 1" ;
+    lv2:index 0 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band2>
+    a pg:InputGroup ;
+    lv2:symbol "band2" ;
+    lv2:name "Band 2" ;
+    lv2:index 1 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band3>
+    a pg:InputGroup ;
+    lv2:symbol "band3" ;
+    lv2:name "Band 3" ;
+    lv2:index 2 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band4>
+    a pg:InputGroup ;
+    lv2:symbol "band4" ;
+    lv2:name "Band 4" ;
+    lv2:index 3 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band5>
+    a pg:InputGroup ;
+    lv2:symbol "band5" ;
+    lv2:name "Band 5" ;
+    lv2:index 4 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band6>
+    a pg:InputGroup ;
+    lv2:symbol "band6" ;
+    lv2:name "Band 6" ;
+    lv2:index 5 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band7>
+    a pg:InputGroup ;
+    lv2:symbol "band7" ;
+    lv2:name "Band 7" ;
+    lv2:index 6 .
+
+<http://moddevices.com/plugins/tap/eqbw#group_band8>
+    a pg:InputGroup ;
+    lv2:symbol "band8" ;
+    lv2:name "Band 8" ;
+    lv2:index 7 .
