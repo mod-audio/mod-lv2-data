@@ -26,9 +26,6 @@ doap:maintainer [
     foaf:mbox <mailto:devel@moddevices.com>;
 ];
 
-mod:brand "TAP";
-mod:label "Equalizer/B";
-
 doap:license <http://usefulinc.com/doap/licenses/gpl>;
 lv2:minorVersion 7;
 lv2:microVersion 4;
