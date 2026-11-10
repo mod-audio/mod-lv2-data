@@ -1,0 +1,793 @@
+OCI<div class="obxd{{{cns}}}">
+  <div mod-role="drag-handle" class="mod-drag-handle"></div>
+  <div class="mod-control-group obxd-container clearfix">
+          <div class="one">
+            <div class="brand">
+              <div class="header no-lines">
+                <div class="obxd-name">
+                  <h1><img src="/resources/knobs/obxd.svg{{{ns}}}" alt=""></h1>
+                  <h5>Virtual Analog Synth</h5>
+                </div>
+              </div>
+            </div>
+            <div class="master">
+              <div class="header">
+                <div class="obxd-title"><h1>master</h1></div>
+              </div>
+                <div class="mod-knob">
+                  <div class="mod-knob-dot"></div>
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="volume"
+                  ></div>
+                  <div class="mod-knob-title">Volume</div>
+                </div>
+                <div class="mod-knob">
+                <div class="mod-knob-dot"></div>
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="tune"
+                  ></div>
+                  <div class="mod-knob-title">fine</div>
+                </div>
+                <div class="mod-knob">
+                <div class="mod-knob-dot"></div>
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="octave"
+                  ></div>
+                  <div class="mod-knob-title">coarse</div>
+                </div>
+            </div>
+            <div class="global">
+              <div class="header">
+                <div class="obxd-title"><h1>global</h1></div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="voicedetune"
+                ></div>
+                <div class="mod-knob-title">spread</div>
+              </div>
+              <div class="mod-button">
+                <div
+                  class="mod-button-image"
+                  mod-role="input-control-port"
+                  mod-widget="switch"
+                  mod-port-symbol="unison"
+                ></div>
+                <div class="mod-knob-title">unison</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="portamento"
+                ></div>
+                <div class="mod-knob-title">glide</div>
+              </div>
+              <div class="mod-buttongr">
+                <div
+                  class="mod-buttongr-image"
+                  mod-role="bypass"
+                  mod-widget="switch"
+                ></div>
+                <div class="mod-knob-title">bypass</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="voicecount"
+                ></div>
+                <div class="mod-knob-title">voices</div>
+              </div>
+              <div class="mod-button">
+                <div
+                  class="mod-button-image"
+                  mod-role="input-control-port"
+                  mod-widget="switch"
+                  mod-port-symbol="asplayedallocation"
+                ></div>
+                <div class="mod-knob-title">VAM</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- TWO ################################### -->
+          <div class="two">
+            <div class="osc">
+              <div class="header">
+                <div class="obxd-title"><h1>Oscillators</h1></div>
+              </div>
+              <div class="controls-5-align">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="osc1pitch"
+                  ></div>
+                  <div class="mod-knob-title">osc1</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="pulsewidth"
+                  ></div>
+                  <div class="mod-knob-title">pw</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="osc2pitch"
+                  ></div>
+                  <div class="mod-knob-title">osc2</div>
+                </div>
+              </div>
+              <div class="controls-5">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="osc1saw"
+                  ></div>
+                  <div class="mod-knob-title"><img src="/resources/knobs/saw.svg{{{ns}}}" alt=""></div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="osc1pulse"
+                  ></div>
+                  <div class="mod-knob-title"><img src="/resources/knobs/pulse.svg{{{ns}}}" alt=""></div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="oscillator2detune"
+                  ></div>
+                  <div class="mod-knob-title">detune</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="osc2saw"
+                  ></div>
+                  <div class="mod-knob-title">
+                    <img src="/resources/knobs/saw.svg{{{ns}}}" alt="">
+                  </div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="osc2pulse"
+                  ></div>
+                  <div class="mod-knob-title"><img src="/resources/knobs/pulse.svg{{{ns}}}" alt=""></div>
+                </div>
+              </div>
+              <div class="controls-5-align">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="osc2hardsync"
+                  ></div>
+                  <div class="mod-knob-title">sync</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="xmod"
+                  ></div>
+                  <div class="mod-knob-title">xmod</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="pitchquant"
+                  ></div>
+                  <div class="mod-knob-title">step</div>
+                </div>
+              </div>
+              <div class="controls-2-align">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="brightness"
+                  ></div>
+                  <div class="mod-knob-title">brightness</div>
+                </div>
+
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="envelopetopitch"
+                  ></div>
+                  <div class="mod-knob-title">pitch env </div>
+                </div>
+              </div>
+            </div>
+            <div class="mixer">
+              <div class="header">
+                <div class="obxd-title"><h1> mixer </h1></div>
+              </div>
+              <!-- <div class="section-title">Volume</div> -->
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="osc1mix"
+                ></div>
+                <div class="mod-knob-title">osc1</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="osc2mix"
+                ></div>
+                <div class="mod-knob-title">osc2</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="noisemix"
+                ></div>
+                <div class="mod-knob-title">noise</div>
+              </div>
+            </div>
+            <div class="control">
+              <div class="header">
+                <div class="obxd-title"><h1>Control</h1></div>
+              </div>
+              <div class="controls-5">
+              <div class="mod-button">
+                <div
+                  class="mod-button-image off"
+                  mod-role="input-control-port"
+                  mod-widget="switch"
+                  mod-port-symbol="bendrange"
+                ></div>
+                <div class="mod-knob-title">bend <br> octave</div>
+              </div>
+              <div class="mod-button">
+                <div
+                  class="mod-button-image off"
+                  mod-role="input-control-port"
+                  mod-widget="switch"
+                  mod-port-symbol="bendosc2only"
+                ></div>
+                <div class="mod-knob-title">bend <br> osc2</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="vibratorate"
+                ></div>
+                <div class="mod-knob-title">vibrato <br> rate</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="vfltfactor"
+                ></div>
+                <div class="mod-knob-title">flt env <br> velocity</div>
+              </div>
+              <div class="mod-knob">
+                <div
+                  class="mod-knob-image"
+                  mod-role="input-control-port"
+                  mod-widget-rotation="270"
+                  mod-port-symbol="vampfactor"
+                ></div>
+                <div class="mod-knob-title">amp env <br> velocity</div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- THREE ################################### -->
+          <div class="three">
+            <div class="filter">
+              <div class="header">
+                <div class="obxd-title"><h1>filter</h1></div>
+              </div>
+              <div class="controls-5-align">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="cutoff"
+                  ></div>
+                  <div class="mod-knob-title">cutoff</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="resonance"
+                  ></div>
+                  <div class="mod-knob-title">reso</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="filterenvamount"
+                  ></div>
+                  <div class="mod-knob-title">env amt</div>
+                </div>
+              </div>
+              <div class="controls-5">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="filterkeyfollow"
+                  ></div>
+                  <div class="mod-knob-title">key</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="filter_warm"
+                  ></div>
+                  <div class="mod-knob-title">hq</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="multimode"
+                  ></div>
+                  <div class="mod-knob-title">multi</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="bandpassblend"
+                  ></div>
+                  <div class="mod-knob-title">bp</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="fourpole"
+                  ></div>
+                  <div class="mod-knob-title">24db</div>
+                </div>
+              </div>
+            </div>
+            <div class="modulation">
+              <div class="header">
+                <div class="obxd-title"><h1>modulation</h1></div>
+              </div>
+              <div class="controls-5-align">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="lfofrequency"
+                  ></div>
+                  <div class="mod-knob-title">lfo rate</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="lfoamount1"
+                  ></div>
+                  <div class="mod-knob-title">freq amt</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="lfoamount2"
+                  ></div>
+                  <div class="mod-knob-title">pw amt</div>
+                </div>
+              </div>
+
+              <div class="controls-5-align">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfosinewave"
+                  ></div>
+                  <div class="mod-knob-title"><img src="/resources/knobs/sin.svg{{{ns}}}" alt="sin"></div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfoosc1"
+                  ></div>
+                  <div class="mod-knob-title">osc1</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfopw1"
+                  ></div>
+                  <div class="mod-knob-title">osc1</div>
+                </div>
+              </div>
+
+              <div class="controls-5-align">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfosquarewave"
+                  ></div>
+                  <div class="mod-knob-title"><img src="/resources/knobs/sqr.svg{{{ns}}}" alt="square"></div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfoosc2"
+                  ></div>
+                  <div class="mod-knob-title">osc2</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfopw2"
+                  ></div>
+                  <div class="mod-knob-title">osc2</div>
+                </div>
+              </div>
+
+              <div class="controls-5-align">
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfosampleholdwave"
+                  ></div>
+                  <div class="mod-knob-title">s/h</div>
+                </div>
+                <div class="mod-button">
+                  <div
+                    class="mod-button-image off"
+                    mod-role="input-control-port"
+                    mod-widget="switch"
+                    mod-port-symbol="lfofilter"
+                  ></div>
+                  <div class="mod-knob-title">filter</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- FOUR ################################### -->
+          <div class="four">
+            <div class="filter-env">
+              <div class="header">
+                <div class="obxd-title"><h1>filter envelope</h1></div>
+              </div>
+              <div class="controls-4">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="filterattack"
+                  ></div>
+                  <div class="mod-knob-title">attack</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="filterdecay"
+                  ></div>
+                  <div class="mod-knob-title">decay</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="filtersustain"
+                  ></div>
+                  <div class="mod-knob-title">sustain</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="filterrelease"
+                  ></div>
+                  <div class="mod-knob-title">release</div>
+                </div>
+              </div>
+            </div>
+            <div class="amp-env">
+                <div class="header">
+                  <div class="obxd-title"><h1>amp envelope</h1></div>
+                </div>
+                <div class="controls-4">
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="attack"
+                  ></div>
+                  <div class="mod-knob-title">attack</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="decay"
+                  ></div>
+                  <div class="mod-knob-title">decay</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="sustain"
+                  ></div>
+                  <div class="mod-knob-title">sustain</div>
+                </div>
+                <div class="mod-knob">
+                  <div
+                    class="mod-knob-image"
+                    mod-role="input-control-port"
+                    mod-widget-rotation="270"
+                    mod-port-symbol="release"
+                  ></div>
+                  <div class="mod-knob-title">release</div>
+                </div>
+              </div>
+            </div>
+            <!--BEGIN VOICE ############ -->
+            <div class="voice">
+                <div class="header">
+                  <div class="obxd-title"><h1>velocity / voice settings</h1></div>
+                </div>
+                <div class="controls-5-align">
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="filterdetune"
+                    ></div>
+                    <div class="mod-knob-title">filter<br>slope</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="portamentodetune"
+                    ></div>
+                    <div class="mod-knob-title">glide<br>slope</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="envelopedetune"
+                    ></div>
+                    <div class="mod-knob-title">envelope<br>slope</div>
+                  </div>
+                </div>           
+                <div class="controls-4">
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan1"
+                    ></div>
+                    <div class="mod-knob-title">V1 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan2"
+                    ></div>
+                    <div class="mod-knob-title">V2 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan3"
+                    ></div>
+                    <div class="mod-knob-title">V3 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan4"
+                    ></div>
+                    <div class="mod-knob-title">V4 Pan</div>
+                  </div>
+                </div>
+                <div class="controls-4">
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan5"
+                    ></div>
+                    <div class="mod-knob-title">V5 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan6"
+                    ></div>
+                    <div class="mod-knob-title">V6 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan7"
+                    ></div>
+                    <div class="mod-knob-title">V7 Pan</div>
+                  </div>
+                  <div class="mod-knob">
+                    <div
+                      class="mod-knob-image"
+                      mod-role="input-control-port"
+                      mod-widget-rotation="270"
+                      mod-port-symbol="pan8"
+                    ></div>
+                    <div class="mod-knob-title">V8 Pan</div>
+                  </div>
+                </div>
+            </div>
+            <!--END VOICE ############ -->
+          </div>
+  </div>
+</div>
+
+<!-- inputs/outputs -->
+<div class="mod-pedal-input">
+  {{#effect.ports.audio.input}}
+  <div
+    class="mod-input mod-input-disconnected"
+    title="{{name}}"
+    mod-role="input-audio-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-input-image"></div>
+  </div>
+  {{/effect.ports.audio.input}} {{#effect.ports.midi.input}}
+  <div
+    class="mod-input mod-input-disconnected"
+    title="{{name}}"
+    mod-role="input-midi-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-input-image"></div>
+  </div>
+  {{/effect.ports.midi.input}} {{#effect.ports.cv.input}}
+  <div
+    class="mod-input mod-input-disconnected"
+    title="{{name}}"
+    mod-role="input-cv-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-input-image"></div>
+  </div>
+  {{/effect.ports.cv.input}}
+</div>
+<div class="mod-pedal-output">
+  {{#effect.ports.audio.output}}
+  <div
+    class="mod-output mod-output-disconnected"
+    title="{{name}}"
+    mod-role="output-audio-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-output-image"></div>
+  </div>
+  {{/effect.ports.audio.output}} {{#effect.ports.midi.output}}
+  <div
+    class="mod-output mod-output-disconnected"
+    title="{{name}}"
+    mod-role="output-midi-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-output-image"></div>
+  </div>
+  {{/effect.ports.midi.output}} {{#effect.ports.cv.output}}
+  <div
+    class="mod-output mod-output-disconnected"
+    title="{{name}}"
+    mod-role="output-cv-port"
+    mod-port-symbol="{{symbol}}"
+  >
+    <div class="mod-pedal-output-image"></div>
+  </div>
+  {{/effect.ports.cv.output}}
+</div>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 50 50"
+   preserveAspectRatio="xMinYMin meet"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="button_flat_green_on.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="16.78"
+     inkscape:cx="25"
+     inkscape:cy="24.940405"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs2">
+    <filter
+       id="sofGlow"
+       height="6.6"
+       width="2.8666667"
+       x="-0.93333333"
+       y="-2.8">
+      <!-- Thicken out the original shape -->
+      <feMorphology
+         operator="dilate"
+         radius="4"
+         in="SourceAlpha"
+         result="thicken"
+         id="feMorphology1" />
+      <!-- Use a gaussian blur to create the soft blurriness of the glow -->
+      <feGaussianBlur
+         in="thicken"
+         stdDeviation="10"
+         result="blurred"
+         id="feGaussianBlur1" />
+      <!-- Change the colour -->
+      <feFlood
+         flood-color="rgb(239,67,0)"
+         result="glowColor"
+         id="feFlood1" />
+      <!-- Color in the glows -->
+      <feComposite
+         in="glowColor"
+         in2="blurred"
+         operator="in"
+         result="softGlow_colored"
+         id="feComposite1" />
+      <!--	Layer the effects together -->
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="softGlow_colored"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect
+     x="2.5"
+     y="2.5"
+     fill="#333333"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     width="45"
+     height="45"
+     id="rect2"
+     style="display:inline;fill:#4e4e00;fill-opacity:1" />
+  <rect
+     x="10"
+     y="10"
+     fill="#ef4300"
+     filter="url(#sofGlow)"
+     width="30"
+     height="10"
+     id="rect4"
+     style="display:inline" />
+</svg>

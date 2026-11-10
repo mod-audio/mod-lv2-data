@@ -3,9 +3,1391 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
+
+
 <https://obxd.wordpress.com>
+
     a lv2:Plugin ;
+
     lv2:binary <Obxd.so> ;
-    rdfs:seeAlso <Obxd.ttl> .
+
+    rdfs:seeAlso <Obxd.ttl> .   
+
+<Old_Stringmachine.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BzPAD_Bright_Wave.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<O_Bells_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Vox_Humana.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<PWM_Strings_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BzPER_Big_Drum__E3_.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<PAD___RandnHold_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Persuaders.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BzBRS_Blade_Brass.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BP_Strings_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Phobos.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BzBEL_Meditation_Bowl.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Vangelis_Brass__MW_.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Saw_Strings_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Sahara.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<XTFoamPad___02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Influx_Strings_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Deimos.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<30th_anniversary.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Vintage_Pad.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<SYNTH___Polly_Jean_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<BzBEL_5th_Dimnsn___1.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<PD_Reso_Satellites.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Oxygene_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<OBX_goes_PPG.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Oberheim_Diaries.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<Fat_Moog_Bazz.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
 
 
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BREEZE.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BzSEM_Brass_1.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_INGO_WEIDNER.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Acidic_Bass_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Acidic_Bass_2_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Acidic_Bass_3_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Bermuda_Lead_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BP_Guitar_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BP_Strings_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Dont_Jump_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_E_Piano_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Horny_OBX_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Influx_Strings_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Jupi_Brass_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Mid_Strings_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_O-B-3_Organ_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_O-Bells_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_O-Bells_2_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Oxygene_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Pitchy_SEM_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PWM_Strings_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Rez_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Rez_Sweep_Pd_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Saw_Strings_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SEM_Bite_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Slow_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Sync_Lead_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Sync_Lead_2_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Synth_Brass_1_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Synth_Brass_2_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Warm_Brass_IW.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLUFFY_L_S.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_brass-pad.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_drums.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_DX-bass.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_e-bass.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_guitar.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FLS_rhodes.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EnGEE.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BA_001_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BA_002_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BA_003_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EF_OldCat_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_001_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_Pow_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_Wow_ng.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LAYZER.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_DeTuna_LZ.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_Saxyone_LZ.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_SqrDeal_LZ.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_Syncter_LZ.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LD_Vibra_LZ.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_FUNKBOTS_E_TWIN.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BASS_-_Batty_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BASS_-_BrASS_Lead_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BASS_-_Goomy_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BASS_-_Love_is_Real.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_KEYS_-_WurlitXer.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_ORGAN_-_Glass_Toy_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PAD_-_Pulsed.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PAD_-_RandnHold_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PERC_-_Melodic_Perc_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_STR_-_Detuned_Section_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_STR_-_Detuned_Sqrs_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_STR_-_Square_String_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SYNTH_-_Golly_Poly_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SYNTH_-_Polly_Jean_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SYNTH_-_Simple_Poly_FB.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_JOEL_BISSON.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_80_sBrassAttack_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_80_sBrassAttack_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_1980_sLead_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_AnalogSawBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BodyFatBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BrassLead_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_BrassLead_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_DefconBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_DefconLDBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_DefVibrato_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMBassLD_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMBassLD_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMLead_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMRezBS_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMRezBS_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBMRQBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_EBrass01_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Grenische_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_GrenPad_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Halloween_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_HallsOfFame_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_HardcoreBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LazierBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LittleBlip_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LostAgesBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_LostEBMBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_MonoBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_NoiKickXL_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_OldBrassik_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PolyBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PolyBrass_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PrimoBlip_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Psychio_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PyroABass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_PyroBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_RawEBMBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_ResPureBS_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_RubberBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SnareZ_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SnareZ_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SnareZ_-_03.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_Super80_sLead_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SynthBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SynthBass_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_SyntheticBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_ToneBrass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_VibroPlay_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_WaspBeeBass_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_XTFoamPad_-_01.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_013_-_KVR_Community_Bank_-_Part_1_XTFoamPad_-_02.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Accordion_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Ambient_Mood_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Bag_Pipes_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Banjo_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Bass_I_Slap_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Bells_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Big_Lead_HP_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Big_Lead_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Blade_Runner_Brass_Pad.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Box_O_Pups_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Brass_Ensemble_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Bright_Drone_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Calliope_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Carillon_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Celeste_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Chariots_VG_Harp_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Chopper_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Claps_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Clarinet_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Claves_amp_Toms_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Clavinet_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Comedy_Comp_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Comp_Horns_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Comp_Synth_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Conga_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Delayed_Mod_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Double_Reed_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Earthquake_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Edge_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Electric_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_F-ENV_Horns_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Fiddle_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Filter_Drone_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Flanged_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Flutes_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_FM_Bells_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Four_Pole_Strings_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_French_Horns_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Funk_Keys_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Gamelan_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Genevieve_OB-8.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Harmonica_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Harp_II_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Harp_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Harpe_Laser_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Harpsichord_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Here_Goes_Jump_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_High_Pass_Filter_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_High_Res_BP_Pad_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_High_Res_Pad_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_High_Strings_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Hymn_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Io_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Jazz_Solo_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Long_Chimes_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Low_Harp_Endless_Tail_O.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Low_Strings_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Marimba_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Martian_Hop_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Meditation_Pad_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Mellow_Prophet_Pad_OB-X.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Modern_Horns_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Oriental_Unison_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_P_W_Rezz_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Perc_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Percussion_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Pipe_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Please_Release_Me_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Poly_Dreams_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Poly_Portamento_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Pong_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Prophet_Brass_Pad_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Pulse_Comp_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Pulse_Sweeps_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_PWM_Lead.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Recorder_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Reed_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Reed_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Resonance_Sweep_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rezz_Reeds_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_RMI_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rock_Solo_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rock_Unison_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rotary_Organ_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Round_Bass_1_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rubber_Clav_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rush_Rezz_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Rush_Sawyer_Bass_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Sax_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_S-H_in_Fifths_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_S-H_P_W_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_S-H_Port_Rezz_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Simple_FM_in_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Sitar_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Slow_Strings_Notch_OB-X.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Slower_Strings_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Soft_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Solo_Strings_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Square_Lead_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Square_Wave_Mod_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Stars_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Steel_Drums_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Strings_I_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Strings_II_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Strings_III_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Strings_IV_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Strings_V_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Synth_Bass_1_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Synth_Bass_2_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Synth_Drums_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Synthetic_Piano_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Taped_Voices_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Tenth_Decay_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Terror_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Three_Way_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Tin_Whistle_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Tremolo_Rezz_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Tropical_Horns_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Trumpet_Ensemble_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Tuned_Bees_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Unison_Fear_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Unison_Portamento_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Vibes_OB-Xd.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Vocal_Wow_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Water_Piano_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Water_Wiggle_OB-_Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+<obxd2_000_-_FMR_OB-Xa_Patch_Book_Xa_Chorus_OB-Xa.ttl>
+	a pset:Preset ;
+	rdfs:seeAlso <presets.ttl> ;
+	lv2:appliesTo <https://obxd.wordpress.com> .
+
+
+<https://obxd.wordpress.com> <http://moddevices.com/ns/mod#releaseNumber> 9 .
+<https://obxd.wordpress.com> <http://moddevices.com/ns/mod#builderVersion> 1 .
+<https://obxd.wordpress.com> <http://moddevices.com/ns/mod#buildId> 661 .
+<https://obxd.wordpress.com> <http://moddevices.com/ns/mod#buildEnvironment> "prod" .
+<https://obxd.wordpress.com> rdfs:seeAlso <modgui.ttl> .
