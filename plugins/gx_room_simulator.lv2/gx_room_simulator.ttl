@@ -50,7 +50,7 @@
     guiext:ui <http://guitarix.sourceforge.net/plugins/gx_room_simulator_#gui>;
 
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
 
 rdfs:comment """
 This plugin simulates the sound of a room.
@@ -120,5 +120,4 @@ Modeled by Guitarix
 
 <http://guitarix.sourceforge.net/plugins/gx_room_simulator_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_room_simulator_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_room_simulator_gui.so> .

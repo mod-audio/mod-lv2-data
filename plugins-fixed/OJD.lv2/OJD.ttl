@@ -13,7 +13,7 @@
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
 
-    lv2:microVersion 9 ;
+    lv2:microVersion 10 ;
     lv2:minorVersion 8 ;
 
     lv2:port [
@@ -110,6 +110,7 @@ Modeled by Janos Buttgereit
 """;
 
     doap:name "Schrammel OJD" ;
+    doap:license <http://spdx.org/licenses/GPL-3.0-or-later> ;
     doap:maintainer [
         foaf:name "Janos Buttgereit" ;
         foaf:homepage <https://schrammel.io/> ;

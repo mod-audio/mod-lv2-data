@@ -5,3 +5,10 @@
   a lv2:Plugin;
   lv2:binary <sooperlooper-2x2.so>;
   rdfs:seeAlso <sooperlooper.ttl>, <modgui.ttl>.
+
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://moddevices.com/plugins/sooperlooper-2x2> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .

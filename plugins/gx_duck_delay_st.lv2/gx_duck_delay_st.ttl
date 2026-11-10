@@ -52,7 +52,7 @@
 	guiext:ui <http://guitarix.sourceforge.net/plugins/gx_duck_delay_st_#gui>;
 
     lv2:minorVersion 28;
-    lv2:microVersion 5;
+    lv2:microVersion 6;
     
 rdfs:comment """
 
@@ -173,8 +173,7 @@ The switching controlled by envelope follower
 
 <http://guitarix.sourceforge.net/plugins/gx_duck_delay_st_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_duck_delay_st_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_duck_delay_st_gui.so> .
 
 # Port groups (MOD OS 1.14 settings panel), added 2026-10
 <http://guitarix.sourceforge.net/plugins/gx_duck_delay_st_#_duck_delay_st__group_delay>

@@ -50,7 +50,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_phaser#gui>;
   
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     
 rdfs:comment """
 
@@ -106,5 +106,4 @@ source: http://en.wikipedia.org/wiki/Phaser_%28effect%29
 
 <http://guitarix.sourceforge.net/plugins/gx_phaser#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_phaser_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_phaser_gui.so> .

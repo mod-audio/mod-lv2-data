@@ -48,7 +48,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_expander#gui>;
   
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     
 rdfs:comment """
 
@@ -122,6 +122,5 @@ source: http://www.sae.edu/reference_material/audio/pages/Compression.htm
 
 <http://guitarix.sourceforge.net/plugins/gx_expander#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_expander_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_expander_gui.so> .
   

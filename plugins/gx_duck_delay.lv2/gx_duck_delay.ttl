@@ -51,7 +51,7 @@
 	guiext:ui <http://guitarix.sourceforge.net/plugins/gx_duck_delay_#gui>;
     
 	lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     
 rdfs:comment """
 
@@ -127,6 +127,5 @@ The switching controlled by envelope follower
 
 <http://guitarix.sourceforge.net/plugins/gx_duck_delay_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_duck_delay_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_duck_delay_gui.so> .
 

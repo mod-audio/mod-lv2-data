@@ -13,7 +13,7 @@
     lv2:extensionData <http://lv2plug.in/ns/ext/options#interface> ,
                       <http://kxstudio.sf.net/ns/lv2ext/programs#Interface> ;
 
-    lv2:microVersion 4 ;
+    lv2:microVersion 5 ;
     lv2:minorVersion 2 ;
 
     lv2:port [
@@ -120,6 +120,7 @@ Modeled by Jatin Chowdhury
 """;
 
     doap:name "ChowCentaur" ;
+    doap:license <http://spdx.org/licenses/BSD-3-Clause> ;
     doap:maintainer [
         foaf:name "Jatin Chowdhury" ;
         foaf:homepage <https://chowdsp.com/products.html#centaur> ;
