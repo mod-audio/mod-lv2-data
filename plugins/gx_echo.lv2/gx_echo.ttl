@@ -52,7 +52,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#gui>;
   
     lv2:minorVersion 28;
-    lv2:microVersion 5;
+    lv2:microVersion 6;
     
 rdfs:comment """
 
@@ -169,8 +169,7 @@ A stereo echo plugin with independent delay time and delay volume for each chann
 
 <http://guitarix.sourceforge.net/plugins/gx_echo_stereo#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_echo_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_echo_gui.so> .
   
 
 # Port groups (MOD OS 1.14 settings panel), added 2026-10

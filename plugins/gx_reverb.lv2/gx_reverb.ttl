@@ -48,7 +48,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_reverb_stereo#gui>;
 
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
 
 rdfs:comment """
 The GxReverb-Stereo is a simple, straight-forward reverb featuring LFO and MODE controls. 
@@ -134,5 +134,4 @@ Modeled by Guitarix
 
 <http://guitarix.sourceforge.net/plugins/gx_reverb_stereo#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_reverb_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_reverb_gui.so> .

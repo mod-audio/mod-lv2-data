@@ -53,7 +53,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#gui>;
      
     lv2:minorVersion 28;
-    lv2:microVersion 5;
+    lv2:microVersion 6;
     
 rdfs:comment """
 The increasing availability of cheap digital signal processing electronics in the 70s-80s resulted in the development of the first digital delays on the market. The first digital delay in pedal form was the Boss DD-2© (*) in 1984. 
@@ -209,8 +209,7 @@ trademarks are the property of their respective holders.”
 
 <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_digital_delay_st_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_digital_delay_st_gui.so> .
 
 # Port groups (MOD OS 1.14 settings panel), added 2026-10
 <http://guitarix.sourceforge.net/plugins/gx_digital_delay_st_#_digital_delay_st__group_delay>

@@ -23,7 +23,7 @@
 	doap:maintainer <http://gareus.org/rgareus#me> ;
 	doap:name "setBfree DSP Tonewheel Organ";
 	doap:license <http://usefulinc.com/doap/licenses/gpl> ;
-	lv2:microVersion 0 ;lv2:minorVersion 2058 ;
+	lv2:microVersion 1 ;lv2:minorVersion 2058 ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:requiredFeature urid:map , work:schedule ;
 	lv2:extensionData state:interface , work:interface ;
@@ -54,7 +54,7 @@
 		lv2:index 2 ;
 		lv2:symbol "outL" ;
 		lv2:name "Left Output" ;
-		pg:group pg:StereoGroup;
+		pg:group sb3:out ;
 		lv2:designation pg:left ;
 	],	
 	[
@@ -63,7 +63,7 @@
 		lv2:index 3 ;
 		lv2:symbol "outR" ;
 		lv2:name "Right Output" ;
-		pg:group pg:StereoGroup;
+		pg:group sb3:out ;
 		lv2:designation pg:right
 	];
 	mod:brand "x42";
@@ -74,3 +74,8 @@ The setBfree is a MIDI-controlled software synthesizer designed to imitate the s
 Features:
 Modeled by Robin Gareus
 """.
+
+sb3:out
+	a pg:OutputGroup, pg:StereoGroup ;
+	lv2:symbol "out" ;
+	lv2:name "Output" .

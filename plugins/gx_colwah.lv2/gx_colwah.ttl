@@ -48,7 +48,7 @@
     lv2:optionalFeature lv2:hardRTCapable ;
       
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
 
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_colwah_gui#_colwah_>;
     
@@ -136,6 +136,5 @@ rdfs:comment """
 
 <http://guitarix.sourceforge.net/plugins/gx_colwah_gui#_colwah_>
   a guiext:GtkUI;
-  guiext:binary <gx_colwah_gui.so>;
-  guiext:requiredFeature guiext:makeResident;
+  guiext:binary <gx_colwah_gui.so> ;
   .

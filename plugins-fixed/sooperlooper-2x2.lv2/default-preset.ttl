@@ -4,7 +4,7 @@
 
 <default-preset>
 	a pset:Preset ;
-	lv2:appliesTo <<http://moddevices.com/plugins/sooperlooper-2x2> ;
+	lv2:appliesTo <http://moddevices.com/plugins/sooperlooper-2x2> ;
 	lv2:port [
 		lv2:symbol "play_pause" ;
 		pset:value 0.0

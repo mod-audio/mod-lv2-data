@@ -48,7 +48,7 @@
   guiext:ui <http://guitarix.sourceforge.net/plugins/gx_compressor#gui>;
   
     lv2:minorVersion 28;
-    lv2:microVersion 3;
+    lv2:microVersion 4;
     
 rdfs:comment """
 
@@ -122,6 +122,5 @@ source: http://en.wikipedia.org/wiki/Compression_%28electric_guitar%29
 
 <http://guitarix.sourceforge.net/plugins/gx_compressor#gui>
   a guiext:GtkUI;
-  guiext:binary <gx_compressor_gui.so>;
-  guiext:requiredFeature guiext:makeResident .
+  guiext:binary <gx_compressor_gui.so> .
   
